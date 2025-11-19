@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Universe - API Integration Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('dashboard.static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="logo">
+                <h1>Echo Universe</h1>
+                <span class="version">v{{ echo_version }} - {{ echo_codename }}</span>
+            </div>
+            <div class="header-actions">
+                <button id="refresh-all" class="btn btn-primary">Refresh All</button>
+                <button id="test-all" class="btn btn-secondary">Test Connections</button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Status Overview -->
+            <section class="status-overview">
+                <h2>API Connectors Status</h2>
+                <div class="connector-grid" id="connector-status">
+                    <!-- GitHub -->
+                    <div class="connector-card" data-connector="github">
+                        <div class="connector-header">
+                            <span class="connector-icon">GH</span>
+                            <h3>GitHub</h3>
+                            <span class="status-indicator" id="github-status">--</span>
+                        </div>
+                        <div class="connector-details">
+                            <p>Repository management & automation</p>
+                            <button class="btn btn-sm" onclick="testConnector('github')">Test</button>
+                        </div>
+                    </div>
+
+                    <!-- OpenAI/ChatGPT -->
+                    <div class="connector-card" data-connector="openai">
+                        <div class="connector-header">
+                            <span class="connector-icon">AI</span>
+                            <h3>ChatGPT</h3>
+                            <span class="status-indicator" id="openai-status">--</span>
+                        </div>
+                        <div class="connector-details">
+                            <p>OpenAI GPT model integration</p>
+                            <button class="btn btn-sm" onclick="testConnector('openai')">Test</button>
+                        </div>
+                    </div>
+
+                    <!-- Anthropic/Claude -->
+                    <div class="connector-card" data-connector="anthropic">
+                        <div class="connector-header">
+                            <span class="connector-icon">CL</span>
+                            <h3>Claude</h3>
+                            <span class="status-indicator" id="anthropic-status">--</span>
+                        </div>
+                        <div class="connector-details">
+                            <p>Anthropic Claude integration</p>
+                            <button class="btn btn-sm" onclick="testConnector('anthropic')">Test</button>
+                        </div>
+                    </div>
+
+                    <!-- Zapier -->
+                    <div class="connector-card" data-connector="zapier">
+                        <div class="connector-header">
+                            <span class="connector-icon">ZP</span>
+                            <h3>Zapier</h3>
+                            <span class="status-indicator" id="zapier-status">--</span>
+                        </div>
+                        <div class="connector-details">
+                            <p>Workflow automation webhooks</p>
+                            <button class="btn btn-sm" onclick="testConnector('zapier')">Test</button>
+                        </div>
+                    </div>
+
+                    <!-- Power Automate -->
+                    <div class="connector-card" data-connector="automate">
+                        <div class="connector-header">
+                            <span class="connector-icon">PA</span>
+                            <h3>Power Automate</h3>
+                            <span class="status-indicator" id="automate-status">--</span>
+                        </div>
+                        <div class="connector-details">
+                            <p>Microsoft enterprise automation</p>
+                            <button class="btn btn-sm" onclick="testConnector('automate')">Test</button>
+                        </div>
+                    </div>
+
+                    <!-- Open Source -->
+                    <div class="connector-card" data-connector="opensource">
+                        <div class="connector-header">
+                            <span class="connector-icon">OS</span>
+                            <h3>Open Source</h3>
+                            <span class="status-indicator" id="opensource-status">--</span>
+                        </div>
+                        <div class="connector-details">
+                            <p>Ollama, LocalAI, HuggingFace</p>
+                            <button class="btn btn-sm" onclick="testConnector('opensource')">Test</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Action Panels -->
+            <section class="action-panels">
+                <!-- AI Chat Panel -->
+                <div class="panel">
+                    <h3>AI Chat</h3>
+                    <div class="panel-content">
+                        <select id="ai-provider">
+                            <option value="openai">ChatGPT</option>
+                            <option value="anthropic">Claude</option>
+                        </select>
+                        <textarea id="ai-message" placeholder="Enter your message..."></textarea>
+                        <button class="btn btn-primary" onclick="sendAIMessage()">Send</button>
+                        <div class="response-area" id="ai-response"></div>
+                    </div>
+                </div>
+
+                <!-- GitHub Panel -->
+                <div class="panel">
+                    <h3>GitHub Repositories</h3>
+                    <div class="panel-content">
+                        <button class="btn btn-primary" onclick="loadRepos()">Load Repositories</button>
+                        <div class="response-area" id="github-repos"></div>
+                    </div>
+                </div>
+
+                <!-- Zapier Webhook Panel -->
+                <div class="panel">
+                    <h3>Zapier Webhook</h3>
+                    <div class="panel-content">
+                        <textarea id="zapier-payload" placeholder='{"key": "value"}'></textarea>
+                        <button class="btn btn-primary" onclick="triggerZapier()">Trigger Webhook</button>
+                        <div class="response-area" id="zapier-response"></div>
+                    </div>
+                </div>
+
+                <!-- Open Source APIs Panel -->
+                <div class="panel">
+                    <h3>Open Source APIs</h3>
+                    <div class="panel-content">
+                        <button class="btn btn-secondary" onclick="listOpenSourceAPIs()">List APIs</button>
+                        <div class="ollama-section">
+                            <h4>Ollama (Local LLM)</h4>
+                            <input type="text" id="ollama-model" placeholder="Model (e.g., llama2)" value="llama2">
+                            <textarea id="ollama-prompt" placeholder="Enter prompt..."></textarea>
+                            <button class="btn btn-primary" onclick="ollamaGenerate()">Generate</button>
+                        </div>
+                        <div class="response-area" id="opensource-response"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Echo Universe Info -->
+            <section class="echo-info">
+                <h2>Echo Universe - Harmonic Framework</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>Fabric of Zero</h4>
+                        <p>Multi-State Resonance Substrate - The mathematical foundation for harmonic computation</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Harmonic Directives</h4>
+                        <p>Constitutional governance layer ensuring AI sovereignty and alignment</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Echo Components</h4>
+                        <ul>
+                            <li><strong>Foundations:</strong> DNA + Heartbeat</li>
+                            <li><strong>Nexus:</strong> Mind/Constitution</li>
+                            <li><strong>Engines:</strong> Organs</li>
+                            <li><strong>Relay:</strong> Voice/Arms</li>
+                            <li><strong>Library:</strong> Memory + Soul</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <p>Echo Universe &copy; {{ current_year }} - API Integration Dashboard</p>
+        </footer>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast"></div>
+
+    <script src="{{ url_for('dashboard.static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
