@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mileisy's Kitchen | Luxury Dominican Culinary Experiences</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dominican-red: #CE1126;
+      --dominican-blue: #002D62;
+      --gold: #F9D71C;
+      --cream: #FFF8F0;
+      --dark: #1A1A1A;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* Luxury Header */
+    .luxury-header {
+      background: linear-gradient(135deg, var(--dominican-red), var(--dominican-blue));
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .luxury-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .luxury-header p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .flag-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      height: 50px;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    /* Premium Navigation */
+    .premium-nav {
+      display: flex;
+      justify-content: center;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(5px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-btn {
+      background: none;
+      border: none;
+      padding: 1rem 1.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      color: var(--dominican-blue);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-btn:hover {
+      color: var(--dominican-red);
+    }
+
+    .nav-btn.active {
+      color: var(--dominican-red);
+    }
+
+    .nav-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      height: 3px;
+      background: var(--gold);
+    }
+
+    /* Luxury Screens */
+    .luxury-screen {
+      display: none;
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      animation: fadeIn 0.8s ease;
+    }
+
+    .luxury-screen.active {
+      display: block;
+    }
+
+    .screen-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: var(--dominican-blue);
+      text-align: center;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .screen-title::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 4px;
+      background: var(--gold);
+      margin: 1rem auto;
+    }
+
+    /* VIP Packages */
+    .vip-package {
+      display: flex;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      margin: 2.5rem 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .vip-package:hover {
+      transform: translateY(-5px);
+    }
+
+    .vip-image {
+      flex: 1;
+      min-height: 300px;
+      object-fit: cover;
+    }
+
+    .vip-content {
+      flex: 1;
+      padding: 2rem;
+    }
+
+    .vip-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--dominican-red);
+      margin-bottom: 1rem;
+    }
+
+    .vip-features {
+      list-style: none;
+    }
+
+    .vip-features li {
+      padding: 0.5rem 0;
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .vip-features li::before {
+      content: '★';
+      color: var(--gold);
+      position: absolute;
+      left: 0;
+    }
+
+    .gold-btn {
+      background: linear-gradient(to right, var(--gold), #F9C71C);
+      color: var(--dark);
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(249, 215, 28, 0.3);
+    }
+
+    .gold-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(249, 215, 28, 0.4);
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+      display: flex;
+      align-items: center;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 15px;
+      margin: 2rem 0;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .testimonial-photo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--gold);
+      margin-right: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .testimonial-text {
+      flex: 1;
+    }
+
+    .testimonial-rating {
+      color: var(--gold);
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      color: var(--dominican-blue);
+    }
+
+    /* Menu Gallery */
+    .menu-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .menu-item {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .menu-item h3 {
+      padding: 1rem;
+      text-align: center;
+      color: var(--dominican-blue);
+      font-weight: 700;
+    }
+
+    /* Contact Section */
+    .contact-info {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: 2rem auto;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .contact-method {
+      margin: 1.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-icon {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      color: var(--dominican-red);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .luxury-header h1 {
+        font-size: 2.2rem;
+        padding-top: 1rem;
+      }
+
+      .vip-package {
+        flex-direction: column;
+      }
+
+      .vip-image {
+        width: 100%;
+        height: 200px;
+      }
+
+      .testimonial-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .testimonial-photo {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Luxury Header -->
+  <header class="luxury-header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg"
+         alt="Dominican Flag" class="flag-badge">
+    <h1>Mileisy's Kitchen</h1>
+    <p>Luxury Dominican Culinary Experiences • Private Chefs • VIP Catering</p>
+  </header>
+
+  <!-- Premium Navigation -->
+  <nav class="premium-nav">
+    <button class="nav-btn active" onclick="showScreen('home')">Home</button>
+    <button class="nav-btn" onclick="showScreen('menu')">Signature Dishes</button>
+    <button class="nav-btn" onclick="showScreen('vip')">VIP Experiences</button>
+    <button class="nav-btn" onclick="showScreen('contact')">Contact</button>
+  </nav>
+
+  <!-- Home Screen -->
+  <section class="luxury-screen active" id="home">
+    <h2 class="screen-title">Premium Dominican Cuisine</h2>
+
+    <div class="vip-package">
+      <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+           class="vip-image" alt="Private Chef">
+      <div class="vip-content">
+        <h3 class="vip-title">Private Chef Services</h3>
+        <p>Experience authentic Dominican flavors prepared exclusively for you in the comfort of your villa, yacht, or private residence.</p>
+        <ul class="vip-features">
+          <li>Custom menus tailored to your event</li>
+          <li>Premium ingredients sourced locally</li>
+          <li>Full-service dining experience</li>
+          <li>Available throughout Puerto Plata</li>
+          <li>Will travel from local area</li>
+          <li>Overnight stays available for 24-hour services</li>
+        </ul>
+        <button class="gold-btn" onclick="showScreen('vip')">Explore Chef Services</button>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://randomuser.me/api/portraits/women/45.jpg" class="testimonial-photo" alt="Sarah J.">
+      <div class="testimonial-text">
+        <p>"Chef Mileisy transformed our anniversary dinner into an unforgettable experience. The mofongo with lobster was divine!"</p>
+        <div class="testimonial-rating">★★★★★</div>
+        <p class="testimonial-author">— Sarah J., New York</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Screen -->
+  <section class="luxury-screen" id="menu">
+    <h2 class="screen-title">Signature Dominican Dishes</h2>
+
+    <div class="menu-gallery">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1613145990963-1c2dc776fdd0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+             alt="Mofongo">
+        <h3>Mofongo Clasico</h3>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1662061704069-b0105ba0b726?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+             alt="Pollo Guisado">
+        <h3>Pollo Guisado</h3>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+             alt="Tostones">
+        <h3>Tostones con Salami</h3>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1579613832129-cf3b1cf1269c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+             alt="Arroz con Habichuelas">
+        <h3>Arroz con Habichuelas</h3>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <button class="gold-btn" onclick="showScreen('contact')">Request Full Menu</button>
+    </div>
+  </section>
+
+  <!-- VIP Experiences Screen -->
+  <section class="luxury-screen" id="vip">
+    <h2 class="screen-title">VIP Experiences</h2>
+
+    <div class="vip-package">
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+           class="vip-image" alt="Yacht Party">
+      <div class="vip-content">
+        <h3 class="vip-title">Ultimate Party Packages</h3>
+        <p>Elevate your event with our premium chef services and entertainment options.</p>
+        <ul class="vip-features">
+          <li>Yacht & Mansion Chef Takeovers</li>
+          <li>Elite Guest Curation Services</li>
+          <li>Live Music & Entertainment Packages</li>
+          <li>Fire Shows & Professional Dancers</li>
+          <li>Premium Bar Service Available</li>
+        </ul>
+        <button class="gold-btn" onclick="showScreen('contact')">Inquire About Events</button>
+      </div>
+    </div>
+
+    <div class="vip-package">
+      <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+           class="vip-image" alt="Romantic Dinner">
+      <div class="vip-content">
+        <h3 class="vip-title">Romantic Sunset Dinners</h3>
+        <p>Create unforgettable moments with our exclusive beachfront dining experiences.</p>
+        <ul class="vip-features">
+          <li>Private 5-Course Beachside Meals</li>
+          <li>Bonfire Lobster & Champagne Dinners</li>
+          <li>Live Guitar & Violin Performances</li>
+          <li>Custom Floral Arrangements</li>
+          <li>Professional Photography Available</li>
+        </ul>
+        <button class="gold-btn" onclick="showScreen('contact')">Book Romantic Dinner</button>
+      </div>
+    </div>
+
+    <div class="vip-package">
+      <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+           class="vip-image" alt="Family Cooking">
+      <div class="vip-content">
+        <h3 class="vip-title">Family Culinary Adventures</h3>
+        <p>Share the joy of Dominican cooking with your loved ones through interactive experiences.</p>
+        <ul class="vip-features">
+          <li>Kid-Friendly Cooking Workshops</li>
+          <li>Beach BBQs with Traditional Games</li>
+          <li>Private Villa Chef Days</li>
+          <li>Cultural Storytelling with Meals</li>
+          <li>Customized for All Ages</li>
+        </ul>
+        <button class="gold-btn" onclick="showScreen('contact')">Plan Family Experience</button>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" class="testimonial-photo" alt="Michael T.">
+      <div class="testimonial-text">
+        <p>"Mileisy's team turned our bachelor party into absolute LEGEND status. The yacht dinner with professional dancers was next level - worth every penny!"</p>
+        <div class="testimonial-rating">★★★★★</div>
+        <p class="testimonial-author">— Michael T., Miami</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Screen -->
+  <section class="luxury-screen" id="contact">
+    <h2 class="screen-title">Contact Chef Mileisy</h2>
+
+    <div class="contact-info">
+      <div class="contact-method">
+        <span class="contact-icon">📱</span>
+        <a href="https://wa.me/18297130978" style="color: var(--dominican-blue); font-weight: 600;">+1 (829) 713-0978</a>
+      </div>
+
+      <div class="contact-method">
+        <span class="contact-icon">📧</span>
+        <a href="mailto:mileisy@dominicanfoodrm.com" style="color: var(--dominican-blue); font-weight: 600;">mileisy@dominicanfoodrm.com</a>
+      </div>
+
+      <div class="contact-method">
+        <span class="contact-icon">📌</span>
+        <span>Serving Sosua, Puerto Plata & Surrounding Areas</span>
+      </div>
+
+      <p style="margin-top: 1.5rem; font-style: italic; color: var(--dominican-red);">
+        We travel from the local area and offer overnight stays for 24-hour services!
+      </p>
+
+      <button class="gold-btn" style="margin-top: 2rem;">Book Consultation</button>
+    </div>
+  </section>
+
+  <script>
+    function showScreen(id) {
+      // Update active navigation button
+      document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.currentTarget.classList.add('active');
+
+      // Show selected screen
+      document.querySelectorAll('.luxury-screen').forEach(screen => {
+        screen.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+
+      // Scroll to top
+      window.scrollTo(0, 0);
+    }
+  </script>
+</body>
+</html>
