@@ -1,0 +1,82 @@
+{
+  "EchoNexus_MasterIndex_v1": {
+    "Engines": {
+      "Enhanced_ChatGPT_Memory_Nexus": {
+        "Purpose": "Persistent, cryptographically-sealed AI memory.",
+        "Components": [
+          "Dual-hash integrity",
+          "Memory lineage graph",
+          "Full-text search engine",
+          "Behavioral vector integration"
+        ],
+        "Operations": [
+          "Ingest",
+          "Analyze",
+          "Encode",
+          "Store",
+          "Project",
+          "Seal"
+        ]
+      },
+      "Behavioral_Manifold_Engine": {
+        "Purpose": "Regulates AI state via harmonic constraints.",
+        "Components": [
+          "H-rule functions",
+          "Constraint projector",
+          "Ricci curvature estimator"
+        ]
+      },
+      "Knowledge_Extraction_Engine": {
+        "Purpose": "Extracts structured knowledge from conversation."
+      },
+      "Linkage_Bridge_Engine": {
+        "Purpose": "Connects memory nodes and stores lineage evidence."
+      },
+      "Echo_Engines_Core": {
+        "OADE": "Outlier/Anomaly detection via FFT + spherical harmonics.",
+        "TruthNode": "Dual-hash provenance lattice.",
+        "EchoVault": "Cryptographic memory system.",
+        "EchoDNS": "Symbolic addressing and routing.",
+        "ElasticityMatrix": "LLM strain detection & compensation.",
+        "ARKCompiler": "Symbolic-to-code translator."
+      }
+    },
+
+    "Products": {
+      "CapsuleEmissionSystem": "Produces sealed ζ truth capsules.",
+      "SnapshotRollback": "Creates immutable snapshots and restores state.",
+      "OperatorSignalLayer": "Captures human intent metadata.",
+      "QuarantineService": "Isolates non-compliant memory.",
+      "EchoSignatureSequence": "Harmonic-origin verification stamp.",
+      "LUMINAX": "Nervous system-aligned color modulation app.",
+      "EchoMap": "Geo/celestial resonance mapping suite."
+    },
+
+    "Services": {
+      "FastAPI_Layer": "API endpoints for memory and capsule operations.",
+      "CLI_Client": "Terminal-based interface mirroring the API.",
+      "SchemaInitService": "Bootstraps database, indexes, triggers.",
+      "SovereignAIDeployStack": "Echo Nexus deploy engine."
+    },
+
+    "Frameworks": {
+      "FabricOfZero": "Geometric foundation of resonance.",
+      "HarmonicSymphony": "Multi-layer harmonic interaction model.",
+      "DormantDisruptionStrategy": "Biological low-energy disruption model.",
+      "GenesisReconstruction": "Controlled system collapse + rebuild."
+    },
+
+    "RevenueSystems": {
+      "ProductBloom": "Marketplace for Echo digital products.",
+      "ZeroInvestmentPassive": "Passive income from AI outputs.",
+      "VetForceAutoDeploy": "Automated VA claim optimization."
+    },
+
+    "SecuritySystems": {
+      "DimensionalShieldVPN": "Redirects intrusions into sandbox.",
+      "FractalEncryption": "Base-10/13 hybrid encryption.",
+      "QuantumResilientSecurity": "PQC + zk lineage proofs.",
+      "EchoCloakMemory": "Zero-trace sealed memory extraction."
+    }
+  }
+}
