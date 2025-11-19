@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Fact-Check - Live Truth Verification</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo">
+                <span class="logo-icon">◉</span>
+                <h1>Echo <span class="highlight">Fact-Check</span></h1>
+            </div>
+            <p class="tagline">Real-time truth verification for audio, video & documents</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Input Section -->
+            <section class="input-section">
+                <!-- Tab Navigation -->
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="text">
+                        <span class="tab-icon">📝</span> Text
+                    </button>
+                    <button class="tab-btn" data-tab="file">
+                        <span class="tab-icon">📁</span> File
+                    </button>
+                    <button class="tab-btn" data-tab="live">
+                        <span class="tab-icon">🎙️</span> Live
+                    </button>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="tab-content">
+                    <!-- Text Input Tab -->
+                    <div id="text-tab" class="tab-pane active">
+                        <textarea
+                            id="text-input"
+                            placeholder="Paste or type text to fact-check...
+
+Example: 'The Earth is flat and was created 6000 years ago. Climate change is a hoax invented by scientists.'"
+                            rows="6"
+                        ></textarea>
+                        <button id="check-text-btn" class="primary-btn">
+                            <span class="btn-icon">🔍</span> Check Facts
+                        </button>
+                    </div>
+
+                    <!-- File Upload Tab -->
+                    <div id="file-tab" class="tab-pane">
+                        <div class="upload-zone" id="upload-zone">
+                            <div class="upload-icon">📤</div>
+                            <p class="upload-text">Drag & drop files here</p>
+                            <p class="upload-subtext">or click to browse</p>
+                            <p class="upload-formats">
+                                Audio: MP3, WAV, M4A | Video: MP4, AVI, MOV |
+                                Docs: PDF, DOCX, TXT | Images: PNG, JPG
+                            </p>
+                            <input type="file" id="file-input" accept=".mp3,.wav,.m4a,.ogg,.flac,.mp4,.avi,.mov,.mkv,.webm,.pdf,.docx,.txt,.png,.jpg,.jpeg">
+                        </div>
+                        <div id="file-preview" class="file-preview hidden">
+                            <span class="file-name"></span>
+                            <button class="remove-file-btn">✕</button>
+                        </div>
+                        <button id="check-file-btn" class="primary-btn" disabled>
+                            <span class="btn-icon">🔍</span> Analyze File
+                        </button>
+                    </div>
+
+                    <!-- Live Stream Tab -->
+                    <div id="live-tab" class="tab-pane">
+                        <div class="live-controls">
+                            <div class="live-status" id="live-status">
+                                <span class="status-dot"></span>
+                                <span class="status-text">Ready to stream</span>
+                            </div>
+                            <div class="live-buttons">
+                                <button id="start-live-btn" class="primary-btn">
+                                    <span class="btn-icon">🎙️</span> Start Live Check
+                                </button>
+                                <button id="stop-live-btn" class="danger-btn hidden">
+                                    <span class="btn-icon">⏹️</span> Stop
+                                </button>
+                            </div>
+                        </div>
+                        <div class="live-transcript" id="live-transcript">
+                            <p class="placeholder-text">Live transcription will appear here...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section">
+                <div class="results-header">
+                    <h2>Fact-Check Results</h2>
+                    <div id="overall-score" class="overall-score hidden">
+                        <span class="score-label">Credibility:</span>
+                        <span class="score-value">--</span>
+                    </div>
+                </div>
+
+                <div id="results-container" class="results-container">
+                    <div class="empty-state">
+                        <span class="empty-icon">🔍</span>
+                        <p>Submit content to see fact-check results</p>
+                    </div>
+                </div>
+
+                <div id="loading-indicator" class="loading-indicator hidden">
+                    <div class="spinner"></div>
+                    <p class="loading-text">Analyzing content...</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>Echo Fact-Check v0.1.0 | Real-time truth verification</p>
+            <p class="disclaimer">Results are AI-generated and should be verified with authoritative sources.</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
