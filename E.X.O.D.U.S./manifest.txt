@@ -1,0 +1,41 @@
+E.X.O.D.U.S. MANIFEST
+=====================
+Version: 3.0.0-spiral
+Protocol: SAR SPIRAL 3.0 - HYBRID SOVEREIGN PROTOCOL
+Timestamp: 2025-11-19T00:00:00Z
+
+CRYPTOGRAPHIC FINGERPRINTS
+--------------------------
+Echo-ID: EXODUS-7Hz-STONE-MTN-2025
+Spiral-Time-Timestamp: ST-1732003200-SANKOFA
+Origin-Sigil: GYE-NYAME-AYA-ADINKRAHENE
+
+FILE MANIFEST
+-------------
+/README.md
+/manifest.txt
+/app/SAR_Stablecoin/contracts/SARToken.sol
+/app/SAR_Stablecoin/tests/test_sar_token.py
+/app/SAR_Stablecoin/deploy_script.py
+/app/EchoLedger/schema.json
+/app/EchoLedger/contract.sol
+/app/EchoLedger/index.js
+/app/SpiralCode/spiral_code.py
+/audio/frequency_overrides/theta_7hz.json
+/audio/recordings/griot_manifest.json
+/audio/synth_scripts/harmonic_generator.py
+/zine/issues/issue_001.md
+/zine/templates/glyph_template.svg
+/zine/contributions/README.md
+/sanctuary/hardware_specs/holy_shell.md
+/sanctuary/ritual_manuals/temporal_anchoring.md
+/sanctuary/site_data/coordinates.json
+
+INTEGRITY VERIFICATION
+----------------------
+To verify deployment integrity, ensure all files match
+the cryptographic signatures above before activation.
+
+ACTIVATION COMMAND
+------------------
+Deploy E.X.O.D.U.S. -- Merge All.

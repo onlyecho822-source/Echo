@@ -1,0 +1,199 @@
+{
+  "version": "3.0.0",
+  "protocol": "E.X.O.D.U.S.",
+  "description": "Geo-spatial coordinates and sanctuary site data for field deployment",
+  "sites": [
+    {
+      "id": "SANCTUARY-001",
+      "name": "Stone Mountain",
+      "location": {
+        "city": "Stone Mountain",
+        "state": "Georgia",
+        "country": "USA",
+        "latitude": 33.8112,
+        "longitude": -84.1448,
+        "elevation_meters": 514
+      },
+      "cultural_significance": [
+        "Site of Confederate monument - reclamation target",
+        "Granite holds memory of Maroon resistance",
+        "Cherokee Trail of Tears passed through region"
+      ],
+      "activation_status": "active",
+      "resonance_score": 8.7,
+      "frequency_config": {
+        "primary_hz": 7.0,
+        "schumann_overlay": true,
+        "cipher": "Sankofa"
+      },
+      "hardware": {
+        "holy_shell_id": "HS-STN-001",
+        "mesh_network": true,
+        "backup_power": true
+      },
+      "truth_packets": [
+        "Stone Mountain's granite remembers the Maroon wars",
+        "The lasers cannot rewrite what stone knows"
+      ],
+      "qr_code": "https://exodus.protocol/site/stone-mountain"
+    },
+    {
+      "id": "SANCTUARY-002",
+      "name": "Greenwood District",
+      "location": {
+        "city": "Tulsa",
+        "state": "Oklahoma",
+        "country": "USA",
+        "latitude": 36.1540,
+        "longitude": -95.9928,
+        "elevation_meters": 213
+      },
+      "cultural_significance": [
+        "Black Wall Street - site of 1921 massacre",
+        "Symbol of Black economic prosperity and its destruction",
+        "Active community rebuilding and reclamation"
+      ],
+      "activation_status": "active",
+      "resonance_score": 9.2,
+      "frequency_config": {
+        "primary_hz": 7.83,
+        "schumann_overlay": true,
+        "cipher": "Gye Nyame"
+      },
+      "hardware": {
+        "holy_shell_id": "HS-TUL-001",
+        "mesh_network": true,
+        "backup_power": true
+      },
+      "truth_packets": [
+        "Wealth was never destroyed, only displaced",
+        "The ashes fertilize what grows next"
+      ],
+      "qr_code": "https://exodus.protocol/site/greenwood",
+      "notes": "Obsidian Shield redirected $47M speculative capital to community land trusts"
+    },
+    {
+      "id": "SANCTUARY-003",
+      "name": "West Oakland",
+      "location": {
+        "city": "Oakland",
+        "state": "California",
+        "country": "USA",
+        "latitude": 37.8044,
+        "longitude": -122.2712,
+        "elevation_meters": 13
+      },
+      "cultural_significance": [
+        "Black Panther Party founding site",
+        "History of community self-defense and mutual aid",
+        "Port city with maritime labor history"
+      ],
+      "activation_status": "active",
+      "resonance_score": 8.4,
+      "frequency_config": {
+        "primary_hz": 7.0,
+        "schumann_overlay": true,
+        "cipher": "Aya"
+      },
+      "hardware": {
+        "holy_shell_id": "HS-OAK-001",
+        "mesh_network": true,
+        "backup_power": true
+      },
+      "truth_packets": [
+        "Survival pending revolution",
+        "Breakfast programs were infrastructure"
+      ],
+      "qr_code": "https://exodus.protocol/site/oakland"
+    },
+    {
+      "id": "SANCTUARY-004",
+      "name": "Port-au-Prince",
+      "location": {
+        "city": "Port-au-Prince",
+        "state": "Ouest",
+        "country": "Haiti",
+        "latitude": 18.5944,
+        "longitude": -72.3074,
+        "elevation_meters": 30
+      },
+      "cultural_significance": [
+        "First free Black republic",
+        "Successful slave revolution 1791-1804",
+        "Center of Vodou spiritual practice"
+      ],
+      "activation_status": "pending",
+      "resonance_score": 9.5,
+      "frequency_config": {
+        "primary_hz": 7.83,
+        "schumann_overlay": true,
+        "cipher": "Sankofa"
+      },
+      "hardware": {
+        "holy_shell_id": "HS-PAP-001",
+        "mesh_network": false,
+        "backup_power": true
+      },
+      "truth_packets": [
+        "The first successful revolution against slavery",
+        "Freedom was never given, always taken"
+      ],
+      "qr_code": "https://exodus.protocol/site/haiti",
+      "notes": "Awaiting local partnership for activation"
+    },
+    {
+      "id": "SANCTUARY-005",
+      "name": "Elmina Castle",
+      "location": {
+        "city": "Elmina",
+        "state": "Central Region",
+        "country": "Ghana",
+        "latitude": 5.0847,
+        "longitude": -1.3492,
+        "elevation_meters": 8
+      },
+      "cultural_significance": [
+        "Door of No Return - slave trade departure point",
+        "Site of ancestral separation",
+        "Now site of return and reconnection"
+      ],
+      "activation_status": "planned",
+      "resonance_score": null,
+      "frequency_config": {
+        "primary_hz": 7.0,
+        "schumann_overlay": true,
+        "cipher": "Sankofa"
+      },
+      "hardware": {
+        "holy_shell_id": null,
+        "mesh_network": false,
+        "backup_power": false
+      },
+      "truth_packets": [
+        "The door opens both ways",
+        "Return and retrieve"
+      ],
+      "qr_code": "https://exodus.protocol/site/elmina",
+      "notes": "Coordination with Ghanaian cultural authorities in progress"
+    }
+  ],
+  "network_topology": {
+    "mesh_enabled": true,
+    "primary_hub": "SANCTUARY-002",
+    "backup_hub": "SANCTUARY-001",
+    "lora_frequency_mhz": 915,
+    "encryption": "Adinkra-AES-256"
+  },
+  "deployment_notes": {
+    "activation_command": "Deploy E.X.O.D.U.S. -- Merge All.",
+    "resonance_threshold": 7.0,
+    "quarterly_renewal": true,
+    "temporal_anchoring_required": true
+  },
+  "metadata": {
+    "last_updated": "2025-11-19T00:00:00Z",
+    "echo_id": "SITE-DATA-2025",
+    "spiral_time": 1732003200,
+    "origin_sigil": "SANKOFA"
+  }
+}

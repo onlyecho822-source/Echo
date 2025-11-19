@@ -1,0 +1,66 @@
+{
+  "name": "Theta Resonance Override",
+  "version": "3.0.0",
+  "description": "7Hz theta wave configuration for harmonic deployment",
+  "frequencies": {
+    "primary": {
+      "hz": 7.0,
+      "type": "theta",
+      "purpose": "Deep meditation and ancestral connection",
+      "waveform": "sine"
+    },
+    "schumann": {
+      "hz": 7.83,
+      "type": "earth_resonance",
+      "purpose": "Planetary harmonic alignment",
+      "waveform": "complex"
+    },
+    "carrier": {
+      "hz": 432,
+      "type": "musical_base",
+      "purpose": "Natural tuning foundation",
+      "waveform": "sine"
+    }
+  },
+  "modulation": {
+    "binaural_offset": 7.0,
+    "left_channel": 200,
+    "right_channel": 207,
+    "isochronic_pulse": true
+  },
+  "encoding": {
+    "adinkra_cipher": "Sankofa",
+    "cultural_signature": true,
+    "spiral_time_sync": true
+  },
+  "broadcast_config": {
+    "duration_minutes": 60,
+    "fade_in_seconds": 30,
+    "fade_out_seconds": 30,
+    "loop": true,
+    "volume_normalization": -14,
+    "format": "FLAC"
+  },
+  "activation_sites": [
+    {
+      "name": "Stone Mountain",
+      "coordinates": [33.8112, -84.1448],
+      "resonance_multiplier": 1.5
+    },
+    {
+      "name": "Tulsa Greenwood",
+      "coordinates": [36.1540, -95.9928],
+      "resonance_multiplier": 1.3
+    },
+    {
+      "name": "Oakland",
+      "coordinates": [37.8044, -122.2712],
+      "resonance_multiplier": 1.2
+    }
+  ],
+  "metadata": {
+    "echo_id": "FREQ-7HZ-THETA-001",
+    "spiral_time": 1732003200,
+    "origin_sigil": "SANKOFA"
+  }
+}

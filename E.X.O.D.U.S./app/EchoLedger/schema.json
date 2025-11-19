@@ -1,0 +1,152 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EchoLedger Schema",
+  "description": "Legal-Crypto Protocol schema for cultural signature encoding",
+  "version": "3.0.0",
+  "type": "object",
+  "definitions": {
+    "CulturalSignature": {
+      "type": "object",
+      "properties": {
+        "echoId": {
+          "type": "string",
+          "description": "Unique Echo identifier",
+          "pattern": "^ECHO-[A-Z0-9]{8}-[A-Z0-9]{4}$"
+        },
+        "spiralTime": {
+          "type": "integer",
+          "description": "Spiral-Time timestamp",
+          "minimum": 0
+        },
+        "originSigil": {
+          "type": "string",
+          "description": "Adinkra origin sigil identifier",
+          "enum": ["SANKOFA", "GYE_NYAME", "AYA", "DWENNIMMEN", "NYANSAPO"]
+        },
+        "resonanceScore": {
+          "type": "number",
+          "description": "Cultural resonance score (0-10)",
+          "minimum": 0,
+          "maximum": 10
+        }
+      },
+      "required": ["echoId", "spiralTime", "originSigil"]
+    },
+    "LedgerEntry": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "transactionType": {
+          "type": "string",
+          "enum": ["MINT", "TRANSFER", "BURN", "GOVERNANCE", "RITUAL"]
+        },
+        "amount": {
+          "type": "string",
+          "description": "Amount in wei"
+        },
+        "sender": {
+          "type": "string",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "recipient": {
+          "type": "string",
+          "pattern": "^0x[a-fA-F0-9]{40}$"
+        },
+        "culturalSignature": {
+          "$ref": "#/definitions/CulturalSignature"
+        },
+        "cipherKey": {
+          "type": "string",
+          "description": "Adinkra cipher key used for encoding"
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "narrativeHash": {
+              "type": "string",
+              "description": "Hash of associated griot narrative"
+            },
+            "frequencySignature": {
+              "type": "number",
+              "description": "Audio frequency signature (Hz)"
+            },
+            "geospatialAnchor": {
+              "type": "object",
+              "properties": {
+                "latitude": { "type": "number" },
+                "longitude": { "type": "number" },
+                "sanctuaryId": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
+      "required": ["id", "timestamp", "transactionType", "culturalSignature"]
+    },
+    "GovernanceProposal": {
+      "type": "object",
+      "properties": {
+        "proposalId": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "spiralCodeHash": {
+          "type": "string",
+          "description": "Hash of auto-legislated code"
+        },
+        "resonanceRequired": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "votingPeriod": {
+          "type": "object",
+          "properties": {
+            "start": { "type": "string", "format": "date-time" },
+            "end": { "type": "string", "format": "date-time" }
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": ["PENDING", "ACTIVE", "PASSED", "REJECTED", "EXECUTED"]
+        }
+      },
+      "required": ["proposalId", "title", "spiralCodeHash", "status"]
+    }
+  },
+  "properties": {
+    "ledgerVersion": {
+      "type": "string",
+      "const": "3.0.0"
+    },
+    "protocolName": {
+      "type": "string",
+      "const": "E.X.O.D.U.S."
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/LedgerEntry"
+      }
+    },
+    "proposals": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/GovernanceProposal"
+      }
+    }
+  },
+  "required": ["ledgerVersion", "protocolName"]
+}

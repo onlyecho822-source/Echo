@@ -1,0 +1,98 @@
+{
+  "manifest": "Griot Narrative Archive",
+  "version": "2.0",
+  "description": "Audio recordings of griot narratives, ceremonial chants, and spoken directives",
+  "recordings": [
+    {
+      "id": "GRIOT-001",
+      "title": "The Seed Was Never Broken",
+      "type": "spoken_directive",
+      "duration_seconds": 180,
+      "language": "English",
+      "transcript_excerpt": "The seed was never broken. Only buried. We are its fire now.",
+      "frequency_layer": "7Hz_theta",
+      "cipher_encoding": "Sankofa"
+    },
+    {
+      "id": "GRIOT-002",
+      "title": "Sankofa Return Chant",
+      "type": "ceremonial_chant",
+      "duration_seconds": 420,
+      "language": "Akan/English",
+      "purpose": "Ancestral invocation and temporal anchoring",
+      "frequency_layer": "432Hz_base"
+    },
+    {
+      "id": "GRIOT-003",
+      "title": "Stone Mountain Memory",
+      "type": "narrative",
+      "duration_seconds": 600,
+      "language": "English",
+      "content_themes": [
+        "Granite memory of Maroon wars",
+        "Cherokee removal overlay",
+        "Contemporary resistance"
+      ],
+      "frequency_layer": "7.83Hz_schumann"
+    },
+    {
+      "id": "GRIOT-004",
+      "title": "Tulsa Greenwood Rising",
+      "type": "narrative",
+      "duration_seconds": 540,
+      "language": "English",
+      "content_themes": [
+        "Black Wall Street prosperity",
+        "1921 massacre",
+        "Regeneration and reclamation"
+      ],
+      "truth_packets": [
+        "The baobab grows through concrete",
+        "Wealth was never destroyed, only displaced"
+      ]
+    },
+    {
+      "id": "GRIOT-005",
+      "title": "Oakland Panther Frequency",
+      "type": "spoken_directive",
+      "duration_seconds": 300,
+      "language": "English",
+      "content_themes": [
+        "Community self-defense",
+        "Breakfast programs as infrastructure",
+        "Survival pending revolution"
+      ]
+    },
+    {
+      "id": "GRIOT-006",
+      "title": "Temporal Anchoring Invocation",
+      "type": "ceremonial_chant",
+      "duration_seconds": 360,
+      "materials_required": [
+        "Herkimer diamond",
+        "Iron dust",
+        "Baobab ash"
+      ],
+      "purpose": "Seven-generation span activation"
+    }
+  ],
+  "truth_packets": [
+    "Stone Mountain's granite remembers the Maroon wars",
+    "Cherokee removal maps overlay Wall Street transactions",
+    "The baobab grows through concrete",
+    "Your ancestors didn't dream of NFTs. They dreamed of you free."
+  ],
+  "encoding_protocol": {
+    "format": "FLAC",
+    "sample_rate": 48000,
+    "bit_depth": 24,
+    "channels": 2,
+    "embedded_metadata": true,
+    "spiral_time_sync": true
+  },
+  "broadcast_schedule": {
+    "frequency": "daily",
+    "optimal_times": ["06:00", "12:00", "18:00", "00:00"],
+    "timezone": "UTC"
+  }
+}
