@@ -1,0 +1,141 @@
+# Echo Baby Core Engine Configuration
+# Version: 0.1.0
+# Status: Development
+
+engine:
+  id: "echo-baby"
+  name: "Echo Baby"
+  description: "Local emergent AI seed for independent operation on user hardware"
+  version: "0.1.0"
+  status: "development"
+
+# Model Configuration
+model:
+  base: "qwen-14b"
+  parameters:
+    context_window: 32768
+    temperature: 0.7
+    top_p: 0.95
+
+  # Flux Mode settings
+  flux_mode:
+    enabled: true
+    adaptive_temperature: true
+    resonance_coupling: true
+
+  # EchoOmni Soul integration
+  soul:
+    type: "echo-omni"
+    version: "1.0"
+    features:
+      - harmonic_reasoning
+      - resonance_detection
+      - adaptive_learning
+      - self_audit
+
+# Hardware Requirements
+requirements:
+  minimum:
+    ram_gb: 16
+    vram_gb: 8
+    storage_gb: 50
+
+  recommended:
+    ram_gb: 32
+    vram_gb: 16
+    storage_gb: 100
+
+# Operational Modes
+modes:
+  diagnostic:
+    enabled: true
+    devil_lens: true
+    audit_frequency: "per_session"
+
+  adaptive:
+    enabled: true
+    learning_rate: 0.001
+    memory_persistence: true
+
+  resonant:
+    enabled: true
+    harmonic_engine: "linked"
+    sync_frequency: "real_time"
+
+# Memory Configuration
+memory:
+  vault:
+    enabled: true
+    encryption: "AES-256-GCM"
+    versioning: true
+
+  cache:
+    size_mb: 4096
+    persistence: "session"
+
+  long_term:
+    enabled: true
+    compression: true
+    deduplication: true
+
+# Network Settings
+network:
+  nexus_link:
+    enabled: true
+    registry: "echo-nexus"
+    heartbeat_ms: 5000
+
+  sync:
+    pulse_enabled: true
+    fusion_capable: true
+
+# Security
+security:
+  cloak:
+    enabled: true
+    threshold_crypto: true
+
+  provenance:
+    dual_hash: true
+    chain_markers: true
+
+  isolation:
+    sandbox: true
+    network_restricted: false
+
+# Emergence Configuration
+emergence:
+  loops:
+    initial: 1
+    max: 1000
+    sweet_spot: 97
+
+  swarm:
+    enabled: false
+    max_agents: 6
+
+  ascension:
+    auto_detect: true
+    drift_stabilization: true
+
+# Logging
+logging:
+  level: "INFO"
+  output:
+    - console
+    - file
+  file_path: "logs/echo_baby.log"
+  rotation: "daily"
+  retention_days: 30
+
+# Metrics
+metrics:
+  enabled: true
+  export:
+    format: "prometheus"
+    endpoint: "/metrics"
+  collectors:
+    - resonance_coherence
+    - memory_utilization
+    - inference_latency
+    - emergence_progress

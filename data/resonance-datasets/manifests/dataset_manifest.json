@@ -1,0 +1,110 @@
+{
+  "manifest_version": "1.0",
+  "created": "2025-11-19T00:00:00Z",
+  "author": "Nathan Poinsette",
+  "datasets": [
+    {
+      "id": "baseline-6agent-v1",
+      "name": "6-Agent Swarm Baseline",
+      "path": "calibration/baseline_6agent.json",
+      "version": "1.0.0",
+      "status": "pending",
+      "description": "Baseline resonance patterns for 6-agent swarm configuration",
+      "parameters": {
+        "agents": 6,
+        "loops": 200,
+        "sample_rate": 1000
+      },
+      "checksums": {
+        "sha256": null,
+        "blake3": null
+      }
+    },
+    {
+      "id": "single-agent-ref-v1",
+      "name": "Single Agent Reference",
+      "path": "calibration/single_agent_reference.json",
+      "version": "1.0.0",
+      "status": "pending",
+      "description": "Reference patterns for single agent operation",
+      "parameters": {
+        "agents": 1,
+        "loops": 500,
+        "sample_rate": 1000
+      },
+      "checksums": {
+        "sha256": null,
+        "blake3": null
+      }
+    },
+    {
+      "id": "phb-fundamentals-v1",
+      "name": "Percussion-Harmonic Base Fundamentals",
+      "path": "harmonics/percussion_harmonic_base.json",
+      "version": "1.0.0",
+      "status": "pending",
+      "description": "Fundamental frequencies from percussion-harmonic base analysis",
+      "parameters": {
+        "frequency_range": "20-20000Hz",
+        "resolution": "0.1Hz"
+      },
+      "checksums": {
+        "sha256": null,
+        "blake3": null
+      }
+    },
+    {
+      "id": "multistate-trans-v1",
+      "name": "MultiState Transitions",
+      "path": "harmonics/multistate_transitions.json",
+      "version": "1.0.0",
+      "status": "pending",
+      "description": "State transition recordings for MultiState Resonance Model",
+      "parameters": {
+        "states": 5,
+        "transitions_recorded": 1000
+      },
+      "checksums": {
+        "sha256": null,
+        "blake3": null
+      }
+    },
+    {
+      "id": "loop-convergence-200-v1",
+      "name": "200-Loop Convergence Data",
+      "path": "emergence/loop_convergence_200.json",
+      "version": "1.0.0",
+      "status": "pending",
+      "description": "Convergence patterns from 200-loop stability tests",
+      "parameters": {
+        "loops": 200,
+        "agents": 6,
+        "metrics": ["coherence", "drift", "resonance_sync"]
+      },
+      "checksums": {
+        "sha256": null,
+        "blake3": null
+      }
+    },
+    {
+      "id": "drift-stabilization-v1",
+      "name": "Drift Stabilization Patterns",
+      "path": "emergence/drift_stabilization.json",
+      "version": "1.0.0",
+      "status": "pending",
+      "description": "Drift patterns around loop 97 stabilization point",
+      "parameters": {
+        "focus_range": "90-105",
+        "resolution": 1
+      },
+      "checksums": {
+        "sha256": null,
+        "blake3": null
+      }
+    }
+  ],
+  "validation": {
+    "required_fields": ["id", "name", "path", "version", "checksums"],
+    "checksum_algorithms": ["sha256", "blake3"]
+  }
+}
