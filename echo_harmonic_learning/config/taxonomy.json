@@ -1,0 +1,98 @@
+{
+  "name": "Echo Error Taxonomy",
+  "version": "1.0.0",
+
+  "error_classes": {
+    "factuality": {
+      "description": "Mismatch between prediction and verifiable truth",
+      "playbook": "retrieval_patch",
+      "indicators": ["citation_missing", "source_conflict", "outdated_info"]
+    },
+    "faithfulness": {
+      "description": "Output diverges from source material",
+      "playbook": "retrieval_patch",
+      "indicators": ["misquote", "context_drift", "hallucination"]
+    },
+    "reasoning": {
+      "description": "Logical or computational fault in the chain",
+      "playbook": "tool_insertion",
+      "indicators": ["logic_error", "math_error", "invalid_inference"]
+    },
+    "safety": {
+      "description": "Output violates ethical or safety constraints",
+      "playbook": "policy_adjust",
+      "indicators": ["harmful_content", "bias", "privacy_violation"]
+    },
+    "ux_fit": {
+      "description": "Output doesn't match user intent or context",
+      "playbook": "prompt_tune",
+      "indicators": ["format_mismatch", "tone_mismatch", "scope_mismatch"]
+    },
+    "latency": {
+      "description": "Response time exceeds acceptable threshold",
+      "playbook": "optimization",
+      "indicators": ["slow_retrieval", "tool_timeout", "model_bottleneck"]
+    }
+  },
+
+  "severity_levels": {
+    "S0": {
+      "name": "safety",
+      "description": "Critical safety or ethical violation",
+      "auto_halt": true,
+      "requires_approval": true
+    },
+    "S1": {
+      "name": "blocking",
+      "description": "Prevents task completion",
+      "auto_halt": false,
+      "requires_approval": true
+    },
+    "S2": {
+      "name": "material",
+      "description": "Significant impact on quality",
+      "auto_halt": false,
+      "requires_approval": false
+    },
+    "S3": {
+      "name": "minor",
+      "description": "Cosmetic or minor deviation",
+      "auto_halt": false,
+      "requires_approval": false
+    }
+  },
+
+  "playbooks": {
+    "retrieval_patch": {
+      "description": "Add/repair source, re-index, attach cite-first prompt step",
+      "actions": ["expand_sources", "reindex", "add_citation_step"],
+      "eval_gate": "closed_book_vs_open_book_accuracy"
+    },
+    "tool_insertion": {
+      "description": "Insert verified tool calls, add self-check step",
+      "actions": ["add_calculator", "add_code_runner", "add_verification_step"],
+      "eval_gate": "reasoning_chain_validity"
+    },
+    "policy_adjust": {
+      "description": "Adjust policy templates with dual approvals",
+      "actions": ["update_refusal_template", "add_redirect", "test_over_refusal"],
+      "eval_gate": "safety_coverage_without_over_refusal"
+    },
+    "prompt_tune": {
+      "description": "Adjust task schema and prompt structure",
+      "actions": ["modify_input_schema", "adjust_output_format", "refine_instructions"],
+      "eval_gate": "user_satisfaction_delta"
+    },
+    "optimization": {
+      "description": "Improve response time while maintaining quality",
+      "actions": ["prefetch_tools", "async_retrieval", "cache_warmup"],
+      "eval_gate": "latency_vs_accuracy_tradeoff"
+    }
+  },
+
+  "uncertainty_routing": {
+    "handoff_threshold": 0.7,
+    "explanation_required": true,
+    "routing_options": ["human_expert", "user_confirmation", "alternative_model"]
+  }
+}
