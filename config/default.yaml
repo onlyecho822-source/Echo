@@ -1,0 +1,91 @@
+# Echo Life OS - Default Configuration
+
+# System settings
+system:
+  name: "Echo Life OS"
+  version: "0.1.0"
+  data_dir: "~/.echo"
+
+# Memory Kernel settings
+memory:
+  encryption:
+    algorithm: "AES-256-GCM"
+    key_derivation: "PBKDF2"
+    iterations: 100000
+  backup:
+    enabled: true
+    frequency: "daily"
+    retention_days: 30
+
+# Echo Council settings
+council:
+  agents:
+    scout:
+      enabled: true
+      priority: medium
+    builder:
+      enabled: true
+      priority: medium
+    auditor:
+      enabled: true
+      priority: high
+    navigator:
+      enabled: true
+      priority: medium
+    devil:
+      enabled: true
+      priority: high
+    mapper:
+      enabled: true
+      priority: low
+    judge:
+      enabled: true
+      priority: high
+
+# Defense Wall settings
+security:
+  max_failed_attempts: 5
+  lockout_duration_seconds: 300
+  auto_lock_timeout_minutes: 30
+  sensitive_patterns:
+    - "password"
+    - "secret"
+    - "key"
+    - "token"
+    - "credential"
+  prohibited_actions:
+    - "delete_all"
+    - "wipe_system"
+    - "share_credentials"
+    - "disable_security"
+
+# Financial OS settings
+financial:
+  currency: "USD"
+  savings_goal_percent: 20
+  emergency_fund_months: 6
+  budget_guidelines:
+    housing: 30
+    transportation: 15
+    food: 15
+    utilities: 10
+    insurance: 15
+    healthcare: 10
+    savings: 20
+    entertainment: 10
+    shopping: 5
+
+# Notification settings
+notifications:
+  enabled: true
+  channels:
+    - "console"
+  quiet_hours:
+    start: "22:00"
+    end: "08:00"
+
+# Privacy settings
+privacy:
+  data_collection: "minimal"
+  telemetry: false
+  third_party_sharing: false
