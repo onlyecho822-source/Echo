@@ -1,0 +1,119 @@
+{
+  "manifestVersion": "1.0.0",
+  "stableId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "contentHash": {
+    "algorithm": "SHA-256",
+    "value": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+  },
+  "fileMetadata": {
+    "originalFilename": "artifact-2024-sample-xrf-001.csv",
+    "mimeType": "text/csv",
+    "sizeBytes": 245678,
+    "encoding": "UTF-8"
+  },
+  "capture": {
+    "timestamp": "2024-03-15T14:32:00Z",
+    "operator": {
+      "id": "op-jsmith-2024",
+      "name": "Dr. Jane Smith",
+      "role": "technician",
+      "organization": "Regional Conservation Laboratory"
+    },
+    "method": {
+      "type": "instrument",
+      "instrumentId": "XRF-BRUKER-M6-001",
+      "instrumentModel": "Bruker M6 Jetstream",
+      "protocolId": "proto-xrf-standard-2024-v1",
+      "parameters": {
+        "voltage_kV": 50,
+        "current_uA": 600,
+        "filter": "Al 100um",
+        "dwell_time_ms": 100,
+        "spot_size_um": 100,
+        "atmosphere": "air"
+      }
+    },
+    "location": {
+      "facility": "Regional Conservation Laboratory",
+      "room": "Analytical Suite B",
+      "coordinates": {
+        "latitude": 40.7128,
+        "longitude": -74.0060
+      }
+    },
+    "sourceArtifact": "physical-artifact-2024-0042"
+  },
+  "custody": [
+    {
+      "timestamp": "2024-03-15T14:32:00Z",
+      "action": "created",
+      "party": {
+        "id": "op-jsmith-2024",
+        "name": "Dr. Jane Smith",
+        "role": "technician",
+        "organization": "Regional Conservation Laboratory"
+      },
+      "notes": "Initial XRF scan of artifact surface, area A",
+      "signature": "MEUCIQDKZokqnCj..."
+    },
+    {
+      "timestamp": "2024-03-15T15:00:00Z",
+      "action": "verified",
+      "party": {
+        "id": "val-mbrown-2024",
+        "name": "Dr. Michael Brown",
+        "role": "validator",
+        "organization": "Regional Conservation Laboratory"
+      },
+      "notes": "Verified instrument calibration and scan parameters",
+      "signature": "MEUCIQCxYzAb..."
+    },
+    {
+      "timestamp": "2024-03-15T16:30:00Z",
+      "action": "sealed",
+      "party": {
+        "id": "cust-archive-rcl",
+        "name": "RCL Digital Archive",
+        "role": "custodian",
+        "organization": "Regional Conservation Laboratory"
+      },
+      "notes": "Sealed into Aletheia vault with trusted timestamp",
+      "signature": "MEUCIQDpQwXk..."
+    }
+  ],
+  "consent": {
+    "ledgerEntryId": "consent-2024-artifact-0042",
+    "scope": ["research", "publication", "educational"],
+    "restrictions": [
+      "Attribution required",
+      "No commercial use without separate agreement"
+    ],
+    "stewardApprovalRequired": false,
+    "dataSubjectType": "public-domain"
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "keyId": "aletheia-seal-key-2024-001",
+    "value": "base64-encoded-signature-here...",
+    "timestamp": "2024-03-15T16:30:00Z",
+    "trustedTimestamp": {
+      "tsaUrl": "https://freetsa.org/tsr",
+      "token": "base64-encoded-rfc3161-token..."
+    }
+  },
+  "annotations": [
+    {
+      "key": "artifact-type",
+      "value": "pigment-analysis",
+      "addedBy": "op-jsmith-2024",
+      "addedAt": "2024-03-15T14:35:00Z"
+    },
+    {
+      "key": "project",
+      "value": "provenance-study-2024",
+      "addedBy": "op-jsmith-2024",
+      "addedAt": "2024-03-15T14:35:00Z"
+    }
+  ],
+  "challenges": []
+}

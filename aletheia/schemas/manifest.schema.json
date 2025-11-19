@@ -1,0 +1,366 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echo.aletheia/schemas/manifest.schema.json",
+  "title": "Aletheia Evidence Manifest",
+  "description": "Schema for sealed evidence artifacts with provenance, custody chain, and consent tracking",
+  "type": "object",
+  "required": [
+    "manifestVersion",
+    "stableId",
+    "contentHash",
+    "fileMetadata",
+    "capture",
+    "custody",
+    "signature"
+  ],
+  "properties": {
+    "manifestVersion": {
+      "type": "string",
+      "description": "Schema version for compatibility tracking",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "examples": ["1.0.0"]
+    },
+    "stableId": {
+      "type": "string",
+      "description": "Permanent unique identifier for this artifact (UUID v4 or content-derived)",
+      "pattern": "^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$"
+    },
+    "contentHash": {
+      "type": "object",
+      "description": "Cryptographic hash of the raw artifact content",
+      "required": ["algorithm", "value"],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "enum": ["SHA-256", "SHA-384", "SHA-512", "SHA3-256", "SHA3-512", "BLAKE3"],
+          "description": "Hash algorithm used"
+        },
+        "value": {
+          "type": "string",
+          "description": "Hex-encoded hash value",
+          "pattern": "^[a-f0-9]+$"
+        }
+      }
+    },
+    "fileMetadata": {
+      "type": "object",
+      "description": "Basic file properties",
+      "required": ["originalFilename", "mimeType", "sizeBytes"],
+      "properties": {
+        "originalFilename": {
+          "type": "string",
+          "description": "Original filename at capture time"
+        },
+        "mimeType": {
+          "type": "string",
+          "description": "MIME type of the content",
+          "examples": ["application/x-fastq", "image/tiff", "text/xml", "text/csv"]
+        },
+        "sizeBytes": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "File size in bytes"
+        },
+        "formatVersion": {
+          "type": "string",
+          "description": "Version of the file format if applicable"
+        },
+        "encoding": {
+          "type": "string",
+          "description": "Character encoding for text files"
+        }
+      }
+    },
+    "capture": {
+      "type": "object",
+      "description": "Information about how and when the artifact was captured",
+      "required": ["timestamp", "operator", "method"],
+      "properties": {
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of capture"
+        },
+        "operator": {
+          "type": "object",
+          "description": "Person or system that performed the capture",
+          "required": ["id", "role"],
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Operator identifier"
+            },
+            "name": {
+              "type": "string",
+              "description": "Human-readable name"
+            },
+            "role": {
+              "type": "string",
+              "enum": ["custodian", "technician", "researcher", "automated-system"],
+              "description": "Role of the operator"
+            },
+            "organization": {
+              "type": "string",
+              "description": "Affiliated organization"
+            }
+          }
+        },
+        "method": {
+          "type": "object",
+          "description": "Capture method details",
+          "required": ["type"],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["instrument", "digitization", "transfer", "synthesis"],
+              "description": "Type of capture method"
+            },
+            "instrumentId": {
+              "type": "string",
+              "description": "Identifier for the instrument used"
+            },
+            "instrumentModel": {
+              "type": "string",
+              "description": "Model of instrument"
+            },
+            "protocolId": {
+              "type": "string",
+              "description": "Reference to protocol in methods registry"
+            },
+            "parameters": {
+              "type": "object",
+              "description": "Capture parameters (instrument settings, etc.)",
+              "additionalProperties": true
+            }
+          }
+        },
+        "location": {
+          "type": "object",
+          "description": "Physical location of capture",
+          "properties": {
+            "facility": {
+              "type": "string"
+            },
+            "room": {
+              "type": "string"
+            },
+            "coordinates": {
+              "type": "object",
+              "properties": {
+                "latitude": { "type": "number" },
+                "longitude": { "type": "number" }
+              }
+            }
+          }
+        },
+        "sourceArtifact": {
+          "type": "string",
+          "description": "stableId of the physical or digital artifact this was captured from"
+        }
+      }
+    },
+    "custody": {
+      "type": "array",
+      "description": "Chain of custody entries",
+      "items": {
+        "type": "object",
+        "required": ["timestamp", "action", "party", "signature"],
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "action": {
+            "type": "string",
+            "enum": ["created", "transferred", "accessed", "exported", "verified", "sealed"],
+            "description": "Type of custody action"
+          },
+          "party": {
+            "type": "object",
+            "required": ["id", "role"],
+            "properties": {
+              "id": { "type": "string" },
+              "name": { "type": "string" },
+              "role": { "type": "string" },
+              "organization": { "type": "string" }
+            }
+          },
+          "fromParty": {
+            "type": "string",
+            "description": "Party ID transferring custody (for transfers)"
+          },
+          "notes": {
+            "type": "string",
+            "description": "Additional context for this custody event"
+          },
+          "signature": {
+            "type": "string",
+            "description": "Digital signature of this custody entry"
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "consent": {
+      "type": "object",
+      "description": "Consent and access control references",
+      "properties": {
+        "ledgerEntryId": {
+          "type": "string",
+          "description": "Reference to consent ledger entry"
+        },
+        "scope": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["research", "publication", "commercial", "educational", "legal"]
+          },
+          "description": "Permitted use scopes"
+        },
+        "restrictions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Specific restrictions on use"
+        },
+        "expiration": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When consent expires (if applicable)"
+        },
+        "stewardApprovalRequired": {
+          "type": "boolean",
+          "description": "Whether community steward approval is needed for access"
+        },
+        "dataSubjectType": {
+          "type": "string",
+          "enum": ["living-person", "deceased-person", "indigenous-community", "organization", "public-domain", "other"],
+          "description": "Type of data subject for consent determination"
+        }
+      }
+    },
+    "derivation": {
+      "type": "object",
+      "description": "If this artifact was derived from other artifacts",
+      "properties": {
+        "sourceManifests": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "stableIds of source artifacts"
+        },
+        "methodRegistryId": {
+          "type": "string",
+          "description": "Reference to the analysis method used"
+        },
+        "environmentHash": {
+          "type": "string",
+          "description": "Hash of the execution environment"
+        },
+        "scriptHash": {
+          "type": "string",
+          "description": "Hash of the analysis script"
+        },
+        "executionTimestamp": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "description": "Digital signature of the manifest",
+      "required": ["algorithm", "keyId", "value", "timestamp"],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "enum": ["RSA-SHA256", "RSA-SHA512", "ECDSA-P256", "ECDSA-P384", "Ed25519"],
+          "description": "Signature algorithm"
+        },
+        "keyId": {
+          "type": "string",
+          "description": "Identifier for the signing key"
+        },
+        "value": {
+          "type": "string",
+          "description": "Base64-encoded signature"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When signature was created"
+        },
+        "trustedTimestamp": {
+          "type": "object",
+          "description": "RFC 3161 trusted timestamp",
+          "properties": {
+            "tsaUrl": {
+              "type": "string",
+              "format": "uri",
+              "description": "Timestamp authority URL"
+            },
+            "token": {
+              "type": "string",
+              "description": "Base64-encoded timestamp token"
+            }
+          }
+        }
+      }
+    },
+    "annotations": {
+      "type": "array",
+      "description": "Additional metadata and notes",
+      "items": {
+        "type": "object",
+        "required": ["key", "value"],
+        "properties": {
+          "key": { "type": "string" },
+          "value": { "type": "string" },
+          "addedBy": { "type": "string" },
+          "addedAt": { "type": "string", "format": "date-time" }
+        }
+      }
+    },
+    "challenges": {
+      "type": "array",
+      "description": "Record of challenges to this artifact's validity",
+      "items": {
+        "type": "object",
+        "required": ["id", "submittedAt", "status"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Challenge identifier"
+          },
+          "submittedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "challenger": {
+            "type": "string",
+            "description": "Party ID of challenger"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["provenance", "integrity", "methodology", "interpretation", "consent"]
+          },
+          "status": {
+            "type": "string",
+            "enum": ["pending", "under-review", "accepted", "rejected", "withdrawn"]
+          },
+          "resolution": {
+            "type": "string",
+            "description": "Resolution details if resolved"
+          },
+          "resolvedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

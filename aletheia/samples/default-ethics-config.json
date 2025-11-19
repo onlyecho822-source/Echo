@@ -1,0 +1,179 @@
+{
+  "configVersion": "1.0.0",
+  "activeMode": "L5-safe",
+  "modes": {
+    "L5-safe": {
+      "promptStyle": {
+        "tone": "conservative",
+        "hypothesisGeneration": "minimal",
+        "riskAssessmentDetail": "summary",
+        "speculationLabeling": true,
+        "systemPromptAdditions": [
+          "Prioritize well-established interpretations",
+          "Flag any claims lacking direct evidence",
+          "Recommend additional verification for uncertain findings"
+        ]
+      },
+      "loggingLevel": "standard",
+      "allowedOperations": [
+        "read-sealed-artifacts",
+        "run-registered-analyses",
+        "query-knowledge-graph",
+        "generate-hypotheses"
+      ],
+      "reviewRequirements": {
+        "requireReviewBefore": [
+          "publishing-results",
+          "modifying-knowledge-graph"
+        ],
+        "reviewerRoles": ["domain-expert"],
+        "reviewTimeoutHours": 48
+      },
+      "outputPostProcessing": {
+        "addConfidenceScores": true,
+        "addProvenanceLinks": true,
+        "flagSpeculation": true,
+        "redactSensitiveData": true
+      }
+    },
+    "L4-defensive": {
+      "promptStyle": {
+        "tone": "analytical",
+        "hypothesisGeneration": "standard",
+        "riskAssessmentDetail": "detailed",
+        "speculationLabeling": true,
+        "systemPromptAdditions": [
+          "Analyze potential attack surfaces and fraud vectors",
+          "Identify gaps in provenance chains",
+          "Evaluate methodology weaknesses"
+        ]
+      },
+      "loggingLevel": "verbose",
+      "allowedOperations": [
+        "read-sealed-artifacts",
+        "run-registered-analyses",
+        "query-knowledge-graph",
+        "generate-hypotheses",
+        "assess-risks",
+        "enumerate-attack-surfaces",
+        "model-threat-scenarios"
+      ],
+      "reviewRequirements": {
+        "requireReviewBefore": [
+          "publishing-results",
+          "modifying-knowledge-graph",
+          "submitting-challenges"
+        ],
+        "reviewerRoles": ["domain-expert", "validator"],
+        "reviewTimeoutHours": 24
+      },
+      "outputPostProcessing": {
+        "addConfidenceScores": true,
+        "addProvenanceLinks": true,
+        "flagSpeculation": true,
+        "redactSensitiveData": true
+      }
+    },
+    "L3-investigative": {
+      "promptStyle": {
+        "tone": "exploratory",
+        "hypothesisGeneration": "expanded",
+        "riskAssessmentDetail": "detailed",
+        "speculationLabeling": true,
+        "systemPromptAdditions": [
+          "Explore alternative interpretations systematically",
+          "Identify patterns across multiple artifacts",
+          "Compare methodologies and their limitations",
+          "Note contradictions requiring resolution"
+        ]
+      },
+      "loggingLevel": "verbose",
+      "allowedOperations": [
+        "read-sealed-artifacts",
+        "run-registered-analyses",
+        "query-knowledge-graph",
+        "generate-hypotheses",
+        "assess-risks",
+        "compare-methods",
+        "detect-contradictions",
+        "generate-alternative-interpretations",
+        "propose-reanalysis"
+      ],
+      "reviewRequirements": {
+        "requireReviewBefore": [
+          "publishing-results",
+          "modifying-knowledge-graph",
+          "initiating-reanalysis",
+          "submitting-challenges"
+        ],
+        "reviewerRoles": ["domain-expert", "validator"],
+        "reviewTimeoutHours": 24
+      },
+      "outputPostProcessing": {
+        "addConfidenceScores": true,
+        "addProvenanceLinks": true,
+        "flagSpeculation": true,
+        "redactSensitiveData": true
+      }
+    },
+    "L2-black-lens": {
+      "promptStyle": {
+        "tone": "comprehensive",
+        "hypothesisGeneration": "exhaustive",
+        "riskAssessmentDetail": "exhaustive",
+        "speculationLabeling": true,
+        "systemPromptAdditions": [
+          "Enumerate all plausible hypotheses without pre-filtering",
+          "Include low-probability scenarios for completeness",
+          "Map full uncertainty space",
+          "Identify all potential failure modes",
+          "All outputs require human review before any action"
+        ]
+      },
+      "loggingLevel": "debug",
+      "allowedOperations": [
+        "read-sealed-artifacts",
+        "run-registered-analyses",
+        "query-knowledge-graph",
+        "generate-hypotheses",
+        "assess-risks",
+        "compare-methods",
+        "detect-contradictions",
+        "enumerate-attack-surfaces",
+        "model-threat-scenarios",
+        "generate-alternative-interpretations",
+        "challenge-existing-claims",
+        "propose-reanalysis"
+      ],
+      "reviewRequirements": {
+        "requireReviewBefore": [
+          "all-outputs"
+        ],
+        "reviewerRoles": ["domain-expert", "validator", "steward"],
+        "reviewTimeoutHours": 72
+      },
+      "outputPostProcessing": {
+        "addConfidenceScores": true,
+        "addProvenanceLinks": true,
+        "flagSpeculation": true,
+        "redactSensitiveData": true
+      }
+    }
+  },
+  "globalConstraints": {
+    "requireAuditLog": true,
+    "allowedDataSources": [
+      "sealed-vault",
+      "methods-registry",
+      "public-references",
+      "knowledge-graph"
+    ],
+    "prohibitedOperations": [
+      "access-unsealed-data",
+      "bypass-consent-checks",
+      "modify-sealed-artifacts",
+      "delete-audit-logs",
+      "export-without-minimization"
+    ]
+  }
+}

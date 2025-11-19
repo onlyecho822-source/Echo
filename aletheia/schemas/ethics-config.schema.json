@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echo.aletheia/schemas/ethics-config.schema.json",
+  "title": "Echo Ethics Configuration",
+  "description": "Application-level orchestration configuration for analysis modes. Controls prompts, logging, allowed operations, and review workflows. Does NOT modify AI model internals or safety constraints.",
+  "type": "object",
+  "required": ["configVersion", "activeMode", "modes"],
+  "properties": {
+    "configVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "activeMode": {
+      "type": "string",
+      "enum": ["L5-safe", "L4-defensive", "L3-investigative", "L2-black-lens"],
+      "description": "Currently active analysis mode"
+    },
+    "modes": {
+      "type": "object",
+      "description": "Mode definitions",
+      "properties": {
+        "L5-safe": {
+          "$ref": "#/$defs/modeConfig",
+          "description": "Conservative mode - standard analysis with full safety margins"
+        },
+        "L4-defensive": {
+          "$ref": "#/$defs/modeConfig",
+          "description": "Threat modeling mode - analyzes risks and attack surfaces"
+        },
+        "L3-investigative": {
+          "$ref": "#/$defs/modeConfig",
+          "description": "Structural analysis mode - deep pattern examination"
+        },
+        "L2-black-lens": {
+          "$ref": "#/$defs/modeConfig",
+          "description": "Full hypothesis enumeration - requires human review before action"
+        }
+      },
+      "required": ["L5-safe", "L4-defensive", "L3-investigative", "L2-black-lens"]
+    },
+    "globalConstraints": {
+      "type": "object",
+      "description": "Constraints that apply regardless of mode",
+      "properties": {
+        "requireAuditLog": {
+          "type": "boolean",
+          "default": true,
+          "description": "All operations must be logged"
+        },
+        "allowedDataSources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["sealed-vault", "methods-registry", "public-references", "knowledge-graph"]
+          },
+          "description": "Data sources accessible to analyses"
+        },
+        "prohibitedOperations": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Operations that are never permitted regardless of mode"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "modeConfig": {
+      "type": "object",
+      "required": ["promptStyle", "loggingLevel", "allowedOperations", "reviewRequirements"],
+      "properties": {
+        "promptStyle": {
+          "type": "object",
+          "description": "How to frame prompts in this mode",
+          "properties": {
+            "tone": {
+              "type": "string",
+              "enum": ["conservative", "analytical", "exploratory", "comprehensive"],
+              "description": "Overall analysis tone"
+            },
+            "hypothesisGeneration": {
+              "type": "string",
+              "enum": ["minimal", "standard", "expanded", "exhaustive"],
+              "description": "How many alternative hypotheses to generate"
+            },
+            "riskAssessmentDetail": {
+              "type": "string",
+              "enum": ["summary", "standard", "detailed", "exhaustive"],
+              "description": "Detail level for risk assessments"
+            },
+            "speculationLabeling": {
+              "type": "boolean",
+              "default": true,
+              "description": "Whether to explicitly label speculative content"
+            },
+            "systemPromptAdditions": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Additional instructions to include in prompts"
+            }
+          }
+        },
+        "loggingLevel": {
+          "type": "string",
+          "enum": ["minimal", "standard", "verbose", "debug"],
+          "description": "How much to log for audit purposes"
+        },
+        "allowedOperations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "read-sealed-artifacts",
+              "run-registered-analyses",
+              "query-knowledge-graph",
+              "generate-hypotheses",
+              "assess-risks",
+              "compare-methods",
+              "detect-contradictions",
+              "enumerate-attack-surfaces",
+              "model-threat-scenarios",
+              "generate-alternative-interpretations",
+              "challenge-existing-claims",
+              "propose-reanalysis"
+            ]
+          },
+          "description": "Operations permitted in this mode"
+        },
+        "reviewRequirements": {
+          "type": "object",
+          "description": "What requires human review before action",
+          "properties": {
+            "requireReviewBefore": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "publishing-results",
+                  "modifying-knowledge-graph",
+                  "initiating-reanalysis",
+                  "submitting-challenges",
+                  "exporting-data",
+                  "all-outputs"
+                ]
+              },
+              "description": "Actions that require human approval"
+            },
+            "reviewerRoles": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["domain-expert", "validator", "steward", "legal-observer"]
+              },
+              "description": "Who must review"
+            },
+            "reviewTimeoutHours": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "How long to wait for review before escalating"
+            }
+          }
+        },
+        "outputPostProcessing": {
+          "type": "object",
+          "description": "How to process outputs before delivery",
+          "properties": {
+            "addConfidenceScores": {
+              "type": "boolean",
+              "description": "Attach confidence estimates to claims"
+            },
+            "addProvenanceLinks": {
+              "type": "boolean",
+              "description": "Link claims back to source artifacts"
+            },
+            "flagSpeculation": {
+              "type": "boolean",
+              "description": "Explicitly flag speculative content"
+            },
+            "redactSensitiveData": {
+              "type": "boolean",
+              "description": "Apply minimization rules to outputs"
+            }
+          }
+        }
+      }
+    }
+  }
+}
