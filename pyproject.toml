@@ -1,0 +1,83 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wifi-scanner"
+version = "1.0.0"
+description = "Cross-platform WiFi network scanner and decoder"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Echo Civilization", email = "echo@example.com"}
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Networking",
+    "Topic :: Utilities",
+]
+keywords = ["wifi", "wireless", "network", "scanner", "decoder", "analyzer", "802.11"]
+
+[project.scripts]
+wifi-scanner = "wifi_scanner.cli:main"
+wifi-scan = "wifi_scanner.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "mypy>=1.0.0",
+    "flake8>=6.0.0",
+]
+rich = [
+    "rich>=13.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/echo-civilization/wifi-scanner"
+Documentation = "https://github.com/echo-civilization/wifi-scanner#readme"
+Repository = "https://github.com/echo-civilization/wifi-scanner"
+Issues = "https://github.com/echo-civilization/wifi-scanner/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["wifi_scanner*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311', 'py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.mypy]
+python_version = "3.7"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "-v --cov=wifi_scanner --cov-report=term-missing"
