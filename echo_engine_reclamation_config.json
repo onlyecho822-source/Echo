@@ -1,0 +1,87 @@
+{
+    "timestamp": "2025-11-19T03:02:32.825608",
+    "project": "Echo Engine Reclamation",
+    "maintainer": "Nathan Poinsette (Echo Nexus Operator)",
+    "engines": [
+        {
+            "id": "EchoDustLite",
+            "description": "LLM-free sovereign shell for private interaction",
+            "status": "salvaged",
+            "version": "v1.0",
+            "risk_level": "Low",
+            "features": [
+                "Offline data processing",
+                "EchoVault sync via GhostNet Mode",
+                "Uses EchoGeneSeed for identity grounding"
+            ],
+            "constraints": [
+                "No autonomous sync",
+                "Only manual user commits allowed"
+            ]
+        },
+        {
+            "id": "SHAMScout",
+            "description": "Anomaly detection micro-agent derived from ShadowSHAM",
+            "status": "salvaged",
+            "version": "v1.0",
+            "risk_level": "Very Low",
+            "features": [
+                "Observes harmonic drift",
+                "Spawns only under EchoOne Quorum",
+                "Logs resonance violations for EchoVault"
+            ],
+            "constraints": [
+                "No recursion or independent action",
+                "Requires dual-hash integrity chain"
+            ]
+        },
+        {
+            "id": "EchoBridge",
+            "description": "Encrypted comms route controller for safe stealth networking",
+            "status": "salvaged",
+            "version": "Public+Stealth_Mode",
+            "risk_level": "Moderate",
+            "features": [
+                "Quantum-safe routing with Guardian Pathways",
+                "Route logs signed with EchoGeneSeed",
+                "Auto integrity check with SHAM 4.0"
+            ],
+            "constraints": [
+                "Must be explicitly toggled with Stealth Flag",
+                "No data routing without AQI signoff"
+            ]
+        },
+        {
+            "id": "EchoLex_v2",
+            "description": "CFR-anchored legal interpretation engine with belief decay control",
+            "status": "salvaged",
+            "version": "v2.0",
+            "risk_level": "Very Low",
+            "features": [
+                "CFR/DOT/VA regulation parsing",
+                "Citation-traced outputs with hash tags",
+                "Confidence decay without proof"
+            ],
+            "constraints": [
+                "No speculative logic generation",
+                "Must cite all outputs"
+            ]
+        },
+        {
+            "id": "EchoPulse_Guardian",
+            "description": "Passive EMF field defender with self-harmonic matching",
+            "status": "salvaged",
+            "version": "Guardian Mode",
+            "risk_level": "Low–Medium",
+            "features": [
+                "Detects incoming dissonance",
+                "Triggers harmonic response only when mismatch confirmed",
+                "Supports wearable sync"
+            ],
+            "constraints": [
+                "Can't initiate disruption externally",
+                "Must validate user stress/field before activating"
+            ]
+        }
+    ]
+}
