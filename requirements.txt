@@ -1,0 +1,14 @@
+# Echo Reverse Engineering Engine Requirements
+
+# Core (uses only standard library)
+
+# Optional: Web collection
+# requests>=2.28
+# beautifulsoup4>=4.11
+
+# Development
+pytest>=7.0
+pytest-cov>=4.0
+black>=23.0
+ruff>=0.1
+mypy>=1.0
