@@ -1,0 +1,31 @@
+{
+  "library": "EchoLibrary",
+  "description": "A collection of books designed as weapons of awakening",
+  "version": "1.0.0",
+  "books": [
+    {
+      "id": "chains-forged-within",
+      "title": "Chains Forged Within",
+      "subtitle": "How Systems of Power Shaped Us from the Inside Out",
+      "path": "books/chains-forged-within/",
+      "status": "published",
+      "order": 1
+    },
+    {
+      "id": "fear-of-success",
+      "title": "Fear of Success",
+      "subtitle": "Why We Run From the Very Thing We Were Born to Do",
+      "path": "books/fear-of-success/",
+      "status": "published",
+      "order": 2
+    },
+    {
+      "id": "the-judas-code",
+      "title": "The Judas Code",
+      "subtitle": "Betrayal from Within Black Leadership and the Price of Silence",
+      "path": "books/the-judas-code/",
+      "status": "renaming-in-progress",
+      "order": 3
+    }
+  ]
+}

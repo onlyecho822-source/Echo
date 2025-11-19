@@ -1,0 +1,28 @@
+{
+  "id": "the-judas-code",
+  "title": "The Judas Code",
+  "subtitle": "Betrayal from Within Black Leadership and the Price of Silence",
+  "description": "This exposé cracks open the history of internal betrayal—when our own rise to power by selling us out. From ancient kings to modern presidents, The Judas Code documents how Black advancement has repeatedly been sabotaged by gatekeepers wearing the right skin but serving the wrong masters. It's both a reckoning and a call to build new, unbreakable codes of loyalty.",
+  "status": "renaming-in-progress",
+  "version": "1.0.0",
+  "language": "en",
+  "themes": [
+    "internal betrayal",
+    "Black leadership",
+    "gatekeeping",
+    "historical reckoning",
+    "loyalty",
+    "community accountability"
+  ],
+  "targetAudience": "Those seeking to understand patterns of internal betrayal and build stronger community bonds",
+  "format": {
+    "aiNarration": "available",
+    "fullPageVersion": "pending"
+  },
+  "metadata": {
+    "category": "awakening",
+    "intensity": "high",
+    "actionOriented": true,
+    "note": "Title renaming in progress"
+  }
+}

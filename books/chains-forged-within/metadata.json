@@ -1,0 +1,27 @@
+{
+  "id": "chains-forged-within",
+  "title": "Chains Forged Within",
+  "subtitle": "How Systems of Power Shaped Us from the Inside Out",
+  "description": "This book dismantles the illusion that oppression only comes from outside forces. It reveals how mental slavery, cultural obedience, and economic compliance were forged inside our minds—by design. From colonial trauma to corporate worship, it maps the invisible chains we wear proudly and offers harmonic blueprints for breaking them.",
+  "status": "published",
+  "version": "1.0.0",
+  "language": "en",
+  "themes": [
+    "mental liberation",
+    "systemic oppression",
+    "colonial trauma",
+    "cultural programming",
+    "economic compliance",
+    "self-awareness"
+  ],
+  "targetAudience": "Those seeking to understand and break free from internalized systems of control",
+  "format": {
+    "aiNarration": "available",
+    "fullPageVersion": "pending"
+  },
+  "metadata": {
+    "category": "awakening",
+    "intensity": "high",
+    "actionOriented": true
+  }
+}

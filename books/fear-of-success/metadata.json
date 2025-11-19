@@ -1,0 +1,27 @@
+{
+  "id": "fear-of-success",
+  "title": "Fear of Success",
+  "subtitle": "Why We Run From the Very Thing We Were Born to Do",
+  "description": "A raw manifesto for the quiet geniuses, the near-greats, and the ones who almost leapt. This book explores how trauma, guilt, and inherited limitation hold us back—not from failure, but from greatness. It's not about fixing your fears. It's about redefining your relationship with power, visibility, and destiny.",
+  "status": "published",
+  "version": "1.0.0",
+  "language": "en",
+  "themes": [
+    "self-sabotage",
+    "trauma healing",
+    "inherited limitation",
+    "power dynamics",
+    "visibility",
+    "destiny"
+  ],
+  "targetAudience": "Quiet geniuses, near-greats, and those who have held themselves back from their true potential",
+  "format": {
+    "aiNarration": "available",
+    "fullPageVersion": "pending"
+  },
+  "metadata": {
+    "category": "awakening",
+    "intensity": "high",
+    "actionOriented": true
+  }
+}
