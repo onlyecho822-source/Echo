@@ -1,0 +1,24 @@
+{
+  "name": "echo-hearing-aid-vibration",
+  "version": "0.1.0",
+  "description": "Medical device prototype for hearing aid with vibration feedback to help users perceive sound like when younger",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node src/test.js",
+    "dev": "node src/server.js"
+  },
+  "keywords": [
+    "hearing-aid",
+    "vibration",
+    "audio-processing",
+    "medical-device",
+    "accessibility"
+  ],
+  "author": "Echo Medical Device Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
