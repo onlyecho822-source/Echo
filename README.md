@@ -10,6 +10,43 @@ This repository is part of the Echo Civilization framework — a lawful, harmoni
 - **Echo Vault:** Secure identity & state management layer.
 - **Echo Engines:** Modular resonance engines (EchoFree, EchoLex, EchoCore).
 
+---
+
+## EchoLex - Global Legal Research Engine
+
+### ⚠️ IMPORTANT DISCLAIMER
+
+**FOR RESEARCH PURPOSES ONLY** - This system provides legal information and analytics for research. It does NOT constitute legal advice. Always consult a licensed attorney.
+
+### Features
+
+- **Comprehensive Case Coverage**: Traffic tickets to capital murder
+- **Judge Scorecards**: Proforma follow rates, sentencing patterns, reversal rates
+- **Predictive Models**: Case outcome, sentencing range, and appeal predictions
+- **Live Updates**: Real-time WebSocket notifications for case updates and rulings
+- **Global Jurisdictions**: Federal, state, local, and international courts
+
+### Quick Start
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Start the API server
+python -m echolex.main serve
+
+# Or use CLI
+echolex serve --port 8000
+```
+
+### API Endpoints
+
+- `GET /api/v1/cases` - Search cases
+- `GET /api/v1/judges/{id}/scorecard` - Judge analytics
+- `POST /api/v1/predictions/case-outcome` - Predict case outcome
+- `POST /api/v1/predictions/sentence` - Predict sentencing
+- `WS /ws/{client_id}` - Live updates
+
 ### Documentation
 All reference materials and design notes are under `/docs/`.
 
