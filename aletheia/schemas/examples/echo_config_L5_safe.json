@@ -1,0 +1,51 @@
+{
+  "configVersion": "1.0.0",
+  "mode": "L5_SAFE",
+  "promptStyle": {
+    "systemPromptTemplate": "prompts/L5_safe.md",
+    "constraintLevel": "strict",
+    "speculationAllowed": false,
+    "hypothesisEnumeration": false,
+    "suppressionAnalysis": false
+  },
+  "logging": {
+    "level": "standard",
+    "auditTrail": true,
+    "metricsCollection": [
+      "provenance_completeness",
+      "reproducibility_rate",
+      "data_minimization_rate"
+    ],
+    "logRetentionDays": 365
+  },
+  "allowedOperations": {
+    "ingest": true,
+    "seal": true,
+    "analyze": true,
+    "correlate": true,
+    "hypothesize": false,
+    "challengeGenerate": false,
+    "export": true,
+    "publishDerived": true,
+    "publishRaw": false
+  },
+  "reviewPath": {
+    "reviewRequired": false,
+    "reviewerRoles": ["validator"],
+    "devilLensReview": false,
+    "reviewTimeoutHours": 72,
+    "autoRejectOnTimeout": false
+  },
+  "dataMinimization": {
+    "enforceMinimalExport": true,
+    "stripPII": true,
+    "requireConsentCheck": true,
+    "indigenousSovereigntyCheck": true
+  },
+  "riskControls": {
+    "maxConfidenceWithoutCorroboration": 0.7,
+    "requireMultiDomainEvidence": false,
+    "flagHighImpactClaims": true,
+    "blockIrreversibleActions": true
+  }
+}

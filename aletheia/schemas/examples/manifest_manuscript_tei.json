@@ -1,0 +1,143 @@
+{
+  "manifestVersion": "1.0.0",
+  "stableID": "ALT-2025-TEI7F8G9",
+  "contentHash": {
+    "primary": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "hashAlgorithm": "SHA-256",
+  "fileMetadata": {
+    "filename": "vatican_codex_fragment_127.xml",
+    "mimeType": "application/tei+xml",
+    "sizeBytes": 1048576,
+    "encoding": "UTF-8"
+  },
+  "evidenceType": "manuscript_tei",
+  "captureMetadata": {
+    "captureDateTime": "2025-03-01T10:00:00Z",
+    "captureAgent": {
+      "id": "DIG-SCHOLAR-0089",
+      "role": "operator",
+      "institution": "Digital Vatican Library Project"
+    },
+    "captureLocation": {
+      "name": "Vatican Apostolic Library",
+      "coordinates": {
+        "latitude": 41.9022,
+        "longitude": 12.4539,
+        "uncertainty_m": 20
+      },
+      "jurisdiction": "Vatican City State"
+    },
+    "instrument": {
+      "type": "Multispectral Scanner",
+      "manufacturer": "Phase One",
+      "model": "IQ4 150MP",
+      "serialNumber": "PO-IQ4-2022-0156"
+    },
+    "captureConditions": {
+      "temperature_c": 18,
+      "humidity_percent": 50,
+      "notes": "Controlled archival conditions; UV and IR bands captured"
+    }
+  },
+  "subjectMetadata": {
+    "subjectType": "document",
+    "subjectID": "VAT-COD-127-FRAG",
+    "description": "Fragment of codex containing astronomical tables with marginalia",
+    "culturalAffiliation": ["Unknown origin", "Possibly pre-Columbian Mesoamerican"],
+    "estimatedPeriod": {
+      "startYear": 1200,
+      "endYear": 1500,
+      "confidence": 0.60
+    }
+  },
+  "chainOfCustody": [
+    {
+      "timestamp": "1600-01-01T00:00:00Z",
+      "custodian": {
+        "id": "HIST-VAT-UNKNOWN",
+        "role": "custodian",
+        "institution": "Vatican Library"
+      },
+      "action": "received",
+      "notes": "First recorded in Vatican inventory 1600; prior provenance unknown"
+    },
+    {
+      "timestamp": "2025-03-01T10:00:00Z",
+      "custodian": {
+        "id": "DIG-SCHOLAR-0089",
+        "role": "custodian",
+        "institution": "Digital Vatican Library Project"
+      },
+      "action": "captured",
+      "previousCustodian": "HIST-VAT-UNKNOWN",
+      "notes": "High-resolution multispectral digitization and TEI encoding"
+    },
+    {
+      "timestamp": "2025-03-01T16:00:00Z",
+      "custodian": {
+        "id": "VAL-2025-0022",
+        "role": "validator",
+        "institution": "Aletheia Network"
+      },
+      "action": "sealed",
+      "previousCustodian": "DIG-SCHOLAR-0089",
+      "signature": "base64_signature_placeholder"
+    }
+  ],
+  "consentAndRights": {
+    "consentTokens": [
+      {
+        "tokenID": "CNS-2025-VAT-DIG-0127",
+        "grantor": "Vatican Apostolic Library",
+        "scope": ["store", "analyze", "publish_derived", "publish_raw"],
+        "expiresAt": "2050-01-01T00:00:00Z",
+        "revocable": true
+      }
+    ],
+    "indigenousSovereignty": {
+      "applies": true,
+      "community": "Possible Mesoamerican origin - requires investigation",
+      "stewardContact": "INAH Mexico (pending confirmation of origin)",
+      "restrictions": [
+        "Origin determination required before full publication",
+        "If Mesoamerican origin confirmed, INAH stewardship required"
+      ]
+    },
+    "sensitiveData": {
+      "containsPII": false,
+      "containsGenetic": false,
+      "containsSacred": true,
+      "minimizationRequired": false
+    },
+    "license": "pending-origin-determination"
+  },
+  "relatedManifests": [
+    {
+      "stableID": "ALT-2025-TIF7F8G8",
+      "relationship": "derived_from"
+    }
+  ],
+  "signature": {
+    "algorithm": "Ed25519",
+    "value": "base64_encoded_signature",
+    "keyID": "aletheia-validator-2025-022"
+  },
+  "timestamp": {
+    "rfc3161": "base64_encoded_rfc3161_token",
+    "timestampAuthority": "https://timestamp.sectigo.com"
+  },
+  "analysisReadiness": {
+    "integrityVerified": true,
+    "formatValidated": true,
+    "qualityScore": 0.95,
+    "eligiblePipelines": [
+      "MTH-TEI-SYMBOL-001",
+      "MTH-PALEOGRAPH-002",
+      "MTH-ASTRO-ALIGN-003"
+    ],
+    "blockers": [
+      "Indigenous sovereignty review pending"
+    ]
+  }
+}

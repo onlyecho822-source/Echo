@@ -1,0 +1,375 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aletheia.echo/schemas/manifest/v1.0.0",
+  "title": "Aletheia Evidence Manifest",
+  "description": "Cryptographically sealed manifest for raw evidence items in the Aletheia Truth Verification System",
+  "type": "object",
+  "required": [
+    "manifestVersion",
+    "stableID",
+    "contentHash",
+    "hashAlgorithm",
+    "captureMetadata",
+    "chainOfCustody",
+    "signature",
+    "timestamp"
+  ],
+  "properties": {
+    "manifestVersion": {
+      "type": "string",
+      "const": "1.0.0",
+      "description": "Schema version for forward compatibility"
+    },
+    "stableID": {
+      "type": "string",
+      "pattern": "^ALT-[0-9]{4}-[A-Z0-9]{8}$",
+      "description": "Permanent identifier (ALT-YYYY-XXXXXXXX)",
+      "examples": ["ALT-2025-A3F8B2C1"]
+    },
+    "contentHash": {
+      "type": "object",
+      "required": ["primary"],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "description": "SHA-256 hash of raw file content",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "secondary": {
+          "type": "string",
+          "description": "BLAKE3 hash for additional verification",
+          "pattern": "^blake3:[a-f0-9]{64}$"
+        }
+      }
+    },
+    "hashAlgorithm": {
+      "type": "string",
+      "enum": ["SHA-256", "SHA-256+BLAKE3"],
+      "default": "SHA-256"
+    },
+    "fileMetadata": {
+      "type": "object",
+      "required": ["filename", "mimeType", "sizeBytes"],
+      "properties": {
+        "filename": {
+          "type": "string",
+          "description": "Original filename at capture"
+        },
+        "mimeType": {
+          "type": "string",
+          "description": "MIME type of the file"
+        },
+        "sizeBytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "encoding": {
+          "type": "string",
+          "description": "Character encoding if text-based"
+        }
+      }
+    },
+    "evidenceType": {
+      "type": "string",
+      "enum": [
+        "genetic_fastq",
+        "genetic_vcf",
+        "genetic_bam",
+        "spectral_xrf",
+        "spectral_raman",
+        "spectral_ftir",
+        "radiocarbon_raw",
+        "image_tiff",
+        "image_iiif",
+        "manuscript_tei",
+        "manuscript_xml",
+        "document_pdf",
+        "audio_wav",
+        "video_raw",
+        "other"
+      ],
+      "description": "Categorization for routing to appropriate analysis pipelines"
+    },
+    "captureMetadata": {
+      "type": "object",
+      "required": ["captureDateTime", "captureAgent", "captureLocation"],
+      "properties": {
+        "captureDateTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of original capture"
+        },
+        "captureAgent": {
+          "type": "object",
+          "required": ["id", "role"],
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Identifier of person/instrument that captured"
+            },
+            "role": {
+              "type": "string",
+              "enum": ["operator", "instrument", "automated_system"]
+            },
+            "institution": {
+              "type": "string"
+            }
+          }
+        },
+        "captureLocation": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "coordinates": {
+              "type": "object",
+              "properties": {
+                "latitude": { "type": "number" },
+                "longitude": { "type": "number" },
+                "altitude": { "type": "number" },
+                "uncertainty_m": { "type": "number" }
+              }
+            },
+            "jurisdiction": {
+              "type": "string",
+              "description": "Legal jurisdiction for compliance"
+            }
+          }
+        },
+        "instrument": {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string" },
+            "manufacturer": { "type": "string" },
+            "model": { "type": "string" },
+            "serialNumber": { "type": "string" },
+            "calibrationDate": { "type": "string", "format": "date" },
+            "calibrationCertificate": { "type": "string" }
+          }
+        },
+        "captureConditions": {
+          "type": "object",
+          "description": "Environmental conditions during capture",
+          "properties": {
+            "temperature_c": { "type": "number" },
+            "humidity_percent": { "type": "number" },
+            "notes": { "type": "string" }
+          }
+        }
+      }
+    },
+    "subjectMetadata": {
+      "type": "object",
+      "description": "Information about what was captured",
+      "properties": {
+        "subjectType": {
+          "type": "string",
+          "enum": ["artifact", "biological_sample", "document", "site", "other"]
+        },
+        "subjectID": {
+          "type": "string",
+          "description": "Reference to artifact/sample in knowledge graph"
+        },
+        "description": {
+          "type": "string"
+        },
+        "culturalAffiliation": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Cultural groups associated with subject"
+        },
+        "estimatedPeriod": {
+          "type": "object",
+          "properties": {
+            "startYear": { "type": "integer" },
+            "endYear": { "type": "integer" },
+            "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+          }
+        }
+      }
+    },
+    "chainOfCustody": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["timestamp", "custodian", "action"],
+        "properties": {
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "custodian": {
+            "type": "object",
+            "required": ["id", "role"],
+            "properties": {
+              "id": { "type": "string" },
+              "role": {
+                "type": "string",
+                "enum": ["custodian", "validator", "steward", "reviewer", "legal_observer"]
+              },
+              "institution": { "type": "string" }
+            }
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "captured",
+              "received",
+              "transferred",
+              "sealed",
+              "analyzed",
+              "exported",
+              "challenged",
+              "redacted",
+              "retracted"
+            ]
+          },
+          "notes": { "type": "string" },
+          "previousCustodian": { "type": "string" },
+          "signature": { "type": "string" }
+        }
+      }
+    },
+    "consentAndRights": {
+      "type": "object",
+      "description": "Consent and sovereignty information",
+      "properties": {
+        "consentTokens": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "tokenID": { "type": "string" },
+              "grantor": { "type": "string" },
+              "scope": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": ["store", "analyze", "publish_derived", "publish_raw", "export"]
+                }
+              },
+              "expiresAt": { "type": "string", "format": "date-time" },
+              "revocable": { "type": "boolean" }
+            }
+          }
+        },
+        "indigenousSovereignty": {
+          "type": "object",
+          "properties": {
+            "applies": { "type": "boolean" },
+            "community": { "type": "string" },
+            "stewardContact": { "type": "string" },
+            "restrictions": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "sensitiveData": {
+          "type": "object",
+          "properties": {
+            "containsPII": { "type": "boolean" },
+            "containsGenetic": { "type": "boolean" },
+            "containsSacred": { "type": "boolean" },
+            "minimizationRequired": { "type": "boolean" }
+          }
+        },
+        "license": {
+          "type": "string",
+          "description": "SPDX license identifier or custom terms reference"
+        }
+      }
+    },
+    "relatedManifests": {
+      "type": "array",
+      "description": "Links to related evidence items",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stableID": { "type": "string" },
+          "relationship": {
+            "type": "string",
+            "enum": [
+              "same_subject",
+              "same_session",
+              "derived_from",
+              "supersedes",
+              "contradicts",
+              "corroborates"
+            ]
+          }
+        }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "required": ["algorithm", "value", "keyID"],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "enum": ["Ed25519", "ECDSA-P256", "RSA-PSS-4096"]
+        },
+        "value": {
+          "type": "string",
+          "description": "Base64-encoded signature over canonical manifest JSON"
+        },
+        "keyID": {
+          "type": "string",
+          "description": "Identifier of signing key in key registry"
+        },
+        "certificateChain": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "X.509 certificate chain if using PKI"
+        }
+      }
+    },
+    "timestamp": {
+      "type": "object",
+      "required": ["rfc3161"],
+      "properties": {
+        "rfc3161": {
+          "type": "string",
+          "description": "Base64-encoded RFC 3161 timestamp token"
+        },
+        "timestampAuthority": {
+          "type": "string",
+          "description": "URL of TSA used"
+        },
+        "blockchainAnchor": {
+          "type": "object",
+          "description": "Optional blockchain anchoring",
+          "properties": {
+            "chain": { "type": "string" },
+            "txHash": { "type": "string" },
+            "blockHeight": { "type": "integer" }
+          }
+        }
+      }
+    },
+    "analysisReadiness": {
+      "type": "object",
+      "description": "Pre-validation for analysis pipelines",
+      "properties": {
+        "integrityVerified": { "type": "boolean" },
+        "formatValidated": { "type": "boolean" },
+        "qualityScore": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Automated quality assessment"
+        },
+        "eligiblePipelines": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Method registry IDs this evidence can be routed to"
+        },
+        "blockers": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Issues preventing analysis"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

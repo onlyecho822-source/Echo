@@ -1,0 +1,144 @@
+{
+  "manifestVersion": "1.0.0",
+  "stableID": "ALT-2025-XRF8B2C1",
+  "contentHash": {
+    "primary": "sha256:3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b",
+    "secondary": "blake3:7d865e959b2466918c9863afca942d0fb89d7c9ac0c99bafc3749504ded97730"
+  },
+  "hashAlgorithm": "SHA-256+BLAKE3",
+  "fileMetadata": {
+    "filename": "benin_bronze_plaque_001.csv",
+    "mimeType": "text/csv",
+    "sizeBytes": 245891,
+    "encoding": "UTF-8"
+  },
+  "evidenceType": "spectral_xrf",
+  "captureMetadata": {
+    "captureDateTime": "2025-01-15T14:32:00Z",
+    "captureAgent": {
+      "id": "OP-2025-0042",
+      "role": "operator",
+      "institution": "British Museum Conservation"
+    },
+    "captureLocation": {
+      "name": "British Museum Conservation Lab",
+      "coordinates": {
+        "latitude": 51.5194,
+        "longitude": -0.1270,
+        "uncertainty_m": 10
+      },
+      "jurisdiction": "UK"
+    },
+    "instrument": {
+      "type": "XRF Spectrometer",
+      "manufacturer": "Bruker",
+      "model": "Tracer 5i",
+      "serialNumber": "BRK-T5I-2021-0847",
+      "calibrationDate": "2024-11-01",
+      "calibrationCertificate": "CAL-2024-BM-0847"
+    },
+    "captureConditions": {
+      "temperature_c": 20.5,
+      "humidity_percent": 45,
+      "notes": "Standard museum conditions; artifact not moved from display case"
+    }
+  },
+  "subjectMetadata": {
+    "subjectType": "artifact",
+    "subjectID": "BM-AF1898.0115.1",
+    "description": "Benin Bronze commemorative plaque depicting royal court scene",
+    "culturalAffiliation": ["Edo", "Benin Kingdom"],
+    "estimatedPeriod": {
+      "startYear": 1550,
+      "endYear": 1650,
+      "confidence": 0.85
+    }
+  },
+  "chainOfCustody": [
+    {
+      "timestamp": "2025-01-15T14:32:00Z",
+      "custodian": {
+        "id": "OP-2025-0042",
+        "role": "custodian",
+        "institution": "British Museum Conservation"
+      },
+      "action": "captured",
+      "notes": "XRF analysis of bronze composition at 3 points on plaque surface",
+      "signature": "base64_signature_placeholder"
+    },
+    {
+      "timestamp": "2025-01-15T15:00:00Z",
+      "custodian": {
+        "id": "VAL-2025-0008",
+        "role": "validator",
+        "institution": "Aletheia Network"
+      },
+      "action": "sealed",
+      "previousCustodian": "OP-2025-0042",
+      "notes": "Manifest created, hashes verified, signature applied",
+      "signature": "base64_signature_placeholder"
+    }
+  ],
+  "consentAndRights": {
+    "consentTokens": [
+      {
+        "tokenID": "CNS-2025-BM-0001",
+        "grantor": "British Museum",
+        "scope": ["store", "analyze", "publish_derived"],
+        "expiresAt": "2030-01-15T00:00:00Z",
+        "revocable": true
+      }
+    ],
+    "indigenousSovereignty": {
+      "applies": true,
+      "community": "Edo people / Benin Kingdom descendants",
+      "stewardContact": "Royal Court of Benin Cultural Office",
+      "restrictions": [
+        "Analysis results must be shared with Benin National Museum",
+        "Raw data requires steward approval for publication",
+        "Repatriation claim status must be noted in any publication"
+      ]
+    },
+    "sensitiveData": {
+      "containsPII": false,
+      "containsGenetic": false,
+      "containsSacred": true,
+      "minimizationRequired": true
+    },
+    "license": "CC-BY-NC-4.0"
+  },
+  "relatedManifests": [
+    {
+      "stableID": "ALT-2025-IMG8B2C2",
+      "relationship": "same_subject"
+    },
+    {
+      "stableID": "ALT-2025-DOC8B2C3",
+      "relationship": "same_subject"
+    }
+  ],
+  "signature": {
+    "algorithm": "Ed25519",
+    "value": "base64_encoded_signature_over_canonical_json",
+    "keyID": "aletheia-validator-2025-001"
+  },
+  "timestamp": {
+    "rfc3161": "base64_encoded_rfc3161_token",
+    "timestampAuthority": "https://freetsa.org/tsr",
+    "blockchainAnchor": {
+      "chain": "ethereum",
+      "txHash": "0x...",
+      "blockHeight": 19500000
+    }
+  },
+  "analysisReadiness": {
+    "integrityVerified": true,
+    "formatValidated": true,
+    "qualityScore": 0.92,
+    "eligiblePipelines": [
+      "MTH-XRF-QUANT-001",
+      "MTH-XRF-ORIGIN-002"
+    ],
+    "blockers": []
+  }
+}

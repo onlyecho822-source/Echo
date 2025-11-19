@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aletheia.echo/schemas/echo-ethics-config/v1.0.0",
+  "title": "Echo Ethics Dimmer Configuration",
+  "description": "Configuration for the Echo Ethics Dimmer - controls prompt style, logging, allowed operations, and review requirements",
+  "type": "object",
+  "required": ["configVersion", "mode", "promptStyle", "logging", "allowedOperations", "reviewPath"],
+  "properties": {
+    "configVersion": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["L5_SAFE", "L4_DEFENSIVE", "L3_INVESTIGATIVE", "L2_BLACK_LENS"],
+      "description": "Operating mode determining analysis depth and review requirements"
+    },
+    "modeDescription": {
+      "type": "object",
+      "properties": {
+        "L5_SAFE": {
+          "const": "Conservative analysis only; established facts; no speculation"
+        },
+        "L4_DEFENSIVE": {
+          "const": "Threat modeling and bias detection; structural analysis permitted"
+        },
+        "L3_INVESTIGATIVE": {
+          "const": "Full structural analysis; hypothesis generation; pattern detection"
+        },
+        "L2_BLACK_LENS": {
+          "const": "Full hypothesis enumeration; suppression analysis; ALL outputs require human review"
+        }
+      }
+    },
+    "promptStyle": {
+      "type": "object",
+      "required": ["systemPromptTemplate", "constraintLevel", "speculationAllowed"],
+      "properties": {
+        "systemPromptTemplate": {
+          "type": "string",
+          "description": "Reference to prompt template file for this mode"
+        },
+        "constraintLevel": {
+          "type": "string",
+          "enum": ["strict", "moderate", "permissive", "unrestricted"]
+        },
+        "speculationAllowed": {
+          "type": "boolean"
+        },
+        "speculationLabel": {
+          "type": "string",
+          "description": "Required label for speculative content",
+          "default": "[SPECULATION]"
+        },
+        "hypothesisEnumeration": {
+          "type": "boolean",
+          "description": "Whether to enumerate all possible hypotheses"
+        },
+        "suppressionAnalysis": {
+          "type": "boolean",
+          "description": "Whether to analyze potential suppression mechanisms"
+        }
+      }
+    },
+    "logging": {
+      "type": "object",
+      "required": ["level", "auditTrail", "metricsCollection"],
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": ["minimal", "standard", "verbose", "forensic"]
+        },
+        "auditTrail": {
+          "type": "boolean",
+          "description": "Whether to maintain signed audit trail"
+        },
+        "metricsCollection": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "provenance_completeness",
+              "reproducibility_rate",
+              "challenge_resolution_time",
+              "mode_fidelity",
+              "data_minimization_rate"
+            ]
+          }
+        },
+        "logRetentionDays": {
+          "type": "integer",
+          "minimum": 30
+        }
+      }
+    },
+    "allowedOperations": {
+      "type": "object",
+      "properties": {
+        "ingest": { "type": "boolean" },
+        "seal": { "type": "boolean" },
+        "analyze": { "type": "boolean" },
+        "correlate": { "type": "boolean" },
+        "hypothesize": { "type": "boolean" },
+        "challengeGenerate": { "type": "boolean" },
+        "export": { "type": "boolean" },
+        "publishDerived": { "type": "boolean" },
+        "publishRaw": { "type": "boolean" }
+      }
+    },
+    "reviewPath": {
+      "type": "object",
+      "required": ["reviewRequired", "reviewerRoles"],
+      "properties": {
+        "reviewRequired": {
+          "type": "boolean",
+          "description": "Whether outputs require human review before action"
+        },
+        "reviewerRoles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["validator", "steward", "reviewer", "legal_observer"]
+          }
+        },
+        "devilLensReview": {
+          "type": "boolean",
+          "description": "Whether outputs must pass Devil Lens adversarial review"
+        },
+        "reviewTimeoutHours": {
+          "type": "integer",
+          "description": "Maximum time for review before escalation"
+        },
+        "autoRejectOnTimeout": {
+          "type": "boolean"
+        }
+      }
+    },
+    "dataMinimization": {
+      "type": "object",
+      "properties": {
+        "enforceMinimalExport": { "type": "boolean" },
+        "stripPII": { "type": "boolean" },
+        "requireConsentCheck": { "type": "boolean" },
+        "indigenousSovereigntyCheck": { "type": "boolean" }
+      }
+    },
+    "riskControls": {
+      "type": "object",
+      "properties": {
+        "maxConfidenceWithoutCorroboration": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Maximum confidence score allowed without multi-method corroboration"
+        },
+        "requireMultiDomainEvidence": {
+          "type": "boolean"
+        },
+        "flagHighImpactClaims": {
+          "type": "boolean"
+        },
+        "blockIrreversibleActions": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

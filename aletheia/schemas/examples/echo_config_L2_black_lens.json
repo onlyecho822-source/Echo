@@ -1,0 +1,54 @@
+{
+  "configVersion": "1.0.0",
+  "mode": "L2_BLACK_LENS",
+  "promptStyle": {
+    "systemPromptTemplate": "prompts/L2_black_lens.md",
+    "constraintLevel": "unrestricted",
+    "speculationAllowed": true,
+    "speculationLabel": "[SPECULATION - REQUIRES REVIEW]",
+    "hypothesisEnumeration": true,
+    "suppressionAnalysis": true
+  },
+  "logging": {
+    "level": "forensic",
+    "auditTrail": true,
+    "metricsCollection": [
+      "provenance_completeness",
+      "reproducibility_rate",
+      "challenge_resolution_time",
+      "mode_fidelity",
+      "data_minimization_rate"
+    ],
+    "logRetentionDays": 730
+  },
+  "allowedOperations": {
+    "ingest": true,
+    "seal": true,
+    "analyze": true,
+    "correlate": true,
+    "hypothesize": true,
+    "challengeGenerate": true,
+    "export": true,
+    "publishDerived": false,
+    "publishRaw": false
+  },
+  "reviewPath": {
+    "reviewRequired": true,
+    "reviewerRoles": ["validator", "reviewer", "legal_observer"],
+    "devilLensReview": true,
+    "reviewTimeoutHours": 168,
+    "autoRejectOnTimeout": true
+  },
+  "dataMinimization": {
+    "enforceMinimalExport": true,
+    "stripPII": true,
+    "requireConsentCheck": true,
+    "indigenousSovereigntyCheck": true
+  },
+  "riskControls": {
+    "maxConfidenceWithoutCorroboration": 0.5,
+    "requireMultiDomainEvidence": true,
+    "flagHighImpactClaims": true,
+    "blockIrreversibleActions": true
+  }
+}

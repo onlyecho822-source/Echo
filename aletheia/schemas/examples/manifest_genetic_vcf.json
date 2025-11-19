@@ -1,0 +1,153 @@
+{
+  "manifestVersion": "1.0.0",
+  "stableID": "ALT-2025-VCF3D4E5",
+  "contentHash": {
+    "primary": "sha256:9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+  },
+  "hashAlgorithm": "SHA-256",
+  "fileMetadata": {
+    "filename": "ancient_dna_sample_AK47.vcf.gz",
+    "mimeType": "application/gzip",
+    "sizeBytes": 15728640,
+    "encoding": "gzip-compressed"
+  },
+  "evidenceType": "genetic_vcf",
+  "captureMetadata": {
+    "captureDateTime": "2025-02-10T09:15:00Z",
+    "captureAgent": {
+      "id": "SEQ-LAB-0012",
+      "role": "instrument",
+      "institution": "Max Planck Institute for Evolutionary Anthropology"
+    },
+    "captureLocation": {
+      "name": "Ancient DNA Lab, MPI-EVA",
+      "coordinates": {
+        "latitude": 51.3127,
+        "longitude": 12.3968,
+        "uncertainty_m": 50
+      },
+      "jurisdiction": "Germany"
+    },
+    "instrument": {
+      "type": "DNA Sequencer",
+      "manufacturer": "Illumina",
+      "model": "NovaSeq 6000",
+      "serialNumber": "NV6-2023-0234",
+      "calibrationDate": "2025-01-05"
+    },
+    "captureConditions": {
+      "temperature_c": 18,
+      "humidity_percent": 30,
+      "notes": "Clean room conditions; UDG treatment applied for damage repair"
+    }
+  },
+  "subjectMetadata": {
+    "subjectType": "biological_sample",
+    "subjectID": "ADNA-AK47-PETROUS",
+    "description": "Ancient DNA from petrous bone, archaeological context AK-47",
+    "culturalAffiliation": ["Unknown - under investigation"],
+    "estimatedPeriod": {
+      "startYear": -2500,
+      "endYear": -2000,
+      "confidence": 0.75
+    }
+  },
+  "chainOfCustody": [
+    {
+      "timestamp": "2024-06-15T00:00:00Z",
+      "custodian": {
+        "id": "ARCH-EXP-2024-007",
+        "role": "custodian",
+        "institution": "Archaeological Survey of Country"
+      },
+      "action": "captured",
+      "notes": "Bone fragment excavated from burial site AK"
+    },
+    {
+      "timestamp": "2024-09-01T00:00:00Z",
+      "custodian": {
+        "id": "MPI-ADNA-LAB",
+        "role": "custodian",
+        "institution": "Max Planck Institute"
+      },
+      "action": "received",
+      "previousCustodian": "ARCH-EXP-2024-007",
+      "notes": "Sample received for ancient DNA extraction"
+    },
+    {
+      "timestamp": "2025-02-10T09:15:00Z",
+      "custodian": {
+        "id": "MPI-ADNA-LAB",
+        "role": "custodian",
+        "institution": "Max Planck Institute"
+      },
+      "action": "analyzed",
+      "notes": "Sequencing complete, VCF generated via GATK pipeline"
+    },
+    {
+      "timestamp": "2025-02-10T12:00:00Z",
+      "custodian": {
+        "id": "VAL-2025-0015",
+        "role": "validator",
+        "institution": "Aletheia Network"
+      },
+      "action": "sealed",
+      "previousCustodian": "MPI-ADNA-LAB",
+      "signature": "base64_signature_placeholder"
+    }
+  ],
+  "consentAndRights": {
+    "consentTokens": [
+      {
+        "tokenID": "CNS-2025-MPI-GEN-0042",
+        "grantor": "Ministry of Culture",
+        "scope": ["store", "analyze", "publish_derived"],
+        "expiresAt": "2035-02-10T00:00:00Z",
+        "revocable": false
+      }
+    ],
+    "indigenousSovereignty": {
+      "applies": false,
+      "community": null,
+      "stewardContact": null,
+      "restrictions": []
+    },
+    "sensitiveData": {
+      "containsPII": false,
+      "containsGenetic": true,
+      "containsSacred": false,
+      "minimizationRequired": true
+    },
+    "license": "restricted-research"
+  },
+  "relatedManifests": [
+    {
+      "stableID": "ALT-2025-FQ3D4E4",
+      "relationship": "derived_from"
+    },
+    {
+      "stableID": "ALT-2025-C143D4E6",
+      "relationship": "same_subject"
+    }
+  ],
+  "signature": {
+    "algorithm": "Ed25519",
+    "value": "base64_encoded_signature",
+    "keyID": "aletheia-validator-2025-015"
+  },
+  "timestamp": {
+    "rfc3161": "base64_encoded_rfc3161_token",
+    "timestampAuthority": "https://timestamp.digicert.com"
+  },
+  "analysisReadiness": {
+    "integrityVerified": true,
+    "formatValidated": true,
+    "qualityScore": 0.88,
+    "eligiblePipelines": [
+      "MTH-HAPLO-001",
+      "MTH-ADMIX-002",
+      "MTH-POPGEN-003"
+    ],
+    "blockers": []
+  }
+}
