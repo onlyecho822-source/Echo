@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Learn {{ language|title }} - Echo Language{% endblock %}
+
+{% block content %}
+<div class="learn-page">
+    <div class="learn-header">
+        <a href="{{ url_for('dashboard') }}" class="back-link">Back to Dashboard</a>
+        <h1>Learn {{ language|title }}</h1>
+        <p>Complete lessons to earn XP and level up!</p>
+    </div>
+
+    <div class="lessons-container">
+        {% for category, lessons in categories.items() %}
+            <div class="lesson-category">
+                <h2 class="category-title">{{ category }}</h2>
+                <div class="lesson-grid">
+                    {% for lesson in lessons %}
+                        <a href="{{ url_for('lesson', lesson_id=lesson.id) }}" class="lesson-card {% if lesson.id in progress and progress[lesson.id].completed %}completed{% endif %}">
+                            <div class="lesson-card-header">
+                                <span class="lesson-difficulty">
+                                    {% for i in range(lesson.difficulty) %}*{% endfor %}
+                                </span>
+                                {% if lesson.id in progress and progress[lesson.id].completed %}
+                                    <span class="lesson-checkmark">Done</span>
+                                {% endif %}
+                            </div>
+                            <h3 class="lesson-title">{{ lesson.title }}</h3>
+                            <p class="lesson-description">{{ lesson.description }}</p>
+                            <div class="lesson-meta">
+                                <span class="xp-reward">+{{ lesson.xp_reward }} XP</span>
+                                {% if lesson.id in progress and progress[lesson.id].best_score > 0 %}
+                                    <span class="best-score">Best: {{ progress[lesson.id].best_score }}%</span>
+                                {% endif %}
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

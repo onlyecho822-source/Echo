@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}Echo Language - Learn Spanish & English{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <div class="hero-content">
+        <h1>Learn Languages the Smart Way</h1>
+        <p class="hero-subtitle">Combine gamified learning with classroom collaboration. Master Spanish and English through interactive lessons, earn XP, and learn with friends.</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('register') }}" class="btn btn-large btn-primary">Start Learning Free</a>
+            <a href="{{ url_for('login') }}" class="btn btn-large btn-secondary">I Have an Account</a>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="language-cards">
+            <div class="lang-card spanish">
+                <span class="flag">ES</span>
+                <span class="lang-name">Spanish</span>
+            </div>
+            <div class="lang-card english">
+                <span class="flag">EN</span>
+                <span class="lang-name">English</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="features">
+    <h2>Why Echo Language?</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <div class="feature-icon">XP</div>
+            <h3>Gamified Learning</h3>
+            <p>Earn XP, maintain streaks, and level up as you learn. Track your progress with achievements and compete on leaderboards.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">C</div>
+            <h3>Virtual Classrooms</h3>
+            <p>Join or create classrooms. Teachers can assign lessons, post announcements, and track student progress.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">L</div>
+            <h3>Interactive Lessons</h3>
+            <p>Multiple choice, fill-in-the-blank, matching, and translation exercises make learning engaging and effective.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">P</div>
+            <h3>Progress Tracking</h3>
+            <p>See your improvement over time. Review completed lessons and identify areas that need more practice.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <h2>Ready to Start Your Language Journey?</h2>
+    <p>Join thousands of learners improving their Spanish and English skills every day.</p>
+    <a href="{{ url_for('register') }}" class="btn btn-large btn-primary">Get Started Now</a>
+</section>
+{% endblock %}

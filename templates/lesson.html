@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ lesson.title }} - Echo Language{% endblock %}
+
+{% block content %}
+<div class="lesson-page">
+    <div class="lesson-header">
+        <a href="{{ url_for('learn', language=lesson.language) }}" class="back-link">Back to Lessons</a>
+        <div class="lesson-progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="lesson-header-info">
+            <h1>{{ lesson.title }}</h1>
+            <span class="hearts-display" id="heartsDisplay">5</span>
+        </div>
+    </div>
+
+    <div class="lesson-content" id="lessonContent">
+        <!-- Questions will be loaded here -->
+    </div>
+
+    <div class="lesson-result hidden" id="lessonResult">
+        <div class="result-content">
+            <h2 id="resultTitle">Lesson Complete!</h2>
+            <div class="result-stats">
+                <div class="result-stat">
+                    <span class="stat-label">Score</span>
+                    <span class="stat-value" id="resultScore">0%</span>
+                </div>
+                <div class="result-stat">
+                    <span class="stat-label">XP Earned</span>
+                    <span class="stat-value" id="resultXP">+0</span>
+                </div>
+            </div>
+            <div class="result-actions">
+                <a href="{{ url_for('learn', language=lesson.language) }}" class="btn btn-secondary">Back to Lessons</a>
+                <button onclick="restartLesson()" class="btn btn-primary">Try Again</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const lessonContent = {{ content|tojson }};
+    const lessonId = {{ lesson.id }};
+    const xpReward = {{ lesson.xp_reward }};
+</script>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/lesson.js') }}"></script>
+{% endblock %}

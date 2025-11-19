@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ classroom.name }} - Echo Language{% endblock %}
+
+{% block content %}
+<div class="classroom-page">
+    <div class="classroom-header">
+        <a href="{{ url_for('dashboard') }}" class="back-link">Back to Dashboard</a>
+        <div class="classroom-title">
+            <h1>{{ classroom.name }}</h1>
+            <span class="class-code">Class Code: {{ classroom.code }}</span>
+        </div>
+        <p class="classroom-description">{{ classroom.description or 'No description provided.' }}</p>
+        <div class="classroom-meta">
+            <span>{{ classroom.language|title }}</span>
+            <span>{{ classroom.members|length }} students</span>
+            <span>Teacher: {{ classroom.teacher.username }}</span>
+        </div>
+    </div>
+
+    <div class="classroom-content">
+        <div class="classroom-main">
+            <!-- Announcements -->
+            <div class="section announcements-section">
+                <div class="section-header">
+                    <h2>Announcements</h2>
+                    {% if current_user == classroom.teacher %}
+                        <button onclick="toggleAnnouncementForm()" class="btn btn-small btn-primary">New Announcement</button>
+                    {% endif %}
+                </div>
+
+                {% if current_user == classroom.teacher %}
+                    <form method="POST" action="{{ url_for('create_announcement', classroom_id=classroom.id) }}" class="announcement-form hidden" id="announcementForm">
+                        <input type="text" name="title" placeholder="Announcement title" required>
+                        <textarea name="content" placeholder="Write your announcement..." required></textarea>
+                        <button type="submit" class="btn btn-primary">Post</button>
+                    </form>
+                {% endif %}
+
+                <div class="announcements-list">
+                    {% if announcements %}
+                        {% for announcement in announcements %}
+                            <div class="announcement-item">
+                                <h3>{{ announcement.title }}</h3>
+                                <p>{{ announcement.content }}</p>
+                                <span class="announcement-date">{{ announcement.created_at.strftime('%b %d, %Y at %I:%M %p') }}</span>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="empty-state">
+                            <p>No announcements yet.</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Assignments -->
+            <div class="section assignments-section">
+                <div class="section-header">
+                    <h2>Assignments</h2>
+                    {% if current_user == classroom.teacher %}
+                        <a href="{{ url_for('create_assignment', classroom_id=classroom.id) }}" class="btn btn-small btn-primary">New Assignment</a>
+                    {% endif %}
+                </div>
+
+                <div class="assignments-list">
+                    {% if assignments %}
+                        {% for assignment in assignments %}
+                            <a href="{{ url_for('view_assignment', assignment_id=assignment.id) }}" class="assignment-item">
+                                <div class="assignment-info">
+                                    <h3>{{ assignment.title }}</h3>
+                                    <p>{{ assignment.description[:100] }}{% if assignment.description|length > 100 %}...{% endif %}</p>
+                                </div>
+                                <div class="assignment-meta">
+                                    <span class="points">{{ assignment.points }} pts</span>
+                                    {% if assignment.due_date %}
+                                        <span class="due-date">Due: {{ assignment.due_date.strftime('%b %d, %Y') }}</span>
+                                    {% endif %}
+                                </div>
+                            </a>
+                        {% endfor %}
+                    {% else %}
+                        <div class="empty-state">
+                            <p>No assignments yet.</p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="classroom-sidebar">
+            <div class="section members-section">
+                <h2>Class Members</h2>
+                <div class="members-list">
+                    <div class="member-item teacher">
+                        <span class="member-avatar">{{ classroom.teacher.username[0] }}</span>
+                        <div class="member-info">
+                            <span class="member-name">{{ classroom.teacher.username }}</span>
+                            <span class="member-role">Teacher</span>
+                        </div>
+                    </div>
+                    {% for member in classroom.members %}
+                        <div class="member-item">
+                            <span class="member-avatar">{{ member.username[0] }}</span>
+                            <div class="member-info">
+                                <span class="member-name">{{ member.username }}</span>
+                                <span class="member-xp">{{ member.xp }} XP</span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleAnnouncementForm() {
+    const form = document.getElementById('announcementForm');
+    form.classList.toggle('hidden');
+}
+</script>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Join Classroom - Echo Language{% endblock %}
+
+{% block content %}
+<div class="form-page">
+    <div class="form-container">
+        <a href="{{ url_for('dashboard') }}" class="back-link">Back to Dashboard</a>
+        <h1>Join a Classroom</h1>
+        <p class="form-subtitle">Enter the class code provided by your teacher</p>
+
+        <form method="POST" action="{{ url_for('join_classroom') }}" class="create-form">
+            <div class="form-group">
+                <label for="code">Class Code</label>
+                <input type="text" id="code" name="code" placeholder="e.g., ABC123" required maxlength="6" style="text-transform: uppercase;">
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Join Classroom</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile - Echo Language{% endblock %}
+
+{% block content %}
+<div class="profile-page">
+    <div class="profile-header">
+        <div class="profile-avatar">{{ current_user.username[0] }}</div>
+        <div class="profile-info">
+            <h1>{{ current_user.username }}</h1>
+            <p class="profile-email">{{ current_user.email }}</p>
+            <span class="profile-role">{{ current_user.role|title }}</span>
+        </div>
+    </div>
+
+    <div class="profile-stats">
+        <div class="stat-card large">
+            <div class="stat-icon xp-icon">XP</div>
+            <div class="stat-details">
+                <span class="stat-value">{{ current_user.xp }}</span>
+                <span class="stat-label">Total XP</span>
+            </div>
+        </div>
+        <div class="stat-card large">
+            <div class="stat-icon level-icon">LV</div>
+            <div class="stat-details">
+                <span class="stat-value">{{ current_user.level }}</span>
+                <span class="stat-label">Level</span>
+            </div>
+        </div>
+        <div class="stat-card large">
+            <div class="stat-icon streak-icon">FI</div>
+            <div class="stat-details">
+                <span class="stat-value">{{ current_user.streak }}</span>
+                <span class="stat-label">Day Streak</span>
+            </div>
+        </div>
+        <div class="stat-card large">
+            <div class="stat-icon gems-icon">GE</div>
+            <div class="stat-details">
+                <span class="stat-value">{{ current_user.gems }}</span>
+                <span class="stat-label">Gems</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-section">
+        <h2>Achievements</h2>
+        {% if achievements %}
+            <div class="achievements-grid">
+                {% for ua in achievements %}
+                    <div class="achievement-card">
+                        <div class="achievement-icon">{{ ua.achievement.icon[0]|upper }}</div>
+                        <div class="achievement-info">
+                            <h3>{{ ua.achievement.name }}</h3>
+                            <p>{{ ua.achievement.description }}</p>
+                            <span class="earned-date">Earned {{ ua.earned_at.strftime('%b %d, %Y') }}</span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="empty-state">
+                <p>No achievements yet. Keep learning to earn badges!</p>
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="profile-section">
+        <h2>Account Info</h2>
+        <div class="account-info">
+            <p><strong>Member since:</strong> {{ current_user.created_at.strftime('%B %d, %Y') }}</p>
+            <p><strong>Last practice:</strong> {{ current_user.last_practice.strftime('%B %d, %Y') if current_user.last_practice else 'Never' }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard - Echo Language{% endblock %}
+
+{% block content %}
+<div class="dashboard">
+    <div class="dashboard-header">
+        <div class="welcome-section">
+            <h1>Welcome back, {{ current_user.username }}!</h1>
+            <p>Keep up the great work! You're on a {{ current_user.streak }}-day streak.</p>
+        </div>
+        <div class="stats-cards">
+            <div class="stat-card">
+                <div class="stat-value">{{ current_user.xp }}</div>
+                <div class="stat-label">Total XP</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">{{ current_user.level }}</div>
+                <div class="stat-label">Level</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">{{ current_user.streak }}</div>
+                <div class="stat-label">Day Streak</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">{{ completed }}/{{ total }}</div>
+                <div class="stat-label">Lessons</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-grid">
+        <div class="dashboard-section languages">
+            <h2>Choose Language</h2>
+            <div class="language-selection">
+                <a href="{{ url_for('learn', language='spanish') }}" class="language-option">
+                    <div class="lang-icon spanish-icon">ES</div>
+                    <div class="lang-info">
+                        <h3>Spanish</h3>
+                        <p>{{ lessons|selectattr('language', 'equalto', 'spanish')|list|length }} lessons available</p>
+                    </div>
+                </a>
+                <a href="{{ url_for('learn', language='english') }}" class="language-option">
+                    <div class="lang-icon english-icon">EN</div>
+                    <div class="lang-info">
+                        <h3>English</h3>
+                        <p>{{ lessons|selectattr('language', 'equalto', 'english')|list|length }} lessons available</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="dashboard-section classrooms">
+            <div class="section-header">
+                <h2>My Classrooms</h2>
+                <div class="section-actions">
+                    {% if current_user.role == 'teacher' %}
+                        <a href="{{ url_for('create_classroom') }}" class="btn btn-small btn-primary">Create Class</a>
+                    {% endif %}
+                    <a href="{{ url_for('join_classroom') }}" class="btn btn-small btn-secondary">Join Class</a>
+                </div>
+            </div>
+
+            {% if classrooms %}
+                <div class="classroom-list">
+                    {% for classroom in classrooms %}
+                        <a href="{{ url_for('view_classroom', classroom_id=classroom.id) }}" class="classroom-item">
+                            <div class="classroom-icon">{{ classroom.name[0] }}</div>
+                            <div class="classroom-info">
+                                <h4>{{ classroom.name }}</h4>
+                                <p>{{ classroom.language|title }} - {{ classroom.members|length }} students</p>
+                            </div>
+                            <span class="classroom-code">{{ classroom.code }}</span>
+                        </a>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="empty-state">
+                    <p>No classrooms yet. Join a class or create one!</p>
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="dashboard-section recent-lessons">
+            <h2>Continue Learning</h2>
+            <div class="lesson-preview-list">
+                {% for lesson in lessons[:5] %}
+                    <a href="{{ url_for('lesson', lesson_id=lesson.id) }}" class="lesson-preview-item">
+                        <div class="lesson-preview-info">
+                            <h4>{{ lesson.title }}</h4>
+                            <p>{{ lesson.category }} - {{ lesson.language|title }}</p>
+                        </div>
+                        <div class="lesson-preview-status">
+                            {% if lesson.id in progress and progress[lesson.id].completed %}
+                                <span class="status-complete">Completed</span>
+                            {% elif lesson.id in progress %}
+                                <span class="status-progress">In Progress</span>
+                            {% else %}
+                                <span class="status-new">Start</span>
+                            {% endif %}
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Leaderboard - Echo Language{% endblock %}
+
+{% block content %}
+<div class="leaderboard-page">
+    <div class="leaderboard-header">
+        <h1>Leaderboard</h1>
+        <p>Top learners this week</p>
+    </div>
+
+    <div class="leaderboard-container">
+        <div class="leaderboard-table">
+            {% for user in users %}
+                <div class="leaderboard-row {% if user.id == current_user.id %}current-user{% endif %}">
+                    <div class="rank">
+                        {% if loop.index == 1 %}
+                            <span class="medal gold">1</span>
+                        {% elif loop.index == 2 %}
+                            <span class="medal silver">2</span>
+                        {% elif loop.index == 3 %}
+                            <span class="medal bronze">3</span>
+                        {% else %}
+                            <span class="number">{{ loop.index }}</span>
+                        {% endif %}
+                    </div>
+                    <div class="user-info">
+                        <span class="avatar">{{ user.username[0] }}</span>
+                        <span class="username">{{ user.username }}</span>
+                    </div>
+                    <div class="user-stats">
+                        <span class="level">Level {{ user.level }}</span>
+                        <span class="xp">{{ user.xp }} XP</span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
