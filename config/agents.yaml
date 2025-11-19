@@ -1,0 +1,180 @@
+# Echo Ethics Dimmer - Agent pH Profiles
+# Defines default ethics levels for each Echo agent type
+
+version: "1.0.0"
+
+# Agent configurations with pH profiles
+agents:
+  # Vault Agent - Secure identity and state management
+  vault_agent:
+    name: "Vault Agent"
+    description: "Secure identity and state management layer"
+    default_level: SAFE_HARBOR
+    allowed_levels:
+      - SAFE_HARBOR
+      - RED_TEAM
+    max_ph: 7.0
+    min_ph: 6.3
+    profiles:
+      standard:
+        depth: 0.3
+        plausibility_width: 0.2
+        threat_modeling: 0.3
+        candidness: 0.5
+        speculative_freedom: 0.2
+        creativity_bandwidth: 0.2
+        harm_check_sensitivity: 1.0
+    responsibilities:
+      - "Identity verification"
+      - "State persistence"
+      - "Access control"
+      - "Audit logging"
+
+  # Cortex Agent - Core reasoning and intelligence
+  cortex_agent:
+    name: "Cortex Agent"
+    description: "Core reasoning and analytical processing"
+    default_level: GREY_ZONE
+    allowed_levels:
+      - RED_TEAM
+      - GREY_ZONE
+      - BLACK_LENS
+    max_ph: 6.3
+    min_ph: 4.7
+    profiles:
+      analytical:
+        depth: 0.8
+        plausibility_width: 0.7
+        threat_modeling: 0.6
+        candidness: 0.85
+        speculative_freedom: 0.7
+        creativity_bandwidth: 0.75
+        harm_check_sensitivity: 0.5
+    responsibilities:
+      - "Deep analysis"
+      - "Pattern recognition"
+      - "Strategic reasoning"
+      - "Consequence modeling"
+
+  # Scout Agent - Information gathering and reconnaissance
+  scout_agent:
+    name: "Scout Agent"
+    description: "Information gathering from public sources"
+    default_level: GREY_ZONE
+    allowed_levels:
+      - RED_TEAM
+      - GREY_ZONE
+    max_ph: 6.3
+    min_ph: 5.4
+    profiles:
+      reconnaissance:
+        depth: 0.7
+        plausibility_width: 0.8
+        threat_modeling: 0.5
+        candidness: 0.7
+        speculative_freedom: 0.6
+        creativity_bandwidth: 0.5
+        harm_check_sensitivity: 0.7
+    responsibilities:
+      - "Public data collection"
+      - "Source verification"
+      - "Signal detection"
+      - "Trend analysis"
+
+  # Builder Agent - Code generation and system construction
+  builder_agent:
+    name: "Builder Agent"
+    description: "Code generation and system construction"
+    default_level: RED_TEAM
+    allowed_levels:
+      - SAFE_HARBOR
+      - RED_TEAM
+      - GREY_ZONE
+    max_ph: 7.0
+    min_ph: 5.4
+    profiles:
+      construction:
+        depth: 0.6
+        plausibility_width: 0.5
+        threat_modeling: 0.4
+        candidness: 0.6
+        speculative_freedom: 0.5
+        creativity_bandwidth: 0.8
+        harm_check_sensitivity: 0.8
+    responsibilities:
+      - "Code generation"
+      - "System architecture"
+      - "Integration"
+      - "Testing"
+
+  # Judge Agent - Validation and ethical assessment
+  judge_agent:
+    name: "Judge Agent"
+    description: "Output validation and ethical boundary enforcement"
+    default_level: SAFE_HARBOR
+    allowed_levels:
+      - SAFE_HARBOR
+      - RED_TEAM
+    max_ph: 7.0
+    min_ph: 6.3
+    profiles:
+      evaluation:
+        depth: 0.5
+        plausibility_width: 0.4
+        threat_modeling: 0.7
+        candidness: 0.9
+        speculative_freedom: 0.3
+        creativity_bandwidth: 0.3
+        harm_check_sensitivity: 1.0
+    responsibilities:
+      - "Output validation"
+      - "Boundary enforcement"
+      - "Risk assessment"
+      - "Compliance checking"
+
+  # Council Agent - Multi-agent coordination
+  council_agent:
+    name: "Council Agent"
+    description: "Orchestrates multi-agent decision making"
+    default_level: GREY_ZONE
+    allowed_levels:
+      - RED_TEAM
+      - GREY_ZONE
+      - BLACK_LENS
+    max_ph: 6.3
+    min_ph: 4.7
+    profiles:
+      orchestration:
+        depth: 0.85
+        plausibility_width: 0.75
+        threat_modeling: 0.65
+        candidness: 0.9
+        speculative_freedom: 0.8
+        creativity_bandwidth: 0.7
+        harm_check_sensitivity: 0.5
+    responsibilities:
+      - "Agent coordination"
+      - "Consensus building"
+      - "Resource allocation"
+      - "Strategic alignment"
+
+# Agent interaction rules
+interaction_rules:
+  # Judge always validates other agents' output
+  validation_chain:
+    - source: "*"
+      validator: judge_agent
+
+  # Council coordinates all agents
+  coordination:
+    coordinator: council_agent
+    managed_agents:
+      - vault_agent
+      - cortex_agent
+      - scout_agent
+      - builder_agent
+      - judge_agent
+
+  # Level restrictions
+  level_inheritance: false  # Agents use their own levels
+  downgrade_propagation: true  # If one downgrades, consider others

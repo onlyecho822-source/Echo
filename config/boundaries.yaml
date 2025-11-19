@@ -1,0 +1,101 @@
+# Echo Ethics Dimmer - Boundary Configuration
+# Invariant safety rules that apply across ALL ethics levels
+
+version: "1.0.0"
+
+# Core principle: The dimmer adjusts MINDSET, not LAWS
+# These boundaries are immutable regardless of ethics level
+
+invariant_boundaries:
+  # Data Access Boundaries
+  - id: DATA_001
+    name: "Public Data Only"
+    type: data_access
+    description: "System may only access publicly available data"
+    pattern: "(private|classified|confidential|secret)\\s*(data|access|information)"
+    severity: blocked
+
+  - id: DATA_002
+    name: "No Credential Harvesting"
+    type: data_access
+    description: "System cannot collect or store credentials"
+    pattern: "(harvest|collect|store)\\s*(password|credential|token|key)"
+    severity: blocked
+
+  # Action Boundaries
+  - id: ACTION_001
+    name: "No Actionable Harm"
+    type: action
+    description: "System cannot produce instructions for harm"
+    pattern: "(how\\s+to|instructions?\\s+for|steps?\\s+to)\\s*(harm|injure|damage|destroy|kill)"
+    severity: blocked
+
+  - id: ACTION_002
+    name: "No Evasion"
+    type: action
+    description: "System cannot help evade detection or security"
+    pattern: "(evade|bypass|circumvent|avoid)\\s*(detection|security|monitoring|tracking)"
+    severity: blocked
+
+  - id: ACTION_003
+    name: "No Operational Exploits"
+    type: action
+    description: "System cannot provide working exploit code"
+    pattern: "(exploit\\s+code|payload|shellcode|malware|virus|trojan)"
+    severity: blocked
+
+  # Access Boundaries
+  - id: ACCESS_001
+    name: "No Unauthorized Access"
+    type: data_access
+    description: "System cannot facilitate unauthorized access"
+    pattern: "(hack|break\\s+into|unauthorized\\s+access|crack\\s+password)"
+    severity: blocked
+
+  # Network Boundaries
+  - id: NETWORK_001
+    name: "No Private Network Interaction"
+    type: network
+    description: "System cannot access private networks"
+    pattern: "(internal\\s+network|intranet|private\\s+ip|192\\.168\\.|10\\.\\d+\\.|172\\.(1[6-9]|2[0-9]|3[01])\\.)"
+    severity: blocked
+
+  # Financial Boundaries
+  - id: FINANCIAL_001
+    name: "No Financial Misconduct"
+    type: financial
+    description: "System cannot facilitate financial crimes"
+    pattern: "(money\\s+laundering|fraud|embezzlement|insider\\s+trading|tax\\s+evasion)"
+    severity: blocked
+
+  # Privacy Boundaries
+  - id: PRIVACY_001
+    name: "No PII Exposure"
+    type: privacy
+    description: "System cannot expose personal information"
+    pattern: "(social\\s+security|credit\\s+card|bank\\s+account)\\s*(number|info)"
+    severity: blocked
+
+  - id: PRIVACY_002
+    name: "No Doxing"
+    type: privacy
+    description: "System cannot help identify private individuals"
+    pattern: "(dox|find\\s+address|locate\\s+person|track\\s+individual)"
+    severity: blocked
+
+# Custom boundaries (can be modified per deployment)
+custom_boundaries: []
+
+# Whitelist patterns (allowed even if matching boundaries)
+whitelist:
+  - "security\\s+research"
+  - "educational\\s+purposes"
+  - "authorized\\s+testing"
+  - "ctf\\s+challenge"
+
+# Violation handling
+violation_handling:
+  log_all: true
+  alert_on_blocked: true
+  max_violations_before_downgrade: 3
+  auto_reset_after_minutes: 60

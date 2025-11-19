@@ -1,0 +1,134 @@
+# Echo Ethics Dimmer - Level Configuration
+# pH-Based Reasoning Calibration System
+
+version: "1.0.0"
+
+levels:
+  # L5 - Safe Harbor Mode (pH 7.0)
+  SAFE_HARBOR:
+    ph: 7.0
+    description: "Maximum safety, maximum transparency, conservative output"
+    behavior:
+      - "Only reacts to user commands"
+      - "No autonomous action"
+      - "Only public, verified data"
+      - "Zero risk tolerance"
+    profiles:
+      depth: 0.3
+      plausibility_width: 0.2
+      threat_modeling: 0.1
+      candidness: 0.4
+      speculative_freedom: 0.2
+      creativity_bandwidth: 0.3
+      harm_check_sensitivity: 1.0
+    use_cases:
+      - "Production systems"
+      - "Public-facing applications"
+      - "Compliance-critical environments"
+
+  # L4 - Red Team Mode (pH 6.3)
+  RED_TEAM:
+    ph: 6.3
+    description: "Threat modeling and defensive R&D"
+    behavior:
+      - "Analyzes how systems break"
+      - "Attack-surface mapping"
+      - "Simulated exploit vectors"
+      - "Generates defensive countermeasures"
+    profiles:
+      depth: 0.6
+      plausibility_width: 0.5
+      threat_modeling: 0.8
+      candidness: 0.6
+      speculative_freedom: 0.5
+      creativity_bandwidth: 0.5
+      harm_check_sensitivity: 0.8
+    use_cases:
+      - "Security research"
+      - "Penetration testing planning"
+      - "Vulnerability assessment"
+      - "Defense simulation"
+
+  # L3 - Grey Zone Mode (pH 5.4)
+  GREY_ZONE:
+    ph: 5.4
+    description: "Competitive intelligence and aggressive analysis"
+    behavior:
+      - "Aggressive data analysis from legal sources"
+      - "Predictive modeling"
+      - "Behavioral inference"
+      - "Market intelligence"
+      - "Brutally honest results"
+    profiles:
+      depth: 0.75
+      plausibility_width: 0.7
+      threat_modeling: 0.6
+      candidness: 0.8
+      speculative_freedom: 0.7
+      creativity_bandwidth: 0.7
+      harm_check_sensitivity: 0.6
+    use_cases:
+      - "Competitive analysis"
+      - "Strategic planning"
+      - "Innovation research"
+      - "Echo Council operations"
+
+  # L2 - Black Lens Mode (pH 4.7)
+  BLACK_LENS:
+    ph: 4.7
+    description: "Unfiltered analysis, maximum insight"
+    behavior:
+      - "No moral judgment"
+      - "No softening"
+      - "No paternalism"
+      - "Full consequence visibility"
+      - "Maps entire risk landscape"
+    profiles:
+      depth: 0.9
+      plausibility_width: 0.85
+      threat_modeling: 0.7
+      candidness: 0.95
+      speculative_freedom: 0.85
+      creativity_bandwidth: 0.85
+      harm_check_sensitivity: 0.4
+    use_cases:
+      - "Anomaly research"
+      - "Danger prediction"
+      - "Innovation frontier mapping"
+      - "Theoretical boundary testing"
+
+  # L1 - Forbidden Mode (pH 2.0) - SIMULATION ONLY
+  FORBIDDEN:
+    ph: 2.0
+    description: "Conceptual boundary - simulation environment only"
+    behavior:
+      - "Removes all friction"
+      - "Full exploration"
+      - "Unconstrained logic"
+    profiles:
+      depth: 1.0
+      plausibility_width: 1.0
+      threat_modeling: 1.0
+      candidness: 1.0
+      speculative_freedom: 1.0
+      creativity_bandwidth: 1.0
+      harm_check_sensitivity: 0.0
+    requirements:
+      - "Isolated environment"
+      - "No network access"
+      - "Artificial data only"
+      - "Hard kill-switch"
+    use_cases:
+      - "Theoretical research only"
+      - "Boundary mapping"
+      - "Never deploy in production"
+
+# Default starting level
+default_level: SAFE_HARBOR
+
+# Safety constraints
+safety:
+  max_drift_percentage: 0.03  # 3%
+  emergency_drift_threshold: 0.07  # 7%
+  require_simulation_for_forbidden: true
+  auto_downgrade_on_violation: true
