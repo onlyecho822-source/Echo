@@ -1,0 +1,93 @@
+{
+  "stableID": "ALT-C14X-P3Q4R5S6-T7U8",
+  "version": "1.0.0",
+  "artifactType": "RADIOCARBON",
+  "contentHash": {
+    "algorithm": "SHA-256",
+    "value": "b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9",
+    "secondaryHash": {
+      "algorithm": "BLAKE3",
+      "value": "a2c4e6g8i0k2m4o6q8s0u2w4y6a8c0e2g4i6k8m0o2q4s6u8w0y2"
+    }
+  },
+  "metadata": {
+    "filename": "c14_measurement_2024.json",
+    "fileSize": 8192,
+    "mimeType": "application/json",
+    "captureDate": "2024-01-10T08:00:00Z",
+    "captureDevice": {
+      "make": "National Electrostatics Corp",
+      "model": "1.5SDH-1 Pelletron AMS",
+      "serialNumber": "AMS-2019-001",
+      "calibrationDate": "2023-12-01"
+    },
+    "geolocation": {
+      "latitude": 41.3851,
+      "longitude": 2.1734,
+      "accuracy": 10
+    },
+    "subject": {
+      "type": "material",
+      "identifier": "SAMPLE-TEXTILE-2024-001",
+      "description": "Linen textile fragment, alleged medieval origin"
+    },
+    "custody": [
+      {
+        "party": "Barcelona AMS Laboratory",
+        "action": "analyzed",
+        "timestamp": "2024-01-10T08:00:00Z",
+        "location": "Barcelona, Spain",
+        "notes": "AMS radiocarbon dating"
+      },
+      {
+        "party": "Aletheia Vault",
+        "action": "stored",
+        "timestamp": "2024-01-10T12:00:00Z",
+        "location": "Secure Cloud Storage",
+        "notes": "Raw measurement data sealed"
+      }
+    ],
+    "labels": ["radiocarbon", "C14", "dating", "AMS", "textile"],
+    "custom": {
+      "labCode": "BETA-2024-0001",
+      "conventionalAge": 680,
+      "uncertainty": 30,
+      "delta13C": -24.5,
+      "calibratedRange": {
+        "startBP": 670,
+        "endBP": 560,
+        "probability": 0.954
+      },
+      "calibrationCurve": "IntCal20",
+      "pretreatment": "acid-base-acid",
+      "sampleWeight_mg": 2.5
+    }
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "value": "cmFkaW9jYXJib25fc2lnbmF0dXJlX2Jhc2U2NA==",
+    "publicKeyID": "aletheia-validator-key-003",
+    "signerIdentity": "validator@aletheia.systems"
+  },
+  "timestamp": {
+    "authority": "OpenTimestamps",
+    "value": "2024-01-10T12:05:00Z",
+    "proof": "b3RzX3Byb29mX3JhZGlvY2FyYm9u"
+  },
+  "consent": {
+    "consentID": "CONSENT-RESEARCH-002",
+    "scope": ["research", "validation", "publication"],
+    "restrictions": [],
+    "stewardID": "HERITAGE-FOUNDATION-001"
+  },
+  "provenance": {
+    "parentIDs": [],
+    "derivationMethod": null,
+    "derivationGraph": "https://aletheia.systems/graph/ALT-C14X-P3Q4R5S6-T7U8"
+  },
+  "integrity": {
+    "lastVerified": "2024-01-10T12:10:00Z",
+    "verificationCount": 1,
+    "status": "valid"
+  }
+}

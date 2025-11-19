@@ -1,0 +1,88 @@
+{
+  "stableID": "ALT-SPEC-X7Y8Z9W0-A1B2",
+  "version": "1.0.0",
+  "artifactType": "XRF_CSV",
+  "contentHash": {
+    "algorithm": "SHA-256",
+    "value": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+    "secondaryHash": {
+      "algorithm": "BLAKE3",
+      "value": "719b1e99e6c6b14c5f5e57a11c3d0c45e6e8a2b4d7f9c1e3a5b7d9f1c3e5a7b9"
+    }
+  },
+  "metadata": {
+    "filename": "artifact_xrf_analysis.csv",
+    "fileSize": 1048576,
+    "mimeType": "text/csv",
+    "captureDate": "2024-02-20T09:15:00Z",
+    "captureDevice": {
+      "make": "Bruker",
+      "model": "Tracer 5i",
+      "serialNumber": "T5I-2023-042",
+      "calibrationDate": "2024-01-01"
+    },
+    "geolocation": {
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "accuracy": 5
+    },
+    "subject": {
+      "type": "object",
+      "identifier": "ARTIFACT-BRONZE-2024-001",
+      "description": "Bronze Age sword blade, provenance contested"
+    },
+    "custody": [
+      {
+        "party": "British Museum Conservation",
+        "action": "analyzed",
+        "timestamp": "2024-02-20T09:15:00Z",
+        "location": "London, UK",
+        "notes": "Non-destructive XRF analysis"
+      },
+      {
+        "party": "Aletheia Vault",
+        "action": "stored",
+        "timestamp": "2024-02-20T11:00:00Z",
+        "location": "Secure Cloud Storage",
+        "notes": "Sealed for provenance verification"
+      }
+    ],
+    "labels": ["spectroscopy", "XRF", "materials", "archaeology", "bronze"],
+    "custom": {
+      "analysisType": "elemental composition",
+      "elements": ["Cu", "Sn", "Pb", "As", "Ag", "Fe"],
+      "exposureTime": 120,
+      "voltage": 40,
+      "current": 30,
+      "filter": "Al 25um",
+      "atmosphere": "air"
+    }
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "value": "c3BlY3RyYV9zaWduYXR1cmVfYmFzZTY0",
+    "publicKeyID": "aletheia-validator-key-002",
+    "signerIdentity": "validator@aletheia.systems"
+  },
+  "timestamp": {
+    "authority": "RFC3161-TSA",
+    "value": "2024-02-20T11:05:00Z",
+    "proof": "dHNhX3Byb29mX3BsYWNlaG9sZGVy"
+  },
+  "consent": {
+    "consentID": "CONSENT-PUBLIC-001",
+    "scope": ["research", "validation", "publication"],
+    "restrictions": [],
+    "stewardID": "MUSEUM-CURATOR-001"
+  },
+  "provenance": {
+    "parentIDs": [],
+    "derivationMethod": null,
+    "derivationGraph": "https://aletheia.systems/graph/ALT-SPEC-X7Y8Z9W0-A1B2"
+  },
+  "integrity": {
+    "lastVerified": "2024-02-20T11:10:00Z",
+    "verificationCount": 1,
+    "status": "valid"
+  }
+}

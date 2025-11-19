@@ -1,0 +1,86 @@
+{
+  "stableID": "ALT-GENO-A1B2C3D4-E5F6",
+  "version": "1.0.0",
+  "artifactType": "VCF",
+  "contentHash": {
+    "algorithm": "SHA-256",
+    "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "secondaryHash": {
+      "algorithm": "BLAKE3",
+      "value": "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262"
+    }
+  },
+  "metadata": {
+    "filename": "sample_001.vcf.gz",
+    "fileSize": 52428800,
+    "mimeType": "application/gzip",
+    "captureDate": "2024-03-15T14:30:00Z",
+    "captureDevice": {
+      "make": "Illumina",
+      "model": "NovaSeq 6000",
+      "serialNumber": "NS6-2024-001",
+      "calibrationDate": "2024-01-15"
+    },
+    "geolocation": {
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "accuracy": 10
+    },
+    "subject": {
+      "type": "biological",
+      "identifier": "SUBJ-2024-0042",
+      "description": "Human whole genome sequencing sample"
+    },
+    "custody": [
+      {
+        "party": "BioLab Inc.",
+        "action": "created",
+        "timestamp": "2024-03-15T14:30:00Z",
+        "location": "San Francisco, CA",
+        "notes": "Initial sequencing run"
+      },
+      {
+        "party": "Aletheia Vault",
+        "action": "stored",
+        "timestamp": "2024-03-15T16:00:00Z",
+        "location": "Secure Cloud Storage",
+        "notes": "Encrypted at rest with AES-256-GCM"
+      }
+    ],
+    "labels": ["genomic", "human", "WGS", "research"],
+    "custom": {
+      "sequencingDepth": "30x",
+      "referenceGenome": "GRCh38",
+      "variantCaller": "GATK HaplotypeCaller v4.3",
+      "qualityScore": 99.2
+    }
+  },
+  "signature": {
+    "algorithm": "Ed25519",
+    "value": "c2lnbmF0dXJlX3BsYWNlaG9sZGVyX2Jhc2U2NA==",
+    "publicKeyID": "aletheia-custodian-key-001",
+    "signerIdentity": "custodian@aletheia.systems"
+  },
+  "timestamp": {
+    "authority": "OpenTimestamps",
+    "value": "2024-03-15T16:05:00Z",
+    "proof": "b3RzX3Byb29mX3BsYWNlaG9sZGVy"
+  },
+  "consent": {
+    "consentID": "CONSENT-2024-0042",
+    "scope": ["research", "validation"],
+    "restrictions": ["no-commercial", "no-reidentification"],
+    "expiry": "2029-03-15T00:00:00Z",
+    "stewardID": "IRB-2024-001"
+  },
+  "provenance": {
+    "parentIDs": ["ALT-GENO-RAW1C3D4-FASTQ"],
+    "derivationMethod": "METHOD-GATK-VARIANT-001",
+    "derivationGraph": "https://aletheia.systems/graph/ALT-GENO-A1B2C3D4-E5F6"
+  },
+  "integrity": {
+    "lastVerified": "2024-03-15T16:10:00Z",
+    "verificationCount": 1,
+    "status": "valid"
+  }
+}

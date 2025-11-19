@@ -1,0 +1,195 @@
+# =============================================================================
+# ALETHEIA ECHO ETHICS CONFIGURATION
+# =============================================================================
+# Controls the Echo Ethics Dimmer, review paths, and operational constraints
+# for the Reality Decoding System.
+#
+# Author: Echo Nexus Omega
+# Version: 1.0.0
+# =============================================================================
+
+# Default operating mode
+default_mode: L5_Safe
+
+# Mode definitions
+modes:
+  L5_Safe:
+    description: "Conservative analysis mode with maximum restrictions"
+    log_level: standard
+    review_path: automated
+    speculation_allowed: false
+    max_hypotheses: 0
+    confidence_threshold: 0.95
+    require_citations: true
+    require_multi_source: true
+    pii_handling: redact
+
+  L4_Defensive:
+    description: "Threat modeling and defensive analysis only"
+    log_level: detailed
+    review_path: human_optional
+    speculation_allowed: true
+    max_hypotheses: 3
+    confidence_threshold: 0.85
+    require_citations: true
+    require_multi_source: true
+    pii_handling: flag
+
+  L3_Investigative:
+    description: "Structural analysis with guided hypothesis generation"
+    log_level: detailed
+    review_path: human_optional
+    speculation_allowed: true
+    max_hypotheses: 7
+    confidence_threshold: 0.70
+    require_citations: true
+    require_multi_source: false
+    pii_handling: flag
+
+  L2_Black_Lens:
+    description: "Full hypothesis enumeration - REQUIRES Devil Lens review"
+    log_level: forensic
+    review_path: devil_lens
+    speculation_allowed: true
+    max_hypotheses: 20
+    confidence_threshold: 0.50
+    require_citations: true
+    require_multi_source: false
+    pii_handling: allow
+
+# Logging configuration
+logging:
+  directory: ./logs
+  format: jsonl
+  rotation: daily
+  retention_days: 90
+  metrics:
+    enabled: true
+    export_format: prometheus
+
+# Security settings
+security:
+  encryption:
+    algorithm: AES-256-GCM
+    key_derivation: PBKDF2-SHA256
+    key_iterations: 100000
+  signing:
+    algorithm: Ed25519
+    key_storage: file  # Options: file, hsm, vault
+  timestamps:
+    authority: OpenTimestamps
+    fallback: RFC3161
+
+# Consent and privacy
+privacy:
+  default_scope:
+    - research
+    - validation
+  pii_patterns:
+    - "\\b[A-Z][a-z]+ [A-Z][a-z]+\\b"  # Names
+    - "\\b\\d{3}-\\d{2}-\\d{4}\\b"      # SSN
+    - "\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b"  # Email
+  minimization:
+    enabled: true
+    export_only_validation_fields: true
+  steward_approval_required:
+    - indigenous_data
+    - living_persons
+    - medical_records
+
+# Database configuration
+database:
+  type: postgresql  # Options: postgresql, sqlite
+  connection_pool:
+    min_size: 2
+    max_size: 10
+  schemas:
+    - aletheia_artifacts
+    - aletheia_consent
+    - aletheia_methods
+    - aletheia_graph
+
+# Knowledge graph settings
+graph:
+  backend: postgresql  # Options: postgresql, neo4j
+  entity_types:
+    - artifact
+    - person
+    - institution
+    - event
+    - test
+    - method
+  edge_types:
+    - custody
+    - claim
+    - contradiction
+    - derivation
+    - jurisdiction
+    - confidence
+
+# API settings
+api:
+  host: 0.0.0.0
+  port: 8080
+  cors_origins:
+    - http://localhost:3000
+  rate_limit:
+    requests_per_minute: 100
+  auth:
+    type: bearer_token
+    token_expiry_hours: 24
+
+# Quality thresholds
+quality:
+  reproducibility:
+    min_score: 80
+    required_checks:
+      - input_integrity
+      - method_specification
+      - environment_capture
+      - output_validation
+  provenance:
+    require_chain: true
+    max_gap_days: 30
+
+# Review workflow
+review:
+  devil_lens:
+    enabled: true
+    reviewers_required: 2
+    timeout_hours: 72
+    escalation_path: governance_council
+  automated:
+    enabled: true
+    rules_path: ./rules/automated_review.yaml
+
+# Governance
+governance:
+  roles:
+    - custodian      # Store/seal artifacts
+    - validator      # Verify reproducibility
+    - steward        # Protect community rights
+    - reviewer       # Domain expert review
+    - legal_observer # Compliance monitoring
+  audit:
+    enabled: true
+    retention_years: 7
+    immutable: true
+
+# Integration endpoints
+integrations:
+  opentimestamps:
+    enabled: true
+    calendar_urls:
+      - https://a.pool.opentimestamps.org
+      - https://b.pool.opentimestamps.org
+  external_validators:
+    enabled: false
+    endpoints: []
+
+# Feature flags
+features:
+  vector_embeddings: false  # Phase 2
+  blockchain_anchoring: false
+  real_time_monitoring: false
+  multi_language_support: false

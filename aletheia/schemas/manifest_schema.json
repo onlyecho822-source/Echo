@@ -1,0 +1,272 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://echo.systems/aletheia/manifest/v1",
+  "title": "Aletheia Evidence Manifest",
+  "description": "Schema for sealed evidence artifacts in the Aletheia Reality Decoding System",
+  "type": "object",
+  "required": [
+    "stableID",
+    "version",
+    "artifactType",
+    "contentHash",
+    "metadata",
+    "signature",
+    "timestamp"
+  ],
+  "properties": {
+    "stableID": {
+      "type": "string",
+      "description": "Unique, immutable identifier for this artifact",
+      "pattern": "^ALT-[A-Z0-9]{4}-[A-Z0-9]{8}-[A-Z0-9]{4}$",
+      "examples": ["ALT-GENO-A1B2C3D4-E5F6"]
+    },
+    "version": {
+      "type": "string",
+      "description": "Manifest schema version",
+      "const": "1.0.0"
+    },
+    "artifactType": {
+      "type": "string",
+      "description": "Category of the raw artifact",
+      "enum": [
+        "FASTQ",
+        "VCF",
+        "BAM",
+        "IIIF",
+        "TIFF",
+        "XRF_CSV",
+        "TEI_XML",
+        "SPECTRA",
+        "RADIOCARBON",
+        "DOCUMENT",
+        "IMAGE",
+        "AUDIO",
+        "VIDEO",
+        "OTHER"
+      ]
+    },
+    "contentHash": {
+      "type": "object",
+      "description": "Cryptographic hashes of the raw artifact",
+      "required": ["algorithm", "value"],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "enum": ["SHA-256", "BLAKE3", "SHA3-256"],
+          "default": "SHA-256"
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "secondaryHash": {
+          "type": "object",
+          "description": "Optional secondary hash for dual-hash provenance",
+          "properties": {
+            "algorithm": { "type": "string" },
+            "value": { "type": "string" }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Artifact metadata and context",
+      "required": ["filename", "fileSize", "mimeType", "captureDate"],
+      "properties": {
+        "filename": {
+          "type": "string",
+          "description": "Original filename"
+        },
+        "fileSize": {
+          "type": "integer",
+          "description": "File size in bytes",
+          "minimum": 0
+        },
+        "mimeType": {
+          "type": "string",
+          "description": "MIME type of the artifact"
+        },
+        "captureDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of capture/creation"
+        },
+        "captureDevice": {
+          "type": "object",
+          "description": "Device/instrument used for capture",
+          "properties": {
+            "make": { "type": "string" },
+            "model": { "type": "string" },
+            "serialNumber": { "type": "string" },
+            "calibrationDate": { "type": "string", "format": "date" }
+          }
+        },
+        "geolocation": {
+          "type": "object",
+          "description": "Geographic location of capture",
+          "properties": {
+            "latitude": { "type": "number", "minimum": -90, "maximum": 90 },
+            "longitude": { "type": "number", "minimum": -180, "maximum": 180 },
+            "altitude": { "type": "number" },
+            "accuracy": { "type": "number", "description": "Accuracy in meters" }
+          }
+        },
+        "subject": {
+          "type": "object",
+          "description": "Subject of the artifact",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["person", "object", "location", "document", "biological", "material"]
+            },
+            "identifier": { "type": "string" },
+            "description": { "type": "string" }
+          }
+        },
+        "custody": {
+          "type": "array",
+          "description": "Chain of custody entries",
+          "items": {
+            "type": "object",
+            "required": ["party", "action", "timestamp"],
+            "properties": {
+              "party": { "type": "string" },
+              "action": {
+                "type": "string",
+                "enum": ["created", "transferred", "stored", "analyzed", "exported"]
+              },
+              "timestamp": { "type": "string", "format": "date-time" },
+              "location": { "type": "string" },
+              "notes": { "type": "string" }
+            }
+          }
+        },
+        "labels": {
+          "type": "array",
+          "description": "Classification labels",
+          "items": { "type": "string" }
+        },
+        "custom": {
+          "type": "object",
+          "description": "Domain-specific metadata",
+          "additionalProperties": true
+        }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "description": "Cryptographic signature of the manifest",
+      "required": ["algorithm", "value", "publicKeyID"],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "enum": ["Ed25519", "ECDSA-P256", "RSA-PSS-2048"],
+          "default": "Ed25519"
+        },
+        "value": {
+          "type": "string",
+          "description": "Base64-encoded signature"
+        },
+        "publicKeyID": {
+          "type": "string",
+          "description": "Identifier of the signing key"
+        },
+        "signerIdentity": {
+          "type": "string",
+          "description": "Identity of the signer"
+        }
+      }
+    },
+    "timestamp": {
+      "type": "object",
+      "description": "Trusted timestamp",
+      "required": ["authority", "value", "proof"],
+      "properties": {
+        "authority": {
+          "type": "string",
+          "description": "Timestamp authority (e.g., OpenTimestamps, RFC3161 TSA)"
+        },
+        "value": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp"
+        },
+        "proof": {
+          "type": "string",
+          "description": "Base64-encoded timestamp proof"
+        }
+      }
+    },
+    "consent": {
+      "type": "object",
+      "description": "Consent and access control",
+      "properties": {
+        "consentID": {
+          "type": "string",
+          "description": "Reference to consent ledger entry"
+        },
+        "scope": {
+          "type": "array",
+          "description": "Permitted uses",
+          "items": {
+            "type": "string",
+            "enum": ["research", "validation", "publication", "derivative", "commercial"]
+          }
+        },
+        "restrictions": {
+          "type": "array",
+          "description": "Specific restrictions",
+          "items": { "type": "string" }
+        },
+        "expiry": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Consent expiration date"
+        },
+        "stewardID": {
+          "type": "string",
+          "description": "Community steward identifier"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Provenance and lineage",
+      "properties": {
+        "parentIDs": {
+          "type": "array",
+          "description": "Parent artifact IDs if derived",
+          "items": { "type": "string" }
+        },
+        "derivationMethod": {
+          "type": "string",
+          "description": "Reference to methods registry entry"
+        },
+        "derivationGraph": {
+          "type": "string",
+          "description": "URI to full derivation graph"
+        }
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "description": "Integrity verification metadata",
+      "properties": {
+        "lastVerified": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "verificationCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "status": {
+          "type": "string",
+          "enum": ["valid", "pending", "failed", "unknown"]
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

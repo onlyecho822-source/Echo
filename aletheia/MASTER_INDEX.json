@@ -1,0 +1,299 @@
+{
+  "AletheiaSystem": {
+    "version": "1.0.0",
+    "codename": "Reality Decoding System",
+    "author": "Echo Nexus Omega",
+    "operator": "Nathan Poinsette",
+    "created": "2024-01-01T00:00:00Z",
+    "seal": "∇θ"
+  },
+
+  "Mission": {
+    "statement": "Build an auditable, operator-first Reality Decoding System that collects sealed raw evidence, runs reproducible analyses, and produces verifiable, challengeable truth-packets.",
+    "pillars": [
+      {
+        "name": "Capture with integrity",
+        "description": "Ingest raw files and immediately seal with content hash, manifest, signature, and trusted timestamp"
+      },
+      {
+        "name": "Verify with reproducibility",
+        "description": "Run analyses only on copies; record full method manifests; produce derivation graphs"
+      },
+      {
+        "name": "Expose with accountability",
+        "description": "Publish evidence bundles, ranked hypotheses, and provenance graphs; support challenges"
+      }
+    ]
+  },
+
+  "Deliverables": {
+    "A_ManifestSchema": {
+      "name": "Manifest Schema and Samples",
+      "location": "schemas/",
+      "files": [
+        "manifest_schema.json",
+        "samples/manifest_genomic.json",
+        "samples/manifest_spectra.json",
+        "samples/manifest_radiocarbon.json"
+      ],
+      "description": "JSON Schema for evidence manifests with dual-hash provenance",
+      "status": "complete"
+    },
+    "B_IngestCLI": {
+      "name": "CLI Ingest + Sealing Tool",
+      "location": "cli/ingest.py",
+      "description": "Ingests artifacts, computes hashes, generates manifests, signs, and timestamps",
+      "features": [
+        "SHA-256 + BLAKE3 dual-hash",
+        "Ed25519 signatures",
+        "OpenTimestamps integration",
+        "Automatic manifest generation"
+      ],
+      "status": "complete"
+    },
+    "C_ReanalysisPipeline": {
+      "name": "Re-analysis Pipeline Specification",
+      "location": "pipelines/reanalysis_spec.py",
+      "description": "Reproducible analysis pipelines with method manifests and derivation graphs",
+      "pipelines": [
+        "Spectral XRF analysis",
+        "Radiocarbon calibration",
+        "Genomic variant calling",
+        "Text OCR"
+      ],
+      "features": [
+        "Environment capture and hashing",
+        "12-point reproducibility checklist",
+        "Derivation graph generation",
+        "Tolerance thresholds"
+      ],
+      "status": "complete"
+    },
+    "D_EchoEthicsDimmer": {
+      "name": "Echo Ethics Dimmer (Prompt Templates)",
+      "location": "prompts/echo_ethics_dimmer.py",
+      "description": "Mode-based prompt orchestration controlling speculation, review, and operations",
+      "modes": {
+        "L5_Safe": {
+          "description": "Conservative analysis, maximum restrictions",
+          "speculation": false,
+          "max_hypotheses": 0,
+          "confidence_threshold": 0.95,
+          "review_path": "automated"
+        },
+        "L4_Defensive": {
+          "description": "Threat modeling only",
+          "speculation": true,
+          "max_hypotheses": 3,
+          "confidence_threshold": 0.85,
+          "review_path": "human_optional"
+        },
+        "L3_Investigative": {
+          "description": "Structural analysis with hypotheses",
+          "speculation": true,
+          "max_hypotheses": 7,
+          "confidence_threshold": 0.70,
+          "review_path": "human_optional"
+        },
+        "L2_Black_Lens": {
+          "description": "Full enumeration, Devil Lens review required",
+          "speculation": true,
+          "max_hypotheses": 20,
+          "confidence_threshold": 0.50,
+          "review_path": "devil_lens"
+        }
+      },
+      "status": "complete"
+    }
+  },
+
+  "Infrastructure": {
+    "EncryptedVault": {
+      "name": "Encrypted Local-First Vault",
+      "location": "vault/encrypted_vault.py",
+      "description": "Secure storage with encryption at rest and verifiable export bundles",
+      "features": [
+        "AES-256-GCM encryption",
+        "Per-artifact key derivation",
+        "Export bundle generation",
+        "Integrity verification",
+        "Audit logging"
+      ],
+      "status": "complete"
+    },
+    "ConsentLedger": {
+      "name": "Consent & Custody Ledger",
+      "location": "ledger/consent_ledger.py",
+      "description": "Records consent grants, custody transfers, and revocations",
+      "features": [
+        "Append-only records",
+        "Custody chain tracking",
+        "Revocation support",
+        "Minimization enforcement"
+      ],
+      "status": "complete"
+    },
+    "MethodsRegistry": {
+      "name": "Methods Registry",
+      "location": "registry/methods_registry.py",
+      "description": "Stores protocols, script hashes, and environment manifests",
+      "features": [
+        "Method versioning",
+        "Script hash tracking",
+        "Environment manifests",
+        "Instrument configs"
+      ],
+      "status": "complete"
+    },
+    "KnowledgeGraph": {
+      "name": "Knowledge Graph",
+      "location": "graph/knowledge_graph.py",
+      "description": "Stores entities and relationships with claim tracking",
+      "entity_types": ["artifact", "person", "institution", "event", "test", "method"],
+      "edge_types": ["custody", "claim", "contradiction", "derivation", "jurisdiction", "confidence"],
+      "features": [
+        "Claim tracking",
+        "Contradiction detection",
+        "Evidence chains",
+        "Subgraph export"
+      ],
+      "status": "complete"
+    }
+  },
+
+  "Configuration": {
+    "main": "config/echo_ethics_config.yaml",
+    "description": "Central configuration for modes, security, privacy, and integrations"
+  },
+
+  "Security": {
+    "encryption": {
+      "algorithm": "AES-256-GCM",
+      "key_derivation": "PBKDF2-SHA256",
+      "iterations": 100000
+    },
+    "signing": {
+      "algorithm": "Ed25519"
+    },
+    "hashing": {
+      "primary": "SHA-256",
+      "secondary": "BLAKE3"
+    },
+    "timestamps": {
+      "primary": "OpenTimestamps",
+      "fallback": "RFC3161"
+    }
+  },
+
+  "Governance": {
+    "roles": [
+      {"name": "Custodian", "responsibility": "Store and seal artifacts"},
+      {"name": "Validator", "responsibility": "Verify reproducibility"},
+      {"name": "Steward", "responsibility": "Protect community rights"},
+      {"name": "Reviewer", "responsibility": "Domain expert review"},
+      {"name": "Legal Observer", "responsibility": "Compliance monitoring"}
+    ],
+    "review_paths": [
+      {"name": "automated", "description": "Rule-based validation"},
+      {"name": "human_optional", "description": "Expert review available"},
+      {"name": "human_required", "description": "Must be reviewed"},
+      {"name": "devil_lens", "description": "Adversarial review for L2 outputs"}
+    ]
+  },
+
+  "Metrics": {
+    "provenance_completeness": {
+      "description": "Fraction of required manifest fields present",
+      "target": 0.95
+    },
+    "reproducibility_rate": {
+      "description": "Proportion of analyses that validators reproduce",
+      "target": 0.90
+    },
+    "challenge_resolution_time": {
+      "description": "Median time to resolve challenges",
+      "target_hours": 72
+    },
+    "mode_fidelity": {
+      "description": "Adherence to selected Echo mode framing",
+      "target": 0.95
+    },
+    "data_minimization_rate": {
+      "description": "Fraction of exports using minimal-share bundles",
+      "target": 0.80
+    }
+  },
+
+  "Roadmap": {
+    "Phase1_MVP": {
+      "status": "complete",
+      "items": [
+        "Manifest schema and samples",
+        "CLI ingest + sealing tool",
+        "Re-analysis pipeline specs",
+        "Echo Ethics Dimmer",
+        "Encrypted vault",
+        "Consent ledger",
+        "Methods registry",
+        "Knowledge graph"
+      ]
+    },
+    "Phase2_Enhanced": {
+      "status": "planned",
+      "items": [
+        "Vector embeddings",
+        "PostgreSQL/Neo4j backend",
+        "FastAPI service layer",
+        "Web dashboard",
+        "Blockchain anchoring"
+      ]
+    },
+    "Phase3_Production": {
+      "status": "future",
+      "items": [
+        "Multi-tenant deployment",
+        "HSM key management",
+        "Real-time monitoring",
+        "International compliance",
+        "Public API"
+      ]
+    }
+  },
+
+  "FileStructure": {
+    "aletheia": {
+      "README.md": "Main documentation",
+      "MASTER_INDEX.json": "This file",
+      "schemas": {
+        "manifest_schema.json": "JSON Schema",
+        "samples": ["manifest_genomic.json", "manifest_spectra.json", "manifest_radiocarbon.json"]
+      },
+      "cli": {
+        "ingest.py": "Ingest and sealing tool"
+      },
+      "pipelines": {
+        "reanalysis_spec.py": "Pipeline specifications"
+      },
+      "prompts": {
+        "echo_ethics_dimmer.py": "Mode orchestration"
+      },
+      "vault": {
+        "encrypted_vault.py": "Encrypted storage"
+      },
+      "ledger": {
+        "consent_ledger.py": "Consent tracking"
+      },
+      "registry": {
+        "methods_registry.py": "Method versioning"
+      },
+      "graph": {
+        "knowledge_graph.py": "Entity graph"
+      },
+      "config": {
+        "echo_ethics_config.yaml": "Configuration"
+      },
+      "docs": "Additional documentation",
+      "tests": "Test suites"
+    }
+  }
+}
