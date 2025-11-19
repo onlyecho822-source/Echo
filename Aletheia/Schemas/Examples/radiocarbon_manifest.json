@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0.0",
+  "stableID": "aletheia:radiocarbon:f1e2d3c4b5a697887766554433221100ffeeddccbbaa99887766554433221100",
+  "contentHash": {
+    "algorithm": "SHA-256",
+    "value": "f1e2d3c4b5a697887766554433221100ffeeddccbbaa99887766554433221100"
+  },
+  "metadata": {
+    "fileType": "RADIOCARBON",
+    "originalFilename": "sample_001_c14_results.json",
+    "byteSize": 1234,
+    "captureDate": "2025-10-20T09:00:00Z",
+    "captureDevice": "MICADAS AMS",
+    "captureOperator": "ETH Zurich AMS Lab",
+    "captureLocation": {
+      "name": "ETH Zurich Laboratory of Ion Beam Physics",
+      "coordinates": {
+        "latitude": 47.3769,
+        "longitude": 8.5417
+      }
+    },
+    "description": "Radiocarbon date from organic residue on ceramic sherd, Lab ID: ETH-12345",
+    "tags": ["radiocarbon", "ceramic", "organic-residue", "dating"],
+    "sensitivityLevel": "PUBLIC",
+    "relatedArtifacts": [
+      "aletheia:tiff:aabbccdd11223344556677889900aabbccddeeff00112233445566778899aabb"
+    ]
+  },
+  "custody": {
+    "chain": [
+      {
+        "party": "University of Barcelona",
+        "role": "CUSTODIAN",
+        "action": "CREATED",
+        "timestamp": "2025-09-01T00:00:00Z",
+        "notes": "Sample collected from excavation"
+      },
+      {
+        "party": "ETH Zurich AMS Lab",
+        "role": "CUSTODIAN",
+        "action": "RECEIVED",
+        "timestamp": "2025-09-15T00:00:00Z",
+        "notes": "Sample received for dating"
+      },
+      {
+        "party": "ETH Zurich AMS Lab",
+        "role": "CUSTODIAN",
+        "action": "ANALYZED",
+        "timestamp": "2025-10-20T09:00:00Z",
+        "notes": "AMS measurement completed"
+      },
+      {
+        "party": "Dr. Maria Lopez",
+        "role": "CUSTODIAN",
+        "action": "SEALED",
+        "timestamp": "2025-10-21T10:00:00Z",
+        "notes": "Results sealed for Aletheia"
+      }
+    ],
+    "currentCustodian": "Dr. Maria Lopez"
+  },
+  "consent": {
+    "required": false,
+    "scope": ["ANALYSIS", "PUBLICATION", "DERIVATIVE", "EDUCATIONAL"],
+    "grantor": "University of Barcelona"
+  },
+  "signature": {
+    "algorithm": "ED25519",
+    "value": "EXAMPLE_SIGNATURE_BASE64_ENCODED",
+    "signer": "did:key:z6MknGc3ocHs3zdPiJbnaaqDi5VjC6p8VtTfHqoHr7eSQDyE",
+    "signedAt": "2025-10-21T10:00:00Z",
+    "publicKeyRef": "https://aletheia.echo/keys/maria_lopez.pub"
+  },
+  "timestamp": {
+    "authority": "digicert.com",
+    "value": "EXAMPLE_RFC3161_TOKEN",
+    "issuedAt": "2025-10-21T10:00:03Z",
+    "proofType": "RFC3161"
+  },
+  "derivation": {
+    "sourceArtifacts": [],
+    "methodRef": "radiocarbon-calibration-v1",
+    "parameters": {
+      "conventionalAge": 2450,
+      "uncertainty": 35,
+      "calibrationCurve": "IntCal20"
+    }
+  },
+  "echoMode": {
+    "level": "L5",
+    "reviewRequired": false
+  }
+}

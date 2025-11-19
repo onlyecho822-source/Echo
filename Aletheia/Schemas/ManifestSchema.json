@@ -1,0 +1,297 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aletheia.echo/schemas/manifest/v1",
+  "title": "Aletheia Artifact Manifest",
+  "description": "Schema for sealed evidence artifacts in the Aletheia Reality Decoding System",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "stableID",
+    "contentHash",
+    "metadata",
+    "custody",
+    "signature",
+    "timestamp"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0.0",
+      "description": "Version of the manifest schema"
+    },
+    "stableID": {
+      "type": "string",
+      "pattern": "^aletheia:[a-z]+:[a-f0-9]{64}$",
+      "description": "Stable identifier: aletheia:{type}:{hash}",
+      "examples": ["aletheia:fastq:a1b2c3d4..."]
+    },
+    "contentHash": {
+      "type": "object",
+      "required": ["algorithm", "value"],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "enum": ["SHA-256", "SHA-512", "BLAKE3"],
+          "description": "Cryptographic hash algorithm"
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[a-f0-9]+$",
+          "description": "Hex-encoded hash value"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["fileType", "originalFilename", "byteSize", "captureDate"],
+      "properties": {
+        "fileType": {
+          "type": "string",
+          "enum": [
+            "FASTQ",
+            "VCF",
+            "BAM",
+            "IIIF",
+            "TIFF",
+            "XRF-CSV",
+            "TEI-XML",
+            "SPECTRA",
+            "RADIOCARBON",
+            "OTHER"
+          ],
+          "description": "Type of artifact"
+        },
+        "originalFilename": {
+          "type": "string",
+          "description": "Original filename at capture"
+        },
+        "byteSize": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "File size in bytes"
+        },
+        "captureDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of original capture"
+        },
+        "captureDevice": {
+          "type": "string",
+          "description": "Instrument or device used for capture"
+        },
+        "captureOperator": {
+          "type": "string",
+          "description": "Person or system that performed capture"
+        },
+        "captureLocation": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "coordinates": {
+              "type": "object",
+              "properties": {
+                "latitude": { "type": "number" },
+                "longitude": { "type": "number" }
+              }
+            }
+          }
+        },
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of artifact"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Categorical tags for indexing"
+        },
+        "relatedArtifacts": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "StableIDs of related artifacts"
+        },
+        "sensitivityLevel": {
+          "type": "string",
+          "enum": ["PUBLIC", "RESTRICTED", "CONFIDENTIAL", "INDIGENOUS-PROTECTED"],
+          "default": "RESTRICTED",
+          "description": "Data sensitivity classification"
+        }
+      }
+    },
+    "custody": {
+      "type": "object",
+      "required": ["chain"],
+      "properties": {
+        "chain": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["party", "role", "action", "timestamp"],
+            "properties": {
+              "party": {
+                "type": "string",
+                "description": "Person or institution"
+              },
+              "role": {
+                "type": "string",
+                "enum": ["CUSTODIAN", "VALIDATOR", "STEWARD", "REVIEWER", "LEGAL-OBSERVER"],
+                "description": "Role in Aletheia governance"
+              },
+              "action": {
+                "type": "string",
+                "enum": ["CREATED", "RECEIVED", "TRANSFERRED", "ANALYZED", "EXPORTED", "SEALED"],
+                "description": "Custody action performed"
+              },
+              "timestamp": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "currentCustodian": {
+          "type": "string",
+          "description": "Current holder of the artifact"
+        }
+      }
+    },
+    "consent": {
+      "type": "object",
+      "properties": {
+        "required": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether consent is required for this artifact"
+        },
+        "granted": {
+          "type": "boolean",
+          "description": "Whether consent has been granted"
+        },
+        "scope": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["ANALYSIS", "PUBLICATION", "DERIVATIVE", "COMMERCIAL", "EDUCATIONAL"]
+          },
+          "description": "Scope of consent granted"
+        },
+        "grantor": {
+          "type": "string",
+          "description": "Party who granted consent"
+        },
+        "expirationDate": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When consent expires"
+        },
+        "stewardApproval": {
+          "type": "object",
+          "properties": {
+            "required": { "type": "boolean" },
+            "approved": { "type": "boolean" },
+            "steward": { "type": "string" },
+            "approvalDate": { "type": "string", "format": "date-time" }
+          }
+        }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "required": ["algorithm", "value", "signer", "signedAt"],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "enum": ["ED25519", "RSA-SHA256", "ECDSA-P256"],
+          "description": "Signature algorithm"
+        },
+        "value": {
+          "type": "string",
+          "description": "Base64-encoded signature"
+        },
+        "signer": {
+          "type": "string",
+          "description": "Identity of signer (key fingerprint or URI)"
+        },
+        "signedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "publicKeyRef": {
+          "type": "string",
+          "description": "Reference to public key for verification"
+        }
+      }
+    },
+    "timestamp": {
+      "type": "object",
+      "required": ["authority", "value", "issuedAt"],
+      "properties": {
+        "authority": {
+          "type": "string",
+          "description": "Trusted timestamp authority",
+          "examples": ["freetsa.org", "digicert.com", "local-witness"]
+        },
+        "value": {
+          "type": "string",
+          "description": "Timestamp token or proof"
+        },
+        "issuedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "proofType": {
+          "type": "string",
+          "enum": ["RFC3161", "BLOCKCHAIN", "WITNESS-SIGNATURE"],
+          "description": "Type of timestamp proof"
+        }
+      }
+    },
+    "derivation": {
+      "type": "object",
+      "description": "If this artifact is derived from others",
+      "properties": {
+        "sourceArtifacts": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "StableIDs of source artifacts"
+        },
+        "methodRef": {
+          "type": "string",
+          "description": "Reference to method in Methods Registry"
+        },
+        "parameters": {
+          "type": "object",
+          "description": "Parameters used in derivation"
+        },
+        "environmentHash": {
+          "type": "string",
+          "description": "Hash of execution environment"
+        }
+      }
+    },
+    "echoMode": {
+      "type": "object",
+      "description": "Echo Ethics Dimmer settings during processing",
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": ["L5", "L4", "L3", "L2"]
+        },
+        "reviewRequired": {
+          "type": "boolean"
+        },
+        "reviewedBy": {
+          "type": "string"
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

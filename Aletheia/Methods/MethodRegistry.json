@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0.0",
+  "description": "Aletheia Methods Registry - stores protocols, scripts, and environment manifests for reproducibility",
+  "methods": {
+    "spectra-analysis-v1": {
+      "id": "spectra-analysis-v1",
+      "name": "XRF Spectral Analysis Pipeline",
+      "version": "1.0.0",
+      "type": "ANALYSIS",
+      "description": "Analyzes XRF spectral data for elemental composition",
+      "inputs": {
+        "required": ["XRF-CSV"],
+        "optional": ["calibration-file"]
+      },
+      "outputs": ["elemental-composition", "peak-identification", "derivation-graph"],
+      "protocol": {
+        "steps": [
+          "Load XRF CSV data",
+          "Apply calibration corrections",
+          "Identify peaks using second-derivative method",
+          "Match peaks to elemental signatures",
+          "Calculate relative concentrations",
+          "Generate uncertainty estimates",
+          "Output composition report"
+        ],
+        "references": [
+          "doi:10.1016/j.sab.2020.105905"
+        ]
+      },
+      "script": {
+        "language": "Python",
+        "entrypoint": "xrf_analysis.py",
+        "hash": "PLACEHOLDER_SCRIPT_HASH",
+        "repository": "https://github.com/aletheia/xrf-pipeline"
+      },
+      "environment": {
+        "python": "3.11",
+        "dependencies": [
+          "numpy>=1.24.0",
+          "scipy>=1.10.0",
+          "pandas>=2.0.0"
+        ],
+        "environmentHash": "PLACEHOLDER_ENV_HASH"
+      },
+      "parameters": {
+        "peakThreshold": {
+          "type": "float",
+          "default": 0.05,
+          "description": "Minimum peak height for detection"
+        },
+        "smoothingWindow": {
+          "type": "integer",
+          "default": 5,
+          "description": "Savitzky-Golay smoothing window"
+        }
+      },
+      "validators": [],
+      "createdAt": "2025-11-19T00:00:00Z",
+      "updatedAt": "2025-11-19T00:00:00Z"
+    },
+    "radiocarbon-calibration-v1": {
+      "id": "radiocarbon-calibration-v1",
+      "name": "Radiocarbon Date Calibration",
+      "version": "1.0.0",
+      "type": "ANALYSIS",
+      "description": "Calibrates radiocarbon dates using IntCal20 curve",
+      "inputs": {
+        "required": ["RADIOCARBON"],
+        "optional": []
+      },
+      "outputs": ["calibrated-date-range", "probability-distribution", "derivation-graph"],
+      "protocol": {
+        "steps": [
+          "Parse conventional radiocarbon age and uncertainty",
+          "Load IntCal20 calibration curve",
+          "Apply Bayesian calibration",
+          "Calculate probability distribution",
+          "Extract 1-sigma and 2-sigma ranges",
+          "Generate calibration plot"
+        ],
+        "references": [
+          "doi:10.1017/RDC.2020.41"
+        ]
+      },
+      "script": {
+        "language": "Python",
+        "entrypoint": "radiocarbon_calibration.py",
+        "hash": "PLACEHOLDER_SCRIPT_HASH",
+        "repository": "https://github.com/aletheia/c14-pipeline"
+      },
+      "environment": {
+        "python": "3.11",
+        "dependencies": [
+          "numpy>=1.24.0",
+          "scipy>=1.10.0"
+        ],
+        "environmentHash": "PLACEHOLDER_ENV_HASH"
+      },
+      "parameters": {
+        "calibrationCurve": {
+          "type": "string",
+          "default": "IntCal20",
+          "enum": ["IntCal20", "SHCal20", "Marine20"],
+          "description": "Calibration curve to use"
+        },
+        "sigmaCutoff": {
+          "type": "integer",
+          "default": 2,
+          "description": "Sigma level for date ranges"
+        }
+      },
+      "validators": [],
+      "createdAt": "2025-11-19T00:00:00Z",
+      "updatedAt": "2025-11-19T00:00:00Z"
+    },
+    "genomic-variant-calling-v1": {
+      "id": "genomic-variant-calling-v1",
+      "name": "Genomic Variant Calling Pipeline",
+      "version": "1.0.0",
+      "type": "ANALYSIS",
+      "description": "Calls variants from aligned sequence data",
+      "inputs": {
+        "required": ["BAM"],
+        "optional": ["reference-genome", "known-variants"]
+      },
+      "outputs": ["VCF", "quality-metrics", "derivation-graph"],
+      "protocol": {
+        "steps": [
+          "Validate BAM file integrity",
+          "Mark duplicates",
+          "Base quality score recalibration",
+          "Call variants with HaplotypeCaller",
+          "Filter variants by quality",
+          "Annotate variants",
+          "Generate quality metrics"
+        ],
+        "references": [
+          "doi:10.1038/ng.806"
+        ]
+      },
+      "script": {
+        "language": "Bash/Python",
+        "entrypoint": "variant_calling.sh",
+        "hash": "PLACEHOLDER_SCRIPT_HASH",
+        "repository": "https://github.com/aletheia/genomics-pipeline"
+      },
+      "environment": {
+        "tools": [
+          "GATK>=4.4.0",
+          "samtools>=1.17",
+          "bcftools>=1.17"
+        ],
+        "environmentHash": "PLACEHOLDER_ENV_HASH"
+      },
+      "parameters": {
+        "minBaseQuality": {
+          "type": "integer",
+          "default": 20,
+          "description": "Minimum base quality score"
+        },
+        "minMappingQuality": {
+          "type": "integer",
+          "default": 30,
+          "description": "Minimum mapping quality"
+        }
+      },
+      "validators": [],
+      "createdAt": "2025-11-19T00:00:00Z",
+      "updatedAt": "2025-11-19T00:00:00Z"
+    }
+  },
+  "validationRequirements": {
+    "reproductionTolerance": {
+      "numerical": 0.001,
+      "categorical": "exact"
+    },
+    "requiredDocumentation": [
+      "protocol-steps",
+      "script-hash",
+      "environment-hash",
+      "parameter-values"
+    ]
+  }
+}
