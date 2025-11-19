@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Credit Report Analysis</h1>
+    <p>Upload your credit report to identify improvement opportunities and create an action plan</p>
+</div>
+
+<div class="grid">
+    <div class="card">
+        <h2>Upload Credit Report</h2>
+        <p style="margin-bottom: 1rem; color: #a0a0a0;">
+            Supports PDF and text files from Experian, Equifax, and TransUnion
+        </p>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="creditReport" name="file" accept=".pdf,.txt,.html" required>
+            <button type="submit" class="btn">Analyze Report</button>
+        </form>
+        <br>
+        <p style="font-size: 0.8rem; color: #606060;">
+            Your report is analyzed locally and not stored. Get your free annual reports at AnnualCreditReport.com
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>What We Analyze</h2>
+        <ul style="list-style: none; line-height: 2;">
+            <li><span class="tag tag-blue">Credit Score</span> Your current score and factors</li>
+            <li><span class="tag tag-gold">Negative Items</span> Collections, late payments, public records</li>
+            <li><span class="tag tag-green">Opportunities</span> Actions to improve your score</li>
+            <li><span class="tag tag-blue">Accounts</span> Open and closed account analysis</li>
+            <li><span class="tag tag-gold">Inquiries</span> Hard pulls affecting your score</li>
+        </ul>
+    </div>
+</div>
+
+<div id="results" style="display: none;">
+    <div class="card">
+        <h2>Analysis Results</h2>
+        <div id="analysisContent"></div>
+    </div>
+
+    <div class="card">
+        <h2>Negative Items Found</h2>
+        <div id="negativeItems"></div>
+    </div>
+
+    <div class="card">
+        <h2>Improvement Opportunities</h2>
+        <div id="improvements"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+    const fileInput = document.getElementById('creditReport');
+    formData.append('file', fileInput.files[0]);
+
+    try {
+        const response = await fetch('/api/upload-credit-report', {
+            method: 'POST',
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            displayResults(data.analysis);
+        } else {
+            alert('Error analyzing report: ' + (data.detail || 'Unknown error'));
+        }
+    } catch (error) {
+        alert('Error: ' + error.message);
+    }
+});
+
+function displayResults(analysis) {
+    document.getElementById('results').style.display = 'block';
+
+    // Main analysis
+    let html = `
+        <div class="result-box">
+            <h3>Credit Score: <span class="highlight">${analysis.credit_score || 'Not found'}</span></h3>
+            <p>Bureau: ${analysis.bureau || 'Unknown'}</p>
+        </div>
+        <br>
+        <h3>Summary</h3>
+        <ul style="list-style: none; line-height: 2;">
+            <li>Estimated Accounts: ${analysis.summary?.estimated_accounts || 0}</li>
+            <li>Late Payments Found: ${analysis.summary?.late_payments || 0}</li>
+            <li>Collections Found: ${analysis.summary?.collections || 0}</li>
+            <li>Public Records: ${analysis.summary?.has_public_records ? 'Yes' : 'No'}</li>
+        </ul>
+    `;
+
+    if (analysis.score_factors && analysis.score_factors.length > 0) {
+        html += '<br><h3>Score Factors</h3><ul style="list-style: none;">';
+        analysis.score_factors.forEach(factor => {
+            html += `<li style="margin-bottom: 0.5rem;">
+                <span class="tag tag-gold">${factor.type.replace(/_/g, ' ')}</span>
+                <p style="font-size: 0.9rem; color: #a0a0a0; margin-top: 0.25rem;">${factor.description}</p>
+            </li>`;
+        });
+        html += '</ul>';
+    }
+
+    document.getElementById('analysisContent').innerHTML = html;
+
+    // Negative items
+    let negativeHtml = '';
+    if (analysis.negative_items && analysis.negative_items.length > 0) {
+        analysis.negative_items.forEach(item => {
+            negativeHtml += `
+                <div class="result-box" style="margin-bottom: 1rem;">
+                    <h3>${item.type} ${item.creditor ? '- ' + item.creditor : ''}</h3>
+                    <p>Impact: <span class="${item.impact === 'severe' ? 'danger' : item.impact === 'high' ? 'warning' : ''}">${item.impact}</span></p>
+                    ${item.amount ? '<p>Amount: ' + formatCurrency(item.amount) + '</p>' : ''}
+                    ${item.disputable ? '<p class="success">This item may be disputable</p>' : ''}
+                    ${item.dispute_reasons ? '<p style="font-size: 0.9rem; color: #a0a0a0;">Possible reasons: ' + item.dispute_reasons.slice(0, 3).join(', ') + '</p>' : ''}
+                </div>
+            `;
+        });
+    } else {
+        negativeHtml = '<p class="success">No major negative items detected!</p>';
+    }
+    document.getElementById('negativeItems').innerHTML = negativeHtml;
+
+    // Improvements
+    let improvementHtml = '';
+    if (analysis.improvement_opportunities && analysis.improvement_opportunities.length > 0) {
+        analysis.improvement_opportunities.forEach(opp => {
+            improvementHtml += `
+                <div class="result-box" style="margin-bottom: 1rem;">
+                    <span class="tag tag-blue">Priority ${opp.priority}</span>
+                    <h3>${opp.action}</h3>
+                    <p>${opp.description}</p>
+                    <p class="highlight">Potential Impact: ${opp.potential_impact}</p>
+                </div>
+            `;
+        });
+    }
+    document.getElementById('improvements').innerHTML = improvementHtml;
+
+    // Scroll to results
+    document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+{% endblock %}

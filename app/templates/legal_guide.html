@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Credit Law Guide</h1>
+    <p>Know your rights under US and international consumer protection laws</p>
+</div>
+
+<div class="card">
+    <h2>Your Key Consumer Rights</h2>
+    <div class="grid">
+        {% for right in consumer_rights %}
+        <div class="result-box">
+            <h3>{{ right.right }}</h3>
+            <p>{{ right.description }}</p>
+            <p style="font-size: 0.9rem; color: #a0a0a0; margin-top: 0.5rem;">
+                <strong>How to exercise:</strong> {{ right.how_to_exercise }}
+            </p>
+            <span class="tag tag-blue">{{ right.law }}</span>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="card">
+    <h2>US Credit Laws</h2>
+    {% for code, law in us_laws.items() %}
+    {% if code != 'STATE_LAWS' %}
+    <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <h3>{{ law.name }} ({{ code }})</h3>
+        <p style="color: #a0a0a0;">{{ law.code }}</p>
+        <p style="margin: 1rem 0;">{{ law.overview }}</p>
+
+        {% if law.key_provisions %}
+        <h4 style="color: #00d4ff; margin-bottom: 0.5rem;">Key Provisions</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+            {% for section, details in law.key_provisions.items() %}
+            <div style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px;">
+                <strong>{{ section }}</strong>
+                <p style="font-size: 0.9rem;">{{ details.title }}</p>
+                <p style="font-size: 0.8rem; color: #a0a0a0; margin-top: 0.5rem;">{{ details.description }}</p>
+                <span class="tag tag-gold" style="font-size: 0.7rem;">{{ details.citation }}</span>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+<div class="card">
+    <h2>International Credit Laws</h2>
+    <div class="grid">
+        {% for region, laws in international_laws.items() %}
+        <div>
+            <h3>{{ region.replace('_', ' ') }}</h3>
+            {% for law_code, law_info in laws.items() %}
+            <div style="background: rgba(0,0,0,0.2); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                <strong>{{ law_info.name }}</strong>
+                <p style="font-size: 0.9rem; color: #a0a0a0;">{{ law_info.overview }}</p>
+
+                {% if law_info.key_rights %}
+                <ul style="font-size: 0.8rem; margin-top: 0.5rem;">
+                    {% for right in law_info.key_rights %}
+                    <li>{{ right }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="card">
+    <h2>Statute of Limitations</h2>
+    <div class="grid">
+        <div class="result-box">
+            <h3>Credit Report Time Limits</h3>
+            <ul style="line-height: 2;">
+                <li>Most negative items: <strong>7 years</strong></li>
+                <li>Chapter 7 Bankruptcy: <strong>10 years</strong></li>
+                <li>Chapter 13 Bankruptcy: <strong>7 years</strong></li>
+                <li>Hard inquiries: <strong>2 years</strong></li>
+                <li>Paid tax liens: <strong>7 years</strong></li>
+            </ul>
+        </div>
+        <div class="result-box">
+            <h3>Collection Debt SOL</h3>
+            <p>Varies by state: typically <strong>3-6 years</strong></p>
+            <br>
+            <p class="warning">Warning: These actions can restart the clock:</p>
+            <ul style="font-size: 0.9rem; color: #a0a0a0;">
+                <li>Making a payment</li>
+                <li>Acknowledging debt in writing</li>
+                <li>Entering a payment plan</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

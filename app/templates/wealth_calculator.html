@@ -1,0 +1,208 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Wealth Building Calculator</h1>
+    <p>See how small daily investments grow into significant wealth through compound interest</p>
+</div>
+
+<div class="grid">
+    <div class="card">
+        <h2>Calculate Your Wealth Growth</h2>
+        <form id="wealthForm">
+            <label>Daily Investment Amount ($)</label>
+            <input type="number" name="daily_amount" step="0.01" min="0.01" required value="1" placeholder="1.00">
+
+            <label>Starting Amount ($)</label>
+            <input type="number" name="initial_amount" step="0.01" min="0" value="0" placeholder="0">
+
+            <label>Investment Period (Years)</label>
+            <input type="number" name="years" min="1" max="60" required value="30" placeholder="30">
+
+            <label>Expected Annual Return (%)</label>
+            <input type="number" name="annual_return" step="0.1" min="0" max="20" value="7" placeholder="7">
+
+            <button type="submit" class="btn">Calculate Growth</button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h2>The Power of $1/Day</h2>
+        <div id="dollarADay">
+            <p>Loading projections...</p>
+        </div>
+    </div>
+</div>
+
+<div id="results" style="display: none;">
+    <div class="card">
+        <h2>Your Wealth Projection</h2>
+        <div id="projectionSummary"></div>
+    </div>
+
+    <div class="card">
+        <h2>Year-by-Year Growth</h2>
+        <div id="yearlyBreakdown" style="max-height: 400px; overflow-y: auto;"></div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Understanding Compound Interest</h2>
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+        Albert Einstein reportedly called compound interest the "eighth wonder of the world."
+        Here's why:
+    </p>
+    <div class="grid">
+        <div class="result-box">
+            <h3>The Rule of 72</h3>
+            <p>Divide 72 by your interest rate to find how long it takes to double your money.</p>
+            <p style="margin-top: 0.5rem; color: #a0a0a0;">At 7%: 72 ÷ 7 = ~10 years to double</p>
+        </div>
+        <div class="result-box">
+            <h3>Time is Your Greatest Asset</h3>
+            <p>Starting 10 years earlier can mean 2-3x more wealth at retirement, even with the same monthly investment.</p>
+        </div>
+        <div class="result-box">
+            <h3>Consistency Beats Timing</h3>
+            <p>Regular investing (dollar-cost averaging) often outperforms trying to time the market.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Load $1/day projections on page load
+async function loadDollarADay() {
+    try {
+        const response = await fetch('/api/dollar-a-day/40');
+        const data = await response.json();
+
+        if (data.success) {
+            displayDollarADay(data.projection);
+        }
+    } catch (error) {
+        console.error('Error loading projections:', error);
+    }
+}
+
+function displayDollarADay(projection) {
+    let html = '<div style="margin-bottom: 1rem;">';
+
+    // Milestones
+    html += '<h3 style="margin-bottom: 1rem;">Milestones at 7% Return</h3>';
+    projection.milestones.forEach(milestone => {
+        const percentage = ((milestone.value - milestone.invested) / milestone.invested * 100).toFixed(0);
+        html += `
+            <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <span>${milestone.years} years</span>
+                <span>Invested: ${formatCurrency(milestone.invested)}</span>
+                <span class="highlight">Value: ${formatCurrency(milestone.value)}</span>
+            </div>
+        `;
+    });
+
+    html += '</div>';
+
+    // Scenarios
+    html += '<h3 style="margin: 1rem 0;">40-Year Scenarios</h3>';
+    for (const [key, scenario] of Object.entries(projection.scenarios)) {
+        html += `
+            <div class="result-box" style="margin-bottom: 0.5rem;">
+                <strong>${scenario.description}</strong>
+                <p class="highlight">${formatCurrency(scenario.future_value)}</p>
+                <p style="font-size: 0.8rem; color: #a0a0a0;">
+                    Invested: ${formatCurrency(scenario.total_invested)} |
+                    Earnings: ${formatCurrency(scenario.earnings)}
+                </p>
+            </div>
+        `;
+    }
+
+    document.getElementById('dollarADay').innerHTML = html;
+}
+
+document.getElementById('wealthForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    try {
+        const response = await fetch('/api/calculate-wealth-projection', {
+            method: 'POST',
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            displayProjection(data.projection);
+        }
+    } catch (error) {
+        alert('Error: ' + error.message);
+    }
+});
+
+function displayProjection(projection) {
+    document.getElementById('results').style.display = 'block';
+
+    // Summary
+    let summaryHtml = `
+        <div class="grid">
+            <div class="result-box">
+                <h3>Future Value</h3>
+                <p class="highlight" style="font-size: 2rem;">${formatCurrency(projection.future_value)}</p>
+            </div>
+            <div class="result-box">
+                <h3>Total Contributed</h3>
+                <p style="font-size: 1.5rem;">${formatCurrency(projection.total_contributions)}</p>
+            </div>
+            <div class="result-box">
+                <h3>Total Earnings</h3>
+                <p class="success" style="font-size: 1.5rem;">${formatCurrency(projection.total_earnings)}</p>
+                <p style="font-size: 0.9rem; color: #a0a0a0;">${projection.earnings_percentage}% return on contributions</p>
+            </div>
+        </div>
+        <br>
+        <div class="result-box">
+            <h3>Potential Retirement Income</h3>
+            <p>Using the 4% safe withdrawal rule:</p>
+            <p style="font-size: 1.3rem;">
+                Annual: <span class="highlight">${formatCurrency(projection.potential_annual_income)}</span>
+            </p>
+            <p style="font-size: 1.3rem;">
+                Monthly: <span class="highlight">${formatCurrency(projection.potential_monthly_income)}</span>
+            </p>
+        </div>
+        <br>
+        <p style="font-size: 1.1rem; text-align: center;">${projection.message}</p>
+    `;
+
+    document.getElementById('projectionSummary').innerHTML = summaryHtml;
+
+    // Yearly breakdown
+    let yearlyHtml = '<table style="width: 100%; border-collapse: collapse;">';
+    yearlyHtml += '<tr style="border-bottom: 2px solid rgba(255,255,255,0.2);"><th style="text-align: left; padding: 0.5rem;">Year</th><th style="text-align: right; padding: 0.5rem;">Contributions</th><th style="text-align: right; padding: 0.5rem;">Earnings</th><th style="text-align: right; padding: 0.5rem;">Total Value</th></tr>';
+
+    projection.yearly_breakdown.forEach(year => {
+        yearlyHtml += `
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <td style="padding: 0.5rem;">Year ${year.year}</td>
+                <td style="text-align: right; padding: 0.5rem;">${formatCurrency(year.contributions)}</td>
+                <td style="text-align: right; padding: 0.5rem; color: #00ff88;">${formatCurrency(year.earnings)}</td>
+                <td style="text-align: right; padding: 0.5rem; color: #ffd700; font-weight: bold;">${formatCurrency(year.value)}</td>
+            </tr>
+        `;
+    });
+
+    yearlyHtml += '</table>';
+    document.getElementById('yearlyBreakdown').innerHTML = yearlyHtml;
+
+    // Scroll to results
+    document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+}
+
+// Load on page ready
+loadDollarADay();
+</script>
+{% endblock %}

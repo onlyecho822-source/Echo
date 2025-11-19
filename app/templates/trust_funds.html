@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-header">
+    <h1>Trust Fund Planning</h1>
+    <p>Learn about trusts for wealth preservation, asset protection, and estate planning</p>
+</div>
+
+<div class="card">
+    <h2>Get Trust Recommendations</h2>
+    <form id="trustForm">
+        <div class="grid">
+            <div>
+                <label>Estimated Net Worth ($)</label>
+                <input type="number" name="net_worth" required placeholder="500000">
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label style="display: flex; align-items: center; gap: 0.5rem;">
+                        <input type="checkbox" name="has_minor_children" style="width: auto;">
+                        Have minor children
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 0.5rem;">
+                        <input type="checkbox" name="has_disabled_dependent" style="width: auto;">
+                        Have disabled dependent
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 0.5rem;">
+                        <input type="checkbox" name="owns_business" style="width: auto;">
+                        Own a business
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 0.5rem;">
+                        <input type="checkbox" name="owns_real_estate" style="width: auto;">
+                        Own real estate
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 0.5rem;">
+                        <input type="checkbox" name="charitable_intent" style="width: auto;">
+                        Interested in charitable giving
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 0.5rem;">
+                        <input type="checkbox" name="asset_protection_needed" style="width: auto;">
+                        Need asset protection
+                    </label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <button type="submit" class="btn">Get Recommendations</button>
+    </form>
+
+    <div id="recommendations" style="display: none; margin-top: 1.5rem;"></div>
+</div>
+
+<div class="card">
+    <h2>Types of Trusts</h2>
+    <div class="grid">
+        {% for type_id, trust in trust_types.items() %}
+        <div class="result-box">
+            <h3>{{ trust.name }}</h3>
+            <p style="margin-bottom: 1rem;">{{ trust.description }}</p>
+
+            <h4 style="color: #00ff88; font-size: 0.9rem;">Benefits</h4>
+            <ul style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                {% for benefit in trust.benefits[:3] %}
+                <li>{{ benefit }}</li>
+                {% endfor %}
+            </ul>
+
+            {% if trust.drawbacks %}
+            <h4 style="color: #ffaa00; font-size: 0.9rem;">Considerations</h4>
+            <ul style="font-size: 0.85rem; margin-bottom: 0.5rem;">
+                {% for drawback in trust.drawbacks[:2] %}
+                <li>{{ drawback }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+
+            <p style="font-size: 0.8rem; color: #a0a0a0;">
+                Typical Cost: {{ trust.typical_cost }}<br>
+                Complexity: {{ trust.complexity }}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="card">
+    <h2>Wealth Building Stages & Trusts</h2>
+    <div style="display: grid; gap: 1rem;">
+        <div class="result-box">
+            <span class="tag tag-blue">Stage 1: Foundation (&lt;$100K)</span>
+            <h3>Focus on basics first</h3>
+            <p>Emergency fund, debt payoff, basic will, term life insurance. Trusts generally not needed yet.</p>
+        </div>
+        <div class="result-box">
+            <span class="tag tag-blue">Stage 2: Accumulation ($100K-$500K)</span>
+            <h3>Consider Revocable Living Trust</h3>
+            <p>Avoid probate, plan for incapacity. Maximize retirement accounts and build investment portfolio.</p>
+        </div>
+        <div class="result-box">
+            <span class="tag tag-gold">Stage 3: Growth ($500K-$2M)</span>
+            <h3>Asset Protection Planning</h3>
+            <p>Revocable trust essential. Consider asset protection trusts if in high-liability profession.</p>
+        </div>
+        <div class="result-box">
+            <span class="tag tag-gold">Stage 4: Preservation ($2M-$10M)</span>
+            <h3>Multiple Trust Types</h3>
+            <p>Estate tax planning becomes important. Irrevocable trusts, charitable giving strategies.</p>
+        </div>
+        <div class="result-box">
+            <span class="tag tag-green">Stage 5: Legacy ($10M+)</span>
+            <h3>Comprehensive Trust Strategy</h3>
+            <p>Dynasty trusts, private foundations, family office. Multi-generational wealth transfer.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.getElementById('trustForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+
+    try {
+        const response = await fetch('/api/trust-recommendation', {
+            method: 'POST',
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            displayRecommendations(data.recommendations);
+        }
+    } catch (error) {
+        alert('Error: ' + error.message);
+    }
+});
+
+function displayRecommendations(recommendations) {
+    const container = document.getElementById('recommendations');
+    container.style.display = 'block';
+
+    if (recommendations.length === 0) {
+        container.innerHTML = '<p>Based on your profile, trust planning may not be necessary at this time. Focus on building your wealth first!</p>';
+        return;
+    }
+
+    let html = '<h3>Recommended Trusts for Your Situation</h3><br>';
+
+    recommendations.forEach(rec => {
+        html += `
+            <div class="result-box" style="margin-bottom: 1rem;">
+                <span class="tag ${rec.priority === 'Critical' ? 'tag-gold' : rec.priority === 'High' ? 'tag-blue' : 'tag-green'}">
+                    ${rec.priority} Priority
+                </span>
+                <h3>${rec.trust_type.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</h3>
+                <p>${rec.reason}</p>
+            </div>
+        `;
+    });
+
+    html += '<br><p style="color: #a0a0a0;">Note: Consult with an estate planning attorney to implement these recommendations.</p>';
+
+    container.innerHTML = html;
+}
+</script>
+{% endblock %}
