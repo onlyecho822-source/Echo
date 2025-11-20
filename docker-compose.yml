@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  omega-embryo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: echo/omega-embryo:latest
+    container_name: omega-embryo
+    restart: unless-stopped
+
+    environment:
+      - OMEGA_SECRET_KEY=${OMEGA_SECRET_KEY}
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+      - GITHUB_REPO=${GITHUB_REPO}
+      - NODE_ENV=production
+
+    volumes:
+      # Mount cosmic_status for status reporting
+      - ./cosmic_status:/app/cosmic_status
+      # Mount canary file (for persistence)
+      - ./vault_canary.txt:/app/vault_canary.txt
+
+    # Resource limits (defense against DoS)
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+
+    # Security options
+    security_opt:
+      - no-new-privileges:true
+
+    # Read-only root filesystem (except for writable volumes)
+    read_only: true
+
+    tmpfs:
+      - /tmp:size=10M,noexec,nosuid,nodev
+
+    # Network isolation (if needed)
+    # network_mode: bridge
+
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

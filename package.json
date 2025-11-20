@@ -1,0 +1,28 @@
+{
+  "name": "echo-cosmic-pipeline",
+  "version": "2.0.0",
+  "description": "Echo Civilization - Hardened GitHub Integration & Monitoring System",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "echo",
+    "github",
+    "devops",
+    "security",
+    "monitoring"
+  ],
+  "author": "Nathan Poinsette",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^20.0.2",
+    "blessed": "^0.1.81",
+    "blessed-contrib": "^4.11.0",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

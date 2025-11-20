@@ -1,0 +1,42 @@
+# Node modules (will be installed in container)
+node_modules/
+npm-debug.log
+
+# Environment files (pass via docker-compose)
+.env
+.env.*
+
+# Git files
+.git/
+.gitignore
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Development files
+.vscode/
+.idea/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+test/
+*.test.js
+
+# Build artifacts
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Status files (mounted as volume)
+cosmic_status/
+vault_canary.txt
