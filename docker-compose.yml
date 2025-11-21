@@ -1,0 +1,133 @@
+version: '3.8'
+
+services:
+  # Echo API Server
+  echo-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: echo-api
+    ports:
+      - "8000:8000"
+    environment:
+      - ECHO_VAULT_MASTER_KEY=${ECHO_VAULT_MASTER_KEY}
+      - ECHO_VAULT_SECRET_KEY=${ECHO_VAULT_SECRET_KEY}
+      - ECHO_API_HOST=0.0.0.0
+      - ECHO_API_PORT=8000
+      - POSTGRES_URL=postgresql://echo:echo_password@postgres:5432/echo_db
+      - REDIS_URL=redis://redis:6379/0
+      - MONGODB_URL=mongodb://mongo:27017/echo
+    depends_on:
+      - postgres
+      - redis
+      - mongo
+    networks:
+      - echo-network
+    volumes:
+      - ./echo-vault/data:/app/echo-vault/data
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: echo-postgres
+    environment:
+      - POSTGRES_USER=echo
+      - POSTGRES_PASSWORD=echo_password
+      - POSTGRES_DB=echo_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - echo-network
+    restart: unless-stopped
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: echo-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - echo-network
+    restart: unless-stopped
+
+  # MongoDB (for document storage)
+  mongo:
+    image: mongo:7
+    container_name: echo-mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=echo
+      - MONGO_INITDB_ROOT_PASSWORD=echo_password
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - echo-network
+    restart: unless-stopped
+
+  # RabbitMQ (message queue)
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: echo-rabbitmq
+    ports:
+      - "5672:5672"   # AMQP
+      - "15672:15672" # Management UI
+    environment:
+      - RABBITMQ_DEFAULT_USER=echo
+      - RABBITMQ_DEFAULT_PASS=echo_password
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    networks:
+      - echo-network
+    restart: unless-stopped
+
+  # Prometheus (monitoring)
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: echo-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+    networks:
+      - echo-network
+    restart: unless-stopped
+
+  # Grafana (dashboards)
+  grafana:
+    image: grafana/grafana:latest
+    container_name: echo-grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana-data:/var/lib/grafana
+    depends_on:
+      - prometheus
+    networks:
+      - echo-network
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+  redis-data:
+  mongo-data:
+  rabbitmq-data:
+  prometheus-data:
+  grafana-data:
+
+networks:
+  echo-network:
+    driver: bridge

@@ -1,0 +1,140 @@
+# Echo System Configuration
+
+# Orchestrator Settings
+orchestrator:
+  max_agents: 20
+  event_queue_size: 5000
+  log_level: INFO
+  enable_telemetry: true
+  heartbeat_interval_seconds: 30
+
+# Engine Configurations
+engines:
+  echo-free:
+    enabled: true
+    max_tokens: 2000
+    creativity: 0.8
+    temperature: 0.9
+    cache_enabled: true
+    cache_ttl_seconds: 3600
+
+  echo-lex:
+    enabled: true
+    jurisdiction: US
+    default_frameworks:
+      - GDPR
+      - CCPA
+    enable_risk_scoring: true
+    confidence_threshold: 0.85
+
+  echo-core:
+    enabled: true
+    max_concurrent_tasks: 10
+    task_timeout_seconds: 300
+    enable_batch_processing: true
+    batch_size: 100
+    retry_policy:
+      max_retries: 3
+      backoff_strategy: exponential
+      initial_delay_seconds: 1
+
+# Vault Configuration
+vault:
+  encryption_algorithm: AES-256
+  key_rotation_days: 90
+  session_timeout_minutes: 30
+  max_api_keys_per_user: 10
+
+# API Configuration
+api:
+  rate_limiting:
+    enabled: true
+    requests_per_hour: 1000
+    requests_per_day: 10000
+    burst_size: 50
+
+  cors:
+    enabled: true
+    allowed_origins:
+      - http://localhost:3000
+      - https://yourdomain.com
+    allowed_methods:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+    allowed_headers:
+      - Content-Type
+      - Authorization
+      - X-API-Key
+
+  authentication:
+    jwt_expiry_hours: 24
+    require_api_key: true
+    enable_oauth: false
+
+# Connector Defaults
+connectors:
+  retry_attempts: 3
+  connection_timeout_seconds: 30
+  request_timeout_seconds: 60
+  enable_connection_pooling: true
+  max_connections: 100
+
+# Monitoring & Observability
+monitoring:
+  prometheus:
+    enabled: true
+    port: 9090
+    metrics_path: /metrics
+
+  logging:
+    level: INFO
+    format: json
+    output: stdout
+    file_path: logs/echo.log
+    rotation: daily
+    retention_days: 30
+
+  tracing:
+    enabled: false
+    jaeger_endpoint: http://localhost:14268/api/traces
+
+# Performance Tuning
+performance:
+  worker_threads: 4
+  connection_pool_size: 20
+  cache_size_mb: 512
+  enable_compression: true
+
+# Security
+security:
+  enable_audit_log: true
+  audit_log_path: logs/audit.log
+  password_min_length: 12
+  require_strong_passwords: true
+  enable_2fa: false
+  session_encryption: true
+
+# Feature Flags
+features:
+  websocket: true
+  graphql: false
+  batch_api: true
+  webhooks: true
+  scheduled_jobs: true
+
+# Notification Settings
+notifications:
+  slack:
+    enabled: false
+    default_channel: "#notifications"
+
+  email:
+    enabled: false
+    default_from: noreply@echo.ai
+
+  webhooks:
+    enabled: true
+    retry_failed: true
+    max_retry_attempts: 3
