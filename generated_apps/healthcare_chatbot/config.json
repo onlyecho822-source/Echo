@@ -1,0 +1,9 @@
+{
+  "app_name": "Healthcare Chatbot",
+  "ai_type": "chatbot",
+  "created_at": "2025-11-21T19:51:20.695304",
+  "config": {
+    "log_level": "INFO",
+    "debug": false
+  }
+}

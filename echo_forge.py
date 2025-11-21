@@ -9,6 +9,7 @@ Author: ∇θ Operator
 
 import json
 import os
+import logging
 from datetime import datetime
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass, asdict
@@ -735,10 +736,10 @@ if __name__ == "__main__":
     asyncio.run(main())
 '''
 
-        return {{
+        return {
             "agent.py": agent_code,
             "requirements.txt": self._generate_requirements(blueprint)
-        }}
+        }
 
     def _generate_requirements(self, blueprint: AppBlueprint) -> str:
         """Generate requirements.txt content"""

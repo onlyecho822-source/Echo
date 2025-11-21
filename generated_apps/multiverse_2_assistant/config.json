@@ -1,0 +1,9 @@
+{
+  "app_name": "Multiverse_2 Assistant",
+  "ai_type": "assistant",
+  "created_at": "2025-11-21T19:51:20.707043",
+  "config": {
+    "log_level": "INFO",
+    "debug": false
+  }
+}

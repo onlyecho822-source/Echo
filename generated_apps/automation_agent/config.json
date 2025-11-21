@@ -1,0 +1,9 @@
+{
+  "app_name": "Automation Agent",
+  "ai_type": "agent",
+  "created_at": "2025-11-21T19:51:20.700883",
+  "config": {
+    "log_level": "INFO",
+    "debug": false
+  }
+}

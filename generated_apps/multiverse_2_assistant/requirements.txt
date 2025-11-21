@@ -1,0 +1,1 @@
+openai>=1.0.0\nanthropic>=0.8.0\npython-dotenv>=1.0.0\npydantic>=2.0.0\nloguru>=0.7.0
