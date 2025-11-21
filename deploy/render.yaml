@@ -1,0 +1,91 @@
+#
+# Echo Render Deployment Configuration
+# Deploy protected services (web apps, background jobs) to Render
+#
+
+services:
+  # External Watchdog Service
+  - type: web
+    name: echo-watchdog
+    env: python
+    runtime: python-3.11
+    buildCommand: pip install -r requirements-watchdog.txt
+    startCommand: python scripts/monitoring/watchdog.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: PORT
+        value: 8000
+      - key: CHECK_INTERVAL
+        value: 300
+      # GitHub monitoring
+      - key: GITHUB_TOKEN
+        sync: false  # Set in Render dashboard (encrypted)
+      - key: GITHUB_REPO
+        value: your-username/Echo
+      # Service endpoints to monitor
+      - key: RENDER_APP_URL
+        sync: false
+      - key: VERCEL_SITE_URL
+        sync: false
+      - key: AWS_LAMBDA_HEALTH_URL
+        sync: false
+      # Alert channels
+      - key: SLACK_WEBHOOK_URL
+        sync: false  # Set in Render dashboard
+      - key: ALERT_EMAIL
+        value: alerts@your-domain.com
+    healthCheckPath: /health
+    autoDeploy: true
+
+  # Echo Web Application (Example)
+  - type: web
+    name: echo-web-app
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: LOG_LEVEL
+        value: info
+      # Use AWS Secrets Manager for sensitive credentials
+      - key: AWS_REGION
+        value: us-east-1
+      - key: AWS_SECRETS_MANAGER_ENABLED
+        value: true
+    healthCheckPath: /health
+    autoDeploy: true
+
+# Background Jobs (Cron)
+  - type: cron
+    name: echo-profit-scanner
+    env: python
+    runtime: python-3.11
+    buildCommand: pip install -r requirements.txt
+    startCommand: python scripts/profit_scanner.py
+    schedule: "*/15 * * * *"  # Every 15 minutes
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: AWS_REGION
+        value: us-east-1
+
+  - type: cron
+    name: echo-health-check
+    env: python
+    runtime: python-3.11
+    buildCommand: pip install -r requirements.txt
+    startCommand: python scripts/health_check.py
+    schedule: "*/5 * * * *"  # Every 5 minutes
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: WATCHDOG_URL
+        sync: false
+
+# Databases (if needed)
+databases:
+  - name: echo-db
+    databaseName: echo_production
+    user: echo
+    plan: starter

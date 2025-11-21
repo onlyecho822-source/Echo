@@ -1,0 +1,15 @@
+# Echo Watchdog Service Dependencies
+# For external monitoring and alerting
+
+# Core dependencies
+requests==2.31.0
+flask==3.0.0
+
+# AWS integration (for secrets management)
+boto3==1.34.0
+botocore==1.34.0
+
+# Optional: Enhanced features
+# python-dotenv==1.0.0  # For local development
+# sentry-sdk==1.40.0    # Error tracking
+# prometheus-client==0.20.0  # Metrics export

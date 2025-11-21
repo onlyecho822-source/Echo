@@ -1,0 +1,52 @@
+[Unit]
+Description=Echo Autonomous Fallback Service
+Documentation=https://github.com/your-username/Echo
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=echo
+Group=echo
+WorkingDirectory=/opt/echo
+ExecStart=/opt/echo/scripts/autonomy/local_fallback.sh --loop
+
+# Environment variables (customize as needed)
+Environment="ECHO_HOME=/opt/echo"
+Environment="LOG_FILE=/var/log/echo/fallback.log"
+Environment="CHECK_INTERVAL=300"
+Environment="WATCHDOG_URL=https://watchdog.echo-sovereign.com"
+
+# Load additional environment from file
+EnvironmentFile=-/opt/echo/.env
+
+# Restart policy
+Restart=always
+RestartSec=10
+StartLimitBurst=5
+StartLimitInterval=60
+
+# Resource limits (optional)
+# Prevent runaway processes
+MemoryMax=1G
+CPUQuota=50%
+
+# Security hardening
+# Run as non-root user
+NoNewPrivileges=true
+# Restrict filesystem access
+ProtectSystem=strict
+ReadWritePaths=/var/log/echo /opt/echo/data
+# Restrict network (allow outbound only)
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+
+# Logging
+StandardOutput=append:/var/log/echo/fallback-stdout.log
+StandardError=append:/var/log/echo/fallback-stderr.log
+SyslogIdentifier=echo-fallback
+
+[Install]
+WantedBy=multi-user.target
