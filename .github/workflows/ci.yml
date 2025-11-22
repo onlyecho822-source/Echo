@@ -1,0 +1,106 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, claude/* ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11"]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest pytest-cov pytest-asyncio
+        pip install -r requirements.txt
+
+    - name: Run linting
+      run: |
+        pip install flake8 black mypy
+        flake8 echo_forge.py deployment_manager.py --max-line-length=120 --extend-ignore=E203,W503
+        black --check echo_forge.py deployment_manager.py || true
+        mypy echo_forge.py --ignore-missing-imports || true
+
+    - name: Run tests with coverage
+      run: |
+        pytest tests/ -v --cov=. --cov-report=xml --cov-report=html --cov-report=term
+
+    - name: Upload coverage reports
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: false
+
+  security:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Install security tools
+      run: |
+        python -m pip install --upgrade pip
+        pip install bandit safety
+
+    - name: Run Bandit security scan
+      run: |
+        bandit -r . -f json -o bandit-report.json || true
+        bandit -r . || true
+
+    - name: Check dependencies for vulnerabilities
+      run: |
+        pip install -r requirements.txt
+        safety check --json || true
+
+  build:
+    runs-on: ubuntu-latest
+    needs: [test, security]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Test app generation
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        python -c "from echo_forge import EchoForge, AIType, TechStack; forge = EchoForge(); forge.create_app('ci_test', AIType.CHATBOT, TechStack.PYTHON_FASTAPI)"
+
+    - name: List generated apps
+      run: |
+        ls -la generated_apps/ || echo "No apps generated"
+
+    - name: Validate generated app structure
+      run: |
+        if [ -d "generated_apps" ]; then
+          for app in generated_apps/*/; do
+            echo "Validating $app"
+            test -f "$app/README.md" || echo "Missing README.md in $app"
+            test -f "$app/Dockerfile" || echo "Missing Dockerfile in $app"
+            test -f "$app/blueprint.json" || echo "Missing blueprint.json in $app"
+          done
+        fi
