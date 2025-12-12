@@ -1,0 +1,41 @@
+name: Echo Pulse Monitor
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Every 30 minutes
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Record Pulse
+        run: |
+          echo "🫀 Echo Pulse $(date -Iseconds)"
+          echo "Repository: ${{ github.repository }}"
+          echo "Workflow: ${{ github.workflow }}"
+          echo "Run ID: ${{ github.run_id }}"
+          echo "Run Number: ${{ github.run_number }}"
+          
+      - name: System Health Check
+        run: |
+          echo "📊 System Metrics:"
+          echo "  CPU: $(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage "%"}')"
+          echo "  Memory: $(free -m | awk 'NR==2{printf "%.2f%%", $3*100/$2 }')"
+          echo "  Disk: $(df -h / | awk 'NR==2{print $5}')"
+          echo "  Timestamp: $(date -Iseconds)"
+          
+      - name: Repository Status
+        run: |
+          echo "📁 Repository Status:"
+          echo "  Owner: ${{ github.repository_owner }}"
+          echo "  Repo: ${{ github.event.repository.name }}"
+          echo "  Default Branch: ${{ github.event.repository.default_branch }}"
+          echo "  Private: ${{ github.event.repository.private }}"
+          
+      - name: Echo Resonance Check
+        run: |
+          echo "🎵 Echo Resonance:"
+          echo "  Status: ACTIVE"
+          echo "  Frequency: 30min intervals"
+          echo "  Mode: Automated monitoring"
+          echo "  Next pulse: $(date -d '+30 minutes' -Iseconds)"
