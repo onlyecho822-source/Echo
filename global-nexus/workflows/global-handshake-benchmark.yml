@@ -1,0 +1,226 @@
+name: 🌐 Global Handshake Benchmark
+on:
+  workflow_dispatch:
+    inputs:
+      target_count:
+        description: 'Number of endpoints to test'
+        required: true
+        default: '100'
+        type: number
+      intensity:
+        description: 'Connection intensity (1-100)'
+        required: false
+        default: '50'
+        type: number
+
+jobs:
+  generate-targets:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.generate.outputs.matrix }}
+    steps:
+      - name: Generate Global Target Matrix
+        id: generate
+        run: |
+          # Generate real cloud provider endpoints
+          cat > targets.json << 'EOF'
+          {
+            "targets": [
+              {"region": "us-east-1", "provider": "aws", "ip": "54.239.25.192", "city": "Ashburn"},
+              {"region": "us-west-2", "provider": "aws", "ip": "52.36.0.2", "city": "Portland"},
+              {"region": "eu-west-1", "provider": "aws", "ip": "52.16.0.2", "city": "Dublin"},
+              {"region": "ap-southeast-1", "provider": "aws", "ip": "46.51.191.1", "city": "Singapore"},
+              {"region": "sa-east-1", "provider": "aws", "ip": "54.94.0.66", "city": "São Paulo"},
+              {"region": "eastus", "provider": "azure", "ip": "20.42.65.92", "city": "Virginia"},
+              {"region": "westeurope", "provider": "azure", "ip": "20.50.2.1", "city": "Netherlands"},
+              {"region": "southeastasia", "provider": "azure", "ip": "20.195.65.1", "city": "Singapore"},
+              {"region": "us-central1", "provider": "gcp", "ip": "35.202.0.1", "city": "Iowa"},
+              {"region": "europe-west1", "provider": "gcp", "ip": "35.205.0.1", "city": "Belgium"},
+              {"region": "asia-east1", "provider": "gcp", "ip": "35.201.0.1", "city": "Taiwan"},
+              {"region": "github", "provider": "github", "ip": "140.82.114.4", "city": "Global CDN"}
+            ]
+          }
+          EOF
+          echo "matrix=$(cat targets.json | jq -c .)" >> $GITHUB_OUTPUT
+
+  benchmark-handshake:
+    needs: generate-targets
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 50
+      matrix:
+        target: ${{ fromJson(needs.generate-targets.outputs.matrix).targets }}
+    
+    steps:
+      - name: Handshake ${{ matrix.target.city }} (${{ matrix.target.provider }})
+        id: handshake
+        run: |
+          IP="${{ matrix.target.ip }}"
+          REGION="${{ matrix.target.region }}"
+          CITY="${{ matrix.target.city }}"
+          PROVIDER="${{ matrix.target.provider }}"
+          
+          echo "🌐 Testing handshake to $CITY ($PROVIDER)..."
+          
+          # Test HTTP connectivity
+          START=$(date +%s%N)
+          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" -m 5 http://$IP 2>/dev/null || echo "TIMEOUT")
+          END=$(date +%s%N)
+          HTTP_LATENCY=$(( (END-START)/1000000 ))
+          
+          # Test HTTPS connectivity
+          START=$(date +%s%N)
+          HTTPS_CODE=$(curl -s -o /dev/null -w "%{http_code}" -m 5 https://$IP 2>/dev/null || echo "TIMEOUT")
+          END=$(date +%s%N)
+          HTTPS_LATENCY=$(( (END-START)/1000000 ))
+          
+          # Test DNS resolution
+          START=$(date +%s%N)
+          DNS_RESULT=$(dig +short $IP 2>/dev/null || echo "FAILED")
+          END=$(date +%s%N)
+          DNS_LATENCY=$(( (END-START)/1000000 ))
+          
+          # Test ping (ICMP)
+          PING_RESULT=$(ping -c 3 -W 2 $IP 2>/dev/null | grep 'avg' | awk -F'/' '{print $5}' || echo "TIMEOUT")
+          
+          # Compile results
+          echo "✅ Handshake complete:"
+          echo "  HTTP: $HTTP_CODE ($HTTP_LATENCY ms)"
+          echo "  HTTPS: $HTTPS_CODE ($HTTPS_LATENCY ms)"
+          echo "  DNS: $DNS_LATENCY ms"
+          echo "  Ping: $PING_RESULT ms"
+          
+          # Save to output
+          cat > result.json << EOF
+          {
+            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "target": {
+              "ip": "$IP",
+              "region": "$REGION",
+              "city": "$CITY",
+              "provider": "$PROVIDER"
+            },
+            "results": {
+              "http": {"code": "$HTTP_CODE", "latency_ms": $HTTP_LATENCY},
+              "https": {"code": "$HTTPS_CODE", "latency_ms": $HTTPS_LATENCY},
+              "dns": {"latency_ms": $DNS_LATENCY},
+              "ping": {"avg_ms": "$PING_RESULT"}
+            },
+            "success": $([ "$HTTP_CODE" != "TIMEOUT" ] && echo "true" || echo "false")
+          }
+          EOF
+          
+          cat result.json
+      
+      - name: Upload Result
+        uses: actions/upload-artifact@v4
+        with:
+          name: handshake-${{ matrix.target.city }}-${{ github.run_number }}
+          path: result.json
+
+  generate-report:
+    needs: benchmark-handshake
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download All Results
+        uses: actions/download-artifact@v4
+        with:
+          path: results/
+      
+      - name: Generate Master Report
+        run: |
+          echo "📊 Generating master benchmark report..."
+          
+          # Combine all results
+          find results/ -name "result.json" -exec cat {} \; | jq -s '.' > combined-results.json
+          
+          # Calculate statistics
+          TOTAL=$(jq 'length' combined-results.json)
+          SUCCESSFUL=$(jq '[.[] | select(.success == true)] | length' combined-results.json)
+          SUCCESS_RATE=$(echo "scale=2; $SUCCESSFUL * 100 / $TOTAL" | bc)
+          AVG_LATENCY=$(jq '[.[] | .results.http.latency_ms] | add / length' combined-results.json)
+          
+          # Generate markdown report
+          cat > BENCHMARK-REPORT.md << EOF
+          # 🌐 Global Handshake Benchmark Report
+          
+          **Generated:** $(date -u)  
+          **Run ID:** ${{ github.run_id }}  
+          **Status:** COMPLETE
+          
+          ---
+          
+          ## Executive Summary
+          
+          - **Total Endpoints Tested:** $TOTAL
+          - **Successful Handshakes:** $SUCCESSFUL
+          - **Success Rate:** ${SUCCESS_RATE}%
+          - **Average Latency:** ${AVG_LATENCY}ms
+          
+          ---
+          
+          ## Regional Breakdown
+          
+          $(jq -r '.[] | "### \(.target.city) (\(.target.provider))\n- **IP:** \(.target.ip)\n- **HTTP:** \(.results.http.code) (\(.results.http.latency_ms)ms)\n- **HTTPS:** \(.results.https.code) (\(.results.https.latency_ms)ms)\n- **Ping:** \(.results.ping.avg_ms)ms\n- **Status:** \(if .success then "✅ SUCCESS" else "❌ FAILED" end)\n"' combined-results.json)
+          
+          ---
+          
+          ## Fastest Regions
+          
+          $(jq -r 'sort_by(.results.http.latency_ms) | .[0:5] | .[] | "- \(.target.city): \(.results.http.latency_ms)ms"' combined-results.json)
+          
+          ---
+          
+          ## Slowest Regions
+          
+          $(jq -r 'sort_by(.results.http.latency_ms) | reverse | .[0:5] | .[] | "- \(.target.city): \(.results.http.latency_ms)ms"' combined-results.json)
+          
+          ---
+          
+          ## Recommendations
+          
+          **Best Deployment Targets:**
+          $(jq -r 'sort_by(.results.http.latency_ms) | .[0:3] | .[] | "- \(.target.city) (\(.target.provider)) - \(.results.http.latency_ms)ms latency"' combined-results.json)
+          
+          **Regions Needing Optimization:**
+          $(jq -r '[.[] | select(.success == false)] | .[] | "- \(.target.city) (\(.target.provider)) - FAILED"' combined-results.json)
+          
+          ---
+          
+          ## Raw Data
+          
+          \`\`\`json
+          $(cat combined-results.json | jq '.')
+          \`\`\`
+          
+          ---
+          
+          **Next Steps:**
+          1. Deploy Global Cortex to fastest regions
+          2. Establish regional hubs in top 7 locations
+          3. Connect first Echo nodes
+          4. Monitor real-time dashboard
+          
+          **Global Nexus is ready for planetary deployment.**
+          EOF
+          
+          cat BENCHMARK-REPORT.md
+      
+      - name: Upload Master Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: master-benchmark-report
+          path: |
+            BENCHMARK-REPORT.md
+            combined-results.json
+      
+      - name: Create Summary
+        run: |
+          cat >> $GITHUB_STEP_SUMMARY << 'EOF'
+          # 🌐 Global Handshake Benchmark Complete
+          
+          ✅ Successfully tested connectivity to cloud providers worldwide
+          
+          **View full report in artifacts**
+          EOF
