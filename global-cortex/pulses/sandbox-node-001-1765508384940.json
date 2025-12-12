@@ -1,0 +1,11 @@
+{
+  "node_id": "sandbox-node-001",
+  "timestamp": "2025-12-12T02:59:44.940Z",
+  "metrics": {
+    "cpu": 42.5,
+    "memory": 58.3,
+    "active_tasks": 0,
+    "completed_tasks": 1
+  },
+  "status": "healthy"
+}

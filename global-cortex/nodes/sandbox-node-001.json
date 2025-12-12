@@ -1,0 +1,22 @@
+{
+  "id": "sandbox-node-001",
+  "registered_at": "2025-12-12T02:59:21.740Z",
+  "location": {
+    "city": "Cloud",
+    "country": "Global"
+  },
+  "capabilities": [
+    "thermal_imaging",
+    "data_analysis",
+    "coordination"
+  ],
+  "device_type": "sandbox_instance",
+  "status": "active",
+  "last_pulse": "2025-12-12T02:59:44.940Z",
+  "metrics": {
+    "cpu": 42.5,
+    "memory": 58.3,
+    "active_tasks": 1,
+    "completed_tasks": 1
+  }
+}
