@@ -1,0 +1,30 @@
+# Code owners for Echo repository
+# These owners will be automatically requested for review when someone opens a pull request
+
+# Global owners (all files)
+* @onlyecho822-source
+
+# Documentation
+*.md @onlyecho822-source
+/docs/ @onlyecho822-source
+
+# GitHub configuration
+/.github/ @onlyecho822-source
+
+# Source code
+/src/ @onlyecho822-source
+
+# Tests
+/tests/ @onlyecho822-source
+/test/ @onlyecho822-source
+*.test.js @onlyecho822-source
+*.spec.js @onlyecho822-source
+
+# Configuration files
+package.json @onlyecho822-source
+package-lock.json @onlyecho822-source
+.gitignore @onlyecho822-source
+.env.example @onlyecho822-source
+
+# CI/CD
+/.github/workflows/ @onlyecho822-source
