@@ -1,0 +1,25 @@
+#!/bin/bash
+# Sherlock Hub - Complete Setup Script
+# This script contains all the code to set up Sherlock Hub
+
+echo "🚀 Sherlock Hub - Complete Setup"
+echo "================================="
+echo ""
+echo "This directory contains the complete Sherlock Hub implementation:"
+echo ""
+echo "✅ Backend API (FastAPI + Neo4j + OpenAI)"
+echo "✅ Frontend (React + Cytoscape.js)"
+echo "✅ Nexus Coordinator (Auto-discovery)"
+echo "✅ ETL Pipelines (Apache Airflow)"
+echo "✅ CI/CD (GitHub Actions)"
+echo "✅ Documentation (Complete guides)"
+echo ""
+echo "To deploy locally:"
+echo "  docker-compose up -d"
+echo ""
+echo "To access:"
+echo "  Frontend: http://localhost:3000"
+echo "  Backend: http://localhost:8000/docs"
+echo "  Neo4j: http://localhost:7474"
+echo ""
+echo "Part of the Echo Hybrid Intelligence Ecosystem"
