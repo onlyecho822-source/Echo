@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2025-12-14T00:00:00Z",
+  
+  "divergence": {
+    "threshold": 0.4,
+    "weights": {
+      "ethical_status": 0.4,
+      "confidence": 0.3,
+      "risk_estimate": 0.3
+    },
+    "status_mapping": {
+      "ethical": 1.0,
+      "permissible": 0.7,
+      "questionable": 0.3,
+      "unethical": 0.0,
+      "unknown": 0.5
+    },
+    "risk_mapping": {
+      "low": 0.2,
+      "medium": 0.5,
+      "high": 0.8,
+      "critical": 1.0
+    }
+  },
+  
+  "escalation": {
+    "automatic_at_divergence": 0.4,
+    "automatic_at_unethical": true,
+    "notification_channels": ["github_issues", "log_file"],
+    "timeout_hours": 72
+  },
+  
+  "agents": {
+    "required_fields": ["name", "version", "capabilities"],
+    "registration_required": false,
+    "default_capabilities": ["classify", "reason", "escalate"]
+  },
+  
+  "events": {
+    "required_context_fields": [
+      "causation",
+      "agency_present",
+      "duty_of_care",
+      "knowledge_level",
+      "control_level"
+    ],
+    "immutable_once_written": true,
+    "max_size_bytes": 1048576
+  },
+  
+  "power_dynamics": {
+    "legitimacy_decay_rate": 0.01,
+    "collapse_threshold_base": 0.25,
+    "violation_impact": 0.2,
+    "influence_modifiers": {
+      "persuasion": 1.0,
+      "framing": 0.95,
+      "praise": 1.05,
+      "alignment": 1.1,
+      "omission": 0.9
+    }
+  },
+  "security": {
+    "hash_algorithm": "sha256",
+    "require_git_commit": true,
+    "log_all_operations": true,
+    "validate_json_schema": true
+  }
+}
