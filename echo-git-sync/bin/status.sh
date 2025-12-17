@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # status.sh - System health dashboard
 
 echo "📊 Echo Git Sync Status"

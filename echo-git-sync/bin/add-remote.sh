@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # add-remote.sh - Add git remote with URL validation and connection testing
 
 if [ $# -ne 2 ]; then

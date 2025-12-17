@@ -1,0 +1,111 @@
+[
+  {
+    "timestamp": "2025-12-17T18:58:10Z",
+    "region": "Google-DNS",
+    "ip": "8.8.8.8",
+    "http_code": "000TIMEOUT",
+    "http_latency_ms": 5013,
+    "ping_avg_ms": "",
+    "dns_result": "",
+    "success": true
+  }
+,
+  {
+    "timestamp": "2025-12-17T18:58:15Z",
+    "region": "GCP-EU-West",
+    "ip": "35.205.0.1",
+    "http_code": "000TIMEOUT",
+    "http_latency_ms": 5014,
+    "ping_avg_ms": "",
+    "dns_result": "",
+    "success": true
+  }
+,
+  {
+    "timestamp": "2025-12-17T18:58:20Z",
+    "region": "AWS-US-East",
+    "ip": "54.239.25.192",
+    "http_code": "000TIMEOUT",
+    "http_latency_ms": 5011,
+    "ping_avg_ms": "",
+    "dns_result": "",
+    "success": true
+  }
+,
+  {
+    "timestamp": "2025-12-17T18:58:25Z",
+    "region": "AWS-AP-Southeast",
+    "ip": "46.51.191.1",
+    "http_code": "000TIMEOUT",
+    "http_latency_ms": 5012,
+    "ping_avg_ms": "",
+    "dns_result": "",
+    "success": true
+  }
+,
+  {
+    "timestamp": "2025-12-17T18:58:25Z",
+    "region": "Azure-EU-West",
+    "ip": "20.50.2.1",
+    "http_code": "404",
+    "http_latency_ms": 184,
+    "ping_avg_ms": "",
+    "dns_result": "",
+    "success": true
+  }
+,
+  {
+    "timestamp": "2025-12-17T18:58:30Z",
+    "region": "GCP-US-Central",
+    "ip": "35.202.0.1",
+    "http_code": "000TIMEOUT",
+    "http_latency_ms": 5009,
+    "ping_avg_ms": "",
+    "dns_result": "",
+    "success": true
+  }
+,
+  {
+    "timestamp": "2025-12-17T18:58:30Z",
+    "region": "GitHub-CDN",
+    "ip": "140.82.114.4",
+    "http_code": "301",
+    "http_latency_ms": 16,
+    "ping_avg_ms": "",
+    "dns_result": "",
+    "success": true
+  }
+,
+  {
+    "timestamp": "2025-12-17T18:58:30Z",
+    "region": "Cloudflare-CDN",
+    "ip": "1.1.1.1",
+    "http_code": "301",
+    "http_latency_ms": 17,
+    "ping_avg_ms": "",
+    "dns_result": "",
+    "success": true
+  }
+,
+  {
+    "timestamp": "2025-12-17T18:58:35Z",
+    "region": "Azure-US-East",
+    "ip": "20.42.65.92",
+    "http_code": "000TIMEOUT",
+    "http_latency_ms": 5010,
+    "ping_avg_ms": "",
+    "dns_result": "",
+    "success": true
+  }
+,
+  {
+    "timestamp": "2025-12-17T18:58:35Z",
+    "region": "AWS-EU-West",
+    "ip": "52.16.0.2",
+    "http_code": "404",
+    "http_latency_ms": 163,
+    "ping_avg_ms": "",
+    "dns_result": "",
+    "success": true
+  }
+]

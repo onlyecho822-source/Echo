@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # sync-all.sh - Parallel multi-provider git synchronization
 # Features: Atomic failure tracking, Dry-run, Pre-flight checks
 

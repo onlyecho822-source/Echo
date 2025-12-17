@@ -1,0 +1,40 @@
+name: Engineering Guardian
+
+on: [push, pull_request]
+
+jobs:
+  quality-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Security Scan
+        run: |
+          # npm audit for Node.js dependencies
+          if [ -f "package.json" ]; then
+            npm audit || true
+          fi
+          
+          # ShellCheck for bash scripts
+          find . -name "*.sh" -type f -exec shellcheck {} \; || true
+      
+      - name: Test Suite
+        run: |
+          if [ -f "test/run-all.sh" ]; then
+            ./test/run-all.sh
+          else
+            echo "No test suite found"
+          fi
+      
+      - name: Coverage Report
+        run: |
+          if [ -f "test/coverage.sh" ]; then
+            ./test/coverage.sh
+          else
+            echo "No coverage script found"
+          fi
+      
+      - name: Dependency Check
+        uses: actions/dependency-review-action@v3
+        if: github.event_name == 'pull_request'
+

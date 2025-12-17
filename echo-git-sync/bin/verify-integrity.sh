@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # verify-integrity.sh - Generate deterministic SHA-256 repository hash
 
 echo "🔍 Generating Integrity Hash..."
