@@ -1,0 +1,632 @@
+{
+  "collection_version": "1.0",
+  "collection_hash": "c7d2f4288e7c87636cb2388870f09bbf9fbc47f8a2696f6a26197d28700b1159",
+  "pod_count": 24,
+  "created_at": "2025-12-19T14:02:49.316610+00:00",
+  "pods": [
+    {
+      "pod_version": "1.0",
+      "id": "63aea75b-a741-4f4a-99d7-4ed702c0de21",
+      "timestamp": "2025-12-19T14:02:43.554151+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.bankofamerica.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 408.51,
+        "payload_hash": "6b6914db728fac44377e5bc63a37645f11e1f91b9c13376b82fe72f5d36886fd"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 817.02 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "505b66347b10bcd6be5b67eacca3fc348cdf476e55f817e630384ccf608a2f25"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "f6e33268-057a-42c0-a349-62a87e0ab1ef",
+      "timestamp": "2025-12-19T14:02:43.557860+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.coinbase.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "http_403",
+        "latency_ms": 406.37,
+        "payload_hash": "3c9527e4e7d95380ccaa3fda7f1e03cf415d301bd493073ed4100ca11bacf35a"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 812.74 OR status != http_403 OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "cec9545cb46dd29af843ffb91e2a718cb8555f1631c977a96edea92fb90f12c2"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "7f6c6ef7-f984-4b7e-851f-cb755db98e05",
+      "timestamp": "2025-12-19T14:02:43.614445+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.jpmorganchase.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 469.39,
+        "payload_hash": "b050c91b1d19c2559ee29405dbda1ecc08342059db91670a460f7cb233b6bc53"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 938.78 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "d8613cc72463c5150d18e350f430342a672f3136b11f8008350f33990f93aa7c"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "0d2701a7-9e50-44bc-9ce7-7fb713538d31",
+      "timestamp": "2025-12-19T14:02:43.636382+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "stripe.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 488.22,
+        "payload_hash": "fbdd7d93a9a1edd29fc9116d43286827f387834f3c2a4169b205dadcb0e1a9e5"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 976.44 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "67fb642ba7c1a2ae5e654302fe113eb5c65f902deea2615b29ad9e0cb5ed2497"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "8f43ceaa-d32d-4f29-b8a2-ef92fccb9790",
+      "timestamp": "2025-12-19T14:02:43.646642+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.federalreserve.gov",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 492.87,
+        "payload_hash": "0ed1fdc035907309e51f576caa3ec2bc7253e9fe194a3745f50aca87dda8b58c"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 985.74 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "b9484b95cb2b1da8697340d6d21fea2544609e9e22e8affa09506162549c9403"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "5e044c28-b4e9-42f0-96b5-782414b963f4",
+      "timestamp": "2025-12-19T14:02:43.681036+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.goldmansachs.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 536.2,
+        "payload_hash": "37bcefa1ea9fcd6cd9b327870fa8dd0f753763296088ba434a3ce9d4e45ab0c5"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 1072.4 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "b3aa6c9b9fddd583d7950f5cf490bcc51bc920a34cc8ed8479c953c646224767"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "30c76ea4-6be6-4b1a-adcd-62e03d3afa7e",
+      "timestamp": "2025-12-19T14:02:43.697649+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.nyse.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 542.53,
+        "payload_hash": "fe9a3a81b04fdd4bc9b922ebe00d71949e29100e3cf09ec72c8ef00c651d9c72"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 1085.06 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "71958e8cda5ddf9b10697722b94da22f63397aca72d82726e6c9887ec2a48c2b"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "2bc96872-939f-4b8b-8747-1b16b5376a79",
+      "timestamp": "2025-12-19T14:02:43.717055+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.nasdaq.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 160.53,
+        "payload_hash": "5d1cccfbabb4ea30e60eae54ba667cefbd56b9bd982e963e2348840625104270"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 321.06 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "5f21893cf81b5f7509ced4ebc1a0bad839253b30a23412a61c3165d27b6f6422"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "f73c661c-0ae4-4e91-82bb-5057eff3ea96",
+      "timestamp": "2025-12-19T14:02:43.744883+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.wellsfargo.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 600.67,
+        "payload_hash": "3c731a8eae8c317a989ee796952998dc3ec455ff729ff2838593bda117025d12"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 1201.34 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "93ee21b43fb78a83c22dded97dfb2c32f140d94d212bb991ac006c0aa3125d22"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "a0dfe5f8-eab2-44c1-b554-330d1ab77be8",
+      "timestamp": "2025-12-19T14:02:43.906116+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.paypal.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 759.58,
+        "payload_hash": "9f982e9991be6a222e8fd164d6b376d61152a8dcd64d23198f29ee16cb85549f"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 1519.16 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "1c25ab5873fa68f0ddfd25a992b432086ec3fcd5d9f142afda8da82f7dbb4eaf"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "7fb52bad-9460-4f4c-8699-02a8a1df80ef",
+      "timestamp": "2025-12-19T14:02:44.317227+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.kraken.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "http_403",
+        "latency_ms": 1165.08,
+        "payload_hash": "cd48039dce468ff9284d7a9fd0299ffbe3cf097407b3932a7f70bd173c80a4de"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 2330.16 OR status != http_403 OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "491f2550164792e6e4a333046385d344a79c1d36c4366f1c2ba2ff0933f6cc47"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "c6173ed6-ae3d-48c8-a19b-14492f8b7b3c",
+      "timestamp": "2025-12-19T14:02:45.035460+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.fidelity.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 1477.45,
+        "payload_hash": "82554a399e04f43620241e50c961cd24fa3e71f35b0d207274e7b7541b293026"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 2954.9 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "30c5c951fb7f96fc593877326d1c27a83b18ae7df9bffb3b356a3371c9b088fc"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "db136421-d8c8-4602-b934-a400aeed1677",
+      "timestamp": "2025-12-19T14:02:45.500891+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.wikipedia.org",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 433.77,
+        "payload_hash": "98c1334c9c4d7722fbb0d1fc5bf91c03bd31a32a0b1eb878c159f52cba23db3e"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 867.54 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "16db2e5ca3c43270214cad8b56651bbecc89b042a1d2828ba8decb89ced2b1de"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "2ca14b47-d6f1-4b53-a871-c9644df91142",
+      "timestamp": "2025-12-19T14:02:45.539261+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.bbc.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 469.37,
+        "payload_hash": "17e8df7e6e065ea8aca4849e1bd21fa8774fa0d03c22195012101bc5cffb1f51"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 938.74 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "1e11dc20ff99a85495916b8dc76349436accc5fe8b5306d05e5e64d3b99d624d"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "3bc32e75-d644-445e-9b80-37b982a60aaf",
+      "timestamp": "2025-12-19T14:02:45.549087+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.microsoft.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "http_403",
+        "latency_ms": 503.59,
+        "payload_hash": "0db672c64b6daac068a2ae2c469948b77767c5b51cbe35e4b94b0320007ab458"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 1007.18 OR status != http_403 OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "c48de8a03e0fed11771746abf6b9624cf83a600f2ff997aa03050557169341d8"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "5f30602a-85b7-4310-85b9-46fb840ea7a2",
+      "timestamp": "2025-12-19T14:02:45.556449+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.amazon.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 512.46,
+        "payload_hash": "9ada96609d179920b85a7566a0eab2155d32185f0723fb0a1a75e359a0f60bc6"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 1024.92 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "ee30228b69a6aebbb5c1ceacdcd7d2a88a82f9e1f103ad0c7019616478c82a7d"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "be85927d-4981-4654-8d91-08c467d690ad",
+      "timestamp": "2025-12-19T14:02:45.560336+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.apple.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 514.35,
+        "payload_hash": "333e56efd2fdb8ba69ff7461deab1dbf02c8de404bbac30adf7bc9b8ea7e359b"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 1028.7 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "f4153cea4b87c6f5e0dd1ce0566473a5e7029b44dd0d3627cf3a7b069c1c6268"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "e13788fd-c654-43f1-a481-f927ef7777cb",
+      "timestamp": "2025-12-19T14:02:45.797847+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.github.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 746.82,
+        "payload_hash": "e7ec43b1c0026f78e5425bed995a54016664792cb2149b3d1821595e800229ce"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 1493.64 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "4fab267e4662d3c0610077e7a9d3b6c94215f9420eb4f876b7d77105a2a6792f"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "bbf0c96d-42eb-4471-a1a6-be6e5ef5ce7e",
+      "timestamp": "2025-12-19T14:02:45.818144+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "aws.amazon.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 287.79,
+        "payload_hash": "979ea8a6b5b9c9639032d13d3d87b1c2d29965dfba0f128fc4d1ef8d245c596c"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 575.58 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "13a5e1b4659805e8758ca9fbabee3a358630733615eff3c6a07cc174a5ccc402"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "cd37cc43-d521-419c-bb8b-6f08bee11a83",
+      "timestamp": "2025-12-19T14:02:46.012138+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.twitter.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 958.07,
+        "payload_hash": "9136fb1b1de236513acd0e7891bd2803479b7c5c418694be6c3da9020e0621f6"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 1916.14 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "ffd4d1db6b0223dad56c296a3f90cfd4c071e412b03081cf5aee210fe7289853"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "4cfe94d7-47b5-43f5-8a60-a5c94a9351b6",
+      "timestamp": "2025-12-19T14:02:46.124549+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.cloudflare.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 628.95,
+        "payload_hash": "61a00e00e08ca2af7b34cd1d3a7682419da7ac5a7762fc573ba581611112cb71"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 1257.9 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "d395f3d092d8aa155848ecb940c77407c4538370e84d6db4b708706fdee4929c"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "277ea188-985a-42d3-a6fe-12f92c3702b9",
+      "timestamp": "2025-12-19T14:02:47.902281+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.google.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 2850.62,
+        "payload_hash": "11b070fa16201aca58cb9d9fedd47d19abe2750e904d2f62027a4e3663a3212a"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 5701.24 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "784d6dfb06a8f904526a656e38672fa9926acc02673b3f0e8ada8224a19d60ea"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "97debc80-5f1a-4c11-8e64-7dc27258dc29",
+      "timestamp": "2025-12-19T14:02:48.931224+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.linkedin.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 3882.82,
+        "payload_hash": "fc42b2a41e21de014ba6ab4f5904fd498cb43531148e886dfd925f10cbc27a30"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 7765.64 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "d41884b3716118239a12b41131132396b67711b61ef484f2dbd2d4ae65d98a8b"
+    },
+    {
+      "pod_version": "1.0",
+      "id": "af5cb729-2ac1-4623-b694-57d04f0d3b62",
+      "timestamp": "2025-12-19T14:02:49.312877+00:00",
+      "type": "network_probe",
+      "target": {
+        "uri": "www.cnn.com",
+        "protocol": "https",
+        "port": 443
+      },
+      "provenance": {
+        "agent_id": "echo_probe_01",
+        "location": "sandbox_us_east",
+        "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8"
+      },
+      "metrics": {
+        "status": "success",
+        "latency_ms": 4260.9,
+        "payload_hash": "30fd9dd8f0ad9ec0a50174f8265f32f6a6978aa428f6332a20fa2db0542717fe"
+      },
+      "falsification_criteria": {
+        "condition": "latency_ms > 8521.8 OR status != success OR consecutive_failures > 3",
+        "retest_interval_sec": 3600
+      },
+      "integrity_seal": "a355589a014e4ea5a83df5045dd16369b5b8a120cade435378a79de8d8a3fda1"
+    }
+  ]
+}
