@@ -1,0 +1,184 @@
+{
+  "test_id": "4b7c0268fda12dae",
+  "start_time": "2025-12-19T14:02:43.141296+00:00",
+  "end_time": "2025-12-19T14:02:49.315078+00:00",
+  "duration_seconds": 6.173789,
+  "agent_id": "echo_probe_01",
+  "location": "sandbox_us_east",
+  "engine_hash": "2e954ce06f70dffa81ab670f53c40d751f825c5d2a4a3c2173dbaf82d96182d8",
+  "total_endpoints_tested": 24,
+  "total_successful": 21,
+  "total_failed": 3,
+  "success_rate": 87.5,
+  "total_pods_created": 24,
+  "collection_hash": "c7d2f4288e7c87636cb2388870f09bbf9fbc47f8a2696f6a26197d28700b1159",
+  "collection_verified": true,
+  "sector_results": [
+    {
+      "sector": "Finance Sector",
+      "start_time": "2025-12-19T14:02:43.141570+00:00",
+      "endpoints_tested": 12,
+      "successful": 10,
+      "failed": 2,
+      "pods_created": 12,
+      "details": [
+        {
+          "url": "https://www.bankofamerica.com",
+          "success": true,
+          "pod_id": "63aea75b-a741-4f4a-99d7-4ed702c0de21",
+          "pod_cid": "505b66347b10bcd6be5b67eacca3fc348cdf476e55f817e630384ccf608a2f25"
+        },
+        {
+          "url": "https://www.coinbase.com",
+          "success": false,
+          "pod_id": "f6e33268-057a-42c0-a349-62a87e0ab1ef",
+          "pod_cid": "cec9545cb46dd29af843ffb91e2a718cb8555f1631c977a96edea92fb90f12c2"
+        },
+        {
+          "url": "https://www.jpmorganchase.com",
+          "success": true,
+          "pod_id": "7f6c6ef7-f984-4b7e-851f-cb755db98e05",
+          "pod_cid": "d8613cc72463c5150d18e350f430342a672f3136b11f8008350f33990f93aa7c"
+        },
+        {
+          "url": "https://stripe.com",
+          "success": true,
+          "pod_id": "0d2701a7-9e50-44bc-9ce7-7fb713538d31",
+          "pod_cid": "67fb642ba7c1a2ae5e654302fe113eb5c65f902deea2615b29ad9e0cb5ed2497"
+        },
+        {
+          "url": "https://www.federalreserve.gov",
+          "success": true,
+          "pod_id": "8f43ceaa-d32d-4f29-b8a2-ef92fccb9790",
+          "pod_cid": "b9484b95cb2b1da8697340d6d21fea2544609e9e22e8affa09506162549c9403"
+        },
+        {
+          "url": "https://www.goldmansachs.com",
+          "success": true,
+          "pod_id": "5e044c28-b4e9-42f0-96b5-782414b963f4",
+          "pod_cid": "b3aa6c9b9fddd583d7950f5cf490bcc51bc920a34cc8ed8479c953c646224767"
+        },
+        {
+          "url": "https://www.nyse.com",
+          "success": true,
+          "pod_id": "30c76ea4-6be6-4b1a-adcd-62e03d3afa7e",
+          "pod_cid": "71958e8cda5ddf9b10697722b94da22f63397aca72d82726e6c9887ec2a48c2b"
+        },
+        {
+          "url": "https://www.nasdaq.com",
+          "success": true,
+          "pod_id": "2bc96872-939f-4b8b-8747-1b16b5376a79",
+          "pod_cid": "5f21893cf81b5f7509ced4ebc1a0bad839253b30a23412a61c3165d27b6f6422"
+        },
+        {
+          "url": "https://www.wellsfargo.com",
+          "success": true,
+          "pod_id": "f73c661c-0ae4-4e91-82bb-5057eff3ea96",
+          "pod_cid": "93ee21b43fb78a83c22dded97dfb2c32f140d94d212bb991ac006c0aa3125d22"
+        },
+        {
+          "url": "https://www.paypal.com",
+          "success": true,
+          "pod_id": "a0dfe5f8-eab2-44c1-b554-330d1ab77be8",
+          "pod_cid": "1c25ab5873fa68f0ddfd25a992b432086ec3fcd5d9f142afda8da82f7dbb4eaf"
+        },
+        {
+          "url": "https://www.kraken.com",
+          "success": false,
+          "pod_id": "7fb52bad-9460-4f4c-8699-02a8a1df80ef",
+          "pod_cid": "491f2550164792e6e4a333046385d344a79c1d36c4366f1c2ba2ff0933f6cc47"
+        },
+        {
+          "url": "https://www.fidelity.com",
+          "success": true,
+          "pod_id": "c6173ed6-ae3d-48c8-a19b-14492f8b7b3c",
+          "pod_cid": "30c5c951fb7f96fc593877326d1c27a83b18ae7df9bffb3b356a3371c9b088fc"
+        }
+      ],
+      "end_time": "2025-12-19T14:02:45.036460+00:00"
+    },
+    {
+      "sector": "Global Nexus",
+      "start_time": "2025-12-19T14:02:45.039310+00:00",
+      "endpoints_tested": 12,
+      "successful": 11,
+      "failed": 1,
+      "pods_created": 12,
+      "details": [
+        {
+          "url": "https://www.wikipedia.org",
+          "success": true,
+          "pod_id": "db136421-d8c8-4602-b934-a400aeed1677",
+          "pod_cid": "16db2e5ca3c43270214cad8b56651bbecc89b042a1d2828ba8decb89ced2b1de"
+        },
+        {
+          "url": "https://www.bbc.com",
+          "success": true,
+          "pod_id": "2ca14b47-d6f1-4b53-a871-c9644df91142",
+          "pod_cid": "1e11dc20ff99a85495916b8dc76349436accc5fe8b5306d05e5e64d3b99d624d"
+        },
+        {
+          "url": "https://www.microsoft.com",
+          "success": false,
+          "pod_id": "3bc32e75-d644-445e-9b80-37b982a60aaf",
+          "pod_cid": "c48de8a03e0fed11771746abf6b9624cf83a600f2ff997aa03050557169341d8"
+        },
+        {
+          "url": "https://www.amazon.com",
+          "success": true,
+          "pod_id": "5f30602a-85b7-4310-85b9-46fb840ea7a2",
+          "pod_cid": "ee30228b69a6aebbb5c1ceacdcd7d2a88a82f9e1f103ad0c7019616478c82a7d"
+        },
+        {
+          "url": "https://www.apple.com",
+          "success": true,
+          "pod_id": "be85927d-4981-4654-8d91-08c467d690ad",
+          "pod_cid": "f4153cea4b87c6f5e0dd1ce0566473a5e7029b44dd0d3627cf3a7b069c1c6268"
+        },
+        {
+          "url": "https://www.github.com",
+          "success": true,
+          "pod_id": "e13788fd-c654-43f1-a481-f927ef7777cb",
+          "pod_cid": "4fab267e4662d3c0610077e7a9d3b6c94215f9420eb4f876b7d77105a2a6792f"
+        },
+        {
+          "url": "https://aws.amazon.com",
+          "success": true,
+          "pod_id": "bbf0c96d-42eb-4471-a1a6-be6e5ef5ce7e",
+          "pod_cid": "13a5e1b4659805e8758ca9fbabee3a358630733615eff3c6a07cc174a5ccc402"
+        },
+        {
+          "url": "https://www.twitter.com",
+          "success": true,
+          "pod_id": "cd37cc43-d521-419c-bb8b-6f08bee11a83",
+          "pod_cid": "ffd4d1db6b0223dad56c296a3f90cfd4c071e412b03081cf5aee210fe7289853"
+        },
+        {
+          "url": "https://www.cloudflare.com",
+          "success": true,
+          "pod_id": "4cfe94d7-47b5-43f5-8a60-a5c94a9351b6",
+          "pod_cid": "d395f3d092d8aa155848ecb940c77407c4538370e84d6db4b708706fdee4929c"
+        },
+        {
+          "url": "https://www.google.com",
+          "success": true,
+          "pod_id": "277ea188-985a-42d3-a6fe-12f92c3702b9",
+          "pod_cid": "784d6dfb06a8f904526a656e38672fa9926acc02673b3f0e8ada8224a19d60ea"
+        },
+        {
+          "url": "https://www.linkedin.com",
+          "success": true,
+          "pod_id": "97debc80-5f1a-4c11-8e64-7dc27258dc29",
+          "pod_cid": "d41884b3716118239a12b41131132396b67711b61ef484f2dbd2d4ae65d98a8b"
+        },
+        {
+          "url": "https://www.cnn.com",
+          "success": true,
+          "pod_id": "af5cb729-2ac1-4623-b694-57d04f0d3b62",
+          "pod_cid": "a355589a014e4ea5a83df5045dd16369b5b8a120cade435378a79de8d8a3fda1"
+        }
+      ],
+      "end_time": "2025-12-19T14:02:49.313731+00:00"
+    }
+  ]
+}

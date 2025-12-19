@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Virtual environment
+venv/
+*.pyc
+__pycache__/
+.pytest_cache/
+.coverage
+*.egg-info/

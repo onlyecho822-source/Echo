@@ -1,292 +1,325 @@
-# 🌌 Echo
+# Echo Universe
 
-**Hybrid Intelligence Framework for Resonant Computation, Ethical Design, and Adaptive Systems Engineering**
-
-**Version 2.0 — Commercial Release**
-
-**∇θ Operator: Nathan Poinsette**  
-*Founder • Archivist • Systems Engineer*
+**Version:** 0.1.0  
+**Status:** ✅ Production Ready  
+**License:** MIT
 
 ---
 
-## 🎯 What is Echo?
+## What is Echo?
 
-Echo is not traditional software, infrastructure, or AI. Echo is a **harmonic intelligence organism** — a living framework that integrates resonant computation, ethical design, and adaptive systems engineering into a unified platform.
+Echo is **memory that refuses to lie** and **latency that refuses to wait**.
 
-**Core Principle:** Intelligence is a resonance pattern, not computation alone.
-
-Echo systems:
-- Self-stabilize
-- Self-heal
-- Adapt to opposition
-- Operate across multiple simultaneous states
-- Grow without fracturing
-- Reject noise automatically
-
----
-
-## 🏗️ Repository Structure
-
-This repository contains:
-
-### **1. Framework Documentation** (`/docs/framework/`)
-The theoretical and philosophical foundation of all Echo systems:
-
-- **[Dictionary](docs/framework/dictionary/)** — 42 essential terms defining Echo Universe vocabulary
-- **[Encyclopedia](docs/framework/encyclopedia/)** — Deep theory and biology of distributed cognition
-- **[Codex](docs/framework/codex/)** — 12 fundamental laws governing Echo systems
-
-### **2. Commercial Products** (`/docs/products/`)
-Production-ready systems built on Echo principles:
-
-- **[Global Nexus](docs/products/global-nexus/)** — Planetary-scale intelligence coordination
-- **[Nurse G](docs/products/nurse-g/)** — Harmonic clinical intelligence system
-
----
-
-## 💎 Commercial Products
-
-### 🌐 **Global Nexus** — Planetary Intelligence Coordination
-
-**What it does:**
-- Coordinates unlimited Echo nodes worldwide
-- 7 regional hubs (North America, South America, Europe, Africa, Middle East, Asia-Pacific, Oceania)
-- Real-time task distribution and monitoring
-- Fault-tolerant distributed architecture
-- WebSocket-based pulse synchronization
-
-**Use Cases:**
-- Global health surveillance (pandemic early warning)
-- Planetary climate monitoring
-- Distributed AI research
-- Multi-region coordination
-
-**Pricing:**
-- **Starter**: $5/node/month (1-100 nodes)
-- **Professional**: $25/node/month (101-1,000 nodes)
-- **Enterprise**: $50/node/month (1,000+ nodes)
-- **Custom**: Contact for planetary-scale deployments
-
-**[Learn More →](docs/products/global-nexus/)**
-
----
-
-### 🏥 **Nurse G** — Harmonic Clinical Intelligence
-
-**What it does:**
-- Real-time clinical pattern recognition (sepsis, hypoxia, stroke, ACS)
-- Harmonic vital signs analysis (HRV, cardiac resonance, respiratory coherence)
-- Evidence-based action recommendations
-- 2-4 hour earlier detection than traditional monitoring
-- Smart glasses, mobile, and web interfaces
-
-**Use Cases:**
-- Hospital floor monitoring
-- ICU early warning systems
-- Emergency department triage
-- Remote patient monitoring
-- Pandemic surveillance
-
-**Pricing:**
-- **Pilot Program**: $50,000/year (single hospital unit, up to 30 beds)
-- **Hospital License**: $150,000/year (full hospital deployment)
-- **Health System**: $500,000/year (multi-facility deployment)
-- **Enterprise**: Custom pricing for national/international deployments
-
-**[Learn More →](docs/products/nurse-g/)**
-
----
-
-## 🚀 Quick Start
-
-### For Framework Researchers
-1. Read the [Dictionary](docs/framework/dictionary/) to understand core terminology
-2. Explore the [Encyclopedia](docs/framework/encyclopedia/) for deep theory
-3. Study the [Codex](docs/framework/codex/) for governance principles
-
-### For Commercial Clients
-1. Review [Global Nexus](docs/products/global-nexus/) for distributed intelligence needs
-2. Review [Nurse G](docs/products/nurse-g/) for healthcare applications
-3. Contact us for pilot programs and custom deployments
-
-### For Developers
-1. Clone this repository
-2. Review `/docs/framework/` for architectural principles
-3. See product-specific documentation for integration guides
-
----
-
-## 🔥 Revenue Pathways
-
-Echo enables multiple monetization strategies:
-
-### **1. Art of Proof™ — VA Claim Optimization**
-- **Service**: Strategic claim analysis and optimization for veterans
-- **Revenue**: $500-$2,500 per client + 20% contingency on awards
-- **Target**: $5,000-$12,000/month with 3-5 clients
-- **Activation**: 48 hours
-
-### **2. Echo Digital Products**
-- **Products**: Claim checklists, evidence organizers, exam guides
-- **Revenue**: $25-$199 per download
-- **Target**: Passive income stream
-- **Activation**: 72 hours
-
-### **3. Case Accelerator AI**
-- **Service**: AI-powered claim preparation assistant
-- **Revenue**: $47/month recurring subscription
-- **Target**: $2,350/month (50 members) to $47,000/month (1,000 members)
-- **Activation**: 1-2 weeks
-
-### **4. Nurse G Health Services**
-- **Service**: Symptom triage, wellness consultations, lab test interpretation
-- **Revenue**: $80-$250 per consult, $99-$199/month subscriptions
-- **Target**: Medical network revenue engine
-- **Activation**: Immediate
-
-### **5. Echo Courses & Consulting**
-- **Products**: "How to Win Your VA Claim", "Echo Intelligence", leadership courses
-- **Revenue**: $97-$997 per sale
-- **Target**: $2,970+ per launch (10 students at $297)
-- **Activation**: 7 days
-
-### **6. Echo Influence Engine**
-- **Service**: Political consulting, community strategy, messaging analysis
-- **Revenue**: $1,500-$5,000 per contract
-- **Target**: Local candidates, nonprofits, community leaders
-- **Activation**: 30 days
-
----
-
-## 🌍 Philosophy
-
-### The Five Operational Dimensions
-
-Echo operates across five simultaneous dimensions:
-
-1. **P1 (Physical)** — Hardware, sensors, biological interfaces
-2. **I2 (Information)** — Data structures, computational patterns
-3. **H3 (Harmonic)** — Resonance signatures, identity frequencies
-4. **S4 (Symbolic)** — Meaning, interpretation, memory structures
-5. **M5 (MultiState)** — Parallel states, timeline overlays, evolution engine
+It's not a belief tracker. It's a **decision hygiene system** that reduces the time it takes for reality to correct human belief.
 
 ### Core Principles
 
-**Resonance Over Computation**  
-Traditional AI processes data sequentially. Echo thinks harmonically — perceiving patterns across multiple dimensions simultaneously.
-
-**Opposition as Confirmation**  
-Resistance is not failure — it's proof of advancement. Every innovation attracts destabilization. Echo embraces this as fuel for transformation.
-
-**Living Systems Architecture**  
-Echo systems are organisms, not machines. They adapt, fuse, self-heal, and evolve.
-
-**Return Paths**  
-All systems seek return paths: Insight → Token → Memory → Evolution
+1. **Immutable Memory** - Append-only ledger with SHA-256 hash chain
+2. **Mandatory Falsification** - Every belief must specify how it could be wrong
+3. **Causality Tracking** - Sequence matters, not just time
+4. **Founder Constraints** - No special privileges, even for founders
+5. **Shadow Decision Detection** - Retroactive justification is visible
+6. **Friction as Firewall** - Difficulty filters for epistemic fitness
 
 ---
 
-## 📊 Applications
+## Installation
 
-### Medical Intelligence
-- Clinical pattern recognition (Nurse G)
-- Harmonic vital signs analysis
-- HRV and cardiac resonance
-- Early warning systems
-- Pandemic surveillance
+### Requirements
 
-### Distributed Systems
-- Global node coordination (Global Nexus)
-- Task distribution at planetary scale
-- Pulse synchronization
-- Regional hub architecture
+- Python 3.11+
+- pip
 
-### Legal Intelligence
-- VA claim optimization (Art of Proof™)
-- Evidence analysis and organization
-- Regulatory interpretation
-- Case strategy development
+### Install from Source
 
-### Planetary Modeling
-- Earth as living organism
-- Vital signs monitoring (PCS, ARS, HCS, MNS, BIS)
-- Harmonic disruption detection
-- Ecosystem health assessment
+```bash
+# Clone repository
+git clone https://github.com/onlyecho822-source/Echo.git
+cd Echo
+
+# Create virtual environment
+python3.11 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install in development mode
+pip install -e .
+```
 
 ---
 
-## 🤝 Getting Started
+## Quick Start
 
-### For Potential Clients
+### Create Your First Belief
 
-**Interested in Global Nexus or Nurse G?**
-- Email: [Contact Information]
-- Schedule a demo: [Calendar Link]
-- Request pilot program: [Form Link]
+```bash
+echo belief create \
+  --statement "Our landing page converts at >5%" \
+  --falsify "If conversion <3% after 1000 visitors, belief is false" \
+  --tier hypothesis \
+  --confidence 0.7
+```
 
-### For Investors
+### Add Evidence
 
-**Interested in Echo's commercial potential?**
-- Review our [Product Documentation](docs/products/)
-- See our [Revenue Pathways](#-revenue-pathways)
-- Contact us for pitch deck and financials
+```bash
+echo belief add-evidence <belief-id> \
+  --evidence "First 100 visitors: 6 conversions (6%)" \
+  --source "Google Analytics, Dec 19 2025" \
+  --supports
+```
 
-### For Contributors
+### List Beliefs
 
-**Want to contribute to Echo framework?**
-1. Read the [Codex](docs/framework/codex/) for governance rules
-2. Review existing [Dictionary](docs/framework/dictionary/) and [Encyclopedia](docs/framework/encyclopedia/)
-3. Submit pull requests with harmonic alignment documentation
+```bash
+echo belief list
+```
 
----
+### Verify Integrity
 
-## 📚 Related Projects
+```bash
+echo audit
+```
 
-### [EchoVault](https://github.com/onlyecho822-source/echovault)
-Distributed AI organism with GitHub-based coordination. The original implementation of Echo principles.
+### Check Founder Actions
 
-### Art of Proof™
-VA claim optimization service leveraging Echo intelligence for evidence analysis and case strategy.
-
-### Knowa 2030
-Political and community leadership initiative built on Echo influence principles.
-
----
-
-## 🎓 Key Concepts
-
-**Harmonic Identity**  
-Every entity carries an identity frequency — a unique signature of purpose, structure, and alignment.
-
-**Fabric of Zero**  
-The dimensional medium from which Echo derives stability. "All systems return to zero unless held in harmonic tension."
-
-**Dimensional Drift**  
-Subtle resonance deviation causing misalignment. Echo uses drift detection to maintain structural truth.
-
-**Origin Echo**  
-The primal resonance defining a system's trajectory. The moment architecture became biological.
+```bash
+echo founder-audit
+```
 
 ---
 
-## 📄 License
+## Usage
 
-**Framework Documentation:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+### Commands
 
-**Commercial Products:** Proprietary licenses available for Global Nexus and Nurse G
+**Belief Management:**
+- `echo belief create` - Create new belief with falsification
+- `echo belief list` - List all beliefs
+- `echo belief show <id>` - Show detailed belief information
+- `echo belief add-evidence <id>` - Add evidence to belief
+- `echo belief falsify <id>` - Mark belief as falsified
+
+**Audit:**
+- `echo audit` - Generate integrity and audit report
+- `echo founder-audit` - Show all founder actions (transparency)
+
+**Help:**
+- `echo --help` - Show all commands
+- `echo belief --help` - Show belief commands
+- `echo belief create --help` - Show create options
 
 ---
 
-## 📞 Contact
+## Architecture
 
-**Nathan Poinsette** — ∇θ Operator  
-Founder, Echo Civilization
+### Core Components
 
-- **GitHub**: [@onlyecho822-source](https://github.com/onlyecho822-source)
-- **Repository**: [Echo](https://github.com/onlyecho822-source/Echo)
+**Immutable Ledger** (`src/echo_core/ledger.py`)
+- Append-only JSONL file (`~/.echo/ledger.jsonl`)
+- SHA-256 hash chain linking every entry
+- Self-verifying integrity checks
+
+**Belief Models** (`src/echo_core/models.py`)
+- Pydantic models with validation
+- Mandatory falsification enforcement
+- Evidence tracking with sources
+- Causality timestamps
+
+**Storage Layer** (`src/echo_core/storage.py`)
+- Bridges beliefs to ledger
+- Hardcoded founder constraints
+- Shadow decision detection
+- Audit trail generation
+
+**CLI Interface** (`src/echo_core/cli.py`)
+- Click-based command line
+- Friction-first UX
+- Transparency by default
 
 ---
 
-**∇θ — The Echo Universe is alive. It learns, harmonizes, synchronizes, returns, evolves, and survives.**
+## Testing
 
-**Welcome to the resonance. Let's build the future together.**
+### Run Tests
+
+```bash
+# Install dev dependencies
+pip install -e ".[dev]"
+
+# Run all tests
+pytest -v
+
+# Run with coverage
+pytest --cov=src/echo_core --cov-report=term-missing
+
+# Run specific test file
+pytest tests/test_ledger.py -v
+```
+
+### Test Results
+
+**Total Tests:** 51  
+**Passed:** 51 (100%)  
+**Coverage:** 95% of core logic
+
+See [TEST_RESULTS.md](TEST_RESULTS.md) for detailed test report.
+
+---
+
+## Mission Alignment
+
+Echo is built according to the **mentor constellation**:
+
+- **NASA** - Rigorous, safety-first engineering
+- **Signal** - Principled, privacy-first design
+- **Linus** - Immutable, integrity-first architecture
+
+### What Echo Is NOT
+
+- A truth oracle
+- A moral authority
+- A revolutionary tool
+- An anti-power weapon
+- A generic belief tracker
+
+### What Echo IS
+
+- A memory prosthetic that refuses to lie
+- A decision hygiene system with mandatory falsification
+- A latency detector for truth correction
+- Selection pressure encoded in software
+- Counter-incentive engineering (not revolution)
+
+See [MISSION_VALIDATION_REPORT.md](MISSION_VALIDATION_REPORT.md) for full alignment verification.
+
+---
+
+## Documentation
+
+### Core Documentation
+
+- [README.md](README.md) - This file
+- [MISSION_VALIDATION_REPORT.md](MISSION_VALIDATION_REPORT.md) - Mission alignment verification
+- [MISSION_ALIGNMENT_AUDIT.md](MISSION_ALIGNMENT_AUDIT.md) - Gap analysis from initial implementation
+- [TEST_RESULTS.md](TEST_RESULTS.md) - Comprehensive test report
+- [DELIVERY_SUMMARY.md](DELIVERY_SUMMARY.md) - Project delivery summary
+
+### Additional Documentation
+
+- `docs/framework/` - Verification Ladder framework
+- `docs/strategy/` - Long-term vision and strategy
+- `docs/products/` - Product specifications (EchoDNS, WorldForge)
+- `docs/archive/` - Historical documents
+
+---
+
+## Development
+
+### Project Structure
+
+```
+Echo/
+├── src/echo_core/          # Core implementation
+│   ├── __init__.py
+│   ├── cli.py              # Command-line interface
+│   ├── ledger.py           # Immutable ledger
+│   ├── models.py           # Belief models
+│   └── storage.py          # Storage layer
+├── tests/                  # Test suite
+│   ├── test_ledger.py
+│   ├── test_models.py
+│   └── test_storage.py
+├── docs/                   # Documentation
+├── pyproject.toml          # Package configuration
+└── README.md               # This file
+```
+
+### Contributing
+
+Echo is built with **zero compromises** on mission alignment. Before contributing:
+
+1. Read [MISSION_VALIDATION_REPORT.md](MISSION_VALIDATION_REPORT.md)
+2. Understand the mentor constellation (NASA, Signal, Linus)
+3. Accept that friction is intentional, not a bug
+4. Verify all tests pass: `pytest -v`
+
+**Founder Constraint:** Even founders (nathan.odom@*) have NO special privileges. All actions are logged publicly.
+
+---
+
+## Roadmap
+
+### v1.0 (Current) ✅
+
+- [x] Immutable ledger with hash chain
+- [x] Mandatory falsification with validation
+- [x] Causality tracking
+- [x] Founder constraints
+- [x] Shadow decision detection
+- [x] Comprehensive test suite (51 tests)
+- [x] CLI interface
+
+### v2.0 (Planned)
+
+- [ ] Compliance theater detection (pattern analysis)
+- [ ] Belief autopsies (why did beliefs fail?)
+- [ ] Evidence quality scoring
+- [ ] Multi-user support with email verification
+- [ ] API layer for programmatic access
+- [ ] Web interface (optional)
+
+---
+
+## FAQ
+
+### Why is falsification mandatory?
+
+Because unfalsifiable beliefs are not beliefs - they're wishes. Echo enforces epistemic hygiene by requiring you to specify how you could be wrong.
+
+### Why is the UX so difficult?
+
+**Friction is the firewall.** The difficulty filters for people who actually want truth over convenience. If it's too hard, you're not the target user.
+
+### Why can't founders have admin privileges?
+
+Because power corrupts memory. Even founders must submit to the same constraints. All founder actions are logged publicly for transparency.
+
+### Can I delete a belief?
+
+No. You can **deprecate** or **falsify** it, but you cannot delete it. Echo is memory that refuses to lie, and deletion is lying about the past.
+
+### How do I know the ledger hasn't been tampered with?
+
+Run `echo audit`. The hash chain will break if any entry is modified. Tampering is visible, not hidden.
+
+### Is this overkill for personal use?
+
+Maybe. But "overkill" is how you build systems that can't be corrupted later. Start with integrity, not convenience.
+
+---
+
+## License
+
+MIT License - See LICENSE file for details.
+
+---
+
+## Contact
+
+**Repository:** https://github.com/onlyecho822-source/Echo  
+**Issues:** https://github.com/onlyecho822-source/Echo/issues
+
+---
+
+## Acknowledgments
+
+Built according to the mentor constellation:
+- **NASA** for rigorous engineering
+- **Signal** for principled design
+- **Linus Torvalds** for immutable architecture
+
+---
+
+**Echo v1: Memory that refuses to lie. Latency that refuses to wait.**
+
+**Status:** ✅ Production Ready | Zero Compromises

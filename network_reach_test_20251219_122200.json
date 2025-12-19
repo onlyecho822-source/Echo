@@ -1,0 +1,497 @@
+{
+  "test_date": "2025-12-19T12:21:58.132734",
+  "financial_sector": [
+    {
+      "name": "stripe_api",
+      "url": "https://api.stripe.com/healthcheck",
+      "category": "financial",
+      "timestamp": "2025-12-19T12:21:58.134857",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 563.7545585632324,
+      "content_length": 66,
+      "error": null,
+      "geo_info": {
+        "server": "nginx",
+        "date": "Fri, 19 Dec 2025 12:21:58 GMT",
+        "content_type": "text/plain; charset=utf-8"
+      }
+    },
+    {
+      "name": "binance_api",
+      "url": "https://api.binance.com/api/v3/ping",
+      "category": "financial",
+      "timestamp": "2025-12-19T12:21:58.150655",
+      "success": false,
+      "status_code": 451,
+      "response_time_ms": 566.3583278656006,
+      "content_length": 224,
+      "error": null,
+      "geo_info": null
+    },
+    {
+      "name": "yahoo_finance",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL",
+      "category": "financial",
+      "timestamp": "2025-12-19T12:21:58.146456",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 574.7601985931396,
+      "content_length": 35524,
+      "error": null,
+      "geo_info": {
+        "server": "ATS",
+        "date": "Fri, 19 Dec 2025 12:21:58 GMT",
+        "content_type": "application/json;charset=utf-8"
+      }
+    },
+    {
+      "name": "coinbase_api",
+      "url": "https://api.coinbase.com/v2/time",
+      "category": "financial",
+      "timestamp": "2025-12-19T12:21:58.148158",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 578.6013603210449,
+      "content_length": 59,
+      "error": null,
+      "geo_info": {
+        "server": "cloudflare",
+        "date": "Fri, 19 Dec 2025 12:21:58 GMT",
+        "content_type": "application/json"
+      }
+    },
+    {
+      "name": "plaid_sandbox",
+      "url": "https://plaid.com",
+      "category": "financial",
+      "timestamp": "2025-12-19T12:21:58.144647",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 584.2106342315674,
+      "content_length": 254103,
+      "error": null,
+      "geo_info": {
+        "server": "AmazonS3",
+        "date": "Fri, 19 Dec 2025 11:43:36 GMT",
+        "content_type": "text/html"
+      }
+    },
+    {
+      "name": "nasdaq_api",
+      "url": "https://www.nasdaq.com",
+      "category": "financial",
+      "timestamp": "2025-12-19T12:21:58.153641",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 625.4031658172607,
+      "content_length": 284340,
+      "error": null,
+      "geo_info": {
+        "server": "Rendering-Platform",
+        "date": "Fri, 19 Dec 2025 12:21:58 GMT",
+        "content_type": "text/html; charset=UTF-8"
+      }
+    },
+    {
+      "name": "nyse_health",
+      "url": "https://www.nyse.com",
+      "category": "financial",
+      "timestamp": "2025-12-19T12:21:58.154853",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 653.8784503936768,
+      "content_length": 276312,
+      "error": null,
+      "geo_info": {
+        "server": "cloudflare",
+        "date": "Fri, 19 Dec 2025 12:21:58 GMT",
+        "content_type": "text/html;charset=UTF-8"
+      }
+    },
+    {
+      "name": "square_api",
+      "url": "https://squareup.com",
+      "category": "financial",
+      "timestamp": "2025-12-19T12:21:58.142790",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 685.8863830566406,
+      "content_length": 1976203,
+      "error": null,
+      "geo_info": {
+        "server": "cloudflare",
+        "date": "Fri, 19 Dec 2025 12:21:58 GMT",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "name": "kraken_api",
+      "url": "https://api.kraken.com/0/public/SystemStatus",
+      "category": "financial",
+      "timestamp": "2025-12-19T12:21:58.151030",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 711.8425369262695,
+      "content_length": 76,
+      "error": null,
+      "geo_info": {
+        "server": "cloudflare",
+        "date": "Fri, 19 Dec 2025 12:21:58 GMT",
+        "content_type": "application/json"
+      }
+    },
+    {
+      "name": "sec_edgar",
+      "url": "https://www.sec.gov/files/company_tickers.json",
+      "category": "financial",
+      "timestamp": "2025-12-19T12:21:58.699946",
+      "success": false,
+      "status_code": 403,
+      "response_time_ms": 233.02483558654785,
+      "content_length": 1925,
+      "error": null,
+      "geo_info": null
+    },
+    {
+      "name": "federal_reserve",
+      "url": "https://www.federalreserve.gov",
+      "category": "financial",
+      "timestamp": "2025-12-19T12:21:58.718816",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 257.97152519226074,
+      "content_length": 100678,
+      "error": null,
+      "geo_info": {
+        "server": "cloudflare",
+        "date": "Fri, 19 Dec 2025 12:21:58 GMT",
+        "content_type": "text/html"
+      }
+    },
+    {
+      "name": "paypal_api",
+      "url": "https://www.paypal.com",
+      "category": "financial",
+      "timestamp": "2025-12-19T12:21:58.136028",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 1106.4841747283936,
+      "content_length": 289545,
+      "error": null,
+      "geo_info": {
+        "server": "Unknown",
+        "date": "Fri, 19 Dec 2025 12:21:59 GMT",
+        "content_type": "text/html; charset=utf-8"
+      }
+    }
+  ],
+  "global_nexus": [
+    {
+      "name": "google_dns",
+      "url": "https://dns.google/resolve?name=google.com&type=A",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.246081",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 396.8944549560547,
+      "content_length": 517,
+      "error": null,
+      "geo_info": {
+        "server": "HTTP server (unknown)",
+        "date": "Fri, 19 Dec 2025 12:21:59 GMT",
+        "content_type": "application/json; charset=UTF-8"
+      }
+    },
+    {
+      "name": "cloudflare_dns",
+      "url": "https://cloudflare-dns.com/dns-query?name=cloudflare.com&type=A",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.246486",
+      "success": false,
+      "status_code": 400,
+      "response_time_ms": 563.2081031799316,
+      "content_length": 0,
+      "error": null,
+      "geo_info": null
+    },
+    {
+      "name": "github_api",
+      "url": "https://api.github.com/zen",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.263603",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 560.9428882598877,
+      "content_length": 26,
+      "error": null,
+      "geo_info": {
+        "server": "github.com",
+        "date": "Fri, 19 Dec 2025 12:21:59 GMT",
+        "content_type": "text/plain;charset=utf-8"
+      }
+    },
+    {
+      "name": "facebook_api",
+      "url": "https://www.facebook.com",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.258949",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 607.4159145355225,
+      "content_length": 99181,
+      "error": null,
+      "geo_info": {
+        "server": "Unknown",
+        "date": "Fri, 19 Dec 2025 12:21:59 GMT",
+        "content_type": "text/html; charset=\"utf-8\""
+      }
+    },
+    {
+      "name": "google_cloud",
+      "url": "https://status.cloud.google.com",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.257773",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 677.9050827026367,
+      "content_length": 483773,
+      "error": null,
+      "geo_info": {
+        "server": "sffe",
+        "date": "Fri, 19 Dec 2025 12:21:59 GMT",
+        "content_type": "text/html"
+      }
+    },
+    {
+      "name": "cloudflare_api",
+      "url": "https://www.cloudflare.com",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.249056",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 731.8880558013916,
+      "content_length": 965566,
+      "error": null,
+      "geo_info": {
+        "server": "cloudflare",
+        "date": "Fri, 19 Dec 2025 12:21:59 GMT",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "name": "fastly_health",
+      "url": "https://www.fastly.com",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.252406",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 739.9587631225586,
+      "content_length": 649061,
+      "error": null,
+      "geo_info": {
+        "server": "Artisanal bits",
+        "date": "Fri, 19 Dec 2025 12:21:59 GMT",
+        "content_type": "text/html"
+      }
+    },
+    {
+      "name": "google_search",
+      "url": "https://www.google.com",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.644498",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 414.6840572357178,
+      "content_length": 17834,
+      "error": null,
+      "geo_info": {
+        "server": "gws",
+        "date": "Fri, 19 Dec 2025 12:22:00 GMT",
+        "content_type": "text/html; charset=ISO-8859-1"
+      }
+    },
+    {
+      "name": "duckduckgo",
+      "url": "https://api.duckduckgo.com/?q=test&format=json",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.826345",
+      "success": false,
+      "status_code": null,
+      "response_time_ms": null,
+      "content_length": 0,
+      "error": "HTTPSConnectionPool(host='api.duckduckgo.com', port=443): Max retries exceeded with url: /?q=test&format=json (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:992)')))",
+      "geo_info": null
+    },
+    {
+      "name": "bing_api",
+      "url": "https://www.bing.com",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.811288",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 475.94547271728516,
+      "content_length": 56978,
+      "error": null,
+      "geo_info": {
+        "server": "Unknown",
+        "date": "Fri, 19 Dec 2025 12:22:00 GMT",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "name": "discord_api",
+      "url": "https://discord.com/api/v9/gateway",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.937159",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 441.29037857055664,
+      "content_length": 35,
+      "error": null,
+      "geo_info": {
+        "server": "cloudflare",
+        "date": "Fri, 19 Dec 2025 12:22:00 GMT",
+        "content_type": "application/json"
+      }
+    },
+    {
+      "name": "aws_health",
+      "url": "https://status.aws.amazon.com",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.254991",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 1133.6338520050049,
+      "content_length": 3152,
+      "error": null,
+      "geo_info": {
+        "server": "AWSConsole-PHD",
+        "date": "Fri, 19 Dec 2025 12:22:00 GMT",
+        "content_type": "text/html;charset=UTF-8"
+      }
+    },
+    {
+      "name": "slack_api",
+      "url": "https://slack.com",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.876262",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 596.1611270904541,
+      "content_length": 218478,
+      "error": null,
+      "geo_info": {
+        "server": "Apache",
+        "date": "Fri, 19 Dec 2025 12:22:00 GMT",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "name": "azure_status",
+      "url": "https://status.azure.com",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.257023",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 1249.04465675354,
+      "content_length": 6441832,
+      "error": null,
+      "geo_info": {
+        "server": "Microsoft-IIS/10.0",
+        "date": "Fri, 19 Dec 2025 12:22:00 GMT",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "name": "shopify_api",
+      "url": "https://www.shopify.com",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.993504",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 532.0785045623779,
+      "content_length": 441946,
+      "error": null,
+      "geo_info": {
+        "server": "cloudflare",
+        "date": "Fri, 19 Dec 2025 12:22:00 GMT",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "name": "openstreetmap",
+      "url": "https://api.openstreetmap.org/api/0.6/capabilities",
+      "category": "global",
+      "timestamp": "2025-12-19T12:22:00.238329",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 460.1140022277832,
+      "content_length": 961,
+      "error": null,
+      "geo_info": {
+        "server": "Apache",
+        "date": "Fri, 19 Dec 2025 12:22:00 GMT",
+        "content_type": "application/json; charset=utf-8"
+      }
+    },
+    {
+      "name": "google_maps",
+      "url": "https://maps.googleapis.com",
+      "category": "global",
+      "timestamp": "2025-12-19T12:22:00.060349",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 716.1214351654053,
+      "content_length": 214471,
+      "error": null,
+      "geo_info": {
+        "server": "Google Frontend",
+        "date": "Fri, 19 Dec 2025 12:22:00 GMT",
+        "content_type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "name": "reddit_api",
+      "url": "https://www.reddit.com/r/all/.json?limit=1",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.261436",
+      "success": false,
+      "status_code": 403,
+      "response_time_ms": 1652.4872779846191,
+      "content_length": 189908,
+      "error": null,
+      "geo_info": null
+    },
+    {
+      "name": "amazon_api",
+      "url": "https://www.amazon.com",
+      "category": "global",
+      "timestamp": "2025-12-19T12:21:59.982850",
+      "success": true,
+      "status_code": 200,
+      "response_time_ms": 957.4365615844727,
+      "content_length": 845134,
+      "error": null,
+      "geo_info": {
+        "server": "Server",
+        "date": "Fri, 19 Dec 2025 12:22:00 GMT",
+        "content_type": "text/html;charset=UTF-8"
+      }
+    }
+  ],
+  "statistics": {
+    "total_endpoints_tested": 31,
+    "financial_endpoints": 12,
+    "global_endpoints": 19,
+    "successful_connections": 26,
+    "failed_connections": 5,
+    "success_rate": 83.87096774193549,
+    "avg_response_time_ms": 655.1656998120822,
+    "min_response_time_ms": 257.97152519226074,
+    "max_response_time_ms": 1249.04465675354,
+    "total_data_received_bytes": 13847908,
+    "test_duration_seconds": 2.8104922771453857
+  },
+  "raw_responses": {}
+}
