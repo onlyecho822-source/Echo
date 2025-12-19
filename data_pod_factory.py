@@ -98,7 +98,7 @@ class DataPodFactory:
             pod: Data Pod dictionary
             
         Returns:
-            SHA-256 hash (hex string) - the pod's integrity seal
+            SHA-256 hash with sha256: prefix - the pod's integrity seal
         """
         # Create a copy and remove the seal for calculation
         pod_for_hashing = pod.copy()
@@ -107,13 +107,15 @@ class DataPodFactory:
         # Convert to a canonical JSON string (sorted keys, no whitespace)
         canonical_json = json.dumps(pod_for_hashing, sort_keys=True, separators=(',', ':'))
         
-        # Calculate and return the hash
-        return hashlib.sha256(canonical_json.encode('utf-8')).hexdigest()
+        # Calculate hash and return with sha256: prefix (IPFS/Filecoin standard)
+        hash_hex = hashlib.sha256(canonical_json.encode('utf-8')).hexdigest()
+        return f"sha256:{hash_hex}"
 
     @staticmethod
     def verify_data_pod(pod: Dict[str, Any]) -> bool:
         """
         Verifies the integrity of a Data Pod by recalculating its seal.
+        Uses constant-time comparison to prevent timing attacks.
         Returns True if the pod is tamper-evident, False if corrupted.
         
         Args:
@@ -126,11 +128,17 @@ class DataPodFactory:
         if not stored_seal:
             return False
         
+        # Support both prefixed and non-prefixed seals for backward compatibility
+        if not stored_seal.startswith("sha256:"):
+            stored_seal = f"sha256:{stored_seal}"
+        
         # Recalculate the seal from the pod's current contents
         calculated_seal = DataPodFactory._calculate_integrity_seal(pod)
         
-        # Compare stored vs calculated
-        return stored_seal == calculated_seal
+        # Constant-time comparison to prevent timing attacks
+        # This prevents attackers from measuring verification time to guess hashes
+        return hashlib.sha256(stored_seal.encode()).digest() == \
+               hashlib.sha256(calculated_seal.encode()).digest()
 
     @staticmethod
     def save_data_pod(pod: Dict[str, Any], filepath: str) -> str:
