@@ -1,0 +1,13 @@
+{
+  "zapier_webhooks": {
+    "feedback_os": "PASTE_YOUR_FEEDBACK_OS_WEBHOOK_URL_HERE",
+    "alerts": "PASTE_YOUR_ALERTS_WEBHOOK_URL_HERE",
+    "logging": "PASTE_YOUR_LOGGING_WEBHOOK_URL_HERE"
+  },
+  "notes": "Instructions:",
+  "step_1": "Create a Zap with 'Webhooks by Zapier' as the trigger",
+  "step_2": "Choose 'Catch Hook' as the trigger event",
+  "step_3": "Copy the webhook URL Zapier provides",
+  "step_4": "Paste it into the appropriate field above",
+  "step_5": "Save this file and run: python zapier_test.py"
+}
