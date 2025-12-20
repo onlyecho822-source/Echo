@@ -1,0 +1,36 @@
+{
+  "entries": [
+    {
+      "timestamp": "2025-12-20T16:41:39.127234",
+      "type": "morning",
+      "sleep": "Great",
+      "first_input": "Water",
+      "intention": "Focus",
+      "hash": "1d3074d3b0979379f3d56f7acb3739dc86cfa7a09f10c5673db78a21475c2913",
+      "previous_hash": "GENESIS"
+    },
+    {
+      "timestamp": "2025-12-20T16:41:43.661624",
+      "type": "evening",
+      "energy": "High",
+      "mood": "Good",
+      "mirror": "When I started with water, I felt more focused",
+      "hash": "cfa829c6466739203a8b3e389ceec38087ff1a76a874fd9f07e05232f660a622",
+      "previous_hash": "1d3074d3b0979379f3d56f7acb3739dc86cfa7a09f10c5673db78a21475c2913"
+    },
+    {
+      "timestamp": "2025-12-20T16:41:48.187572",
+      "type": "morning",
+      "sleep": "Okay",
+      "first_input": "Phone",
+      "intention": "Create",
+      "hash": "63a2b0983f308d0ea27fbb6a05a98d0fccb016ae229035ef46661ce1f0ccc249",
+      "previous_hash": "cfa829c6466739203a8b3e389ceec38087ff1a76a874fd9f07e05232f660a622"
+    }
+  ],
+  "hash_chain": [
+    "1d3074d3b0979379f3d56f7acb3739dc86cfa7a09f10c5673db78a21475c2913",
+    "cfa829c6466739203a8b3e389ceec38087ff1a76a874fd9f07e05232f660a622",
+    "63a2b0983f308d0ea27fbb6a05a98d0fccb016ae229035ef46661ce1f0ccc249"
+  ]
+}
