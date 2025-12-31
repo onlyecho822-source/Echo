@@ -1,0 +1,74 @@
+name: Temporal Integrity Check
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  check-temporal-integrity:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    
+    - name: Validate all temporal artifacts
+      run: |
+        python3 << 'PYTHON'
+import json
+import sys
+from pathlib import Path
+from jsonschema import validate, ValidationError
+
+# Load schema
+with open('schemas/temporal_artifact.schema.json') as f:
+    schema = json.load(f)
+
+# Find all artifacts
+artifacts = list(Path('artifacts').glob('*.json'))
+if not artifacts:
+    print("No artifacts found")
+    sys.exit(0)
+
+errors = []
+for artifact_path in artifacts:
+    # Skip governance artifacts
+    if 'GOVERNANCE' in artifact_path.name:
+        continue
+        
+    with open(artifact_path) as f:
+        try:
+            artifact = json.load(f)
+            validate(instance=artifact, schema=schema)
+            print(f"✅ {artifact_path.name} validates")
+        except ValidationError as e:
+            errors.append(f"❌ {artifact_path.name}: {e.message}")
+            print(f"❌ {artifact_path.name} FAILED validation")
+
+if errors:
+    print("\nValidation errors:")
+    for error in errors:
+        print(error)
+    sys.exit(1)
+    
+print(f"\n✅ All {len(artifacts)} artifacts validated successfully")
+PYTHON
+    
+    - name: Check decay calculations
+      run: |
+        python3 src/temporal/decay.py
+    
+    - name: Report results
+      if: always()
+      run: |
+        echo "Temporal integrity check complete"
