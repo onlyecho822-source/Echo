@@ -19,13 +19,13 @@ pandas==2.2.3
 numpy==2.2.1
 
 # ETL - Updated (Airflow has many deps, use latest)
-apache-airflow==2.10.4
+apache-airflow==3.1.5
 apache-airflow-providers-neo4j==3.8.1
 
 # Security - Updated to latest
-python-jose[cryptography]==3.3.0  # No newer version available
+python-jose[cryptography]==3.5.0
 passlib[bcrypt]==1.7.4  # No newer version available
-python-multipart==0.0.20
+python-multipart==0.0.21
 
 # Utilities - Updated
 python-dotenv==1.0.1
