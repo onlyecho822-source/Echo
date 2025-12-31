@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TemporalArtifact",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "content_type",
+    "temporal_metadata",
+    "truth_state",
+    "artifact_quality"
+  ],
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "minLength": 8,
+      "description": "Unique identifier for this artifact"
+    },
+    "content_type": {
+      "type": "string",
+      "enum": ["claim_analysis", "external_evidence", "ai_inference"],
+      "description": "Type of content this artifact contains"
+    },
+    "temporal_metadata": {
+      "type": "object",
+      "required": ["capture_timestamp", "validity_horizon", "topic_type"],
+      "properties": {
+        "capture_timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When this artifact was created (ISO 8601)"
+        },
+        "source_timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the source information was published"
+        },
+        "validity_horizon": {
+          "type": "string",
+          "description": "How long this artifact is expected to be valid (ISO 8601 duration)"
+        },
+        "topic_type": {
+          "type": "string",
+          "enum": ["News", "Code", "Science", "Legal", "History"],
+          "description": "Domain of the content (affects decay rate)"
+        }
+      }
+    },
+    "truth_state": {
+      "type": "object",
+      "required": ["internal_fidelity"],
+      "properties": {
+        "internal_fidelity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Confidence in internal consistency (0.0 to 1.0)"
+        },
+        "external_correspondence": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Confidence it matches external reality (null if not verified)"
+        }
+      }
+    },
+    "artifact_quality": {
+      "type": "object",
+      "required": ["payload_bytes", "source_count", "quality_score"],
+      "properties": {
+        "payload_bytes": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Size of content in bytes"
+        },
+        "source_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of sources cited"
+        },
+        "quality_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Overall quality assessment (0.0 to 1.0)"
+        }
+      }
+    }
+  }
+}
