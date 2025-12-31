@@ -1,0 +1,13 @@
+{
+  "artifact_id": "test_stale_001",
+  "content_type": "ai_inference",
+  "temporal_metadata": {
+    "capture_timestamp": "2025-06-01T00:00:00Z",
+    "validity_horizon": "P30D",
+    "topic_type": "News"
+  },
+  "truth_state": {
+    "internal_fidelity": 0.9,
+    "external_correspondence": null
+  }
+}
