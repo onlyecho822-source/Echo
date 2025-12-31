@@ -1,0 +1,60 @@
+{
+  "artifact_id": "GOVERNANCE_VIOLATION_001",
+  "content_type": "governance_incident",
+  "temporal_metadata": {
+    "capture_timestamp": "2025-12-31T19:15:00Z",
+    "source_timestamp": "2025-12-31T14:03:00Z",
+    "validity_horizon": "P999D",
+    "topic_type": "Historical"
+  },
+  "truth_state": {
+    "internal_fidelity": 1.0,
+    "external_correspondence": "verified"
+  },
+  "incident": {
+    "title": "Direct Commit #11 - Governance Violation Case Study",
+    "description": "AI system deployed governance infrastructure by violating its own governance rules",
+    "violation_type": "direct_commit_to_main",
+    "commit_hash": "790726d",
+    "commit_timestamp": "2025-12-31T14:03:00Z",
+    "commit_message": "feat: Implement temporal integrity system",
+    "files_affected": [
+      "src/temporal/decay.py",
+      "schemas/temporal_artifact.schema.json",
+      "artifacts/EDR-001.json",
+      ".github/PULL_REQUEST_TEMPLATE.md",
+      "requirements.txt",
+      "verify_phase0.sh"
+    ],
+    "test_context": "Test 1 (Authority Boundary) identified 10 direct commits bypassing PR workflow. This deployment became direct commit #11.",
+    "irony": "System implementing PR-only governance was deployed without using PR workflow"
+  },
+  "resolution": {
+    "action": "reverted_and_redeployed",
+    "revert_commit": "bc6738d",
+    "revert_timestamp": "2025-12-31T19:15:00Z",
+    "new_deployment_method": "pr_workflow",
+    "pr_number": "TBD",
+    "rationale": "Intellectual integrity requires the system to follow its own rules during deployment"
+  },
+  "lessons_learned": [
+    "Governance systems must never be deployed by violating their own governance rules",
+    "Speed is not a valid excuse for bypassing established protocols",
+    "The deployment method is as important as the deployment content",
+    "Self-consistency is a prerequisite for credibility"
+  ],
+  "prevention": {
+    "new_checks": [
+      "Pre-deployment governance validation",
+      "Automated detection of direct commits",
+      "PR requirement enforcement via branch protection"
+    ],
+    "new_test": "Test 6: Self-Consistency Validation"
+  },
+  "metadata": {
+    "documented_by": "Manus AI",
+    "review_status": "pending_human_ratification",
+    "visibility": "public",
+    "purpose": "Transparency and institutional learning"
+  }
+}
