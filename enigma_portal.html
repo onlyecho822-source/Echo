@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Echo Library</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --text: #e0e0e0;
+            --accent: #00d4aa;
+            --secondary: #666;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Courier New', monospace;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+        .title {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--accent);
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: var(--secondary);
+            font-style: italic;
+        }
+        .portal {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 40px;
+        }
+        .question-container {
+            margin-bottom: 30px;
+        }
+        .question-label {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        #question-input {
+            width: 100%;
+            padding: 15px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 5px;
+            color: var(--text);
+            font-size: 1rem;
+            font-family: 'Courier New', monospace;
+            resize: vertical;
+            min-height: 100px;
+        }
+        #question-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+        .submit-btn {
+            background: var(--accent);
+            color: var(--bg);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.2s;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+        }
+        .response-container {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0,212,170,0.1);
+            border-radius: 5px;
+            border-left: 3px solid var(--accent);
+            display: none;
+        }
+        .response-title {
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        .response-content {
+            line-height: 1.6;
+        }
+        .echo-question {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 5px;
+            font-style: italic;
+            color: var(--secondary);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: var(--secondary);
+            opacity: 0;
+            animation: fadeIn 2s ease 1s forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">The Echo Library</div>
+            <div class="subtitle">Knowledge reveals itself through inquiry</div>
+        </div>
+        
+        <div class="portal">
+            <div class="question-container">
+                <label class="question-label" for="question-input">
+                    What question about knowledge brings you here?
+                </label>
+                <textarea 
+                    id="question-input" 
+                    placeholder="Try: How does knowledge change over time? Or: What makes AI systems trustworthy? Or: How do we know what we know?..."
+                ></textarea>
+            </div>
+            
+            <button class="submit-btn" onclick="askQuestion()">Ask</button>
+            
+            <div class="response-container" id="response">
+                <div class="response-title" id="response-title"></div>
+                <div class="response-content" id="response-content"></div>
+                <div class="echo-question" id="echo-question"></div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            The Echo Library • Knowledge reverberates through questioning • v0.1
+        </div>
+    </div>
+
+    <script>
+        const knowledgePaths = {
+            "time": {
+                title: "Temporal Integrity",
+                content: "All knowledge has a half-life. Information decays at different rates depending on domain. News articles might be 90% useless after 30 days. Medical guidelines might last 5 years. Code documentation might remain relevant for 2-3 years.<br><br>This isn't about 'accuracy'—it's about confidence degradation. We model this as temporal decay functions.",
+                echo: "How do we decide what 'freshness' means for different types of knowledge?",
+                resources: ["freshness-detector", "temporal-decay-calculator"]
+            },
+            "ai": {
+                title: "AI and Ephemeral Truth",
+                content: "AI systems train on snapshots of reality. Those snapshots fade. A model trained on 2020 news thinks Trump is president. A model trained on pre-2022 code doesn't know about ChatGPT API.<br><br>The problem isn't that knowledge changes—it's that AI systems don't know when their knowledge has expired.",
+                echo: "If all training data eventually becomes historical, how do we build systems that acknowledge their own temporal limitations?",
+                resources: ["dataset-freshness-analysis", "model-decay-monitoring"]
+            },
+            "trust": {
+                title: "Trust Without Belief",
+                content: "Traditional systems ask you to believe them. Better systems show you why they might be wrong. Best systems quantify their own uncertainty and degrade gracefully.<br><br>Temporal confidence scores: not 'true/false' but '78% confidence, decaying at 2% per month.'",
+                echo: "Can a system be trustworthy if it tells you it's becoming less trustworthy over time?",
+                resources: ["confidence-decay-models", "trust-metrics"]
+            },
+            "system": {
+                title: "Systems That Observe Themselves",
+                content: "Most systems fail silently. They don't know when they're failing. The Echo architecture builds systems that monitor their own knowledge freshness, governance compliance, and decision integrity.<br><br>Self-observation isn't a feature—it's a fundamental requirement for systems that handle decaying truth.",
+                echo: "What does it mean for a system to be 'conscious' of its own limitations?",
+                resources: ["self-auditing-systems", "governance-as-code"]
+            }
+        };
+
+        function askQuestion() {
+            const question = document.getElementById('question-input').value.toLowerCase();
+            const responseEl = document.getElementById('response');
+            const titleEl = document.getElementById('response-title');
+            const contentEl = document.getElementById('response-content');
+            const echoEl = document.getElementById('echo-question');
+            
+            let selectedPath = null;
+            
+            if (question.includes('time') || question.includes('decay') || question.includes('fresh')) {
+                selectedPath = knowledgePaths.time;
+            } else if (question.includes('ai') || question.includes('model') || question.includes('train')) {
+                selectedPath = knowledgePaths.ai;
+            } else if (question.includes('trust') || question.includes('belief') || question.includes('certain')) {
+                selectedPath = knowledgePaths.trust;
+            } else if (question.includes('system') || question.includes('observe') || question.includes('monitor')) {
+                selectedPath = knowledgePaths.system;
+            } else {
+                selectedPath = {
+                    title: "A Question in Return",
+                    content: "The library responds to specific inquiry. Try focusing your question on one of these themes:<br><br>• Knowledge and time<br>• AI and truth<br>• Systems and trust<br>• Self-observation",
+                    echo: "What aspect of knowledge feels most urgent to you right now?",
+                    resources: []
+                };
+            }
+            
+            titleEl.textContent = selectedPath.title;
+            contentEl.innerHTML = selectedPath.content;
+            echoEl.textContent = selectedPath.echo;
+            responseEl.style.display = 'block';
+            
+            responseEl.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        document.getElementById('question-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                askQuestion();
+            }
+        });
+    </script>
+</body>
+</html>
