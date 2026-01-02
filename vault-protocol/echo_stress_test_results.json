@@ -1,0 +1,149 @@
+{
+  "timestamp": "2026-01-02T23:02:12.027533+00:00",
+  "harmonic_mean_properties": {
+    "symmetry": true,
+    "outlier_penalty": true,
+    "boundary_behavior": true,
+    "precision": true,
+    "details": [
+      "Symmetry: 0.7330909091 == 0.7330909091 ? True",
+      "Outlier penalty: 0.900 - 0.300 = 0.600",
+      "Boundaries: all_ones=1.0, all_zeros=0.0",
+      "Precision test: 0.000399880035989"
+    ]
+  },
+  "temporal_decay": {
+    "news_decay": [
+      0.95,
+      0.47175603860183896,
+      0.2342671157445261,
+      0.05,
+      0.05,
+      0.05,
+      0.05,
+      0.05
+    ],
+    "code_decay": [
+      0.85,
+      0.8207646038189315,
+      0.792534746920056,
+      0.7316017799612992,
+      0.5419839288785073,
+      0.34558421077950924,
+      0.2,
+      0.2
+    ],
+    "science_decay": [
+      0.9,
+      0.8874877898365757,
+      0.8751495301211222,
+      0.8475880802258239,
+      0.7517431902701448,
+      0.627908693463928,
+      0.4337180910811822,
+      0.3
+    ],
+    "legal_decay": [
+      0.95,
+      0.9433732207865733,
+      0.9367926670497188,
+      0.9219232568710827,
+      0.8682346260076668,
+      0.7935067008407084,
+      0.65948681833408,
+      0.4578135405856923
+    ],
+    "history_decay": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "floor_protection": true,
+    "half_life_accuracy": true
+  },
+  "constraint_propagation": {
+    "propagation_layers": [
+      {
+        "layer": 1,
+        "constraints": {
+          "temporal": 0.95,
+          "provenance": 0.9,
+          "authority": 0.85,
+          "host": 0.88
+        },
+        "resonance": 0.8935398801935065
+      },
+      {
+        "layer": 2,
+        "constraints": {
+          "temporal": 0.95,
+          "provenance": 0.88,
+          "authority": 0.85,
+          "host": 0.88
+        },
+        "resonance": 0.8885276648952797
+      },
+      {
+        "layer": 3,
+        "constraints": {
+          "temporal": 0.95,
+          "provenance": 0.85,
+          "authority": 0.8,
+          "host": 0.88
+        },
+        "resonance": 0.8666514216022562
+      }
+    ],
+    "constraint_loss_detected": false,
+    "circular_dependency_detected": false,
+    "conflict_detected": false
+  },
+  "scram_oscillation": {
+    "oscillation_detected": true,
+    "oscillation_count": 7,
+    "resonance_trajectory": [
+      0.45,
+      0.42000000000000004,
+      0.39,
+      0.44,
+      0.41000000000000003,
+      0.38,
+      0.43,
+      0.4,
+      0.37,
+      0.42,
+      0.39,
+      0.44,
+      0.41000000000000003,
+      0.38,
+      0.43,
+      0.4,
+      0.37,
+      0.42,
+      0.39,
+      0.44
+    ]
+  },
+  "edge_cases": {
+    "division_by_zero": true,
+    "negative_time": true,
+    "extreme_values": true,
+    "floating_point_precision": true,
+    "details": [
+      "Division by zero: harmonic_mean([0.0, 0.0, 0.0, 0.0]) = 0.0",
+      "Extreme values: high=1.0, low=0.001",
+      "Floating point precision: 0.333333332500000"
+    ]
+  },
+  "summary": {
+    "total_checks": 22,
+    "passed": 11,
+    "failed": 11,
+    "pass_rate": "50.0%"
+  }
+}
