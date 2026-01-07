@@ -1,0 +1,195 @@
+{
+  "test_metadata": {
+    "start_time": "2026-01-07T15:40:08.899106+00:00",
+    "end_time": "2026-01-07T15:43:52.960415+00:00",
+    "duration_seconds": 224.06,
+    "test_mode": "LIVE",
+    "iterations_per_endpoint": 5
+  },
+  "infrastructure_results": {
+    "GitHub API": {
+      "min_ms": 61.5,
+      "max_ms": 70.21,
+      "avg_ms": 64.51,
+      "median_ms": 62.27,
+      "jitter_ms": 3.81,
+      "success_rate": 100.0,
+      "status": "OPERATIONAL"
+    },
+    "GitHub CDN": {
+      "min_ms": 88.61,
+      "max_ms": 96.75,
+      "avg_ms": 91.31,
+      "median_ms": 90.66,
+      "jitter_ms": 3.29,
+      "success_rate": 100.0,
+      "status": "OPERATIONAL"
+    },
+    "GitLab API": {
+      "min_ms": 1243.34,
+      "max_ms": 5900.2,
+      "avg_ms": 2427.66,
+      "median_ms": 1685.61,
+      "jitter_ms": 1955.04,
+      "success_rate": 100.0,
+      "status": "OPERATIONAL"
+    },
+    "Cloudflare DNS": {
+      "min_ms": 2267.89,
+      "max_ms": 8931.65,
+      "avg_ms": 4424.91,
+      "median_ms": 3592.35,
+      "jitter_ms": 2664.0,
+      "success_rate": 100.0,
+      "status": "OPERATIONAL"
+    },
+    "Google DNS": {
+      "min_ms": 1833.79,
+      "max_ms": 2173.91,
+      "avg_ms": 2054.18,
+      "median_ms": 2112.25,
+      "jitter_ms": 134.94,
+      "success_rate": 100.0,
+      "status": "OPERATIONAL"
+    },
+    "AWS Global": {
+      "min_ms": 161.01,
+      "max_ms": 300.8,
+      "avg_ms": 206.01,
+      "median_ms": 188.53,
+      "jitter_ms": 54.73,
+      "success_rate": 100.0,
+      "status": "OPERATIONAL"
+    },
+    "Azure Global": {
+      "min_ms": 2156.16,
+      "max_ms": 12784.28,
+      "avg_ms": 7491.34,
+      "median_ms": 8494.05,
+      "jitter_ms": 4360.62,
+      "success_rate": 100.0,
+      "status": "OPERATIONAL"
+    },
+    "Vercel Edge": {
+      "min_ms": 2909.38,
+      "max_ms": 4697.35,
+      "avg_ms": 3664.51,
+      "median_ms": 3525.66,
+      "jitter_ms": 794.33,
+      "success_rate": 80.0,
+      "status": "OPERATIONAL"
+    },
+    "Netlify Edge": {
+      "min_ms": 1576.89,
+      "max_ms": 4136.37,
+      "avg_ms": 2577.88,
+      "median_ms": 1792.81,
+      "jitter_ms": 1264.5,
+      "success_rate": 100.0,
+      "status": "OPERATIONAL"
+    },
+    "Fastly CDN": {
+      "min_ms": 2164.62,
+      "max_ms": 2438.41,
+      "avg_ms": 2322.65,
+      "median_ms": 2315.86,
+      "jitter_ms": 106.51,
+      "success_rate": 100.0,
+      "status": "OPERATIONAL"
+    }
+  },
+  "geographic_results": {
+    "North America (US East)": {
+      "min_ms": 93.62,
+      "max_ms": 169.47,
+      "avg_ms": 118.83,
+      "median_ms": 97.64,
+      "jitter_ms": 33.19,
+      "success_rate": 100.0,
+      "status": "OPERATIONAL"
+    },
+    "Europe (Ireland)": {
+      "min_ms": 1230.11,
+      "max_ms": 6841.11,
+      "avg_ms": 3142.47,
+      "median_ms": 1365.81,
+      "jitter_ms": 2613.53,
+      "success_rate": 100.0,
+      "status": "OPERATIONAL"
+    },
+    "Asia Pacific (Singapore)": {
+      "min_ms": 1531.45,
+      "max_ms": 2670.86,
+      "avg_ms": 2047.97,
+      "median_ms": 1994.78,
+      "jitter_ms": 565.48,
+      "success_rate": 80.0,
+      "status": "OPERATIONAL"
+    },
+    "South America (Brazil)": {
+      "min_ms": 62.94,
+      "max_ms": 5111.9,
+      "avg_ms": 1073.93,
+      "median_ms": 65.11,
+      "jitter_ms": 2257.29,
+      "success_rate": 100.0,
+      "status": "OPERATIONAL"
+    },
+    "Africa (South Africa)": {
+      "min_ms": 111.49,
+      "max_ms": 152.06,
+      "avg_ms": 130.83,
+      "median_ms": 133.77,
+      "jitter_ms": 16.31,
+      "success_rate": 100.0,
+      "status": "OPERATIONAL"
+    },
+    "Oceania (Australia)": {
+      "min_ms": null,
+      "max_ms": null,
+      "avg_ms": null,
+      "median_ms": null,
+      "jitter_ms": null,
+      "success_rate": 0.0,
+      "status": "FAILED"
+    }
+  },
+  "infrastructure_analysis": {
+    "global_avg_ms": 2532.5,
+    "global_median_ms": 2375.15,
+    "global_min_ms": 64.51,
+    "global_max_ms": 7491.34,
+    "fastest_endpoint": "GitHub API",
+    "fastest_latency_ms": 64.51,
+    "slowest_endpoint": "Azure Global",
+    "slowest_latency_ms": 7491.34,
+    "most_stable_endpoint": "GitHub CDN",
+    "most_stable_jitter_ms": 3.29,
+    "performance_gap": 116.13,
+    "reliability_rate": 90.0,
+    "insights": [
+      "\u26a1 GitHub API is exceptionally fast (64.51ms) - 2x faster than average",
+      "\ud83c\udfaf GitHub CDN is highly stable (jitter: 3.29ms)",
+      "\ud83c\udf0d Git platforms show optimal global CDN distribution",
+      "\u26a0\ufe0f 116.1x performance gap between fastest and slowest endpoints"
+    ]
+  },
+  "geographic_analysis": {
+    "global_avg_ms": 1302.81,
+    "global_median_ms": 1073.93,
+    "global_min_ms": 118.83,
+    "global_max_ms": 3142.47,
+    "fastest_endpoint": "North America (US East)",
+    "fastest_latency_ms": 118.83,
+    "slowest_endpoint": "Europe (Ireland)",
+    "slowest_latency_ms": 3142.47,
+    "most_stable_endpoint": "Africa (South Africa)",
+    "most_stable_jitter_ms": 16.31,
+    "performance_gap": 26.45,
+    "reliability_rate": 80.0,
+    "insights": [
+      "\u26a1 North America (US East) is exceptionally fast (118.83ms) - 2x faster than average",
+      "\u26a0\ufe0f 26.4x performance gap between fastest and slowest endpoints"
+    ]
+  }
+}
