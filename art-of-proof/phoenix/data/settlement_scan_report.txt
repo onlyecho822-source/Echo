@@ -1,0 +1,159 @@
+CLASS ACTION SETTLEMENT SCAN REPORT
+====================================
+Scan Timestamp: 04:06 Jan 07 2026
+Sources: classaction.org, topclassactions.com
+
+SUMMARY
+-------
+• Total Settlements Found: 135
+• Settlements with Deadlines in Next 90 Days: 135
+• High-Value Settlements (>$1,000): 61
+
+⚠️ ALERT: 61 SETTLEMENTS OFFER >$1,000 PER CLAIMANT
+
+TOP HIGH-VALUE SETTLEMENTS
+--------------------------
+
+1. Oklahoma Spine Hospital - Data Breach
+   Payout: $100 - $10,100
+   Deadline: 1/7/26 (URGENT - Less than 7 days)
+   Proof Required: No
+   Source: classaction.org
+
+2. Lyon Real Estate - Data Breach
+   Payout: $250 - $10,000
+   Deadline: 2/5/26
+   Proof Required: Unknown
+   Source: classaction.org
+
+3. 23andMe - Data Breach
+   Payout: $100 - $10,000
+   Deadline: 2/17/26
+   Proof Required: No
+   Source: classaction.org
+
+4. Hafetz - Data Breach
+   Payout: $50 - $10,000
+   Deadline: 1/22/26
+   Proof Required: Unknown
+   Source: classaction.org
+
+5. City of Hope National Medical Center - Data Breach
+   Payout: $100 - $5,250
+   Deadline: 1/13/26
+   Proof Required: No
+   Source: classaction.org
+
+6. Therapeutic Health Services - Data Breach
+   Payout: $100 - $5,100
+   Deadline: 1/13/26
+   Proof Required: No
+   Source: classaction.org
+
+7. Progressive Leasing - Data Breach
+   Payout: Up to $400 - $5,100
+   Deadline: 1/22/26
+   Proof Required: Unknown
+   Source: classaction.org
+
+8. LifeBridge Health - Data Breach
+   Payout: $100 - $5,100
+   Deadline: 2/28/26
+   Proof Required: Unknown
+   Source: classaction.org
+
+9. Advance America Cash Advance Centers - Data Breach
+   Payout: $50 - $5,100
+   Deadline: 2/2/26
+   Proof Required: Unknown
+   Source: classaction.org
+
+10. Cencora/The Lash Group - Data Breach
+    Payout: Up to $5,000
+    Deadline: 1/19/26
+    Proof Required: No
+    Source: classaction.org
+
+11. Alabama Cardiovascular Group - Data Breach
+    Payout: Up to $5,000 + 2 years credit monitoring
+    Deadline: 3/6/26
+    Proof Required: Yes for documented losses
+    Source: topclassactions.com
+
+12. Dakota Eye Institute - Data Breach
+    Payout: Up to $5,000 for extraordinary losses
+    Deadline: 1/12/26
+    Proof Required: Yes for documented losses
+    Source: classaction.org & topclassactions.com
+
+13. City of Hope - Data Breach
+    Payout: Up to $5,000 or $100 alternative + $250 for CA residents
+    Deadline: 1/13/26
+    Proof Required: Yes for documented losses
+    Source: topclassactions.com
+
+14. RIBridges - Data Breach
+    Payout: Up to $5,000 or $100 alternate
+    Deadline: 1/14/26
+    Proof Required: Yes for documented losses
+    Source: classaction.org & topclassactions.com
+
+15. Kia Hyundai Settlement
+    Payout: Up to $4,500
+    Deadline: Beyond 90 days (3/31/27)
+    Proof Required: Unknown
+    Source: topclassactions.com
+
+16. Restek Corporation - Data Breach
+    Payout: $50 - $3,500
+    Deadline: 1/9/26
+    Proof Required: No
+    Source: classaction.org
+
+17. Multnomah County Tax Foreclosure
+    Payout: $3.5M total - TBD per claimant
+    Deadline: 1/12/26
+    Proof Required: Yes
+    Source: topclassactions.com
+
+18. Nations Direct Mortgage - Data Breach
+    Payout: Up to $2,750 (+ $75 for CA residents)
+    Deadline: 1/7/26 (URGENT - Less than 7 days)
+    Proof Required: No/Yes for documented losses
+    Source: classaction.org & topclassactions.com
+
+URGENT DEADLINES (Less than 7 days)
+------------------------------------
+• Oklahoma Spine Hospital: $100-$10,100 by 1/7/26
+• Nations Direct Mortgage: Up to $2,750 by 1/7/26
+• Fathom Realty: $48 by 1/7/26
+
+DATA FILE LOCATION
+------------------
+Full settlement data saved to:
+/home/ubuntu/art-of-proof/phoenix/data/class_actions.json
+
+FILE DETAILS
+------------
+• Format: JSON
+• Size: 91 KB
+• Contains: Settlement name, payout amount, deadline, proof requirements, eligibility, claim URL, source
+• Timestamp: 2026-01-07 00:00:00
+
+CLAIM INSTRUCTIONS
+------------------
+For classaction.org settlements:
+Visit https://www.classaction.org/settlements and search for settlement name
+
+For topclassactions.com settlements:
+Visit https://topclassactions.com and search for settlement name
+
+NOTES
+-----
+• Many settlements require proof of purchase or documentation for higher payouts
+• Some settlements offer alternative cash payments without proof
+• Data breach settlements typically require notice of breach to claim
+• Deadlines are firm - claims must be submitted by deadline date
+• Some settlements are state-specific (e.g., California residents only)
+
+END OF REPORT
