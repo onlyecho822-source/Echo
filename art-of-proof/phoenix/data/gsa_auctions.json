@@ -1,0 +1,30 @@
+{
+  "scan_date": "2026-01-07T05:05:47.415780",
+  "total_items": 0,
+  "criteria": {
+    "min_estimated_value": 1000,
+    "max_bid_percentage": 50,
+    "categories": [
+      "electronics",
+      "vehicles",
+      "equipment"
+    ]
+  },
+  "notes": [
+    "GSAAuctions.gov is a React-based SPA that loads content dynamically",
+    "The scanner successfully navigated the site but found no items matching criteria",
+    "This could indicate: (1) no current opportunities, (2) site structure changes, or (3) additional navigation required",
+    "Manual verification recommended at https://gsaauctions.gov",
+    "See README_GSA_SCANNER.md for detailed documentation and troubleshooting"
+  ],
+  "items": [],
+  "sample_item_structure": {
+    "description": "Sample item description (max 500 chars)",
+    "current_bid": 500.00,
+    "estimated_value": 2000.00,
+    "auction_end_time": "2026-01-15 14:00:00 EST",
+    "location": "City, State ZIP",
+    "item_url": "https://gsaauctions.gov/gsaauctions/aucdsclnk?sl=...",
+    "category": "electronics|vehicles|equipment"
+  }
+}
