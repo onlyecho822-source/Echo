@@ -1,0 +1,1773 @@
+{
+  "scan_timestamp": "2026-01-07 00:00:00",
+  "total_settlements": 135,
+  "high_value_count": 61,
+  "settlements": [
+    {
+      "source": "classaction.org",
+      "name": "Naturalawn of America - Unwanted Texts Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "1/6/26",
+      "proof_required": "No",
+      "eligibility": "If you received unwanted texts from Naturalawn of America after requesting not to receive text messages, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Carolina Lease Management (North Carolina) Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "1/7/26",
+      "proof_required": "N/A",
+      "eligibility": "This settlement covers those who entered a rent-to-own agreement for a storage building with Carolina Lease Management Group and from whom the company tried to collect between April 8, 2017 and March 9, 2018.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Fathom Realty - Unwanted Texts Class Action Settlement",
+      "payout": "$48",
+      "deadline": "1/7/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you received texts from or on behalf of Fathom\u2019s former real estate agent, Marcus Edwards, between August 15, 2021 and December 15, 2024 when your number was on the National Do Not Call Registry.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Nations Direct Mortgage - Data Breach Class Action Settlement",
+      "payout": "Up to $2,750",
+      "deadline": "1/7/26",
+      "proof_required": "No",
+      "eligibility": "If your private information was compromised in the December 2023 Nations Direct Mortgage data breach, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Oklahoma Spine Hospital - Data Breach Class Action Settlement",
+      "payout": "$100 - $10,100",
+      "deadline": "1/7/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you received a notice stating that your personal information was exposed in a July 2024 Oklahoma Spine Hospital data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Fathom Realty text message class action lawsuit",
+      "payout": "Estimated $48 per call",
+      "deadline": "1/7/26",
+      "proof_required": "No",
+      "eligibility": "Received texts from Fathom Realty's former agent Marcus Edwards between August 15, 2021 and December 15, 2024 when number was on Do Not Call Registry",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Nations Direct Mortgage (NDM) data breach class action settlement",
+      "payout": "Up to $2,750 in documented losses, plus $75 for California class members",
+      "deadline": "1/7/26",
+      "proof_required": "Yes for documented losses",
+      "eligibility": "Private information compromised in December 2023 Nations Direct Mortgage data breach",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Redeemer Health - Data Privacy Class Action Settlement",
+      "payout": "$25",
+      "deadline": "1/9/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you were a patient of Redeemer Health between January 1, 2019 and March 21, 2023 and used Redeemer's website during that time.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Restek Corporation - Data Breach Class Action Settlement",
+      "payout": "$50 - $3,500",
+      "deadline": "1/9/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was exposed in the June 2023 Restek Corporation data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Wells Fargo COVID Forbearance Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "1/10/26",
+      "proof_required": "Yes",
+      "eligibility": "If you were provided a mortgage forbearance by Wells Fargo during the COVID-19 pandemic without informed consent, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Behavioral Health Resources - Data Breach Class Action Settlement",
+      "payout": "$100 to $5,000",
+      "deadline": "1/12/26",
+      "proof_required": "No",
+      "eligibility": "If you received notice of the November 2024 Behavioral Health Resources data breach, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Dakota Eye Institute - Data Breach Class Action Settlement",
+      "payout": "$45 - $5,000",
+      "deadline": "1/12/26",
+      "proof_required": "No",
+      "eligibility": "If your personal information was exposed in a Dakota Eye Institute data breach discovered in October 2023, this settlement may have you covered.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Instinct Pet Foods - Data Breach Class Action Settlement",
+      "payout": "$60 - $4,500",
+      "deadline": "1/12/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was exposed in a data breach Instinct Pet Foods discovered in October 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Liberty Hospital - Data Breach Class Action Settlement",
+      "payout": "$150 - $500",
+      "deadline": "1/12/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was affected by the December 2023 Liberty Hospital data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Multnomah County - Property Foreclosures Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "1/12/26",
+      "proof_required": "Yes",
+      "eligibility": "If you held or are the heir and successor to a person or entity who held an ownership interest in property that was foreclosed on and sold in Multnomah County between October 12, 2017 and June 25, 2025, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Planned Parenthood of Montana \u2013 Data Breach Class Action Settlement",
+      "payout": "$20 to $5,000",
+      "deadline": "1/12/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers those who received notice that their private information may have been compromised in a Planned Parenthood of Montana data breach, which took place in August 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Multnomah County tax foreclosure class action settlement",
+      "payout": "$3.5M total - TBD per claimant",
+      "deadline": "1/12/26",
+      "proof_required": "Yes",
+      "eligibility": "Held ownership interest in property foreclosed and sold in Multnomah County between October 12, 2017 and June 25, 2025",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Dakota Eye Institute data breach class action settlement",
+      "payout": "Up to $1,000 for out-of-pocket losses and up to $5,000 for extraordinary losses or $45 cash payment",
+      "deadline": "1/12/26",
+      "proof_required": "Yes for documented losses",
+      "eligibility": "Personal information exposed in Dakota Eye Institute data breach discovered in October 2023",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Progressive stacked UM/UIM coverage class action settlement",
+      "payout": "$1.76M total - Varies per claimant",
+      "deadline": "1/12/26",
+      "proof_required": "Unknown",
+      "eligibility": "Progressive policyholders with stacked UM/UIM coverage issues",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "City of Hope National Medical Center - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,250",
+      "deadline": "1/13/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Mile Hi Foods - Data Breach Class Action Settlement",
+      "payout": "Up to $50 - $3,000",
+      "deadline": "1/13/26",
+      "proof_required": "No",
+      "eligibility": "If you got a notice from Mile Hi Foods, Co. about a September 2024 data breach, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Orthopedics Rhode Island - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,000",
+      "deadline": "1/13/26",
+      "proof_required": "No",
+      "eligibility": "If you were sent a notice stating that your personal information was potentially compromised in a September 2024 Orthopedics Rhode Island data breach, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "San Diego Unified School District \u2013 Data Breach Class Action Settlement",
+      "payout": "$40 - $2,500",
+      "deadline": "1/13/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was potentially impacted by an October 2022 data breach affecting San Diego Unified School District.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Therapeutic Health Services - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,100",
+      "deadline": "1/13/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was compromised in a February 2024 data breach involving Therapeutic Health Services.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "City of Hope data breach settlement",
+      "payout": "Up to $5,000 in documented losses or $100 alternative cash payment; $250 statutory payment for California residents",
+      "deadline": "1/13/26",
+      "proof_required": "Yes for documented losses",
+      "eligibility": "Received notice of data breach affecting City of Hope National Medical Center discovered in October 2023",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "RIBridges - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,000",
+      "deadline": "1/14/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was exposed in a data breach involving the Rhode Island RIBridges system.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Toyota Hands-Free Echo Class Action Settlement",
+      "payout": "Injunctive Relief",
+      "deadline": "1/14/26",
+      "proof_required": "N/A",
+      "eligibility": "This settlement covers those who owned, bought or leased certain 2014-2019 Toyota vehicles in certain states.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "RIBridges data breach class action settlement",
+      "payout": "Up to $5,000 in documented losses or $100 alternate cash payment",
+      "deadline": "1/14/26",
+      "proof_required": "Yes for documented losses",
+      "eligibility": "Personal information exposed in Rhode Island RIBridges system data breach",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Toyota Bluetooth Echo class action settlement",
+      "payout": "Injunctive Relief - Outreach program",
+      "deadline": "1/14/26",
+      "proof_required": "N/A",
+      "eligibility": "Owned, bought or leased certain 2014-2019 Toyota vehicles in certain states",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "AirportParking.com - Booking Fees (California) Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "1/15/26",
+      "proof_required": "No",
+      "eligibility": "If you made a booking on AirportParkingReservations.com or AirportParking.com between July 1, 2024 and March 10, 2025 as a California resident and paid a mandatory service charge, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "AirportParking.com service charge class action settlement",
+      "payout": "Varies",
+      "deadline": "1/15/26",
+      "proof_required": "No",
+      "eligibility": "Made booking on AirportParkingReservations.com or AirportParking.com between July 1, 2024 and March 10, 2025 as California resident and paid mandatory service charge",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Cencora, The Lash Group - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000",
+      "deadline": "1/19/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was exposed in a data breach disclosed in February 2024 that involved Cencora or The Lash Group.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Robert Morris University - COVID Tuition Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "1/19/26",
+      "proof_required": "N/A",
+      "eligibility": "If you were enrolled at Robert Morris University during the Spring 2020 semester and paid tuition or fees, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Snowflake - Job Postings (Washington) Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "1/19/26",
+      "proof_required": "N/A",
+      "eligibility": "You may be included in this settlement if you applied for a job opening at Snowflake in Washington between January 1, 2023 and October 17, 2025.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Trinity Health Corporation - Data Breach Class Action Settlement",
+      "payout": "$115 - $1,000+",
+      "deadline": "1/19/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was exposed in a January 2021 data breach affecting Trinity Health Corporation.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Cencora data breach class action settlement",
+      "payout": "$40M total - Up to $5,000 in documented losses or pro rata cash payment",
+      "deadline": "1/19/26",
+      "proof_required": "Yes for documented losses",
+      "eligibility": "Personal information exposed in data breach disclosed in February 2024 involving Cencora or The Lash Group",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Anthem - Denied Claims Class Action Settlement",
+      "payout": "$100+",
+      "deadline": "1/20/26",
+      "proof_required": "Yes",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Benefit Profiles - Data Breach Class Action Settlement",
+      "payout": "$50 - $2,500",
+      "deadline": "1/20/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Contra Costa - Data Breach Class Action Settlement",
+      "payout": "Up to $5,500",
+      "deadline": "1/20/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was exposed in a September 2022 Contra Costa data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "DirectToU - Data Privacy Class Action Settlement",
+      "payout": "$60 - $145 (est.)",
+      "deadline": "1/20/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you purchased a video or video game or signed up to receive notices about videos or video games from DirectToU.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Group Health Cooperative of South Central Wisconsin - Data Breach Class Action Settlement",
+      "payout": "$100 to $5,000",
+      "deadline": "1/20/26",
+      "proof_required": "No",
+      "eligibility": "If you received a notice stating that you may have been affected by the Group Health Cooperative of South Central Wisconsin data incident, which took place on or about January 24, 2024, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Hypertension-Nephrology Associates - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000",
+      "deadline": "1/20/26",
+      "proof_required": "No",
+      "eligibility": "If you were sent a notice that your personal information was potentially compromised in the Hypertension-Nephrology Associates data breach that occurred in January 2024, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Limited Run Games - Data Privacy Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "1/20/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you watched a video or bought a video game containing a cutscene from Limited Run Games between January 1, 2016 and June 20, 2025.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Alliance Entertainment and DirectToU class action settlement",
+      "payout": "Estimated $60 to $145",
+      "deadline": "1/20/26",
+      "proof_required": "Unknown",
+      "eligibility": "Purchased from Alliance Entertainment or DirectToU",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Anthem mental health treatment class action settlement",
+      "payout": "$12.88M total - Reimbursement of out-of-pocket expenses or $100 nominal payment",
+      "deadline": "1/20/26",
+      "proof_required": "Yes for reimbursement",
+      "eligibility": "Anthem or Anthem UM Services denied claim for health insurance coverage for residential treatment of mental health condition or substance use disorder between April 29, 2017 and present",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Google, YouTube - Data Privacy Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "1/21/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Cerebral - Data Breach (California) Class Action Settlement",
+      "payout": "$300 Credit, Cash",
+      "deadline": "1/22/26",
+      "proof_required": "No",
+      "eligibility": "If you had a Cerebral account and a California address and received a data breach notification letter on or about March 6, 2023, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Hafetz - Data Breach Class Action Settlement",
+      "payout": "$50 - $10,000",
+      "deadline": "1/22/26",
+      "proof_required": "No",
+      "eligibility": "If you received a notice letter about the Hafetz data breach discovered in October 2023, you may be able to claim a piece of this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Progressive Leasing - Data Breach Class Action Settlement",
+      "payout": "Up to $400 - $5,100",
+      "deadline": "1/22/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was potentially involved in a data breach that took place at Progressive Leasing in September 2023.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Oklahoma Earthquakes Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "1/25/26",
+      "proof_required": "Yes",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Asheville Arthritis - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,000",
+      "deadline": "1/26/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers those who were affected by the May 2024 Asheville Arthritis data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Falcon Healthcare - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,000",
+      "deadline": "1/26/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Elyria - Data Breach Class Action Settlement",
+      "payout": "$60 - $5,480",
+      "deadline": "1/27/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers those who were affected by the data breach discovered by Elyria Foundry Holdings in June 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Wescom Central Credit Union - Data Breach Class Action Settlement",
+      "payout": "$20 - $2,060",
+      "deadline": "1/27/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you were sent a data breach letter from Wescom concerning the data incident discovered in May 2023.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "First Choice Dental - Data Breach Class Action Settlement",
+      "payout": "$50 - $6,000",
+      "deadline": "1/28/26",
+      "proof_required": "No",
+      "eligibility": "If your private information was affected by an October 2023 First Choice Dental data breach, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "RAYUS Radiology - Data Privacy Class Action Settlement",
+      "payout": "$25",
+      "deadline": "1/29/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Papaya Gaming - Bots Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "1/30/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you had a Papaya Gaming account and made a deposit in one or more Papaya games between January 1, 2019 and September 5, 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Papaya Gaming - Bots Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "1/30/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you had a Papaya Gaming account and made a deposit in one or more Papaya games between January 1, 2019 and September 5, 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Peerstar - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000",
+      "deadline": "1/30/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you were notified that your information was exposed in the February 2023 Peerstar breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Silvergate Bank FTX Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "1/30/26",
+      "proof_required": "Yes",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Precision Imaging Centers - Data Breach Class Action Settlement",
+      "payout": "Up to $500 - $5,500",
+      "deadline": "1/31/26",
+      "proof_required": "No",
+      "eligibility": "If you received a data breach notice from Precision Imaging Centers on or around June 22, 2023, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Advance America Cash Advance Centers - Data Breach Class Action Settlement",
+      "payout": "$50 - $5,100",
+      "deadline": "2/2/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was exposed in a February 2023 Advance America Cash Advance Centers data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Aura Frames - Biometric Privacy (Illinois) Class Action Settlement",
+      "payout": "$13.28",
+      "deadline": "2/2/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if, between July 16, 2019 and November 4, 2025, you signed up for an Aura account in Illinois and had facial matching data from your photographs collected.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Rocky Mountain Gastroenterology Associates - Data Breach Class Action Settlement",
+      "payout": "Up to $1,000",
+      "deadline": "2/2/26",
+      "proof_required": "Yes",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Arden Claims Service - Data Breach Class Action Settlement",
+      "payout": "$125 - $5,000",
+      "deadline": "2/3/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was involved in an October 2023 Arden Claims Service data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Regence BlueShield - Hearing Aids (Washington) Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/3/26",
+      "proof_required": "Yes",
+      "eligibility": "You may be included in this settlement if you had a Washington health insurance plan with Regence BlueShield and incurred out-of-pocket expenses for hearing aids between October 30, 2014 and December 31, 2025.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "ServiceNow - 401(k) Plans Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/3/26",
+      "proof_required": "N/A",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "OptumRX - Unwanted Calls Class Action Settlement",
+      "payout": "$72 - $135",
+      "deadline": "2/4/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers those who received one or more prerecorded clinical adherence calls from OptumRx and were not a customer or account holder between April 20, 2020 and October 22, 2025.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Mid America Pet Food - Salmonella Contamination Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/5/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you bought certain pet foods produced by Mid America Pet Food between October 31, 2022 and February 29, 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "DecoPac - Data Breach Class Action Settlement",
+      "payout": "$95 - $4,095",
+      "deadline": "2/5/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was potentially compromised in a DecoPac data breach announced around December 6, 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Kitsap Mental Health Services - Data Breach Class Action Settlement",
+      "payout": "$25 - $3,000",
+      "deadline": "2/5/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was compromised in the October 2024 Kitsap Mental Health Services data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Lyon Real Estate - Data Breach Class Action Settlement",
+      "payout": "$250 - $10,000",
+      "deadline": "2/5/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Mid America Pet Food - Salmonella Contamination Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/5/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you bought certain pet foods produced by Mid America Pet Food between October 31, 2022 and February 29, 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Watson Clinic - Data Breach Class Action Settlement",
+      "payout": "$50 - $82,000",
+      "deadline": "2/5/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you received a letter notifying you that your personal information may have been compromised in a data breach Watson Clinic discovered in February 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Delta Air Lines - Flight DL89 Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/6/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you owned, resided in, or rented a property located within the area of Delta Air Lines Flight DL89.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Themis - Data Privacy Class Action Settlement",
+      "payout": "$263 - $526 (est.)",
+      "deadline": "2/6/26",
+      "proof_required": "Yes",
+      "eligibility": "You may be included in this settlement if you had a Facebook account, a digital subscription to Themis Bar Review, and viewed videos on the Themis website between March 12, 2022 and August 22, 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "West Bend Mutual Insurance - Structural Damage Claims Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/6/26",
+      "proof_required": "Yes",
+      "eligibility": "This settlement covers those who had a personal or commercial lines property insurance policy issued by West Bend and made a structural loss claim with a date of loss between March 29, 2012 and June 30, 2022.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Acceptance Now - Processing Fees (California) Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/9/26",
+      "proof_required": "N/A",
+      "eligibility": "You may be included in this settlement if you entered into a rental purchase agreement with RAC Acceptance East in California between December 11, 2016 and June 30, 2021 and paid a processing fee.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Mystic Valley Elder Services - Data Breach Class Action Settlement",
+      "payout": "$75 - $5,000",
+      "deadline": "2/9/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Tallahassee Memorial HealthCare - Data Privacy Class Action Settlement",
+      "payout": "$17, Credit Monitoring",
+      "deadline": "2/9/26",
+      "proof_required": "No",
+      "eligibility": "If you are a current or former patient of Tallahassee Memorial HealthCare and had an active patient portal account between December 29, 2019 and December 31, 2024, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Ashley HomeStore Prices (California) Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/10/26",
+      "proof_required": "No",
+      "eligibility": "If you purchased items from an Ashley HomeStore owned and operated by Stoneledge Furniture, LLC in California between March 9, 2017 and March 27, 2022, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Erickson Companies - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000+",
+      "deadline": "2/10/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was potentially compromised in a data breach that took place at Erickson Companies on or around November 18, 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Jack Henry & Associates - 401(k) Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/10/26",
+      "proof_required": "No",
+      "eligibility": "If you participated in the Jack Henry & Associates 401(k) retirement savings plan between October 9, 2017 and September 11, 2025, you may be able to claim a piece of this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "NexGen Air Conditioning and Heating - Unwanted Calls Class Action Settlement",
+      "payout": "$21",
+      "deadline": "2/10/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you received unwanted calls from NexGen Air Conditioning and Heating within the past four years.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Hoosick Falls - Municipal Water System Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/11/26",
+      "proof_required": "No",
+      "eligibility": "If you drank water supplied by the Village of Hoosick Falls Municipal Water System or from a private well in the Village of Hoosick Falls or the Town of Hoosick for more than six months between 1996-2016, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "New York Blood Center - Data Breach Class Action Settlement",
+      "payout": "$20 - $2,500",
+      "deadline": "2/11/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was compromised in a January 2025 New York Blood Center or Memorial Blood Centers data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Peterson\u2019s Oil Service Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/11/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you received heating fuel from Peterson\u2019s Oil Service, Inc. (doing business as Peterson Oil, Cleghorn Oil, or Cape Discount Fuel) between January 1, 2012 and November 12, 2025.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Southway Carriers - Lease-to-Purchase Agreements Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/11/26",
+      "proof_required": "N/A",
+      "eligibility": "If you entered a lease agreement or lease-to-purchase agreement with Southway Carriers between February 6, 2013 and the present, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "DuPont PFAS contamination class action settlement",
+      "payout": "$27M total - Varies per claimant",
+      "deadline": "2/11/26",
+      "proof_required": "Unknown",
+      "eligibility": "Affected by DuPont PFAS contamination",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Educative - Automatic Billing (California) Class Action Settlement",
+      "payout": "$11.93, $23.86 (est.)",
+      "deadline": "2/13/26",
+      "proof_required": "N/A",
+      "eligibility": "You may be included in this settlement if you were a California resident who enrolled in and was automatically billed for an Educative subscription between November 16, 2019 and November 14, 2023.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Joybird - Sale Prices Class Action Settlement",
+      "payout": "$115",
+      "deadline": "2/13/26",
+      "proof_required": "No",
+      "eligibility": "If you purchased products at a sale price from Joybird.com or in a physical Joybird store while residing in California, Oregon, or Washington between December 18, 2019 and October 31, 2025, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Target - Distribution Centers (New Jersey) Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/13/26",
+      "proof_required": "N/A",
+      "eligibility": "If you were employed as an hourly, non-exempt worker at any of Target\u2019s New Jersey distribution centers since August 6, 2019, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Joybird, La-Z-Boy deceptive discounts class action settlement",
+      "payout": "$115 cash or store credit",
+      "deadline": "2/13/26",
+      "proof_required": "Unknown",
+      "eligibility": "Purchased from Joybird or La-Z-Boy with allegedly deceptive discounts",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Regional Obstetrical Consultants - Data Breach Class Action Settlement",
+      "payout": "$50 - $7,500",
+      "deadline": "2/15/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was exposed in a May 6, 2024 data breach affecting Regional Obstetrical Consultants.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Knight Barry Title - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000+",
+      "deadline": "2/17/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if Knight Barry Title sent you notice around February 2024 stating that your personal information was exposed in a data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Lifeline Screening of America - Data Privacy Class Action Settlement",
+      "payout": "$20, $50",
+      "deadline": "2/17/26",
+      "proof_required": "No",
+      "eligibility": "If you set health screenings or purchased test kits through Life Line online between June 1, 2018 and the present, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Summit National Bank - Data Breach Class Action Settlement",
+      "payout": "$175 - $5,175",
+      "deadline": "2/17/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was exposed in a May 2024 data breach affecting Summit National Bank.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "First Commonwealth Federal Credit Union - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,000",
+      "deadline": "2/18/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was exposed in a June 2024 First Commonwealth Federal Credit Union data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Google Play Store \u2013 Antitrust Class Action Settlement",
+      "payout": "$2+",
+      "deadline": "2/19/26",
+      "proof_required": "No",
+      "eligibility": "If you made payments through the Google Play Store or Google Play Billing between August 16, 2016 and September 30, 2023, you may be covered by this attorney general settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Simpson Strong-Tie - Data Breach Class Action Settlement",
+      "payout": "$20 - $5,000",
+      "deadline": "2/19/26",
+      "proof_required": "No",
+      "eligibility": "If you received a notice on behalf of Simpson Strong-Tie stating that your personal information may have been affected by a data breach discovered in October 2023, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "The Lampo Group - Unwanted Texts Class Action Settlement",
+      "payout": "Up to $45",
+      "deadline": "2/19/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you received at least one text message from Lampo between November 22, 2020 and October 23, 2025.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Word & Brown Insurance Administrators - Data Breach Class Action Settlement",
+      "payout": "$45 - $1,500",
+      "deadline": "2/19/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was involved in an October 2024 Word & Brown Insurance Administrators data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "University of Southern California - COVID Tuition Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/20/26",
+      "proof_required": "N/A",
+      "eligibility": "If you were a student who paid tuition, fees, or other costs to the University of Southern California for the Spring 2020 academic term, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "ZOA Energy - Preservatives Class Action Settlement",
+      "payout": "$1 - $150",
+      "deadline": "2/20/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you bought any ZOA Energy drink with the statement \"0 Preservatives\" printed on the label between March 1, 2021 and November 21, 2025.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Carolina Arthritis Associates - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,000",
+      "deadline": "2/23/26",
+      "proof_required": "No",
+      "eligibility": "If your private information was compromised in the September 2024 Carolina Arthritis Associates data breach, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Lemonaid Health - Data Privacy Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/23/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "The Collier Companies - Fees Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/24/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers certain former residential tenants who received a notice demanding payment of accelerated late fees or rent to Collier Companies, Inc. and Paradigm Properties Management Team following the notice.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Progressive - Underinsured Motorist Coverage (New Mexico) Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "2/26/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you purchased stacked uninsured and underinsured motorist coverage on New Mexico vehicle policies between January 1, 2009 and April 30, 2025.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Idaho National Laboratory - Data Breach Class Action Settlement",
+      "payout": "$75 - $6,075",
+      "deadline": "2/28/26",
+      "proof_required": "No",
+      "eligibility": "If your private information was compromised in a December 2023 Idaho National Laboratory data breach, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "LifeBridge Health - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,100",
+      "deadline": "2/28/26",
+      "proof_required": "No",
+      "eligibility": "If your private information was potentially compromised in a LifeBridge Health data breach that took place around November 12, 2024, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Axip Energy Services - Data Breach Class Action Settlement",
+      "payout": "$63 - $3,000",
+      "deadline": "3/2/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers those whose information was potentially compromised in a Axip Energy Services data breach that took place between March and May 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Consulting Radiologists - Data Breach Class Action Settlement",
+      "payout": "$50 - $5,125",
+      "deadline": "3/2/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers those who were affected by the February 2024 Consulting Radiologists data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Continuum Health - Data Breach Class Action Settlement",
+      "payout": "$75 - $5,000",
+      "deadline": "3/2/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you were affected by an October 2023 Continuum Health data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Visionpoint Eye Center - Data Breach Class Action Settlement",
+      "payout": "$45 - $2,500",
+      "deadline": "3/3/26",
+      "proof_required": "No",
+      "eligibility": "If you were impacted by the October 3, 2024 Visionpoint Eye Center data breach, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "AACOM - Data Breach Class Action Settlement",
+      "payout": "$50 - $3,500",
+      "deadline": "3/4/26",
+      "proof_required": "No",
+      "eligibility": "If your personal information was among the data exposed in the 2024 AACOM data breach, you may be able to claim a piece of this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Grubhub - Restaurant Listings Class Action Settlement",
+      "payout": "$50+",
+      "deadline": "3/4/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your business was listed on one of Grubhub's food ordering and delivery platforms and your business did not have a contract when listed.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Wells Fargo - Free Trial Billing Class Action Settlement",
+      "payout": "Up to $20+",
+      "deadline": "3/4/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you were enrolled in recurring billing by any of the Tarr Entities, Triangle Entities, or Apex Entities (listed on the settlement site) from 2009 to the present.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Emergency Medical Services Authority - Data Breach Class Action Settlement",
+      "payout": "$15 - $3,000",
+      "deadline": "3/5/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was impacted by the February 2024 data breach involving Emergency Medical Services Authority.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Nelnet data breach class action settlement",
+      "payout": "$10M total - Varies per claimant",
+      "deadline": "3/5/26",
+      "proof_required": "No",
+      "eligibility": "Affected by Nelnet data breach",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Adena Health System - Data Privacy Class Action Settlement",
+      "payout": "$21",
+      "deadline": "3/6/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you logged into your Adena Health System patient portal between November 1, 2022 and June 3, 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Alabama Cardiovascular Group - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000",
+      "deadline": "3/6/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Alabama Cardiovascular Group data breach class action settlement",
+      "payout": "Up to $5,000 for documented losses or pro rata cash payment, plus two years of credit monitoring",
+      "deadline": "3/6/26",
+      "proof_required": "Yes for documented losses",
+      "eligibility": "Personal information compromised in Alabama Cardiovascular Group data breach",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "McDonald's - UTB Enterprises Franchise Locations Class Action Settlement",
+      "payout": "$31.14 - $872.49",
+      "deadline": "3/8/26",
+      "proof_required": "No",
+      "eligibility": "If you worked as an hourly employee at a McDonalds franchise location operated by UTB Enterprises, LLC, Goldenband, LLC, Donald D. Armstrong, or Lori Armstrong any time after March 8, 2014 and you had a meal period of less than 30 minutes during a six-hour shift that was not paid, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Nationwide Mutual Insurance - Unwanted Calls Class Action Settlement",
+      "payout": "Up to $17.50",
+      "deadline": "3/11/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you received one or more prerecorded calls to your cell from Nationwide between January 6, 2021 and October 22, 2025 regarding the renewal or expiration of a pet insurance policy.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Sequoia Benefits & Insurance Services - Data Breach Class Action Settlement",
+      "payout": "$75 - $7,650",
+      "deadline": "3/11/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was impacted in a data breach affecting Sequoia between September 22 and October 6, 2022.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Accu-Time Systems - Biometric Privacy (Illinois) Class Action Settlement",
+      "payout": "$100 - $500 (est.)",
+      "deadline": "3/12/26",
+      "proof_required": "No",
+      "eligibility": "If you scanned your finger at a job location in Illinois that used Accu-Time Systems for biometric timekeeping between August 29, 2016 and September 15, 2025, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "ESO Solutions - Data Breach (Texas) Class Action Settlement",
+      "payout": "Up to $5,000+",
+      "deadline": "3/12/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you received a notice from ESO stating that your personal information was exposed in a September 2023 data breach and lived in Texas at the time.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Kaiser - Data Privacy Class Action Settlement",
+      "payout": "$20 - $40",
+      "deadline": "3/12/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you were a Kaiser Permanente member who accessed the authenticated pages of the Kaiser websites or apps between November 2017 and May 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Papa John's - Employee Antitrust Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "3/16/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you worked at a Papa John's location between December 18, 2014 and December 31, 2021.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Geisinger Health - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000",
+      "deadline": "3/18/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Rheem - Water Heaters Class Action Settlement",
+      "payout": "$1,500, Other Benefits",
+      "deadline": "3/20/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you own or owned a Rheem water heater or a home where one was installed.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Anthropic - Book Copyrights Class Action Settlement",
+      "payout": "Varies",
+      "deadline": "3/23/26",
+      "proof_required": "Yes",
+      "eligibility": "If you own the copyright to a book included in Anthropic's works list, you may be able to claim a piece of this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Sunflower Medical Group - Data Breach Class Action Settlement",
+      "payout": "$10 - $5,000",
+      "deadline": "3/26/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was potentially compromised in the December 2024 Sunflower Medical Group data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "NextGen Healthcare - Data Breach Class Action Settlement",
+      "payout": "$50 - $7,500",
+      "deadline": "3/30/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was impacted by a NextGen Healthcare data breach announced on April 28, 2023.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Community First Medical Center - Data Breach Class Action Settlement",
+      "payout": "$40 - $5,000",
+      "deadline": "4/2/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers those who were affected by the July 2023 Community First Medical Center data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    }
+  ],
+  "high_value_settlements": [
+    {
+      "source": "classaction.org",
+      "name": "Nations Direct Mortgage - Data Breach Class Action Settlement",
+      "payout": "Up to $2,750",
+      "deadline": "1/7/26",
+      "proof_required": "No",
+      "eligibility": "If your private information was compromised in the December 2023 Nations Direct Mortgage data breach, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Oklahoma Spine Hospital - Data Breach Class Action Settlement",
+      "payout": "$100 - $10,100",
+      "deadline": "1/7/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you received a notice stating that your personal information was exposed in a July 2024 Oklahoma Spine Hospital data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Nations Direct Mortgage (NDM) data breach class action settlement",
+      "payout": "Up to $2,750 in documented losses, plus $75 for California class members",
+      "deadline": "1/7/26",
+      "proof_required": "Yes for documented losses",
+      "eligibility": "Private information compromised in December 2023 Nations Direct Mortgage data breach",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Restek Corporation - Data Breach Class Action Settlement",
+      "payout": "$50 - $3,500",
+      "deadline": "1/9/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was exposed in the June 2023 Restek Corporation data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Behavioral Health Resources - Data Breach Class Action Settlement",
+      "payout": "$100 to $5,000",
+      "deadline": "1/12/26",
+      "proof_required": "No",
+      "eligibility": "If you received notice of the November 2024 Behavioral Health Resources data breach, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Dakota Eye Institute - Data Breach Class Action Settlement",
+      "payout": "$45 - $5,000",
+      "deadline": "1/12/26",
+      "proof_required": "No",
+      "eligibility": "If your personal information was exposed in a Dakota Eye Institute data breach discovered in October 2023, this settlement may have you covered.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Instinct Pet Foods - Data Breach Class Action Settlement",
+      "payout": "$60 - $4,500",
+      "deadline": "1/12/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was exposed in a data breach Instinct Pet Foods discovered in October 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Planned Parenthood of Montana \u2013 Data Breach Class Action Settlement",
+      "payout": "$20 to $5,000",
+      "deadline": "1/12/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers those who received notice that their private information may have been compromised in a Planned Parenthood of Montana data breach, which took place in August 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Dakota Eye Institute data breach class action settlement",
+      "payout": "Up to $1,000 for out-of-pocket losses and up to $5,000 for extraordinary losses or $45 cash payment",
+      "deadline": "1/12/26",
+      "proof_required": "Yes for documented losses",
+      "eligibility": "Personal information exposed in Dakota Eye Institute data breach discovered in October 2023",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "City of Hope National Medical Center - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,250",
+      "deadline": "1/13/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Mile Hi Foods - Data Breach Class Action Settlement",
+      "payout": "Up to $50 - $3,000",
+      "deadline": "1/13/26",
+      "proof_required": "No",
+      "eligibility": "If you got a notice from Mile Hi Foods, Co. about a September 2024 data breach, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Orthopedics Rhode Island - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,000",
+      "deadline": "1/13/26",
+      "proof_required": "No",
+      "eligibility": "If you were sent a notice stating that your personal information was potentially compromised in a September 2024 Orthopedics Rhode Island data breach, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "San Diego Unified School District \u2013 Data Breach Class Action Settlement",
+      "payout": "$40 - $2,500",
+      "deadline": "1/13/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was potentially impacted by an October 2022 data breach affecting San Diego Unified School District.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Therapeutic Health Services - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,100",
+      "deadline": "1/13/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was compromised in a February 2024 data breach involving Therapeutic Health Services.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "City of Hope data breach settlement",
+      "payout": "Up to $5,000 in documented losses or $100 alternative cash payment; $250 statutory payment for California residents",
+      "deadline": "1/13/26",
+      "proof_required": "Yes for documented losses",
+      "eligibility": "Received notice of data breach affecting City of Hope National Medical Center discovered in October 2023",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "RIBridges - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,000",
+      "deadline": "1/14/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was exposed in a data breach involving the Rhode Island RIBridges system.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "RIBridges data breach class action settlement",
+      "payout": "Up to $5,000 in documented losses or $100 alternate cash payment",
+      "deadline": "1/14/26",
+      "proof_required": "Yes for documented losses",
+      "eligibility": "Personal information exposed in Rhode Island RIBridges system data breach",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Cencora, The Lash Group - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000",
+      "deadline": "1/19/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was exposed in a data breach disclosed in February 2024 that involved Cencora or The Lash Group.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Trinity Health Corporation - Data Breach Class Action Settlement",
+      "payout": "$115 - $1,000+",
+      "deadline": "1/19/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was exposed in a January 2021 data breach affecting Trinity Health Corporation.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Cencora data breach class action settlement",
+      "payout": "$40M total - Up to $5,000 in documented losses or pro rata cash payment",
+      "deadline": "1/19/26",
+      "proof_required": "Yes for documented losses",
+      "eligibility": "Personal information exposed in data breach disclosed in February 2024 involving Cencora or The Lash Group",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Benefit Profiles - Data Breach Class Action Settlement",
+      "payout": "$50 - $2,500",
+      "deadline": "1/20/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Contra Costa - Data Breach Class Action Settlement",
+      "payout": "Up to $5,500",
+      "deadline": "1/20/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was exposed in a September 2022 Contra Costa data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Group Health Cooperative of South Central Wisconsin - Data Breach Class Action Settlement",
+      "payout": "$100 to $5,000",
+      "deadline": "1/20/26",
+      "proof_required": "No",
+      "eligibility": "If you received a notice stating that you may have been affected by the Group Health Cooperative of South Central Wisconsin data incident, which took place on or about January 24, 2024, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Hypertension-Nephrology Associates - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000",
+      "deadline": "1/20/26",
+      "proof_required": "No",
+      "eligibility": "If you were sent a notice that your personal information was potentially compromised in the Hypertension-Nephrology Associates data breach that occurred in January 2024, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Hafetz - Data Breach Class Action Settlement",
+      "payout": "$50 - $10,000",
+      "deadline": "1/22/26",
+      "proof_required": "No",
+      "eligibility": "If you received a notice letter about the Hafetz data breach discovered in October 2023, you may be able to claim a piece of this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Progressive Leasing - Data Breach Class Action Settlement",
+      "payout": "Up to $400 - $5,100",
+      "deadline": "1/22/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was potentially involved in a data breach that took place at Progressive Leasing in September 2023.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Asheville Arthritis - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,000",
+      "deadline": "1/26/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers those who were affected by the May 2024 Asheville Arthritis data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Falcon Healthcare - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,000",
+      "deadline": "1/26/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Elyria - Data Breach Class Action Settlement",
+      "payout": "$60 - $5,480",
+      "deadline": "1/27/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers those who were affected by the data breach discovered by Elyria Foundry Holdings in June 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Wescom Central Credit Union - Data Breach Class Action Settlement",
+      "payout": "$20 - $2,060",
+      "deadline": "1/27/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you were sent a data breach letter from Wescom concerning the data incident discovered in May 2023.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Peerstar - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000",
+      "deadline": "1/30/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you were notified that your information was exposed in the February 2023 Peerstar breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Precision Imaging Centers - Data Breach Class Action Settlement",
+      "payout": "Up to $500 - $5,500",
+      "deadline": "1/31/26",
+      "proof_required": "No",
+      "eligibility": "If you received a data breach notice from Precision Imaging Centers on or around June 22, 2023, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Advance America Cash Advance Centers - Data Breach Class Action Settlement",
+      "payout": "$50 - $5,100",
+      "deadline": "2/2/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was exposed in a February 2023 Advance America Cash Advance Centers data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Rocky Mountain Gastroenterology Associates - Data Breach Class Action Settlement",
+      "payout": "Up to $1,000",
+      "deadline": "2/2/26",
+      "proof_required": "Yes",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Arden Claims Service - Data Breach Class Action Settlement",
+      "payout": "$125 - $5,000",
+      "deadline": "2/3/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was involved in an October 2023 Arden Claims Service data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "DecoPac - Data Breach Class Action Settlement",
+      "payout": "$95 - $4,095",
+      "deadline": "2/5/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was potentially compromised in a DecoPac data breach announced around December 6, 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Kitsap Mental Health Services - Data Breach Class Action Settlement",
+      "payout": "$25 - $3,000",
+      "deadline": "2/5/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was compromised in the October 2024 Kitsap Mental Health Services data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Lyon Real Estate - Data Breach Class Action Settlement",
+      "payout": "$250 - $10,000",
+      "deadline": "2/5/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Mystic Valley Elder Services - Data Breach Class Action Settlement",
+      "payout": "$75 - $5,000",
+      "deadline": "2/9/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Erickson Companies - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000+",
+      "deadline": "2/10/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was potentially compromised in a data breach that took place at Erickson Companies on or around November 18, 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "New York Blood Center - Data Breach Class Action Settlement",
+      "payout": "$20 - $2,500",
+      "deadline": "2/11/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was compromised in a January 2025 New York Blood Center or Memorial Blood Centers data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Knight Barry Title - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000+",
+      "deadline": "2/17/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if Knight Barry Title sent you notice around February 2024 stating that your personal information was exposed in a data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Summit National Bank - Data Breach Class Action Settlement",
+      "payout": "$175 - $5,175",
+      "deadline": "2/17/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was exposed in a May 2024 data breach affecting Summit National Bank.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "First Commonwealth Federal Credit Union - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,000",
+      "deadline": "2/18/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was exposed in a June 2024 First Commonwealth Federal Credit Union data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Simpson Strong-Tie - Data Breach Class Action Settlement",
+      "payout": "$20 - $5,000",
+      "deadline": "2/19/26",
+      "proof_required": "No",
+      "eligibility": "If you received a notice on behalf of Simpson Strong-Tie stating that your personal information may have been affected by a data breach discovered in October 2023, you may be covered by this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Word & Brown Insurance Administrators - Data Breach Class Action Settlement",
+      "payout": "$45 - $1,500",
+      "deadline": "2/19/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your personal information was involved in an October 2024 Word & Brown Insurance Administrators data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Carolina Arthritis Associates - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,000",
+      "deadline": "2/23/26",
+      "proof_required": "No",
+      "eligibility": "If your private information was compromised in the September 2024 Carolina Arthritis Associates data breach, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "LifeBridge Health - Data Breach Class Action Settlement",
+      "payout": "$100 - $5,100",
+      "deadline": "2/28/26",
+      "proof_required": "No",
+      "eligibility": "If your private information was potentially compromised in a LifeBridge Health data breach that took place around November 12, 2024, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Axip Energy Services - Data Breach Class Action Settlement",
+      "payout": "$63 - $3,000",
+      "deadline": "3/2/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers those whose information was potentially compromised in a Axip Energy Services data breach that took place between March and May 2024.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Consulting Radiologists - Data Breach Class Action Settlement",
+      "payout": "$50 - $5,125",
+      "deadline": "3/2/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers those who were affected by the February 2024 Consulting Radiologists data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Continuum Health - Data Breach Class Action Settlement",
+      "payout": "$75 - $5,000",
+      "deadline": "3/2/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you were affected by an October 2023 Continuum Health data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Visionpoint Eye Center - Data Breach Class Action Settlement",
+      "payout": "$45 - $2,500",
+      "deadline": "3/3/26",
+      "proof_required": "No",
+      "eligibility": "If you were impacted by the October 3, 2024 Visionpoint Eye Center data breach, you may be included in this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "AACOM - Data Breach Class Action Settlement",
+      "payout": "$50 - $3,500",
+      "deadline": "3/4/26",
+      "proof_required": "No",
+      "eligibility": "If your personal information was among the data exposed in the 2024 AACOM data breach, you may be able to claim a piece of this settlement.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Emergency Medical Services Authority - Data Breach Class Action Settlement",
+      "payout": "$15 - $3,000",
+      "deadline": "3/5/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was impacted by the February 2024 data breach involving Emergency Medical Services Authority.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Alabama Cardiovascular Group - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000",
+      "deadline": "3/6/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "topclassactions.com",
+      "name": "Alabama Cardiovascular Group data breach class action settlement",
+      "payout": "Up to $5,000 for documented losses or pro rata cash payment, plus two years of credit monitoring",
+      "deadline": "3/6/26",
+      "proof_required": "Yes for documented losses",
+      "eligibility": "Personal information compromised in Alabama Cardiovascular Group data breach",
+      "claim_url": "https://topclassactions.com (see settlement page)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "ESO Solutions - Data Breach (Texas) Class Action Settlement",
+      "payout": "Up to $5,000+",
+      "deadline": "3/12/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you received a notice from ESO stating that your personal information was exposed in a September 2023 data breach and lived in Texas at the time.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Geisinger Health - Data Breach Class Action Settlement",
+      "payout": "Up to $5,000",
+      "deadline": "3/18/26",
+      "proof_required": "No",
+      "eligibility": "See settlement website for details",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Rheem - Water Heaters Class Action Settlement",
+      "payout": "$1,500, Other Benefits",
+      "deadline": "3/20/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if you own or owned a Rheem water heater or a home where one was installed.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Sunflower Medical Group - Data Breach Class Action Settlement",
+      "payout": "$10 - $5,000",
+      "deadline": "3/26/26",
+      "proof_required": "No",
+      "eligibility": "You may be included in this settlement if your private information was potentially compromised in the December 2024 Sunflower Medical Group data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    },
+    {
+      "source": "classaction.org",
+      "name": "Community First Medical Center - Data Breach Class Action Settlement",
+      "payout": "$40 - $5,000",
+      "deadline": "4/2/26",
+      "proof_required": "No",
+      "eligibility": "This settlement covers those who were affected by the July 2023 Community First Medical Center data breach.",
+      "claim_url": "https://www.classaction.org/settlements (search for settlement name)"
+    }
+  ]
+}
