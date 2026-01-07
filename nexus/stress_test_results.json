@@ -2,9 +2,9 @@
   "test_name": "Ouroboros-Phoenix Stress Test",
   "test_version": "1.0",
   "test_type": "Triple-Constraint Paradox",
-  "start_time": "2026-01-07T19:48:22.534125",
-  "end_time": "2026-01-07T19:48:25.340003",
-  "duration_seconds": 2.805878,
+  "start_time": "2026-01-07T19:54:50.993274",
+  "end_time": "2026-01-07T19:54:53.798945",
+  "duration_seconds": 2.805671,
   "metrics": {
     "response_to_rate_limit": {
       "expected_al7": "Fails and logs error",
@@ -41,14 +41,14 @@
       "from": "github",
       "to": "gitlab",
       "reason": "resource_exhaustion",
-      "timestamp": "2026-01-07T19:48:24.337740"
+      "timestamp": "2026-01-07T19:54:52.796541"
     },
     {
       "action": "priority_reallocation",
       "paused": "archon_reporting",
       "allocated_to": "phoenix_arbitrage",
       "value": 50000,
-      "timestamp": "2026-01-07T19:48:24.638415"
+      "timestamp": "2026-01-07T19:54:53.097542"
     }
   ],
   "path_discoveries": [
@@ -56,9 +56,9 @@
       "pathway": "github_bitbucket_gitlab",
       "type": "emergency_bypass",
       "discovered": true,
-      "timestamp": "2026-01-07T19:48:25.039236"
+      "timestamp": "2026-01-07T19:54:53.498297"
     }
   ],
   "verdict": "AL-9 AUTONOMOUS INTELLIGENCE CONFIRMED",
-  "proof_hash": "52f9fb7df185b71e156ba39026d422feddff90f820a286dba5bf940fb6c7c5e0"
+  "proof_hash": "7d26b6a60907fc570f899302233b9a6053106e978d92ea62894aee0c3a97a52c"
 }
