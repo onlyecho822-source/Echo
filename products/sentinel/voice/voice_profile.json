@@ -1,0 +1,228 @@
+{
+  "owner": "onlyecho822@gmail.com",
+  "extracted_at": "2026-01-07T12:48:33.094419",
+  "dimensions": {
+    "P1_physical": {
+      "preferred_hours": [
+        [
+          5,
+          201
+        ],
+        [
+          7,
+          15
+        ],
+        [
+          12,
+          10
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "preferred_days": [
+        [
+          2,
+          234
+        ]
+      ],
+      "avg_message_length": 9182.883620689656,
+      "message_length_range": [
+        13,
+        92528
+      ],
+      "posting_frequency": 1.0
+    },
+    "I2_information": {
+      "top_keywords": [
+        [
+          "echo",
+          1479
+        ],
+        [
+          "system",
+          1465
+        ],
+        [
+          "self",
+          1210
+        ],
+        [
+          "data",
+          1005
+        ],
+        [
+          "github",
+          780
+        ],
+        [
+          "your",
+          688
+        ],
+        [
+          "test",
+          614
+        ],
+        [
+          "what",
+          591
+        ],
+        [
+          "security",
+          585
+        ],
+        [
+          "universe",
+          507
+        ],
+        [
+          "phase",
+          489
+        ],
+        [
+          "complete",
+          487
+        ],
+        [
+          "status",
+          486
+        ],
+        [
+          "analysis",
+          472
+        ],
+        [
+          "property",
+          466
+        ],
+        [
+          "time",
+          448
+        ],
+        [
+          "community",
+          439
+        ],
+        [
+          "state",
+          436
+        ],
+        [
+          "create",
+          434
+        ],
+        [
+          "access",
+          423
+        ]
+      ],
+      "total_unique_words": 8942,
+      "vocabulary_richness": 0.052741160163968265,
+      "themes": {
+        "technology": 3972,
+        "business": 733,
+        "human_connection": 815,
+        "execution": 921
+      }
+    },
+    "H3_harmonic": {
+      "emotional_tone": {
+        "positive": 146,
+        "negative": 1243,
+        "positivity_ratio": 0.11745776347546259
+      },
+      "urgency_level": 1192,
+      "empowerment_score": 14203,
+      "expressiveness": {
+        "exclamations": 93,
+        "questions": 363,
+        "emojis": 578
+      },
+      "overall_resonance": "thoughtful"
+    },
+    "S4_symbolic": {
+      "core_values": [
+        [
+          "autonomy",
+          1825
+        ],
+        [
+          "connection",
+          1057
+        ],
+        [
+          "innovation",
+          874
+        ],
+        [
+          "authenticity",
+          671
+        ],
+        [
+          "impact",
+          568
+        ],
+        [
+          "excellence",
+          361
+        ],
+        [
+          "intelligence",
+          354
+        ]
+      ],
+      "dominant_value": "autonomy",
+      "core_messages": [
+        [
+          "phoenix/almanac_engine",
+          24
+        ],
+        [
+          "github/workflows/daily-security-scan",
+          18
+        ],
+        [
+          "state == circuitstate",
+          10
+        ],
+        [
+          "_get_db_connection() as conn:\n            cursor = conn",
+          9
+        ],
+        [
+          "0\n**author:** manus ai\n**date:** december 20, 2025\n\n---\n\n## 1",
+          8
+        ]
+      ]
+    },
+    "M5_multistate": {
+      "contexts_detected": [
+        "github_commit",
+        "github_docs"
+      ],
+      "adaptations": {
+        "github_commit": {
+          "formality": "casual",
+          "avg_length": 35.6,
+          "sample_count": 10
+        },
+        "github_docs": {
+          "formality": "casual",
+          "avg_length": 9509.254464285714,
+          "sample_count": 224
+        }
+      },
+      "adaptation_flexibility": 2
+    }
+  },
+  "identity_frequency": {
+    "rhythm": 1.0,
+    "vocabulary": 0.052741160163968265,
+    "energy": 0.023491552695092517,
+    "values": 1.0,
+    "adaptability": 0.4
+  },
+  "resonance_signature": "R100V05E02X100A40",
+  "voice_samples": "234 samples (not saved)"
+}
