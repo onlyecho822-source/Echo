@@ -1,0 +1,129 @@
+{
+  "scan_timestamp": "2026-01-07T05:09:06Z",
+  "scan_date": "2026-01-07",
+  "total_settlements_found": 10,
+  "settlements_over_1000": 7,
+  "sources_scanned": [
+    "classaction.org",
+    "topclassactions.com"
+  ],
+  "settlements": [
+    {
+      "settlement_name": "Nations Direct Mortgage - Data Breach Class Action Settlement",
+      "source": "classaction.org",
+      "dollar_amount_per_claimant": "Up to $2,750",
+      "claim_deadline": "2026-01-07",
+      "proof_required": false,
+      "eligibility_requirements": "Private information was compromised in the December 2023 Nations Direct Mortgage data breach",
+      "claim_url": "https://www.classaction.org/settlement/nations-direct-mortgage-data-breach-class-action-settlement",
+      "max_payout": 2750,
+      "high_value_alert": true,
+      "days_until_deadline": 0
+    },
+    {
+      "settlement_name": "Oklahoma Spine Hospital - Data Breach Class Action Settlement",
+      "source": "classaction.org",
+      "dollar_amount_per_claimant": "$100 - $10,100",
+      "claim_deadline": "2026-01-07",
+      "proof_required": false,
+      "eligibility_requirements": "Received a notice stating that your personal information was exposed in a July 2024 Oklahoma Spine Hospital data breach",
+      "claim_url": "https://www.classaction.org/settlement/oklahoma-spine-hospital-data-breach-class-action-settlement",
+      "max_payout": 10100,
+      "high_value_alert": true,
+      "days_until_deadline": 0
+    },
+    {
+      "settlement_name": "Restek Corporation - Data Breach Class Action Settlement",
+      "source": "classaction.org",
+      "dollar_amount_per_claimant": "$50 - $3,500",
+      "claim_deadline": "2026-01-09",
+      "proof_required": false,
+      "eligibility_requirements": "Personal information was exposed in the June 2023 Restek Corporation data breach",
+      "claim_url": "https://www.classaction.org/settlement/restek-corporation-data-breach-class-action-settlement",
+      "max_payout": 3500,
+      "high_value_alert": true,
+      "days_until_deadline": 1
+    },
+    {
+      "settlement_name": "Behavioral Health Resources - Data Breach Class Action Settlement",
+      "source": "classaction.org",
+      "dollar_amount_per_claimant": "$100 to $5,000",
+      "claim_deadline": "2026-01-12",
+      "proof_required": false,
+      "eligibility_requirements": "Received notice of the November 2024 Behavioral Health Resources data breach",
+      "claim_url": "https://www.classaction.org/settlement/behavioral-health-resources-data-breach-class-action-settlement",
+      "max_payout": 5000,
+      "high_value_alert": true,
+      "days_until_deadline": 4
+    },
+    {
+      "settlement_name": "Papaya Gaming - Bots Class Action Settlement",
+      "source": "classaction.org",
+      "dollar_amount_per_claimant": "Varies",
+      "claim_deadline": "2026-01-30",
+      "proof_required": false,
+      "eligibility_requirements": "Had a Papaya Gaming account and made a deposit in one or more Papaya games between January 1, 2019 and September 5, 2024",
+      "claim_url": "https://www.classaction.org/settlement/papaya-gaming-bots-class-action-settlement",
+      "max_payout": null,
+      "days_until_deadline": 22
+    },
+    {
+      "settlement_name": "Mid America Pet Food - Salmonella Contamination Class Action Settlement",
+      "source": "classaction.org",
+      "dollar_amount_per_claimant": "Varies",
+      "claim_deadline": "2026-02-05",
+      "proof_required": false,
+      "eligibility_requirements": "Bought certain pet foods produced by Mid America Pet Food between October 31, 2022 and February 29, 2024",
+      "claim_url": "https://www.classaction.org/settlement/mid-america-pet-food-salmonella-contamination-class-action-settlement",
+      "max_payout": null,
+      "days_until_deadline": 28
+    },
+    {
+      "settlement_name": "Joybird, La-Z-Boy Deceptive Discounts Class Action Settlement",
+      "source": "topclassactions.com",
+      "dollar_amount_per_claimant": "$115 cash or store credit",
+      "claim_deadline": "2026-02-13",
+      "proof_required": null,
+      "eligibility_requirements": "Purchased Joybird or La-Z-Boy products with allegedly deceptive discounts",
+      "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/joybird-la-z-boy-deceptive-discounts-class-action-settlement/",
+      "max_payout": 115,
+      "high_value_alert": true,
+      "days_until_deadline": 36
+    },
+    {
+      "settlement_name": "23andMe - Data Breach Class Action Settlement",
+      "source": "classaction.org",
+      "dollar_amount_per_claimant": "$100 - $10,000",
+      "claim_deadline": "2026-02-17",
+      "proof_required": false,
+      "eligibility_requirements": "Were a 23andMe customer between May 1, 2023 and October 1, 2023 and received notice that your personal information was compromised in a data breach",
+      "claim_url": "https://www.classaction.org/settlement/23andme-data-breach-class-action-settlement",
+      "max_payout": 10000,
+      "high_value_alert": true,
+      "days_until_deadline": 40
+    },
+    {
+      "settlement_name": "Nelnet Data Breach Class Action Settlement",
+      "source": "topclassactions.com",
+      "dollar_amount_per_claimant": "Varies",
+      "claim_deadline": "2026-03-05",
+      "proof_required": null,
+      "eligibility_requirements": "Affected by Nelnet data breach",
+      "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/nelnet-data-breach-class-action-settlement/",
+      "max_payout": null,
+      "days_until_deadline": 56
+    },
+    {
+      "settlement_name": "Alabama Cardiovascular Group Data Breach Class Action Settlement",
+      "source": "topclassactions.com",
+      "dollar_amount_per_claimant": "Up to $5,000 for documented losses or a pro rata cash payment, plus two years of credit monitoring",
+      "claim_deadline": "2026-03-06",
+      "proof_required": null,
+      "eligibility_requirements": "Affected by Alabama Cardiovascular Group data breach",
+      "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/alabama-cardiovascular-group-data-breach-class-action-settlement/",
+      "max_payout": 5000,
+      "high_value_alert": true,
+      "days_until_deadline": 57
+    }
+  ]
+}
