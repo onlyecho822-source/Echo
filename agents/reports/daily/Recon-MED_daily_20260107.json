@@ -1,0 +1,13 @@
+{
+  "agent": "Recon-MED",
+  "role": "RECON",
+  "sector": "MEDIA",
+  "timestamp": "2026-01-07T18:22:31.413570",
+  "date": "2026-01-07",
+  "missions_completed": 35,
+  "value_generated": 14816,
+  "success_rate": 79,
+  "status": "ACTIVE",
+  "intel_gathered": 98,
+  "targets_identified": 28
+}

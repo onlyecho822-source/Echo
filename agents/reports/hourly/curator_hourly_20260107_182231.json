@@ -1,0 +1,31 @@
+{
+  "report_type": "CURATOR_HOURLY",
+  "timestamp": "2026-01-07T18:22:31.371779",
+  "hour": "2026-01-07 18:00",
+  "ledger_entries": 26,
+  "agents": {
+    "total": 12,
+    "active": 12,
+    "standby": 0,
+    "by_role": {
+      "SCOUT": 3,
+      "RECON": 3,
+      "STRIKE": 3,
+      "SUBSTRATE": 3
+    },
+    "by_sector": {
+      "SETTLEMENTS": 4,
+      "EDUCATION": 4,
+      "MEDIA": 4
+    }
+  },
+  "metrics": {
+    "uptime_hours": 1,
+    "total_missions_24h": 139,
+    "total_value_24h": 45006,
+    "success_rate": 87,
+    "spiral_cycles": 55,
+    "ledger_integrity": "VALID"
+  },
+  "status": "OPERATIONAL"
+}

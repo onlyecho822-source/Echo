@@ -1,0 +1,13 @@
+{
+  "agent": "Recon-EDU",
+  "role": "RECON",
+  "sector": "EDUCATION",
+  "timestamp": "2026-01-07T18:22:31.413570",
+  "date": "2026-01-07",
+  "missions_completed": 49,
+  "value_generated": 42710,
+  "success_rate": 77,
+  "status": "ACTIVE",
+  "intel_gathered": 85,
+  "targets_identified": 25
+}

@@ -1,0 +1,13 @@
+{
+  "agent": "Substrate-MED",
+  "role": "SUBSTRATE",
+  "sector": "MEDIA",
+  "timestamp": "2026-01-07T18:22:31.413570",
+  "date": "2026-01-07",
+  "missions_completed": 35,
+  "value_generated": 39706,
+  "success_rate": 96,
+  "status": "ACTIVE",
+  "intel_gathered": 53,
+  "targets_identified": 25
+}
