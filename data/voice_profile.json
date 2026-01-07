@@ -1,0 +1,232 @@
+{
+  "owner": "onlyecho822@gmail.com",
+  "extracted_at": "2026-01-07T13:34:00.789956",
+  "dimensions": {
+    "P1_physical": {
+      "preferred_hours": [
+        [
+          5,
+          201
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "preferred_days": [
+        [
+          2,
+          245
+        ]
+      ],
+      "avg_message_length": 8932.497942386832,
+      "message_length_range": [
+        13,
+        92528
+      ],
+      "posting_frequency": 1.0
+    },
+    "I2_information": {
+      "top_keywords": [
+        [
+          "system",
+          1497
+        ],
+        [
+          "echo",
+          1496
+        ],
+        [
+          "self",
+          1210
+        ],
+        [
+          "data",
+          1012
+        ],
+        [
+          "github",
+          781
+        ],
+        [
+          "your",
+          718
+        ],
+        [
+          "test",
+          620
+        ],
+        [
+          "what",
+          599
+        ],
+        [
+          "security",
+          585
+        ],
+        [
+          "universe",
+          511
+        ],
+        [
+          "status",
+          497
+        ],
+        [
+          "phase",
+          495
+        ],
+        [
+          "complete",
+          493
+        ],
+        [
+          "time",
+          488
+        ],
+        [
+          "analysis",
+          476
+        ],
+        [
+          "property",
+          466
+        ],
+        [
+          "community",
+          450
+        ],
+        [
+          "state",
+          437
+        ],
+        [
+          "create",
+          436
+        ],
+        [
+          "first",
+          431
+        ]
+      ],
+      "total_unique_words": 9054,
+      "vocabulary_richness": 0.05233072276970205,
+      "themes": {
+        "technology": 4052,
+        "business": 758,
+        "human_connection": 828,
+        "execution": 929
+      }
+    },
+    "H3_harmonic": {
+      "emotional_tone": {
+        "positive": 150,
+        "negative": 1258,
+        "positivity_ratio": 0.1192368839427663
+      },
+      "urgency_level": 1214,
+      "empowerment_score": 14531,
+      "expressiveness": {
+        "exclamations": 93,
+        "questions": 363,
+        "emojis": 616
+      },
+      "overall_resonance": "thoughtful"
+    },
+    "S4_symbolic": {
+      "core_values": [
+        [
+          "autonomy",
+          1836
+        ],
+        [
+          "connection",
+          1084
+        ],
+        [
+          "innovation",
+          881
+        ],
+        [
+          "authenticity",
+          698
+        ],
+        [
+          "impact",
+          572
+        ],
+        [
+          "excellence",
+          373
+        ],
+        [
+          "intelligence",
+          362
+        ]
+      ],
+      "dominant_value": "autonomy",
+      "core_messages": [
+        [
+          "phoenix/almanac_engine",
+          24
+        ],
+        [
+          "github/workflows/daily-security-scan",
+          18
+        ],
+        [
+          "state == circuitstate",
+          10
+        ],
+        [
+          "_get_db_connection() as conn:\n            cursor = conn",
+          9
+        ],
+        [
+          "0\n**author:** manus ai\n**date:** december 20, 2025\n\n---\n\n## 1",
+          8
+        ]
+      ]
+    },
+    "M5_multistate": {
+      "contexts_detected": [
+        "github_commit",
+        "github_docs"
+      ],
+      "adaptations": {
+        "github_commit": {
+          "formality": "casual",
+          "avg_length": 34.92857142857143,
+          "sample_count": 14
+        },
+        "github_docs": {
+          "formality": "casual",
+          "avg_length": 9394.406926406926,
+          "sample_count": 231
+        }
+      },
+      "adaptation_flexibility": 2
+    }
+  },
+  "identity_frequency": {
+    "rhythm": 1.0,
+    "vocabulary": 0.05233072276970205,
+    "energy": 0.02384737678855326,
+    "values": 1.0,
+    "adaptability": 0.4
+  },
+  "resonance_signature": "R100V05E02X100A40",
+  "voice_samples": "245 samples (not saved)"
+}

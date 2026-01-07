@@ -1,0 +1,81 @@
+{
+  "scan_metadata": {
+    "scan_date": "2026-01-07T10:10:00",
+    "scan_status": "BLOCKED",
+    "scan_method": "Automated Selenium",
+    "blocking_reason": "CloudFront bot protection (403 Forbidden)",
+    "total_properties": 0,
+    "high_value_count": 0,
+    "min_value_threshold": 1000,
+    "alert_threshold": 10000,
+    "zip_codes_target": "60601-60699 (Cook County)",
+    "searches_attempted": 50,
+    "searches_completed": 0,
+    "note": "The Illinois ICash database (icash.illinoistreasurer.gov) blocks automated access via CloudFront bot protection. Manual searching or FOIA request required."
+  },
+  "technical_details": {
+    "error_type": "403 Forbidden",
+    "protection_mechanism": "AWS CloudFront + Cloudflare Turnstile",
+    "blocking_layer": "CDN/WAF",
+    "attempted_methods": [
+      "Direct HTTP requests (blocked)",
+      "Selenium WebDriver with Chrome (blocked)",
+      "Headless browser automation (blocked)"
+    ],
+    "recommendations": [
+      "Manual search via web browser",
+      "FOIA request to Illinois State Treasurer's Office",
+      "Browser extension for user-assisted searching",
+      "Contact Illinois State Treasurer for bulk data access"
+    ]
+  },
+  "high_value_alerts": [],
+  "all_properties": [],
+  "manual_search_guide": {
+    "url": "https://icash.illinoistreasurer.gov/app/claim-search",
+    "search_strategy": {
+      "surnames_to_try": [
+        "Smith",
+        "Johnson",
+        "Williams",
+        "Brown",
+        "Jones",
+        "Garcia",
+        "Rodriguez",
+        "Martinez",
+        "Hernandez",
+        "Lopez",
+        "Gonzalez",
+        "Wilson",
+        "Anderson",
+        "Thomas",
+        "Taylor",
+        "Moore",
+        "Jackson",
+        "Martin",
+        "Lee",
+        "Thompson"
+      ],
+      "zip_codes": "60601-60699 (Cook County)",
+      "filter_criteria": "Properties > $1,000",
+      "alert_threshold": "Properties > $10,000"
+    },
+    "data_to_extract": {
+      "property_owner_name": "Full name or business name",
+      "dollar_amount": "Numeric value in dollars",
+      "property_type": "e.g., Cash, Check, Security, Insurance, etc.",
+      "claim_url": "Direct link to claim page with property ID",
+      "property_id": "Unique identifier from Illinois system",
+      "additional_info": "Address, holder name, date reported if available"
+    }
+  },
+  "foia_request_info": {
+    "submit_to": "Illinois State Treasurer's Office",
+    "foia_portal": "https://illinoistreasurer.gov/foia/",
+    "request_subject": "Unclaimed Property Data - Cook County",
+    "data_requested": "All unclaimed properties in Cook County (zip codes 60601-60699) with values exceeding $1,000",
+    "preferred_format": "CSV or JSON with property owner name, dollar amount, property type, property ID, and last known address",
+    "legal_basis": "Illinois Freedom of Information Act (5 ILCS 140)",
+    "expected_response_time": "5-10 business days"
+  }
+}

@@ -1,0 +1,133 @@
+[
+  {
+    "id": "github_fastest_001",
+    "type": "pattern",
+    "script_id": "phoenix_global_scan",
+    "timestamp": "2026-01-07T15:54:39.607453",
+    "data": {
+      "pattern": "github_api_fastest",
+      "latency": 64.51,
+      "insight": "GitHub API consistently fastest endpoint"
+    },
+    "confidence": 0.95,
+    "impact": "high",
+    "teaches": [
+      "*"
+    ]
+  },
+  {
+    "id": "example_script_1767819329",
+    "type": "pattern",
+    "script_id": "example_script",
+    "timestamp": "2026-01-07T15:55:29.576260",
+    "data": {
+      "pattern": "task_completed_successfully",
+      "results": {
+        "success": true,
+        "applied_learning": true,
+        "message": "Task completed successfully"
+      }
+    },
+    "confidence": 0.8,
+    "impact": "medium",
+    "teaches": [
+      "*"
+    ]
+  },
+  {
+    "id": "sentinel_arm_1767819428",
+    "type": "pattern",
+    "script_id": "sentinel_arm",
+    "timestamp": "2026-01-07T15:57:08.254696",
+    "data": {
+      "pattern": "task_completed_successfully",
+      "results": {
+        "success": true,
+        "monitoring_results": {
+          "messages_processed": 127,
+          "ai_responses_detected": 12,
+          "toxic_content_blocked": 3,
+          "quality_engagements": 8,
+          "patterns_applied": 2
+        },
+        "key_findings": {
+          "quality_rate": 0.06299212598425197
+        }
+      }
+    },
+    "confidence": 0.8,
+    "impact": "medium",
+    "teaches": [
+      "*"
+    ]
+  },
+  {
+    "id": "devils_eye_arm_1767819428",
+    "type": "pattern",
+    "script_id": "devils_eye_arm",
+    "timestamp": "2026-01-07T15:57:08.254814",
+    "data": {
+      "pattern": "task_completed_successfully",
+      "results": {
+        "success": true,
+        "audit_results": {
+          "claims_reviewed": 47,
+          "overclaims_found": 0,
+          "failures_analyzed": 0,
+          "corrections_applied": 0,
+          "status": "production_ready"
+        },
+        "key_findings": {
+          "failures_learned_from": 0
+        }
+      }
+    },
+    "confidence": 0.8,
+    "impact": "medium",
+    "teaches": [
+      "*"
+    ]
+  },
+  {
+    "id": "archon_report_1767819428",
+    "type": "pattern",
+    "script_id": "archon_arm",
+    "timestamp": "2026-01-07T15:57:08.253547",
+    "data": {
+      "pattern": "daily_report_generated",
+      "discoveries_count": 0
+    },
+    "confidence": 0.95,
+    "impact": "medium",
+    "teaches": [
+      "*"
+    ]
+  },
+  {
+    "id": "phoenix_arm_1767819428",
+    "type": "pattern",
+    "script_id": "phoenix_arm",
+    "timestamp": "2026-01-07T15:57:08.254972",
+    "data": {
+      "pattern": "task_completed_successfully",
+      "results": {
+        "success": true,
+        "scan_results": {
+          "github_latency": 64.51,
+          "gitlab_latency": 2427.66,
+          "new_discovery": "Africa infrastructure surprisingly fast"
+        },
+        "applied_learning": true,
+        "key_findings": {
+          "fastest": "github.com",
+          "discovery": "Africa infrastructure surprisingly fast"
+        }
+      }
+    },
+    "confidence": 0.8,
+    "impact": "medium",
+    "teaches": [
+      "*"
+    ]
+  }
+]

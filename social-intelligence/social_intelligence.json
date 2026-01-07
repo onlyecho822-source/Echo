@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "platform": "linkedin",
+      "content": "Building systems that think for themselves. autonomous social intelligence",
+      "timestamp": "2026-01-07T12:50:31.685896",
+      "result": {
+        "success": false,
+        "error": "LinkedIn API not configured. Manual posting required.",
+        "platform": "linkedin",
+        "content": "Building systems that think for themselves. autonomous social intelligence\n\n#ThoughtLeadership #Innovation #Technology",
+        "action_required": "Configure LinkedIn via Zapier or post manually"
+      },
+      "resonance_signature": "R100V05E02X100A40"
+    },
+    {
+      "platform": "twitter",
+      "content": "Building systems that think for themselves. autonomous social intelligence",
+      "timestamp": "2026-01-07T12:50:31.685924",
+      "result": {
+        "success": false,
+        "error": "Twitter API not configured",
+        "platform": "twitter",
+        "content": "Building systems that think for themselves. autonomous social intelligence #AI #Innovation",
+        "action_required": "Configure Twitter via Zapier"
+      },
+      "resonance_signature": "R100V05E02X100A40"
+    }
+  ],
+  "engagements": [],
+  "responses": [],
+  "learning": {
+    "successful_patterns": [],
+    "failed_patterns": [
+      {
+        "platform": "linkedin",
+        "error": "LinkedIn API not configured. Manual posting required."
+      },
+      {
+        "platform": "twitter",
+        "error": "Twitter API not configured"
+      }
+    ],
+    "engagement_scores": {}
+  }
+}

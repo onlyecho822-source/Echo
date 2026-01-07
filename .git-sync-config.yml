@@ -1,0 +1,36 @@
+# Multi-Platform Git Sync Configuration
+platforms:
+  github:
+    url: https://github.com/onlyecho822-source/Echo.git
+    primary: true
+    public: true
+    features:
+      - community
+      - discussions
+      - pages
+      - actions
+  
+  gitlab:
+    url: https://gitlab.com/onlyecho822-source/phoenix.git
+    primary: false
+    public: false
+    features:
+      - cicd
+      - registry
+      - security
+      - deployment
+
+sync_strategy:
+  mode: selective
+  github_to_gitlab:
+    - main
+    - feature/*
+  gitlab_to_github:
+    - tags
+    - releases
+
+automation:
+  archon_reports: gitlab
+  sentinel_deployment: gitlab
+  public_docs: github
+  community_engagement: github

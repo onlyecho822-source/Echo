@@ -1,0 +1,17 @@
+[
+  {
+    "id": "devils_eye_audit_1767819428",
+    "type": "strategy",
+    "script_id": "devils_eye_arm",
+    "timestamp": "2026-01-07T15:57:08.254827",
+    "data": {
+      "strategy": "maintain_production_quality",
+      "failures_reviewed": 0
+    },
+    "confidence": 1.0,
+    "impact": "critical",
+    "teaches": [
+      "*"
+    ]
+  }
+]
