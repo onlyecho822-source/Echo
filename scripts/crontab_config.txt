@@ -1,0 +1,52 @@
+# ECHO UNIVERSE AUTOMATED REPORTING SCHEDULE
+# Generated: 07:35 Jan 07 2026
+# 
+# Format: minute hour day month weekday command
+#
+# All times in UTC
+
+# ============================================================================
+# DAILY REPORTS - Run at midnight UTC
+# ============================================================================
+0 0 * * * /home/ubuntu/Echo/scripts/auto_daily_report.sh >> /home/ubuntu/Echo/logs/cron.log 2>&1
+
+# ============================================================================
+# WEEKLY REPORTS - Run every Sunday at 23:00 UTC
+# ============================================================================
+0 23 * * 0 /home/ubuntu/Echo/nexus_cli.py report weekly > /home/ubuntu/Echo/reports/weekly/weekly_report_$(date +\%Y-\%W).txt 2>&1
+
+# ============================================================================
+# HOURLY STATUS CHECKS - Run every hour
+# ============================================================================
+0 * * * * /home/ubuntu/Echo/nexus_cli.py status > /home/ubuntu/Echo/reports/hourly/status_$(date +\%Y-\%m-\%d_\%H).txt 2>&1
+
+# ============================================================================
+# LEDGER VERIFICATION - Run every 6 hours
+# ============================================================================
+0 */6 * * * /home/ubuntu/Echo/nexus_cli.py verify >> /home/ubuntu/Echo/logs/ledger_verify.log 2>&1
+
+# ============================================================================
+# SYSTEM SYNC - Run every 12 hours
+# ============================================================================
+0 */12 * * * /home/ubuntu/Echo/nexus_cli.py sync >> /home/ubuntu/Echo/logs/sync.log 2>&1
+
+# ============================================================================
+# CLEANUP OLD REPORTS - Run daily at 03:00 UTC
+# ============================================================================
+0 3 * * * find /home/ubuntu/Echo/reports/hourly -name "status_*.txt" -mtime +7 -delete 2>&1
+0 3 * * * find /home/ubuntu/Echo/reports/daily -name "daily_report_*.txt" -mtime +30 -delete 2>&1
+0 3 * * * find /home/ubuntu/Echo/reports/weekly -name "weekly_report_*.txt" -mtime +90 -delete 2>&1
+
+# ============================================================================
+# LOG ROTATION - Run weekly on Monday at 04:00 UTC
+# ============================================================================
+0 4 * * 1 find /home/ubuntu/Echo/logs -name "*.log" -size +100M -exec gzip {} \; 2>&1
+
+# ============================================================================
+# BACKUP TO GOOGLE DRIVE - Run daily at 05:00 UTC
+# ============================================================================
+0 5 * * * rclone sync /home/ubuntu/Echo/reports manus_google_drive:Echo-Arsenal/Reports/ --config /home/ubuntu/.gdrive-rclone.ini >> /home/ubuntu/Echo/logs/backup.log 2>&1
+
+# ============================================================================
+# END OF CRONTAB
+# ============================================================================
