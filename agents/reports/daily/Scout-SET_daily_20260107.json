@@ -2,12 +2,12 @@
   "agent": "Scout-SET",
   "role": "SCOUT",
   "sector": "SETTLEMENTS",
-  "timestamp": "2026-01-07T18:22:31.413570",
+  "timestamp": "2026-01-07T19:29:57.652425",
   "date": "2026-01-07",
-  "missions_completed": 46,
-  "value_generated": 28576,
-  "success_rate": 99,
+  "missions_completed": 15,
+  "value_generated": 19057,
+  "success_rate": 87,
   "status": "ACTIVE",
-  "intel_gathered": 52,
-  "targets_identified": 14
+  "intel_gathered": 48,
+  "targets_identified": 27
 }

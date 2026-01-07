@@ -1,11 +1,11 @@
 {
   "report_type": "CONSOLIDATED_DAILY",
-  "timestamp": "2026-01-07T18:22:31.413570",
+  "timestamp": "2026-01-07T19:29:57.652425",
   "date": "2026-01-07",
   "total_agents": 12,
-  "total_missions": 376,
-  "total_value_generated": 374315,
-  "average_success_rate": 84.42,
+  "total_missions": 337,
+  "total_value_generated": 349120,
+  "average_success_rate": 92.42,
   "agents_by_role": {
     "SCOUT": [
       "Scout-SET",
@@ -36,7 +36,7 @@
         "Strike-SET",
         "Substrate-SET"
       ],
-      "value": 110744
+      "value": 96362
     },
     "EDUCATION": {
       "agents": [
@@ -45,7 +45,7 @@
         "Strike-EDU",
         "Substrate-EDU"
       ],
-      "value": 171674
+      "value": 113064
     },
     "MEDIA": {
       "agents": [
@@ -54,7 +54,7 @@
         "Strike-MED",
         "Substrate-MED"
       ],
-      "value": 91897
+      "value": 139694
     }
   }
 }
