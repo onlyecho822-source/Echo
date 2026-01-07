@@ -1,0 +1,33 @@
+[
+  {
+    "id": "example_script_applied_1767819329",
+    "type": "optimization",
+    "script_id": "example_script",
+    "timestamp": "2026-01-07T15:55:29.576277",
+    "data": {
+      "optimization": "applied_github_fast_learning",
+      "impact": "Used learned knowledge to optimize execution"
+    },
+    "confidence": 0.95,
+    "impact": "high",
+    "teaches": [
+      "*"
+    ]
+  },
+  {
+    "id": "sentinel_quality_1767819428",
+    "type": "optimization",
+    "script_id": "sentinel_arm",
+    "timestamp": "2026-01-07T15:57:08.254721",
+    "data": {
+      "optimization": "quality_engagement_rate",
+      "rate": 0.06299212598425197,
+      "insight": "Quality engagement rate: 6.3%"
+    },
+    "confidence": 0.85,
+    "impact": "medium",
+    "teaches": [
+      "*"
+    ]
+  }
+]

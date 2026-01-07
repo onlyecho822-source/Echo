@@ -1,0 +1,131 @@
+[
+  {
+    "id": "share_sentinel_arm_1767801428",
+    "type": "discovery",
+    "script_id": "sentinel_arm",
+    "timestamp": "2026-01-07T15:57:08.249970",
+    "data": {
+      "shared_info": {
+        "message": "Sentinel (Continuous Monitoring) sensed environment",
+        "environment": {
+          "messages_monitored": 127,
+          "ai_detected": 12,
+          "toxicity_blocked": 3,
+          "quality_responses": 8
+        }
+      },
+      "from_arm": "sentinel_arm",
+      "to_arms": [
+        "archon_arm",
+        "phoenix_arm",
+        "devils_eye_arm"
+      ]
+    },
+    "confidence": 0.9,
+    "impact": "high",
+    "teaches": [
+      "archon_arm",
+      "phoenix_arm",
+      "devils_eye_arm"
+    ]
+  },
+  {
+    "id": "share_devils_eye_arm_1767801428",
+    "type": "discovery",
+    "script_id": "devils_eye_arm",
+    "timestamp": "2026-01-07T15:57:08.251205",
+    "data": {
+      "shared_info": {
+        "message": "Devil's Eye (Monthly Audit) sensed environment",
+        "environment": {
+          "total_claims": 47,
+          "last_audit": "2026-01-07",
+          "production_ready": true
+        }
+      },
+      "from_arm": "devils_eye_arm",
+      "to_arms": [
+        "archon_arm",
+        "phoenix_arm",
+        "sentinel_arm"
+      ]
+    },
+    "confidence": 0.9,
+    "impact": "high",
+    "teaches": [
+      "archon_arm",
+      "phoenix_arm",
+      "sentinel_arm"
+    ]
+  },
+  {
+    "id": "share_sentinel_arm_1767801428",
+    "type": "discovery",
+    "script_id": "sentinel_arm",
+    "timestamp": "2026-01-07T15:57:08.252301",
+    "data": {
+      "shared_info": {
+        "message": "Sentinel (Continuous Monitoring) completed successfully",
+        "key_findings": {
+          "quality_rate": 0.06299212598425197
+        }
+      },
+      "from_arm": "sentinel_arm",
+      "to_arms": [
+        "archon_arm",
+        "phoenix_arm",
+        "devils_eye_arm"
+      ]
+    },
+    "confidence": 0.9,
+    "impact": "high",
+    "teaches": [
+      "archon_arm",
+      "phoenix_arm",
+      "devils_eye_arm"
+    ]
+  },
+  {
+    "id": "share_phoenix_arm_1767801428",
+    "type": "discovery",
+    "script_id": "phoenix_arm",
+    "timestamp": "2026-01-07T15:57:08.253116",
+    "data": {
+      "shared_info": {
+        "message": "Phoenix (Weekly Global Scan) completed successfully",
+        "key_findings": {
+          "fastest": "github.com",
+          "discovery": "Africa infrastructure surprisingly fast"
+        }
+      },
+      "from_arm": "phoenix_arm",
+      "to_arms": [
+        "archon_arm",
+        "devils_eye_arm",
+        "sentinel_arm"
+      ]
+    },
+    "confidence": 0.9,
+    "impact": "high",
+    "teaches": [
+      "archon_arm",
+      "devils_eye_arm",
+      "sentinel_arm"
+    ]
+  },
+  {
+    "id": "phoenix_discovery_1767819428",
+    "type": "discovery",
+    "script_id": "phoenix_arm",
+    "timestamp": "2026-01-07T15:57:08.254984",
+    "data": {
+      "discovery": "Africa infrastructure surprisingly fast",
+      "impact": "Challenges assumptions about infrastructure"
+    },
+    "confidence": 0.9,
+    "impact": "high",
+    "teaches": [
+      "*"
+    ]
+  }
+]
