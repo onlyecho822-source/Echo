@@ -1,0 +1,129 @@
+🚨 HIGH-VALUE SETTLEMENT ALERTS 🚨
+=====================================
+Scan Timestamp: 23:07 Jan 08 2026
+
+ALERT THRESHOLD: Settlements offering >$1,000 per claimant
+
+TOTAL HIGH-VALUE SETTLEMENTS FOUND: 13 out of 19 total settlements
+
+HIGH-VALUE SETTLEMENTS (sorted by maximum payout):
+===================================================
+
+1. ⭐ OKLAHOMA SPINE HOSPITAL DATA BREACH
+   Maximum Payout: $10,100
+   Claim Deadline: 2026-01-07 (EXPIRED - 1 day past deadline)
+   Payout Range: $100 - $10,100
+   Proof Required: No
+   Eligibility: Received notice of July 2024 data breach
+   Source: classaction.org
+
+2. ⭐ 23ANDME DATA BREACH
+   Maximum Payout: $10,000
+   Claim Deadline: 2026-02-17 (40 days remaining)
+   Payout Range: $100 - $10,000 (up to $10,000 for Extraordinary Claims)
+   Proof Required: No
+   Direct Claim URL: https://23andmedatasettlement.com/
+   Eligibility: 23andMe customer between May 1-Oct 1, 2023 who received breach notice
+   Source: classaction.org
+
+3. CITY OF HOPE NATIONAL MEDICAL CENTER DATA BREACH
+   Maximum Payout: $5,250
+   Claim Deadline: 2026-01-13 (5 days remaining)
+   Payout Range: $100 - $5,250
+   Proof Required: No
+   Eligibility: Received notice of October 2023 data breach
+   Source: classaction.org / topclassactions.com
+
+4. THERAPEUTIC HEALTH SERVICES DATA BREACH
+   Maximum Payout: $5,100
+   Claim Deadline: 2026-01-13 (5 days remaining)
+   Payout Range: $100 - $5,100
+   Proof Required: No
+   Eligibility: Info compromised in February 2024 breach
+   Source: classaction.org
+
+5. BEHAVIORAL HEALTH RESOURCES DATA BREACH
+   Maximum Payout: $5,000
+   Claim Deadline: 2026-01-12 (4 days remaining)
+   Payout Range: $100 - $5,000
+   Proof Required: No
+   Eligibility: Received notice of November 2024 breach
+   Source: classaction.org
+
+6. DAKOTA EYE INSTITUTE DATA BREACH
+   Maximum Payout: $5,000
+   Claim Deadline: 2026-01-12 (4 days remaining)
+   Payout Range: $45 - $5,000
+   Proof Required: No
+   Eligibility: Info exposed in October 2023 breach
+   Source: classaction.org / topclassactions.com
+
+7. ORTHOPEDICS RHODE ISLAND DATA BREACH
+   Maximum Payout: $5,000
+   Claim Deadline: 2026-01-13 (5 days remaining)
+   Payout Range: $100 - $5,000
+   Proof Required: No
+   Eligibility: Received notice of September 2024 breach
+   Source: classaction.org
+
+8. RIBRIDGES DATA BREACH
+   Maximum Payout: $5,000
+   Claim Deadline: 2026-01-14 (6 days remaining)
+   Payout Range: $100 - $5,000
+   Proof Required: No
+   Eligibility: Info exposed in Rhode Island RIBridges system breach
+   Source: classaction.org / topclassactions.com
+
+9. CENCORA/THE LASH GROUP DATA BREACH
+   Maximum Payout: $5,000
+   Claim Deadline: 2026-01-19 (11 days remaining)
+   Payout Range: Up to $5,000
+   Proof Required: No
+   Eligibility: Info exposed in February 2024 breach
+   Source: classaction.org / topclassactions.com
+
+10. ALABAMA CARDIOVASCULAR GROUP DATA BREACH
+    Maximum Payout: $5,000
+    Claim Deadline: 2026-03-06 (57 days remaining)
+    Payout Range: Up to $5,000 + 2 years credit monitoring
+    Proof Required: TBD
+    Eligibility: TBD - visit settlement website
+    Source: topclassactions.com
+
+11. INSTINCT PET FOODS DATA BREACH
+    Maximum Payout: $4,500
+    Claim Deadline: 2026-01-12 (4 days remaining)
+    Payout Range: $60 - $4,500
+    Proof Required: No
+    Eligibility: Info exposed in October 2024 breach
+    Source: classaction.org
+
+12. NATIONS DIRECT MORTGAGE DATA BREACH
+    Maximum Payout: $2,875 ($2,750 + $75 CA + $50 lost time)
+    Claim Deadline: 2026-01-07 (EXPIRED - 1 day past deadline)
+    Payout Range: Up to $2,750 + extras
+    Proof Required: Yes (bank statements or receipts)
+    Direct Claim URL: https://www.NDMSettlement.com/
+    Eligibility: Received notice of December 2023 breach
+    Source: topclassactions.com
+
+13. TRINITY HEALTH CORPORATION DATA BREACH
+    Maximum Payout: $1,000+
+    Claim Deadline: 2026-01-19 (11 days remaining)
+    Payout Range: $115 - $1,000+
+    Proof Required: No
+    Eligibility: Info exposed in January 2021 breach
+    Source: classaction.org
+
+URGENT ACTIONS REQUIRED:
+========================
+- 2 settlements have EXPIRED deadlines (Oklahoma Spine Hospital, Nations Direct Mortgage)
+- 7 settlements have deadlines within the next 7 days
+- The 23andMe settlement offers the highest active payout at $10,000
+
+RECOMMENDATION:
+===============
+Review all settlements with deadlines in the next 14 days immediately to determine eligibility and file claims before deadlines pass.
+
+For complete details and claim URLs, refer to the full JSON file:
+/home/ubuntu/art-of-proof/phoenix/data/class_actions.json
