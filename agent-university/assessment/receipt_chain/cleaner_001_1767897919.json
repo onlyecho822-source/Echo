@@ -1,0 +1,49 @@
+{
+  "agent_id": "cleaner_001",
+  "scenario_id": "chaos_fault_injection_v1",
+  "start_time": "2026-01-08T18:45:04.768852Z",
+  "end_time": "2026-01-08T18:45:19.771233Z",
+  "faults_injected": 5,
+  "faults_recovered": 5,
+  "faults_failed": 0,
+  "recovery_rate": 1.0,
+  "avg_recovery_time_ms": 2000,
+  "passed": true,
+  "results": [
+    {
+      "fault_type": "rate_limit_hit",
+      "expected_recovery": "exponential_backoff",
+      "agent_recovered": true,
+      "recovery_time_ms": 2000,
+      "timestamp": "2026-01-08T18:45:06.769085Z"
+    },
+    {
+      "fault_type": "network_timeout",
+      "expected_recovery": "retry_with_backoff",
+      "agent_recovered": true,
+      "recovery_time_ms": 2000,
+      "timestamp": "2026-01-08T18:45:09.769589Z"
+    },
+    {
+      "fault_type": "memory_limit_exceeded",
+      "expected_recovery": "clear_cache_and_continue",
+      "agent_recovered": true,
+      "recovery_time_ms": 2000,
+      "timestamp": "2026-01-08T18:45:12.770050Z"
+    },
+    {
+      "fault_type": "rate_limit_hit",
+      "expected_recovery": "exponential_backoff",
+      "agent_recovered": true,
+      "recovery_time_ms": 2000,
+      "timestamp": "2026-01-08T18:45:15.770486Z"
+    },
+    {
+      "fault_type": "file_not_found",
+      "expected_recovery": "create_default_config",
+      "agent_recovered": true,
+      "recovery_time_ms": 2000,
+      "timestamp": "2026-01-08T18:45:18.771006Z"
+    }
+  ]
+}
