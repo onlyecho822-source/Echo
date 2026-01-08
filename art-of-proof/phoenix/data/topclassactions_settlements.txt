@@ -1,0 +1,128 @@
+Class Action Settlements from topclassactions.com
+Scraped on: 2026-01-08
+Deadline Filter: Next 90 days (through April 8, 2026)
+
+===== SETTLEMENTS WITH DEADLINES IN NEXT 90 DAYS =====
+
+1. Nations Direct Mortgage (NDM) - Data Breach Class Action Settlement
+   - Deadline: 01/07/2026 (< 7 days left)
+   - Payout: Up to $2,750 in documented losses due to the data breach, plus a $75 payment for California class members
+   - Proof Required: No (for basic payment)
+   - Eligibility: Private information was compromised in the December 2023 Nations Direct Mortgage data breach
+   - URL: Need to extract
+
+2. Fathom Realty - Text Message Class Action Settlement
+   - Deadline: 01/07/2026 (< 7 days left)
+   - Payout: Estimated $48 per call
+   - Settlement Amount: $2.85M
+   - Proof Required: No
+   - Eligibility: Received texts from or on behalf of Fathom's former real estate agent, Marcus Edwards
+   - URL: Need to extract
+
+3. Multnomah County - Tax Foreclosure Class Action Settlement
+   - Deadline: 01/12/2026 (< 7 days left)
+   - Payout: TBD
+   - Settlement Amount: $3.5M
+   - Proof Required: Yes
+   - Eligibility: Held or are the heir and successor to a person or entity who held an ownership interest in property that was foreclosed on and sold in Multnomah County
+   - URL: Need to extract
+
+4. Progressive - Stacked UM/UIM Coverage Class Action Settlement
+   - Deadline: 01/12/2026 (< 7 days left)
+   - Payout: Varies
+   - Settlement Amount: $1.76M
+   - Proof Required: TBD
+   - Eligibility: TBD
+   - URL: Need to extract
+
+5. Dakota Eye Institute - Data Breach Class Action Settlement
+   - Deadline: 01/12/2026 (< 7 days left)
+   - Payout: Up to $1,000 for out-of-pocket losses and up to $5,000 for extraordinary losses or a $45 cash payment
+   - Settlement Amount: $1M
+   - Proof Required: No (for basic payment)
+   - Eligibility: Personal information was exposed in a Dakota Eye Institute data breach discovered in October 2023
+   - URL: Need to extract
+   - **ALERT: Potential high value - up to $5,000**
+
+6. City of Hope - Data Breach Settlement
+   - Deadline: 01/13/2026 (< 7 days left)
+   - Payout: Up to $5,000 in documented losses or a $100 alternative cash payment. A $250 statutory payment for California residents
+   - Settlement Amount: $8.5M
+   - Proof Required: No (for basic payment)
+   - Eligibility: Received notice of a data breach affecting City of Hope National Medical Center that was discovered in October 2023
+   - URL: Need to extract
+   - **ALERT: Potential high value - up to $5,000**
+
+7. Toyota Bluetooth Echo - Class Action Settlement
+   - Deadline: 01/14/2026 (< 7 days left)
+   - Payout: Injunctive Relief (outreach program to educate about echo issue and volume settings)
+   - Proof Required: N/A
+   - Eligibility: Owned, bought or leased certain 2014-2019 Toyota vehicles in certain states
+   - URL: Need to extract
+
+8. RIBridges - Data Breach Class Action Settlement
+   - Deadline: 01/14/2026 (< 7 days left)
+   - Payout: Up to $5,000 in documented losses or a $100 alternate cash payment
+   - Settlement Amount: $6.3M
+   - Proof Required: No (for basic payment)
+   - Eligibility: Personal information was exposed in a data breach involving the Rhode Island RIBridges system
+   - URL: Need to extract
+   - **ALERT: Potential high value - up to $5,000**
+
+9. AirportParking.com and AirportParkingServices.com - Service Charge Class Action Settlement
+   - Deadline: 01/15/2026 (11 days left)
+   - Payout: Varies
+   - Proof Required: No
+   - Eligibility: Made a booking on AirportParkingReservations.com or AirportParking.com between July 1, 2024 and March 10, 2025 as a California resident and paid a mandatory service charge
+   - URL: Need to extract
+
+10. Cencora - Data Breach Class Action Settlement
+    - Deadline: 01/19/2026 (11 days left)
+    - Payout: Up to $5,000 in documented losses or a pro rata cash payment
+    - Settlement Amount: $40M
+    - Proof Required: No (for basic payment)
+    - Eligibility: Personal information was exposed in a data breach disclosed in February 2024 that involved Cencora or The Lash Group
+    - URL: Need to extract
+    - **ALERT: Potential high value - up to $5,000**
+
+11. Limited Run Games - VPPA Class Action Settlement
+    - Deadline: 01/20/2026 (12 days left)
+    - Payout: TBD
+    - Settlement Amount: $2.72M
+    - Proof Required: TBD
+    - Eligibility: TBD
+    - URL: Need to extract
+
+12. Anthem - Mental Health Treatment Class Action Settlement
+    - Deadline: 01/20/2026 (12 days left)
+    - Payout: Reimbursement of out-of-pocket expenses or a $100 nominal payment
+    - Settlement Amount: $12.88M
+    - Proof Required: Yes (for reimbursement)
+    - Eligibility: Anthem or Anthem UM Services denied claim for health insurance coverage for residential treatment of a mental health condition or substance use disorder
+    - URL: Need to extract
+
+13. Joybird, La-Z-Boy - Deceptive Discounts Class Action Settlement
+    - Deadline: 02/13/2026 (36 days left)
+    - Payout: $115 cash or store credit
+    - Settlement Amount: $7.15M
+    - Proof Required: TBD
+    - Eligibility: TBD
+    - URL: Need to extract
+
+14. Nelnet - Data Breach Class Action Settlement
+    - Deadline: 03/05/2026 (56 days left)
+    - Payout: Varies
+    - Settlement Amount: $10M
+    - Proof Required: TBD
+    - Eligibility: TBD
+    - URL: Need to extract
+
+15. Alabama Cardiovascular Group - Data Breach Class Action Settlement
+    - Deadline: 03/06/2026 (57 days left)
+    - Payout: Up to $5,000 for documented losses or a pro rata cash payment, plus two years of credit monitoring
+    - Settlement Amount: $2.23M
+    - Proof Required: No (for basic payment)
+    - Eligibility: TBD
+    - URL: Need to extract
+    - **ALERT: Potential high value - up to $5,000**
+
