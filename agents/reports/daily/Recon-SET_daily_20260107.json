@@ -1,0 +1,13 @@
+{
+  "agent": "Recon-SET",
+  "role": "RECON",
+  "sector": "SETTLEMENTS",
+  "timestamp": "2026-01-07T19:29:57.652425",
+  "date": "2026-01-07",
+  "missions_completed": 19,
+  "value_generated": 5925,
+  "success_rate": 88,
+  "status": "ACTIVE",
+  "intel_gathered": 23,
+  "targets_identified": 25
+}

@@ -1,0 +1,13 @@
+{
+  "agent": "Substrate-SET",
+  "role": "SUBSTRATE",
+  "sector": "SETTLEMENTS",
+  "timestamp": "2026-01-07T19:29:57.652425",
+  "date": "2026-01-07",
+  "missions_completed": 32,
+  "value_generated": 48075,
+  "success_rate": 91,
+  "status": "ACTIVE",
+  "intel_gathered": 32,
+  "targets_identified": 9
+}

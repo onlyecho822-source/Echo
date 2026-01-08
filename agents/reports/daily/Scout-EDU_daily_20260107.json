@@ -1,0 +1,13 @@
+{
+  "agent": "Scout-EDU",
+  "role": "SCOUT",
+  "sector": "EDUCATION",
+  "timestamp": "2026-01-07T19:29:57.652425",
+  "date": "2026-01-07",
+  "missions_completed": 26,
+  "value_generated": 20104,
+  "success_rate": 96,
+  "status": "ACTIVE",
+  "intel_gathered": 69,
+  "targets_identified": 10
+}
