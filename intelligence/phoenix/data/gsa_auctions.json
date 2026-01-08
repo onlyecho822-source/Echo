@@ -1,0 +1,117 @@
+{
+  "scan_timestamp": "12:09 Jan 08 2026",
+  "source": "GSAAuctions.gov",
+  "search_criteria": {
+    "minimum_value": "$1,000",
+    "categories_focus": "Electronics, Vehicles, Equipment, Aircraft",
+    "status_searched": "New Today + Active Auctions",
+    "limitation": "GSA Auctions does not display estimated/fair market values. Only current bid amounts are shown. Cannot filter by 'current bid < 50% of estimated value' as originally requested. Items collected based on resale potential and low/no bidder activity."
+  },
+  "summary": {
+    "total_items": 7,
+    "items_with_no_bidders": 3,
+    "electronics_equipment": 1,
+    "vehicles": 2,
+    "aircraft": 3
+  },
+  "items": [
+    {
+      "sale_lot_number": "4-1-QSC-I-26-127-001",
+      "item_description": "1978 Beechcraft T-34C aircraft, BUNO 160938",
+      "category": "Aircraft and Aircraft Parts",
+      "location": "TUCSON, AZ 85707",
+      "auction_end_time": "01/29/2026 11:00 AM CT",
+      "current_bid": "$50,000",
+      "current_bid_amount": 50000,
+      "num_bidders": 0,
+      "estimated_value": "Not provided by GSA Auctions",
+      "item_url": "https://gsaauctions.gov/auctions/preview/349010",
+      "status": "Active",
+      "notes": "NO BIDDERS - Aircraft in long-term preservation at AMARG. Total hours: 20,913.9, Fatigue life remaining: 7.38%, Est. flight hours remaining: 1,225.51. Requires End Use Certificate approval (30-60 days). Additional AMARG fees apply. NOT FAA compliant - buyer responsible for certification."
+    },
+    {
+      "sale_lot_number": "4-1-QSC-I-26-127-002",
+      "item_description": "1978 Beechcraft T-34C aircraft, BUNO 160940",
+      "category": "Aircraft and Aircraft Parts",
+      "location": "TUCSON, AZ 85707",
+      "auction_end_time": "01/08/2026 11:10 AM CT (Start Date)",
+      "current_bid": "Not yet available",
+      "current_bid_amount": 0,
+      "num_bidders": 0,
+      "estimated_value": "Not provided by GSA Auctions",
+      "item_url": "https://gsaauctions.gov/auctions/preview/349011",
+      "status": "Preview",
+      "notes": "NO BIDDERS - Similar aircraft to BUNO 160938. Preview status, bidding not yet started."
+    },
+    {
+      "sale_lot_number": "3-1-QSC-I-26-035-001",
+      "item_description": "Pratt & Whitney TF33-P7A Turbofan Engine with Trailer",
+      "category": "Aircraft and Aircraft Parts",
+      "location": "HOUSTON, TX 77058",
+      "auction_end_time": "01/09/2026 11:00 AM CT",
+      "current_bid": "$2,016",
+      "current_bid_amount": 2016,
+      "num_bidders": 2,
+      "estimated_value": "Not provided by GSA Auctions",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348481",
+      "status": "Active",
+      "notes": "Turbofan engine with trailer - potential for resale to aviation maintenance facilities"
+    },
+    {
+      "sale_lot_number": "3-1-QSC-I-26-035-005",
+      "item_description": "Hasselblad Flextight X5 and EPSCO Scanners",
+      "category": "Electrical and Electronic Equipment",
+      "location": "HOUSTON, TX 77058",
+      "auction_end_time": "01/09/2026 11:04 AM CT",
+      "current_bid": "$4,000",
+      "current_bid_amount": 4000,
+      "num_bidders": 0,
+      "estimated_value": "Not provided by GSA Auctions",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348485",
+      "status": "Active",
+      "notes": "NO BIDDERS - High-end professional scanners. Hasselblad Flextight X5 is premium film scanner, typically worth $10,000+ new. Excellent resale potential for photography/archival businesses."
+    },
+    {
+      "sale_lot_number": "3-1-QSC-I-26-116-018",
+      "item_description": "2018 Chevrolet Silverado",
+      "category": "Vehicles",
+      "location": "Provo, UT 84606",
+      "auction_end_time": "01/09/2026 04:23 PM CT",
+      "current_bid": "$19,335",
+      "current_bid_amount": 19335,
+      "num_bidders": 13,
+      "estimated_value": "Not provided by GSA Auctions",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348058",
+      "status": "Active",
+      "notes": "2018 Silverado with active bidding. Market value typically $25,000-35,000 depending on condition/mileage."
+    },
+    {
+      "sale_lot_number": "3-1-QSC-I-26-123-010",
+      "item_description": "2018 Ford Fusion",
+      "category": "Vehicles",
+      "location": "LITTLE ROCK, AR 72211",
+      "auction_end_time": "01/09/2026 04:30 PM CT",
+      "current_bid": "$7,340",
+      "current_bid_amount": 7340,
+      "num_bidders": 8,
+      "estimated_value": "Not provided by GSA Auctions",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348111",
+      "status": "Active",
+      "notes": "2018 Ford Fusion with moderate bidding. Market value typically $12,000-18,000 depending on condition/mileage."
+    },
+    {
+      "sale_lot_number": "3-1-QSC-I-26-140-001",
+      "item_description": "2018 COLONY FACTORY CRAFT MHU",
+      "category": "Trailers, Tractors and Manufactured Housing",
+      "location": "BATON ROUGE, LA 70814",
+      "auction_end_time": "01/09/2026 04:30 PM CT",
+      "current_bid": "$12,026",
+      "current_bid_amount": 12026,
+      "num_bidders": 3,
+      "estimated_value": "Not provided by GSA Auctions",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348680",
+      "status": "Active",
+      "notes": "Manufactured Housing Unit - potential for resale or rental income"
+    }
+  ]
+}
