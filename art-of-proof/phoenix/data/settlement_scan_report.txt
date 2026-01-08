@@ -1,0 +1,204 @@
+CLASS ACTION SETTLEMENT SCAN REPORT
+=====================================
+
+Scan Timestamp: 2026-01-08 00:00:00 UTC
+Data File: /home/ubuntu/art-of-proof/phoenix/data/class_actions.json
+
+SUMMARY
+-------
+Total Settlements Found: 25
+Settlements with Deadlines in Next 90 Days: 25
+High-Value Settlements (>$1000 per claimant): 15
+
+SOURCES SCANNED
+---------------
+1. classaction.org - 156 total settlements listed
+2. topclassactions.com - Multiple pages scanned
+
+⚠️  ALERT: 15 SETTLEMENTS OFFER >$1,000 PER CLAIMANT
+=====================================================
+
+1. 23andMe - Data Breach Class Action Settlement
+   Maximum Payout: $10,000
+   Deadline: February 17, 2026 (40 days remaining)
+   Proof Required: No
+   Claim URL: https://www.classaction.org/settlements
+   Eligibility: Were a 23andMe customer between May 1, 2023 and October 1, 2023 and received notice that your personal information was compromised in a data breach
+
+2. Oklahoma Spine Hospital - Data Breach Class Action Settlement
+   Maximum Payout: $10,100
+   Deadline: January 7, 2026 (EXPIRED - less than 1 day remaining)
+   Proof Required: No
+   Claim URL: https://www.classaction.org/settlements
+   Eligibility: Received a notice stating that your personal information was exposed in a July 2024 Oklahoma Spine Hospital data breach
+
+3. Nations Direct Mortgage - Data Breach Class Action Settlement
+   Maximum Payout: $2,750
+   Deadline: January 7, 2026 (EXPIRED - less than 1 day remaining)
+   Proof Required: No
+   Claim URL: https://www.classaction.org/settlements
+   Eligibility: Private information was compromised in the December 2023 Nations Direct Mortgage data breach
+
+4. Restek Corporation - Data Breach Class Action Settlement
+   Maximum Payout: $3,500
+   Deadline: January 9, 2026 (1 day remaining - URGENT)
+   Proof Required: No
+   Claim URL: https://www.classaction.org/settlements
+   Eligibility: Personal information was exposed in the June 2023 Restek Corporation data breach
+
+5. Behavioral Health Resources - Data Breach Class Action Settlement
+   Maximum Payout: $5,000
+   Deadline: January 12, 2026 (4 days remaining)
+   Proof Required: No
+   Claim URL: https://www.classaction.org/settlements
+   Eligibility: Received notice of the November 2024 Behavioral Health Resources data breach
+
+6. Dakota Eye Institute - Data Breach Class Action Settlement
+   Maximum Payout: $5,000
+   Deadline: January 12, 2026 (4 days remaining)
+   Proof Required: No
+   Claim URL: https://www.classaction.org/settlements
+   Eligibility: Personal information was exposed in a Dakota Eye Institute data breach discovered in October 2023
+
+7. Instinct Pet Foods - Data Breach Class Action Settlement
+   Maximum Payout: $4,500
+   Deadline: January 12, 2026 (4 days remaining)
+   Proof Required: No
+   Claim URL: https://www.classaction.org/settlements
+   Eligibility: Personal information was exposed in a data breach Instinct Pet Foods discovered in October 2024
+
+8. City of Hope National Medical Center - Data Breach Class Action Settlement
+   Maximum Payout: $5,250
+   Deadline: January 13, 2026 (5 days remaining)
+   Proof Required: No
+   Claim URL: https://www.classaction.org/settlements
+   Eligibility: Received notice of a data breach affecting City of Hope National Medical Center that was discovered in October 2023
+
+9. Orthopedics Rhode Island - Data Breach Class Action Settlement
+   Maximum Payout: $5,000
+   Deadline: January 13, 2026 (5 days remaining)
+   Proof Required: No
+   Claim URL: https://www.classaction.org/settlements
+   Eligibility: Were sent a notice stating that your personal information was potentially compromised in a September 2024 Orthopedics Rhode Island data breach
+
+10. Therapeutic Health Services - Data Breach Class Action Settlement
+    Maximum Payout: $5,100
+    Deadline: January 13, 2026 (5 days remaining)
+    Proof Required: No
+    Claim URL: https://www.thsdatasettlement.com/
+    Eligibility: Personal information was compromised in a February 2024 data breach involving Therapeutic Health Services
+
+11. RIBridges - Data Breach Class Action Settlement
+    Maximum Payout: $5,000
+    Deadline: January 14, 2026 (6 days remaining)
+    Proof Required: No
+    Claim URL: https://www.classaction.org/settlements
+    Eligibility: Personal information was exposed in a data breach involving the Rhode Island RIBridges system
+
+12. Cencora, The Lash Group - Data Breach Class Action Settlement
+    Maximum Payout: $5,000
+    Deadline: January 19, 2026 (11 days remaining)
+    Proof Required: No
+    Claim URL: https://www.classaction.org/settlements
+    Eligibility: Personal information was exposed in a data breach disclosed in February 2024 that involved Cencora or The Lash Group
+
+13. Trinity Health Corporation - Data Breach Class Action Settlement
+    Maximum Payout: $1,000+
+    Deadline: January 19, 2026 (11 days remaining)
+    Proof Required: No
+    Claim URL: https://www.classaction.org/settlements
+    Eligibility: Personal information was exposed in a January 2021 data breach affecting Trinity Health Corporation
+
+14. $2.23M Alabama Cardiovascular Group data breach class action settlement
+    Maximum Payout: $5,000
+    Deadline: March 6, 2026 (57 days remaining)
+    Proof Required: Unknown
+    Claim URL: https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/
+    Eligibility: Unknown - check settlement website for details
+
+15. $40M Cencora data breach class action settlement
+    Maximum Payout: $5,000
+    Deadline: January 19, 2026 (11 days remaining)
+    Proof Required: Unknown
+    Claim URL: https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/
+    Eligibility: Unknown - check settlement website for details
+
+
+OTHER NOTABLE SETTLEMENTS
+=========================
+
+Papaya Gaming - Bots Class Action Settlement
+   Payout: Varies (cash payment or In-Game Cash distribution)
+   Deadline: January 30, 2026 (22 days remaining)
+   Proof Required: No
+   Claim URL: https://www.mobilegamingsettlement.com/
+   Eligibility: Person in the U.S. who had a Papaya Gaming account and made a deposit in one or more Papaya games between January 1, 2019 and September 5, 2024
+
+$7.15M Joybird, La-Z-Boy deceptive discounts class action settlement
+   Payout: $115 cash or store credit
+   Deadline: February 13, 2026 (36 days remaining)
+   Proof Required: Email address or mailing address associated with purchase
+   Claim URL: https://www.joybirdsettlement.com/
+   Eligibility: Consumers who, while in the states of California, Oregon or Washington, purchased one or more products on Joybird.com or at a Joybird physical store location, at a sale price, from Dec. 18, 2019, to Oct. 31, 2025
+
+$87.5M Tyson, Cargill beef price-fixing class action settlement
+   Payout: Varies
+   Deadline: June 30, 2026 (173 days remaining - outside 90-day window but included for reference)
+   Proof Required: Unknown
+   Claim URL: https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/
+   Eligibility: Unknown - check settlement website for details
+
+
+URGENT ACTION REQUIRED
+======================
+Several settlements have deadlines within the next 7 days. If you are eligible for any of these settlements, you should file claims immediately:
+
+- Restek Corporation (1 day remaining)
+- Behavioral Health Resources (4 days remaining)
+- Dakota Eye Institute (4 days remaining)
+- Instinct Pet Foods (4 days remaining)
+- City of Hope National Medical Center (5 days remaining)
+- Orthopedics Rhode Island (5 days remaining)
+- Therapeutic Health Services (5 days remaining)
+- RIBridges (6 days remaining)
+
+
+DATA STRUCTURE
+==============
+The complete settlement data has been saved in JSON format at:
+/home/ubuntu/art-of-proof/phoenix/data/class_actions.json
+
+Each settlement record includes:
+- name: Settlement name
+- payout: Dollar amount per claimant
+- deadline: Claim deadline date
+- proof_required: Whether proof of purchase/eligibility is required
+- claim_url: Direct URL to file claim
+- eligibility: Eligibility requirements
+- source: Website source (classaction.org or topclassactions.com)
+- deadline_date: Parsed deadline in YYYY-MM-DD format
+- days_until_deadline: Number of days remaining
+- max_payout_amount: Maximum dollar amount (for filtering)
+
+
+NOTES
+=====
+- Some settlements from topclassactions.com have limited detail available. Users should visit the settlement websites directly for complete information.
+- Deadlines are calculated from January 8, 2026.
+- "Varies" or "TBD" payouts may still be substantial but require checking the settlement website for specifics.
+- No proof required settlements are generally easier to claim.
+- Data breach settlements often require that you received a notice from the company about the breach.
+
+
+RECOMMENDATIONS
+===============
+1. Review the high-value settlements immediately, especially those with deadlines in the next 7 days
+2. Check your email for data breach notifications that match the settlements listed
+3. File claims for all settlements where you meet the eligibility requirements
+4. Set reminders for upcoming deadlines
+5. Visit settlement websites directly for the most current information and claim forms
+6. Consider consulting with a class action attorney if you have significant losses
+
+
+Report Generated: 2026-01-08
+Data Sources: classaction.org, topclassactions.com
