@@ -1,0 +1,212 @@
+Class Action Settlements from classaction.org
+Scraped on: 2026-01-08
+Deadline Filter: Next 90 days (through April 8, 2026)
+
+===== SETTLEMENTS WITH DEADLINES IN NEXT 90 DAYS =====
+
+1. Papaya Gaming - Bots Class Action Settlement
+   - Deadline: 1/30/26 (22 days left)
+   - Payout: Varies
+   - Proof Required: No
+   - Eligibility: Had a Papaya Gaming account and made a deposit in one or more Papaya games between January 1, 2019 and September 5, 2024
+   - URL: Visit Official Settlement Website (need to extract)
+
+2. Mid America Pet Food - Salmonella Contamination Class Action Settlement
+   - Deadline: 2/5/26 (28 days left)
+   - Payout: Varies
+   - Proof Required: No
+   - Eligibility: Bought certain pet foods produced by Mid America Pet Food between October 31, 2022 and February 29, 2024
+   - URL: Visit Official Settlement Website (need to extract)
+
+3. 23andMe - Data Breach Class Action Settlement
+   - Deadline: 2/17/26 (40 days left)
+   - Payout: $100 - $10,000
+   - Proof Required: No
+   - Eligibility: Were a 23andMe customer between May 1, 2023 and October 1, 2023 and received notice that your personal information was compromised in a data breach
+   - URL: Visit Official Settlement Website (need to extract)
+   - **ALERT: Potential high value - up to $10,000**
+
+4. Naturalawn of America - Unwanted Texts Class Action Settlement
+   - Deadline: 1/6/26 (< 7 days left)
+   - Payout: Varies
+   - Proof Required: No
+   - Eligibility: Received unwanted texts from Naturalawn of America after requesting not to receive text messages
+   - URL: Visit Official Settlement Website (need to extract)
+
+5. Carolina Lease Management (North Carolina) Class Action Settlement
+   - Deadline: 1/7/26 (< 7 days left)
+   - Payout: Varies
+   - Proof Required: N/A
+   - Eligibility: Entered a rent-to-own agreement for a storage building with Carolina Lease Management Group and from whom the company tried to collect between April 8, 2017 and March 9, 2018
+   - URL: Visit Official Settlement Website (need to extract)
+
+6. Fathom Realty - Unwanted Texts Class Action Settlement
+   - Deadline: 1/7/26 (< 7 days left)
+   - Payout: $48
+   - Proof Required: No
+   - Eligibility: Received texts from or on behalf of Fathom's former real estate agent, Marcus Edwards, between August 15, 2021 and December 15, 2024 when your number was on the National Do Not Call Registry
+   - URL: Visit Official Settlement Website (need to extract)
+
+7. Nations Direct Mortgage - Data Breach Class Action Settlement
+   - Deadline: 1/7/26 (< 7 days left)
+   - Payout: Up to $2,750
+   - Proof Required: No
+   - Eligibility: Private information was compromised in the December 2023 Nations Direct Mortgage data breach
+   - URL: Visit Official Settlement Website (need to extract)
+   - **ALERT: Potential high value - up to $2,750**
+
+8. Oklahoma Spine Hospital - Data Breach Class Action Settlement
+   - Deadline: 1/7/26 (< 7 days left)
+   - Payout: $100 - $10,100
+   - Proof Required: No
+   - Eligibility: Received a notice stating that your personal information was exposed in a July 2024 Oklahoma Spine Hospital data breach
+   - URL: Visit Official Settlement Website (need to extract)
+   - **ALERT: Potential high value - up to $10,100**
+
+9. Redeemer Health - Data Privacy Class Action Settlement
+   - Deadline: 1/9/26 (< 7 days left)
+   - Payout: $25
+   - Proof Required: No
+   - Eligibility: Were a patient of Redeemer Health between January 1, 2019 and March 21, 2023 and used Redeemer's website during that time
+   - URL: Visit Official Settlement Website (need to extract)
+
+10. Restek Corporation - Data Breach Class Action Settlement
+    - Deadline: 1/9/26 (< 7 days left)
+    - Payout: $50 - $3,500
+    - Proof Required: No
+    - Eligibility: Personal information was exposed in the June 2023 Restek Corporation data breach
+    - URL: Visit Official Settlement Website (need to extract)
+    - **ALERT: Potential high value - up to $3,500**
+
+11. Wells Fargo COVID Forbearance Class Action Settlement
+    - Deadline: 1/10/26 (< 7 days left)
+    - Payout: Varies
+    - Proof Required: Yes
+    - Eligibility: Were provided a mortgage forbearance by Wells Fargo during the COVID-19 pandemic without informed consent
+    - URL: Visit Official Settlement Website (need to extract)
+
+12. Behavioral Health Resources - Data Breach Class Action Settlement
+    - Deadline: 1/12/26 (< 7 days left)
+    - Payout: $100 to $5,000
+    - Proof Required: No
+    - Eligibility: Received notice of the November 2024 Behavioral Health Resources data breach
+    - URL: Visit Official Settlement Website (need to extract)
+    - **ALERT: Potential high value - up to $5,000**
+
+
+13. Dakota Eye Institute - Data Breach Class Action Settlement
+    - Deadline: 1/12/26 (< 7 days left)
+    - Payout: $45 - $5,000
+    - Proof Required: No
+    - Eligibility: Personal information was exposed in a Dakota Eye Institute data breach discovered in October 2023
+    - URL: Visit Official Settlement Website (need to extract)
+    - **ALERT: Potential high value - up to $5,000**
+
+14. Instinct Pet Foods - Data Breach Class Action Settlement
+    - Deadline: 1/12/26 (< 7 days left)
+    - Payout: $60 - $4,500
+    - Proof Required: No
+    - Eligibility: Personal information was exposed in a data breach Instinct Pet Foods discovered in October 2024
+    - URL: Visit Official Settlement Website (need to extract)
+    - **ALERT: Potential high value - up to $4,500**
+
+15. Liberty Hospital - Data Breach Class Action Settlement
+    - Deadline: 1/12/26 (< 7 days left)
+    - Payout: $150 - $500
+    - Proof Required: No
+    - Eligibility: Personal information was affected by the December 2023 Liberty Hospital data breach
+    - URL: Visit Official Settlement Website (need to extract)
+
+16. Multnomah County - Property Foreclosures Class Action Settlement
+    - Deadline: 1/12/26 (< 7 days left)
+    - Payout: Varies
+    - Proof Required: Yes
+    - Eligibility: Held or are the heir and successor to a person or entity who held an ownership interest in property that was foreclosed on and sold in Multnomah County between October 12, 2017 and June 25, 2025
+    - URL: Visit Official Settlement Website (need to extract)
+
+17. Planned Parenthood of Montana - Data Breach Class Action Settlement
+    - Deadline: 1/12/26 (< 7 days left)
+    - Payout: $20 to $5,000
+    - Proof Required: No
+    - Eligibility: Received notice that their private information may have been compromised in a Planned Parenthood of Montana data breach, which took place in August 2024
+    - URL: Visit Official Settlement Website (need to extract)
+    - **ALERT: Potential high value - up to $5,000**
+
+18. City of Hope National Medical Center - Data Breach Class Action Settlement
+    - Deadline: 1/13/26 (< 7 days left)
+    - Payout: $100 - $5,250
+    - Proof Required: No
+    - Eligibility: Received notice of a data breach affecting City of Hope National Medical Center that was discovered in October 2023
+    - URL: Visit Official Settlement Website (need to extract)
+    - **ALERT: Potential high value - up to $5,250**
+
+
+19. Mile Hi Foods - Data Breach Class Action Settlement
+    - Deadline: 1/13/26 (< 7 days left)
+    - Payout: Up to $50 - $3,000
+    - Proof Required: No
+    - Eligibility: Got a notice from Mile Hi Foods, Co. about a September 2024 data breach
+    - URL: Visit Official Settlement Website (need to extract)
+    - **ALERT: Potential high value - up to $3,000**
+
+20. Orthopedics Rhode Island - Data Breach Class Action Settlement
+    - Deadline: 1/13/26 (< 7 days left)
+    - Payout: $100 - $5,000
+    - Proof Required: No
+    - Eligibility: Were sent a notice stating that your personal information was potentially compromised in a September 2024 Orthopedics Rhode Island data breach
+    - URL: Visit Official Settlement Website (need to extract)
+    - **ALERT: Potential high value - up to $5,000**
+
+21. San Diego Unified School District - Data Breach Class Action Settlement
+    - Deadline: 1/13/26 (< 7 days left)
+    - Payout: $40 - $2,500
+    - Proof Required: No
+    - Eligibility: Personal information was potentially impacted by an October 2022 data breach affecting San Diego Unified School District
+    - URL: Visit Official Settlement Website (need to extract)
+    - **ALERT: Potential high value - up to $2,500**
+
+22. Therapeutic Health Services - Data Breach Class Action Settlement
+    - Deadline: 1/13/26 (< 7 days left)
+    - Payout: $100 - $5,100
+    - Proof Required: No
+    - Eligibility: Personal information was compromised in a February 2024 data breach involving Therapeutic Health Services
+    - URL: Visit Official Settlement Website (need to extract)
+    - **ALERT: Potential high value - up to $5,100**
+
+23. RIBridges - Data Breach Class Action Settlement
+    - Deadline: 1/14/26 (< 7 days left)
+    - Payout: $100 - $5,000
+    - Proof Required: No
+    - Eligibility: Personal information was exposed in a data breach involving the Rhode Island RIBridges system
+    - URL: Visit Official Settlement Website (need to extract)
+    - **ALERT: Potential high value - up to $5,000**
+
+24. Toyota Hands-Free Echo Class Action Settlement
+    - Deadline: 1/14/26 (< 7 days left)
+    - Payout: Injunctive Relief
+    - Proof Required: N/A
+    - Eligibility: Owned, bought or leased certain 2014-2019 Toyota vehicles in certain states
+    - URL: Visit Official Settlement Website (need to extract)
+
+25. AirportParking.com - Booking Fees (California) Class Action Settlement
+    - Deadline: 1/15/26 (11 days left)
+    - Payout: Varies
+    - Proof Required: No
+    - Eligibility: Made a booking on AirportParkingReservations.com or AirportParking.com between July 1, 2024 and March 10, 2025 as a California resident and paid a mandatory service charge
+    - URL: Visit Official Settlement Website (need to extract)
+
+26. Cencora, The Lash Group - Data Breach Class Action Settlement
+    - Deadline: 1/19/26 (11 days left)
+    - Payout: Up to $5,000
+    - Proof Required: No
+    - Eligibility: Personal information was exposed in a data breach disclosed in February 2024 that involved Cencora or The Lash Group
+    - URL: Visit Official Settlement Website (need to extract)
+    - **ALERT: Potential high value - up to $5,000**
+
+27. Robert Morris University - COVID Tuition Class Action Settlement
+    - Deadline: 1/19/26 (11 days left)
+    - Payout: Varies
+    - Proof Required: N/A
+    - Eligibility: Were enrolled at Robert Morris University during the Spring 2020 semester and paid tuition or fees
+    - URL: Visit Official Settlement Website (need to extract)
+
