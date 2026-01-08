@@ -1,0 +1,164 @@
+CLASS ACTION SETTLEMENT SCAN REPORT
+Timestamp: 23:06 Jan 07 2026
+Scan Date: January 7, 2026
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**EXECUTIVE SUMMARY**
+
+• Total Settlements Found: 24 settlements with claim deadlines within 90 days
+• High-Value Settlements: 23 settlements offering over $1,000 per claimant
+• Data Sources: classaction.org, topclassactions.com
+• Output File: /home/ubuntu/art-of-proof/phoenix/data/class_actions.json
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**⚠️ HIGH-VALUE SETTLEMENT ALERTS (>$1,000 PER CLAIMANT)**
+
+**URGENT - EXPIRING SOON:**
+
+1. **Oklahoma Spine Hospital - Data Breach**
+   • Payout: Up to $10,100
+   • Deadline: January 7, 2026 (0 days remaining - TODAY!)
+   • URL: https://www.classaction.org/settlements
+   • Eligibility: Received notice of July 2024 data breach
+
+2. **Nations Direct Mortgage - Data Breach**
+   • Payout: Up to $2,750
+   • Deadline: January 7, 2026 (0 days remaining - TODAY!)
+   • URL: https://www.classaction.org/settlements
+   • Eligibility: December 2023 data breach victims
+
+3. **Restek Corporation - Data Breach**
+   • Payout: Up to $3,500
+   • Deadline: January 9, 2026 (2 days remaining)
+   • URL: https://www.classaction.org/settlements
+   • Eligibility: June 2023 data breach victims
+
+**EXPIRING THIS WEEK:**
+
+4. **Behavioral Health Resources - Data Breach**
+   • Payout: Up to $5,000
+   • Deadline: January 12, 2026 (5 days remaining)
+   • URL: https://www.classaction.org/settlements
+
+5. **Dakota Eye Institute - Data Breach**
+   • Payout: Up to $5,000
+   • Deadline: January 12, 2026 (5 days remaining)
+   • URL: https://www.DakotaEyeSecurityIncident.com
+
+6. **Instinct Pet Foods - Data Breach**
+   • Payout: Up to $4,500
+   • Deadline: January 12, 2026 (5 days remaining)
+   • URL: https://www.classaction.org/settlements
+
+7. **Planned Parenthood of Montana - Data Breach**
+   • Payout: Up to $5,000
+   • Deadline: January 12, 2026 (5 days remaining)
+   • URL: https://www.classaction.org/settlements
+
+8. **City of Hope National Medical Center - Data Breach**
+   • Payout: Up to $5,250
+   • Deadline: January 13, 2026 (6 days remaining)
+   • URL: https://www.classaction.org/settlements
+
+9. **Orthopedics Rhode Island - Data Breach**
+   • Payout: Up to $5,000
+   • Deadline: January 13, 2026 (6 days remaining)
+   • URL: https://www.classaction.org/settlements
+
+10. **San Diego Unified School District - Data Breach**
+    • Payout: Up to $2,500
+    • Deadline: January 13, 2026 (6 days remaining)
+    • URL: https://www.sdusddatasettlement.com/
+
+11. **Therapeutic Health Services - Data Breach**
+    • Payout: Up to $5,100
+    • Deadline: January 13, 2026 (6 days remaining)
+    • URL: https://www.classaction.org/settlements
+
+12. **RIBridges - Data Breach**
+    • Payout: Up to $5,000
+    • Deadline: January 14, 2026 (7 days remaining)
+    • URL: https://www.classaction.org/settlements
+
+**HIGHEST PAYOUT SETTLEMENTS:**
+
+1. **Hafetz - Data Breach**: Up to $10,000 (Deadline: Jan 22, 2026)
+2. **Oklahoma Spine Hospital**: Up to $10,100 (Deadline: Jan 7, 2026 - TODAY!)
+3. **23andMe - Data Breach**: Up to $10,000 (Deadline: Feb 17, 2026)
+4. **First Choice Dental**: Up to $6,000 (Deadline: Jan 28, 2026)
+5. **Silvergate Bank FTX**: Up to $5,500 (Deadline: Jan 31, 2026)
+6. **Benefit Profiles**: Up to $5,500 (Deadline: Jan 20, 2026)
+7. **Falcon Healthcare**: Up to $5,480 (Deadline: Jan 27, 2026)
+
+**ADDITIONAL HIGH-VALUE SETTLEMENTS (2+ WEEKS):**
+
+13. **Cencora, The Lash Group - Data Breach**
+    • Payout: Up to $5,000
+    • Deadline: January 19, 2026 (12 days remaining)
+
+14. **Trinity Health Corporation - Data Breach**
+    • Payout: Up to $1,000+
+    • Deadline: January 19, 2026 (12 days remaining)
+
+15. **Benefit Profiles - Data Breach**
+    • Payout: Up to $5,500
+    • Deadline: January 20, 2026 (13 days remaining)
+
+16. **Hafetz - Data Breach**
+    • Payout: Up to $10,000
+    • Deadline: January 22, 2026 (15 days remaining)
+
+17. **Progressive Leasing - Data Breach**
+    • Payout: Up to $5,100
+    • Deadline: January 22, 2026 (15 days remaining)
+
+18. **Asheville Arthritis - Data Breach**
+    • Payout: Up to $5,000
+    • Deadline: January 26, 2026 (19 days remaining)
+
+19. **Falcon Healthcare - Data Breach**
+    • Payout: Up to $5,480
+    • Deadline: January 27, 2026 (20 days remaining)
+
+20. **First Choice Dental - Data Breach**
+    • Payout: Up to $6,000
+    • Deadline: January 28, 2026 (21 days remaining)
+
+21. **Silvergate Bank FTX**
+    • Payout: Up to $5,500
+    • Deadline: January 31, 2026 (24 days remaining)
+
+22. **23andMe - Data Breach**
+    • Payout: Up to $10,000
+    • Deadline: February 17, 2026 (41 days remaining)
+
+23. **Alabama Cardiovascular Group - Data Breach**
+    • Payout: Up to $5,000
+    • Deadline: March 6, 2026 (58 days remaining)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**KEY FINDINGS:**
+
+• Most settlements are data breach related (22 out of 24)
+• Average maximum payout for high-value settlements: $5,217
+• Two settlements expire TODAY (Oklahoma Spine Hospital and Nations Direct Mortgage)
+• 12 settlements expire within the next 7 days
+• Most settlements require no proof of purchase for basic claims
+• Higher payouts typically require documentation of actual losses
+
+**RECOMMENDATIONS:**
+
+1. **IMMEDIATE ACTION REQUIRED**: File claims for Oklahoma Spine Hospital and Nations Direct Mortgage TODAY
+2. Review eligibility for all settlements expiring within 7 days
+3. Gather documentation for settlements requiring proof of losses
+4. Set calendar reminders for upcoming deadlines
+5. Monitor settlement websites for updates on claim processing
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Report Generated: 23:06 Jan 07 2026
+Data Location: /home/ubuntu/art-of-proof/phoenix/data/class_actions.json
+Next Scan Recommended: January 14, 2026

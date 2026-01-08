@@ -16,6 +16,12 @@
 - **Purpose:** Graph-based intelligence with Constitutional AI
 - **Deploy:** Docker Compose ready
 
+### Class Action Intelligence System
+- **Location:** `/intelligence/class-actions/`
+- **Status:** ✅ Active & Monitoring
+- **Purpose:** Track high-value class action settlements (>$1,000)
+- **Data:** 24 settlements, 23 high-value opportunities
+
 ## 📚 Documentation Archive
 
 ### Architecture & Philosophy (Docs 1-10)
@@ -68,6 +74,7 @@
 - ✅ Global Cortex (Dashboard)
 - ✅ Global Nexus (Coordination)
 - ✅ ECP Core (Governance)
+- ✅ Class Action Intelligence (Active monitoring)
 
 **Total Documents Analyzed:** 32
 **Total Lines of Code:** 5,000+

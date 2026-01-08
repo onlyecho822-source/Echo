@@ -1,0 +1,463 @@
+{
+  "scan_timestamp": "2026-01-07 00:00:00",
+  "scan_date": "2026-01-07",
+  "total_settlements_found": 24,
+  "settlements_over_1000": 23,
+  "data_sources": [
+    "classaction.org",
+    "topclassactions.com"
+  ],
+  "settlements": [
+    {
+      "settlement_name": "Oklahoma Spine Hospital - Data Breach Class Action Settlement",
+      "payout_min": 100,
+      "payout_max": 10100,
+      "payout_description": "$100 - $10,100",
+      "claim_deadline": "2026-01-07",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Received a notice stating that your personal information was exposed in a July 2024 Oklahoma Spine Hospital data breach",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 0
+    },
+    {
+      "settlement_name": "Nations Direct Mortgage - Data Breach Class Action Settlement",
+      "payout_min": 0,
+      "payout_max": 2750,
+      "payout_description": "Up to $2,750",
+      "claim_deadline": "2026-01-07",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Private information was compromised in the December 2023 Nations Direct Mortgage data breach",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 0
+    },
+    {
+      "settlement_name": "Restek Corporation - Data Breach Class Action Settlement",
+      "payout_min": 50,
+      "payout_max": 3500,
+      "payout_description": "$50 - $3,500",
+      "claim_deadline": "2026-01-09",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Personal information was exposed in the June 2023 Restek Corporation data breach",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 2
+    },
+    {
+      "settlement_name": "Behavioral Health Resources - Data Breach Class Action Settlement",
+      "payout_min": 100,
+      "payout_max": 5000,
+      "payout_description": "$100 to $5,000",
+      "claim_deadline": "2026-01-12",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Received notice of the November 2024 Behavioral Health Resources data breach",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 5
+    },
+    {
+      "settlement_name": "Dakota Eye Institute - Data Breach Class Action Settlement",
+      "payout_min": 45,
+      "payout_max": 5000,
+      "payout_description": "$45 - $5,000",
+      "claim_deadline": "2026-01-12",
+      "claim_url": "https://www.DakotaEyeSecurityIncident.com",
+      "eligibility": "Personal information was exposed in a Dakota Eye Institute data breach discovered in October 2023",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 5
+    },
+    {
+      "settlement_name": "Instinct Pet Foods - Data Breach Class Action Settlement",
+      "payout_min": 60,
+      "payout_max": 4500,
+      "payout_description": "$60 - $4,500",
+      "claim_deadline": "2026-01-12",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Personal information was exposed in a data breach Instinct Pet Foods discovered in October 2024",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 5
+    },
+    {
+      "settlement_name": "Planned Parenthood of Montana - Data Breach Class Action Settlement",
+      "payout_min": 20,
+      "payout_max": 5000,
+      "payout_description": "$20 to $5,000",
+      "claim_deadline": "2026-01-12",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Received notice that their private information may have been compromised in a Planned Parenthood of Montana data breach, which took place in August 2024",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 5
+    },
+    {
+      "settlement_name": "City of Hope National Medical Center - Data Breach Class Action Settlement",
+      "payout_min": 100,
+      "payout_max": 5250,
+      "payout_description": "$100 - $5,250",
+      "claim_deadline": "2026-01-13",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Received notice of a data breach affecting City of Hope National Medical Center that was discovered in October 2023",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 6
+    },
+    {
+      "settlement_name": "Orthopedics Rhode Island - Data Breach Class Action Settlement",
+      "payout_min": 100,
+      "payout_max": 5000,
+      "payout_description": "$100 - $5,000",
+      "claim_deadline": "2026-01-13",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Were sent a notice stating that your personal information was potentially compromised in a September 2024 Orthopedics Rhode Island data breach",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 6
+    },
+    {
+      "settlement_name": "San Diego Unified School District - Data Breach Class Action Settlement",
+      "payout_min": 40,
+      "payout_max": 2500,
+      "payout_description": "$40 - $2,500",
+      "claim_deadline": "2026-01-13",
+      "claim_url": "https://www.sdusddatasettlement.com/",
+      "eligibility": "California residents who received notification from SDUSD that their Personal Information may have been compromised in the ransomware incident on October 25, 2022",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 6
+    },
+    {
+      "settlement_name": "Therapeutic Health Services - Data Breach Class Action Settlement",
+      "payout_min": 100,
+      "payout_max": 5100,
+      "payout_description": "$100 - $5,100",
+      "claim_deadline": "2026-01-13",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Personal information was compromised in a February 2024 data breach involving Therapeutic Health Services",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 6
+    },
+    {
+      "settlement_name": "RIBridges - Data Breach Class Action Settlement",
+      "payout_min": 100,
+      "payout_max": 5000,
+      "payout_description": "$100 - $5,000",
+      "claim_deadline": "2026-01-14",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Personal information was exposed in a data breach involving the Rhode Island RIBridges system",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 7
+    },
+    {
+      "settlement_name": "Cencora, The Lash Group - Data Breach Class Action Settlement",
+      "payout_min": 0,
+      "payout_max": 5000,
+      "payout_description": "Up to $5,000",
+      "claim_deadline": "2026-01-19",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Personal information was exposed in a data breach disclosed in February 2024 that involved Cencora or The Lash Group",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 12
+    },
+    {
+      "settlement_name": "Trinity Health Corporation - Data Breach Class Action Settlement",
+      "payout_min": 115,
+      "payout_max": 1000,
+      "payout_description": "$115 - $1,000+",
+      "claim_deadline": "2026-01-19",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Personal information was exposed in a January 2021 data breach affecting Trinity Health Corporation",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 12
+    },
+    {
+      "settlement_name": "Benefit Profiles - Data Breach Class Action Settlement",
+      "payout_min": 0,
+      "payout_max": 5500,
+      "payout_description": "Up to $5,500",
+      "claim_deadline": "2026-01-20",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Data breach victims",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 13
+    },
+    {
+      "settlement_name": "Hafetz - Data Breach Class Action Settlement",
+      "payout_min": 50,
+      "payout_max": 10000,
+      "payout_description": "$50 - $10,000",
+      "claim_deadline": "2026-01-22",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Data breach victims",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 15
+    },
+    {
+      "settlement_name": "Progressive Leasing - Data Breach Class Action Settlement",
+      "payout_min": 0,
+      "payout_max": 5100,
+      "payout_description": "Up to $400 - $5,100",
+      "claim_deadline": "2026-01-22",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Data breach victims",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 15
+    },
+    {
+      "settlement_name": "Asheville Arthritis - Data Breach Class Action Settlement",
+      "payout_min": 100,
+      "payout_max": 5000,
+      "payout_description": "$100 - $5,000",
+      "claim_deadline": "2026-01-26",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Data breach victims",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 19
+    },
+    {
+      "settlement_name": "Falcon Healthcare - Data Breach Class Action Settlement",
+      "payout_min": 60,
+      "payout_max": 5480,
+      "payout_description": "$60 - $5,480",
+      "claim_deadline": "2026-01-27",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Data breach victims",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 20
+    },
+    {
+      "settlement_name": "First Choice Dental - Data Breach Class Action Settlement",
+      "payout_min": 50,
+      "payout_max": 6000,
+      "payout_description": "$50 - $6,000",
+      "claim_deadline": "2026-01-28",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Data breach victims",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 21
+    },
+    {
+      "settlement_name": "Silvergate Bank FTX Class Action Settlement",
+      "payout_min": 0,
+      "payout_max": 5500,
+      "payout_description": "Up to $500 - $5,500",
+      "claim_deadline": "2026-01-31",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "FTX customers affected by Silvergate Bank",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 24
+    },
+    {
+      "settlement_name": "Joybird, La-Z-Boy deceptive discounts class action settlement",
+      "payout_min": 115,
+      "payout_max": 115,
+      "payout_description": "$115 cash or store credit",
+      "claim_deadline": "2026-02-13",
+      "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/",
+      "eligibility": "Purchased Joybird or La-Z-Boy products during the class period",
+      "proof_required": "TBD",
+      "source": "topclassactions.com",
+      "days_remaining": 37
+    },
+    {
+      "settlement_name": "23andMe - Data Breach Class Action Settlement",
+      "payout_min": 100,
+      "payout_max": 10000,
+      "payout_description": "$100 - $10,000",
+      "claim_deadline": "2026-02-17",
+      "claim_url": "https://www.classaction.org/settlements",
+      "eligibility": "Were a 23andMe customer between May 1, 2023 and October 1, 2023 and received notice that your personal information was compromised in a data breach",
+      "proof_required": "No",
+      "source": "classaction.org",
+      "days_remaining": 41
+    },
+    {
+      "settlement_name": "Alabama Cardiovascular Group data breach class action settlement",
+      "payout_min": 0,
+      "payout_max": 5000,
+      "payout_description": "Up to $5,000 for documented losses or a pro rata cash payment, plus two years of credit monitoring",
+      "claim_deadline": "2026-03-06",
+      "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/",
+      "eligibility": "Alabama Cardiovascular Group data breach victims",
+      "proof_required": "Yes (for documented losses)",
+      "source": "topclassactions.com",
+      "days_remaining": 58
+    }
+  ],
+  "high_value_alerts": [
+    {
+      "settlement_name": "Oklahoma Spine Hospital - Data Breach Class Action Settlement",
+      "payout_max": 10100,
+      "claim_deadline": "2026-01-07",
+      "days_remaining": 0,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Nations Direct Mortgage - Data Breach Class Action Settlement",
+      "payout_max": 2750,
+      "claim_deadline": "2026-01-07",
+      "days_remaining": 0,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Restek Corporation - Data Breach Class Action Settlement",
+      "payout_max": 3500,
+      "claim_deadline": "2026-01-09",
+      "days_remaining": 2,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Behavioral Health Resources - Data Breach Class Action Settlement",
+      "payout_max": 5000,
+      "claim_deadline": "2026-01-12",
+      "days_remaining": 5,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Dakota Eye Institute - Data Breach Class Action Settlement",
+      "payout_max": 5000,
+      "claim_deadline": "2026-01-12",
+      "days_remaining": 5,
+      "claim_url": "https://www.DakotaEyeSecurityIncident.com"
+    },
+    {
+      "settlement_name": "Instinct Pet Foods - Data Breach Class Action Settlement",
+      "payout_max": 4500,
+      "claim_deadline": "2026-01-12",
+      "days_remaining": 5,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Planned Parenthood of Montana - Data Breach Class Action Settlement",
+      "payout_max": 5000,
+      "claim_deadline": "2026-01-12",
+      "days_remaining": 5,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "City of Hope National Medical Center - Data Breach Class Action Settlement",
+      "payout_max": 5250,
+      "claim_deadline": "2026-01-13",
+      "days_remaining": 6,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Orthopedics Rhode Island - Data Breach Class Action Settlement",
+      "payout_max": 5000,
+      "claim_deadline": "2026-01-13",
+      "days_remaining": 6,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "San Diego Unified School District - Data Breach Class Action Settlement",
+      "payout_max": 2500,
+      "claim_deadline": "2026-01-13",
+      "days_remaining": 6,
+      "claim_url": "https://www.sdusddatasettlement.com/"
+    },
+    {
+      "settlement_name": "Therapeutic Health Services - Data Breach Class Action Settlement",
+      "payout_max": 5100,
+      "claim_deadline": "2026-01-13",
+      "days_remaining": 6,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "RIBridges - Data Breach Class Action Settlement",
+      "payout_max": 5000,
+      "claim_deadline": "2026-01-14",
+      "days_remaining": 7,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Cencora, The Lash Group - Data Breach Class Action Settlement",
+      "payout_max": 5000,
+      "claim_deadline": "2026-01-19",
+      "days_remaining": 12,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Trinity Health Corporation - Data Breach Class Action Settlement",
+      "payout_max": 1000,
+      "claim_deadline": "2026-01-19",
+      "days_remaining": 12,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Benefit Profiles - Data Breach Class Action Settlement",
+      "payout_max": 5500,
+      "claim_deadline": "2026-01-20",
+      "days_remaining": 13,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Hafetz - Data Breach Class Action Settlement",
+      "payout_max": 10000,
+      "claim_deadline": "2026-01-22",
+      "days_remaining": 15,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Progressive Leasing - Data Breach Class Action Settlement",
+      "payout_max": 5100,
+      "claim_deadline": "2026-01-22",
+      "days_remaining": 15,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Asheville Arthritis - Data Breach Class Action Settlement",
+      "payout_max": 5000,
+      "claim_deadline": "2026-01-26",
+      "days_remaining": 19,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Falcon Healthcare - Data Breach Class Action Settlement",
+      "payout_max": 5480,
+      "claim_deadline": "2026-01-27",
+      "days_remaining": 20,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "First Choice Dental - Data Breach Class Action Settlement",
+      "payout_max": 6000,
+      "claim_deadline": "2026-01-28",
+      "days_remaining": 21,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Silvergate Bank FTX Class Action Settlement",
+      "payout_max": 5500,
+      "claim_deadline": "2026-01-31",
+      "days_remaining": 24,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "23andMe - Data Breach Class Action Settlement",
+      "payout_max": 10000,
+      "claim_deadline": "2026-02-17",
+      "days_remaining": 41,
+      "claim_url": "https://www.classaction.org/settlements"
+    },
+    {
+      "settlement_name": "Alabama Cardiovascular Group data breach class action settlement",
+      "payout_max": 5000,
+      "claim_deadline": "2026-03-06",
+      "days_remaining": 58,
+      "claim_url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/"
+    }
+  ]
+}
