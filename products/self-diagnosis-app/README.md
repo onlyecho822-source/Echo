@@ -1,8 +1,8 @@
 # The Human System Integrator
 
-**Product Category:** Self-Instrumentation & Personal Systems Thinking  
-**Status:** Concept / Pre-MVP  
-**Version:** 1.0  
+**Product Category:** Self-Instrumentation & Personal Systems Thinking
+**Status:** Concept / Pre-MVP
+**Version:** 1.0
 **Date:** December 20, 2025
 
 ---

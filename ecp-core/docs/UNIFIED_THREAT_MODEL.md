@@ -5,7 +5,7 @@
 
 ## 1. Executive Summary
 
-This document synthesizes two layers of adversarial critique into a single, unified threat model for the Echo Coordination Protocol. 
+This document synthesizes two layers of adversarial critique into a single, unified threat model for the Echo Coordination Protocol.
 
 *   **First-Order Threats (Technical Exploits):** Vulnerabilities in the *as-built* system that can be exploited through direct manipulation of its mechanics. These are threats to the system's **integrity**.
 *   **Second-Order Threats (Existential Exploits):** Vulnerabilities that emerge *after* the system is successful and integrated. These are not attacks on the system's code, but on its **relevance, authority, and purpose**. These are threats to the system's **survival**.

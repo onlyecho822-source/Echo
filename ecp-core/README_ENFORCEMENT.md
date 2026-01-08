@@ -261,7 +261,7 @@ result = analyze_data(data, context=context)
 # If ChatGPT classified differently:
 # - Manus: ethical_status="permissible", confidence=0.9
 # - ChatGPT: ethical_status="questionable", confidence=0.6
-# 
+#
 # Divergence calculated:
 # - Status distance: |0.7 - 0.3| = 0.4
 # - Confidence delta: |0.9 - 0.6| = 0.3
@@ -280,12 +280,12 @@ result = analyze_data(data, context=context)
 
 ## Security Properties
 
-✅ **Tamper-Proof**: SHA-256 hash chain prevents modification  
-✅ **Non-Repudiation**: Agents cannot deny their actions  
-✅ **Audit Trail**: Complete record of all decisions  
-✅ **Referential Integrity**: Classifications must reference valid events  
-✅ **Automatic Escalation**: No human can suppress violations  
-✅ **Transparent Scoring**: Divergence calculation is explicit  
+✅ **Tamper-Proof**: SHA-256 hash chain prevents modification
+✅ **Non-Repudiation**: Agents cannot deny their actions
+✅ **Audit Trail**: Complete record of all decisions
+✅ **Referential Integrity**: Classifications must reference valid events
+✅ **Automatic Escalation**: No human can suppress violations
+✅ **Transparent Scoring**: Divergence calculation is explicit
 
 ## Troubleshooting
 
@@ -351,6 +351,6 @@ storage_backend.register_agent("manus")
 
 ---
 
-**Status**: Production-Ready  
-**Enforcement**: Mandatory and Non-Bypassable  
+**Status**: Production-Ready
+**Enforcement**: Mandatory and Non-Bypassable
 **Human Authority**: Preserved and Protected

@@ -22,29 +22,29 @@
 
 ### Key Differences and Why They Matter
 
-- **Deterministic orchestration**  
+- **Deterministic orchestration**
   The Agent Orchestrator makes sequencing explicit and repeatable, reducing race conditions and making behavior easier to test and reason about.
 
-- **Modular responsibility**  
+- **Modular responsibility**
   Splitting the Interpreter into agents lets you update or A/B test a single agent (for example, a new Mirror Extractor) without touching the rest of the system.
 
-- **Stronger auditability**  
+- **Stronger auditability**
   An Audit Agent and per‑agent audit trail make provenance and explainability first‑class, which is critical for trust and debugging.
 
-- **Operational scaling**  
+- **Operational scaling**
   The agent model supports horizontal scaling and parallel processing when you add optional sensors or external connectors.
 
-- **Preservation of prior state**  
+- **Preservation of prior state**
   The Saved Version inset documents the previous architecture so you can compare evolution and roll back if needed.
 
 ---
 
 ### Recommended Next Steps
 
-- **Keep the saved version** as the canonical baseline for rollback and historical comparison.  
-- **Define agent contracts** (input/output schema, SLAs, test vectors) so each agent can be developed and validated independently.  
-- **Implement the Orchestrator** with deterministic sequencing and idempotency guarantees.  
-- **Wire the Audit Agent** to produce human‑readable reasons for every decision and micro‑action.  
+- **Keep the saved version** as the canonical baseline for rollback and historical comparison.
+- **Define agent contracts** (input/output schema, SLAs, test vectors) so each agent can be developed and validated independently.
+- **Implement the Orchestrator** with deterministic sequencing and idempotency guarantees.
+- **Wire the Audit Agent** to produce human‑readable reasons for every decision and micro‑action.
 - **Pilot the agent model** on one component (e.g., Mirror Extractor Agent) to validate the approach before full migration.
 
 ---

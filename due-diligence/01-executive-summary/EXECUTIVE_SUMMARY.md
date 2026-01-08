@@ -2,7 +2,7 @@
 
 **Prepared For:** Potential Acquirer / Investor
 **Date:** December 20, 2025 at 16:48 EST
-**Status:** CONFIDENTIAL  
+**Status:** CONFIDENTIAL
 **Version:** 1.0
 
 ---

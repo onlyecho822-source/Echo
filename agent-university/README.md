@@ -1,7 +1,7 @@
 # Agent University: Evolution Through Verified Capability
 
-**Status:** Operational  
-**Classification:** AL-5+ Institutional Infrastructure  
+**Status:** Operational
+**Classification:** AL-5+ Institutional Infrastructure
 **Purpose:** Train, verify, sort, and evolve autonomous agents based on real performance, not hypothetical claims.
 
 ---
@@ -81,13 +81,13 @@ Agents are sorted into teams based on:
 def form_team(mission_requirements, agent_pool):
     # 1. Filter agents by verified capabilities
     qualified = [a for a in agent_pool if a.has_credentials(mission_requirements)]
-    
+
     # 2. Score compatibility based on past performance
     compatibility_matrix = build_compatibility_matrix(qualified)
-    
+
     # 3. Optimize team composition
     team = optimize_team(qualified, compatibility_matrix, mission_requirements)
-    
+
     return team
 ```
 

@@ -43,16 +43,16 @@ Tests your Zapier webhook connectivity to ensure the Sovereign OS can trigger au
    - Event: "Catch Hook"
    - Click "Continue"
    - **Copy the webhook URL** (looks like: `https://hooks.zapier.com/hooks/catch/123456/abcdef/`)
-   
+
 3. **Action Setup (Choose ONE):**
-   
+
    **Option A - Email Test:**
    - App: "Gmail" or "Email by Zapier"
    - Action: "Send Email"
    - To: Your email address
    - Subject: "Zapier Test - Sovereign OS"
    - Body: `Test triggered at {{timestamp}}`
-   
+
    **Option B - Google Sheets Test:**
    - App: "Google Sheets"
    - Action: "Create Spreadsheet Row"
@@ -142,21 +142,21 @@ Next steps:
 ## Troubleshooting
 
 ### ❌ Test Failed with Connection Error
-**Cause:** Can't reach Zapier webhook  
-**Fix:** 
+**Cause:** Can't reach Zapier webhook
+**Fix:**
 - Check internet connection
 - Verify webhook URL is correct (no extra spaces)
 - Make sure Zap is turned ON
 
 ### ❌ Test Failed with 404 Error
-**Cause:** Webhook URL is invalid  
+**Cause:** Webhook URL is invalid
 **Fix:**
 - Double-check you copied the complete URL
 - Verify the Zap still exists and is active
 - Try creating a new Zap and getting a fresh webhook URL
 
 ### ❌ Webhook Triggers but No Email/Sheet Update
-**Cause:** Action step in Zap is misconfigured  
+**Cause:** Action step in Zap is misconfigured
 **Fix:**
 - Go to Zapier dashboard → "Zap History"
 - Check if the Zap ran but the action failed
@@ -164,7 +164,7 @@ Next steps:
 - Test the action step manually
 
 ### ❌ Python Module Error
-**Cause:** Missing `requests` library  
+**Cause:** Missing `requests` library
 **Fix:**
 ```bash
 pip install requests
@@ -179,7 +179,7 @@ Once tests pass, you can:
 1. **Connect Feedback OS:**
    - Modify `feedback_minimal.py` to call this webhook
    - Every check-in triggers your Zap
-   
+
 2. **Create More Zaps:**
    - Alerts Zap: Send notifications on patterns
    - Logging Zap: Archive data to Google Sheets
@@ -212,9 +212,9 @@ If you encounter issues:
 
 ## Success Criteria
 
-✅ Python script runs without errors  
-✅ Both tests show "PASS"  
-✅ Email arrives or spreadsheet updates  
+✅ Python script runs without errors
+✅ Both tests show "PASS"
+✅ Email arrives or spreadsheet updates
 ✅ Ready to integrate with Feedback OS
 
 **Once all criteria met, Zapier fix is COMPLETE.**

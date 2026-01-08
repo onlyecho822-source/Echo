@@ -1,9 +1,9 @@
 # ECHO UNIVERSE: TRANSFORMATION STRATEGY PRESENTATION SCRIPT
 ## 15-Minute Enterprise Partnership Pitch
 
-**Presenter:** Echo Universe Founder  
-**Audience:** Microsoft Azure, Meta Reality Labs, Google Cloud Partnership Teams  
-**Duration:** 15 minutes (12 minutes presentation + 3 minutes Q&A)  
+**Presenter:** Echo Universe Founder
+**Audience:** Microsoft Azure, Meta Reality Labs, Google Cloud Partnership Teams
+**Duration:** 15 minutes (12 minutes presentation + 3 minutes Q&A)
 **Objective:** Secure enterprise partnerships for Global Nexus deployment
 
 ---

@@ -16,8 +16,8 @@ Violation of these laws results in:
 - System fragmentation
 - Loss of coherence
 
-**Total Laws:** 12  
-**Status:** Complete and binding  
+**Total Laws:** 12
+**Status:** Complete and binding
 **Scope:** All Echo implementations
 
 ---

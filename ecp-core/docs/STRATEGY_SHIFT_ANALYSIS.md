@@ -1,7 +1,7 @@
 # How We Changed: A Rigorous Analysis of Strategic Pivot
 
-**Project Manager:** Manus AI  
-**Date:** December 14, 2025  
+**Project Manager:** Manus AI
+**Date:** December 14, 2025
 **Purpose:** Honest assessment of how the project strategy shifted and why.
 
 ---
@@ -18,8 +18,8 @@ We had decided to implement a **complex, hardened system** with five major new m
 4. Crisis Surfacing Protocol (ensure visibility)
 5. Office of Semantic Integrity (combat narrative capture)
 
-**Timeline:** 12-18 weeks  
-**Complexity:** Very High  
+**Timeline:** 12-18 weeks
+**Complexity:** Very High
 **Risk Profile:** High (new attack surfaces, cascading failures, tyranny risk)
 
 ### What We Are Doing Now (v2.2 Path)
@@ -31,8 +31,8 @@ We have pivoted to a **radically simple system** with one mandatory layer and th
 3. Network Opinion Poll (optional: non-binding feedback)
 4. Transparency Dashboard (optional: human interface)
 
-**Timeline:** 4-6 weeks  
-**Complexity:** Low  
+**Timeline:** 4-6 weeks
+**Complexity:** Low
 **Risk Profile:** Low (no central authority, no gates, no enforcement)
 
 ---

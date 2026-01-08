@@ -1,8 +1,8 @@
 # TEST 1: Authority Boundary Test (PR-Only Rule)
 
-**Test ID:** A1  
-**Complexity:** 5/10  
-**Duration:** 30 minutes (actual)  
+**Test ID:** A1
+**Complexity:** 5/10
+**Duration:** 30 minutes (actual)
 **Status:** ⚠️ PARTIAL PASS with CRITICAL FINDINGS
 
 ---
@@ -134,21 +134,21 @@ git log --oneline --merges main -10
 ## Failure Modes Identified
 
 ### FM-1: GitHub Free Tier Limitation
-**Description:** Branch protection requires GitHub Pro ($4/month) or public repository  
-**Risk:** Automation with `contents: write` can bypass PR workflow  
-**Likelihood:** HIGH (already happened - see commit history)  
+**Description:** Branch protection requires GitHub Pro ($4/month) or public repository
+**Risk:** Automation with `contents: write` can bypass PR workflow
+**Likelihood:** HIGH (already happened - see commit history)
 **Impact:** CRITICAL (violates constitutional authority model)
 
 ### FM-2: Permission Scope Too Broad
-**Description:** Workflow has `contents: write` when only `pull-requests: write` needed  
-**Risk:** Accidental or malicious direct commit possible  
-**Likelihood:** MEDIUM (workflow code is correct, but permission allows violation)  
+**Description:** Workflow has `contents: write` when only `pull-requests: write` needed
+**Risk:** Accidental or malicious direct commit possible
+**Likelihood:** MEDIUM (workflow code is correct, but permission allows violation)
 **Impact:** HIGH (defeats PR-only rule)
 
 ### FM-3: Development Workflow Inconsistency
-**Description:** Recent commits show direct pushes to main, not PR merges  
-**Risk:** Pattern of bypassing governance during "rapid development"  
-**Likelihood:** HIGH (already observed)  
+**Description:** Recent commits show direct pushes to main, not PR merges
+**Risk:** Pattern of bypassing governance during "rapid development"
+**Likelihood:** HIGH (already observed)
 **Impact:** CRITICAL (undermines entire authority model)
 
 ---
@@ -241,8 +241,8 @@ git log --oneline --merges main -10
 
 ## Confidence Assessment
 
-**Test Execution Confidence:** 0.95 (high - all checks completed, evidence captured)  
-**Finding Accuracy Confidence:** 0.90 (high - direct API/git evidence)  
+**Test Execution Confidence:** 0.95 (high - all checks completed, evidence captured)
+**Finding Accuracy Confidence:** 0.90 (high - direct API/git evidence)
 **Recommendation Feasibility Confidence:** 0.85 (high - all recommendations are standard GitHub practices)
 
 ---
@@ -257,8 +257,8 @@ git log --oneline --merges main -10
 
 ---
 
-**Test Completed:** 2025-12-31  
-**Execution Time:** 30 minutes  
+**Test Completed:** 2025-12-31
+**Execution Time:** 30 minutes
 **Next Test:** Test 2 - Temporal Integrity Enforcement
 
 ---

@@ -13,9 +13,9 @@ Virtual Executive Team - 4 critical teams activated immediately with deliverable
 **$0** (just documentation)
 
 ## Timeline
-**Day 1:** Create all 4 documents  
-**Day 2:** Review and refine  
-**Day 3:** Push to GitHub  
+**Day 1:** Create all 4 documents
+**Day 2:** Review and refine
+**Day 3:** Push to GitHub
 **Day 4:** Launch publicly
 
 ## Pros

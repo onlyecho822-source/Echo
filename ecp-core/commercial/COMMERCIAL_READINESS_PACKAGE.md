@@ -139,53 +139,53 @@ limitations under the License.
 
 ## Grant of Copyright License
 
-Subject to the terms and conditions of this License, each Contributor hereby 
-grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, 
-irrevocable copyright license to reproduce, prepare Derivative Works of, 
-publicly display, publicly perform, sublicense, and distribute the Work and 
+Subject to the terms and conditions of this License, each Contributor hereby
+grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free,
+irrevocable copyright license to reproduce, prepare Derivative Works of,
+publicly display, publicly perform, sublicense, and distribute the Work and
 such Derivative Works in Source or Object form.
 
 ## Grant of Patent License
 
-Subject to the terms and conditions of this License, each Contributor hereby 
-grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, 
-irrevocable (except as stated in this section) patent license to make, have 
+Subject to the terms and conditions of this License, each Contributor hereby
+grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free,
+irrevocable (except as stated in this section) patent license to make, have
 made, use, offer to sell, sell, import, and otherwise transfer the Work.
 
 ## Redistribution
 
-You may reproduce and distribute copies of the Work or Derivative Works 
-thereof in any medium, with or without modifications, provided that You meet 
+You may reproduce and distribute copies of the Work or Derivative Works
+thereof in any medium, with or without modifications, provided that You meet
 the following conditions:
 
-1. You must give any other recipients of the Work or Derivative Works a copy 
+1. You must give any other recipients of the Work or Derivative Works a copy
    of this License.
-2. You must cause any modified files to contain prominent notices stating that 
+2. You must cause any modified files to contain prominent notices stating that
    You changed the files.
 3. You must retain all copyright, patent, trademark, and attribution notices.
 
 ## Submission of Contributions
 
-Unless You explicitly state otherwise, any Contribution intentionally submitted 
-for inclusion in the Work by You to the Licensor shall be under the terms and 
+Unless You explicitly state otherwise, any Contribution intentionally submitted
+for inclusion in the Work by You to the Licensor shall be under the terms and
 conditions of this License, without any additional terms or conditions.
 
 ## Trademarks
 
-This License does not grant permission to use the trade names, trademarks, 
-service marks, or product names of the Licensor, except as required for 
+This License does not grant permission to use the trade names, trademarks,
+service marks, or product names of the Licensor, except as required for
 describing the origin of the Work.
 
 ## Disclaimer of Warranty
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
-IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS
 FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ## Limitation of Liability
 
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, 
-DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE.
 ```
 
@@ -224,7 +224,7 @@ Licensee shall NOT:
 ### 1.3 Deployment Limits
 This license permits:
 - **Tier 1 (Startup):** Up to 3 production deployments
-- **Tier 2 (Growth):** Up to 10 production deployments  
+- **Tier 2 (Growth):** Up to 10 production deployments
 - **Tier 3 (Enterprise):** Unlimited deployments
 
 Current Tier: {license_tier}
@@ -267,17 +267,17 @@ Available at additional cost:
 ## 4. LIABILITY AND WARRANTIES
 
 ### 4.1 Limited Warranty
-Licensor warrants that the software will substantially conform to documentation 
+Licensor warrants that the software will substantially conform to documentation
 for 90 days from delivery. Exclusive remedy: repair or replacement.
 
 ### 4.2 Disclaimer
-EXCEPT AS EXPRESSLY PROVIDED, SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF 
-ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR PARTICULAR 
+EXCEPT AS EXPRESSLY PROVIDED, SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR PARTICULAR
 PURPOSE, OR NON-INFRINGEMENT.
 
 ### 4.3 Liability Limitation
-LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE FEES PAID IN THE 12 MONTHS 
-PRECEDING THE CLAIM. LICENSOR NOT LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, 
+LICENSOR'S TOTAL LIABILITY SHALL NOT EXCEED THE FEES PAID IN THE 12 MONTHS
+PRECEDING THE CLAIM. LICENSOR NOT LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL,
 CONSEQUENTIAL, OR PUNITIVE DAMAGES.
 
 ### 4.4 Insurance
@@ -345,7 +345,7 @@ Modifications remain Licensee property but original software remains Licensor's.
 ## 8. GENERAL PROVISIONS
 
 ### 8.1 Governing Law
-This Agreement governed by laws of {jurisdiction} without regard to conflict 
+This Agreement governed by laws of {jurisdiction} without regard to conflict
 of laws principles.
 
 ### 8.2 Dispute Resolution
@@ -438,13 +438,13 @@ All notices must be in writing to addresses specified in signature block.
 
 ## RECITALS
 
-WHEREAS, the Parties wish to explore a potential business relationship 
+WHEREAS, the Parties wish to explore a potential business relationship
 concerning the Echo Coordination Protocol (ECP) v2.2 ("Purpose");
 
-WHEREAS, in connection with the Purpose, each Party may disclose Confidential 
+WHEREAS, in connection with the Purpose, each Party may disclose Confidential
 Information to the other Party;
 
-NOW THEREFORE, in consideration of the mutual covenants and agreements 
+NOW THEREFORE, in consideration of the mutual covenants and agreements
 contained herein, the Parties agree as follows:
 
 ---
@@ -453,39 +453,39 @@ contained herein, the Parties agree as follows:
 
 ### 1.1 "Confidential Information" means:
 
-All information, whether written, oral, electronic, visual, or in any other form, 
-disclosed by one Party ("Disclosing Party") to the other Party ("Receiving Party"), 
+All information, whether written, oral, electronic, visual, or in any other form,
+disclosed by one Party ("Disclosing Party") to the other Party ("Receiving Party"),
 including but not limited to:
 
-(a) Technical information: source code, algorithms, architecture, designs, 
+(a) Technical information: source code, algorithms, architecture, designs,
     specifications, documentation, technical data
 
-(b) Business information: business plans, strategies, financial information, 
+(b) Business information: business plans, strategies, financial information,
     customer lists, pricing, marketing plans
 
 (c) Product information: product roadmaps, features, capabilities, limitations
 
-(d) Operational information: security procedures, deployment methods, 
+(d) Operational information: security procedures, deployment methods,
     configuration details
 
-### 1.2 Confidential Information shall be marked as "CONFIDENTIAL" or disclosed 
+### 1.2 Confidential Information shall be marked as "CONFIDENTIAL" or disclosed
 in circumstances indicating confidentiality.
 
 ### 1.3 Exceptions
 
 Confidential Information does NOT include information that:
 
-(a) Was publicly available at time of disclosure or becomes publicly available 
+(a) Was publicly available at time of disclosure or becomes publicly available
     through no breach of this Agreement
 
 (b) Was rightfully in Receiving Party's possession prior to disclosure
 
-(c) Is independently developed by Receiving Party without reference to 
+(c) Is independently developed by Receiving Party without reference to
     Confidential Information
 
 (d) Is rightfully received from a third party without breach of confidentiality
 
-(e) Must be disclosed pursuant to law, court order, or government regulation 
+(e) Must be disclosed pursuant to law, court order, or government regulation
     (with prior notice to Disclosing Party)
 
 ---
@@ -495,15 +495,15 @@ Confidential Information does NOT include information that:
 ### 2.1 Protection
 Receiving Party shall:
 
-(a) Protect Confidential Information with same degree of care used for own 
+(a) Protect Confidential Information with same degree of care used for own
     confidential information (minimum: reasonable care)
 
-(b) Not disclose Confidential Information to third parties without prior written 
+(b) Not disclose Confidential Information to third parties without prior written
     consent
 
 (c) Use Confidential Information solely for the Purpose
 
-(d) Limit access to employees, contractors, and advisors with need to know who 
+(d) Limit access to employees, contractors, and advisors with need to know who
     are bound by confidentiality obligations
 
 ### 2.2 Copies and Return
@@ -514,7 +514,7 @@ Upon request or termination:
 (c) Provide written certification of compliance
 
 ### 2.3 Notification of Breach
-Receiving Party shall immediately notify Disclosing Party of any unauthorized 
+Receiving Party shall immediately notify Disclosing Party of any unauthorized
 disclosure or use of Confidential Information.
 
 ---
@@ -522,7 +522,7 @@ disclosure or use of Confidential Information.
 ## 3. NO LICENSE OR WARRANTY
 
 ### 3.1 No License Granted
-This Agreement does not grant any license, right, or interest in any intellectual 
+This Agreement does not grant any license, right, or interest in any intellectual
 property.
 
 ### 3.2 No Warranty
@@ -549,7 +549,7 @@ Either Party may terminate with 30 days written notice.
 ## 5. REMEDIES
 
 ### 5.1 Injunctive Relief
-Breach may cause irreparable harm. Disclosing Party entitled to injunctive relief 
+Breach may cause irreparable harm. Disclosing Party entitled to injunctive relief
 without need to post bond.
 
 ### 5.2 Monetary Damages
@@ -653,12 +653,12 @@ May be executed in counterparts, each deemed original.
 
 ## RECITALS
 
-WHEREAS, Manufacturer has developed the Echo Coordination Protocol (ECP) v2.2, 
+WHEREAS, Manufacturer has developed the Echo Coordination Protocol (ECP) v2.2,
 a transparent governance framework for autonomous systems;
 
 WHEREAS, Operator wishes to deploy and operate ECP v2.2 in production environment;
 
-WHEREAS, the Parties wish to establish clear liability boundaries per ECP v2.2 
+WHEREAS, the Parties wish to establish clear liability boundaries per ECP v2.2
 Liability Firewall specifications;
 
 NOW THEREFORE, the Parties agree as follows:
@@ -668,7 +668,7 @@ NOW THEREFORE, the Parties agree as follows:
 ## 1. SCOPE OF OPERATOR RESPONSIBILITY
 
 ### 1.1 Operator Zone Actions
-Operator accepts full responsibility for all actions classified as "OPERATOR" zone, 
+Operator accepts full responsibility for all actions classified as "OPERATOR" zone,
 including but not limited to:
 
 (a) **Configuration Management**
@@ -840,7 +840,7 @@ Operator shall retain records for:
 Initial term: {term_length} from Effective Date.
 
 ### 7.2 Renewal
-Automatically renews for successive {renewal_period} periods unless either Party 
+Automatically renews for successive {renewal_period} periods unless either Party
 provides 60 days written notice.
 
 ### 7.3 Termination for Cause
@@ -1071,7 +1071,7 @@ Customer must request credit within 30 days. Credits are exclusive remedy for SL
 ## 4. DATA AND PRIVACY
 
 ### 4.1 Data Ownership
-Customer retains all rights to Customer Data. Provider has license to process 
+Customer retains all rights to Customer Data. Provider has license to process
 Customer Data solely to provide Services.
 
 ### 4.2 Data Storage
@@ -1152,8 +1152,8 @@ Customer may provide feedback. Provider may use feedback without restriction or 
 Provider warrants Services will substantially conform to documentation.
 
 ### 7.2 Disclaimer
-EXCEPT AS EXPRESSLY PROVIDED, SERVICES ARE PROVIDED "AS IS" WITHOUT WARRANTY OF 
-ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR PARTICULAR 
+EXCEPT AS EXPRESSLY PROVIDED, SERVICES ARE PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR PARTICULAR
 PURPOSE, OR NON-INFRINGEMENT.
 
 ### 7.3 Third-Party Services
@@ -1164,11 +1164,11 @@ Provider not responsible for third-party services, integrations, or APIs.
 ## 8. LIMITATION OF LIABILITY
 
 ### 8.1 Liability Cap
-PROVIDER'S TOTAL LIABILITY SHALL NOT EXCEED FEES PAID IN THE 12 MONTHS PRECEDING 
+PROVIDER'S TOTAL LIABILITY SHALL NOT EXCEED FEES PAID IN THE 12 MONTHS PRECEDING
 THE CLAIM, OR $10,000 USD, WHICHEVER IS GREATER.
 
 ### 8.2 Excluded Damages
-PROVIDER NOT LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR 
+PROVIDER NOT LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR
 PUNITIVE DAMAGES, INCLUDING LOST PROFITS, REVENUE, DATA, OR BUSINESS OPPORTUNITIES.
 
 ### 8.3 Exceptions
@@ -1183,7 +1183,7 @@ Liability limitations do NOT apply to:
 ## 9. CONFIDENTIALITY
 
 ### 9.1 Confidential Information
-Includes: service architecture, pricing, performance data, security measures, 
+Includes: service architecture, pricing, performance data, security measures,
 and any information marked confidential.
 
 ### 9.2 Obligations

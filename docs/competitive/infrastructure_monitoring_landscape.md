@@ -1,6 +1,6 @@
 # Infrastructure Monitoring Competitive Landscape Analysis
 
-**Date:** December 19, 2025  
+**Date:** December 19, 2025
 **Prepared for:** Echo Universe
 
 ---
@@ -68,8 +68,8 @@ These platforms discover and map infrastructure within an organization's control
 
 ### 2.1. Globalping
 
-**URL:** https://globalping.io/  
-**Developer:** jsDelivr team  
+**URL:** https://globalping.io/
+**Developer:** jsDelivr team
 **Model:** Free, open-source, community-powered
 
 #### Network Scale
@@ -133,8 +133,8 @@ These platforms discover and map infrastructure within an organization's control
 
 ### 2.2. RIPE Atlas
 
-**URL:** https://atlas.ripe.net/  
-**Developer:** RIPE NCC (Réseaux IP Européens Network Coordination Centre)  
+**URL:** https://atlas.ripe.net/
+**Developer:** RIPE NCC (Réseaux IP Européens Network Coordination Centre)
 **Model:** Free, non-profit, research-focused
 
 #### Network Scale
@@ -190,8 +190,8 @@ These platforms discover and map infrastructure within an organization's control
 
 ### 3.1. ThousandEyes (Cisco)
 
-**URL:** https://www.thousandeyes.com/  
-**Owner:** Cisco (acquired in 2020)  
+**URL:** https://www.thousandeyes.com/
+**Owner:** Cisco (acquired in 2020)
 **Model:** Enterprise SaaS, premium pricing
 
 #### Capabilities
@@ -248,8 +248,8 @@ These platforms discover and map infrastructure within an organization's control
 
 ### 3.2. Kentik
 
-**URL:** https://www.kentik.com/  
-**Headquarters:** San Francisco, CA  
+**URL:** https://www.kentik.com/
+**Headquarters:** San Francisco, CA
 **Model:** Enterprise network observability platform
 
 #### Capabilities

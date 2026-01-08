@@ -15,8 +15,8 @@ Solo founder using AI tools and automation to simulate 12 teams.
 **$0-$200/month** (tool subscriptions only)
 
 ## Timeline
-**Week 1:** Set up all agents  
-**Month 1:** Agents running autonomously  
+**Week 1:** Set up all agents
+**Month 1:** Agents running autonomously
 **Month 3:** Optimize based on data
 
 ## Pros

@@ -136,12 +136,12 @@ services:
     environment:
       NEO4J_AUTH: neo4j/your_password
       NEO4J_PLUGINS: '["apoc"]'
-    
+
   backend:
     environment:
       NEO4J_PASSWORD: your_password
       OPENAI_API_KEY: your_api_key
-    
+
   frontend:
     environment:
       REACT_APP_API_URL: http://localhost:8000
@@ -497,7 +497,7 @@ Built with:
 
 ---
 
-**Built with ❤️ by Nathan Poinsette**  
+**Built with ❤️ by Nathan Poinsette**
 Veteran-owned. Open Source. Always.
 
 Last Updated: December 17, 2025

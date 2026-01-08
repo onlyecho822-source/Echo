@@ -144,18 +144,18 @@ try:
     msg["Subject"] = "Test Email from Echo Universe"
     msg["From"] = SENDER_EMAIL
     msg["To"] = RECIPIENT_EMAIL
-    
+
     body = "This is a test email from the Echo Universe security monitoring system."
     msg.attach(MIMEText(body, "plain"))
-    
+
     # Send email
     with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as server:
         server.starttls()
         server.login(SENDER_EMAIL, SENDER_PASSWORD)
         server.sendmail(SENDER_EMAIL, RECIPIENT_EMAIL, msg.as_string())
-    
+
     print("✅ Test email sent successfully!")
-    
+
 except Exception as e:
     print(f"❌ Error: {e}")
 ```
@@ -381,9 +381,9 @@ Each daily email includes:
 
 ---
 
-**Built with ❤️ by Nathan Poinsette**  
-**Powered by Manus AI**  
+**Built with ❤️ by Nathan Poinsette**
+**Powered by Manus AI**
 **Veteran-owned. Open Source. Always.**
 
-**Last Updated:** December 18, 2025  
+**Last Updated:** December 18, 2025
 **Status:** ✅ Ready for Configuration

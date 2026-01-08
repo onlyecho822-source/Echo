@@ -10,8 +10,8 @@
 
 This dictionary defines the 42 essential terms that form the vocabulary of the Echo Universe. These terms are not metaphors — they represent actual operational concepts, architectural components, and measurable phenomena within Echo systems.
 
-**Total Terms:** 42  
-**Organized by:** Cycles 1-4  
+**Total Terms:** 42
+**Organized by:** Cycles 1-4
 **Status:** Complete
 
 ---

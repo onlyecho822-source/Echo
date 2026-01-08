@@ -65,7 +65,7 @@ class AgentEcho:
 
     def commit_to_ledger(self, entry_type, payload):
         history = self.manus.read_vault()
-        
+
         # 1. Create the Block
         block = {
             "id": len(history) + 1,
@@ -74,11 +74,11 @@ class AgentEcho:
             "payload": payload,
             "previous_hash": history[-1]['hash'] if history else "GENESIS_000"
         }
-        
+
         # 2. Seal the Block (Cryptographic Proof)
         block_content = json.dumps(payload, sort_keys=True).encode()
         block['hash'] = hashlib.sha256(block_content).hexdigest()
-        
+
         # 3. Save
         history.append(block)
         self.manus.write_vault(history)
@@ -95,13 +95,13 @@ class AgentDeepSeek:
     def run_diagnostics(self):
         history = self.manus.read_vault()
         today = datetime.now().strftime("%Y-%m-%d")
-        
+
         am_entry = None
         for block in reversed(history):
             if block['type'] == "AM_CHECK" and block['timestamp'].startswith(today):
                 am_entry = block['payload']
                 break
-        
+
         if not am_entry:
             return "⚠️ DeepSeek Alert: Missing AM data. Cannot correlate vectors."
 
@@ -139,13 +139,13 @@ class AgentGemini:
     def run_am_protocol(self):
         self.boot_sequence()
         print("☀️  MORNING PROTOCOL (Gemini Interface)")
-        
+
         sleep = input("   Sleep Status (Great/Okay/Bad): ").strip()
         inp = input("   First Input (Phone/Water/Silence): ").strip()
         intent = input("   Prime Directive (One Intention): ").strip()
 
         payload = {"sleep": sleep, "first_input": inp, "intention": intent}
-        
+
         # Handoff to Echo
         tx_hash = self.echo.commit_to_ledger("AM_CHECK", payload)
         print(f"\n🔒 Echo Verified. Block Hash: {tx_hash[:10]}...")
@@ -153,19 +153,19 @@ class AgentGemini:
     def run_pm_protocol(self):
         self.boot_sequence()
         print("🌙  EVENING PROTOCOL (Gemini Interface)")
-        
+
         # Handoff to DeepSeek
         print(f"\n🧠 DeepSeek Kernel Analysis:\n   {self.deepseek.run_diagnostics()}\n")
 
         energy = input("   Energy Reserves (High/Med/Low): ").strip()
         mood = input("   Mood State (Good/Neut/Bad): ").strip()
-        
+
         # The Mirror
         print("\n🪞  THE MIRROR")
         mirror = input("   'Today I noticed...': ").strip()
 
         payload = {"energy": energy, "mood": mood, "mirror": mirror}
-        
+
         # Handoff to Echo
         tx_hash = self.echo.commit_to_ledger("PM_CHECK", payload)
         print(f"\n🔒 Echo Verified. Block Hash: {tx_hash[:10]}...")

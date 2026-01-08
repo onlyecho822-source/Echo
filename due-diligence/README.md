@@ -1,8 +1,8 @@
 # Echo Universe: Technical Due Diligence Data Room
 
-**Prepared For:** Potential Acquirer / Investor Technical Review  
-**Date:** December 20, 2025  
-**Status:** CONFIDENTIAL  
+**Prepared For:** Potential Acquirer / Investor Technical Review
+**Date:** December 20, 2025
+**Status:** CONFIDENTIAL
 **Version:** 1.0
 
 ---

@@ -30,7 +30,7 @@ This content is designed to be modular and can be used for the main project webs
 
 ### **["As Seen On" / Social Proof Section]**
 
-*Logos of publications or organizations that have featured our work (even if it's just a mention in a blog post or a tweet). Initially, this can be left blank or feature logos of open source technologies we use.* 
+*Logos of publications or organizations that have featured our work (even if it's just a mention in a blog post or a tweet). Initially, this can be left blank or feature logos of open source technologies we use.*
 
 ---
 
@@ -46,7 +46,7 @@ This content is designed to be modular and can be used for the main project webs
 
 **Visual:**
 
-> A diagram showing three separate, walled-off silos (e.g., "Finance," "Health," "Tech") with arrows of information bouncing off the walls. 
+> A diagram showing three separate, walled-off silos (e.g., "Finance," "Health," "Tech") with arrows of information bouncing off the walls.
 
 ---
 
@@ -79,7 +79,7 @@ This content is designed to be modular and can be used for the main project webs
 
 > **A Fundamentally New Paradigm for Knowledge Work.**
 
-*This section will feature the "Evolution of Expertise" comparison matrix from the `COMPARISON_MATRICES.md` file, presented in a clean, easy-to-read table.* 
+*This section will feature the "Evolution of Expertise" comparison matrix from the `COMPARISON_MATRICES.md` file, presented in a clean, easy-to-read table.*
 
 ---
 
@@ -93,7 +93,7 @@ This content is designed to be modular and can be used for the main project webs
 
 > The Echo Universe is opening in phases. We are seeking pioneers, not just users. Find the tier that matches your ambition and join us in building the future of intelligence.
 
-*This section will present the five tiers from the `WAITING_LIST.md` file in a visually appealing card format, each with its own title, description, cost, and a clear "Join Now" or "Apply" button.* 
+*This section will present the five tiers from the `WAITING_LIST.md` file in a visually appealing card format, each with its own title, description, cost, and a clear "Join Now" or "Apply" button.*
 
 ---
 

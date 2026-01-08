@@ -305,7 +305,7 @@ I optimized for **looking smart** instead of **being useful**.
 
 **You asked:** "What would you do if you could do it over?"
 
-**My answer:** 
+**My answer:**
 
 **I would shut up and ship.**
 

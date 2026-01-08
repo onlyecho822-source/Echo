@@ -65,15 +65,15 @@ Subject: Echo Universe - Confidential Information Agreement
 
 Hi [Name],
 
-Thank you for your interest in the Echo Universe project. Before we can share 
+Thank you for your interest in the Echo Universe project. Before we can share
 confidential information, we require a signed Non-Disclosure Agreement.
 
-Please review the attached NDA and sign it using DocuSign (link below) or 
+Please review the attached NDA and sign it using DocuSign (link below) or
 print, sign, and return via email.
 
 [DocuSign Link or Attachment]
 
-The NDA protects our intellectual property and ensures we can work together 
+The NDA protects our intellectual property and ensures we can work together
 confidentially.
 
 Please let me know if you have any questions.
@@ -243,7 +243,7 @@ Subject: Confidential Information Disclosure - Immediate Action Required
 
 Dear [Recipient Name],
 
-We have become aware of an unauthorized disclosure of confidential information 
+We have become aware of an unauthorized disclosure of confidential information
 protected under our Non-Disclosure Agreement dated [DATE].
 
 Specifically: [DESCRIBE DISCLOSURE]
@@ -361,16 +361,16 @@ python3 /home/ubuntu/Echo/NDA/system/check_nda.py "email@example.com"
 
 For questions about the NDA system, contact:
 
-**Email:** contact@nathanpoinsette.com  
+**Email:** contact@nathanpoinsette.com
 **GitHub:** https://github.com/onlyecho822-source
 
 ---
 
-**Last Updated:** December 18, 2025  
-**Status:** ✅ Ready for Implementation  
+**Last Updated:** December 18, 2025
+**Status:** ✅ Ready for Implementation
 **Next Review:** June 18, 2026
 
 ---
 
-**Built with ❤️ by Nathan Poinsette**  
+**Built with ❤️ by Nathan Poinsette**
 **Veteran-owned. Open Source. Always.**
