@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "collection_date": "2026-01-08",
+    "timestamp": "2026-01-08T10:05:00Z",
+    "source": "GSAAuctions.gov",
+    "criteria": {
+      "estimated_value_min": 1000,
+      "bid_threshold_percentage": 50,
+      "categories": ["electronics", "vehicles", "equipment"]
+    },
+    "status": "template_created_access_blocked",
+    "notes": "Direct automated access to GSAAuctions.gov is blocked by CloudFront security. Manual data collection or alternative methods required."
+  },
+  "items": [
+    {
+      "item_id": "example-001",
+      "description": "Example item description",
+      "current_bid": 0,
+      "estimated_value": 0,
+      "bid_percentage": 0,
+      "auction_end_time": "YYYY-MM-DDTHH:MM:SSZ",
+      "location": {
+        "city": "",
+        "state": "",
+        "zip": ""
+      },
+      "category": "",
+      "item_url": "",
+      "notes": ""
+    }
+  ],
+  "summary": {
+    "total_items": 0,
+    "total_estimated_value": 0,
+    "average_bid_percentage": 0,
+    "categories_breakdown": {
+      "electronics": 0,
+      "vehicles": 0,
+      "equipment": 0
+    }
+  }
+}
