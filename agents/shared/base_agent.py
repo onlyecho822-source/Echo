@@ -113,7 +113,7 @@ class EchoAgent:
             os.chdir(self.repo_path)
             
             # Pull latest changes
-            subprocess.run(['git', 'pull', 'origin', 'main'], 
+            subprocess.run(['git', 'pull', 'origin', 'architecture-hierarchy'], 
                           capture_output=True, check=False)
             
             # Add files
@@ -132,7 +132,7 @@ class EchoAgent:
                 subprocess.run(['git', 'commit', '-m', commit_message], check=True)
                 
                 # Push to remote
-                subprocess.run(['git', 'push', 'origin', 'main'], check=True)
+                subprocess.run(['git', 'push', 'origin', 'architecture-hierarchy'], check=True)
                 
                 self.log_to_ledger('git_sync', {
                     'commit_message': commit_message,
