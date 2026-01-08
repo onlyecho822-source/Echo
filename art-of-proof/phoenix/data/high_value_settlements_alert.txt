@@ -1,0 +1,182 @@
+CLASS ACTION SETTLEMENT SCAN REPORT
+====================================
+Scan Timestamp: 2026-01-08T15:06:52Z
+Scan Date: January 8, 2026
+
+ALERT: HIGH-VALUE SETTLEMENTS IDENTIFIED
+-----------------------------------------
+
+Total Settlements Scanned: 35
+Settlements Offering >$1,000 Per Claimant: 17
+
+URGENT: SETTLEMENTS WITH IMMINENT DEADLINES (Within 7 Days)
+------------------------------------------------------------
+
+1. **Restek Corporation - Data Breach**
+   Maximum Payout: $3,500
+   Claim Deadline: January 9, 2026 (1 DAY REMAINING)
+   Eligibility: Personal information exposed in June 2023 Restek Corporation data breach
+   Proof Required: No
+   Claim URL: Visit Official Settlement Website via classaction.org
+
+2. **Behavioral Health Resources - Data Breach**
+   Maximum Payout: $5,000
+   Claim Deadline: January 12, 2026 (4 DAYS REMAINING)
+   Eligibility: Received notice of November 2024 Behavioral Health Resources data breach
+   Proof Required: No
+   Claim URL: Visit Official Settlement Website via classaction.org
+
+3. **Dakota Eye Institute - Data Breach**
+   Maximum Payout: $5,000
+   Claim Deadline: January 12, 2026 (4 DAYS REMAINING)
+   Eligibility: Personal information exposed in Dakota Eye Institute data breach (October 2023)
+   Proof Required: No
+   Claim URL: Visit Official Settlement Website via classaction.org
+
+4. **Instinct Pet Foods - Data Breach**
+   Maximum Payout: $4,500
+   Claim Deadline: January 12, 2026 (4 DAYS REMAINING)
+   Eligibility: Personal information exposed in Instinct Pet Foods data breach (October 2024)
+   Proof Required: No
+   Claim URL: Visit Official Settlement Website via classaction.org
+
+5. **Planned Parenthood of Montana - Data Breach**
+   Maximum Payout: $5,000
+   Claim Deadline: January 12, 2026 (4 DAYS REMAINING)
+   Eligibility: Received notice of Planned Parenthood of Montana data breach (August 2024)
+   Proof Required: No
+   Claim URL: Visit Official Settlement Website via classaction.org
+
+
+HIGH-VALUE SETTLEMENTS (7-14 Days Until Deadline)
+--------------------------------------------------
+
+6. **City of Hope National Medical Center - Data Breach**
+   Maximum Payout: $5,250
+   Claim Deadline: January 13, 2026 (5 DAYS REMAINING)
+   Eligibility: Received notice of City of Hope data breach (October 2023); California residents may receive $250 statutory payment
+   Proof Required: No
+   Claim URL: Visit Official Settlement Website via classaction.org
+
+7. **Mile Hi Foods - Data Breach**
+   Maximum Payout: $3,000
+   Claim Deadline: January 13, 2026 (5 DAYS REMAINING)
+   Eligibility: Received notice from Mile Hi Foods about September 2024 data breach
+   Proof Required: No
+   Claim URL: Visit Official Settlement Website via classaction.org
+
+8. **Orthopedics Rhode Island - Data Breach**
+   Maximum Payout: $5,000
+   Claim Deadline: January 13, 2026 (5 DAYS REMAINING)
+   Eligibility: Received notice of September 2024 Orthopedics Rhode Island data breach
+   Proof Required: No
+   Claim URL: Visit Official Settlement Website via classaction.org
+
+9. **San Diego Unified School District - Data Breach**
+   Maximum Payout: $2,500
+   Claim Deadline: January 13, 2026 (5 DAYS REMAINING)
+   Eligibility: Personal information impacted by October 2022 San Diego Unified School District data breach
+   Proof Required: No
+   Claim URL: Visit Official Settlement Website via classaction.org
+
+10. **Therapeutic Health Services - Data Breach**
+    Maximum Payout: $5,100
+    Claim Deadline: January 13, 2026 (5 DAYS REMAINING)
+    Eligibility: Personal information compromised in February 2024 Therapeutic Health Services data breach
+    Proof Required: No
+    Claim URL: Visit Official Settlement Website via classaction.org
+
+11. **RIBridges - Data Breach**
+    Maximum Payout: $5,000
+    Claim Deadline: January 14, 2026 (6 DAYS REMAINING)
+    Eligibility: Personal information exposed in Rhode Island RIBridges system data breach
+    Proof Required: No
+    Claim URL: Visit Official Settlement Website via classaction.org
+
+
+HIGHEST VALUE SETTLEMENTS (All Deadlines)
+------------------------------------------
+
+**TOP 3 HIGHEST PAYOUTS:**
+
+1. **Oklahoma Spine Hospital - Data Breach**
+   Maximum Payout: $10,100
+   Claim Deadline: January 7, 2026 **[DEADLINE HAS PASSED]**
+   
+2. **23andMe - Data Breach** ⭐ HIGHEST AVAILABLE
+   Maximum Payout: $10,000
+   Claim Deadline: February 17, 2026 (40 DAYS REMAINING)
+   Direct Claim URL: https://23andmedatasettlement.com/
+   Eligibility: Were a 23andMe customer between May 1, 2023 and October 1, 2023 and received notice that personal information was compromised in a data breach
+   Benefits: Up to $10,000 for Extraordinary Claims; Up to $165 for Health Information Claims; An estimated $100 for Statutory Cash Claims; and 5 years of Privacy & Medical Shield + Genetic Monitoring
+   Proof Required: No
+
+3. **Cencora, The Lash Group - Data Breach**
+   Maximum Payout: $5,000
+   Claim Deadline: January 19, 2026 (11 DAYS REMAINING)
+   Eligibility: Personal information exposed in February 2024 data breach involving Cencora or The Lash Group
+   Proof Required: No
+   Claim URL: Visit Official Settlement Website via classaction.org
+
+
+COMPLETE LIST OF HIGH-VALUE SETTLEMENTS (>$1,000)
+--------------------------------------------------
+
+Settlement ID 3: 23andMe - Data Breach ($100-$10,000) - Deadline: 2026-02-17
+Settlement ID 5: Nations Direct Mortgage - Data Breach (Up to $2,750) - Deadline: 2026-01-07 [PASSED]
+Settlement ID 6: Oklahoma Spine Hospital - Data Breach ($100-$10,100) - Deadline: 2026-01-07 [PASSED]
+Settlement ID 8: Restek Corporation - Data Breach ($50-$3,500) - Deadline: 2026-01-09
+Settlement ID 10: Behavioral Health Resources - Data Breach ($100-$5,000) - Deadline: 2026-01-12
+Settlement ID 11: Dakota Eye Institute - Data Breach ($45-$5,000) - Deadline: 2026-01-12
+Settlement ID 12: Instinct Pet Foods - Data Breach ($60-$4,500) - Deadline: 2026-01-12
+Settlement ID 15: Planned Parenthood of Montana - Data Breach ($20-$5,000) - Deadline: 2026-01-12
+Settlement ID 16: City of Hope National Medical Center - Data Breach ($100-$5,250) - Deadline: 2026-01-13
+Settlement ID 17: Mile Hi Foods - Data Breach (Up to $50-$3,000) - Deadline: 2026-01-13
+Settlement ID 18: Orthopedics Rhode Island - Data Breach ($100-$5,000) - Deadline: 2026-01-13
+Settlement ID 19: San Diego Unified School District - Data Breach ($40-$2,500) - Deadline: 2026-01-13
+Settlement ID 20: Therapeutic Health Services - Data Breach ($100-$5,100) - Deadline: 2026-01-13
+Settlement ID 21: RIBridges - Data Breach ($100-$5,000) - Deadline: 2026-01-14
+Settlement ID 24: Cencora, The Lash Group - Data Breach (Up to $5,000) - Deadline: 2026-01-19
+Settlement ID 32: Alabama Cardiovascular Group - Data Breach (Up to $5,000) - Deadline: 2026-03-06
+Settlement ID 35: Trinity Health Corporation - Data Breach ($115-$1,000+) - Deadline: 2026-01-19
+
+
+KEY OBSERVATIONS
+----------------
+
+1. **Data Breach Dominance**: The vast majority of high-value settlements (16 out of 17) are related to data breaches, indicating this is a significant area of consumer protection litigation.
+
+2. **Healthcare Focus**: Many high-value settlements involve healthcare providers, hospitals, and medical institutions, reflecting the sensitive nature of medical data.
+
+3. **Urgent Action Required**: Multiple settlements with payouts exceeding $3,000-$5,000 have deadlines within the next 5 days (January 12-13, 2026).
+
+4. **23andMe Settlement**: The 23andMe settlement stands out as offering the highest maximum payout ($10,000) and has a more generous deadline (February 17, 2026).
+
+5. **No Proof Required**: Most high-value settlements do not require proof of purchase or documentation, making them more accessible to claimants.
+
+
+RECOMMENDED ACTIONS
+-------------------
+
+1. **IMMEDIATE**: File claims for settlements with deadlines on January 9, 2026 (Restek Corporation - 1 day remaining)
+
+2. **URGENT**: File claims for settlements with deadlines on January 12-13, 2026 (multiple $5,000+ settlements - 4-5 days remaining)
+
+3. **PRIORITY**: Review eligibility for 23andMe settlement (highest payout, 40 days remaining)
+
+4. **REVIEW**: Check eligibility for all data breach settlements if you have been notified of any data breach incidents
+
+
+DATA SOURCES
+------------
+- ClassAction.org: https://www.classaction.org/settlements
+- TopClassActions.com: https://topclassactions.com/category/lawsuit-settlements/open-lawsuit-settlements/
+
+Full detailed data available in: /home/ubuntu/art-of-proof/phoenix/data/class_actions.json
+
+
+DISCLAIMER
+----------
+This report is for informational purposes only and does not constitute legal advice. Claimants should verify eligibility requirements and deadlines directly with settlement administrators before filing claims. Settlement amounts are estimates and actual payouts may vary based on the number of valid claims submitted.
+
+Report Generated: 2026-01-08T15:06:52Z
