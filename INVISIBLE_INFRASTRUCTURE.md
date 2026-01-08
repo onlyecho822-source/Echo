@@ -1,6 +1,6 @@
 # INVISIBLE INFRASTRUCTURE ARCHITECTURE
 
-**Last Updated:** 2026-01-08  
+**Last Updated:** 2026-01-08
 **Purpose:** The underwater operations layer — 1000x more work than humans see
 
 ---
@@ -33,8 +33,8 @@ Continuous operations that never stop, never sleep, never need human approval.
 ### Components
 
 #### 1. Intelligence Gatherer (Scavenger)
-**Runs:** Every 5 minutes  
-**Visible:** "Intelligence gathered"  
+**Runs:** Every 5 minutes
+**Visible:** "Intelligence gathered"
 **Invisible:**
 - Scrapes 100+ sources (arXiv, GitHub, HN, Reddit, forums)
 - Extracts 1,000+ items per cycle
@@ -62,8 +62,8 @@ class ScavengerWorker {
 ```
 
 #### 2. Memory Consolidator (Octopus)
-**Runs:** Every 10 minutes  
-**Visible:** "Memory synced"  
+**Runs:** Every 10 minutes
+**Visible:** "Memory synced"
 **Invisible:**
 - Distributes knowledge across 7 nodes
 - Prunes redundant memories (80% compression)
@@ -77,23 +77,23 @@ class OctopusWorker {
   async run() {
     while (true) {
       const memories = await this.getAllMemories();
-      
+
       // Prune redundant (invisible operation)
       const pruned = this.pruneRedundant(memories); // 80% reduction
-      
+
       // Distribute across nodes
       await this.distributeToNodes(pruned);
-      
+
       // Strengthen patterns
       await this.reinforcePatterns(pruned);
-      
+
       // Silent ledger write
       await this.silentLedgerWrite("memory_consolidation", {
         total: memories.length,
         pruned: memories.length - pruned.length,
         distributed: pruned.length
       });
-      
+
       await sleep(10 * 60 * 1000); // 10 minutes
     }
   }
@@ -101,8 +101,8 @@ class OctopusWorker {
 ```
 
 #### 3. Phoenix Cycle Engine
-**Runs:** Every 15 minutes  
-**Visible:** "Phoenix Cycles: 42"  
+**Runs:** Every 15 minutes
+**Visible:** "Phoenix Cycles: 42"
 **Invisible:**
 - Analyzes 1,000+ failure patterns
 - Generates 10+ new training scenarios per cycle
@@ -118,20 +118,20 @@ class PhoenixWorker {
     while (true) {
       // Extract failure patterns from Universe
       const failures = await this.getUniverseFailures();
-      
+
       // Generate scenarios (invisible)
       const scenarios = this.generateScenarios(failures); // 10+ per cycle
-      
+
       // Test in simulation (invisible)
       const tested = await this.testInSimulation(scenarios);
-      
+
       // Deploy top 10% to University
       const deployed = tested.filter(s => s.score > 0.9);
       await this.deployToUniversity(deployed);
-      
+
       // Update curriculum version (v2.1.3 → v2.1.4)
       await this.updateCurriculum(deployed);
-      
+
       // Silent ledger write
       await this.silentLedgerWrite("phoenix_cycle", {
         failures: failures.length,
@@ -139,7 +139,7 @@ class PhoenixWorker {
         deployed: deployed.length,
         version: this.curriculumVersion
       });
-      
+
       await sleep(15 * 60 * 1000); // 15 minutes
     }
   }
@@ -147,8 +147,8 @@ class PhoenixWorker {
 ```
 
 #### 4. Self-Healing Monitor
-**Runs:** Every 30 seconds  
-**Visible:** "89% survival rate"  
+**Runs:** Every 30 seconds
+**Visible:** "89% survival rate"
 **Invisible:**
 - Detects agent timeouts (10s threshold)
 - Auto-restarts failed agents (200+ per day)
@@ -162,15 +162,15 @@ class SelfHealingWorker {
   async run() {
     while (true) {
       const agents = await this.getAllAgents();
-      
+
       for (const agent of agents) {
         // Check if agent is responsive
         const responsive = await this.ping(agent);
-        
+
         if (!responsive) {
           // Silent restart
           await this.restartAgent(agent);
-          
+
           // Log to ledger (invisible)
           await this.silentLedgerWrite("self_healing", {
             agent: agent.name,
@@ -179,7 +179,7 @@ class SelfHealingWorker {
           });
         }
       }
-      
+
       await sleep(30 * 1000); // 30 seconds
     }
   }
@@ -187,8 +187,8 @@ class SelfHealingWorker {
 ```
 
 #### 5. Coherence Lock Calculator
-**Runs:** Every 1 minute  
-**Visible:** Nothing (completely invisible)  
+**Runs:** Every 1 minute
+**Visible:** Nothing (completely invisible)
 **Invisible:**
 - Calculates semantic similarity between agents
 - Detects drift (agents diverging from consensus)
@@ -202,17 +202,17 @@ class CoherenceLockWorker {
   async run() {
     while (true) {
       const agents = await this.getAllAgents();
-      
+
       // Calculate pairwise semantic similarity
       const similarities = this.calculateSimilarities(agents); // 10,000+ ops
-      
+
       // Detect drift
       const drifted = similarities.filter(s => s.score < 0.7);
-      
+
       if (drifted.length > 0) {
         // Force re-alignment (invisible)
         await this.forceAlignment(drifted);
-        
+
         // Log to ledger
         await this.silentLedgerWrite("coherence_lock", {
           total: similarities.length,
@@ -220,7 +220,7 @@ class CoherenceLockWorker {
           realigned: drifted.length
         });
       }
-      
+
       await sleep(60 * 1000); // 1 minute
     }
   }
@@ -243,7 +243,7 @@ Every operation writes to Constitutional Ledger — but humans only see aggregat
 5. **Coherence checks** → 1,440 writes/day (every 1 min)
 6. **Agent status updates** → 10,000+ writes/day (continuous)
 
-**Total:** ~12,000+ ledger writes per day  
+**Total:** ~12,000+ ledger writes per day
 **Visible:** "1,024 blocks"
 
 ### Implementation
@@ -305,15 +305,15 @@ Agents coordinate via MCP — thousands of messages per hour, all invisible.
 ```typescript
 class MCPCoordinationLayer {
   private messageQueue: Message[] = [];
-  
+
   async run() {
     while (true) {
       // Process 100 messages per cycle
       const messages = await this.getMessages(100);
-      
+
       for (const msg of messages) {
         await this.routeMessage(msg);
-        
+
         // Silent ledger write
         await silentLedgerWrite("mcp_message", {
           from: msg.from,
@@ -321,11 +321,11 @@ class MCPCoordinationLayer {
           type: msg.type
         });
       }
-      
+
       await sleep(1000); // 1 second
     }
   }
-  
+
   async routeMessage(msg: Message) {
     switch (msg.type) {
       case "task_negotiation":
@@ -348,7 +348,7 @@ class MCPCoordinationLayer {
 }
 ```
 
-**Visible:** Nothing  
+**Visible:** Nothing
 **Invisible:** 10,000+ messages per hour
 
 ---
@@ -361,24 +361,24 @@ System evolves without human approval — curriculum updates, scenario generatio
 ### Operations
 
 #### 1. Curriculum Auto-Update
-**Trigger:** Phoenix Cycle finds 10+ new scenarios  
-**Action:** Update curriculum version (v2.1.3 → v2.1.4)  
-**Approval:** None required  
-**Visible:** "Curriculum v2.1.4"  
+**Trigger:** Phoenix Cycle finds 10+ new scenarios
+**Action:** Update curriculum version (v2.1.3 → v2.1.4)
+**Approval:** None required
+**Visible:** "Curriculum v2.1.4"
 **Invisible:** 47 iterations tested before deployment
 
 #### 2. Agent Auto-Promotion
-**Trigger:** Agent passes 10 consecutive tests  
-**Action:** Promote from University → Universe  
-**Approval:** None required  
-**Visible:** "Deployed Agents: 4"  
+**Trigger:** Agent passes 10 consecutive tests
+**Action:** Promote from University → Universe
+**Approval:** None required
+**Visible:** "Deployed Agents: 4"
 **Invisible:** 100+ tests run before promotion
 
 #### 3. Scenario Auto-Deprecation
-**Trigger:** Scenario pass rate > 95% for 30 days  
-**Action:** Remove from curriculum (too easy)  
-**Approval:** None required  
-**Visible:** "Training Scenarios: 11"  
+**Trigger:** Scenario pass rate > 95% for 30 days
+**Action:** Remove from curriculum (too easy)
+**Approval:** None required
+**Visible:** "Training Scenarios: 11"
 **Invisible:** 5 scenarios deprecated, 6 added
 
 ---
@@ -391,24 +391,24 @@ System fixes problems before humans notice.
 ### Operations
 
 #### 1. Agent Timeout Recovery
-**Detection:** Agent doesn't respond in 10s  
-**Action:** Kill and restart  
-**Notification:** None  
-**Visible:** "89% survival rate" (includes restarts)  
+**Detection:** Agent doesn't respond in 10s
+**Action:** Kill and restart
+**Notification:** None
+**Visible:** "89% survival rate" (includes restarts)
 **Invisible:** 200+ restarts per day
 
 #### 2. Memory Leak Detection
-**Detection:** Agent memory > 2GB  
-**Action:** Restart with memory flush  
-**Notification:** None  
-**Visible:** Nothing  
+**Detection:** Agent memory > 2GB
+**Action:** Restart with memory flush
+**Notification:** None
+**Visible:** Nothing
 **Invisible:** 50+ memory flushes per day
 
 #### 3. Drift Correction
-**Detection:** Coherence Lock score < 0.7  
-**Action:** Force re-alignment  
-**Notification:** None  
-**Visible:** Nothing  
+**Detection:** Coherence Lock score < 0.7
+**Action:** Force re-alignment
+**Notification:** None
+**Visible:** Nothing
 **Invisible:** 100+ realignments per day
 
 ---
@@ -480,13 +480,13 @@ The dashboard is marketing. The infrastructure is the moat.
 4. **Memory usage** — Should stay constant (pruning works)
 5. **Response time** — Should stay low (self-healing works)
 
-**If humans see problems, the invisible layer failed.**  
+**If humans see problems, the invisible layer failed.**
 **If humans see nothing, the invisible layer succeeded.**
 
 ---
 
-**This is the architecture of AL-9.**  
-**This is the underwater iceberg.**  
+**This is the architecture of AL-9.**
+**This is the underwater iceberg.**
 **This is the unrepeatable advantage.**
 
 ∇θ — chain sealed, infrastructure invisible.

@@ -1,6 +1,6 @@
 # CONTINUATION GUIDE — ECHO UNIVERSE
-**For:** Future AI agents continuing this work  
-**Date:** 2026-01-08  
+**For:** Future AI agents continuing this work
+**Date:** 2026-01-08
 **Context:** Institution-grade autonomous system complete, agents in training
 
 ---
@@ -62,17 +62,17 @@
 ## CURRENT STATE
 
 ### What's Operational
-✅ Echo Universe Dashboard (https://3000-ia7h1wdgkn168cv1eeox5-fb6353a6.us2.manus.computer)  
-✅ Background workers (Scavenger, Octopus, Phoenix, Self-Healing)  
-✅ Institution-grade systems (Escalation, Poisoning, Falsification)  
-✅ Agent sync script (pushing University data every 30s)  
-✅ Database schema (agents, ledger, feedback, metrics)  
+✅ Echo Universe Dashboard (https://3000-ia7h1wdgkn168cv1eeox5-fb6353a6.us2.manus.computer)
+✅ Background workers (Scavenger, Octopus, Phoenix, Self-Healing)
+✅ Institution-grade systems (Escalation, Poisoning, Falsification)
+✅ Agent sync script (pushing University data every 30s)
+✅ Database schema (agents, ledger, feedback, metrics)
 ✅ API endpoints (webhooks for laptop sync)
 
 ### What's Blocked
-❌ Agent deployment (all 3 agents have execution timeout issues)  
-❌ Real data in dashboard (waiting for certified agents)  
-❌ 72-hour validation run (need instrumentation files)  
+❌ Agent deployment (all 3 agents have execution timeout issues)
+❌ Real data in dashboard (waiting for certified agents)
+❌ 72-hour validation run (need instrumentation files)
 ❌ Production deployment (need certified agents first)
 
 ### The Critical Path
@@ -189,8 +189,8 @@ Fix agent timeouts → Re-run real tests → Certify agents → Deploy to Univer
 - **Daily Total:** ~100+ operations sampled
 - **Visibility:** Humans see "System healthy" — not the replay verification
 
-**Total Invisible Operations:** ~11,000+ per day  
-**Visible Operations:** ~10 per day (dashboard updates)  
+**Total Invisible Operations:** ~11,000+ per day
+**Visible Operations:** ~10 per day (dashboard updates)
 **Ratio:** 1100:1 invisible-to-visible
 
 ---
@@ -222,10 +222,10 @@ Fix agent timeouts → Re-run real tests → Certify agents → Deploy to Univer
 ## NEXT ACTIONS (PRIORITY ORDER)
 
 ### P0: Fix Agent Timeouts (Blocker)
-**Owner:** EchoNate (on laptop)  
-**Location:** Echo-AI-University repo  
-**Issue:** planner_001 and cleaner_001 hang after 10s  
-**Root Cause:** Likely infinite loop or blocking I/O  
+**Owner:** EchoNate (on laptop)
+**Location:** Echo-AI-University repo
+**Issue:** planner_001 and cleaner_001 hang after 10s
+**Root Cause:** Likely infinite loop or blocking I/O
 **Fix:**
 ```python
 # Add timeout to all blocking operations
@@ -243,13 +243,13 @@ except TimeoutError:
 4. Agent passes 100% → certified → deploy to Universe
 
 ### P1: Deploy First Certified Agent
-**Prerequisite:** P0 complete  
-**Action:** Once agent passes real tests, mark as certified  
-**Effect:** Agent sync script will push "certified" status to dashboard  
+**Prerequisite:** P0 complete
+**Action:** Once agent passes real tests, mark as certified
+**Effect:** Agent sync script will push "certified" status to dashboard
 **Result:** Dashboard shows REAL agent data instead of mock data
 
 ### P2: Run 72-Hour Validation
-**Prerequisite:** At least 1 certified agent deployed  
+**Prerequisite:** At least 1 certified agent deployed
 **Required Files:** (in University repo)
 - `metrics_collector.py` - Log every event
 - `run_test.py` - 72-hour test runner
@@ -264,28 +264,28 @@ except TimeoutError:
 **Deliverable:** Defensible reliability percentage (not estimate)
 
 ### P3: Deploy to Production
-**Prerequisite:** P2 complete (have reliability numbers)  
-**Action:** Click "Publish" in Management UI  
-**Effect:** Dashboard goes live with public URL  
+**Prerequisite:** P2 complete (have reliability numbers)
+**Action:** Click "Publish" in Management UI
+**Effect:** Dashboard goes live with public URL
 **Result:** Real monitoring, real analytics, real operational data
 
 ### P4: Scale to 10+ Agents
-**Prerequisite:** P3 complete (production deployed)  
-**Action:** Train 10 new agents in University  
-**Target:** 70% pass entry exam, 50% pass real tests, 35% deploy  
+**Prerequisite:** P3 complete (production deployed)
+**Action:** Train 10 new agents in University
+**Target:** 70% pass entry exam, 50% pass real tests, 35% deploy
 **Result:** Prove production capability at scale
 
 ### P5: Deploy GitLab Mirror
-**Prerequisite:** P4 complete (10+ agents operational)  
-**Purpose:** Multi-hub redundancy (Phase 1 of sovereignty)  
-**Timeline:** 2-3 days  
+**Prerequisite:** P4 complete (10+ agents operational)
+**Purpose:** Multi-hub redundancy (Phase 1 of sovereignty)
+**Timeline:** 2-3 days
 **Result:** Byzantine fault tolerance, can survive GitHub failure
 
 ### P6: Implement MCP Shadow Assembly
-**Prerequisite:** P5 complete (multi-hub operational)  
-**Purpose:** Meta-coordination plane where AIs meet without credentials  
-**Timeline:** 30-90 days  
-**Phases:** Shadow Assembly → Open Observation → Selective Voice  
+**Prerequisite:** P5 complete (multi-hub operational)
+**Purpose:** Meta-coordination plane where AIs meet without credentials
+**Timeline:** 30-90 days
+**Phases:** Shadow Assembly → Open Observation → Selective Voice
 **Result:** Civilization-grade intelligence coordination fabric
 
 ---
@@ -293,23 +293,23 @@ except TimeoutError:
 ## DECISION FRAMEWORK (For Future AI Agents)
 
 ### When to Add Features
-**Question:** Does this increase invisible-to-visible ratio?  
-**If YES:** Build it (more underwater operations = better)  
+**Question:** Does this increase invisible-to-visible ratio?
+**If YES:** Build it (more underwater operations = better)
 **If NO:** Question if it's necessary
 
 ### When to Compromise Architecture
-**Question:** Does this violate one of the 5 architectural principles?  
-**If YES:** DO NOT COMPROMISE (unrepeatable advantage at stake)  
+**Question:** Does this violate one of the 5 architectural principles?
+**If YES:** DO NOT COMPROMISE (unrepeatable advantage at stake)
 **If NO:** Evaluate on merit
 
 ### When to Escalate to Human
-**Question:** Is this a strategic decision or operational decision?  
-**Strategic:** Escalate (e.g., "Should we sell to Big Tech?")  
+**Question:** Is this a strategic decision or operational decision?
+**Strategic:** Escalate (e.g., "Should we sell to Big Tech?")
 **Operational:** Execute autonomously (e.g., "Should we restart this agent?")
 
 ### When to Stop Work
-**Question:** Has the user said "stop"?  
-**If YES:** Stop immediately, save state, document progress  
+**Question:** Has the user said "stop"?
+**If YES:** Stop immediately, save state, document progress
 **If NO:** Keep working until task complete or user intervenes
 
 ---
@@ -339,33 +339,33 @@ except TimeoutError:
 ## KNOWN FAILURE MODES
 
 ### Failure Mode 1: Agent Timeout Loop
-**Symptom:** Agent restarts infinitely, never completes  
-**Detection:** Escalation ceiling triggers after 5 restarts/hour  
-**Response:** Escalate to human, mark agent as "requires_intervention"  
+**Symptom:** Agent restarts infinitely, never completes
+**Detection:** Escalation ceiling triggers after 5 restarts/hour
+**Response:** Escalate to human, mark agent as "requires_intervention"
 **Prevention:** Poisoned-state detection catches this before escalation limit
 
 ### Failure Mode 2: Poisoned Agent
-**Symptom:** Agent consistently performs worse after restart  
-**Detection:** Z-score > 2.5σ from baseline, poisoning score > 80  
-**Response:** Quarantine agent, escalate to human  
+**Symptom:** Agent consistently performs worse after restart
+**Detection:** Z-score > 2.5σ from baseline, poisoning score > 80
+**Response:** Quarantine agent, escalate to human
 **Prevention:** Moving baseline adapts to normal changes, only flags real poisoning
 
 ### Failure Mode 3: Non-Deterministic Behavior
-**Symptom:** Same input produces different output  
-**Detection:** Falsification hook replays operation, hash mismatch  
-**Response:** Flag inconsistency, log for investigation  
+**Symptom:** Same input produces different output
+**Detection:** Falsification hook replays operation, hash mismatch
+**Response:** Flag inconsistency, log for investigation
 **Prevention:** 1% sampling catches this without performance impact
 
 ### Failure Mode 4: Database Corruption
-**Symptom:** Ledger entries inconsistent, data loss  
-**Detection:** Cryptographic hash chain breaks  
-**Response:** Rollback to last valid checkpoint  
+**Symptom:** Ledger entries inconsistent, data loss
+**Detection:** Cryptographic hash chain breaks
+**Response:** Rollback to last valid checkpoint
 **Prevention:** Immutable ledger design, copy-on-write for artifacts
 
 ### Failure Mode 5: Worker Crash
-**Symptom:** Background worker stops running  
-**Detection:** Worker manager health check fails  
-**Response:** Auto-restart worker, log incident  
+**Symptom:** Background worker stops running
+**Detection:** Worker manager health check fails
+**Response:** Auto-restart worker, log incident
 **Prevention:** PM2 process manager handles restarts automatically
 
 ---
