@@ -1,5 +1,5 @@
 # Echo Universe Directory Tree
-*Generated: 2026-01-09T01:54:06.585031*
+*Generated: 2026-01-09T01:54:08.585754*
 
 ```
 Echo/
@@ -96,6 +96,7 @@ Echo/
 ├── artifacts
 │   ├── EDR-001.json
 │   ├── GOVERNANCE_VIOLATION_001.json
+│   ├── archived
 │   └── cleanup_report_2026-01-08.md
 ├── coordination
 │   └── system_health.json
