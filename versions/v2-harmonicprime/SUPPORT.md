@@ -6,11 +6,11 @@
 Start with the README.md for basic setup and usage.
 
 ### 2. GitHub Discussions
-Ask questions, share use cases, and connect with the community:  
+Ask questions, share use cases, and connect with the community:
 https://github.com/nathanpoinsette/echo-git-sync/discussions
 
 ### 3. GitHub Issues
-Report bugs or request features:  
+Report bugs or request features:
 https://github.com/nathanpoinsette/echo-git-sync/issues
 
 ### 4. Email Support

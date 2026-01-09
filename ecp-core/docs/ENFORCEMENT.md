@@ -190,12 +190,12 @@ if report['blocking_violations'] > 0:
 
 ## Enforcement Guarantees
 
-✅ **No Bypass**: No action can skip Event → Classification → Consensus flow  
-✅ **Immutable Logs**: SHA-256 hash chain prevents tampering  
-✅ **Automatic Escalation**: High divergence automatically escalates  
-✅ **Violation Tracking**: All compliance breaches are recorded  
-✅ **Chain Integrity**: Detects any tampering or corruption  
-✅ **Human Authority**: Final decisions remain with humans  
+✅ **No Bypass**: No action can skip Event → Classification → Consensus flow
+✅ **Immutable Logs**: SHA-256 hash chain prevents tampering
+✅ **Automatic Escalation**: High divergence automatically escalates
+✅ **Violation Tracking**: All compliance breaches are recorded
+✅ **Chain Integrity**: Detects any tampering or corruption
+✅ **Human Authority**: Final decisions remain with humans
 
 ## Configuration
 

@@ -54,4 +54,4 @@ Focus marketing and product development on the capabilities that no one else off
 *   **Continuous TAFT Methodology**
 *   **Change Verification as an Independent Witness**
 
-### 4.3. Embrace the 
+### 4.3. Embrace the

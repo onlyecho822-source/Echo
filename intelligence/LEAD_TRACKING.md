@@ -1,7 +1,7 @@
 # Lead Intelligence Tracking
 
-**Source:** infrastructure-observatory (public recon)  
-**Purpose:** Track qualified contacts and partnership opportunities  
+**Source:** infrastructure-observatory (public recon)
+**Purpose:** Track qualified contacts and partnership opportunities
 **Status:** Active monitoring
 
 ---
@@ -139,7 +139,7 @@ Weekly review of:
 
 **Approval:**
 ```
-Thank you for your access request. Based on your qualifications and use case, 
+Thank you for your access request. Based on your qualifications and use case,
 we're pleased to invite you to the Infrastructure Observatory.
 
 [Provide access credentials/instructions]
@@ -149,7 +149,7 @@ We look forward to your contributions to diagnostic research.
 
 **Deferral:**
 ```
-Thank you for your interest. We're currently at capacity for this quarter's 
+Thank you for your interest. We're currently at capacity for this quarter's
 partnerships. Your request has been added to our Q2 2026 review queue.
 
 We'll contact you in [timeframe] with an update.
@@ -157,11 +157,11 @@ We'll contact you in [timeframe] with an update.
 
 **Denial:**
 ```
-Thank you for your interest in the Infrastructure Observatory. After review, 
-we've determined that our current research focus doesn't align with your 
+Thank you for your interest in the Infrastructure Observatory. After review,
+we've determined that our current research focus doesn't align with your
 stated use case.
 
-We encourage you to follow our public abstracts for future research that 
+We encourage you to follow our public abstracts for future research that
 may be more relevant to your work.
 ```
 
@@ -228,9 +228,9 @@ may be more relevant to your work.
 
 ## Current Status
 
-**Repository:** Live and public  
-**Monitoring:** Active  
-**Leads captured:** 0 (as of December 31, 2025)  
+**Repository:** Live and public
+**Monitoring:** Active
+**Leads captured:** 0 (as of December 31, 2025)
 **Next review:** Weekly (every Monday)
 
 ---

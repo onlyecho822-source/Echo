@@ -2,8 +2,8 @@
 
 **Objective:** Manage the simultaneous execution of the EchoDNS launch and the Echo Universe initial build-out.
 
-**Project Manager:** Manus AI  
-**Executor:** Nathan Poinsette  
+**Project Manager:** Manus AI
+**Executor:** Nathan Poinsette
 **Date:** December 18, 2025
 
 ---

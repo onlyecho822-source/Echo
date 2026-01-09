@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary
 
-The market for self-diagnosis and personal wellness apps is crowded, but it is also **conceptually stagnant**. The competitive landscape is dominated by two types of players: **Medical Symptom Checkers** and **Wellness Trackers**. 
+The market for self-diagnosis and personal wellness apps is crowded, but it is also **conceptually stagnant**. The competitive landscape is dominated by two types of players: **Medical Symptom Checkers** and **Wellness Trackers**.
 
 The Human System Integrator (HSI) does not compete with these players directly. Instead, it creates a **new category** by applying a rigorous systems thinking framework to personal development, a market gap that is currently completely unoccupied.
 

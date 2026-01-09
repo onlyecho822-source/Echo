@@ -86,13 +86,13 @@ https://github.com/onlyecho822-source/Echo/issues
 
 ### 5. Email Support
 
-**General inquiries:** support@nathanpoinsette.com  
+**General inquiries:** support@nathanpoinsette.com
 **Response Time:** Within 48 hours
 
-**Security issues:** security@nathanpoinsette.com  
+**Security issues:** security@nathanpoinsette.com
 **Response Time:** Within 24 hours (urgent)
 
-**Enterprise support:** enterprise@nathanpoinsette.com  
+**Enterprise support:** enterprise@nathanpoinsette.com
 **Response Time:** Within 4 hours (SLA available)
 
 ---
@@ -438,22 +438,22 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 
 ## 📋 FAQ
 
-**Q: Is Sherlock Hub free?**  
+**Q: Is Sherlock Hub free?**
 A: Yes! Sherlock Hub is open source and free to use. Enterprise support is available for a fee.
 
-**Q: Can I use Sherlock Hub in production?**  
+**Q: Can I use Sherlock Hub in production?**
 A: Yes. Version 1.0.0 is production-ready. See [SECURITY.md](./SECURITY.md) for security considerations.
 
-**Q: How do I update to new versions?**  
+**Q: How do I update to new versions?**
 A: Pull the latest code and run `docker-compose up --build`.
 
-**Q: Can I contribute to Sherlock Hub?**  
+**Q: Can I contribute to Sherlock Hub?**
 A: Absolutely! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
-**Q: How do I report a security vulnerability?**  
+**Q: How do I report a security vulnerability?**
 A: Email security@nathanpoinsette.com with details.
 
-**Q: Is there a commercial version?**  
+**Q: Is there a commercial version?**
 A: Enterprise support and custom features are available. Contact enterprise@nathanpoinsette.com.
 
 ---
@@ -470,5 +470,5 @@ A: Enterprise support and custom features are available. Contact enterprise@nath
 
 **Last Updated:** December 17, 2025
 
-**Built with ❤️ by Nathan Poinsette**  
+**Built with ❤️ by Nathan Poinsette**
 Veteran-owned. Open Source. Always.

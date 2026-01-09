@@ -502,10 +502,10 @@ Production Deployment
 
 ---
 
-**Built with ❤️ by Nathan Poinsette**  
-**Powered by Manus AI**  
+**Built with ❤️ by Nathan Poinsette**
+**Powered by Manus AI**
 **Veteran-owned. Open Source. Always.**
 
-**Last Updated:** December 18, 2025  
-**Repository:** https://github.com/onlyecho822-source/Echo  
+**Last Updated:** December 18, 2025
+**Repository:** https://github.com/onlyecho822-source/Echo
 **Status:** ✅ All commits pushed and verified

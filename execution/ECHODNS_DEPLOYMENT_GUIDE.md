@@ -2,8 +2,8 @@
 
 **Objective:** Deploy EchoDNS to production and secure the first paying customer within 72 hours.
 
-**Project Manager:** Manus AI  
-**Founder & Executor:** Nathan Poinsette  
+**Project Manager:** Manus AI
+**Founder & Executor:** Nathan Poinsette
 **Date:** December 18, 2025
 
 ---

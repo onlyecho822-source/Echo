@@ -7,13 +7,13 @@ Echo Git Sync provides insurance against platform dependency. With one command, 
 
 Perfect for:
 - Developers who've seen GitHub suspensions
-- Teams requiring jurisdictional redundancy  
+- Teams requiring jurisdictional redundancy
 - Anyone who values data sovereignty
 
 **Features:**
-✓ Parallel execution (fast)  
-✓ Pre-flight checks (safe)  
-✓ Integrity verification (secure)  
+✓ Parallel execution (fast)
+✓ Pre-flight checks (safe)
+✓ Integrity verification (secure)
 ✓ Zero dependencies (simple)
 
 **Category:** Developer Tools

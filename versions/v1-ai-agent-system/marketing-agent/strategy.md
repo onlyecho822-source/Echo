@@ -4,7 +4,7 @@
 
 ### Content Calendar (Buffer + AI)
 - **Monday:** Technical tutorial
-- **Wednesday:** Use case story  
+- **Wednesday:** Use case story
 - **Friday:** Community highlight
 
 ### Distribution Channels

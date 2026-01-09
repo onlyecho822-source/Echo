@@ -35,11 +35,11 @@ from typing import Optional, List, Dict, Any
 
 class SovereignDB:
     """Local-first database for Sovereign OS"""
-    
+
     def __init__(self, db_path: str = "sovereign_data.db"):
         self.db_path = Path(db_path)
         self._init_db()
-    
+
     def _init_db(self):
         """Initialize database schema"""
         with sqlite3.connect(self.db_path) as conn:
@@ -58,7 +58,7 @@ class SovereignDB:
                     UNIQUE(date, period)
                 )
             """)
-            
+
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS daily_mirrors (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -69,7 +69,7 @@ class SovereignDB:
                     insight_score INTEGER DEFAULT 0
                 )
             """)
-            
+
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS experiments (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -83,7 +83,7 @@ class SovereignDB:
                     learned TEXT
                 )
             """)
-            
+
             conn.execute("""
                 CREATE TABLE IF NOT EXISTS personal_rules (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -94,12 +94,12 @@ class SovereignDB:
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
-    
+
     def save_checkin(self, period: str, data: Dict[str, Any]) -> bool:
         """Save morning or evening checkin"""
         with sqlite3.connect(self.db_path) as conn:
             conn.execute("""
-                INSERT OR REPLACE INTO daily_checkins 
+                INSERT OR REPLACE INTO daily_checkins
                 (date, period, sleep, first_input, intention, energy, mood, output)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             """, (
@@ -113,53 +113,53 @@ class SovereignDB:
                 data.get('output')
             ))
             return True
-    
+
     def save_mirror(self, observation: str, cause: str = None, effect: str = None):
         """Save Daily Mirror observation"""
         with sqlite3.connect(self.db_path) as conn:
             conn.execute("""
-                INSERT OR REPLACE INTO daily_mirrors 
+                INSERT OR REPLACE INTO daily_mirrors
                 (date, observation, cause, effect)
                 VALUES (?, ?, ?, ?)
             """, (date.today().isoformat(), observation, cause, effect))
-    
+
     def get_today_data(self) -> Dict[str, Any]:
         """Get all of today's data"""
         with sqlite3.connect(self.db_path) as conn:
             conn.row_factory = sqlite3.Row
             cursor = conn.cursor()
-            
-            cursor.execute("SELECT * FROM daily_checkins WHERE date = ?", 
+
+            cursor.execute("SELECT * FROM daily_checkins WHERE date = ?",
                           (date.today().isoformat(),))
             checkins = {row['period']: dict(row) for row in cursor.fetchall()}
-            
-            cursor.execute("SELECT * FROM daily_mirrors WHERE date = ?", 
+
+            cursor.execute("SELECT * FROM daily_mirrors WHERE date = ?",
                           (date.today().isoformat(),))
             mirror = cursor.fetchone()
-            
+
             cursor.execute("""
-                SELECT * FROM experiments 
-                WHERE status = 'active' 
-                AND date(start_date) <= date('now') 
+                SELECT * FROM experiments
+                WHERE status = 'active'
+                AND date(start_date) <= date('now')
                 AND date(start_date, '+' || duration_days || ' days') >= date('now')
             """)
             active_experiment = cursor.fetchone()
-            
+
             return {
                 'checkins': checkins,
                 'mirror': dict(mirror) if mirror else None,
                 'active_experiment': dict(active_experiment) if active_experiment else None
             }
-    
+
     def get_patterns(self, days: int = 30) -> List[Dict[str, Any]]:
         """Analyze patterns from last N days"""
         with sqlite3.connect(self.db_path) as conn:
             conn.row_factory = sqlite3.Row
             cursor = conn.cursor()
-            
+
             # Get correlations between inputs and outputs
             cursor.execute("""
-                SELECT 
+                SELECT
                     d1.first_input,
                     d2.energy,
                     d2.mood,
@@ -173,7 +173,7 @@ class SovereignDB:
                 HAVING COUNT(*) > 1
                 ORDER BY frequency DESC
             """, (f'-{days} days',))
-            
+
             return [dict(row) for row in cursor.fetchall()]
 ```
 
@@ -188,10 +188,10 @@ from .database import SovereignDB
 
 class PatternProcessor:
     """Extracts insights from Daily Mirrors and checkins"""
-    
+
     def __init__(self, db: SovereignDB):
         self.db = db
-    
+
     def extract_cause_effect(self, observation: str) -> Tuple[Optional[str], Optional[str]]:
         """Extract cause and effect from Mirror observation"""
         patterns = [
@@ -199,7 +199,7 @@ class PatternProcessor:
             r"when I ([^,]+), ([^\.]+)",
             r"([^\.]+) made me ([^\.]+)",
         ]
-        
+
         for pattern in patterns:
             match = re.search(pattern, observation.lower())
             if match:
@@ -207,16 +207,16 @@ class PatternProcessor:
                     return match.group(1).strip(), match.group(3).strip()
                 elif len(match.groups()) == 2:
                     return match.group(1).strip(), match.group(2).strip()
-        
+
         return None, None
-    
+
     def generate_insight(self, observation: str, today_data: Dict) -> Dict[str, str]:
         """Generate an insight from today's data"""
         cause, effect = self.extract_cause_effect(observation)
-        
+
         if not cause or not effect:
             return {"insight": "Observation recorded. Keep noticing patterns."}
-        
+
         # Check if this is a known pattern
         patterns = self.db.get_patterns(14)
         for pattern in patterns:
@@ -225,7 +225,7 @@ class PatternProcessor:
                     "insight": f"This matches a pattern: {cause} → {effect}",
                     "suggestion": "Consider testing an alternative tomorrow."
                 }
-        
+
         # Generate experiment suggestion
         if 'phone' in cause.lower() and 'scattered' in effect.lower():
             return {
@@ -238,21 +238,21 @@ class PatternProcessor:
                     "insight": "Sugar intake may be causing energy crashes",
                     "suggestion": "Try a protein-focused alternative at that time."
                 }
-        
+
         return {
             "insight": f"Noticed: {cause} → {effect}",
             "suggestion": "Run a 2-day test to verify this pattern."
         }
-    
+
     def suggest_experiment(self, patterns: List[Dict]) -> Optional[Dict[str, str]]:
         """Suggest a micro-experiment based on patterns"""
         if not patterns:
             return None
-        
+
         top_pattern = patterns[0]
         cause = top_pattern.get('first_input', '')
         effect = top_pattern.get('energy', '') + "/" + top_pattern.get('mood', '')
-        
+
         experiments = {
             'phone': {
                 'name': 'Phone Delay',
@@ -273,11 +273,11 @@ class PatternProcessor:
                 'measure': 'Morning energy and sleep quality'
             }
         }
-        
+
         for trigger, exp in experiments.items():
             if trigger in cause.lower():
                 return exp
-        
+
         return {
             'name': 'Pattern Test',
             'change': f'Modify "{cause}" and observe effect on "{effect}"',
@@ -349,7 +349,7 @@ async def save_checkin(period: str, data: CheckinData):
     """Save morning or evening checkin"""
     if period not in ['morning', 'evening']:
         raise HTTPException(status_code=400, detail="Period must be 'morning' or 'evening'")
-    
+
     success = db.save_checkin(period, data.dict())
     return {"status": "success" if success else "error", "period": period}
 
@@ -359,20 +359,20 @@ async def save_mirror(data: MirrorData):
     # Extract cause and effect
     cause, effect = processor.extract_cause_effect(data.observation)
     db.save_mirror(data.observation, cause, effect)
-    
+
     # Get today's data for context
     today_data = db.get_today_data()
-    
+
     # Generate insight
     insight = processor.generate_insight(data.observation, today_data)
-    
+
     # Check if we should suggest an experiment
     patterns = db.get_patterns(7)
     if len(patterns) >= 3:  # If we have enough data
         experiment = processor.suggest_experiment(patterns)
         if experiment:
             insight["experiment_suggestion"] = experiment
-    
+
     return insight
 
 @app.get("/api/patterns")
@@ -389,7 +389,7 @@ async def start_experiment(data: ExperimentData):
             INSERT INTO experiments (change, start_date, duration_days, status, name)
             VALUES (?, ?, ?, 'active', 'Micro-Experiment')
         """, (data.change, date.today().isoformat(), data.duration_days))
-    
+
     return {"status": "experiment_started", "change": data.change}
 
 @app.get("/api/dashboard")
@@ -397,18 +397,18 @@ async def get_dashboard():
     """Get dashboard data"""
     # Last 7 days of energy/mood
     patterns = db.get_patterns(7)
-    
+
     # Active experiment
     today_data = db.get_today_data()
     active_exp = today_data.get('active_experiment')
-    
+
     # Personal rules (learned patterns)
     with db.db_path as conn:
         conn.row_factory = sqlite3.Row
         cursor = conn.cursor()
         cursor.execute("SELECT * FROM personal_rules ORDER BY confidence DESC LIMIT 5")
         rules = [dict(row) for row in cursor.fetchall()]
-    
+
     return {
         "patterns": patterns[:5],  # Top 5 patterns
         "active_experiment": active_exp,
@@ -452,7 +452,7 @@ async def get_dashboard():
                             <button class="btn-option" data-value="bad">Bad</button>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>First thing you reached for?</label>
                         <div class="button-group">
@@ -462,12 +462,12 @@ async def get_dashboard():
                             <button class="btn-option" data-value="silence">Silence</button>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>One thing you want to do today:</label>
                         <input type="text" id="morningIntention" placeholder="e.g., Write, Exercise, Focus">
                     </div>
-                    
+
                     <button class="btn-submit" onclick="submitMorning()">Save Morning</button>
                 </div>
             </div>
@@ -484,7 +484,7 @@ async def get_dashboard():
                             <button class="btn-option" data-value="low">Low</button>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>Mood today?</label>
                         <div class="button-group">
@@ -493,12 +493,12 @@ async def get_dashboard():
                             <button class="btn-option" data-value="bad">Bad</button>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>What did you actually get done?</label>
                         <input type="text" id="eveningOutput" placeholder="e.g., Finished project, Called mom">
                     </div>
-                    
+
                     <button class="btn-submit" onclick="submitEvening()">Save Evening</button>
                 </div>
             </div>
@@ -790,12 +790,12 @@ class SovereignOS {
     init() {
         // Update current date
         const now = new Date();
-        document.getElementById('currentDate').textContent = 
-            now.toLocaleDateString('en-US', { 
-                weekday: 'long', 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
+        document.getElementById('currentDate').textContent =
+            now.toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
             });
     }
 
@@ -803,7 +803,7 @@ class SovereignOS {
         try {
             const response = await fetch(`${API_BASE}/api/today`);
             const data = await response.json();
-            
+
             this.updateUI(data);
             this.updateDataCount();
         } catch (error) {
@@ -816,12 +816,12 @@ class SovereignOS {
         if (data.checkins?.morning) {
             this.setCheckinValues('morning', data.checkins.morning);
         }
-        
+
         // Update evening check-in if exists
         if (data.checkins?.evening) {
             this.setCheckinValues('evening', data.checkins.evening);
         }
-        
+
         // Update mirror if exists
         if (data.mirror) {
             document.getElementById('mirrorText').value = data.mirror.observation;
@@ -829,7 +829,7 @@ class SovereignOS {
                 this.showInsight(data.mirror.insight);
             }
         }
-        
+
         // Update active experiment
         if (data.active_experiment) {
             this.showExperiment(data.active_experiment);
@@ -842,7 +842,7 @@ class SovereignOS {
         buttonGroups.forEach(group => {
             const label = group.previousElementSibling.textContent.toLowerCase();
             const value = this.getValueForLabel(label, data);
-            
+
             if (value) {
                 const buttons = group.querySelectorAll('.btn-option');
                 buttons.forEach(btn => {
@@ -852,7 +852,7 @@ class SovereignOS {
                 });
             }
         });
-        
+
         // Set text inputs
         if (period === 'morning' && data.intention) {
             document.getElementById('morningIntention').value = data.intention;
@@ -869,7 +869,7 @@ class SovereignOS {
             'energy today?': data.energy,
             'mood today?': data.mood
         };
-        
+
         for (const [key, value] of Object.entries(mapping)) {
             if (label.includes(key)) {
                 return value;
@@ -897,14 +897,14 @@ class SovereignOS {
             first_input: this.getSelectedValue('first thing you reached for?'),
             intention: document.getElementById('morningIntention').value
         };
-        
+
         try {
             await fetch(`${API_BASE}/api/checkin/morning`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
             });
-            
+
             this.showToast('Morning check-in saved');
             this.loadTodayData();
         } catch (error) {
@@ -919,14 +919,14 @@ class SovereignOS {
             mood: this.getSelectedValue('mood today?'),
             output: document.getElementById('eveningOutput').value
         };
-        
+
         try {
             await fetch(`${API_BASE}/api/checkin/evening`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
             });
-            
+
             this.showToast('Evening check-in saved');
             this.loadTodayData();
         } catch (error) {
@@ -941,19 +941,19 @@ class SovereignOS {
             this.showToast('Please write an observation', true);
             return;
         }
-        
+
         try {
             const response = await fetch(`${API_BASE}/api/mirror`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ observation })
             });
-            
+
             const insight = await response.json();
             this.showInsight(insight);
             this.showToast('Insight saved');
             this.loadTodayData();
-            
+
             // If experiment suggestion exists, show it
             if (insight.experiment_suggestion) {
                 this.showExperimentSuggestion(insight.experiment_suggestion);
@@ -967,7 +967,7 @@ class SovereignOS {
     getSelectedValue(labelText) {
         const label = document.querySelector(`label:contains("${labelText}")`);
         if (!label) return null;
-        
+
         const buttonGroup = label.nextElementSibling;
         const activeBtn = buttonGroup.querySelector('.btn-option.active');
         return activeBtn ? activeBtn.dataset.value : null;
@@ -976,11 +976,11 @@ class SovereignOS {
     showInsight(insight) {
         const insightBox = document.getElementById('insightResult');
         let html = `<strong>Insight:</strong> ${insight.insight}`;
-        
+
         if (insight.suggestion) {
             html += `<br><strong>Suggestion:</strong> ${insight.suggestion}`;
         }
-        
+
         insightBox.innerHTML = html;
         insightBox.style.display = 'block';
     }
@@ -988,7 +988,7 @@ class SovereignOS {
     showExperiment(experiment) {
         const container = document.getElementById('experimentStatus');
         const daysLeft = this.calculateDaysLeft(experiment.start_date, experiment.duration_days);
-        
+
         container.innerHTML = `
             <div class="experiment-active">
                 <h3>${experiment.name || 'Micro-Experiment'}</h3>
@@ -1005,10 +1005,10 @@ class SovereignOS {
     showExperimentSuggestion(suggestion) {
         const form = document.getElementById('experimentForm');
         const input = document.getElementById('experimentInput');
-        
+
         input.value = suggestion.change;
         form.style.display = 'block';
-        
+
         const container = document.getElementById('experimentStatus');
         container.innerHTML = `
             <div class="experiment-suggestion">
@@ -1023,17 +1023,17 @@ class SovereignOS {
     async startExperiment() {
         const change = document.getElementById('experimentInput').value;
         if (!change) return;
-        
+
         try {
             await fetch(`${API_BASE}/api/experiment`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ 
-                    change, 
-                    duration_days: 3 
+                body: JSON.stringify({
+                    change,
+                    duration_days: 3
                 })
             });
-            
+
             this.showToast('Experiment started');
             this.loadTodayData();
         } catch (error) {
@@ -1046,19 +1046,19 @@ class SovereignOS {
         try {
             const response = await fetch(`${API_BASE}/api/patterns?days=7`);
             const patterns = await response.json();
-            
+
             const container = document.getElementById('patternsList');
             if (patterns.length === 0) {
                 container.innerHTML = '<p class="empty-state">No patterns yet. Keep adding data.</p>';
                 return;
             }
-            
+
             let html = '<ul>';
             patterns.slice(0, 5).forEach(pattern => {
                 html += `
                     <li>
-                        <strong>${pattern.first_input}</strong> → 
-                        Energy: ${pattern.energy}, Mood: ${pattern.mood} 
+                        <strong>${pattern.first_input}</strong> →
+                        Energy: ${pattern.energy}, Mood: ${pattern.mood}
                         (${pattern.frequency}x)
                     </li>
                 `;
@@ -1074,11 +1074,11 @@ class SovereignOS {
         const start = new Date(startDate);
         const end = new Date(start);
         end.setDate(start.getDate() + duration);
-        
+
         const today = new Date();
         const diffTime = end - today;
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-        
+
         return Math.max(0, diffDays);
     }
 
@@ -1086,7 +1086,7 @@ class SovereignOS {
         const start = new Date(experiment.start_date);
         const today = new Date();
         const totalDays = experiment.duration_days;
-        
+
         const daysPassed = Math.floor((today - start) / (1000 * 60 * 60 * 24));
         return Math.min(100, Math.max(0, (daysPassed / totalDays) * 100));
     }
@@ -1107,9 +1107,9 @@ class SovereignOS {
             z-index: 1000;
             animation: slideIn 0.3s ease;
         `;
-        
+
         document.body.appendChild(toast);
-        
+
         // Remove after 3 seconds
         setTimeout(() => {
             toast.style.animation = 'slideOut 0.3s ease';
@@ -1119,13 +1119,13 @@ class SovereignOS {
 
     updateDate() {
         const now = new Date();
-        const options = { 
-            weekday: 'long', 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric' 
+        const options = {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
         };
-        document.getElementById('currentDate').textContent = 
+        document.getElementById('currentDate').textContent =
             now.toLocaleDateString('en-US', options);
     }
 
@@ -1133,7 +1133,7 @@ class SovereignOS {
         try {
             const response = await fetch(`${API_BASE}/api/dashboard`);
             const data = await response.json();
-            document.getElementById('dataCount').textContent = 
+            document.getElementById('dataCount').textContent =
                 `${data.streak} days of data`;
         } catch (error) {
             console.error('Failed to update count:', error);
@@ -1144,9 +1144,9 @@ class SovereignOS {
         try {
             const response = await fetch(`${API_BASE}/api/patterns?days=365`);
             const data = await response.json();
-            
-            const blob = new Blob([JSON.stringify(data, null, 2)], { 
-                type: 'application/json' 
+
+            const blob = new Blob([JSON.stringify(data, null, 2)], {
+                type: 'application/json'
             });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
@@ -1167,7 +1167,7 @@ class SovereignOS {
 document.addEventListener('DOMContentLoaded', () => {
     window.sovereignOS = new SovereignOS();
     window.sovereignOS.loadPatterns();
-    
+
     // Add CSS for animations
     const style = document.createElement('style');
     style.textContent = `
@@ -1215,10 +1215,10 @@ if __name__ == '__main__':
     print("=" * 50)
     print("Philosophy: 'It's not what goes in, but what comes out'")
     print("=" * 50)
-    
+
     # Open browser after 2 seconds
     Timer(2, open_browser).start()
-    
+
     # Start server
     uvicorn.run(
         "api.server:app",
@@ -1234,24 +1234,24 @@ if __name__ == '__main__':
 sovereign_os:
   version: "1.0.0"
   philosophy: "It's not what goes in, but what comes out"
-  
+
   data:
     storage: "local"  # local, encrypted_cloud
     retention_days: 365
     auto_export: false
-    
+
   features:
     morning_checkin: true
     evening_checkin: true
     daily_mirror: true
     experiments: true
     pattern_detection: true
-    
+
   privacy:
     analytics: false
     data_sharing: false
     local_only: true
-    
+
   notifications:
     morning_time: "08:00"
     evening_time: "20:00"
@@ -1289,16 +1289,16 @@ python run.py
 
 ### **System Features:**
 
-✅ **Full Local-First Architecture** - Your data stays on your machine  
-✅ **Morning/Evening Check-ins** - 30-second inputs  
-✅ **Daily Mirror Processing** - AI-powered insight generation  
-✅ **Micro-Experiment Scheduler** - 3-day behavior tests  
-✅ **Pattern Detection** - Finds your personal cause/effect relationships  
-✅ **Personal Rules Database** - Learns what works for YOU  
-✅ **REST API** - Fully programmable interface  
-✅ **Web Dashboard** - Clean, responsive interface  
-✅ **Data Export** - Full control over your data  
-✅ **Privacy by Design** - No tracking, no analytics, no cloud  
+✅ **Full Local-First Architecture** - Your data stays on your machine
+✅ **Morning/Evening Check-ins** - 30-second inputs
+✅ **Daily Mirror Processing** - AI-powered insight generation
+✅ **Micro-Experiment Scheduler** - 3-day behavior tests
+✅ **Pattern Detection** - Finds your personal cause/effect relationships
+✅ **Personal Rules Database** - Learns what works for YOU
+✅ **REST API** - Fully programmable interface
+✅ **Web Dashboard** - Clean, responsive interface
+✅ **Data Export** - Full control over your data
+✅ **Privacy by Design** - No tracking, no analytics, no cloud
 
 ### **First Boot Sequence:**
 

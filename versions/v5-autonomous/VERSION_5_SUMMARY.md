@@ -12,8 +12,8 @@ Hybrid strategy combining best of all 4 approaches: ship fast, measure everythin
 **$0-$100/month** (domain, analytics, tools)
 
 ## Timeline
-**4 hours:** Ready to launch  
-**7 days:** First metrics  
+**4 hours:** Ready to launch
+**7 days:** First metrics
 **30 days:** Product-market fit signal
 
 ## Success Metrics

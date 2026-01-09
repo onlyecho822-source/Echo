@@ -4,8 +4,8 @@
 
 Multi-provider git redundancy in pure bash.
 
-✅ Parallel sync to GitHub/GitLab/Codeberg  
-✅ Pre-flight checks  
+✅ Parallel sync to GitHub/GitLab/Codeberg
+✅ Pre-flight checks
 ✅ Zero dependencies
 
 Never lose code to platform suspension again.

@@ -1,7 +1,7 @@
 # ECHO GIT SYNC: BRAND KIT
 
 ## 1. The Tagline
-**Primary:** "Sleep Soundly. Your Code is Everywhere."  
+**Primary:** "Sleep Soundly. Your Code is Everywhere."
 **Secondary:** "The redundancy layer GitHub forgot."
 
 ## 2. The Elevator Pitch
@@ -10,15 +10,15 @@ Every developer fears the day they get locked out of their account. Echo Git Syn
 ## 3. Social Media Launch Post (Twitter/LinkedIn)
 🚀 **Introducing Echo Git Sync**
 
-I built a tool because I was paranoid.  
+I built a tool because I was paranoid.
 What happens if GitHub bans you tomorrow? Or GitLab goes down?
 
-Echo Git Sync is a zero-dependency bash utility that:  
-✅ Pushes code to 3+ providers simultaneously  
-✅ Verifies file integrity with SHA-256  
+Echo Git Sync is a zero-dependency bash utility that:
+✅ Pushes code to 3+ providers simultaneously
+✅ Verifies file integrity with SHA-256
 ✅ Runs locally or in CI/CD
 
-It's free. It's open source. It's peace of mind.  
+It's free. It's open source. It's peace of mind.
 [LINK TO REPO]
 
 #DevOps #OpenSource #Git #Security
@@ -47,7 +47,7 @@ Echo Git Sync provides insurance against platform dependency. With one command, 
 
 Perfect for:
 - Developers who've seen GitHub suspensions
-- Teams requiring jurisdictional redundancy  
+- Teams requiring jurisdictional redundancy
 - Anyone who values data sovereignty
 
 Features:

@@ -77,7 +77,7 @@ class ECPLedger:
         self.chain = []  # Merkle-tree backed
         self.state = {}  # Current coordination state
         self.validators = []  # Optional consensus validators
-        
+
     def append(self, decision: Decision):
         """Immutable append with cryptographic proof"""
         block = {
@@ -129,7 +129,7 @@ class TransparencyDashboard:
             'actor_network': ActorNetworkView(),
             'compliance_report': ComplianceReportView()
         }
-        
+
     def render(self, view: str, filters: dict = None):
         """Render dashboard view with optional filters"""
         return self.views[view].render(
@@ -295,7 +295,7 @@ paths:
 ```python
 class ComplianceExporter:
     """Generate compliance-ready reports"""
-    
+
     def generate_report(self, framework: str, period: dict):
         if framework == 'gdpr':
             return self._gdpr_article_30_report(period)
@@ -332,7 +332,7 @@ class ComplianceExporter:
 ### **ECHO COORDINATION PROTOCOL SOFTWARE LICENSE AGREEMENT v2.2**
 
 **Effective Date:** [Date]
-**Parties:** 
+**Parties:**
 - **Licensor:** Echo Protocol Foundation
 - **Licensee:** [Company Name]
 
@@ -371,9 +371,9 @@ class ComplianceExporter:
 #### **4. WARRANTY & DISCLAIMER**
 4.1 **Warranty Period**: 90 days from deployment.
 
-4.2 **Disclaimer**: 
+4.2 **Disclaimer**:
 ```
-SOFTWARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. 
+SOFTWARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
 LICENSOR NOT LIABLE FOR CONSEQUENTIAL DAMAGES.
 MAXIMUM LIABILITY = 12 MONTHS OF LICENSE FEES PAID.
 ```
@@ -506,7 +506,7 @@ Date: _________________________
 
 1.2 **Duration**: 90 days from deployment date.
 
-1.3 **Scope**: 
+1.3 **Scope**:
    - Limited to [number] users
    - Limited to [department/business unit]
    - Specific use cases: [list]
@@ -516,7 +516,7 @@ Date: _________________________
 
 2.2 **Training**: 40 hours of training for designated personnel.
 
-2.3 **Support**: 
+2.3 **Support**:
    - Business hours support (9am-5pm ET)
    - 4-hour response time for critical issues
    - Weekly check-in meetings
@@ -690,7 +690,7 @@ REQUIRED DOCUMENTS:
 ```python
 class DigitalSignatureProtocol:
     """RFC 3161-compliant digital signatures with audit trail"""
-    
+
     def sign_document(self, document_hash: str, signer_id: str):
         """
         Creates digitally signed document with timestamp authority
@@ -704,7 +704,7 @@ class DigitalSignatureProtocol:
             'signature': self._generate_signature(document_hash, signer_id),
             'certificate_chain': self._get_certificate_chain(signer_id)
         }
-        
+
         # Store in ledger
         receipt = self.ledger.append({
             'type': 'signature',
@@ -715,7 +715,7 @@ class DigitalSignatureProtocol:
                 'device_fingerprint': self._get_device_id()
             }
         })
-        
+
         return {
             'signature_id': receipt['hash'],
             'timestamp': signature['timestamp'],
@@ -732,24 +732,24 @@ class DigitalSignatureProtocol:
         """
         # Retrieve from ledger
         signature_record = self.ledger.get(signature_id)
-        
+
         # Cryptographic verification
         is_valid = self._crypto_verify(
             signature_record['data']['signature'],
             signature_record['data']['document_hash'],
             signature_record['data']['public_key']
         )
-        
+
         # Timestamp verification
         is_timestamp_valid = self._verify_rfc3161_timestamp(
             signature_record['data']['timestamp']
         )
-        
+
         # Certificate validation
         is_cert_valid = self._validate_certificate_chain(
             signature_record['data']['certificate_chain']
         )
-        
+
         return {
             'signature_id': signature_id,
             'is_valid': is_valid and is_timestamp_valid and is_cert_valid,

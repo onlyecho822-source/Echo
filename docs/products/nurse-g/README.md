@@ -10,9 +10,9 @@
 
 Nurse G is an AI-powered clinical assistant that helps nurses recognize critical patient conditions 2-4 hours earlier than traditional monitoring by combining evidence-based pattern recognition with harmonic vital signs analysis. It operates through smart glasses, mobile devices, or web interfaces and integrates seamlessly with existing hospital systems.
 
-**Status:** Production code available (1,000+ lines)  
-**Clinical Patterns:** 8 implemented (2 complete, 6 stubs)  
-**Evidence Base:** Surviving Sepsis Campaign, AHA/ACC guidelines  
+**Status:** Production code available (1,000+ lines)
+**Clinical Patterns:** 8 implemented (2 complete, 6 stubs)
+**Evidence Base:** Surviving Sepsis Campaign, AHA/ACC guidelines
 **Interfaces:** AR glasses, mobile app, web dashboard
 
 ---
@@ -23,13 +23,13 @@ Nurse G is an AI-powered clinical assistant that helps nurses recognize critical
 
 **Scenario:** Patient deteriorating on hospital floor
 
-**6:00 PM** — Vitals: HR 88, BP 135/82, RR 18, SpO2 96%, Temp 37.8°C  
+**6:00 PM** — Vitals: HR 88, BP 135/82, RR 18, SpO2 96%, Temp 37.8°C
 Nurse assessment: "Looks fine"
 
-**8:00 PM** — Vitals: HR 98, BP 142/88, RR 22, SpO2 94%, Temp 38.2°C  
+**8:00 PM** — Vitals: HR 98, BP 142/88, RR 22, SpO2 94%, Temp 38.2°C
 Nurse assessment: "Slight elevation, will watch"
 
-**10:00 PM** — Vitals: HR 115, BP 138/85, RR 28, SpO2 88%, Confusion  
+**10:00 PM** — Vitals: HR 115, BP 138/85, RR 28, SpO2 88%, Confusion
 Nurse response: "Patient crashing! RAPID RESPONSE!"
 
 **Result:** Late recognition. Patient in septic shock. Now requires ICU, pressors, possible organ damage.
@@ -75,7 +75,7 @@ Actions recommended include blood cultures before antibiotics, serum lactate lev
 **The Eight Clinical Patterns:**
 
 1. **Hypoxia** (COMPLETE) — Low oxygen states with respiratory compromise
-2. **Sepsis** (COMPLETE) — Infection leading to organ dysfunction  
+2. **Sepsis** (COMPLETE) — Infection leading to organ dysfunction
 3. **Stroke** (stub) — FAST exam and neurological assessment
 4. **Acute Coronary Syndrome** (stub) — Heart attack recognition
 5. **Respiratory Distress** (stub) — Acute breathing difficulty
@@ -344,10 +344,10 @@ Designed for 10+ facilities, national deployment, white-label options, custom cl
 
 ### For Hospitals
 
-**Step 1:** Schedule a demo with our clinical team  
-**Step 2:** Conduct technical assessment of your environment  
-**Step 3:** Review pilot program proposal  
-**Step 4:** Select pilot unit and timeline  
+**Step 1:** Schedule a demo with our clinical team
+**Step 2:** Conduct technical assessment of your environment
+**Step 3:** Review pilot program proposal
+**Step 4:** Select pilot unit and timeline
 **Step 5:** Begin implementation
 
 **Contact:** sales@echo.ai or call +1-XXX-XXX-XXXX
@@ -378,11 +378,11 @@ Designed for 10+ facilities, national deployment, white-label options, custom cl
 
 ## Contact
 
-**Nathan Poinsette** — ∇θ Operator  
+**Nathan Poinsette** — ∇θ Operator
 Founder, Echo Civilization
 
-**Sales:** sales@echo.ai  
-**Clinical:** clinical@echo.ai  
+**Sales:** sales@echo.ai
+**Clinical:** clinical@echo.ai
 **Partnerships:** partners@echo.ai
 
 ---

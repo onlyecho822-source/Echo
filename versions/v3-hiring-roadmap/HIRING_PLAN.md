@@ -4,17 +4,17 @@
 
 ### Team Coverage: You + AI Tools
 
-**Engineering:** You write code  
-**Marketing:** Product Hunt launch, HN post, LinkedIn  
-**Website:** GitHub Pages + simple HTML  
-**Social Media:** Buffer.com (schedule 1 week of posts)  
-**Finance:** Google Sheets for tracking  
-**Legal:** MIT License + LegalZoom for LLC ($500)  
-**Market Intel:** Google Alerts, Reddit, Twitter monitoring  
-**Translation:** Google Translate (basic)  
-**Support:** GitHub Issues only  
-**Sales:** Direct outreach (10 emails/day)  
-**HR:** N/A (just you)  
+**Engineering:** You write code
+**Marketing:** Product Hunt launch, HN post, LinkedIn
+**Website:** GitHub Pages + simple HTML
+**Social Media:** Buffer.com (schedule 1 week of posts)
+**Finance:** Google Sheets for tracking
+**Legal:** MIT License + LegalZoom for LLC ($500)
+**Market Intel:** Google Alerts, Reddit, Twitter monitoring
+**Translation:** Google Translate (basic)
+**Support:** GitHub Issues only
+**Sales:** Direct outreach (10 emails/day)
+**HR:** N/A (just you)
 **Project Mgmt:** Notion or Trello
 
 **Goal:** 100 users, validate product-market fit
@@ -97,17 +97,17 @@
 - 1 HR Manager
 - 1 Office Manager
 
-**Total Headcount:** 19 people  
+**Total Headcount:** 19 people
 **Annual Budget:** $3.6M
 
 ---
 
 ## Key Milestones
 
-**Month 3:** 100 users, product-market fit  
-**Month 6:** Raise $500K seed, hire 2 engineers  
-**Month 12:** 1,000 users, raise $3M Series A, hire 5 more  
-**Year 2:** 10,000 users, $1M ARR, hire 12 more  
+**Month 3:** 100 users, product-market fit
+**Month 6:** Raise $500K seed, hire 2 engineers
+**Month 12:** 1,000 users, raise $3M Series A, hire 5 more
+**Year 2:** 10,000 users, $1M ARR, hire 12 more
 **Year 3:** 100,000 users, $10M ARR, Series B
 
 ---

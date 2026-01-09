@@ -10,13 +10,13 @@ Phased hiring from solo founder to 100-person company with fundraising milestone
 - Phase 4: Scale (Year 2, $10M Series B)
 
 ## Cost
-**Year 1:** $3.6M (19 people)  
+**Year 1:** $3.6M (19 people)
 **Year 3:** $20M (50-100 people)
 
 ## Timeline
-**3 months:** Solo validation  
-**6 months:** First hires  
-**12 months:** Growth team  
+**3 months:** Solo validation
+**6 months:** First hires
+**12 months:** Growth team
 **2-3 years:** Full company
 
 ## Pros

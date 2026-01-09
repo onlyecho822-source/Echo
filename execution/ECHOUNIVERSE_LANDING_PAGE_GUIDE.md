@@ -2,8 +2,8 @@
 
 **Objective:** Launch the Echo Universe landing page and elite waiting list enrollment system within two weeks.
 
-**Project Manager:** Manus AI  
-**Founder & Executor:** Nathan Poinsette  
+**Project Manager:** Manus AI
+**Founder & Executor:** Nathan Poinsette
 **Date:** December 18, 2025
 
 ---
@@ -29,7 +29,7 @@ This guide provides a week-by-week breakdown to build and launch the initial pub
 
 1.  **Build Reusable Components:**
     *   `Header.tsx`: Navigation bar with links to sections.
-    *   `Hero.tsx`: The main 
+    *   `Hero.tsx`: The main
 value proposition and a simple email capture form.
     *   `Features.tsx`: A section detailing the core features and benefits.
     *   `WaitingList.tsx`: A detailed breakdown of the five-tier "Resonance Chambers" waiting list.

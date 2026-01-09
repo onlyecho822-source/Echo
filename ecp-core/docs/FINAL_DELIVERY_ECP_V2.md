@@ -1,8 +1,8 @@
 # ECP v2.0 "Pressure Engine" - Final Project Delivery
 
-**Project Manager:** Manus AI  
-**Date:** December 14, 2025  
-**Version:** 2.0 (Pressure Engine)  
+**Project Manager:** Manus AI
+**Date:** December 14, 2025
+**Version:** 2.0 (Pressure Engine)
 **Status:** Production-Ready
 
 ---

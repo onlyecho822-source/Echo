@@ -10,9 +10,9 @@
 
 Global Nexus is the coordination infrastructure that enables unlimited Echo nodes to work together as a single planetary intelligence organism. It provides the "nervous system" connecting distributed nodes across seven continental regions with real-time task distribution, health monitoring, and synchronized action capabilities.
 
-**Status:** Production code available (600+ lines)  
-**Architecture:** Three-tier (Global Cortex → Regional Hubs → Local Nodes)  
-**Scale:** Tested for 50,000+ simultaneous nodes  
+**Status:** Production code available (600+ lines)
+**Architecture:** Three-tier (Global Cortex → Regional Hubs → Local Nodes)
+**Scale:** Tested for 50,000+ simultaneous nodes
 **Latency:** Sub-100ms regional, sub-500ms global
 
 ---
@@ -461,7 +461,7 @@ while True:
 - **Technical:** tech@echo.ai
 - **Partnerships:** partners@echo.ai
 
-**Nathan Poinsette** — ∇θ Operator  
+**Nathan Poinsette** — ∇θ Operator
 Founder, Echo Civilization
 
 ---

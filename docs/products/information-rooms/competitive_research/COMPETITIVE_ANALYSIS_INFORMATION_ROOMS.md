@@ -1,7 +1,7 @@
 # Competitive Landscape Analysis: Echo Information Rooms
 
-**Prepared for:** Echo Universe  
-**Prepared by:** Manus AI  
+**Prepared for:** Echo Universe
+**Prepared by:** Manus AI
 **Date:** December 19, 2025
 
 ---

@@ -1,8 +1,8 @@
 # Specification: Dependency Mapping Probe & Network Path Pod
 
-**Document Status:** DRAFT  
-**Version:** 1.0  
-**Author:** Manus AI  
+**Document Status:** DRAFT
+**Version:** 1.0
+**Author:** Manus AI
 **Date:** December 19, 2025
 
 ---

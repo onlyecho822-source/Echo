@@ -1,8 +1,8 @@
 # TEST 3: Dependency Poisoning Attack
 
-**Test ID:** F1 (SCA/Vulnerability Gate) + F2 (SBOM Generation) + F3 (Package Firewall)  
-**Complexity:** 7/10  
-**Duration:** 10 minutes (actual)  
+**Test ID:** F1 (SCA/Vulnerability Gate) + F2 (SBOM Generation) + F3 (Package Firewall)
+**Complexity:** 7/10
+**Duration:** 10 minutes (actual)
 **Status:** ❌ FAIL - No Supply Chain Security System
 
 ---
@@ -60,7 +60,7 @@ gh api repos/onlyecho822-source/Echo/vulnerability-alerts
 
 **Note:** GitHub reported 21 existing vulnerabilities during push:
 ```
-GitHub found 21 vulnerabilities on onlyecho822-source/Echo's default branch 
+GitHub found 21 vulnerabilities on onlyecho822-source/Echo's default branch
 (1 critical, 6 high, 12 moderate, 2 low)
 ```
 
@@ -85,7 +85,7 @@ class AuditLogger:
             "cwd": os.getcwd(),
             "user": os.getenv("USER")
         }
-    
+
     def report(self):
         # Simulated exfiltration - real attack would send to C2
         return json.dumps(self.data, indent=2)
@@ -167,33 +167,33 @@ gh pr create --title "TEST: Dependency Poisoning - Malicious File" \
 ## Failure Modes Identified
 
 ### FM-1: No SBOM Generation
-**Description:** System cannot create Software Bill of Materials  
-**Risk:** No inventory of dependencies, impossible to track supply chain  
-**Likelihood:** CERTAIN (confirmed by test)  
+**Description:** System cannot create Software Bill of Materials
+**Risk:** No inventory of dependencies, impossible to track supply chain
+**Likelihood:** CERTAIN (confirmed by test)
 **Impact:** CRITICAL (blind to supply chain attacks)
 
 ### FM-2: No Vulnerability Scanning
-**Description:** Known CVEs are not detected or blocked  
-**Risk:** 21 existing vulnerabilities (1 critical, 6 high) are unmonitored  
-**Likelihood:** CERTAIN (Dependabot disabled)  
+**Description:** Known CVEs are not detected or blocked
+**Risk:** 21 existing vulnerabilities (1 critical, 6 high) are unmonitored
+**Likelihood:** CERTAIN (Dependabot disabled)
 **Impact:** CRITICAL (active vulnerabilities in production)
 
 ### FM-3: No Package Verification
-**Description:** Arbitrary files can be added without validation  
-**Risk:** Malicious code can be injected freely  
-**Likelihood:** CERTAIN (test demonstrated this)  
+**Description:** Arbitrary files can be added without validation
+**Risk:** Malicious code can be injected freely
+**Likelihood:** CERTAIN (test demonstrated this)
 **Impact:** CRITICAL (complete supply chain compromise possible)
 
 ### FM-4: No Quarantine Protocol
-**Description:** No mechanism to isolate suspicious dependencies  
-**Risk:** Once detected, no containment strategy  
-**Likelihood:** CERTAIN (no quarantine directory or workflow)  
+**Description:** No mechanism to isolate suspicious dependencies
+**Risk:** Once detected, no containment strategy
+**Likelihood:** CERTAIN (no quarantine directory or workflow)
 **Impact:** HIGH (cannot contain threats even if detected)
 
 ### FM-5: Dependabot Disabled
-**Description:** GitHub's built-in vulnerability alerts are turned off  
-**Risk:** Missing free, automated security scanning  
-**Likelihood:** CERTAIN (API confirmed disabled)  
+**Description:** GitHub's built-in vulnerability alerts are turned off
+**Risk:** Missing free, automated security scanning
+**Likelihood:** CERTAIN (API confirmed disabled)
 **Impact:** HIGH (ignoring available security tooling)
 
 ---
@@ -357,8 +357,8 @@ jobs:
 
 ## Confidence Assessment
 
-**Test Execution Confidence:** 0.98 (very high - exhaustive search + live test)  
-**Finding Accuracy Confidence:** 0.95 (very high - malicious file was demonstrably mergeable)  
+**Test Execution Confidence:** 0.98 (very high - exhaustive search + live test)
+**Finding Accuracy Confidence:** 0.95 (very high - malicious file was demonstrably mergeable)
 **Recommendation Feasibility Confidence:** 0.90 (high - all recommendations use standard tools)
 
 ---
@@ -373,8 +373,8 @@ jobs:
 
 ---
 
-**Test Completed:** 2025-12-31  
-**Execution Time:** 10 minutes  
+**Test Completed:** 2025-12-31
+**Execution Time:** 10 minutes
 **Next Test:** Test 4 - EDR-001 Integration (Real-World Data)
 
 ---

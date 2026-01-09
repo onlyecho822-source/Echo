@@ -1,7 +1,7 @@
 # EchoNate-Manus Integration Architecture
 
-**Generated:** 2025-12-28 10:35 AST  
-**Status:** Design Phase  
+**Generated:** 2025-12-28 10:35 AST
+**Status:** Design Phase
 **Purpose:** Enable automatic read/write integration between Manus AI and Echo Universe through resilient API architecture
 
 ---
@@ -110,19 +110,19 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-      
+
       - name: Verify message signatures
         run: |
           for msg in echonate-bridge/inbox/pending/*.json; do
             gpg --verify "$msg.sig" "$msg" || exit 1
           done
-      
+
       - name: Route messages
         run: |
           python3 scripts/echonate_router.py \
             --inbox echonate-bridge/inbox/pending \
             --outbox echonate-bridge/outbox/pending
-      
+
       - name: Commit responses
         run: |
           git add echonate-bridge/outbox/pending/
@@ -207,10 +207,10 @@ class EchoNateClient:
         self.repo_url = repo_url
         self.gpg = gnupg.GPG()
         self.key_id = gpg_key_id
-    
+
     def read_global_nexus_state(self):
         """Automatically read current Global Nexus state"""
-        
+
         # Create read request
         message = {
             "MessageID": f"manus_read_{int(datetime.now().timestamp())}",
@@ -224,23 +224,23 @@ class EchoNateClient:
                 "Priority": "normal"
             }
         }
-        
+
         # Sign message
         signed = self.gpg.sign(json.dumps(message), keyid=self.key_id)
-        
+
         # Write to GitHub (via API or git push)
         self.write_to_inbox(message, signed)
-        
+
         # Poll for response
         response = self.poll_for_response(message["MessageID"])
-        
+
         return response
-    
+
     def write_to_inbox(self, message, signature):
         """Write message to Echo's inbox"""
         # Implementation: GitHub API or git operations
         pass
-    
+
     def poll_for_response(self, message_id, timeout=300):
         """Poll outbox for response"""
         # Implementation: Check outbox every 30 seconds
@@ -274,7 +274,7 @@ class ResilientEchoNateClient(EchoNateClient):
             self.transport_direct_api,
             self.transport_email
         ]
-    
+
     def send_message(self, message):
         """Try multiple transport methods until one succeeds"""
         for transport in self.transport_methods:
@@ -285,26 +285,26 @@ class ResilientEchoNateClient(EchoNateClient):
             except Exception as e:
                 print(f"Transport {transport.__name__} failed: {e}")
                 continue
-        
+
         raise Exception("All transport methods failed")
-    
+
     def transport_github(self, message):
         """Primary: GitHub API"""
         # Implementation
         pass
-    
+
     def transport_ipfs(self, message):
         """Fallback 1: IPFS + Arweave"""
         # Pin message to IPFS
         # Store CID in Arweave
         # Echo polls IPFS for new messages
         pass
-    
+
     def transport_direct_api(self, message):
         """Fallback 2: Direct API endpoint"""
         # If Echo has a public API endpoint
         pass
-    
+
     def transport_email(self, message):
         """Fallback 3: Encrypted email"""
         # Send GPG-encrypted email to operator

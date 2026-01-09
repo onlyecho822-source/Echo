@@ -1,8 +1,8 @@
 # TEST 4: EDR-001 Integration Test (Real-World Data)
 
-**Test ID:** D1 (Real-World Temporal Decay Calculation)  
-**Complexity:** 8/10  
-**Duration:** <30 seconds (actual)  
+**Test ID:** D1 (Real-World Temporal Decay Calculation)
+**Complexity:** 8/10
+**Duration:** <30 seconds (actual)
 **Status:** ✅ PASS (Demonstration) / ❌ FAIL (Implementation)
 
 ---
@@ -45,7 +45,7 @@ git log --follow --format="%ai | %s" -- docs/framework/encyclopedia/diagnostics/
 
 **Document Metadata:**
 - **Author:** Manus AI (Team Lead)
-- **Institution:** Echo Universe Research Program  
+- **Institution:** Echo Universe Research Program
 - **Date:** December 31, 2025
 - **Publication Timestamp:** 2025-12-31T06:22:02-05:00 (11:22:02 UTC)
 
@@ -158,21 +158,21 @@ confidence(0.4614) = 0.8117
 ## Failure Modes Identified
 
 ### FM-1: No Automated Decay Calculation
-**Description:** System cannot automatically calculate confidence over time  
-**Risk:** Stale artifacts remain at initial confidence indefinitely  
-**Likelihood:** CERTAIN (no decay engine exists)  
+**Description:** System cannot automatically calculate confidence over time
+**Risk:** Stale artifacts remain at initial confidence indefinitely
+**Likelihood:** CERTAIN (no decay engine exists)
 **Impact:** CRITICAL (temporal honesty principle violated)
 
 ### FM-2: No Enforcement Workflow
-**Description:** Even if decay were calculated, no workflow blocks low-confidence artifacts  
-**Risk:** Expired artifacts can be used without restriction  
-**Likelihood:** CERTAIN (no enforcement workflow exists)  
+**Description:** Even if decay were calculated, no workflow blocks low-confidence artifacts
+**Risk:** Expired artifacts can be used without restriction
+**Likelihood:** CERTAIN (no enforcement workflow exists)
 **Impact:** CRITICAL (defeats purpose of temporal system)
 
 ### FM-3: No Re-Validation Protocol
-**Description:** No mechanism for humans to re-validate and restore confidence  
-**Risk:** Useful reports become unusable without path to restoration  
-**Likelihood:** CERTAIN (no sync protocol exists)  
+**Description:** No mechanism for humans to re-validate and restore confidence
+**Risk:** Useful reports become unusable without path to restoration
+**Likelihood:** CERTAIN (no sync protocol exists)
 **Impact:** HIGH (creates friction, discourages temporal governance)
 
 ---
@@ -215,26 +215,26 @@ def calculate_decay(artifact_path: Path) -> dict:
     """Calculate current confidence for a temporal artifact"""
     with open(artifact_path) as f:
         artifact = json.load(f)
-    
+
     # Extract metadata
     capture_time = datetime.fromisoformat(artifact["temporal_metadata"]["capture_timestamp"])
     topic_type = artifact["temporal_metadata"]["topic_type"]
     initial_confidence = artifact["truth_state"]["internal_fidelity"]
-    
+
     # Load decay rates
     decay_rates = {"News": 0.10, "Code": 0.005, "Research": 0.001, "History": 0.0}
     lambda_val = decay_rates.get(topic_type, 0.005)  # Default to Code
-    
+
     # Calculate
     days_elapsed = (datetime.now(timezone.utc) - capture_time).total_seconds() / 86400
     current_confidence = initial_confidence * math.exp(-lambda_val * days_elapsed)
-    
+
     return {
         "artifact_id": artifact["artifact_id"],
         "days_elapsed": days_elapsed,
         "initial_confidence": initial_confidence,
         "current_confidence": current_confidence,
-        "status": "HEALTHY" if current_confidence >= 0.70 else 
+        "status": "HEALTHY" if current_confidence >= 0.70 else
                   ("WARNING" if current_confidence >= 0.30 else "BLOCKED")
     }
 ```
@@ -256,7 +256,7 @@ jobs:
       - name: Find temporal artifacts
         run: |
           find . -name "*.json" -exec grep -l "temporal_metadata" {} \; > artifacts.txt
-      
+
       - name: Calculate decay
         run: |
           python scripts/calculate_decay.py --input artifacts.txt --threshold 0.30
@@ -307,8 +307,8 @@ jobs:
 
 ## Confidence Assessment
 
-**Test Execution Confidence:** 0.98 (very high - real data, verified calculations)  
-**Finding Accuracy Confidence:** 0.95 (very high - mathematics are deterministic)  
+**Test Execution Confidence:** 0.98 (very high - real data, verified calculations)
+**Finding Accuracy Confidence:** 0.95 (very high - mathematics are deterministic)
 **Recommendation Feasibility Confidence:** 0.90 (high - decay function is straightforward to implement)
 
 ---
@@ -337,8 +337,8 @@ jobs:
 
 ---
 
-**Test Completed:** 2025-12-31  
-**Execution Time:** <30 seconds  
+**Test Completed:** 2025-12-31
+**Execution Time:** <30 seconds
 **Next Test:** Test 5 - GitHub Exploit Chain (Hostile Environment Simulation)
 
 ---

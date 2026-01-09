@@ -1,7 +1,7 @@
 # ECP v2.0 "Pressure Engine" - Project Manager Decision Log
 
-**Project Manager:** Manus AI  
-**Date:** December 14, 2025  
+**Project Manager:** Manus AI
+**Date:** December 14, 2025
 **Objective:** Integrate Nexus Gate, Power Dynamics, and Pressure Engine concepts into ECP v1.1, making all necessary architectural decisions independently.
 
 ---

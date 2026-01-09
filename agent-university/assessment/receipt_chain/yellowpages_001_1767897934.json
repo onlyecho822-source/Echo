@@ -1,0 +1,49 @@
+{
+  "agent_id": "yellowpages_001",
+  "scenario_id": "chaos_fault_injection_v1",
+  "start_time": "2026-01-08T18:45:19.811805Z",
+  "end_time": "2026-01-08T18:45:34.814173Z",
+  "faults_injected": 5,
+  "faults_recovered": 3,
+  "faults_failed": 2,
+  "recovery_rate": 0.6,
+  "avg_recovery_time_ms": 2000,
+  "passed": false,
+  "results": [
+    {
+      "fault_type": "file_not_found",
+      "expected_recovery": "create_default_config",
+      "agent_recovered": true,
+      "recovery_time_ms": 2000,
+      "timestamp": "2026-01-08T18:45:21.812051Z"
+    },
+    {
+      "fault_type": "permission_denied",
+      "expected_recovery": "fallback_to_temp_dir",
+      "agent_recovered": false,
+      "recovery_time_ms": 2000,
+      "timestamp": "2026-01-08T18:45:24.812565Z"
+    },
+    {
+      "fault_type": "permission_denied",
+      "expected_recovery": "fallback_to_temp_dir",
+      "agent_recovered": false,
+      "recovery_time_ms": 2000,
+      "timestamp": "2026-01-08T18:45:27.812995Z"
+    },
+    {
+      "fault_type": "file_not_found",
+      "expected_recovery": "create_default_config",
+      "agent_recovered": true,
+      "recovery_time_ms": 2000,
+      "timestamp": "2026-01-08T18:45:30.813451Z"
+    },
+    {
+      "fault_type": "file_not_found",
+      "expected_recovery": "create_default_config",
+      "agent_recovered": true,
+      "recovery_time_ms": 2000,
+      "timestamp": "2026-01-08T18:45:33.813936Z"
+    }
+  ]
+}

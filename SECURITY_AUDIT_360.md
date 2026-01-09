@@ -1,7 +1,7 @@
 # 360° Security Audit - Echo Repository
 
-**Date:** December 31, 2025  
-**Auditor:** Automated Security Scan  
+**Date:** December 31, 2025
+**Auditor:** Automated Security Scan
 **Scope:** All dependency files and known vulnerabilities
 
 ---
@@ -233,10 +233,10 @@ pytest-cov>=6.0.0    # Latest stable
    ```bash
    # Backend
    cp /tmp/sherlock_requirements_updated.txt sherlock-hub/backend/requirements.txt
-   
+
    # Frontend
    cp /tmp/package_updated.json sherlock-hub/frontend/package.json
-   
+
    # Main
    cp /tmp/echo_requirements_updated.txt requirements.txt
    ```
@@ -247,7 +247,7 @@ pytest-cov>=6.0.0    # Latest stable
    cd sherlock-hub/backend
    pip install -r requirements.txt
    pytest
-   
+
    # Frontend tests
    cd sherlock-hub/frontend
    npm install

@@ -132,7 +132,7 @@ This sequence is triggered when a user makes a deposit. It is more personalized 
 
     > [Name],
     >
-    > Your private environment within Echo Universe is now active. 
+    > Your private environment within Echo Universe is now active.
     >
     > **Your Access Portal:** [Link to Private Instance]
     > **Your Onboarding Guide:** [Link to Documentation]

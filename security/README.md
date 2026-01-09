@@ -88,7 +88,7 @@ python3 security/scan_github_vulnerabilities.py onlyecho822-source Echo
 
 ## Workflow Schedule
 
-**Cron Expression:** `0 13 * * *` (UTC)  
+**Cron Expression:** `0 13 * * *` (UTC)
 **Local Time:** 8:00 AM EST / 1:00 PM UTC
 
 The workflow runs automatically every day at the scheduled time.
@@ -306,9 +306,9 @@ MIT License - See LICENSE file in repository root
 
 ---
 
-**Built with ❤️ by Nathan Poinsette**  
-**Powered by Manus AI**  
+**Built with ❤️ by Nathan Poinsette**
+**Powered by Manus AI**
 **Veteran-owned. Open Source. Always.**
 
-**Last Updated:** December 18, 2025  
+**Last Updated:** December 18, 2025
 **Status:** ✅ Production Ready
