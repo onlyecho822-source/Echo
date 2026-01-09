@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-01-09T12:07:36.846528",
+  "timestamp": "2026-01-09T12:08:13.139525",
   "agents_total": 5,
   "agents_operational": 5,
   "total_cycles": 372,
-  "total_tasks": 627,
-  "ledger_entries_today": 5644,
+  "total_tasks": 625,
+  "ledger_entries_today": 5646,
   "status": "healthy",
   "agents": [
     {
@@ -35,7 +35,7 @@
       "name": "orchestrator_001",
       "type": "orchestrator",
       "cycle_count": 205,
-      "tasks_completed": 210,
+      "tasks_completed": 208,
       "last_updated": "unknown",
       "status": "operational"
     },
