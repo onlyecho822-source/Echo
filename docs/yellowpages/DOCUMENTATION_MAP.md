@@ -1,8 +1,8 @@
 # Echo Universe Documentation Map
-*Last updated: 2026-01-09T06:14:17.336385*
+*Last updated: 2026-01-09T06:25:19.890456*
 
 ## Overview
-Total documentation files: 230
+Total documentation files: 231
 
 ## Documentation by Directory
 
@@ -39,6 +39,7 @@ Total documentation files: 230
 ### docs
 
 - [MANUS_CREDIT_OPTIMIZATION.md](../../docs/MANUS_CREDIT_OPTIMIZATION.md)
+- [REVERSE_ENGINEERED_ROADMAP.md](../../docs/REVERSE_ENGINEERED_ROADMAP.md)
 
 ### docs/architecture
 
