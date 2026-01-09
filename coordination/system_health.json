@@ -1,41 +1,41 @@
 {
-  "timestamp": "2026-01-09T04:54:01.455215",
+  "timestamp": "2026-01-09T04:54:35.908093",
   "agents_total": 5,
   "agents_operational": 5,
-  "total_cycles": 125,
-  "total_tasks": 243,
+  "total_cycles": 106,
+  "total_tasks": 307,
   "ledger_entries_today": 33,
   "status": "healthy",
   "agents": [
     {
       "name": "cleaner_001",
       "type": "cleaner",
-      "cycle_count": 19,
-      "tasks_completed": 45,
+      "cycle_count": 13,
+      "tasks_completed": 66,
       "last_updated": "unknown",
       "status": "operational"
     },
     {
       "name": "planner_001",
       "type": "planner",
-      "cycle_count": 28,
-      "tasks_completed": 62,
+      "cycle_count": 19,
+      "tasks_completed": 76,
       "last_updated": "unknown",
       "status": "operational"
     },
     {
       "name": "yellowpages_001",
       "type": "yellowpages",
-      "cycle_count": 15,
-      "tasks_completed": 66,
+      "cycle_count": 10,
+      "tasks_completed": 101,
       "last_updated": "unknown",
       "status": "operational"
     },
     {
       "name": "orchestrator_001",
       "type": "orchestrator",
-      "cycle_count": 60,
-      "tasks_completed": 67,
+      "cycle_count": 61,
+      "tasks_completed": 61,
       "last_updated": "unknown",
       "status": "operational"
     },
