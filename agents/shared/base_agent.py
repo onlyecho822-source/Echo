@@ -10,8 +10,10 @@ import time
 import hashlib
 from datetime import datetime
 from typing import Dict, List, Optional, Any
+from pathlib import Path
 import subprocess
 import sys
+import requests
 
 class EchoAgent:
     """Base class for all Echo Universe autonomous agents"""
@@ -33,6 +35,8 @@ class EchoAgent:
         self.state_path = os.path.join(self.repo_path, 'agents', 'shared', 'state')
         self.autopilot = True
         self.cycle_count = 0
+        self.court_url = 'http://localhost:5001'
+        self.latest_court_attestation_id = None
         
         # Ensure directories exist
         os.makedirs(self.ledger_path, exist_ok=True)
@@ -162,6 +166,72 @@ class EchoAgent:
         """
         raise NotImplementedError("Subclasses must implement do_work()")
     
+    def submit_to_court(self):
+        """Submit attestation to Constitutional Court"""
+        try:
+            # Calculate ledger hash
+            ledger_files = list(Path(self.ledger_path).glob('*.jsonl'))
+            ledger_content = ''
+            for lf in ledger_files:
+                with open(lf, 'r') as f:
+                    ledger_content += f.read()
+            
+            ledger_hash = hashlib.sha256(ledger_content.encode()).hexdigest()
+            
+            # Count agents
+            agent_count = len(list(Path(self.state_path).glob('*.json')))
+            
+            # Prepare attestation
+            attestation = {
+                'timestamp': datetime.utcnow().isoformat(),
+                'ledger_hash': ledger_hash,
+                'agent_count': agent_count,
+                'operations_count': self.state.get('tasks_completed', 0),
+                'red_line_violations': 0
+            }
+            
+            # Submit to Court
+            response = requests.post(f'{self.court_url}/attest', json=attestation, timeout=5)
+            
+            if response.status_code == 200:
+                result = response.json()
+                self.latest_court_attestation_id = result['attestation_id']
+                print(f"  ✓ Court attestation: {result['attestation_id']}")
+                return True
+            else:
+                print(f"  ✗ Court attestation failed: {response.status_code}")
+                return False
+                
+        except Exception as e:
+            print(f"  ✗ Court submission error: {e}")
+            return False
+    
+    def check_redline(self, operation: str, context: dict = None) -> bool:
+        """Check operation against Constitutional Court red lines"""
+        try:
+            check_data = {
+                'operation': operation,
+                'agent': self.agent_name,
+                'context': context or {}
+            }
+            
+            response = requests.post(f'{self.court_url}/check_redline', json=check_data, timeout=5)
+            
+            if response.status_code == 200:
+                result = response.json()
+                if not result['allowed']:
+                    print(f"  ⚠ Red line violation detected: {result['violations'][0]['rule']}")
+                    return False
+                return True
+            else:
+                # If Court unavailable, err on side of caution
+                print(f"  ⚠ Court unavailable, blocking operation")
+                return False
+                
+        except Exception as e:
+            print(f"  ⚠ Court check failed: {e}, blocking operation")
+            return False
+    
     def run_cycle(self):
         """Run a single work cycle"""
         self.cycle_count += 1
@@ -177,6 +247,10 @@ class EchoAgent:
             # Update state
             self.state['tasks_completed'] += result.get('tasks_completed', 0)
             self.save_state()
+            
+            # Submit to Constitutional Court every cycle
+            if self.cycle_count % 1 == 0:  # Every cycle
+                self.submit_to_court()
             
             # Log cycle completion
             self.log_to_ledger('cycle_complete', {
