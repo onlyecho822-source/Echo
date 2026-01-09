@@ -1,5 +1,5 @@
 # Echo Universe Directory Tree
-*Generated: 2026-01-08T23:31:25.095484*
+*Generated: 2026-01-08T23:43:00.807391*
 
 ```
 Echo/
@@ -78,7 +78,6 @@ Echo/
 ├── agents
 │   ├── cleaner
 │   │   └── cleaner_agent.py
-│   ├── orchestrator
 │   ├── planner
 │   │   └── planner_agent.py
 │   ├── shared
@@ -144,6 +143,7 @@ Echo/
 │   │   └── constitutional-coordination-audit.yml
 │   └── yellowpages
 │       ├── ASSET_INDEX.md
+│       ├── DIRECTORY_TREE.md
 │       ├── DOCUMENTATION_MAP.md
 │       └── QUICK_REFERENCE.md
 ├── due-diligence

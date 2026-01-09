@@ -1,8 +1,8 @@
 # Echo Universe Documentation Map
-*Last updated: 2026-01-08T23:31:25.095238*
+*Last updated: 2026-01-09T01:45:08.484258*
 
 ## Overview
-Total documentation files: 219
+Total documentation files: 223
 
 ## Documentation by Directory
 
@@ -106,6 +106,13 @@ Total documentation files: 219
 ### docs/specs
 
 - [DEPENDENCY_PROBE_SPEC.md](../../docs/specs/DEPENDENCY_PROBE_SPEC.md)
+
+### docs/yellowpages
+
+- [ASSET_INDEX.md](../../docs/yellowpages/ASSET_INDEX.md)
+- [DIRECTORY_TREE.md](../../docs/yellowpages/DIRECTORY_TREE.md)
+- [DOCUMENTATION_MAP.md](../../docs/yellowpages/DOCUMENTATION_MAP.md)
+- [QUICK_REFERENCE.md](../../docs/yellowpages/QUICK_REFERENCE.md)
 
 ### due-diligence
 
