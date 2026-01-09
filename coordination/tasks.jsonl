@@ -811,3 +811,5 @@
 {"id": "task_1767950213", "timestamp": "2026-01-09T09:16:53.066618", "task_type": "update_roadmap", "target_agent": "planner_001", "priority": "normal", "status": "pending", "assigned_by": "orchestrator_001"}
 {"id": "task_1767950319", "timestamp": "2026-01-09T09:18:39.535292", "task_type": "cleanup_old_logs", "target_agent": "cleaner_001", "priority": "low", "status": "pending", "assigned_by": "orchestrator_001"}
 {"id": "task_1767950319", "timestamp": "2026-01-09T09:18:39.535376", "task_type": "update_roadmap", "target_agent": "planner_001", "priority": "normal", "status": "pending", "assigned_by": "orchestrator_001"}
+{"id": "task_1767950351", "timestamp": "2026-01-09T09:19:11.781105", "task_type": "cleanup_old_logs", "target_agent": "cleaner_001", "priority": "low", "status": "pending", "assigned_by": "orchestrator_001"}
+{"id": "task_1767950351", "timestamp": "2026-01-09T09:19:11.842587", "task_type": "cleanup_old_logs", "target_agent": "cleaner_001", "priority": "low", "status": "pending", "assigned_by": "orchestrator_001"}
