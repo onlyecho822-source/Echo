@@ -1,8 +1,8 @@
 # Echo Universe Documentation Map
-*Last updated: 2026-01-09T03:14:11.689807*
+*Last updated: 2026-01-09T03:25:11.902712*
 
 ## Overview
-Total documentation files: 226
+Total documentation files: 227
 
 ## Documentation by Directory
 
@@ -111,6 +111,7 @@ Total documentation files: 226
 
 - [BEFORE_AFTER_REPORT.md](../../docs/reports/BEFORE_AFTER_REPORT.md)
 - [FINAL_SYSTEM_REPORT.md](../../docs/reports/FINAL_SYSTEM_REPORT.md)
+- [STRESS_TEST_REPORT.md](../../docs/reports/STRESS_TEST_REPORT.md)
 
 ### docs/specs
 
