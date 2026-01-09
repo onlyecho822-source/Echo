@@ -1,8 +1,8 @@
 # Echo Universe Documentation Map
-*Last updated: 2026-01-09T02:45:10.313143*
+*Last updated: 2026-01-09T02:53:59.070417*
 
 ## Overview
-Total documentation files: 223
+Total documentation files: 225
 
 ## Documentation by Directory
 
@@ -68,6 +68,10 @@ Total documentation files: 223
 
 - [INTERNET_CARTOGRAPHY_REPORT.md](../../docs/framework/encyclopedia/diagnostics/INTERNET_CARTOGRAPHY_REPORT.md)
 
+### docs/governance
+
+- [CONSTITUTIONAL_COURT_SPEC.md](../../docs/governance/CONSTITUTIONAL_COURT_SPEC.md)
+
 ### docs/implementation_guides
 
 - [ECHO_UNIVERSE_IMPLEMENTATION_GUIDE.md](../../docs/implementation_guides/ECHO_UNIVERSE_IMPLEMENTATION_GUIDE.md)
@@ -102,6 +106,10 @@ Total documentation files: 223
 
 - [GAP_ANALYSIS.md](../../docs/reality_assessment/GAP_ANALYSIS.md)
 - [REALISTIC_ROADMAP.md](../../docs/reality_assessment/REALISTIC_ROADMAP.md)
+
+### docs/reports
+
+- [BEFORE_AFTER_REPORT.md](../../docs/reports/BEFORE_AFTER_REPORT.md)
 
 ### docs/specs
 
