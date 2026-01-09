@@ -2,8 +2,8 @@
   "agent_name": "yellowpages_001",
   "agent_type": "yellowpages",
   "created_at": "2026-01-08T23:31:25.088487",
-  "last_activity": "2026-01-09T09:54:21.150816",
-  "cycle_count": 25,
-  "tasks_completed": 161,
+  "last_activity": "2026-01-09T10:05:32.219856",
+  "cycle_count": 31,
+  "tasks_completed": 130,
   "errors": []
 }
