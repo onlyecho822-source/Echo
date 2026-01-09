@@ -1,9 +1,9 @@
 # Echo Universe Asset Index
-*Last updated: 2026-01-09T05:45:17.573283*
+*Last updated: 2026-01-09T05:54:05.735927*
 
 ## Repository Statistics
 - **Total Files:** 356
-- **Total Size:** 3.90 MB
+- **Total Size:** 3.92 MB
 - **Categories:** 7
 
 ## Assets by Category
@@ -33,7 +33,7 @@
 
 *...and 42 more files*
 
-### Configuration (29 files, 135.59 KB)
+### Configuration (29 files, 135.58 KB)
 
 - `sherlock-hub/frontend/package-lock.json` (94.5 KB)
 - `docs/workflows/constitutional-coordination-audit.yml` (10.2 KB)
@@ -58,18 +58,18 @@
 
 *...and 9 more files*
 
-### Data (11 files, 989.63 KB)
+### Data (11 files, 1018.11 KB)
 
-- `ledgers/agent_activity/orchestrator_001_20260109.jsonl` (457.9 KB)
-- `ledgers/agent_activity/planner_001_20260109.jsonl` (272.5 KB)
-- `ledgers/agent_activity/cleaner_001_20260109.jsonl` (110.5 KB)
-- `ledgers/agent_activity/yellowpages_001_20260109.jsonl` (90.6 KB)
-- `coordination/tasks.jsonl` (36.4 KB)
+- `ledgers/agent_activity/orchestrator_001_20260109.jsonl` (476.3 KB)
+- `ledgers/agent_activity/planner_001_20260109.jsonl` (274.8 KB)
+- `ledgers/agent_activity/cleaner_001_20260109.jsonl` (111.3 KB)
+- `ledgers/agent_activity/yellowpages_001_20260109.jsonl` (91.5 KB)
+- `coordination/tasks.jsonl` (41.1 KB)
 - `ledgers/agent_activity/planner_001_20260108.jsonl` (8.5 KB)
 - `ledgers/agent_activity/cleaner_001_20260108.jsonl` (4.3 KB)
+- `ledgers/agent_activity/epistemic_tracker_001_20260109.jsonl` (3.3 KB)
+- `epistemic_footprint/footprint.jsonl` (2.6 KB)
 - `ledgers/agent_activity/yellowpages_001_20260108.jsonl` (2.6 KB)
-- `ledgers/agent_activity/epistemic_tracker_001_20260109.jsonl` (2.4 KB)
-- `epistemic_footprint/footprint.jsonl` (2.0 KB)
 - `ledgers/automation/coordination_log.jsonl` (1.9 KB)
 
 ### Documentation (229 files, 2009.71 KB)
