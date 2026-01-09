@@ -1,14 +1,14 @@
 # Echo Universe Asset Index
-*Last updated: 2026-01-09T01:45:08.471118*
+*Last updated: 2026-01-09T01:53:56.572265*
 
 ## Repository Statistics
-- **Total Files:** 339
-- **Total Size:** 2.90 MB
+- **Total Files:** 343
+- **Total Size:** 2.91 MB
 - **Categories:** 7
 
 ## Assets by Category
 
-### Code (59 files, 450.40 KB)
+### Code (60 files, 456.22 KB)
 
 - `src/phase3/echo_phase3_devils_bargain.py` (96.9 KB)
 - `src/phase2/echo_phase2_implementation.py` (92.9 KB)
@@ -28,12 +28,12 @@
 - `agent-university/training/stage1_chaos/fault_injection_v1.py` (6.1 KB)
 - `tools/zapier/zapier_test.py` (5.9 KB)
 - `security/send_email_report.py` (5.8 KB)
+- `agents/orchestrator/orchestrator_agent.py` (5.8 KB)
 - `testing/artifacts/feedback_minimal.py` (5.7 KB)
-- `ecp-core/reference-implementation/ai_coordination/enforcement/nexus_gate.py` (5.7 KB)
 
-*...and 39 more files*
+*...and 40 more files*
 
-### Configuration (26 files, 133.99 KB)
+### Configuration (28 files, 135.15 KB)
 
 - `sherlock-hub/frontend/package-lock.json` (94.5 KB)
 - `docs/workflows/constitutional-coordination-audit.yml` (10.2 KB)
@@ -48,25 +48,26 @@
 - `agent-university/assessment/receipt_chain/cleaner_001_1767897919.json` (1.4 KB)
 - `testing/artifacts/feedback_data.json` (1.2 KB)
 - `artifacts/EDR-001.json` (1.0 KB)
+- `coordination/system_health.json` (0.9 KB)
 - `tools/zapier/zapier_config.json` (0.5 KB)
 - `sherlock-hub/docker-compose.yml` (0.5 KB)
 - `global-cortex/nodes/sandbox-node-001.json` (0.4 KB)
 - `sherlock-hub/frontend/package.json` (0.4 KB)
 - `security/test_scans/npm_test.json` (0.3 KB)
 - `global-cortex/tasks/task-1765508390104.json` (0.2 KB)
-- `agent-university/credentials/cleaner_001.json` (0.2 KB)
 
-*...and 6 more files*
+*...and 8 more files*
 
-### Data (7 files, 42.32 KB)
+### Data (8 files, 48.03 KB)
 
-- `ledgers/agent_activity/planner_001_20260109.jsonl` (17.4 KB)
+- `ledgers/agent_activity/planner_001_20260109.jsonl` (19.9 KB)
 - `ledgers/agent_activity/planner_001_20260108.jsonl` (8.5 KB)
+- `ledgers/agent_activity/yellowpages_001_20260109.jsonl` (5.2 KB)
+- `ledgers/agent_activity/cleaner_001_20260109.jsonl` (4.6 KB)
 - `ledgers/agent_activity/cleaner_001_20260108.jsonl` (4.3 KB)
-- `ledgers/agent_activity/yellowpages_001_20260109.jsonl` (4.0 KB)
-- `ledgers/agent_activity/cleaner_001_20260109.jsonl` (3.7 KB)
 - `ledgers/agent_activity/yellowpages_001_20260108.jsonl` (2.6 KB)
 - `ledgers/automation/coordination_log.jsonl` (1.9 KB)
+- `ledgers/agent_activity/orchestrator_001_20260109.jsonl` (1.1 KB)
 
 ### Documentation (223 files, 1973.83 KB)
 
