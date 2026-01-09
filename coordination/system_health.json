@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-01-09T02:38:26.511804",
+  "timestamp": "2026-01-09T02:39:00.960821",
   "agents_total": 4,
   "agents_operational": 4,
-  "total_cycles": 43,
-  "total_tasks": 158,
+  "total_cycles": 38,
+  "total_tasks": 155,
   "ledger_entries_today": 33,
   "status": "healthy",
   "agents": [
     {
       "name": "cleaner_001",
       "type": "cleaner",
-      "cycle_count": 10,
-      "tasks_completed": 27,
+      "cycle_count": 4,
+      "tasks_completed": 30,
       "last_updated": "unknown",
       "status": "operational"
     },
@@ -34,8 +34,8 @@
     {
       "name": "orchestrator_001",
       "type": "orchestrator",
-      "cycle_count": 15,
-      "tasks_completed": 22,
+      "cycle_count": 16,
+      "tasks_completed": 16,
       "last_updated": "unknown",
       "status": "operational"
     }
