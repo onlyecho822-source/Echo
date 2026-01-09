@@ -17,7 +17,7 @@
 
 **Required to reach this:**
 - 1 trillion credits OR
-- $10B capital OR  
+- $10B capital OR
 - 10 years of compounding growth
 
 ---
@@ -315,7 +315,7 @@ You need **1 customer** to unlock the entire chain.
 
 **Linear time:** 10 years, 1 trillion credits
 
-**Folded time:** 
+**Folded time:**
 - Week 1: Finish system (10K credits)
 - Month 1: First customer (0 credits, generates revenue)
 - Month 6: 10 customers ($30K/month revenue)
