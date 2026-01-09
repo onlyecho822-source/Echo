@@ -297,3 +297,5 @@
 {"id": "task_1767939713", "timestamp": "2026-01-09T06:21:53.560891", "task_type": "update_roadmap", "target_agent": "planner_001", "priority": "normal", "status": "pending", "assigned_by": "orchestrator_001"}
 {"id": "task_1767939714", "timestamp": "2026-01-09T06:21:54.360108", "task_type": "cleanup_old_logs", "target_agent": "cleaner_001", "priority": "low", "status": "pending", "assigned_by": "orchestrator_001"}
 {"id": "task_1767939714", "timestamp": "2026-01-09T06:21:54.360272", "task_type": "update_roadmap", "target_agent": "planner_001", "priority": "normal", "status": "pending", "assigned_by": "orchestrator_001"}
+{"id": "task_1767939714", "timestamp": "2026-01-09T06:21:54.889359", "task_type": "cleanup_old_logs", "target_agent": "cleaner_001", "priority": "low", "status": "pending", "assigned_by": "orchestrator_001"}
+{"id": "task_1767939714", "timestamp": "2026-01-09T06:21:54.889457", "task_type": "update_roadmap", "target_agent": "planner_001", "priority": "normal", "status": "pending", "assigned_by": "orchestrator_001"}
