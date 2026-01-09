@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-01-09T08:34:07.115401",
+  "timestamp": "2026-01-09T08:34:10.513645",
   "agents_total": 5,
   "agents_operational": 5,
-  "total_cycles": 250,
-  "total_tasks": 429,
-  "ledger_entries_today": 3696,
+  "total_cycles": 245,
+  "total_tasks": 440,
+  "ledger_entries_today": 3704,
   "status": "healthy",
   "agents": [
     {
@@ -26,8 +26,8 @@
     {
       "name": "yellowpages_001",
       "type": "yellowpages",
-      "cycle_count": 26,
-      "tasks_completed": 110,
+      "cycle_count": 21,
+      "tasks_completed": 120,
       "last_updated": "unknown",
       "status": "operational"
     },
@@ -35,7 +35,7 @@
       "name": "orchestrator_001",
       "type": "orchestrator",
       "cycle_count": 134,
-      "tasks_completed": 134,
+      "tasks_completed": 135,
       "last_updated": "unknown",
       "status": "operational"
     },
