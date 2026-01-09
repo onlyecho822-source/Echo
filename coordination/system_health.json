@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-01-09T10:04:22.421393",
+  "timestamp": "2026-01-09T10:04:58.712936",
   "agents_total": 5,
   "agents_operational": 5,
-  "total_cycles": 296,
-  "total_tasks": 548,
-  "ledger_entries_today": 4524,
+  "total_cycles": 287,
+  "total_tasks": 561,
+  "ledger_entries_today": 4540,
   "status": "healthy",
   "agents": [
     {
@@ -18,8 +18,8 @@
     {
       "name": "planner_001",
       "type": "planner",
-      "cycle_count": 59,
-      "tasks_completed": 124,
+      "cycle_count": 50,
+      "tasks_completed": 138,
       "last_updated": "unknown",
       "status": "operational"
     },
@@ -35,7 +35,7 @@
       "name": "orchestrator_001",
       "type": "orchestrator",
       "cycle_count": 164,
-      "tasks_completed": 168,
+      "tasks_completed": 167,
       "last_updated": "unknown",
       "status": "operational"
     },
