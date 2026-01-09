@@ -1,8 +1,8 @@
 # Echo Universe Documentation Map
-*Last updated: 2026-01-09T06:05:18.500094*
+*Last updated: 2026-01-09T06:14:06.376758*
 
 ## Overview
-Total documentation files: 229
+Total documentation files: 230
 
 ## Documentation by Directory
 
@@ -35,6 +35,10 @@ Total documentation files: 229
 
 - [cleanup_report_2026-01-08.md](../../artifacts/cleanup_report_2026-01-08.md)
 - [cleanup_report_2026-01-09.md](../../artifacts/cleanup_report_2026-01-09.md)
+
+### docs
+
+- [MANUS_CREDIT_OPTIMIZATION.md](../../docs/MANUS_CREDIT_OPTIMIZATION.md)
 
 ### docs/architecture
 
