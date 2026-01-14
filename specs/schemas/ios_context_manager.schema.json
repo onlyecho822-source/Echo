@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echo.universe/schemas/ios_context_manager.schema.json",
+  "title": "iOS-Compatible Context Manager Schema",
+  "description": "Schema for managing context windows across device tiers with chunking support",
+  "type": "object",
+  "required": ["session_id", "device_context", "task_processing"],
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "device_context": {
+      "type": "object",
+      "required": ["device_tier", "context_window_tokens", "available_memory_mb"],
+      "properties": {
+        "device_tier": {
+          "type": "string",
+          "enum": ["TIER_1_CLOUD", "TIER_2_FLAGSHIP", "TIER_3_MIDRANGE"],
+          "description": "Detected device capability tier"
+        },
+        "device_model": {
+          "type": "string",
+          "description": "Specific device model if detectable"
+        },
+        "chip": {
+          "type": "string",
+          "enum": ["cloud", "M4", "M3", "M2", "M1", "A17_Pro", "A16", "A15", "other"],
+          "description": "Processor chip"
+        },
+        "context_window_tokens": {
+          "type": "integer",
+          "minimum": 1024,
+          "description": "Available context window in tokens"
+        },
+        "available_memory_mb": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "neural_engine_available": {
+          "type": "boolean"
+        }
+      }
+    },
+    "task_processing": {
+      "type": "object",
+      "required": ["task_id", "total_tokens_required", "processing_strategy"],
+      "properties": {
+        "task_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "total_tokens_required": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Estimated total tokens for the task"
+        },
+        "processing_strategy": {
+          "type": "string",
+          "enum": ["single_pass", "chunked", "cloud_fallback"],
+          "description": "Strategy selected based on device capabilities"
+        },
+        "chunking_config": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "chunk_size_tokens": {
+              "type": "integer",
+              "minimum": 512,
+              "maximum": 3500,
+              "description": "Size of each chunk (leaving room for response)"
+            },
+            "overlap_tokens": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 500,
+              "description": "Overlap between chunks for context continuity"
+            },
+            "total_chunks": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "chunks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "chunk_id": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "status": {
+                "type": "string",
+                "enum": ["pending", "processing", "completed", "failed"]
+              },
+              "token_count": {
+                "type": "integer"
+              },
+              "result_summary": {
+                "type": "string",
+                "description": "Summary to carry forward to next chunk"
+              },
+              "session_id": {
+                "type": "string",
+                "description": "Separate LM session for this chunk"
+              }
+            }
+          }
+        }
+      }
+    },
+    "prompt_optimization": {
+      "type": "object",
+      "properties": {
+        "original_prompt_tokens": {
+          "type": "integer"
+        },
+        "optimized_prompt_tokens": {
+          "type": "integer"
+        },
+        "savings_percent": {
+          "type": "number"
+        },
+        "optimizations_applied": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "imperative_rewrite",
+              "context_pruning",
+              "schema_compression",
+              "instruction_deduplication"
+            ]
+          }
+        }
+      }
+    },
+    "fallback_status": {
+      "type": "object",
+      "properties": {
+        "fallback_triggered": {
+          "type": "boolean"
+        },
+        "fallback_reason": {
+          "type": "string",
+          "enum": [
+            "none",
+            "context_exceeded",
+            "memory_insufficient",
+            "neural_engine_unavailable",
+            "chunking_failed"
+          ]
+        },
+        "fallback_target": {
+          "type": "string",
+          "enum": ["TIER_1_CLOUD", "TIER_2_FLAGSHIP"]
+        }
+      }
+    },
+    "performance_metrics": {
+      "type": "object",
+      "properties": {
+        "total_latency_ms": {
+          "type": "integer"
+        },
+        "tokens_per_second": {
+          "type": "number"
+        },
+        "memory_peak_mb": {
+          "type": "integer"
+        },
+        "battery_impact_percent": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

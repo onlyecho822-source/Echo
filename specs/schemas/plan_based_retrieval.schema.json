@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echo.universe/schemas/plan_based_retrieval.schema.json",
+  "title": "Plan-Based Retrieval Schema",
+  "description": "Schema for structured retrieval plans that separate planning from execution",
+  "type": "object",
+  "required": ["plan_id", "query", "plan", "execution_status"],
+  "properties": {
+    "plan_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "query": {
+      "type": "object",
+      "required": ["original_query", "query_type"],
+      "properties": {
+        "original_query": {
+          "type": "string",
+          "description": "The user's original question"
+        },
+        "query_type": {
+          "type": "string",
+          "enum": ["single_hop", "multi_hop", "numerical", "temporal", "constraint_satisfaction"]
+        },
+        "estimated_hops": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "plan": {
+      "type": "object",
+      "required": ["steps", "memory_slots"],
+      "properties": {
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["step_id", "action", "parameters", "output_slot"],
+            "properties": {
+              "step_id": {
+                "type": "string"
+              },
+              "action": {
+                "type": "string",
+                "enum": ["search", "extract", "compute", "compare", "aggregate", "filter", "sort"]
+              },
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "query": { "type": "string" },
+                  "source": { "type": "string" },
+                  "field": { "type": "string" },
+                  "operation": { "type": "string" },
+                  "operands": { 
+                    "type": "array",
+                    "items": { "type": "string" }
+                  }
+                }
+              },
+              "output_slot": {
+                "type": "string",
+                "description": "Memory slot to store the result"
+              },
+              "depends_on": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Step IDs this step depends on"
+              }
+            }
+          }
+        },
+        "memory_slots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "slot_id": { "type": "string" },
+              "data_type": { 
+                "type": "string",
+                "enum": ["string", "number", "boolean", "array", "object"]
+              },
+              "description": { "type": "string" }
+            }
+          }
+        },
+        "termination_condition": {
+          "type": "string",
+          "description": "Expression that determines when plan is complete"
+        }
+      }
+    },
+    "execution_status": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["pending", "executing", "completed", "failed", "partial"]
+        },
+        "steps_completed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "steps_total": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "memory_state": {
+          "type": "object",
+          "additionalProperties": true,
+          "description": "Current values in memory slots"
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "step_id": { "type": "string" },
+              "error_type": { "type": "string" },
+              "message": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "result": {
+      "type": "object",
+      "properties": {
+        "answer": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "evidence_chain": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "step_id": { "type": "string" },
+              "source": { "type": "string" },
+              "extracted_fact": { "type": "string" },
+              "evidence_tier": {
+                "type": "string",
+                "enum": ["documented", "reported", "alleged"]
+              }
+            }
+          }
+        }
+      }
+    },
+    "sherlock_hub_integration": {
+      "type": "object",
+      "properties": {
+        "investigation_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "evidence_tier_summary": {
+          "type": "object",
+          "properties": {
+            "documented_count": { "type": "integer" },
+            "reported_count": { "type": "integer" },
+            "alleged_count": { "type": "integer" }
+          }
+        }
+      }
+    }
+  }
+}

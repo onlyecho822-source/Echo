@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echo.universe/schemas/abstention_response.schema.json",
+  "title": "Abstention-Aware Response Schema",
+  "description": "Schema for responses that explicitly handle uncertainty and abstention",
+  "type": "object",
+  "required": ["response_id", "response_type", "confidence", "content"],
+  "properties": {
+    "response_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the response"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "response_type": {
+      "type": "string",
+      "enum": ["CONFIDENT", "UNCERTAIN", "ABSTAINED", "DEFERRED"],
+      "description": "Classification of response certainty level"
+    },
+    "confidence": {
+      "type": "object",
+      "required": ["aggregate_score"],
+      "properties": {
+        "aggregate_score": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Overall confidence in the response"
+        },
+        "factors": {
+          "type": "object",
+          "properties": {
+            "source_verification": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0,
+              "description": "Confidence from source quality"
+            },
+            "internal_consistency": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0,
+              "description": "Confidence from logical consistency"
+            },
+            "cross_reference_match": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0,
+              "description": "Confidence from multiple source agreement"
+            },
+            "temporal_freshness": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0,
+              "description": "Confidence from information recency"
+            }
+          }
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "answer": {
+          "type": "string",
+          "description": "The actual response content, if provided"
+        },
+        "uncertainty_statement": {
+          "type": "string",
+          "description": "Explicit statement of what is uncertain or unknown"
+        },
+        "abstention_reason": {
+          "type": "string",
+          "description": "Why the system chose not to answer, if applicable"
+        },
+        "deferral_target": {
+          "type": "string",
+          "description": "Who/what the question is deferred to, if applicable"
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "source_type": {
+            "type": "string",
+            "enum": ["documented", "reported", "alleged", "inferred"]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "retrieved_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "anti_hallucination_checks": {
+      "type": "object",
+      "properties": {
+        "arbitrary_facts_guessed": {
+          "type": "boolean",
+          "description": "Were any arbitrary facts (dates, names, numbers) guessed?"
+        },
+        "all_claims_sourced": {
+          "type": "boolean",
+          "description": "Are all factual claims backed by sources?"
+        },
+        "confidence_calibrated": {
+          "type": "boolean",
+          "description": "Does stated confidence match actual evidence?"
+        }
+      }
+    }
+  }
+}
