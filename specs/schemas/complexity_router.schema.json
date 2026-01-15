@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echo.universe/schemas/complexity_router.schema.json",
+  "title": "Complexity-Aware Task Router Schema",
+  "description": "Schema for routing tasks based on complexity analysis to appropriate model tiers",
+  "type": "object",
+  "required": ["task_id", "complexity_analysis", "routing_decision"],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the task"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of routing decision"
+    },
+    "complexity_analysis": {
+      "type": "object",
+      "required": ["score", "factors"],
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Aggregate complexity score"
+        },
+        "factors": {
+          "type": "object",
+          "properties": {
+            "hop_count": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Number of reasoning steps required"
+            },
+            "entity_count": {
+              "type": "integer",
+              "minimum": 1,
+              "description": "Number of distinct entities involved"
+            },
+            "constraint_count": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of constraints to satisfy"
+            },
+            "computation_type": {
+              "type": "string",
+              "enum": ["pattern_match", "retrieval", "arithmetic", "logical", "multi_hop"],
+              "description": "Primary type of computation required"
+            },
+            "context_dependency": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0,
+              "description": "Degree of cross-reference required"
+            }
+          }
+        }
+      }
+    },
+    "routing_decision": {
+      "type": "object",
+      "required": ["selected_tier", "model_id", "rationale"],
+      "properties": {
+        "selected_tier": {
+          "type": "string",
+          "enum": ["standard_llm", "reasoning_model", "plan_based_executor"],
+          "description": "The tier selected for task execution"
+        },
+        "model_id": {
+          "type": "string",
+          "description": "Specific model identifier within the tier"
+        },
+        "rationale": {
+          "type": "string",
+          "description": "Human-readable explanation for routing decision"
+        },
+        "fallback_chain": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Ordered list of fallback model IDs if primary fails"
+        }
+      }
+    },
+    "performance_prediction": {
+      "type": "object",
+      "properties": {
+        "estimated_accuracy": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "estimated_latency_ms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "estimated_cost_units": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}
