@@ -1,0 +1,215 @@
+{
+  "version": "2.4.0-formal",
+  "description": "Echo Phoenix Formal Zapier Configuration - 4 Zaps enforcing I1-I4",
+  "invariants": {
+    "I1": "Exactly-once processing via h(e) = SHA256(canon(e))",
+    "I2": "Authority separation - Zapier cannot mutate Stripe directly",
+    "I3": "Safety gating - frozen state blocks payments",
+    "I4": "Observability completeness - every event in ledger"
+  },
+  "zaps": [
+    {
+      "id": "Z1",
+      "name": "Z1_DevOps_Signal",
+      "description": "GitHub → Echo Ledger: Captures all DevOps events for observability (I4)",
+      "trigger": {
+        "platform": "github",
+        "events": [
+          "pull_request.opened",
+          "pull_request.merged",
+          "pull_request.closed",
+          "push",
+          "release.published",
+          "workflow_run.completed"
+        ],
+        "repositories": [
+          "onlyecho822-source/Echo",
+          "onlyecho822-source/PHOENIX"
+        ]
+      },
+      "action": {
+        "type": "webhook",
+        "method": "POST",
+        "url": "${ECHO_BASE_URL}/ledger/events",
+        "headers": {
+          "X-API-Key": "${ECHO_API_KEY}",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "source": "github",
+          "type": "{{trigger.event}}",
+          "id": "github_{{trigger.delivery_id}}",
+          "payload": {
+            "repo": "{{trigger.repository.full_name}}",
+            "action": "{{trigger.action}}",
+            "sender": "{{trigger.sender.login}}",
+            "ref": "{{trigger.ref}}",
+            "url": "{{trigger.pull_request.html_url || trigger.compare}}"
+          },
+          "timestamp": "{{trigger.created_at}}"
+        }
+      },
+      "error_handling": {
+        "retry_count": 3,
+        "retry_delay_seconds": 60,
+        "on_failure": "log_and_continue"
+      }
+    },
+    {
+      "id": "Z2",
+      "name": "Z2_Stripe_Ledger",
+      "description": "Stripe → Echo Ledger: Captures all payment events for observability (I4)",
+      "trigger": {
+        "platform": "stripe",
+        "events": [
+          "payment_intent.created",
+          "payment_intent.processing",
+          "payment_intent.succeeded",
+          "payment_intent.payment_failed",
+          "payment_intent.canceled",
+          "charge.succeeded",
+          "charge.failed",
+          "charge.refunded",
+          "charge.dispute.created",
+          "charge.dispute.closed",
+          "customer.created",
+          "customer.updated",
+          "invoice.paid",
+          "invoice.payment_failed",
+          "payout.paid",
+          "payout.failed"
+        ]
+      },
+      "action": {
+        "type": "webhook",
+        "method": "POST",
+        "url": "${ECHO_BASE_URL}/ledger/events",
+        "headers": {
+          "X-API-Key": "${ECHO_API_KEY}",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "source": "stripe",
+          "type": "{{trigger.type}}",
+          "id": "{{trigger.id}}",
+          "payload": {
+            "object_id": "{{trigger.data.object.id}}",
+            "object_type": "{{trigger.data.object.object}}",
+            "amount": "{{trigger.data.object.amount}}",
+            "currency": "{{trigger.data.object.currency}}",
+            "status": "{{trigger.data.object.status}}",
+            "customer": "{{trigger.data.object.customer}}",
+            "metadata": "{{trigger.data.object.metadata}}"
+          },
+          "timestamp": "{{trigger.created}}"
+        }
+      },
+      "error_handling": {
+        "retry_count": 5,
+        "retry_delay_seconds": 30,
+        "on_failure": "alert_and_retry"
+      }
+    },
+    {
+      "id": "Z3",
+      "name": "Z3_Risk_GitHub",
+      "description": "Echo → GitHub Issue: Creates governance issues for high-risk events (I3)",
+      "trigger": {
+        "platform": "webhook",
+        "url": "${ZAP3_WEBHOOK_URL}",
+        "secret": "${ZAP3_WEBHOOK_SECRET}",
+        "filter": {
+          "risk_score": { "$gte": 0.7 }
+        }
+      },
+      "action": {
+        "type": "github",
+        "operation": "create_issue",
+        "repository": "onlyecho822-source/Echo",
+        "issue": {
+          "title": "🚨 Risk Event: {{trigger.event_hash | truncate: 12}}",
+          "body": "## Risk Event Detected\n\n**Risk Score:** {{trigger.risk_score}}\n\n**Description:** {{trigger.description}}\n\n**Event Hash:** `{{trigger.event_hash}}`\n\n**Timestamp:** {{trigger.timestamp}}\n\n### Metadata\n```json\n{{trigger.metadata | json}}\n```\n\n---\n*Automated by Echo Phoenix v2.4.0-formal*",
+          "labels": ["risk", "automated", "needs-review"],
+          "assignees": ["ops"]
+        }
+      },
+      "error_handling": {
+        "retry_count": 3,
+        "retry_delay_seconds": 120,
+        "on_failure": "email_alert"
+      }
+    },
+    {
+      "id": "Z4",
+      "name": "Z4_Manual_Control",
+      "description": "Manual Form → Echo Control: Allows authorized operators to control system state (I3)",
+      "trigger": {
+        "platform": "form",
+        "url": "${ZAP4_FORM_URL}",
+        "fields": [
+          {
+            "name": "actor",
+            "type": "text",
+            "required": true,
+            "validation": "^(admin|ops|security)$"
+          },
+          {
+            "name": "command",
+            "type": "select",
+            "required": true,
+            "options": ["FREEZE", "UNFREEZE", "SET_THROTTLE", "REQUIRE_MANUAL_APPROVAL", "CLEAR_MANUAL_APPROVAL"]
+          },
+          {
+            "name": "value",
+            "type": "number",
+            "required": false,
+            "validation": "0 <= value <= 1",
+            "description": "Required for SET_THROTTLE"
+          },
+          {
+            "name": "reason",
+            "type": "textarea",
+            "required": true
+          }
+        ]
+      },
+      "action": {
+        "type": "webhook",
+        "method": "POST",
+        "url": "${ECHO_BASE_URL}/control",
+        "headers": {
+          "X-API-Key": "${ECHO_API_KEY}",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "cmd": "{{trigger.command}}",
+          "actor": "{{trigger.actor}}",
+          "value": "{{trigger.value}}",
+          "reason": "{{trigger.reason}}"
+        }
+      },
+      "error_handling": {
+        "retry_count": 1,
+        "retry_delay_seconds": 0,
+        "on_failure": "notify_actor"
+      }
+    }
+  ],
+  "environment_variables": {
+    "ECHO_BASE_URL": "https://echo-prod.fly.dev",
+    "ECHO_API_KEY": "Generate with: openssl rand -hex 32",
+    "ZAP3_WEBHOOK_URL": "https://hooks.zapier.com/hooks/catch/YOUR_ID/YOUR_HOOK",
+    "ZAP3_WEBHOOK_SECRET": "Generate with: openssl rand -hex 32",
+    "ZAP4_FORM_URL": "https://forms.zapier.com/hooks/catch/YOUR_ID/YOUR_FORM"
+  },
+  "setup_instructions": [
+    "1. Create each Zap in Zapier using the configurations above",
+    "2. Replace ${VARIABLES} with actual values from environment_variables",
+    "3. For Z1: Connect GitHub account and select repositories",
+    "4. For Z2: Connect Stripe account and select events",
+    "5. For Z3: Create webhook trigger and note the URL",
+    "6. For Z4: Create form trigger with specified fields",
+    "7. Test each Zap individually before enabling",
+    "8. Enable all Zaps and monitor /metrics endpoint"
+  ]
+}

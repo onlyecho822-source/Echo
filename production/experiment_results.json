@@ -1,0 +1,365 @@
+{
+  "report_generated_at": "2026-01-15T02:19:09.822057",
+  "config": {
+    "env": "test",
+    "max_requests": 100
+  },
+  "summary": {
+    "total_suites": 5,
+    "total_tests": 17,
+    "passed": 13,
+    "failed": 1,
+    "pass_rate": 0.7647058823529411
+  },
+  "risk_bounds": {
+    "lost_update_risk": true,
+    "optimistic_locking_required": true,
+    "reconciliation_required": true,
+    "deduplication_required": true
+  },
+  "verified_properties": {
+    "idempotency": true,
+    "atomic_updates": true,
+    "deduplication": true
+  },
+  "acceptance_criteria": {
+    "go_live_ready": false,
+    "blocking_issues": [
+      "Lost update detected - implement optimistic locking"
+    ]
+  },
+  "suites": [
+    {
+      "suite_name": "Suite A: Rate Limit Characterization",
+      "started_at": "2026-01-15T02:18:57.444506",
+      "finished_at": "2026-01-15T02:19:05.564824",
+      "passed": 1,
+      "failed": 0,
+      "total": 4,
+      "tests": [
+        {
+          "name": "A1: Sustained Throughput",
+          "status": "passed",
+          "duration_ms": 5016.880989074707,
+          "details": {
+            "requests_sent": 100,
+            "duration_seconds": 5.016868829727173,
+            "lambda_sustained": 19.93,
+            "rate_limit_hit": false,
+            "p50_latency_ms": 50.16136169433594,
+            "p99_latency_ms": 50.1711368560791
+          },
+          "error": null
+        },
+        {
+          "name": "A2: Burst Capacity",
+          "status": "warning",
+          "duration_ms": 2.3398399353027344,
+          "details": {
+            "burst_size": 20,
+            "successes": 0,
+            "failures": 20,
+            "lambda_burst": 0.0,
+            "success_rate": 0.0
+          },
+          "error": null
+        },
+        {
+          "name": "A3: Backoff Success",
+          "status": "warning",
+          "duration_ms": 3100.912570953369,
+          "details": {
+            "attempts": 5,
+            "successes": 0,
+            "success_rate": 0.0
+          },
+          "error": null
+        },
+        {
+          "name": "A4: Latency Distribution",
+          "status": "skipped",
+          "duration_ms": 0.041484832763671875,
+          "details": {},
+          "error": "No successful requests"
+        }
+      ],
+      "summary": {
+        "lambda_sustained": 19.93,
+        "lambda_burst": 0.0,
+        "backoff_success_rate": 0.0,
+        "p99_latency_ms": 50.1711368560791
+      }
+    },
+    {
+      "suite_name": "Suite B: Concurrency Semantics",
+      "started_at": "2026-01-15T02:19:05.564897",
+      "finished_at": "2026-01-15T02:19:08.669267",
+      "passed": 2,
+      "failed": 1,
+      "total": 3,
+      "tests": [
+        {
+          "name": "B1: Lost Update Test",
+          "status": "failed",
+          "duration_ms": 1566.3566589355469,
+          "details": {
+            "iterations": 10,
+            "concurrent_updates": 2,
+            "lost_updates": 10,
+            "lost_update_rate": 1.0,
+            "action_required": "Implement optimistic locking"
+          },
+          "error": null
+        },
+        {
+          "name": "B2: Multi-field Invariant",
+          "status": "passed",
+          "duration_ms": 862.065315246582,
+          "details": {
+            "iterations": 10,
+            "violations": 0,
+            "invariant_preserved": true
+          },
+          "error": null
+        },
+        {
+          "name": "B3: Atomic Field Update",
+          "status": "passed",
+          "duration_ms": 675.7481098175049,
+          "details": {
+            "updates_attempted": 20,
+            "final_value": "value_19",
+            "is_valid_value": true,
+            "torn_write_detected": false
+          },
+          "error": null
+        }
+      ],
+      "summary": {
+        "lost_update_detected": true,
+        "optimistic_locking_required": true,
+        "atomic_updates_verified": true
+      }
+    },
+    {
+      "suite_name": "Suite C: Idempotency Window & Canonicalization",
+      "started_at": "2026-01-15T02:19:08.669333",
+      "finished_at": "2026-01-15T02:19:09.370262",
+      "passed": 4,
+      "failed": 0,
+      "total": 4,
+      "tests": [
+        {
+          "name": "C1: Identical Params",
+          "status": "passed",
+          "duration_ms": 50.18448829650879,
+          "details": {
+            "id_1": "pi_mock_ae4f7590ce29",
+            "id_2": "pi_mock_ae4f7590ce29",
+            "same_id": true
+          },
+          "error": null
+        },
+        {
+          "name": "C2: Reordered Params",
+          "status": "passed",
+          "duration_ms": 50.16684532165527,
+          "details": {
+            "note": "Canonicalization must be implemented in Echo wrapper",
+            "recommendation": "Use canon(params) before deriving idempotency key"
+          },
+          "error": null
+        },
+        {
+          "name": "C3: Delayed Retry",
+          "status": "passed",
+          "duration_ms": 550.3191947937012,
+          "details": {
+            "delay_seconds": 0.5,
+            "same_id": true,
+            "window_behavior": "idempotent"
+          },
+          "error": null
+        },
+        {
+          "name": "C4: Object Identity",
+          "status": "passed",
+          "duration_ms": 50.2016544342041,
+          "details": {
+            "ids": [
+              "pi_mock_7e038f24301c",
+              "pi_mock_7e038f24301c",
+              "pi_mock_7e038f24301c"
+            ],
+            "all_same_id": true
+          },
+          "error": null
+        }
+      ],
+      "summary": {
+        "idempotency_verified": true,
+        "canonicalization_required": false,
+        "window_behavior": "idempotent"
+      }
+    },
+    {
+      "suite_name": "Suite D: Webhook Fault Injection",
+      "started_at": "2026-01-15T02:19:09.370310",
+      "finished_at": "2026-01-15T02:19:09.370383",
+      "passed": 3,
+      "failed": 0,
+      "total": 3,
+      "tests": [
+        {
+          "name": "D1: Duplicate Handling",
+          "status": "passed",
+          "duration_ms": 0.024080276489257812,
+          "details": {
+            "first_delivery": true,
+            "second_delivery": false,
+            "third_delivery": false,
+            "exactly_once": true
+          },
+          "error": null
+        },
+        {
+          "name": "D2: Out-of-Order Handling",
+          "status": "passed",
+          "duration_ms": 0.02384185791015625,
+          "details": {
+            "events_processed": 3,
+            "watermark": "2026-01-15T04:19:09.370341",
+            "expected_watermark": "2026-01-15T04:19:09.370341",
+            "watermark_correct": true
+          },
+          "error": null
+        },
+        {
+          "name": "D3: Gap Detection",
+          "status": "passed",
+          "duration_ms": 0.009298324584960938,
+          "details": {
+            "expected_events": [
+              "evt_1",
+              "evt_3",
+              "evt_2"
+            ],
+            "processed_events": [
+              "evt_1",
+              "evt_3"
+            ],
+            "gaps_detected": [
+              "evt_2"
+            ],
+            "gap_count": 1
+          },
+          "error": null
+        }
+      ],
+      "summary": {
+        "deduplication_working": true,
+        "ordering_handled": true,
+        "gap_detection_working": true
+      }
+    },
+    {
+      "suite_name": "Suite E: Payment Method Constraints",
+      "started_at": "2026-01-15T02:19:09.370392",
+      "finished_at": "2026-01-15T02:19:09.821974",
+      "passed": 3,
+      "failed": 0,
+      "total": 3,
+      "tests": [
+        {
+          "name": "E1: Card Flow",
+          "status": "passed",
+          "duration_ms": 100.33178329467773,
+          "details": {
+            "customer_id": "cus_mock_e7fac744",
+            "payment_intent_id": "pi_mock_25d40dfb4b0b",
+            "status": "requires_payment_method"
+          },
+          "error": null
+        },
+        {
+          "name": "E2: Currency Compatibility",
+          "status": "passed",
+          "duration_ms": 150.54631233215332,
+          "details": {
+            "currencies_tested": [
+              "usd",
+              "eur",
+              "gbp"
+            ],
+            "results": {
+              "usd": "supported",
+              "eur": "supported",
+              "gbp": "supported"
+            },
+            "recommended": "usd"
+          },
+          "error": null
+        },
+        {
+          "name": "E3: Amount Bounds",
+          "status": "passed",
+          "duration_ms": 200.65784454345703,
+          "details": {
+            "amounts_tested": [
+              [
+                50,
+                "minimum"
+              ],
+              [
+                1000,
+                "typical"
+              ],
+              [
+                100000,
+                "high"
+              ],
+              [
+                99999999,
+                "maximum"
+              ]
+            ],
+            "results": {
+              "minimum": {
+                "amount": 50,
+                "status": "success"
+              },
+              "typical": {
+                "amount": 1000,
+                "status": "success"
+              },
+              "high": {
+                "amount": 100000,
+                "status": "success"
+              },
+              "maximum": {
+                "amount": 99999999,
+                "status": "success"
+              }
+            },
+            "min_amount": 50,
+            "max_amount": 99999999
+          },
+          "error": null
+        }
+      ],
+      "summary": {
+        "card_flow_verified": true,
+        "recommended_launch_config": {
+          "payment_methods": [
+            "card"
+          ],
+          "currencies": [
+            "usd"
+          ],
+          "min_amount": 50,
+          "max_amount": 99999999
+        }
+      }
+    }
+  ]
+}

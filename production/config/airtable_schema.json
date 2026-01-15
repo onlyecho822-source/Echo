@@ -1,0 +1,134 @@
+{
+  "base_name": "Echo Production",
+  "tables": [
+    {
+      "name": "system_throttle",
+      "description": "Current throttle state and control parameters",
+      "fields": [
+        {"name": "timestamp", "type": "dateTime", "description": "When this throttle was set"},
+        {"name": "throttle_pct", "type": "number", "description": "Throttle percentage (0.0 to 1.0)"},
+        {"name": "reason", "type": "singleLineText", "description": "Reason for throttle change"},
+        {"name": "urgency", "type": "singleSelect", "options": ["normal", "high", "critical"]},
+        {"name": "operator", "type": "singleLineText", "description": "Who/what set this throttle"},
+        {"name": "active", "type": "checkbox", "description": "Is this the active throttle setting"}
+      ],
+      "views": [
+        {"name": "Active", "filter": "active = true"},
+        {"name": "History", "sort": [{"field": "timestamp", "direction": "desc"}]}
+      ]
+    },
+    {
+      "name": "system_state",
+      "description": "Historical system state observations",
+      "fields": [
+        {"name": "timestamp", "type": "dateTime"},
+        {"name": "throttle_pct", "type": "number"},
+        {"name": "error_rate", "type": "number"},
+        {"name": "latency_p99_ms", "type": "number"},
+        {"name": "requests_per_minute", "type": "number"},
+        {"name": "phi_static", "type": "number", "description": "Static viability metric"},
+        {"name": "phi_dynamic", "type": "number", "description": "Dynamic viability metric"},
+        {"name": "temperature", "type": "number", "description": "Effective system temperature"},
+        {"name": "susceptibility", "type": "number"},
+        {"name": "health", "type": "singleSelect", "options": ["healthy", "degraded", "critical", "killed"]}
+      ],
+      "views": [
+        {"name": "Recent", "sort": [{"field": "timestamp", "direction": "desc"}], "limit": 100},
+        {"name": "Degraded", "filter": "health != 'healthy'"}
+      ]
+    },
+    {
+      "name": "used_nonces",
+      "description": "Deduplication store for idempotency",
+      "fields": [
+        {"name": "nonce", "type": "singleLineText", "description": "Idempotency key or event ID"},
+        {"name": "type", "type": "singleSelect", "options": ["idempotency_key", "webhook_event", "control_action"]},
+        {"name": "result_id", "type": "singleLineText", "description": "Result of the operation"},
+        {"name": "created_at", "type": "dateTime"},
+        {"name": "expires_at", "type": "dateTime"}
+      ],
+      "views": [
+        {"name": "Active", "filter": "expires_at > NOW()"},
+        {"name": "By Type", "groupBy": "type"}
+      ]
+    },
+    {
+      "name": "payment_ledger",
+      "description": "Evidence & Integrity Ledger for payments",
+      "fields": [
+        {"name": "ledger_id", "type": "singleLineText", "description": "Echo ledger entry ID"},
+        {"name": "stripe_id", "type": "singleLineText", "description": "Stripe PaymentIntent ID"},
+        {"name": "order_id", "type": "singleLineText", "description": "Application order ID"},
+        {"name": "amount", "type": "number", "description": "Amount in smallest currency unit"},
+        {"name": "currency", "type": "singleLineText"},
+        {"name": "state", "type": "singleSelect", "options": ["pending", "created", "action_required", "succeeded", "failed", "refunded"]},
+        {"name": "created_at", "type": "dateTime"},
+        {"name": "updated_at", "type": "dateTime"},
+        {"name": "idempotency_key", "type": "singleLineText"},
+        {"name": "metadata", "type": "multilineText", "description": "JSON metadata"},
+        {"name": "events", "type": "multilineText", "description": "JSON array of event IDs"}
+      ],
+      "views": [
+        {"name": "All Payments", "sort": [{"field": "created_at", "direction": "desc"}]},
+        {"name": "Succeeded", "filter": "state = 'succeeded'"},
+        {"name": "Failed", "filter": "state = 'failed'"},
+        {"name": "Needs Attention", "filter": "state = 'action_required' OR state = 'failed'"}
+      ]
+    },
+    {
+      "name": "audit_log",
+      "description": "Complete audit trail for all operations",
+      "fields": [
+        {"name": "timestamp", "type": "dateTime"},
+        {"name": "action", "type": "singleLineText"},
+        {"name": "actor", "type": "singleLineText", "description": "Who/what performed the action"},
+        {"name": "resource_type", "type": "singleSelect", "options": ["payment", "throttle", "state", "webhook", "kill"]},
+        {"name": "resource_id", "type": "singleLineText"},
+        {"name": "details", "type": "multilineText", "description": "JSON details"},
+        {"name": "result", "type": "singleSelect", "options": ["success", "failure", "skipped"]}
+      ],
+      "views": [
+        {"name": "Recent", "sort": [{"field": "timestamp", "direction": "desc"}]},
+        {"name": "Failures", "filter": "result = 'failure'"},
+        {"name": "By Resource", "groupBy": "resource_type"}
+      ]
+    },
+    {
+      "name": "reconciliation_runs",
+      "description": "Reconciliation job history",
+      "fields": [
+        {"name": "run_id", "type": "singleLineText"},
+        {"name": "started_at", "type": "dateTime"},
+        {"name": "completed_at", "type": "dateTime"},
+        {"name": "events_checked", "type": "number"},
+        {"name": "gaps_detected", "type": "number"},
+        {"name": "gaps_repaired", "type": "number"},
+        {"name": "missing_entries", "type": "number"},
+        {"name": "status", "type": "singleSelect", "options": ["healthy", "needs_repair", "failed"]},
+        {"name": "details", "type": "multilineText"}
+      ]
+    }
+  ],
+  "automations": [
+    {
+      "name": "Cleanup Expired Nonces",
+      "trigger": "scheduled",
+      "schedule": "0 * * * *",
+      "action": "Delete records from used_nonces where expires_at < NOW()"
+    },
+    {
+      "name": "Alert on Critical State",
+      "trigger": "record_created",
+      "table": "system_state",
+      "condition": "health = 'critical'",
+      "action": "Send Slack notification"
+    },
+    {
+      "name": "Alert on Payment Failure",
+      "trigger": "record_updated",
+      "table": "payment_ledger",
+      "condition": "state = 'failed'",
+      "action": "Send Slack notification"
+    }
+  ]
+}

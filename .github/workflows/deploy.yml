@@ -1,0 +1,26 @@
+name: Deploy to Fly.io
+
+on:
+  push:
+    branches:
+      - main
+      - deploy/phoenix-production-v2.4
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy Echo Phoenix
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Fly.io CLI
+        uses: superfly/flyctl-actions/setup-flyctl@master
+
+      - name: Deploy to Fly.io
+        run: |
+          cd production/verified
+          flyctl deploy --remote-only --app echo-phoenix
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
