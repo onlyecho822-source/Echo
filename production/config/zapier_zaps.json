@@ -1,0 +1,401 @@
+{
+  "zaps": [
+    {
+      "name": "Echo State Observer",
+      "description": "Periodically observe system state and record to Airtable",
+      "trigger": {
+        "app": "Schedule by Zapier",
+        "event": "Every 5 Minutes"
+      },
+      "steps": [
+        {
+          "app": "Webhooks by Zapier",
+          "event": "POST",
+          "config": {
+            "url": "{{PHOENIX_API_URL}}/observe",
+            "payload_type": "json",
+            "data": {
+              "source": "zapier_observer",
+              "include_metrics": true
+            }
+          }
+        },
+        {
+          "app": "Airtable",
+          "event": "Create Record",
+          "config": {
+            "base": "{{AIRTABLE_BASE_ID}}",
+            "table": "system_state",
+            "fields": {
+              "timestamp": "{{step1.state.timestamp}}",
+              "throttle_pct": "{{step1.state.throttle_pct}}",
+              "error_rate": "{{step1.state.error_rate}}",
+              "latency_p99_ms": "{{step1.state.latency_p99_ms}}",
+              "phi_static": "{{step1.state.phi_static}}",
+              "phi_dynamic": "{{step1.state.phi_dynamic}}",
+              "temperature": "{{step1.state.temperature}}",
+              "health": "{{step1.health}}"
+            }
+          }
+        },
+        {
+          "app": "Filter by Zapier",
+          "event": "Only continue if",
+          "config": {
+            "condition": "{{step1.health}} != 'healthy'"
+          }
+        },
+        {
+          "app": "Slack",
+          "event": "Send Channel Message",
+          "config": {
+            "channel": "#echo-alerts",
+            "message": "⚠️ Echo System Alert: {{step1.health}}\nThrottle: {{step1.state.throttle_pct}}\nError Rate: {{step1.state.error_rate}}\nRecommendations: {{step1.recommendations}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Echo Throttle Gate",
+      "description": "Probabilistic gate that halts operations based on throttle percentage",
+      "trigger": {
+        "app": "Webhooks by Zapier",
+        "event": "Catch Hook",
+        "config": {
+          "webhook_url": "{{THROTTLE_GATE_WEBHOOK_URL}}"
+        }
+      },
+      "steps": [
+        {
+          "app": "Airtable",
+          "event": "Find Record",
+          "config": {
+            "base": "{{AIRTABLE_BASE_ID}}",
+            "table": "system_throttle",
+            "view": "Active"
+          }
+        },
+        {
+          "app": "Code by Zapier",
+          "event": "Run Javascript",
+          "config": {
+            "code": "const throttle_pct = parseFloat(inputData.throttle_pct) || 0;\nconst random = Math.random();\nconst should_proceed = random > throttle_pct;\noutput = { should_proceed, throttle_pct, random };"
+          }
+        },
+        {
+          "app": "Filter by Zapier",
+          "event": "Only continue if",
+          "config": {
+            "condition": "{{step2.should_proceed}} == true"
+          }
+        },
+        {
+          "app": "Webhooks by Zapier",
+          "event": "POST",
+          "config": {
+            "url": "{{trigger.callback_url}}",
+            "payload_type": "json",
+            "data": {
+              "status": "proceed",
+              "throttle_pct": "{{step2.throttle_pct}}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Echo Controller Executor",
+      "description": "Compute and apply control actions based on state changes",
+      "trigger": {
+        "app": "Airtable",
+        "event": "New Record",
+        "config": {
+          "base": "{{AIRTABLE_BASE_ID}}",
+          "table": "system_state",
+          "view": "Degraded"
+        }
+      },
+      "steps": [
+        {
+          "app": "Webhooks by Zapier",
+          "event": "POST",
+          "config": {
+            "url": "{{PHOENIX_API_URL}}/control",
+            "payload_type": "json",
+            "data": {
+              "current_state": {
+                "timestamp": "{{trigger.timestamp}}",
+                "throttle_pct": "{{trigger.throttle_pct}}",
+                "error_rate": "{{trigger.error_rate}}",
+                "latency_p99_ms": "{{trigger.latency_p99_ms}}",
+                "phi_static": "{{trigger.phi_static}}",
+                "phi_dynamic": "{{trigger.phi_dynamic}}",
+                "temperature": "{{trigger.temperature}}",
+                "susceptibility": 2.0,
+                "requests_per_minute": 100
+              }
+            }
+          }
+        },
+        {
+          "app": "Airtable",
+          "event": "Update Record",
+          "config": {
+            "base": "{{AIRTABLE_BASE_ID}}",
+            "table": "system_throttle",
+            "record_id": "{{active_throttle_record_id}}",
+            "fields": {
+              "active": false
+            }
+          }
+        },
+        {
+          "app": "Airtable",
+          "event": "Create Record",
+          "config": {
+            "base": "{{AIRTABLE_BASE_ID}}",
+            "table": "system_throttle",
+            "fields": {
+              "timestamp": "{{step1.action.timestamp}}",
+              "throttle_pct": "{{step1.action.new_throttle}}",
+              "reason": "{{step1.action.reason}}",
+              "urgency": "{{step1.action.urgency}}",
+              "operator": "zapier_controller",
+              "active": true
+            }
+          }
+        },
+        {
+          "app": "Airtable",
+          "event": "Create Record",
+          "config": {
+            "base": "{{AIRTABLE_BASE_ID}}",
+            "table": "audit_log",
+            "fields": {
+              "timestamp": "{{step1.action.timestamp}}",
+              "action": "control_applied",
+              "actor": "zapier_controller",
+              "resource_type": "throttle",
+              "resource_id": "{{step3.id}}",
+              "details": "{\"reason\": \"{{step1.action.reason}}\", \"new_throttle\": {{step1.action.new_throttle}}}",
+              "result": "success"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stripe Webhook Handler",
+      "description": "Process Stripe webhooks with exactly-once semantics",
+      "trigger": {
+        "app": "Webhooks by Zapier",
+        "event": "Catch Hook",
+        "config": {
+          "webhook_url": "{{STRIPE_WEBHOOK_URL}}"
+        }
+      },
+      "steps": [
+        {
+          "app": "Airtable",
+          "event": "Find Record",
+          "config": {
+            "base": "{{AIRTABLE_BASE_ID}}",
+            "table": "used_nonces",
+            "search_field": "nonce",
+            "search_value": "{{trigger.id}}"
+          }
+        },
+        {
+          "app": "Filter by Zapier",
+          "event": "Only continue if",
+          "config": {
+            "condition": "{{step1.id}} does not exist"
+          }
+        },
+        {
+          "app": "Webhooks by Zapier",
+          "event": "POST",
+          "config": {
+            "url": "{{PHOENIX_API_URL}}/webhook/stripe",
+            "payload_type": "json",
+            "data": {
+              "id": "{{trigger.id}}",
+              "type": "{{trigger.type}}",
+              "data": "{{trigger.data}}",
+              "created": "{{trigger.created}}"
+            }
+          }
+        },
+        {
+          "app": "Airtable",
+          "event": "Create Record",
+          "config": {
+            "base": "{{AIRTABLE_BASE_ID}}",
+            "table": "used_nonces",
+            "fields": {
+              "nonce": "{{trigger.id}}",
+              "type": "webhook_event",
+              "result_id": "{{step3.event_id}}",
+              "created_at": "{{zap_meta.timestamp}}",
+              "expires_at": "{{zap_meta.timestamp + 72 hours}}"
+            }
+          }
+        },
+        {
+          "app": "Airtable",
+          "event": "Create Record",
+          "config": {
+            "base": "{{AIRTABLE_BASE_ID}}",
+            "table": "audit_log",
+            "fields": {
+              "timestamp": "{{zap_meta.timestamp}}",
+              "action": "webhook_processed",
+              "actor": "stripe",
+              "resource_type": "webhook",
+              "resource_id": "{{trigger.id}}",
+              "details": "{\"type\": \"{{trigger.type}}\"}",
+              "result": "success"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Daily Reconciliation",
+      "description": "Run daily reconciliation to detect and repair gaps",
+      "trigger": {
+        "app": "Schedule by Zapier",
+        "event": "Every Day at 2:00 AM"
+      },
+      "steps": [
+        {
+          "app": "Webhooks by Zapier",
+          "event": "POST",
+          "config": {
+            "url": "{{PHOENIX_API_URL}}/reconcile",
+            "payload_type": "json",
+            "data": {}
+          }
+        },
+        {
+          "app": "Airtable",
+          "event": "Create Record",
+          "config": {
+            "base": "{{AIRTABLE_BASE_ID}}",
+            "table": "reconciliation_runs",
+            "fields": {
+              "run_id": "{{step1.run_id}}",
+              "started_at": "{{step1.started_at}}",
+              "completed_at": "{{step1.completed_at}}",
+              "events_checked": "{{step1.events_checked}}",
+              "gaps_detected": "{{step1.gaps_detected}}",
+              "gaps_repaired": "{{step1.gaps_repaired}}",
+              "missing_entries": "{{step1.missing_entries}}",
+              "status": "{{step1.status}}",
+              "details": "{{step1}}"
+            }
+          }
+        },
+        {
+          "app": "Filter by Zapier",
+          "event": "Only continue if",
+          "config": {
+            "condition": "{{step1.status}} == 'needs_repair'"
+          }
+        },
+        {
+          "app": "Slack",
+          "event": "Send Channel Message",
+          "config": {
+            "channel": "#echo-alerts",
+            "message": "🔧 Reconciliation Alert\nStatus: {{step1.status}}\nGaps Detected: {{step1.gaps_detected}}\nGaps Repaired: {{step1.gaps_repaired}}\nMissing Entries: {{step1.missing_entries}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kill Switch Handler",
+      "description": "Handle emergency kill switch activation",
+      "trigger": {
+        "app": "Webhooks by Zapier",
+        "event": "Catch Hook",
+        "config": {
+          "webhook_url": "{{KILL_SWITCH_WEBHOOK_URL}}"
+        }
+      },
+      "steps": [
+        {
+          "app": "Webhooks by Zapier",
+          "event": "POST",
+          "config": {
+            "url": "{{PHOENIX_API_URL}}/kill",
+            "payload_type": "json",
+            "data": {
+              "reason": "{{trigger.reason}}",
+              "operator": "{{trigger.operator}}",
+              "confirmation": "CONFIRM_KILL"
+            }
+          }
+        },
+        {
+          "app": "Airtable",
+          "event": "Create Record",
+          "config": {
+            "base": "{{AIRTABLE_BASE_ID}}",
+            "table": "system_throttle",
+            "fields": {
+              "timestamp": "{{zap_meta.timestamp}}",
+              "throttle_pct": 1.0,
+              "reason": "KILL: {{trigger.reason}}",
+              "urgency": "critical",
+              "operator": "{{trigger.operator}}",
+              "active": true
+            }
+          }
+        },
+        {
+          "app": "Airtable",
+          "event": "Create Record",
+          "config": {
+            "base": "{{AIRTABLE_BASE_ID}}",
+            "table": "audit_log",
+            "fields": {
+              "timestamp": "{{zap_meta.timestamp}}",
+              "action": "kill_activated",
+              "actor": "{{trigger.operator}}",
+              "resource_type": "kill",
+              "resource_id": "global",
+              "details": "{\"reason\": \"{{trigger.reason}}\"}",
+              "result": "success"
+            }
+          }
+        },
+        {
+          "app": "Slack",
+          "event": "Send Channel Message",
+          "config": {
+            "channel": "#echo-critical",
+            "message": "🚨 KILL SWITCH ACTIVATED 🚨\nOperator: {{trigger.operator}}\nReason: {{trigger.reason}}\nTime: {{zap_meta.timestamp}}\n\nAll operations halted. Manual intervention required."
+          }
+        },
+        {
+          "app": "Email by Zapier",
+          "event": "Send Outbound Email",
+          "config": {
+            "to": "{{EMERGENCY_EMAIL}}",
+            "subject": "🚨 Echo Kill Switch Activated",
+            "body": "Kill switch activated by {{trigger.operator}}.\n\nReason: {{trigger.reason}}\nTime: {{zap_meta.timestamp}}\n\nAll operations halted."
+          }
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "PHOENIX_API_URL": "https://echo-phoenix.fly.dev",
+    "AIRTABLE_BASE_ID": "appXXXXXXXXXXXXXX",
+    "THROTTLE_GATE_WEBHOOK_URL": "https://hooks.zapier.com/hooks/catch/XXXXX/YYYYY",
+    "STRIPE_WEBHOOK_URL": "https://hooks.zapier.com/hooks/catch/XXXXX/ZZZZZ",
+    "KILL_SWITCH_WEBHOOK_URL": "https://hooks.zapier.com/hooks/catch/XXXXX/KKKKK",
+    "EMERGENCY_EMAIL": "emergency@example.com"
+  }
+}
