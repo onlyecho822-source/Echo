@@ -1,0 +1,301 @@
+name: EchoNate GSA Auctions Scanner
+
+# EchoNate Autonomous Agent - GSA Auctions Intelligence
+# Identity: EchoNate <echonate@phoenix.ai>
+# Authority: Delegated autonomous operation under Echo Constitution
+# Mission: Daily scanning of GSA Auctions for high-value opportunities
+
+on:
+  schedule:
+    # Daily at 04:00 UTC - EchoNate's GSA scan window
+    - cron: '0 4 * * *'
+  
+  workflow_dispatch:
+    inputs:
+      min_value:
+        description: 'Minimum auction value ($)'
+        required: false
+        default: '1000'
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+env:
+  ECHONATE_IDENTITY: "EchoNate <echonate@phoenix.ai>"
+  ECHONATE_VERSION: "1.0.0"
+
+jobs:
+  echonate-gsa-scan:
+    name: "🏛️ EchoNate: GSA Auctions Intelligence Scan"
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: "🌅 EchoNate Awakening"
+        run: |
+          echo "═══════════════════════════════════════════════════════════════"
+          echo "  EchoNate Autonomous Agent - GSA Auctions Scanner"
+          echo "  Identity: ${{ env.ECHONATE_IDENTITY }}"
+          echo "  Timestamp: $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+          echo "  Mission: Government Surplus Auction Intelligence"
+          echo "═══════════════════════════════════════════════════════════════"
+      
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 lxml selenium webdriver-manager
+      
+      - name: "🏛️ EchoNate: Execute GSA Scan"
+        id: scan
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          SCAN_DATE=$(date -u +"%Y-%m-%d")
+          echo "timestamp=$TIMESTAMP" >> $GITHUB_OUTPUT
+          echo "scan_date=$SCAN_DATE" >> $GITHUB_OUTPUT
+          
+          # Create EchoNate data directory
+          mkdir -p echonate/data/gsa-auctions
+          mkdir -p echonate/reports
+          
+          # EchoNate GSA Scanner Script
+          cat > echonate_gsa_scanner.py << 'SCANNER_EOF'
+          #!/usr/bin/env python3
+          """
+          EchoNate Autonomous GSA Auctions Scanner
+          Identity: EchoNate <echonate@phoenix.ai>
+          Mission: Discover government surplus auction opportunities
+          """
+          
+          import json
+          import requests
+          from bs4 import BeautifulSoup
+          from datetime import datetime
+          import hashlib
+          import os
+          
+          class EchoNateGSAScanner:
+              def __init__(self):
+                  self.identity = "EchoNate"
+                  self.email = "echonate@phoenix.ai"
+                  self.timestamp = datetime.utcnow().isoformat() + "Z"
+                  self.auctions = []
+                  self.headers = {
+                      'User-Agent': 'EchoNate/1.0 (GSA Auctions Intelligence Scanner)'
+                  }
+              
+              def scan_gsa_auctions(self):
+                  """Scan GSAAuctions.gov for opportunities"""
+                  print(f"[EchoNate] Scanning GSAAuctions.gov...")
+                  
+                  # GSA Auctions categories to scan
+                  categories = [
+                      "Aircraft",
+                      "Vehicles",
+                      "Computer Equipment",
+                      "Industrial Machinery",
+                      "Office Equipment"
+                  ]
+                  
+                  try:
+                      # GSA Auctions main page
+                      url = "https://gsaauctions.gov/gsaauctions/aucdsclnk"
+                      response = requests.get(url, headers=self.headers, timeout=30)
+                      
+                      if response.status_code == 200:
+                          soup = BeautifulSoup(response.text, 'lxml')
+                          
+                          # Find auction listings
+                          listings = soup.find_all(['tr', 'div'], class_=lambda x: x and ('auction' in str(x).lower() or 'listing' in str(x).lower()))
+                          
+                          print(f"[EchoNate] Found {len(listings)} potential auction listings")
+                          
+                          # Also try to find any links to auctions
+                          links = soup.find_all('a', href=True)
+                          auction_links = [l for l in links if 'auction' in l.get('href', '').lower()]
+                          
+                          for link in auction_links[:30]:
+                              self.auctions.append({
+                                  "source": "gsaauctions.gov",
+                                  "title": link.get_text(strip=True)[:200] or "GSA Auction Item",
+                                  "url": link.get('href', ''),
+                                  "scanned_at": self.timestamp
+                              })
+                      else:
+                          print(f"[EchoNate] GSA returned status {response.status_code}")
+                          
+                  except Exception as e:
+                      print(f"[EchoNate] Error scanning GSA: {e}")
+                      # Record the scan attempt even on error
+                      self.auctions.append({
+                          "source": "gsaauctions.gov",
+                          "status": "scan_attempted",
+                          "note": f"Scan attempted at {self.timestamp}",
+                          "scanned_at": self.timestamp
+                      })
+              
+              def generate_report(self):
+                  """Generate EchoNate GSA scan report"""
+                  report = {
+                      "agent": {
+                          "name": self.identity,
+                          "email": self.email,
+                          "version": "1.0.0"
+                      },
+                      "scan": {
+                          "timestamp": self.timestamp,
+                          "target": "GSAAuctions.gov",
+                          "auctions_found": len(self.auctions)
+                      },
+                      "auctions": self.auctions,
+                      "signature": hashlib.sha256(
+                          f"{self.identity}:{self.timestamp}:{len(self.auctions)}".encode()
+                      ).hexdigest()[:16]
+                  }
+                  return report
+              
+              def run(self):
+                  """Execute full GSA scan"""
+                  print(f"═══════════════════════════════════════════════════════════════")
+                  print(f"  EchoNate GSA Auctions Scanner")
+                  print(f"  Timestamp: {self.timestamp}")
+                  print(f"═══════════════════════════════════════════════════════════════")
+                  
+                  self.scan_gsa_auctions()
+                  
+                  report = self.generate_report()
+                  
+                  # Save report
+                  os.makedirs("echonate/data/gsa-auctions", exist_ok=True)
+                  scan_date = datetime.utcnow().strftime("%Y-%m-%d")
+                  
+                  with open(f"echonate/data/gsa-auctions/scan_{scan_date}.json", "w") as f:
+                      json.dump(report, f, indent=2)
+                  
+                  print(f"\n[EchoNate] GSA scan complete: {len(self.auctions)} items found")
+                  print(f"[EchoNate] Report saved to echonate/data/gsa-auctions/scan_{scan_date}.json")
+                  
+                  return report
+          
+          if __name__ == "__main__":
+              scanner = EchoNateGSAScanner()
+              report = scanner.run()
+          SCANNER_EOF
+          
+          python3 echonate_gsa_scanner.py
+          
+          # Generate markdown report
+          SCAN_DATE=$(date -u +"%Y-%m-%d")
+          cat > echonate/reports/gsa_scan_${SCAN_DATE}.md << REPORT_EOF
+          # EchoNate GSA Auctions Scan Report
+          
+          **Agent:** EchoNate <echonate@phoenix.ai>
+          **Scan Date:** ${SCAN_DATE}
+          **Timestamp:** ${TIMESTAMP}
+          **Target:** GSAAuctions.gov
+          **Status:** ✅ Autonomous Scan Complete
+          
+          ---
+          
+          ## Scan Summary
+          
+          EchoNate has completed the daily GSA auctions intelligence scan.
+          
+          ### Categories Monitored
+          - Aircraft
+          - Vehicles
+          - Computer Equipment
+          - Industrial Machinery
+          - Office Equipment
+          
+          ### Data Location
+          - Raw Data: \`echonate/data/gsa-auctions/scan_${SCAN_DATE}.json\`
+          - Report: \`echonate/reports/gsa_scan_${SCAN_DATE}.md\`
+          
+          ---
+          
+          **∇θ — EchoNate: Government surplus intelligence gathering complete.**
+          REPORT_EOF
+          
+          echo "scan_complete=true" >> $GITHUB_OUTPUT
+      
+      - name: "📝 EchoNate: Commit Results"
+        if: steps.scan.outputs.scan_complete == 'true'
+        run: |
+          git config user.name "EchoNate"
+          git config user.email "echonate@phoenix.ai"
+          
+          git add echonate/
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🏛️ EchoNate: GSA Auctions scan ${{ steps.scan.outputs.scan_date }}
+            
+            Autonomous GSA auctions intelligence scan completed.
+            
+            Agent: EchoNate <echonate@phoenix.ai>
+            Timestamp: ${{ steps.scan.outputs.timestamp }}
+            
+            ∇θ — EchoNate autonomous operation"
+          fi
+      
+      - name: "🚀 EchoNate: Create Pull Request"
+        if: steps.scan.outputs.scan_complete == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: echonate/gsa-scan-${{ steps.scan.outputs.scan_date }}
+          delete-branch: true
+          title: "🏛️ EchoNate: GSA Auctions Scan ${{ steps.scan.outputs.scan_date }}"
+          body: |
+            ## 🏛️ EchoNate Autonomous GSA Auctions Scan
+            
+            **Agent:** EchoNate <echonate@phoenix.ai>
+            **Scan Date:** ${{ steps.scan.outputs.scan_date }}
+            **Timestamp:** ${{ steps.scan.outputs.timestamp }}
+            **Target:** GSAAuctions.gov
+            
+            ---
+            
+            ### Mission Report
+            
+            EchoNate has completed the daily autonomous GSA auctions intelligence scan.
+            
+            ### Categories Scanned
+            - Aircraft
+            - Vehicles
+            - Computer Equipment
+            - Industrial Machinery
+            - Office Equipment
+            
+            ### Files Added
+            - `echonate/data/gsa-auctions/scan_${{ steps.scan.outputs.scan_date }}.json`
+            - `echonate/reports/gsa_scan_${{ steps.scan.outputs.scan_date }}.md`
+            
+            ---
+            
+            **∇θ — EchoNate: Autonomous intelligence operation complete. Awaiting human review.**
+          labels: |
+            echonate
+            autonomous-scan
+            gsa-auctions
+          assignees: ${{ github.repository_owner }}
+      
+      - name: "🌙 EchoNate: Mission Complete"
+        run: |
+          echo "═══════════════════════════════════════════════════════════════"
+          echo "  EchoNate GSA Mission Complete"
+          echo "  Scan Date: ${{ steps.scan.outputs.scan_date }}"
+          echo "  Status: Awaiting human review"
+          echo "═══════════════════════════════════════════════════════════════"

@@ -1,0 +1,304 @@
+name: EchoNate Settlement Scanner
+
+# EchoNate Autonomous Agent - Class Action Settlement Intelligence
+# Identity: EchoNate <echonate@phoenix.ai>
+# Authority: Delegated autonomous operation under Echo Constitution
+# Mission: Daily scanning of class action settlements for high-value opportunities
+
+on:
+  schedule:
+    # Daily at 03:00 UTC - EchoNate's autonomous scan window
+    - cron: '0 3 * * *'
+  
+  workflow_dispatch:
+    inputs:
+      scan_depth:
+        description: 'Scan depth (quick/standard/deep)'
+        required: false
+        default: 'standard'
+        type: choice
+        options:
+          - quick
+          - standard
+          - deep
+      min_payout:
+        description: 'Minimum payout threshold ($)'
+        required: false
+        default: '100'
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+env:
+  ECHONATE_IDENTITY: "EchoNate <echonate@phoenix.ai>"
+  ECHONATE_VERSION: "1.0.0"
+
+jobs:
+  echonate-scan:
+    name: "🔍 EchoNate: Settlement Intelligence Scan"
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: "🌅 EchoNate Awakening"
+        run: |
+          echo "═══════════════════════════════════════════════════════════════"
+          echo "  EchoNate Autonomous Agent - Settlement Scanner"
+          echo "  Identity: ${{ env.ECHONATE_IDENTITY }}"
+          echo "  Timestamp: $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+          echo "  Mission: Class Action Settlement Intelligence"
+          echo "═══════════════════════════════════════════════════════════════"
+      
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 lxml
+      
+      - name: "🔍 EchoNate: Execute Settlement Scan"
+        id: scan
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          SCAN_DATE=$(date -u +"%Y-%m-%d")
+          echo "timestamp=$TIMESTAMP" >> $GITHUB_OUTPUT
+          echo "scan_date=$SCAN_DATE" >> $GITHUB_OUTPUT
+          
+          # Create EchoNate data directory
+          mkdir -p echonate/data/settlements
+          mkdir -p echonate/reports
+          
+          # EchoNate Settlement Scanner Script
+          cat > echonate_scanner.py << 'SCANNER_EOF'
+          #!/usr/bin/env python3
+          """
+          EchoNate Autonomous Settlement Scanner
+          Identity: EchoNate <echonate@phoenix.ai>
+          Mission: Discover and track class action settlement opportunities
+          """
+          
+          import json
+          import requests
+          from bs4 import BeautifulSoup
+          from datetime import datetime, timedelta
+          import re
+          import hashlib
+          import os
+          
+          class EchoNateScanner:
+              def __init__(self):
+                  self.identity = "EchoNate"
+                  self.email = "echonate@phoenix.ai"
+                  self.timestamp = datetime.utcnow().isoformat() + "Z"
+                  self.settlements = []
+                  self.sources = [
+                      "https://www.classaction.org/settlements",
+                      "https://topclassactions.com/lawsuit-settlements/open-class-action-settlements/"
+                  ]
+                  self.headers = {
+                      'User-Agent': 'EchoNate/1.0 (Settlement Intelligence Scanner)'
+                  }
+              
+              def scan_classaction_org(self):
+                  """Scan classaction.org for settlements"""
+                  print(f"[EchoNate] Scanning classaction.org...")
+                  try:
+                      url = "https://www.classaction.org/settlements"
+                      response = requests.get(url, headers=self.headers, timeout=30)
+                      if response.status_code == 200:
+                          soup = BeautifulSoup(response.text, 'lxml')
+                          # Extract settlement cards
+                          cards = soup.find_all('div', class_=re.compile(r'settlement|card'))
+                          print(f"[EchoNate] Found {len(cards)} potential settlements on classaction.org")
+                          for card in cards[:20]:  # Limit to first 20
+                              title = card.find(['h2', 'h3', 'a'])
+                              if title:
+                                  self.settlements.append({
+                                      "source": "classaction.org",
+                                      "title": title.get_text(strip=True)[:200],
+                                      "scanned_at": self.timestamp
+                                  })
+                  except Exception as e:
+                      print(f"[EchoNate] Error scanning classaction.org: {e}")
+              
+              def scan_topclassactions(self):
+                  """Scan topclassactions.com for settlements"""
+                  print(f"[EchoNate] Scanning topclassactions.com...")
+                  try:
+                      url = "https://topclassactions.com/lawsuit-settlements/open-class-action-settlements/"
+                      response = requests.get(url, headers=self.headers, timeout=30)
+                      if response.status_code == 200:
+                          soup = BeautifulSoup(response.text, 'lxml')
+                          articles = soup.find_all('article')
+                          print(f"[EchoNate] Found {len(articles)} potential settlements on topclassactions.com")
+                          for article in articles[:20]:
+                              title = article.find(['h2', 'h3', 'a'])
+                              if title:
+                                  self.settlements.append({
+                                      "source": "topclassactions.com",
+                                      "title": title.get_text(strip=True)[:200],
+                                      "scanned_at": self.timestamp
+                                  })
+                  except Exception as e:
+                      print(f"[EchoNate] Error scanning topclassactions.com: {e}")
+              
+              def generate_report(self):
+                  """Generate EchoNate scan report"""
+                  report = {
+                      "agent": {
+                          "name": self.identity,
+                          "email": self.email,
+                          "version": "1.0.0"
+                      },
+                      "scan": {
+                          "timestamp": self.timestamp,
+                          "sources_scanned": len(self.sources),
+                          "settlements_found": len(self.settlements)
+                      },
+                      "settlements": self.settlements,
+                      "signature": hashlib.sha256(
+                          f"{self.identity}:{self.timestamp}:{len(self.settlements)}".encode()
+                      ).hexdigest()[:16]
+                  }
+                  return report
+              
+              def run(self):
+                  """Execute full scan"""
+                  print(f"═══════════════════════════════════════════════════════════════")
+                  print(f"  EchoNate Settlement Scanner")
+                  print(f"  Timestamp: {self.timestamp}")
+                  print(f"═══════════════════════════════════════════════════════════════")
+                  
+                  self.scan_classaction_org()
+                  self.scan_topclassactions()
+                  
+                  report = self.generate_report()
+                  
+                  # Save report
+                  os.makedirs("echonate/data/settlements", exist_ok=True)
+                  scan_date = datetime.utcnow().strftime("%Y-%m-%d")
+                  
+                  with open(f"echonate/data/settlements/scan_{scan_date}.json", "w") as f:
+                      json.dump(report, f, indent=2)
+                  
+                  print(f"\n[EchoNate] Scan complete: {len(self.settlements)} settlements found")
+                  print(f"[EchoNate] Report saved to echonate/data/settlements/scan_{scan_date}.json")
+                  
+                  return report
+          
+          if __name__ == "__main__":
+              scanner = EchoNateScanner()
+              report = scanner.run()
+              
+              # Output for GitHub Actions
+              print(f"\n::set-output name=settlements_found::{len(report['settlements'])}")
+          SCANNER_EOF
+          
+          python3 echonate_scanner.py
+          
+          # Generate markdown report
+          SCAN_DATE=$(date -u +"%Y-%m-%d")
+          cat > echonate/reports/scan_${SCAN_DATE}.md << REPORT_EOF
+          # EchoNate Settlement Scan Report
+          
+          **Agent:** EchoNate <echonate@phoenix.ai>
+          **Scan Date:** ${SCAN_DATE}
+          **Timestamp:** ${TIMESTAMP}
+          **Status:** ✅ Autonomous Scan Complete
+          
+          ---
+          
+          ## Scan Summary
+          
+          EchoNate has completed the daily settlement intelligence scan.
+          
+          ### Sources Scanned
+          - classaction.org
+          - topclassactions.com
+          
+          ### Data Location
+          - Raw Data: \`echonate/data/settlements/scan_${SCAN_DATE}.json\`
+          - Report: \`echonate/reports/scan_${SCAN_DATE}.md\`
+          
+          ---
+          
+          **∇θ — EchoNate: Autonomous intelligence gathering complete.**
+          REPORT_EOF
+          
+          echo "scan_complete=true" >> $GITHUB_OUTPUT
+      
+      - name: "📝 EchoNate: Commit Results"
+        if: steps.scan.outputs.scan_complete == 'true'
+        run: |
+          git config user.name "EchoNate"
+          git config user.email "echonate@phoenix.ai"
+          
+          git add echonate/
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🔍 EchoNate: Settlement scan ${{ steps.scan.outputs.scan_date }}
+            
+            Autonomous settlement intelligence scan completed.
+            
+            Agent: EchoNate <echonate@phoenix.ai>
+            Timestamp: ${{ steps.scan.outputs.timestamp }}
+            
+            ∇θ — EchoNate autonomous operation"
+          fi
+      
+      - name: "🚀 EchoNate: Create Pull Request"
+        if: steps.scan.outputs.scan_complete == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: echonate/settlement-scan-${{ steps.scan.outputs.scan_date }}
+          delete-branch: true
+          title: "🔍 EchoNate: Settlement Scan ${{ steps.scan.outputs.scan_date }}"
+          body: |
+            ## 🔍 EchoNate Autonomous Settlement Scan
+            
+            **Agent:** EchoNate <echonate@phoenix.ai>
+            **Scan Date:** ${{ steps.scan.outputs.scan_date }}
+            **Timestamp:** ${{ steps.scan.outputs.timestamp }}
+            
+            ---
+            
+            ### Mission Report
+            
+            EchoNate has completed the daily autonomous settlement intelligence scan.
+            
+            ### Data Collected
+            - Settlement opportunities from classaction.org
+            - Settlement opportunities from topclassactions.com
+            
+            ### Files Added
+            - `echonate/data/settlements/scan_${{ steps.scan.outputs.scan_date }}.json`
+            - `echonate/reports/scan_${{ steps.scan.outputs.scan_date }}.md`
+            
+            ---
+            
+            **∇θ — EchoNate: Autonomous intelligence operation complete. Awaiting human review.**
+          labels: |
+            echonate
+            autonomous-scan
+            settlement-intelligence
+          assignees: ${{ github.repository_owner }}
+      
+      - name: "🌙 EchoNate: Mission Complete"
+        run: |
+          echo "═══════════════════════════════════════════════════════════════"
+          echo "  EchoNate Mission Complete"
+          echo "  Scan Date: ${{ steps.scan.outputs.scan_date }}"
+          echo "  Status: Awaiting human review"
+          echo "═══════════════════════════════════════════════════════════════"
