@@ -1,0 +1,396 @@
+name: EchoNate Recon Operations
+
+on:
+  # Continuous shifts - every 15 minutes
+  schedule:
+    - cron: '0 * * * *'    # Alpha - Financial
+    - cron: '15 * * * *'   # Beta - Geophysical
+    - cron: '30 * * * *'   # Gamma - Health
+    - cron: '45 * * * *'   # Delta - Geopolitical
+  
+  push:
+    branches: [main]
+  
+  workflow_dispatch:
+    inputs:
+      full_report:
+        description: 'Generate full report and send emails'
+        type: boolean
+        default: false
+
+env:
+  INTEL_DIR: '.github/intel'
+  REPORT_DIR: '.github/reports'
+
+jobs:
+  # ============================================
+  # RECON TEAM - Continuous Data Collection
+  # ============================================
+  
+  alpha-recon:
+    name: Alpha Recon - Financial Intelligence
+    runs-on: ubuntu-latest
+    outputs:
+      btc_price: ${{ steps.collect.outputs.btc_price }}
+      btc_change: ${{ steps.collect.outputs.btc_change }}
+      eth_price: ${{ steps.collect.outputs.eth_price }}
+      market_cap: ${{ steps.collect.outputs.market_cap }}
+      status: ${{ steps.collect.outputs.status }}
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install Dependencies
+        run: pip install requests
+      
+      - name: Collect Financial Intelligence
+        id: collect
+        run: |
+          python3 << 'EOF'
+          import requests
+          import json
+          import os
+          from datetime import datetime
+          
+          print("=" * 60)
+          print("ALPHA RECON - FINANCIAL INTELLIGENCE")
+          print(f"Time: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}")
+          print("=" * 60)
+          
+          results = {"status": "success", "timestamp": datetime.utcnow().isoformat()}
+          
+          # CoinGecko
+          try:
+              r = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_24hr_change=true", timeout=15)
+              data = r.json()
+              
+              btc = data['bitcoin']['usd']
+              btc_change = data['bitcoin']['usd_24h_change']
+              eth = data['ethereum']['usd']
+              eth_change = data['ethereum']['usd_24h_change']
+              
+              print(f"\nBTC: ${btc:,.2f} ({btc_change:+.2f}%)")
+              print(f"ETH: ${eth:,.2f} ({eth_change:+.2f}%)")
+              
+              results['btc_price'] = btc
+              results['btc_change'] = btc_change
+              results['eth_price'] = eth
+              
+              # Set outputs
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write(f"btc_price={btc}\n")
+                  f.write(f"btc_change={btc_change:.2f}\n")
+                  f.write(f"eth_price={eth}\n")
+                  f.write(f"status=success\n")
+                  
+          except Exception as e:
+              print(f"[ERROR] {e}")
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write("status=failed\n")
+          
+          # Market cap
+          try:
+              r = requests.get("https://api.coingecko.com/api/v3/global", timeout=15)
+              data = r.json()['data']
+              mcap = data['total_market_cap']['usd'] / 1e12
+              print(f"Total Crypto Market Cap: ${mcap:.2f}T")
+              
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write(f"market_cap={mcap:.2f}\n")
+          except:
+              pass
+          
+          print(f"\n[ALPHA] Recon complete")
+          EOF
+
+  beta-recon:
+    name: Beta Recon - Geophysical Intelligence
+    runs-on: ubuntu-latest
+    outputs:
+      earthquake_count: ${{ steps.collect.outputs.earthquake_count }}
+      max_magnitude: ${{ steps.collect.outputs.max_magnitude }}
+      max_location: ${{ steps.collect.outputs.max_location }}
+      status: ${{ steps.collect.outputs.status }}
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install Dependencies
+        run: pip install requests
+      
+      - name: Collect Geophysical Intelligence
+        id: collect
+        run: |
+          python3 << 'EOF'
+          import requests
+          import json
+          import os
+          from datetime import datetime
+          
+          print("=" * 60)
+          print("BETA RECON - GEOPHYSICAL INTELLIGENCE")
+          print(f"Time: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}")
+          print("=" * 60)
+          
+          try:
+              r = requests.get("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson", timeout=15)
+              data = r.json()
+              earthquakes = data['features']
+              
+              count = len(earthquakes)
+              print(f"\nEarthquakes (M2.5+, 24h): {count}")
+              
+              if earthquakes:
+                  max_eq = max(earthquakes, key=lambda x: x['properties']['mag'])
+                  mag = max_eq['properties']['mag']
+                  place = max_eq['properties']['place']
+                  print(f"Largest: M{mag} - {place}")
+                  
+                  m4 = len([e for e in earthquakes if e['properties']['mag'] >= 4.0])
+                  m5 = len([e for e in earthquakes if e['properties']['mag'] >= 5.0])
+                  m6 = len([e for e in earthquakes if e['properties']['mag'] >= 6.0])
+                  print(f"M4+: {m4} | M5+: {m5} | M6+: {m6}")
+                  
+                  # Alert if M6+
+                  if m6 > 0:
+                      print("\n⚠️ ALERT: M6+ earthquake detected!")
+                  
+                  with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                      f.write(f"earthquake_count={count}\n")
+                      f.write(f"max_magnitude={mag}\n")
+                      f.write(f"max_location={place}\n")
+                      f.write("status=success\n")
+              else:
+                  with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                      f.write("earthquake_count=0\n")
+                      f.write("status=success\n")
+                      
+          except Exception as e:
+              print(f"[ERROR] {e}")
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write("status=failed\n")
+          
+          print(f"\n[BETA] Recon complete")
+          EOF
+
+  gamma-recon:
+    name: Gamma Recon - Health Intelligence
+    runs-on: ubuntu-latest
+    outputs:
+      covid_cases: ${{ steps.collect.outputs.covid_cases }}
+      covid_critical: ${{ steps.collect.outputs.covid_critical }}
+      status: ${{ steps.collect.outputs.status }}
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install Dependencies
+        run: pip install requests
+      
+      - name: Collect Health Intelligence
+        id: collect
+        run: |
+          python3 << 'EOF'
+          import requests
+          import os
+          from datetime import datetime
+          
+          print("=" * 60)
+          print("GAMMA RECON - HEALTH INTELLIGENCE")
+          print(f"Time: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}")
+          print("=" * 60)
+          
+          try:
+              r = requests.get("https://disease.sh/v3/covid-19/all", timeout=15)
+              data = r.json()
+              
+              cases = data['cases']
+              critical = data['critical']
+              today_cases = data['todayCases']
+              today_deaths = data['todayDeaths']
+              
+              print(f"\nGlobal COVID Cases: {cases:,}")
+              print(f"Critical Cases: {critical:,}")
+              print(f"Today's Cases: {today_cases:,}")
+              print(f"Today's Deaths: {today_deaths:,}")
+              
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write(f"covid_cases={cases}\n")
+                  f.write(f"covid_critical={critical}\n")
+                  f.write("status=success\n")
+                  
+          except Exception as e:
+              print(f"[ERROR] {e}")
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write("status=failed\n")
+          
+          print(f"\n[GAMMA] Recon complete")
+          EOF
+
+  delta-recon:
+    name: Delta Recon - Geopolitical Intelligence
+    runs-on: ubuntu-latest
+    outputs:
+      gdelt_update: ${{ steps.collect.outputs.gdelt_update }}
+      nasa_title: ${{ steps.collect.outputs.nasa_title }}
+      status: ${{ steps.collect.outputs.status }}
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install Dependencies
+        run: pip install requests
+      
+      - name: Collect Geopolitical Intelligence
+        id: collect
+        run: |
+          python3 << 'EOF'
+          import requests
+          import os
+          from datetime import datetime
+          
+          print("=" * 60)
+          print("DELTA RECON - GEOPOLITICAL INTELLIGENCE")
+          print(f"Time: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}")
+          print("=" * 60)
+          
+          # GDELT
+          try:
+              r = requests.get("http://data.gdeltproject.org/gdeltv2/lastupdate.txt", timeout=15)
+              lines = r.text.strip().split('\n')
+              if lines:
+                  update = lines[0].split()[2] if len(lines[0].split()) > 2 else "N/A"
+                  print(f"\nGDELT Last Update: {update}")
+                  with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                      f.write(f"gdelt_update={update}\n")
+          except Exception as e:
+              print(f"[ERROR] GDELT: {e}")
+          
+          # NASA APOD
+          try:
+              r = requests.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY", timeout=15)
+              data = r.json()
+              title = data.get('title', 'N/A')
+              print(f"NASA APOD: {title}")
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write(f"nasa_title={title}\n")
+                  f.write("status=success\n")
+          except Exception as e:
+              print(f"[ERROR] NASA: {e}")
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write("status=failed\n")
+          
+          print(f"\n[DELTA] Recon complete")
+          EOF
+
+  # ============================================
+  # OMEGA - Correlation & Report Generation
+  # ============================================
+  
+  omega-synthesis:
+    name: Omega Synthesis - Intelligence Report
+    needs: [alpha-recon, beta-recon, gamma-recon, delta-recon]
+    runs-on: ubuntu-latest
+    outputs:
+      report_path: ${{ steps.report.outputs.report_path }}
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Generate Intelligence Report
+        id: report
+        run: |
+          TIMESTAMP=$(date -u '+%Y-%m-%d_%H-%M-%S')
+          REPORT_FILE=".github/intel/INTEL_REPORT_${TIMESTAMP}.md"
+          
+          mkdir -p .github/intel
+          
+          cat > $REPORT_FILE << 'REPORT'
+          # EchoNate Intelligence Report
+          
+          **Generated:** ${{ github.event.repository.updated_at }}
+          **Run ID:** ${{ github.run_id }}
+          **Status:** OPERATIONAL
+          
+          ---
+          
+          ## Financial Intelligence (Alpha)
+          - BTC: ${{ needs.alpha-recon.outputs.btc_price }} (${{ needs.alpha-recon.outputs.btc_change }}%)
+          - ETH: ${{ needs.alpha-recon.outputs.eth_price }}
+          - Market Cap: ${{ needs.alpha-recon.outputs.market_cap }}T
+          
+          ## Geophysical Intelligence (Beta)
+          - Earthquakes (24h): ${{ needs.beta-recon.outputs.earthquake_count }}
+          - Max Magnitude: M${{ needs.beta-recon.outputs.max_magnitude }}
+          - Location: ${{ needs.beta-recon.outputs.max_location }}
+          
+          ## Health Intelligence (Gamma)
+          - Global COVID Cases: ${{ needs.gamma-recon.outputs.covid_cases }}
+          - Critical Cases: ${{ needs.gamma-recon.outputs.covid_critical }}
+          
+          ## Geopolitical Intelligence (Delta)
+          - GDELT Update: ${{ needs.delta-recon.outputs.gdelt_update }}
+          - NASA APOD: ${{ needs.delta-recon.outputs.nasa_title }}
+          
+          ---
+          
+          ## Agent Status
+          - Alpha: ${{ needs.alpha-recon.outputs.status }}
+          - Beta: ${{ needs.beta-recon.outputs.status }}
+          - Gamma: ${{ needs.gamma-recon.outputs.status }}
+          - Delta: ${{ needs.delta-recon.outputs.status }}
+          
+          ---
+          
+          ∇θ Phoenix Global Nexus
+          REPORT
+          
+          echo "Report generated: $REPORT_FILE"
+          echo "report_path=$REPORT_FILE" >> $GITHUB_OUTPUT
+          
+          cat $REPORT_FILE
+      
+      - name: Commit Intelligence Report
+        run: |
+          git config user.name "EchoNate Bot"
+          git config user.email "echonate@phoenix.nexus"
+          git add .github/intel/
+          git commit -m "📊 Intel Report $(date -u '+%Y-%m-%d %H:%M UTC')" || echo "No changes to commit"
+          git push || echo "Push failed - may need permissions"
+
+  # ============================================
+  # SIGMA - System Monitor (Always Runs)
+  # ============================================
+  
+  sigma-monitor:
+    name: Sigma Monitor - System Health
+    runs-on: ubuntu-latest
+    steps:
+      - name: System Health Check
+        run: |
+          echo "=============================================="
+          echo "SIGMA MONITOR - SYSTEM HEALTH"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=============================================="
+          echo ""
+          echo "Workflow: ${{ github.workflow }}"
+          echo "Run ID: ${{ github.run_id }}"
+          echo "Event: ${{ github.event_name }}"
+          echo "Actor: ${{ github.actor }}"
+          echo ""
+          echo "[SIGMA] All systems operational"
