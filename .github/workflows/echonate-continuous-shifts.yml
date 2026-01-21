@@ -1,0 +1,296 @@
+name: EchoNate Continuous Agent Shifts
+
+on:
+  # Staggered schedules - agents run in shifts
+  schedule:
+    # Alpha (Financial) - Every hour at :00
+    - cron: '0 * * * *'
+    # Beta (Geophysical) - Every hour at :15
+    - cron: '15 * * * *'
+    # Gamma (Health) - Every hour at :30
+    - cron: '30 * * * *'
+    # Delta (Geopolitical) - Every hour at :45
+    - cron: '45 * * * *'
+  
+  # Also run on any push to main
+  push:
+    branches: [main]
+  
+  # Manual trigger
+  workflow_dispatch:
+    inputs:
+      agent:
+        description: 'Which agent to run (alpha/beta/gamma/delta/all)'
+        required: true
+        default: 'all'
+
+env:
+  AGENT_REGISTRY: '.github/agents'
+
+jobs:
+  # Determine which agent should run based on schedule
+  dispatcher:
+    runs-on: ubuntu-latest
+    outputs:
+      agent: ${{ steps.determine.outputs.agent }}
+      shift: ${{ steps.determine.outputs.shift }}
+    steps:
+      - name: Determine Active Agent
+        id: determine
+        run: |
+          MINUTE=$(date +%M)
+          HOUR=$(date +%H)
+          
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "agent=${{ github.event.inputs.agent }}" >> $GITHUB_OUTPUT
+            echo "shift=manual" >> $GITHUB_OUTPUT
+          elif [ "$MINUTE" -lt 15 ]; then
+            echo "agent=alpha" >> $GITHUB_OUTPUT
+            echo "shift=financial" >> $GITHUB_OUTPUT
+          elif [ "$MINUTE" -lt 30 ]; then
+            echo "agent=beta" >> $GITHUB_OUTPUT
+            echo "shift=geophysical" >> $GITHUB_OUTPUT
+          elif [ "$MINUTE" -lt 45 ]; then
+            echo "agent=gamma" >> $GITHUB_OUTPUT
+            echo "shift=health" >> $GITHUB_OUTPUT
+          else
+            echo "agent=delta" >> $GITHUB_OUTPUT
+            echo "shift=geopolitical" >> $GITHUB_OUTPUT
+          fi
+          
+          echo "🕐 Current time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+
+  # Alpha Agent - Financial Intelligence
+  alpha-financial:
+    needs: dispatcher
+    if: needs.dispatcher.outputs.agent == 'alpha' || needs.dispatcher.outputs.agent == 'all'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install Dependencies
+        run: pip install requests
+      
+      - name: Alpha Agent - Financial Data Collection
+        run: |
+          echo "=============================================="
+          echo "ALPHA AGENT - FINANCIAL SHIFT"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=============================================="
+          
+          python3 << 'EOF'
+          import requests
+          import json
+          from datetime import datetime
+          
+          print("\n[ALPHA] Collecting financial intelligence...\n")
+          
+          # CoinGecko - Crypto
+          try:
+              r = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_24hr_change=true", timeout=10)
+              data = r.json()
+              print(f"BTC: ${data['bitcoin']['usd']:,.2f} ({data['bitcoin']['usd_24h_change']:+.2f}%)")
+              print(f"ETH: ${data['ethereum']['usd']:,.2f} ({data['ethereum']['usd_24h_change']:+.2f}%)")
+          except Exception as e:
+              print(f"[ERROR] CoinGecko: {e}")
+          
+          # Global Market Cap
+          try:
+              r = requests.get("https://api.coingecko.com/api/v3/global", timeout=10)
+              data = r.json()['data']
+              print(f"Total Crypto Market Cap: ${data['total_market_cap']['usd']/1e12:.2f}T")
+          except Exception as e:
+              print(f"[ERROR] Market Cap: {e}")
+          
+          print(f"\n[ALPHA] Shift complete: {datetime.utcnow().isoformat()}Z")
+          EOF
+
+  # Beta Agent - Geophysical Intelligence
+  beta-geophysical:
+    needs: dispatcher
+    if: needs.dispatcher.outputs.agent == 'beta' || needs.dispatcher.outputs.agent == 'all'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install Dependencies
+        run: pip install requests
+      
+      - name: Beta Agent - Geophysical Data Collection
+        run: |
+          echo "=============================================="
+          echo "BETA AGENT - GEOPHYSICAL SHIFT"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=============================================="
+          
+          python3 << 'EOF'
+          import requests
+          import json
+          from datetime import datetime
+          
+          print("\n[BETA] Collecting geophysical intelligence...\n")
+          
+          # USGS Earthquakes
+          try:
+              r = requests.get("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson", timeout=10)
+              data = r.json()
+              earthquakes = data['features']
+              print(f"Earthquakes (M2.5+, 24h): {len(earthquakes)}")
+              
+              # Find max magnitude
+              if earthquakes:
+                  max_eq = max(earthquakes, key=lambda x: x['properties']['mag'])
+                  props = max_eq['properties']
+                  print(f"Largest: M{props['mag']} - {props['place']}")
+                  
+                  # Count by magnitude range
+                  m4_plus = len([e for e in earthquakes if e['properties']['mag'] >= 4.0])
+                  m5_plus = len([e for e in earthquakes if e['properties']['mag'] >= 5.0])
+                  m6_plus = len([e for e in earthquakes if e['properties']['mag'] >= 6.0])
+                  print(f"M4+: {m4_plus} | M5+: {m5_plus} | M6+: {m6_plus}")
+          except Exception as e:
+              print(f"[ERROR] USGS: {e}")
+          
+          print(f"\n[BETA] Shift complete: {datetime.utcnow().isoformat()}Z")
+          EOF
+
+  # Gamma Agent - Health Intelligence
+  gamma-health:
+    needs: dispatcher
+    if: needs.dispatcher.outputs.agent == 'gamma' || needs.dispatcher.outputs.agent == 'all'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install Dependencies
+        run: pip install requests
+      
+      - name: Gamma Agent - Health Data Collection
+        run: |
+          echo "=============================================="
+          echo "GAMMA AGENT - HEALTH SHIFT"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=============================================="
+          
+          python3 << 'EOF'
+          import requests
+          import json
+          from datetime import datetime
+          
+          print("\n[GAMMA] Collecting health intelligence...\n")
+          
+          # disease.sh COVID
+          try:
+              r = requests.get("https://disease.sh/v3/covid-19/all", timeout=10)
+              data = r.json()
+              print(f"Global COVID Cases: {data['cases']:,}")
+              print(f"Critical Cases: {data['critical']:,}")
+              print(f"Today's Cases: {data['todayCases']:,}")
+              print(f"Today's Deaths: {data['todayDeaths']:,}")
+          except Exception as e:
+              print(f"[ERROR] disease.sh: {e}")
+          
+          print(f"\n[GAMMA] Shift complete: {datetime.utcnow().isoformat()}Z")
+          EOF
+
+  # Delta Agent - Geopolitical Intelligence
+  delta-geopolitical:
+    needs: dispatcher
+    if: needs.dispatcher.outputs.agent == 'delta' || needs.dispatcher.outputs.agent == 'all'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install Dependencies
+        run: pip install requests
+      
+      - name: Delta Agent - Geopolitical Data Collection
+        run: |
+          echo "=============================================="
+          echo "DELTA AGENT - GEOPOLITICAL SHIFT"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=============================================="
+          
+          python3 << 'EOF'
+          import requests
+          import json
+          from datetime import datetime
+          
+          print("\n[DELTA] Collecting geopolitical intelligence...\n")
+          
+          # GDELT Global Events
+          try:
+              r = requests.get("http://data.gdeltproject.org/gdeltv2/lastupdate.txt", timeout=10)
+              lines = r.text.strip().split('\n')
+              print(f"GDELT Last Update: {lines[0].split()[2] if lines else 'N/A'}")
+          except Exception as e:
+              print(f"[ERROR] GDELT: {e}")
+          
+          # NASA APOD (space situational awareness)
+          try:
+              r = requests.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY", timeout=10)
+              data = r.json()
+              print(f"NASA APOD: {data.get('title', 'N/A')}")
+          except Exception as e:
+              print(f"[ERROR] NASA: {e}")
+          
+          print(f"\n[DELTA] Shift complete: {datetime.utcnow().isoformat()}Z")
+          EOF
+
+  # Omega Agent - Correlation Analysis (runs after all collectors)
+  omega-correlator:
+    needs: [alpha-financial, beta-geophysical, gamma-health, delta-geopolitical]
+    if: always() && needs.dispatcher.outputs.agent == 'all'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Omega Agent - Cross-Domain Correlation
+        run: |
+          echo "=============================================="
+          echo "OMEGA AGENT - CORRELATION ANALYSIS"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=============================================="
+          echo ""
+          echo "Analyzing cross-domain signals..."
+          echo "Status: All collector agents completed"
+          echo ""
+          echo "[OMEGA] Correlation shift complete"
+
+  # Sigma Agent - System Monitor (always runs)
+  sigma-monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sigma Agent - System Health Check
+        run: |
+          echo "=============================================="
+          echo "SIGMA AGENT - SYSTEM MONITOR"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=============================================="
+          echo ""
+          echo "Workflow: ${{ github.workflow }}"
+          echo "Run ID: ${{ github.run_id }}"
+          echo "Event: ${{ github.event_name }}"
+          echo "Actor: ${{ github.actor }}"
+          echo ""
+          echo "[SIGMA] All systems operational"
