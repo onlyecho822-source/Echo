@@ -1,0 +1,143 @@
+name: EchoNate Full Spectrum Intelligence
+
+on:
+  schedule:
+    # Staggered shifts - every 15 minutes
+    - cron: '0 */1 * * *'   # Alpha (Financial) - hourly
+    - cron: '15 */1 * * *'  # Beta (Geophysical) - hourly
+    - cron: '30 */1 * * *'  # Gamma (Health) - hourly  
+    - cron: '45 */1 * * *'  # Zeta (Environmental) - hourly
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  alpha-financial:
+    name: Alpha Agent - Financial Intelligence
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && github.event.schedule == '0 */1 * * *')
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Alpha Financial Collection
+        run: |
+          echo "=============================================="
+          echo "ALPHA AGENT - FINANCIAL SHIFT"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=============================================="
+          
+          echo "[ALPHA] Collecting crypto market data..."
+          BTC=$(curl -s "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_24hr_change=true")
+          echo "Crypto: $BTC"
+          
+          echo "[ALPHA] Collecting forex rates..."
+          FOREX=$(curl -s "https://open.er-api.com/v6/latest/USD" | python3 -c "import sys,json; d=json.load(sys.stdin); print(f'EUR:{d[\"rates\"][\"EUR\"]:.4f} GBP:{d[\"rates\"][\"GBP\"]:.4f} JPY:{d[\"rates\"][\"JPY\"]:.2f}')")
+          echo "Forex: $FOREX"
+          
+          echo "[ALPHA] Shift complete: $(date -u --iso-8601=seconds)"
+
+  beta-geophysical:
+    name: Beta Agent - Geophysical Intelligence
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && github.event.schedule == '15 */1 * * *')
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Beta Geophysical Collection
+        run: |
+          echo "=============================================="
+          echo "BETA AGENT - GEOPHYSICAL SHIFT"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=============================================="
+          
+          echo "[BETA] Collecting seismic data..."
+          QUAKES=$(curl -s "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson" | python3 -c "
+          import sys,json
+          d=json.load(sys.stdin)
+          features = d.get('features',[])
+          print(f'Earthquakes (M2.5+): {len(features)}')
+          if features:
+              top = features[0]['properties']
+              print(f'Latest: M{top[\"mag\"]} - {top[\"place\"]}')")
+          echo "$QUAKES"
+          
+          echo "[BETA] Collecting marine data..."
+          curl -s "https://www.ndbc.noaa.gov/data/latest_obs/latest_obs.txt" | head -5
+          
+          echo "[BETA] Shift complete: $(date -u --iso-8601=seconds)"
+
+  gamma-health:
+    name: Gamma Agent - Health Intelligence
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && github.event.schedule == '30 */1 * * *')
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Gamma Health Collection
+        run: |
+          echo "=============================================="
+          echo "GAMMA AGENT - HEALTH SHIFT"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=============================================="
+          
+          echo "[GAMMA] Collecting health intelligence..."
+          HEALTH=$(curl -s "https://disease.sh/v3/covid-19/all" | python3 -c "
+          import sys,json
+          d=json.load(sys.stdin)
+          print(f'Global COVID Cases: {d.get(\"cases\",0):,}')
+          print(f'Critical Cases: {d.get(\"critical\",0):,}')
+          print(f'Today Cases: {d.get(\"todayCases\",0):,}')")
+          echo "$HEALTH"
+          
+          echo "[GAMMA] Shift complete: $(date -u --iso-8601=seconds)"
+
+  zeta-environmental:
+    name: Zeta Agent - Environmental Intelligence
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && github.event.schedule == '45 */1 * * *')
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Zeta Environmental Collection
+        run: |
+          echo "=============================================="
+          echo "ZETA AGENT - ENVIRONMENTAL SHIFT"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=============================================="
+          
+          python3 .github/agents/echonate_environmental_intelligence.py
+          
+          echo "[ZETA] Shift complete: $(date -u --iso-8601=seconds)"
+
+  sigma-monitor:
+    name: Sigma Agent - System Monitor
+    runs-on: ubuntu-latest
+    needs: [alpha-financial, beta-geophysical, gamma-health, zeta-environmental]
+    if: always()
+    steps:
+      - name: Sigma System Status
+        run: |
+          echo "=============================================="
+          echo "SIGMA AGENT - SYSTEM MONITOR"
+          echo "Time: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "=============================================="
+          
+          echo "Workflow: ${{ github.workflow }}"
+          echo "Run ID: ${{ github.run_id }}"
+          echo "Event: ${{ github.event_name }}"
+          echo "Actor: ${{ github.actor }}"
+          
+          echo ""
+          echo "Agent Status:"
+          echo "  Alpha (Financial): ${{ needs.alpha-financial.result }}"
+          echo "  Beta (Geophysical): ${{ needs.beta-geophysical.result }}"
+          echo "  Gamma (Health): ${{ needs.gamma-health.result }}"
+          echo "  Zeta (Environmental): ${{ needs.zeta-environmental.result }}"
+          
+          echo ""
+          echo "[SIGMA] All systems monitored"
