@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-01-21T15:52:19.627430",
+  "layers": {
+    "financial": {
+      "SPY": {
+        "price": 684.9,
+        "avg_daily_return": 0.0026803123259587255,
+        "volatility": 0.6526926871217587,
+        "trend": "UP"
+      },
+      "QQQ": {
+        "price": 616.25,
+        "avg_daily_return": -0.022134530440804337,
+        "volatility": 0.7836370590558889,
+        "trend": "DOWN"
+      },
+      "DIA": {
+        "price": 489.96,
+        "avg_daily_return": 0.07308556559186725,
+        "volatility": 0.7436498328883523,
+        "trend": "UP"
+      },
+      "IWM": {
+        "price": 266.615,
+        "avg_daily_return": 0.2676759610786949,
+        "volatility": 0.8383480860451674,
+        "trend": "UP"
+      },
+      "BITCOIN": {
+        "price": 90103,
+        "change_24h": -0.2894639855882298
+      },
+      "ETHEREUM": {
+        "price": 2992.37,
+        "change_24h": -1.0623833351996754
+      }
+    },
+    "geophysical": {
+      "seismic": {
+        "total_week": 2476,
+        "m5_plus": 47,
+        "m6_plus": 2,
+        "max_magnitude": 6,
+        "alert_level": "HIGH"
+      },
+      "weather": {
+        "temp_c": -4.2,
+        "wind_kmh": 8.6,
+        "extreme": false
+      }
+    },
+    "health": {
+      "covid": {
+        "active": 22123398,
+        "critical": 34794,
+        "cases_per_million": 90413,
+        "alert_level": "MODERATE"
+      }
+    },
+    "geopolitical": {}
+  },
+  "correlations": [
+    {
+      "source": "SEISMIC",
+      "target": "TRV",
+      "direction": "BEARISH",
+      "strength": 0.4,
+      "confidence": 0.75,
+      "logic": "M6.0 earthquake \u2192 insurance claims uncertainty"
+    },
+    {
+      "source": "HEALTH",
+      "target": "PFE",
+      "direction": "BULLISH",
+      "strength": 0.34794,
+      "confidence": 0.65,
+      "logic": "34,794 critical cases \u2192 pharma demand"
+    }
+  ],
+  "signals": [
+    {
+      "action": "SHORT",
+      "target": "TRV",
+      "strength": 0.4,
+      "confidence": 0.75,
+      "source": "SEISMIC",
+      "logic": "M6.0 earthquake \u2192 insurance claims uncertainty"
+    },
+    {
+      "action": "LONG",
+      "target": "PFE",
+      "strength": 0.34794,
+      "confidence": 0.65,
+      "source": "HEALTH",
+      "logic": "34,794 critical cases \u2192 pharma demand"
+    }
+  ],
+  "pattern": {
+    "regime": "NEUTRAL",
+    "regime_strength": 0.5,
+    "composite_alert": "ELEVATED",
+    "alert_breakdown": {
+      "seismic": "HIGH",
+      "health": "MODERATE",
+      "geopolitical": "LOW"
+    },
+    "signal_count": 2,
+    "bullish_count": 1,
+    "bearish_count": 1
+  },
+  "execution": {
+    "start": "2026-01-21T15:52:19.627430",
+    "end": "2026-01-21T15:52:40.614087",
+    "duration_seconds": 20.986657
+  }
+}
