@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE signals SET detectedAt = DATE_SUB(NOW(), INTERVAL 3 DAY) WHERE id > 0;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 42ePVMx6x8jNs8R.9b889b6c7768 --database PQXHaheUx3Gmd5ct28VegB --execute UPDATE signals SET detectedAt = DATE_SUB(NOW(), INTERVAL 3 DAY) WHERE id > 0;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 363
+}

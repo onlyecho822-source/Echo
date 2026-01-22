@@ -1,0 +1,58 @@
+{
+  "query": "SELECT id, signalType, title, direction, confidence, detectedAt FROM signals ORDER BY detectedAt DESC LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 42ePVMx6x8jNs8R.9b889b6c7768 --database PQXHaheUx3Gmd5ct28VegB --execute SELECT id, signalType, title, direction, confidence, detectedAt FROM signals ORDER BY detectedAt DESC LIMIT 10;",
+  "rows": [
+    {
+      "id": "6",
+      "signalType": "solar",
+      "title": "Houston Weather: 18.8°C, 7 km/h",
+      "direction": "neutral",
+      "confidence": "0.55",
+      "detectedAt": "2026-01-21 19:27:17"
+    },
+    {
+      "id": "5",
+      "signalType": "sentiment",
+      "title": "WSB Sentiment Ratio: 0.40",
+      "direction": "neutral",
+      "confidence": "0.50",
+      "detectedAt": "2026-01-21 19:27:17"
+    },
+    {
+      "id": "3",
+      "signalType": "crypto",
+      "title": "Crypto Market Down 0.91%",
+      "direction": "bearish",
+      "confidence": "0.60",
+      "detectedAt": "2026-01-21 19:27:17"
+    },
+    {
+      "id": "4",
+      "signalType": "forex",
+      "title": "USD/JPY at 158.01",
+      "direction": "bullish",
+      "confidence": "0.55",
+      "detectedAt": "2026-01-21 19:27:17"
+    },
+    {
+      "id": "2",
+      "signalType": "health",
+      "title": "COVID Critical Cases: 34,794",
+      "direction": "bullish",
+      "confidence": "0.65",
+      "detectedAt": "2026-01-21 19:27:16"
+    },
+    {
+      "id": "1",
+      "signalType": "seismic",
+      "title": "M6.1 Earthquake - Insurance Impact",
+      "direction": "bearish",
+      "confidence": "0.75",
+      "detectedAt": "2026-01-21 19:27:16"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tsignalType\ttitle\tdirection\tconfidence\tdetectedAt\n6\tsolar\tHouston Weather: 18.8°C, 7 km/h\tneutral\t0.55\t2026-01-21 19:27:17\n5\tsentiment\tWSB Sentiment Ratio: 0.40\tneutral\t0.50\t2026-01-21 19:27:17\n3\tcrypto\tCrypto Market Down 0.91%\tbearish\t0.60\t2026-01-21 19:27:17\n4\tforex\tUSD/JPY at 158.01\tbullish\t0.55\t2026-01-21 19:27:17\n2\thealth\tCOVID Critical Cases: 34,794\tbullish\t0.65\t2026-01-21 19:27:16\n1\tseismic\tM6.1 Earthquake - Insurance Impact\tbearish\t0.75\t2026-01-21 19:27:16\n",
+  "stderr": "",
+  "execution_time_ms": 513
+}

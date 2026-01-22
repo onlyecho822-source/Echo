@@ -32,8 +32,9 @@ import {
 } from "lucide-react";
 import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { toast } from "sonner";
+import { useSignalWebSocket } from "@/hooks/useSignalWebSocket";
 
 const signalTypeLabels: Record<string, string> = {
   seismic: "Seismic",
@@ -72,6 +73,25 @@ export default function Dashboard() {
   
   const { data: stats } = trpc.signals.stats.useQuery();
   const { data: subscription } = trpc.subscription.current.useQuery();
+  
+  // Real-time WebSocket connection
+  const { isConnected, signals: realtimeSignals, stats: wsStats } = useSignalWebSocket({
+    autoConnect: true,
+    signalTypes: ["seismic", "health", "sentiment", "solar", "forex", "crypto", "geopolitical"],
+  });
+  
+  // Show toast when new real-time signal arrives
+  useEffect(() => {
+    if (realtimeSignals.length > 0) {
+      const latest = realtimeSignals[0];
+      toast.info(`New Signal: ${latest.title}`, {
+        description: `${latest.targetTicker} - ${latest.direction.toUpperCase()}`,
+        duration: 5000,
+      });
+      // Refetch to include new signal in list
+      refetch();
+    }
+  }, [realtimeSignals.length, refetch]);
 
   const tier = signalsData?.tier || "free";
   const rawSignals = signalsData?.signals || [];
@@ -152,6 +172,10 @@ export default function Dashboard() {
               {tier === "free" && "Free"}
               {tier === "pro" && <><Crown className="w-3 h-3 mr-1" /> Pro</>}
               {tier === "enterprise" && <><Crown className="w-3 h-3 mr-1" /> Enterprise</>}
+            </Badge>
+            <Badge variant="outline" className={isConnected ? "border-green-500 text-green-500" : "border-red-500 text-red-500"}>
+              <span className={`w-2 h-2 rounded-full mr-1.5 ${isConnected ? "bg-green-500 animate-pulse" : "bg-red-500"}`} />
+              {isConnected ? "Live" : "Offline"}
             </Badge>
           </div>
           <div className="flex items-center gap-2">

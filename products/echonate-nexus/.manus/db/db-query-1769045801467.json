@@ -1,0 +1,46 @@
+{
+  "query": "SELECT id, signalType, detectedAt, createdAt FROM signals;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 42ePVMx6x8jNs8R.9b889b6c7768 --database PQXHaheUx3Gmd5ct28VegB --execute SELECT id, signalType, detectedAt, createdAt FROM signals;",
+  "rows": [
+    {
+      "id": "1",
+      "signalType": "seismic",
+      "detectedAt": "2026-01-19 01:36:31",
+      "createdAt": "2026-01-21 14:27:17"
+    },
+    {
+      "id": "2",
+      "signalType": "health",
+      "detectedAt": "2026-01-19 01:36:31",
+      "createdAt": "2026-01-21 14:27:17"
+    },
+    {
+      "id": "3",
+      "signalType": "crypto",
+      "detectedAt": "2026-01-19 01:36:31",
+      "createdAt": "2026-01-21 14:27:17"
+    },
+    {
+      "id": "4",
+      "signalType": "forex",
+      "detectedAt": "2026-01-19 01:36:31",
+      "createdAt": "2026-01-21 14:27:17"
+    },
+    {
+      "id": "5",
+      "signalType": "sentiment",
+      "detectedAt": "2026-01-19 01:36:31",
+      "createdAt": "2026-01-21 14:27:17"
+    },
+    {
+      "id": "6",
+      "signalType": "solar",
+      "detectedAt": "2026-01-19 01:36:31",
+      "createdAt": "2026-01-21 14:27:17"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tsignalType\tdetectedAt\tcreatedAt\n1\tseismic\t2026-01-19 01:36:31\t2026-01-21 14:27:17\n2\thealth\t2026-01-19 01:36:31\t2026-01-21 14:27:17\n3\tcrypto\t2026-01-19 01:36:31\t2026-01-21 14:27:17\n4\tforex\t2026-01-19 01:36:31\t2026-01-21 14:27:17\n5\tsentiment\t2026-01-19 01:36:31\t2026-01-21 14:27:17\n6\tsolar\t2026-01-19 01:36:31\t2026-01-21 14:27:17\n",
+  "stderr": "",
+  "execution_time_ms": 360
+}

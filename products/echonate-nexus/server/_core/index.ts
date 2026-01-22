@@ -9,6 +9,7 @@ import { createContext } from "./context";
 import { serveStatic, setupVite } from "./vite";
 import { stripeWebhookRouter } from "../stripeWebhook";
 import apiRouter from "../api";
+import { signalWebSocket } from "../websocket";
 
 function isPortAvailable(port: number): Promise<boolean> {
   return new Promise(resolve => {
@@ -63,8 +64,12 @@ async function startServer() {
     console.log(`Port ${preferredPort} is busy, using port ${port} instead`);
   }
 
+  // Initialize WebSocket server
+  signalWebSocket.initialize(server);
+  
   server.listen(port, () => {
     console.log(`Server running on http://localhost:${port}/`);
+    console.log(`WebSocket available at ws://localhost:${port}/ws`);
   });
 }
 

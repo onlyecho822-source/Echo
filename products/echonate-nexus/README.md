@@ -8,6 +8,18 @@ EchoNate Nexus transforms unconventional data streams into actionable trading si
 
 ## Features
 
+### Live Data Source Connectors
+- **USGS Earthquake API**: Real-time seismic activity monitoring (M4.5+ events)
+- **Disease.sh Health API**: Global health outbreak tracking (COVID-19, epidemics)
+- **NASA DONKI Solar Weather**: Solar flares and geomagnetic storm detection
+- **News Sentiment Analysis**: Social and news sentiment correlation
+
+### Real-Time WebSocket Streaming
+- **Sub-second signal delivery**: New signals pushed instantly to connected clients
+- **Subscription-based filtering**: Subscribe to specific signal types
+- **Auto-reconnection**: Resilient connection with exponential backoff
+- **Heartbeat monitoring**: Connection health verification every 30 seconds
+
 ### Core Signal Detection
 - **7 Signal Types**: Seismic, Health, Sentiment, Solar/Weather, Forex, Crypto, Geopolitical
 - **Real-time Correlation Engine**: Detects patterns between alternative data and market movements
@@ -115,7 +127,41 @@ echonate-nexus/
 - `webhookEvents` - External signal ingestion log
 - `apiUsage` - API call tracking
 
-## API Reference
+## WebSocket API
+
+### Connection
+```javascript
+const ws = new WebSocket('wss://your-domain.com/ws');
+
+ws.onmessage = (event) => {
+  const { type, data, timestamp } = JSON.parse(event.data);
+  if (type === 'signal') {
+    console.log('New signal:', data.title);
+  }
+};
+```
+
+### Events
+
+| Event | Direction | Description |
+|-------|-----------|-------------|
+| `signal` | Server → Client | New signal detected |
+| `stats` | Server → Client | Connection stats, last fetch time |
+| `ping` | Client → Server | Heartbeat request |
+| `pong` | Server → Client | Heartbeat response |
+| `subscribe` | Client → Server | Subscribe to signal types |
+| `unsubscribe` | Client → Server | Unsubscribe from signal types |
+
+### Subscribe to Signal Types
+```javascript
+ws.send(JSON.stringify({
+  type: 'subscribe',
+  data: { signalTypes: ['seismic', 'health', 'solar'] },
+  timestamp: Date.now()
+}));
+```
+
+## REST API Reference
 
 ### Authentication
 ```bash
