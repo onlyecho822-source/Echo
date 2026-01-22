@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echo.universe/schemas/agent_failure_detection.schema.json",
+  "title": "Multi-Agent Failure Detection Schema",
+  "description": "Schema for detecting and logging the 14 MASFT failure modes in multi-agent operations",
+  "type": "object",
+  "required": ["detection_id", "timestamp", "agent_context", "failure_assessment"],
+  "properties": {
+    "detection_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "agent_context": {
+      "type": "object",
+      "required": ["task_id", "agents_involved", "cycle_count"],
+      "properties": {
+        "task_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "agents_involved": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "agent_id": { "type": "string" },
+              "agent_role": { 
+                "type": "string",
+                "enum": ["planner", "auditor", "executor", "archivist", "custom"]
+              },
+              "current_state": { "type": "string" }
+            }
+          }
+        },
+        "cycle_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "elapsed_time_ms": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "failure_assessment": {
+      "type": "object",
+      "required": ["failures_detected", "system_health"],
+      "properties": {
+        "failures_detected": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["failure_code", "category", "severity", "description"],
+            "properties": {
+              "failure_code": {
+                "type": "string",
+                "enum": [
+                  "FM_1_1_TASK_DRIFT",
+                  "FM_1_2_ROLE_VIOLATION", 
+                  "FM_1_3_STEP_REPETITION",
+                  "FM_1_4_SPEC_AMBIGUITY",
+                  "FM_1_5_DESIGN_FLAW",
+                  "FM_2_1_CONTEXT_LOSS",
+                  "FM_2_2_CONFLICTING_OUTPUT",
+                  "FM_2_3_COORDINATION_BREAKDOWN",
+                  "FM_2_4_MEMORY_INCONSISTENCY",
+                  "FM_2_5_PROTOCOL_FAILURE",
+                  "FM_3_1_PREMATURE_TERMINATION",
+                  "FM_3_2_INFINITE_LOOP",
+                  "FM_3_3_INCORRECT_VERIFICATION",
+                  "FM_3_4_MISSING_VERIFICATION"
+                ]
+              },
+              "category": {
+                "type": "string",
+                "enum": ["specification", "coordination", "termination"]
+              },
+              "severity": {
+                "type": "string",
+                "enum": ["warning", "error", "critical"]
+              },
+              "description": {
+                "type": "string"
+              },
+              "affected_agents": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "evidence": {
+                "type": "object",
+                "properties": {
+                  "trigger_condition": { "type": "string" },
+                  "threshold_value": { "type": "number" },
+                  "actual_value": { "type": "number" }
+                }
+              }
+            }
+          }
+        },
+        "system_health": {
+          "type": "object",
+          "properties": {
+            "overall_status": {
+              "type": "string",
+              "enum": ["healthy", "degraded", "failing", "halted"]
+            },
+            "failure_count_last_10": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 10
+            },
+            "circuit_breaker_status": {
+              "type": "string",
+              "enum": ["closed", "open", "half_open"]
+            }
+          }
+        }
+      }
+    },
+    "remediation": {
+      "type": "object",
+      "properties": {
+        "action_taken": {
+          "type": "string",
+          "enum": [
+            "none",
+            "logged_only",
+            "re_anchored",
+            "re_transmitted",
+            "reconciled",
+            "blocked_termination",
+            "forced_termination",
+            "fallback_single_agent",
+            "human_escalation"
+          ]
+        },
+        "success": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
