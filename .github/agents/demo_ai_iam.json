@@ -1,0 +1,208 @@
+{
+  "agents": [
+    {
+      "agent_id": "agent_55a634ee67d78630",
+      "name": "Alpha-Financial",
+      "role": "collector",
+      "description": "Financial data collection from CoinGecko, Yahoo Finance",
+      "created_at": "2026-01-21T16:25:40.037485Z",
+      "permissions": [
+        "read:data",
+        "write:data"
+      ],
+      "allowed_apis": [
+        "coingecko.com",
+        "yahoo.com",
+        "finance.yahoo"
+      ],
+      "allowed_actions": [
+        "fetch_crypto",
+        "fetch_stock",
+        "fetch_market"
+      ],
+      "rate_limit_per_minute": 60,
+      "max_data_access_mb": 100,
+      "allowed_hours": [
+        0,
+        24
+      ],
+      "is_active": true,
+      "last_activity": null,
+      "anomaly_score": 0.0
+    },
+    {
+      "agent_id": "agent_2d134288e5d42c43",
+      "name": "Beta-Geophysical",
+      "role": "collector",
+      "description": "Seismic and environmental data from USGS, NOAA",
+      "created_at": "2026-01-21T16:25:40.037869Z",
+      "permissions": [
+        "read:data",
+        "write:data"
+      ],
+      "allowed_apis": [
+        "usgs.gov",
+        "noaa.gov",
+        "earthquake.usgs"
+      ],
+      "allowed_actions": [
+        "fetch_earthquakes",
+        "fetch_weather",
+        "fetch_marine"
+      ],
+      "rate_limit_per_minute": 60,
+      "max_data_access_mb": 100,
+      "allowed_hours": [
+        0,
+        24
+      ],
+      "is_active": true,
+      "last_activity": null,
+      "anomaly_score": 0.0
+    },
+    {
+      "agent_id": "agent_c161df0045ac3664",
+      "name": "Gamma-Health",
+      "role": "collector",
+      "description": "Health data from disease.sh and WHO",
+      "created_at": "2026-01-21T16:25:40.038347Z",
+      "permissions": [
+        "read:data",
+        "write:data"
+      ],
+      "allowed_apis": [
+        "disease.sh",
+        "who.int"
+      ],
+      "allowed_actions": [
+        "fetch_covid",
+        "fetch_health"
+      ],
+      "rate_limit_per_minute": 60,
+      "max_data_access_mb": 100,
+      "allowed_hours": [
+        0,
+        24
+      ],
+      "is_active": true,
+      "last_activity": null,
+      "anomaly_score": 0.0
+    },
+    {
+      "agent_id": "agent_3cbe4e51938b5fbd",
+      "name": "Delta-Geopolitical",
+      "role": "collector",
+      "description": "Global events from GDELT and news sources",
+      "created_at": "2026-01-21T16:25:40.039679Z",
+      "permissions": [
+        "read:data",
+        "write:data"
+      ],
+      "allowed_apis": [
+        "gdeltproject.org",
+        "newsapi.org"
+      ],
+      "allowed_actions": [
+        "fetch_events",
+        "fetch_news"
+      ],
+      "rate_limit_per_minute": 60,
+      "max_data_access_mb": 100,
+      "allowed_hours": [
+        0,
+        24
+      ],
+      "is_active": true,
+      "last_activity": null,
+      "anomaly_score": 0.0
+    },
+    {
+      "agent_id": "agent_34fe5769b835ea6c",
+      "name": "Epsilon-Adversarial",
+      "role": "adversarial",
+      "description": "Red team agent for signal validation",
+      "created_at": "2026-01-21T16:25:40.040247Z",
+      "permissions": [
+        "read:data",
+        "read:signals",
+        "audit:logs"
+      ],
+      "allowed_apis": [
+        "*"
+      ],
+      "allowed_actions": [
+        "challenge_signal",
+        "validate_correlation",
+        "audit_data"
+      ],
+      "rate_limit_per_minute": 60,
+      "max_data_access_mb": 100,
+      "allowed_hours": [
+        0,
+        24
+      ],
+      "is_active": true,
+      "last_activity": null,
+      "anomaly_score": 0.0
+    },
+    {
+      "agent_id": "agent_4b7ffb4077593fed",
+      "name": "Omega-Correlator",
+      "role": "analyzer",
+      "description": "Cross-domain correlation engine",
+      "created_at": "2026-01-21T16:25:40.040785Z",
+      "permissions": [
+        "read:data",
+        "write:signals",
+        "read:signals"
+      ],
+      "allowed_apis": [
+        "*"
+      ],
+      "allowed_actions": [
+        "analyze",
+        "correlate",
+        "generate_signal"
+      ],
+      "rate_limit_per_minute": 60,
+      "max_data_access_mb": 100,
+      "allowed_hours": [
+        0,
+        24
+      ],
+      "is_active": true,
+      "last_activity": null,
+      "anomaly_score": 0.0
+    },
+    {
+      "agent_id": "agent_95b06c7bf402a345",
+      "name": "Sigma-Monitor",
+      "role": "monitor",
+      "description": "System health and observability",
+      "created_at": "2026-01-21T16:25:40.041351Z",
+      "permissions": [
+        "read:data",
+        "read:signals",
+        "audit:logs"
+      ],
+      "allowed_apis": [
+        "*"
+      ],
+      "allowed_actions": [
+        "monitor",
+        "alert",
+        "report"
+      ],
+      "rate_limit_per_minute": 60,
+      "max_data_access_mb": 100,
+      "allowed_hours": [
+        0,
+        24
+      ],
+      "is_active": true,
+      "last_activity": null,
+      "anomaly_score": 0.0
+    }
+  ],
+  "audit_log_count": 7
+}

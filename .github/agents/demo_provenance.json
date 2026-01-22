@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2026-01-21T16:16:18.039558Z",
+    "source": "USGS",
+    "endpoint": "/earthquakes/feed",
+    "data_hash": "817d3017bb1520f260f122afcd650c3d757768f6763e17af14b94504a8bcf2a5",
+    "data_size_bytes": 41,
+    "metadata": {},
+    "chain_hash": "817d3017bb1520f260f122afcd650c3d757768f6763e17af14b94504a8bcf2a5"
+  },
+  {
+    "timestamp": "2026-01-21T16:16:18.039764Z",
+    "source": "YahooFinance",
+    "endpoint": "/stock/TRV",
+    "data_hash": "51ef3e74dd851e30682e6382490da8e47821122223dbaf2a5841588d78c124d4",
+    "data_size_bytes": 43,
+    "metadata": {},
+    "chain_hash": "513a297ccf815192bf9b1857ad3c2c40a056205c706019234509e80697f24608"
+  }
+]

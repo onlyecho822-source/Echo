@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1768981097741,
+      "tag": "0000_ordinary_zuras",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1769017935371,
+      "tag": "0001_yellow_molecule_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1769020437492,
+      "tag": "0002_magical_absorbing_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1769022079066,
+      "tag": "0003_good_menace",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1769046768586,
+      "tag": "0004_material_squirrel_girl",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1769046786122,
+      "tag": "0005_legal_roughhouse",
+      "breakpoints": true
+    }
+  ]
+}
