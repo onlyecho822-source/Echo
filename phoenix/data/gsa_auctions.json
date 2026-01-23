@@ -1,0 +1,169 @@
+{
+  "scan_date": "2026-01-07T03:15:57.260979",
+  "total_items": 14,
+  "note": "GSA Auctions does not provide estimated values. Items filtered by current bid >= $1000. Focus on vehicles, electronics, and equipment suitable for resale.",
+  "categories_scanned": [
+    "Vehicles",
+    "Computer Equipment",
+    "Electronics",
+    "Construction Equipment",
+    "Industrial Machinery",
+    "Aircraft"
+  ],
+  "auctions": [
+    {
+      "item_description": "2019 Ford F250 4X4",
+      "current_bid": "18040.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/07/2026 04:07 PM CT",
+      "location": "OKLAHOMA CITY, OK 73114",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348443",
+      "category": "Vehicles",
+      "num_bidders": "20",
+      "lot_number": "3-1-QSC-I-26-110-051"
+    },
+    {
+      "item_description": "2018 Chevrolet Silverado",
+      "current_bid": "16670.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/09/2026 04:23 PM CT",
+      "location": "Provo, UT 84606",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348234",
+      "category": "Vehicles",
+      "num_bidders": "10",
+      "lot_number": "3-1-QSC-I-26-116-018"
+    },
+    {
+      "item_description": "2017 Dodge Ram 1500 ST Quad Cab 4X4",
+      "current_bid": "16670.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/09/2026 04:42 PM CT",
+      "location": "SALT LAKE CITY, UT 84104",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348236",
+      "category": "Vehicles",
+      "num_bidders": "4",
+      "lot_number": "3-1-QSC-I-26-117-003"
+    },
+    {
+      "item_description": "2009 Ford Ranger",
+      "current_bid": "9516.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/07/2026 03:47 PM CT",
+      "location": "FORT COLLINS, CO 80521",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348441",
+      "category": "Vehicles",
+      "num_bidders": "12",
+      "lot_number": "3-1-QSC-I-26-110-049"
+    },
+    {
+      "item_description": "2018 Ram 1500",
+      "current_bid": "8016.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/07/2026 03:37 PM CT",
+      "location": "Avondale, AZ 85323",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348440",
+      "category": "Vehicles",
+      "num_bidders": "6",
+      "lot_number": "3-1-QSC-I-26-110-048"
+    },
+    {
+      "item_description": "2018 Ford Fusion",
+      "current_bid": "6780.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/09/2026 04:30 PM CT",
+      "location": "LITTLE ROCK, AR 72211",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348237",
+      "category": "Vehicles",
+      "num_bidders": "7",
+      "lot_number": "3-1-QSC-I-26-121-009"
+    },
+    {
+      "item_description": "2011 Ford Flex",
+      "current_bid": "6520.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/07/2026 03:57 PM CT",
+      "location": "AMES, IA 50010",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348395",
+      "category": "Vehicles",
+      "num_bidders": "12",
+      "lot_number": "1-1-QSC-I-26-061-014"
+    },
+    {
+      "item_description": "2017 Chevrolet Trax",
+      "current_bid": "6073.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/09/2026 04:41 PM CT",
+      "location": "SALT LAKE CITY, UT 84104",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348235",
+      "category": "Vehicles",
+      "num_bidders": "7",
+      "lot_number": "3-1-QSC-I-26-117-002"
+    },
+    {
+      "item_description": "1997 Stewart & Stevenson M-1088 Military Truck",
+      "current_bid": "4050.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/07/2026 05:22 PM CT",
+      "location": "ATHENS, GA 30602",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348361",
+      "category": "Vehicles",
+      "num_bidders": "5",
+      "lot_number": "2-1-QSC-I-26-057-006"
+    },
+    {
+      "item_description": "2014 Chevrolet Equinox AWD",
+      "current_bid": "3719.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/07/2026 04:17 PM CT",
+      "location": "LAS CRUCES, NM 88005",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348442",
+      "category": "Vehicles",
+      "num_bidders": "9",
+      "lot_number": "3-1-QSC-I-26-110-050"
+    },
+    {
+      "item_description": "1986 Chevrolet D30 4X4",
+      "current_bid": "2260.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/07/2026 04:59 PM CT",
+      "location": "Tifton, GA 31793",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348404",
+      "category": "Vehicles",
+      "num_bidders": "10",
+      "lot_number": "1-1-QSC-I-26-061-023"
+    },
+    {
+      "item_description": "2019 FORD ESCAPE A65766 - ACCIDENT DAMAGE",
+      "current_bid": "1825.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/07/2026 05:23 PM CT",
+      "location": "MANCHESTER, KY 40962",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348362",
+      "category": "Vehicles",
+      "num_bidders": "3",
+      "lot_number": "2-1-QSC-I-26-057-007"
+    },
+    {
+      "item_description": "2019 FORD ESCAPE A65752 - ACCIDENT DAMAGE",
+      "current_bid": "1775.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/07/2026 05:33 PM CT",
+      "location": "MANCHESTER, KY 40962",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348363",
+      "category": "Vehicles",
+      "num_bidders": "4",
+      "lot_number": "2-1-QSC-I-26-057-008"
+    },
+    {
+      "item_description": "2014 Club Car Golf Cart",
+      "current_bid": "1010.00",
+      "estimated_value": "Not provided by GSA",
+      "auction_end_time": "01/09/2026 04:40 PM CT",
+      "location": "SAN ANTONIO, TX 78209",
+      "item_url": "https://gsaauctions.gov/auctions/preview/348238",
+      "category": "Vehicles",
+      "num_bidders": "5",
+      "lot_number": "3-1-QSC-I-26-121-010"
+    }
+  ]
+}
