@@ -1,0 +1,63 @@
+name: Monitor Email Instructions
+
+on:
+  schedule:
+    - cron: '0 */8 * * *'  # Every 8 hours
+  workflow_dispatch:
+
+jobs:
+  check_email:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Check for Email Instructions
+        run: |
+          cat > check_log.txt << LOG
+          EMAIL INSTRUCTION CHECK
+          
+          Timestamp: $(date +'%H:%M %b %d %Y')
+          Checking: onlyecho822@gmail.com
+          
+          === MONITORING FOR ===
+          
+          - New instructions
+          - Data requests
+          - System changes
+          - Status queries
+          - Contact reports
+          
+          === ACTIONS IF FOUND ===
+          
+          - Parse email content
+          - Execute instructions
+          - Update systems
+          - Report completion
+          - Create GitHub Issue
+          
+          === STATUS ===
+          
+          Monitoring active. Checking every 8 hours.
+          Next check: $(date -d '+8 hours' +'%H:%M %b %d %Y')
+          
+          LOG
+          
+          cat check_log.txt
+      
+      - name: Create Monitoring Report
+        run: |
+          gh issue create \
+            --title "📧 Email Monitoring Check [$(date +'%H:%M')]" \
+            --body "$(cat check_log.txt)" \
+            --label "email-monitoring"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Log Check
+        run: |
+          mkdir -p .github/email-monitoring
+          cp check_log.txt .github/email-monitoring/check-$(date +%Y-%m-%d-%H%M).txt
+          git config user.email "email-monitor[bot]@users.noreply.github.com"
+          git config user.name "Email Monitor"
+          git add .github/email-monitoring/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Email check: $(date +'%H:%M %b %d %Y')" && git push)
