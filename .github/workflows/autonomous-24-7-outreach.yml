@@ -1,0 +1,47 @@
+name: Autonomous 24/7 Outreach - Contact Finder & Email Sender
+
+on:
+  workflow_dispatch:
+    inputs:
+      landing_page_url:
+        description: 'Landing Page URL'
+        required: true
+        default: 'https://your-site.manus.space'
+  schedule:
+    - cron: '0 5,11,17,23 * * *'
+
+jobs:
+  autonomous_outreach:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install requests praw
+      
+      - name: Find new contacts
+        run: python marketing/autonomous_contact_finder.py
+        env:
+          LANDING_PAGE_URL: ${{ github.event.inputs.landing_page_url || secrets.LANDING_PAGE_URL }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
+      
+      - name: Send emails
+        run: python marketing/autonomous_email_sender.py
+        env:
+          LANDING_PAGE_URL: ${{ github.event.inputs.landing_page_url || secrets.LANDING_PAGE_URL }}
+          ZAPIER_EMAIL_WEBHOOK_URL: ${{ secrets.ZAPIER_EMAIL_WEBHOOK_URL }}
+      
+      - name: Commit updates
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "Autonomous Outreach Bot"
+          git add marketing/contacts_database.json marketing/distribution-logs/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto: Contact discovery & email sending [$(date +'%H:%M %b %d %Y')]" && git push)

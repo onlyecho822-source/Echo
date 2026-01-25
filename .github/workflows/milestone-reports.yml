@@ -1,0 +1,30 @@
+name: Milestone Reports - Every 20 Contacts
+
+on:
+  workflow_run:
+    workflows: ["Autonomous 24/7 Outreach - Contact Finder & Email Sender"]
+    types: [completed]
+  workflow_dispatch:
+
+jobs:
+  check_milestone:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Check milestone
+        run: |
+          python3 << 'EOF'
+          import json, os
+          db_file = "marketing/contacts_database.json"
+          if os.path.exists(db_file):
+              with open(db_file) as f:
+                  total = len(json.load(f).get("contacts", []))
+              milestone = (total // 20) * 20
+              if milestone >= 20:
+                  print(f"MILESTONE={milestone}")
+                  print(f"TOTAL={total}")
+          EOF
