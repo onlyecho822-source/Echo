@@ -42,6 +42,15 @@ Production-ready systems built on Echo principles:
 - **[Global Nexus](docs/products/global-nexus/)** — Planetary-scale intelligence coordination
 - **[Nurse G](docs/products/nurse-g/)** — Harmonic clinical intelligence system
 
+### **3. Agent-Zero Integration** (`/agent-zero/` - Git Submodule)
+Autonomous validation and truth enforcement system:
+
+- **[Agent-Zero Architecture](docs/AGENT_ZERO_ARCHITECTURE.md)** — Complete system architecture
+- **[Integration Guide](integrations/README.md)** — How to use Agent-Zero with Echo
+- **Dual-System Oscillation** — Uncontrolled (optimal) ↔ Controlled (acceptable)
+- **Cross-Domain Analysis** — Pattern discovery across climate, markets, news, healthcare
+- **Kraken Mode** — Continuous autonomous monitoring and reporting
+
 ---
 
 ## 💎 Commercial Products
@@ -97,6 +106,43 @@ Production-ready systems built on Echo principles:
 
 ---
 
+### 🔍 **Agent-Zero** — Autonomous Truth Enforcement
+
+**What it does:**
+- Validates claims using dual-system oscillation (Uncontrolled ↔ Controlled)
+- Analyzes news articles for truth, bias, and narrative contamination
+- Calculates Zero references (objective baselines) across domains
+- Discovers cross-domain patterns (climate, markets, healthcare, supply chain)
+- Operates continuously in Kraken Mode (24/7 monitoring)
+
+**Key Features:**
+- **Dual-System Architecture** — Subconscious (optimal) vs Conscious (acceptable)
+- **Tension-Based Escalation** — High-tension decisions escalate to human governance
+- **Graceful Degradation** — Echo works with or without Agent-Zero
+- **Private Repository** — Agent-Zero code remains confidential
+- **LLM-Powered Reasoning** — Real AI decision-making, not hardcoded logic
+
+**Use Cases:**
+- News validation and bias detection
+- Market manipulation detection
+- Climate data verification
+- Supply chain risk analysis
+- Cross-domain pattern discovery
+
+**Integration:**
+```python
+from integrations.agent_zero_bridge import analyze_article
+
+article = {"title": "Breaking News", "content": "..."}
+analysis = analyze_article(article)
+print(f"Truth Score: {analysis['truth_score']}")
+print(f"Bias Detected: {analysis['bias_detected']}")
+```
+
+**[Learn More →](docs/AGENT_ZERO_ARCHITECTURE.md)**
+
+---
+
 ## 🚀 Quick Start
 
 ### For Framework Researchers
@@ -110,9 +156,18 @@ Production-ready systems built on Echo principles:
 3. Contact us for pilot programs and custom deployments
 
 ### For Developers
-1. Clone this repository
-2. Review `/docs/framework/` for architectural principles
-3. See product-specific documentation for integration guides
+1. Clone this repository with Agent-Zero submodule:
+   ```bash
+   git clone --recurse-submodules https://github.com/onlyecho822-source/Echo.git
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   pip install -r agent-zero/requirements.txt  # If Agent-Zero access granted
+   ```
+3. Review `/docs/framework/` for architectural principles
+4. See [Agent-Zero Integration Guide](integrations/README.md) for validation features
+5. See product-specific documentation for other integrations
 
 ---
 
