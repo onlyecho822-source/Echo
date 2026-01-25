@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-01-25T19:04:56.166Z",
+  "name": "Test User",
+  "email": "test@example.com",
+  "phone": "1234567890",
+  "age": 28,
+  "numberOfDependents": "2",
+  "livingSituation": "own-address",
+  "serviceInterest": "tax",
+  "submissionId": 30006
+}
