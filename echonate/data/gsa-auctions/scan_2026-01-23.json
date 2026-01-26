@@ -1,0 +1,14 @@
+{
+  "agent": {
+    "name": "EchoNate",
+    "email": "echonate@phoenix.ai",
+    "version": "1.0.0"
+  },
+  "scan": {
+    "timestamp": "2026-01-23T04:45:58.092988Z",
+    "target": "GSAAuctions.gov",
+    "auctions_found": 0
+  },
+  "auctions": [],
+  "signature": "37bf0f8a67e72baa"
+}
