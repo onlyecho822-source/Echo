@@ -1,0 +1,47 @@
+{
+  "contacts": [],
+  "facebook_groups": [
+    {
+      "name": "Tax filing help for single moms",
+      "members": "445K+",
+      "url": "facebook.com/groups/445012649497009"
+    },
+    {
+      "name": "Single Moms Supporting Single Moms USA",
+      "members": "1M+",
+      "url": "facebook.com/groups/1072898068185125"
+    },
+    {
+      "name": "Millionaire Single Mom",
+      "members": "500K+",
+      "url": "facebook.com/groups/millionairesinglemoms"
+    },
+    {
+      "name": "Mom's Helping Mom's (FUNDING)",
+      "members": "612K+",
+      "url": "facebook.com/groups/612934941789274"
+    },
+    {
+      "name": "Single mom's needing help",
+      "members": "952K+",
+      "url": "facebook.com/groups/952512825105982"
+    },
+    {
+      "name": "Helping single moms in need",
+      "members": "300K+",
+      "url": "facebook.com/groups/1271540519629675"
+    }
+  ],
+  "metadata": {
+    "total_contacts": 0,
+    "total_potential_reach": "4M+ single moms",
+    "last_updated": "2026-01-25T22:52:05.642717",
+    "sources": {
+      "facebook_groups": 6,
+      "reddit": 0,
+      "gmail": 0,
+      "direct": 0
+    },
+    "collection_strategy": "Join groups, post value, collect leads organically"
+  }
+}
