@@ -102,7 +102,7 @@ jobs:
           cat provenance_entry.json
       
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: data-with-provenance
           path: |
@@ -190,7 +190,7 @@ jobs:
           EOF
       
       - name: Upload Signals
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: detected-signals
           path: detected_signals.json
@@ -281,7 +281,7 @@ jobs:
           EOF
       
       - name: Upload Adversarial Report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: adversarial-report
           path: adversarial_report.json
@@ -389,7 +389,7 @@ jobs:
           EOF
       
       - name: Upload Policy Gate Result
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: policy-gate-result
           path: policy_gate_result.json
@@ -445,7 +445,7 @@ jobs:
           EOF
       
       - name: Upload Circuit Breaker Status
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: circuit-breaker-status
           path: circuit_breaker_status.json
