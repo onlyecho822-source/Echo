@@ -1,0 +1,115 @@
+{
+  "agent": {
+    "name": "EchoNate",
+    "email": "echonate@phoenix.ai",
+    "version": "1.0.0"
+  },
+  "scan": {
+    "timestamp": "2026-01-26T04:11:57.196749Z",
+    "sources_scanned": 2,
+    "settlements_found": 20
+  },
+  "settlements": [
+    {
+      "source": "classaction.org",
+      "title": "Papaya Gaming - Bots Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "Papaya Gaming - Bots Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "Mid America Pet Food - Salmonella Contamination Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "Mid America Pet Food - Salmonella Contamination Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "23andMe - Data Breach Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "23andMe - Data Breach Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "Washington Nationals - Discount Tickets Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "Washington Nationals - Discount Tickets Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "Washington Nationals - Discount Tickets Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "Domestic Flight Antitrust Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "Domestic Flight Antitrust Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "NIBCO Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "NIBCO Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "Zonolite Vermiculite Attic Insulation Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "Zonolite Vermiculite Attic Insulation Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "Ford - PowerShift Transmissions Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "Ford - PowerShift Transmissions Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "My Little Steamer Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "My Little Steamer Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    },
+    {
+      "source": "classaction.org",
+      "title": "Nissan - CVT Transmissions Class Action Settlement",
+      "scanned_at": "2026-01-26T04:11:57.196749Z"
+    }
+  ],
+  "signature": "7e5ba6f7876d299d"
+}
