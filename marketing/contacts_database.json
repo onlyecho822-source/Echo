@@ -309,11 +309,41 @@
         "found_via": "automated_discovery",
         "relevance_score": 90
       }
+    },
+    {
+      "id": "contact_1769531065.446362_0",
+      "source": "public_forum",
+      "timestamp": "2026-01-27T16:24:25.446373",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 93
+      }
+    },
+    {
+      "id": "contact_1769531065.446381_1",
+      "source": "social_media",
+      "timestamp": "2026-01-27T16:24:25.446385",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 86
+      }
+    },
+    {
+      "id": "contact_1769531065.446388_2",
+      "source": "reddit",
+      "timestamp": "2026-01-27T16:24:25.446390",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 70
+      }
     }
   ],
   "metadata": {
-    "total_contacts": 31,
-    "last_updated": "2026-01-27T12:37:40.965475",
+    "total_contacts": 34,
+    "last_updated": "2026-01-27T16:24:25.446483",
     "sources": {
       "gmail": 0,
       "reddit": 0,
