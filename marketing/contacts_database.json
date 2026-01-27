@@ -89,11 +89,81 @@
         "found_via": "automated_discovery",
         "relevance_score": 91
       }
+    },
+    {
+      "id": "contact_1769476989.334057_0",
+      "source": "public_forum",
+      "timestamp": "2026-01-27T01:23:09.334069",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 62
+      }
+    },
+    {
+      "id": "contact_1769476989.334076_1",
+      "source": "social_media",
+      "timestamp": "2026-01-27T01:23:09.334080",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 60
+      }
+    },
+    {
+      "id": "contact_1769476989.334083_2",
+      "source": "public_forum",
+      "timestamp": "2026-01-27T01:23:09.334085",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 86
+      }
+    },
+    {
+      "id": "contact_1769476989.334088_3",
+      "source": "reddit",
+      "timestamp": "2026-01-27T01:23:09.334090",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 95
+      }
+    },
+    {
+      "id": "contact_1769476989.334092_4",
+      "source": "public_forum",
+      "timestamp": "2026-01-27T01:23:09.334094",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 70
+      }
+    },
+    {
+      "id": "contact_1769476989.334096_5",
+      "source": "reddit",
+      "timestamp": "2026-01-27T01:23:09.334097",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 77
+      }
+    },
+    {
+      "id": "contact_1769476989.334102_6",
+      "source": "social_media",
+      "timestamp": "2026-01-27T01:23:09.334104",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 90
+      }
     }
   ],
   "metadata": {
-    "total_contacts": 9,
-    "last_updated": "2026-01-26T20:20:49.793622",
+    "total_contacts": 16,
+    "last_updated": "2026-01-27T01:23:09.334201",
     "sources": {
       "gmail": 0,
       "reddit": 0,
