@@ -409,11 +409,31 @@
         "found_via": "automated_discovery",
         "relevance_score": 81
       }
+    },
+    {
+      "id": "contact_1769575219.813266_0",
+      "source": "public_forum",
+      "timestamp": "2026-01-28T04:40:19.813276",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 76
+      }
+    },
+    {
+      "id": "contact_1769575219.813283_1",
+      "source": "social_media",
+      "timestamp": "2026-01-28T04:40:19.813287",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 84
+      }
     }
   ],
   "metadata": {
-    "total_contacts": 41,
-    "last_updated": "2026-01-28T01:19:07.311497",
+    "total_contacts": 43,
+    "last_updated": "2026-01-28T04:40:19.813396",
     "sources": {
       "gmail": 0,
       "reddit": 0,
