@@ -679,11 +679,91 @@
         "found_via": "automated_discovery",
         "relevance_score": 60
       }
+    },
+    {
+      "id": "contact_1769650125.502467_0",
+      "source": "reddit",
+      "timestamp": "2026-01-29T01:28:45.502476",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 83
+      }
+    },
+    {
+      "id": "contact_1769650125.502483_1",
+      "source": "social_media",
+      "timestamp": "2026-01-29T01:28:45.502486",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 82
+      }
+    },
+    {
+      "id": "contact_1769650125.50249_2",
+      "source": "social_media",
+      "timestamp": "2026-01-29T01:28:45.502492",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 92
+      }
+    },
+    {
+      "id": "contact_1769650125.502494_3",
+      "source": "reddit",
+      "timestamp": "2026-01-29T01:28:45.502496",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 83
+      }
+    },
+    {
+      "id": "contact_1769650125.502498_4",
+      "source": "public_forum",
+      "timestamp": "2026-01-29T01:28:45.502500",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 61
+      }
+    },
+    {
+      "id": "contact_1769650125.502502_5",
+      "source": "public_forum",
+      "timestamp": "2026-01-29T01:28:45.502506",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 75
+      }
+    },
+    {
+      "id": "contact_1769650125.502508_6",
+      "source": "social_media",
+      "timestamp": "2026-01-29T01:28:45.502510",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 61
+      }
+    },
+    {
+      "id": "contact_1769650125.502512_7",
+      "source": "reddit",
+      "timestamp": "2026-01-29T01:28:45.502513",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 88
+      }
     }
   ],
   "metadata": {
-    "total_contacts": 68,
-    "last_updated": "2026-01-28T20:24:28.979810",
+    "total_contacts": 76,
+    "last_updated": "2026-01-29T01:28:45.502695",
     "sources": {
       "gmail": 0,
       "reddit": 0,
