@@ -759,11 +759,61 @@
         "found_via": "automated_discovery",
         "relevance_score": 88
       }
+    },
+    {
+      "id": "contact_1769662993.904516_0",
+      "source": "public_forum",
+      "timestamp": "2026-01-29T05:03:13.904525",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 82
+      }
+    },
+    {
+      "id": "contact_1769662993.904532_1",
+      "source": "public_forum",
+      "timestamp": "2026-01-29T05:03:13.904536",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 71
+      }
+    },
+    {
+      "id": "contact_1769662993.904539_2",
+      "source": "social_media",
+      "timestamp": "2026-01-29T05:03:13.904542",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 87
+      }
+    },
+    {
+      "id": "contact_1769662993.904544_3",
+      "source": "public_forum",
+      "timestamp": "2026-01-29T05:03:13.904546",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 66
+      }
+    },
+    {
+      "id": "contact_1769662993.904548_4",
+      "source": "reddit",
+      "timestamp": "2026-01-29T05:03:13.904550",
+      "status": "pending",
+      "metadata": {
+        "found_via": "automated_discovery",
+        "relevance_score": 85
+      }
     }
   ],
   "metadata": {
-    "total_contacts": 76,
-    "last_updated": "2026-01-29T01:28:45.502695",
+    "total_contacts": 81,
+    "last_updated": "2026-01-29T05:03:13.904739",
     "sources": {
       "gmail": 0,
       "reddit": 0,
