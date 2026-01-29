@@ -1,0 +1,4497 @@
+{
+  "took": 52,
+  "timed_out": false,
+  "_shards": {
+    "total": 50,
+    "successful": 50,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 583,
+      "relation": "eq"
+    },
+    "max_score": 8.847147,
+    "hits": [
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024963:f43860d2.htm",
+        "_score": 8.847147,
+        "_source": {
+          "ciks": [
+            "0000836906"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05628"
+          ],
+          "display_names": [
+            "VANGUARD MALVERN FUNDS  (CIK 0000836906)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024963",
+          "film_num": [
+            "26567301"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.G CUST AGREEMT",
+          "file_description": "(G) JPMORGAN CHASE BANK CUSTODIAN AGREEMENT",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024962:f43837d3.htm",
+        "_score": 8.825035,
+        "_source": {
+          "ciks": [
+            "0000752177"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-04098"
+          ],
+          "display_names": [
+            "VANGUARD CHESTER FUNDS  (CIK 0000752177)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024962",
+          "film_num": [
+            "26567299"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.G CUST AGREEMT",
+          "file_description": "CUSTODIAN AGREEMENT - JPMORGAN CHASE BANK",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024959:f43826d3.htm",
+        "_score": 8.82323,
+        "_source": {
+          "ciks": [
+            "0000052848"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-01027"
+          ],
+          "display_names": [
+            "VANGUARD WORLD FUND  (CIK 0000052848)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024959",
+          "film_num": [
+            "26567291"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.G CUST AGREEMT",
+          "file_description": "CUSTODIAN AGREEMENT STATE STREET BANK AND TRUST COMPANY",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024961:f43859d4.htm",
+        "_score": 8.817937,
+        "_source": {
+          "ciks": [
+            "0000932471"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-07239"
+          ],
+          "display_names": [
+            "VANGUARD HORIZON FUNDS  (CIK 0000932471)"
+          ],
+          "xsl": null,
+          "sequence": "4",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024961",
+          "film_num": [
+            "26567295"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.G CUST AGREEMT",
+          "file_description": "(G) CUSTODIAN AGREEMENT - JP MORGAN CHASE BANK",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024960:f43861d3.htm",
+        "_score": 8.812017,
+        "_source": {
+          "ciks": [
+            "0000826473"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05445"
+          ],
+          "display_names": [
+            "VANGUARD FENWAY FUNDS  (CIK 0000826473)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024960",
+          "film_num": [
+            "26567293"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.G CUST AGREEMT",
+          "file_description": "(G) CUSTODIAN AGREEMENT - STATE STREET BANK",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024963:f43860d3.htm",
+        "_score": 8.808939,
+        "_source": {
+          "ciks": [
+            "0000836906"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05628"
+          ],
+          "display_names": [
+            "VANGUARD MALVERN FUNDS  (CIK 0000836906)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024963",
+          "film_num": [
+            "26567301"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.G CUST AGREEMT",
+          "file_description": "(G) STATE STREET BANK AND TRUST COMPANY CUSTODIAN AGREEMENT",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024959:f43826d2.htm",
+        "_score": 8.803016,
+        "_source": {
+          "ciks": [
+            "0000052848"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-01027"
+          ],
+          "display_names": [
+            "VANGUARD WORLD FUND  (CIK 0000052848)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024959",
+          "film_num": [
+            "26567291"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.A CHARTER",
+          "file_description": "DECLARATION OF TRUST",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024959:f43826d5.htm",
+        "_score": 8.802396,
+        "_source": {
+          "ciks": [
+            "0000052848"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-01027"
+          ],
+          "display_names": [
+            "VANGUARD WORLD FUND  (CIK 0000052848)"
+          ],
+          "xsl": null,
+          "sequence": "5",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024959",
+          "film_num": [
+            "26567291"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.H OTH MAT CONT",
+          "file_description": "FORM OF FUND OF FUNDS INVESTMENT AGREEMENT",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024961:f43859d5.htm",
+        "_score": 8.792168,
+        "_source": {
+          "ciks": [
+            "0000932471"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-07239"
+          ],
+          "display_names": [
+            "VANGUARD HORIZON FUNDS  (CIK 0000932471)"
+          ],
+          "xsl": null,
+          "sequence": "5",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024961",
+          "film_num": [
+            "26567295"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.G CUST AGREEMT",
+          "file_description": "(G) CUSTODIAN AGREEMENT - STATE STREET BANK",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024960:f43861d2.htm",
+        "_score": 8.789593,
+        "_source": {
+          "ciks": [
+            "0000826473"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05445"
+          ],
+          "display_names": [
+            "VANGUARD FENWAY FUNDS  (CIK 0000826473)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024960",
+          "film_num": [
+            "26567293"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.G CUST AGREEMT",
+          "file_description": "(G) CUSTODIAN AGREEMENT - THE BANK OF NEW YORK MELLON",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024963:f43860d7.htm",
+        "_score": 8.78719,
+        "_source": {
+          "ciks": [
+            "0000836906"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05628"
+          ],
+          "display_names": [
+            "VANGUARD MALVERN FUNDS  (CIK 0000836906)"
+          ],
+          "xsl": null,
+          "sequence": "7",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024963",
+          "film_num": [
+            "26567301"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.N 18F-3 PLAN",
+          "file_description": "(N) VANGUARD FUNDS MULTIPLE CLASS PLAN",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024963:f43860d5.htm",
+        "_score": 8.785505,
+        "_source": {
+          "ciks": [
+            "0000836906"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05628"
+          ],
+          "display_names": [
+            "VANGUARD MALVERN FUNDS  (CIK 0000836906)"
+          ],
+          "xsl": null,
+          "sequence": "5",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024963",
+          "film_num": [
+            "26567301"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99",
+          "file_description": "(H) FORM FUND OF FUNDS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024961:f43859d9.htm",
+        "_score": 8.773881,
+        "_source": {
+          "ciks": [
+            "0000932471"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-07239"
+          ],
+          "display_names": [
+            "VANGUARD HORIZON FUNDS  (CIK 0000932471)"
+          ],
+          "xsl": null,
+          "sequence": "9",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024961",
+          "film_num": [
+            "26567295"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.N 18F-3 PLAN",
+          "file_description": "(N) VANGUARD MULTIPLE CLASS PLAN",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024960:f43861d7.htm",
+        "_score": 8.761244,
+        "_source": {
+          "ciks": [
+            "0000826473"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05445"
+          ],
+          "display_names": [
+            "VANGUARD FENWAY FUNDS  (CIK 0000826473)"
+          ],
+          "xsl": null,
+          "sequence": "7",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024960",
+          "film_num": [
+            "26567293"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.N 18F-3 PLAN",
+          "file_description": "(N) VANGUARD FUNDS MULTIPLE CLASS PLAN",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024962:f43837d7.htm",
+        "_score": 8.760391,
+        "_source": {
+          "ciks": [
+            "0000752177"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-04098"
+          ],
+          "display_names": [
+            "VANGUARD CHESTER FUNDS  (CIK 0000752177)"
+          ],
+          "xsl": null,
+          "sequence": "7",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024962",
+          "film_num": [
+            "26567299"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.N 18F-3 PLAN",
+          "file_description": "VANGUARD FUNDS MULTIPLE CLASS PLAN",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024961:f43859d7.htm",
+        "_score": 8.756129,
+        "_source": {
+          "ciks": [
+            "0000932471"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-07239"
+          ],
+          "display_names": [
+            "VANGUARD HORIZON FUNDS  (CIK 0000932471)"
+          ],
+          "xsl": null,
+          "sequence": "7",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024961",
+          "film_num": [
+            "26567295"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.H OTH MAT CONT",
+          "file_description": "(H) FORM OF FUND OF FUNDS INVESTMENT AGREEMENT",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026062:primary_doc.xml",
+        "_score": 8.752663,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026062",
+          "film_num": [
+            "26568405"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024961:f43859d3.htm",
+        "_score": 8.749892,
+        "_source": {
+          "ciks": [
+            "0000932471"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-07239"
+          ],
+          "display_names": [
+            "VANGUARD HORIZON FUNDS  (CIK 0000932471)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024961",
+          "film_num": [
+            "26567295"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.G CUST AGREEMT",
+          "file_description": "(G) CUSTODIAN AGREEMENT - THE BANK OF NEW YORK MELLON",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026029:primary_doc.xml",
+        "_score": 8.748744,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026029",
+          "film_num": [
+            "26568374"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024957:f43856d3.htm",
+        "_score": 8.747671,
+        "_source": {
+          "ciks": [
+            "0000799127"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-04526"
+          ],
+          "display_names": [
+            "VANGUARD QUANTITATIVE FUNDS  (CIK 0000799127)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024957",
+          "film_num": [
+            "26567285"
+          ],
+          "biz_locations": [
+            "Malvern, PA"
+          ],
+          "file_type": "EX-99.N 18F-3 PLAN",
+          "file_description": "(N) MULTIPLE CLASS PLAN",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026031:primary_doc.xml",
+        "_score": 8.747205,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026031",
+          "film_num": [
+            "26568377"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024960:f43861d5.htm",
+        "_score": 8.745618,
+        "_source": {
+          "ciks": [
+            "0000826473"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05445"
+          ],
+          "display_names": [
+            "VANGUARD FENWAY FUNDS  (CIK 0000826473)"
+          ],
+          "xsl": null,
+          "sequence": "5",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024960",
+          "film_num": [
+            "26567293"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.H OTH MAT CONT",
+          "file_description": "(H) FORM OF FUND OF FUNDS INVESTMENT AGREEMENT",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000910472-26-000847:primary_doc.xml",
+        "_score": 8.744162,
+        "_source": {
+          "ciks": [
+            "0001518042"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-22549"
+          ],
+          "display_names": [
+            "NORTHERN LIGHTS FUND TRUST II  (CIK 0001518042)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "OH"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000910472-26-000847",
+          "film_num": [
+            "26568985"
+          ],
+          "biz_locations": [
+            "Cincinnati, OH"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026028:edgar.htm",
+        "_score": 8.743061,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026028",
+          "film_num": [
+            "26568373"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026028:primary_doc.xml",
+        "_score": 8.742946,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026028",
+          "film_num": [
+            "26568373"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024959:f43826d7.htm",
+        "_score": 8.740389,
+        "_source": {
+          "ciks": [
+            "0000052848"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-01027"
+          ],
+          "display_names": [
+            "VANGUARD WORLD FUND  (CIK 0000052848)"
+          ],
+          "xsl": null,
+          "sequence": "7",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024959",
+          "film_num": [
+            "26567291"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.N 18F-3 PLAN",
+          "file_description": "VANGUARD FUNDS MULTIPLE CLASS PLAN",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024960:f43861d1.htm",
+        "_score": 8.736951,
+        "_source": {
+          "ciks": [
+            "0000826473"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05445"
+          ],
+          "display_names": [
+            "VANGUARD FENWAY FUNDS  (CIK 0000826473)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024960",
+          "film_num": [
+            "26567293"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "485BPOS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024961:f43859d13.htm",
+        "_score": 8.735323,
+        "_source": {
+          "ciks": [
+            "0000932471"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-07239"
+          ],
+          "display_names": [
+            "VANGUARD HORIZON FUNDS  (CIK 0000932471)"
+          ],
+          "xsl": null,
+          "sequence": "13",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024961",
+          "film_num": [
+            "26567295"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.P CODE ETH",
+          "file_description": "(P) CODE OF ETHICS - THE VANGUARD GROUP, INC.",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026025:edgar.htm",
+        "_score": 8.733401,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026025",
+          "film_num": [
+            "26568370"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024956:f43813d3.htm",
+        "_score": 8.73034,
+        "_source": {
+          "ciks": [
+            "0000105544"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-01766"
+          ],
+          "display_names": [
+            "VANGUARD WELLESLEY INCOME FUND  (CIK 0000105544)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024956",
+          "film_num": [
+            "26567288"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.H PARTIC AGREE",
+          "file_description": "(H) FORM OF FUND OF FUNDS INVESTMENT AGREEMENT",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026034:edgar.htm",
+        "_score": 8.72915,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026034",
+          "film_num": [
+            "26568380"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026065:primary_doc.xml",
+        "_score": 8.728405,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026065",
+          "film_num": [
+            "26568406"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024961:f43859d1.htm",
+        "_score": 8.72703,
+        "_source": {
+          "ciks": [
+            "0000932471"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-07239"
+          ],
+          "display_names": [
+            "VANGUARD HORIZON FUNDS  (CIK 0000932471)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024961",
+          "film_num": [
+            "26567295"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "485BPOS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026025:primary_doc.xml",
+        "_score": 8.726801,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026025",
+          "film_num": [
+            "26568370"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024963:f43860d8.htm",
+        "_score": 8.726625,
+        "_source": {
+          "ciks": [
+            "0000836906"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05628"
+          ],
+          "display_names": [
+            "VANGUARD MALVERN FUNDS  (CIK 0000836906)"
+          ],
+          "xsl": null,
+          "sequence": "8",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024963",
+          "film_num": [
+            "26567301"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.P CODE ETH",
+          "file_description": "(P) THE VANGUARD GROUP, INC. CODE OF ETHICS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024963:f43860d1.htm",
+        "_score": 8.726579,
+        "_source": {
+          "ciks": [
+            "0000836906"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05628"
+          ],
+          "display_names": [
+            "VANGUARD MALVERN FUNDS  (CIK 0000836906)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024963",
+          "film_num": [
+            "26567301"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "485BPOS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026035:edgar.htm",
+        "_score": 8.726326,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026035",
+          "film_num": [
+            "26568385"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024962:f43837d5.htm",
+        "_score": 8.725247,
+        "_source": {
+          "ciks": [
+            "0000752177"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-04098"
+          ],
+          "display_names": [
+            "VANGUARD CHESTER FUNDS  (CIK 0000752177)"
+          ],
+          "xsl": null,
+          "sequence": "5",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024962",
+          "film_num": [
+            "26567299"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.H OTH MAT CONT",
+          "file_description": "FORM OF FUND OF FUNDS INVESTMENT AGREEMENT",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026027:primary_doc.xml",
+        "_score": 8.724882,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026027",
+          "film_num": [
+            "26568371"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026026:primary_doc.xml",
+        "_score": 8.724364,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026026",
+          "film_num": [
+            "26568372"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024959:f43826d1.htm",
+        "_score": 8.723097,
+        "_source": {
+          "ciks": [
+            "0000052848"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-01027"
+          ],
+          "display_names": [
+            "VANGUARD WORLD FUND  (CIK 0000052848)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024959",
+          "film_num": [
+            "26567291"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "485BPOS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024957:f43856d1.htm",
+        "_score": 8.7215185,
+        "_source": {
+          "ciks": [
+            "0000799127"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-04526"
+          ],
+          "display_names": [
+            "VANGUARD QUANTITATIVE FUNDS  (CIK 0000799127)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024957",
+          "film_num": [
+            "26567285"
+          ],
+          "biz_locations": [
+            "Malvern, PA"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "485BPOS",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026029:edgar.htm",
+        "_score": 8.720816,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026029",
+          "film_num": [
+            "26568374"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024962:f43837d2.htm",
+        "_score": 8.72039,
+        "_source": {
+          "ciks": [
+            "0000752177"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-04098"
+          ],
+          "display_names": [
+            "VANGUARD CHESTER FUNDS  (CIK 0000752177)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024962",
+          "film_num": [
+            "26567299"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.G CUST AGREEMT",
+          "file_description": "CUSTODIAN AGREEMENT - THE BANK OF NEW YORK MELLON",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026061:primary_doc.xml",
+        "_score": 8.719982,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026061",
+          "film_num": [
+            "26568403"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024956:f43813d5.htm",
+        "_score": 8.715168,
+        "_source": {
+          "ciks": [
+            "0000105544"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-01766"
+          ],
+          "display_names": [
+            "VANGUARD WELLESLEY INCOME FUND  (CIK 0000105544)"
+          ],
+          "xsl": null,
+          "sequence": "5",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024956",
+          "film_num": [
+            "26567288"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.N 18F-3 PLAN",
+          "file_description": "(N) VANGUARD FUNDS MULTIPLE CLASS PLAN",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026034:primary_doc.xml",
+        "_score": 8.7148695,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026034",
+          "film_num": [
+            "26568380"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024960:f43861d9.htm",
+        "_score": 8.711486,
+        "_source": {
+          "ciks": [
+            "0000826473"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05445"
+          ],
+          "display_names": [
+            "VANGUARD FENWAY FUNDS  (CIK 0000826473)"
+          ],
+          "xsl": null,
+          "sequence": "9",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024960",
+          "film_num": [
+            "26567293"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.P CODE ETH",
+          "file_description": "(P) CODE OF ETHICS - THE VANGUARD GROUP, INC.",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026037:edgar.htm",
+        "_score": 8.709568,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026037",
+          "film_num": [
+            "26568382"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026026:edgar.htm",
+        "_score": 8.703653,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026026",
+          "film_num": [
+            "26568372"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000910472-26-000847:nlftii-beaconetfs_nport.htm",
+        "_score": 8.7028885,
+        "_source": {
+          "ciks": [
+            "0001518042"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-22549"
+          ],
+          "display_names": [
+            "NORTHERN LIGHTS FUND TRUST II  (CIK 0001518042)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "OH"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000910472-26-000847",
+          "film_num": [
+            "26568985"
+          ],
+          "biz_locations": [
+            "Cincinnati, OH"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "BSR AND BTR 11.30.25 NQS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024959:f43826d8.htm",
+        "_score": 8.702857,
+        "_source": {
+          "ciks": [
+            "0000052848"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-01027"
+          ],
+          "display_names": [
+            "VANGUARD WORLD FUND  (CIK 0000052848)"
+          ],
+          "xsl": null,
+          "sequence": "8",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024959",
+          "film_num": [
+            "26567291"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.P CODE ETH",
+          "file_description": "CODE OF ETHICS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001754960-26-000136:InformationTableOutput.xml",
+        "_score": 8.70279,
+        "_source": {
+          "ciks": [
+            "0002049064"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-24603"
+          ],
+          "display_names": [
+            "Manuka Financial, LLC  (CIK 0002049064)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "VA"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001754960-26-000136",
+          "film_num": [
+            "26571295"
+          ],
+          "biz_locations": [
+            "Richmond, VA"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "VA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000910472-26-000848:nlftii-beaconetfs_nport.htm",
+        "_score": 8.700952,
+        "_source": {
+          "ciks": [
+            "0001518042"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-22549"
+          ],
+          "display_names": [
+            "NORTHERN LIGHTS FUND TRUST II  (CIK 0001518042)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "OH"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000910472-26-000848",
+          "film_num": [
+            "26568986"
+          ],
+          "biz_locations": [
+            "Cincinnati, OH"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "BSR AND BTR 11.30.25 NQS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024962:f43837d1.htm",
+        "_score": 8.699978,
+        "_source": {
+          "ciks": [
+            "0000752177"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-04098"
+          ],
+          "display_names": [
+            "VANGUARD CHESTER FUNDS  (CIK 0000752177)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024962",
+          "film_num": [
+            "26567299"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "485BPOS",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024962:f43837d9.htm",
+        "_score": 8.699566,
+        "_source": {
+          "ciks": [
+            "0000752177"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-04098"
+          ],
+          "display_names": [
+            "VANGUARD CHESTER FUNDS  (CIK 0000752177)"
+          ],
+          "xsl": null,
+          "sequence": "9",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024962",
+          "film_num": [
+            "26567299"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.P CODE ETH",
+          "file_description": "CODE OF ETHICS - VANGUARD",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026036:edgar.htm",
+        "_score": 8.697418,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026036",
+          "film_num": [
+            "26568379"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026063:primary_doc.xml",
+        "_score": 8.697233,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026063",
+          "film_num": [
+            "26568407"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026032:edgar.htm",
+        "_score": 8.69652,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026032",
+          "film_num": [
+            "26568376"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026031:edgar.htm",
+        "_score": 8.69652,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026031",
+          "film_num": [
+            "26568377"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026062:edgar.htm",
+        "_score": 8.69593,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026062",
+          "film_num": [
+            "26568405"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024956:f43813d1.htm",
+        "_score": 8.69589,
+        "_source": {
+          "ciks": [
+            "0000105544"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-01766"
+          ],
+          "display_names": [
+            "VANGUARD WELLESLEY INCOME FUND  (CIK 0000105544)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024956",
+          "film_num": [
+            "26567288"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "485BPOS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000910472-26-000848:primary_doc.xml",
+        "_score": 8.695857,
+        "_source": {
+          "ciks": [
+            "0001518042"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-22549"
+          ],
+          "display_names": [
+            "NORTHERN LIGHTS FUND TRUST II  (CIK 0001518042)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "OH"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000910472-26-000848",
+          "film_num": [
+            "26568986"
+          ],
+          "biz_locations": [
+            "Cincinnati, OH"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026030:edgar.htm",
+        "_score": 8.692616,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026030",
+          "film_num": [
+            "26568375"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026027:edgar.htm",
+        "_score": 8.6917925,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026027",
+          "film_num": [
+            "26568371"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026065:edgar.htm",
+        "_score": 8.688422,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026065",
+          "film_num": [
+            "26568406"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026064:primary_doc.xml",
+        "_score": 8.687795,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026064",
+          "film_num": [
+            "26568404"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-025005:f43854d1.htm",
+        "_score": 8.682082,
+        "_source": {
+          "ciks": [
+            "0000826473"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "033-19446"
+          ],
+          "display_names": [
+            "VANGUARD FENWAY FUNDS  (CIK 0000826473)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-025005",
+          "film_num": [
+            "26567344"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "SP 1220 VANGUARD PRIMECAP CORE FUND",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026061:edgar.htm",
+        "_score": 8.673709,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026061",
+          "film_num": [
+            "26568403"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026064:edgar.htm",
+        "_score": 8.673709,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026064",
+          "film_num": [
+            "26568404"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026030:primary_doc.xml",
+        "_score": 8.670214,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026030",
+          "film_num": [
+            "26568375"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001642160-26-000001:glassman4q25.xml",
+        "_score": 8.664575,
+        "_source": {
+          "ciks": [
+            "0001642160"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-16925"
+          ],
+          "display_names": [
+            "Glassman Wealth Services  (CIK 0001642160)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "VA"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001642160-26-000001",
+          "film_num": [
+            "26573433"
+          ],
+          "biz_locations": [
+            "Vienna, VA"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "VA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024962:f43837d6.htm",
+        "_score": 8.662441,
+        "_source": {
+          "ciks": [
+            "0000752177"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-04098"
+          ],
+          "display_names": [
+            "VANGUARD CHESTER FUNDS  (CIK 0000752177)"
+          ],
+          "xsl": null,
+          "sequence": "6",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024962",
+          "film_num": [
+            "26567299"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.J OTHER OPININ",
+          "file_description": "PWC CONSENT",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002085853-26-000125:infotable.xml",
+        "_score": 8.661472,
+        "_source": {
+          "ciks": [
+            "0001764766"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-23871"
+          ],
+          "display_names": [
+            "SilverOak Wealth Management LLC  (CIK 0001764766)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MN"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0002085853-26-000125",
+          "film_num": [
+            "26568561"
+          ],
+          "biz_locations": [
+            "Edina, MN"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "MN"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026033:edgar.htm",
+        "_score": 8.660139,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026033",
+          "film_num": [
+            "26568378"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024977:f43879d1.htm",
+        "_score": 8.6527815,
+        "_source": {
+          "ciks": [
+            "0000836906"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "033-23444"
+          ],
+          "display_names": [
+            "VANGUARD MALVERN FUNDS  (CIK 0000836906)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-024977",
+          "film_num": [
+            "26567317"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "SP 4181 VANGUARD MULTI-SECTOR INCOME BOND FUND",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024963:f43860d6.htm",
+        "_score": 8.651664,
+        "_source": {
+          "ciks": [
+            "0000836906"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05628"
+          ],
+          "display_names": [
+            "VANGUARD MALVERN FUNDS  (CIK 0000836906)"
+          ],
+          "xsl": null,
+          "sequence": "6",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024963",
+          "film_num": [
+            "26567301"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "EX-99.J OTHER OPININ",
+          "file_description": "(J) PRICEWATERHOUSECOOPERS CONSENT (DRAFT)",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024983:f43851d1.htm",
+        "_score": 8.647146,
+        "_source": {
+          "ciks": [
+            "0000826473"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "033-19446"
+          ],
+          "display_names": [
+            "VANGUARD FENWAY FUNDS  (CIK 0000826473)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-024983",
+          "film_num": [
+            "26567322"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "SP 65 VANGUARD EQUITY INCOME FUND",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002027176-26-000001:RSA13F20251231.xml",
+        "_score": 8.641,
+        "_source": {
+          "ciks": [
+            "0002027176"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-24217"
+          ],
+          "display_names": [
+            "Rockingstone Advisors LLC  (CIK 0002027176)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0002027176-26-000001",
+          "film_num": [
+            "26570402"
+          ],
+          "biz_locations": [
+            "Great Barrington, MA"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024989:f43882d1.htm",
+        "_score": 8.636114,
+        "_source": {
+          "ciks": [
+            "0000836906"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "033-23444"
+          ],
+          "display_names": [
+            "VANGUARD MALVERN FUNDS  (CIK 0000836906)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-024989",
+          "film_num": [
+            "26567328"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "SPI 1867 VANGUARD SHORT-TERM INFLATION-PROTECTED SECURITIES INDEX FUND",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001911468-26-000001:orourkeq4202513f.xml",
+        "_score": 8.635927,
+        "_source": {
+          "ciks": [
+            "0001911468"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-22243"
+          ],
+          "display_names": [
+            "O'ROURKE & COMPANY, Inc  (CIK 0001911468)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001911468-26-000001",
+          "film_num": [
+            "26571300"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026063:edgar.htm",
+        "_score": 8.634174,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026063",
+          "film_num": [
+            "26568407"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001951757-26-000322:F_13F_Libra_Q42025.xml",
+        "_score": 8.632751,
+        "_source": {
+          "ciks": [
+            "0001925385"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-22432"
+          ],
+          "display_names": [
+            "LIBRA WEALTH LLC  (CIK 0001925385)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001951757-26-000322",
+          "film_num": [
+            "26572885"
+          ],
+          "biz_locations": [
+            "Los Gatos, CA"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "CA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024998:f43869d1.htm",
+        "_score": 8.630745,
+        "_source": {
+          "ciks": [
+            "0000752177"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "002-92948"
+          ],
+          "display_names": [
+            "VANGUARD CHESTER FUNDS  (CIK 0000752177)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-024998",
+          "film_num": [
+            "26567337"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "VANGUARD TARGET RETIREMENT 2040 FUND SP 696",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024988:f43857d1.htm",
+        "_score": 8.629911,
+        "_source": {
+          "ciks": [
+            "0000932471"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "033-56443"
+          ],
+          "display_names": [
+            "VANGUARD HORIZON FUNDS  (CIK 0000932471)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-024988",
+          "film_num": [
+            "26567327"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "SP 114 VANGUARD STRATEGIC EQUITY FUND",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026199:f43888d1.htm",
+        "_score": 8.628054,
+        "_source": {
+          "ciks": [
+            "0001004655"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "033-64845"
+          ],
+          "display_names": [
+            "VANGUARD WHITEHALL FUNDS  (CIK 0001004655)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497",
+          "adsh": "0001193125-26-026199",
+          "film_num": [
+            "26568669"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497",
+          "file_description": "VANGUARD ADVICE SELECT INTERNATIONAL GROWTH FUND",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024997:f43872d1.htm",
+        "_score": 8.623958,
+        "_source": {
+          "ciks": [
+            "0000752177"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "002-92948"
+          ],
+          "display_names": [
+            "VANGUARD CHESTER FUNDS  (CIK 0000752177)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-024997",
+          "film_num": [
+            "26567336"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "VANGUARD TARGET RETIREMENT 2025 FUND SP 304",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001398344-26-001461:fp0097221-1_13fhr-table.xml",
+        "_score": 8.62213,
+        "_source": {
+          "ciks": [
+            "0002078994"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-25676"
+          ],
+          "display_names": [
+            "CAMBRIDGE CAPITAL MANAGEMENT, LLC  (CIK 0002078994)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001398344-26-001461",
+          "film_num": [
+            "26571401"
+          ],
+          "biz_locations": [
+            "O'fallon, IL"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "IL"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002041800-26-000001:wingate4q25.xml",
+        "_score": 8.620704,
+        "_source": {
+          "ciks": [
+            "0002041800"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-24644"
+          ],
+          "display_names": [
+            "Wingate Wealth Advisors, Inc.  (CIK 0002041800)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0002041800-26-000001",
+          "film_num": [
+            "26570666"
+          ],
+          "biz_locations": [
+            "Lexington, MA"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001867570-26-000001:Q42025DentWealthAdvisors13f.xml",
+        "_score": 8.619937,
+        "_source": {
+          "ciks": [
+            "0001867570"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-21453"
+          ],
+          "display_names": [
+            "Dentgroup LLC  (CIK 0001867570)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "LA"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001867570-26-000001",
+          "film_num": [
+            "26573761"
+          ],
+          "biz_locations": [
+            "Baton Rouge, LA"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "LA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024995:f43884d1.htm",
+        "_score": 8.619589,
+        "_source": {
+          "ciks": [
+            "0000052848"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "002-17620"
+          ],
+          "display_names": [
+            "VANGUARD WORLD FUND  (CIK 0000052848)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-024995",
+          "film_num": [
+            "26567334"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "SPI 838 VANGUARD MEGA CAP GROWTH INDEX FUND",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-025010:f43862d1.htm",
+        "_score": 8.614248,
+        "_source": {
+          "ciks": [
+            "0000752177"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "002-92948"
+          ],
+          "display_names": [
+            "VANGUARD CHESTER FUNDS  (CIK 0000752177)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-025010",
+          "film_num": [
+            "26567349"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "VANGUARD TARGET RETIREMENT INCOME FUND SP308",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-025011:f43864d1.htm",
+        "_score": 8.611823,
+        "_source": {
+          "ciks": [
+            "0000752177"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "002-92948"
+          ],
+          "display_names": [
+            "VANGUARD CHESTER FUNDS  (CIK 0000752177)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-025011",
+          "film_num": [
+            "26567350"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "VANGUARD TARGET RETIREMENT 2065 FUND SP 1791",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001172661-26-000362:infotable.xml",
+        "_score": 8.611304,
+        "_source": {
+          "ciks": [
+            "0001845766"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-20760"
+          ],
+          "display_names": [
+            "Lebenthal Global Advisors, LLC  (CIK 0001845766)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001172661-26-000362",
+          "film_num": [
+            "26572254"
+          ],
+          "biz_locations": [
+            "Hauppauge, NY"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "NY"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024985:f43881d1.htm",
+        "_score": 8.608575,
+        "_source": {
+          "ciks": [
+            "0000836906"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "033-23444"
+          ],
+          "display_names": [
+            "VANGUARD MALVERN FUNDS  (CIK 0000836906)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-024985",
+          "film_num": [
+            "26567324"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "SP 567 VANGUARD SHORT-TERM INFLATION-PROTECTED SECURITIES INDEX FUND",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-025003:f43871d1.htm",
+        "_score": 8.606779,
+        "_source": {
+          "ciks": [
+            "0000752177"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "002-92948"
+          ],
+          "display_names": [
+            "VANGUARD CHESTER FUNDS  (CIK 0000752177)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-025003",
+          "film_num": [
+            "26567343"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "VANGUARD TARGET RETIREMENT 2030 FUND SP 695",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024969:f43845d1.htm",
+        "_score": 8.606023,
+        "_source": {
+          "ciks": [
+            "0000932471"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "033-56443"
+          ],
+          "display_names": [
+            "VANGUARD HORIZON FUNDS  (CIK 0000932471)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-024969",
+          "film_num": [
+            "26567309"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "SP 111 VANGUARD CAPITAL OPPORTUNITY FUND",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001140361-26-002656:informationtable.xml",
+        "_score": 8.604426,
+        "_source": {
+          "ciks": [
+            "0001269978"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-10620"
+          ],
+          "display_names": [
+            "ALESCO ADVISORS LLC  (CIK 0001269978)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001140361-26-002656",
+          "film_num": [
+            "26571788"
+          ],
+          "biz_locations": [
+            "Pittsford, NY"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "NY"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024987:f43876d1.htm",
+        "_score": 8.602761,
+        "_source": {
+          "ciks": [
+            "0000836906"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "033-23444"
+          ],
+          "display_names": [
+            "VANGUARD MALVERN FUNDS  (CIK 0000836906)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497K",
+          "adsh": "0001193125-26-024987",
+          "film_num": [
+            "26567326"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "497K",
+          "file_description": "SP 1320 VANGUARD CORE BOND FUND",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002019393-26-000001:fwm12312025.xml",
+        "_score": 8.6020975,
+        "_source": {
+          "ciks": [
+            "0002019393"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-24076"
+          ],
+          "display_names": [
+            "Fairway Wealth LLC  (CIK 0002019393)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "OH"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0002019393-26-000001",
+          "film_num": [
+            "26571408"
+          ],
+          "biz_locations": [
+            "Independence, OH"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "entity_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 214,
+      "buckets": [
+        {
+          "key": "VANGUARD WORLD FUND  (CIK 0000052848)",
+          "doc_count": 54
+        },
+        {
+          "key": "John Hancock Funds II  (CIK 0001331971)",
+          "doc_count": 42
+        },
+        {
+          "key": "VANGUARD SCOTTSDALE FUNDS  (CIK 0001021882)",
+          "doc_count": 34
+        },
+        {
+          "key": "Cornerstone National Bank & Trust Co  (CIK 0002104293)",
+          "doc_count": 24
+        },
+        {
+          "key": "VANGUARD MALVERN FUNDS  (CIK 0000836906)",
+          "doc_count": 23
+        },
+        {
+          "key": "SARATOGA ADVANTAGE TRUST  (CIK 0000924628)",
+          "doc_count": 22
+        },
+        {
+          "key": "VANGUARD CHESTER FUNDS  (CIK 0000752177)",
+          "doc_count": 21
+        },
+        {
+          "key": "VANGUARD ADMIRAL FUNDS  (CIK 0000891190)",
+          "doc_count": 16
+        },
+        {
+          "key": "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)",
+          "doc_count": 15
+        },
+        {
+          "key": "VANGUARD HORIZON FUNDS  (CIK 0000932471)",
+          "doc_count": 15
+        },
+        {
+          "key": "VANGUARD FENWAY FUNDS  (CIK 0000826473)",
+          "doc_count": 10
+        },
+        {
+          "key": "VANGUARD WELLESLEY INCOME FUND  (CIK 0000105544)",
+          "doc_count": 9
+        },
+        {
+          "key": "RBB FUND, INC.  (CIK 0000831114)",
+          "doc_count": 8
+        },
+        {
+          "key": "VANGUARD WELLINGTON FUND  (CIK 0000105563)",
+          "doc_count": 8
+        },
+        {
+          "key": "iShares, Inc.  (CIK 0000930667)",
+          "doc_count": 8
+        },
+        {
+          "key": "Listed Funds Trust  (CIK 0001683471)",
+          "doc_count": 7
+        },
+        {
+          "key": "PROSHARES TRUST  (CIK 0001174610)",
+          "doc_count": 7
+        },
+        {
+          "key": "Tidal Trust I  (CIK 0001742912)",
+          "doc_count": 7
+        },
+        {
+          "key": "NORTHERN LIGHTS FUND TRUST III  (CIK 0001537140)",
+          "doc_count": 5
+        },
+        {
+          "key": "Northern Lights Fund Trust  (CIK 0001314414)",
+          "doc_count": 5
+        },
+        {
+          "key": "ARKANSAS FINANCIAL GROUP, INC.  (CIK 0000764611)",
+          "doc_count": 4
+        },
+        {
+          "key": "COLUMBIA FUNDS SERIES TRUST I  (CIK 0000773757)",
+          "doc_count": 4
+        },
+        {
+          "key": "NORTHERN LIGHTS FUND TRUST II  (CIK 0001518042)",
+          "doc_count": 4
+        },
+        {
+          "key": "Ultimus Managers Trust  (CIK 0001545440)",
+          "doc_count": 4
+        },
+        {
+          "key": "VANGUARD QUANTITATIVE FUNDS  (CIK 0000799127)",
+          "doc_count": 4
+        },
+        {
+          "key": "VANGUARD CALIFORNIA TAX-FREE FUNDS  (CIK 0000783401)",
+          "doc_count": 3
+        },
+        {
+          "key": "360 Funds  (CIK 0001319067)",
+          "doc_count": 2
+        },
+        {
+          "key": "BIGLARI CAPITAL CORP.  (CIK 0001334429)",
+          "doc_count": 2
+        },
+        {
+          "key": "Eaton Vance Growth Trust  (CIK 0000102816)",
+          "doc_count": 2
+        },
+        {
+          "key": "JACK IN THE BOX INC  (JACK)  (CIK 0000807882)",
+          "doc_count": 2
+        }
+      ]
+    },
+    "sic_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "5812",
+          "doc_count": 2
+        },
+        {
+          "key": "6022",
+          "doc_count": 2
+        },
+        {
+          "key": "3350",
+          "doc_count": 1
+        },
+        {
+          "key": "3674",
+          "doc_count": 1
+        },
+        {
+          "key": "3823",
+          "doc_count": 1
+        },
+        {
+          "key": "3990",
+          "doc_count": 1
+        },
+        {
+          "key": "6021",
+          "doc_count": 1
+        },
+        {
+          "key": "6282",
+          "doc_count": 1
+        },
+        {
+          "key": "6331",
+          "doc_count": 1
+        },
+        {
+          "key": "7370",
+          "doc_count": 1
+        }
+      ]
+    },
+    "biz_states_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 15,
+      "buckets": [
+        {
+          "key": "PA",
+          "doc_count": 221
+        },
+        {
+          "key": "MA",
+          "doc_count": 59
+        },
+        {
+          "key": "WI",
+          "doc_count": 34
+        },
+        {
+          "key": "IL",
+          "doc_count": 32
+        },
+        {
+          "key": "CA",
+          "doc_count": 28
+        },
+        {
+          "key": "OH",
+          "doc_count": 26
+        },
+        {
+          "key": "NY",
+          "doc_count": 25
+        },
+        {
+          "key": "AZ",
+          "doc_count": 23
+        },
+        {
+          "key": "MD",
+          "doc_count": 12
+        },
+        {
+          "key": "TX",
+          "doc_count": 12
+        },
+        {
+          "key": "FL",
+          "doc_count": 10
+        },
+        {
+          "key": "GA",
+          "doc_count": 10
+        },
+        {
+          "key": "CO",
+          "doc_count": 7
+        },
+        {
+          "key": "NJ",
+          "doc_count": 7
+        },
+        {
+          "key": "IN",
+          "doc_count": 6
+        },
+        {
+          "key": "KS",
+          "doc_count": 6
+        },
+        {
+          "key": "AR",
+          "doc_count": 5
+        },
+        {
+          "key": "MI",
+          "doc_count": 5
+        },
+        {
+          "key": "NC",
+          "doc_count": 5
+        },
+        {
+          "key": "VA",
+          "doc_count": 5
+        },
+        {
+          "key": "MN",
+          "doc_count": 4
+        },
+        {
+          "key": "TN",
+          "doc_count": 4
+        },
+        {
+          "key": "CT",
+          "doc_count": 3
+        },
+        {
+          "key": "KY",
+          "doc_count": 3
+        },
+        {
+          "key": "LA",
+          "doc_count": 3
+        },
+        {
+          "key": "RI",
+          "doc_count": 3
+        },
+        {
+          "key": "WA",
+          "doc_count": 3
+        },
+        {
+          "key": "DE",
+          "doc_count": 2
+        },
+        {
+          "key": "ME",
+          "doc_count": 2
+        },
+        {
+          "key": "MO",
+          "doc_count": 2
+        }
+      ]
+    },
+    "form_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "NPORT-P",
+          "doc_count": 250
+        },
+        {
+          "key": "13F-HR",
+          "doc_count": 194
+        },
+        {
+          "key": "485BPOS",
+          "doc_count": 87
+        },
+        {
+          "key": "497K",
+          "doc_count": 42
+        },
+        {
+          "key": "DEF 14A",
+          "doc_count": 3
+        },
+        {
+          "key": "DEFM14A",
+          "doc_count": 2
+        },
+        {
+          "key": "10-K",
+          "doc_count": 1
+        },
+        {
+          "key": "485APOS",
+          "doc_count": 1
+        },
+        {
+          "key": "497",
+          "doc_count": 1
+        },
+        {
+          "key": "DEFC14A",
+          "doc_count": 1
+        },
+        {
+          "key": "PRRN14A",
+          "doc_count": 1
+        }
+      ]
+    }
+  },
+  "query": {
+    "_source": {
+      "exclude": [
+        "doc_text"
+      ]
+    },
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "match_phrase": {
+              "doc_text": "Vanguard"
+            }
+          }
+        ],
+        "must_not": [],
+        "should": [],
+        "filter": [
+          {
+            "range": {
+              "file_date": {
+                "gte": "2026-01-28",
+                "lte": "2026-01-29"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "from": 0,
+    "size": 100,
+    "aggregations": {
+      "form_filter": {
+        "terms": {
+          "field": "root_forms",
+          "size": 30
+        }
+      },
+      "entity_filter": {
+        "terms": {
+          "field": "display_names.raw",
+          "size": 30
+        }
+      },
+      "sic_filter": {
+        "terms": {
+          "field": "sics",
+          "size": 30
+        }
+      },
+      "biz_states_filter": {
+        "terms": {
+          "field": "biz_states",
+          "size": 30
+        }
+      }
+    }
+  }
+}

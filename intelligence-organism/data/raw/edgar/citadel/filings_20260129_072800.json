@@ -1,0 +1,1525 @@
+{
+  "took": 72,
+  "timed_out": false,
+  "_shards": {
+    "total": 50,
+    "successful": 50,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 32,
+      "relation": "eq"
+    },
+    "max_score": 7.4077125,
+    "hits": [
+      {
+        "_index": "edgar_file",
+        "_id": "0001493152-26-003858:forms-3a.htm",
+        "_score": 7.4077125,
+        "_source": {
+          "ciks": [
+            "0001923891"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "333-288982"
+          ],
+          "display_names": [
+            "Nano Nuclear Energy Inc.  (NNE)  (CIK 0001923891)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "S-3"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [
+            "4911"
+          ],
+          "form": "S-3/A",
+          "adsh": "0001493152-26-003858",
+          "film_num": [
+            "26567746"
+          ],
+          "biz_locations": [
+            "New York, NY"
+          ],
+          "file_type": "S-3/A",
+          "file_description": "S-3/A",
+          "inc_states": [
+            "NV"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000913181-26-000018:primary_doc.xml",
+        "_score": 7.3726587,
+        "_source": {
+          "ciks": [
+            "0001495825"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-22437"
+          ],
+          "display_names": [
+            "Guggenheim Taxable Municipal Bond & Investment Grade Debt Trust  (GBAB)  (CIK 0001495825)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000913181-26-000018",
+          "film_num": [
+            "26569069"
+          ],
+          "biz_locations": [
+            "Chicago, IL"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026056:primary_doc.xml",
+        "_score": 7.0958414,
+        "_source": {
+          "ciks": [
+            "0000792858"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-04651"
+          ],
+          "display_names": [
+            "JOHN HANCOCK STRATEGIC SERIES  (CIK 0000792858)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026056",
+          "film_num": [
+            "26568397"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002048251-26-000655:primary_doc.xml",
+        "_score": 6.9717064,
+        "_source": {
+          "ciks": [
+            "0000939934"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07257"
+          ],
+          "display_names": [
+            "SEI INSTITUTIONAL INVESTMENTS TRUST  (CIK 0000939934)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002048251-26-000655",
+          "film_num": [
+            "26572063"
+          ],
+          "biz_locations": [
+            "Oak, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001628280-26-003764:exhibit42-sx1a2.htm",
+        "_score": 6.5785985,
+        "_source": {
+          "ciks": [
+            "0001827635"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "333-292657"
+          ],
+          "display_names": [
+            "Veradermics, Inc  (MANE)  (CIK 0001827635)"
+          ],
+          "xsl": null,
+          "sequence": "7",
+          "root_forms": [
+            "S-1"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CT"
+          ],
+          "sics": [
+            "2834"
+          ],
+          "form": "S-1/A",
+          "adsh": "0001628280-26-003764",
+          "film_num": [
+            "26570273"
+          ],
+          "biz_locations": [
+            "New Haven, CT"
+          ],
+          "file_type": "EX-4.2",
+          "file_description": "EX-4.2",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001628280-26-003764:veradermicsincs-1a.htm",
+        "_score": 4.019643,
+        "_source": {
+          "ciks": [
+            "0001827635"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "333-292657"
+          ],
+          "display_names": [
+            "Veradermics, Inc  (MANE)  (CIK 0001827635)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "S-1"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CT"
+          ],
+          "sics": [
+            "2834"
+          ],
+          "form": "S-1/A",
+          "adsh": "0001628280-26-003764",
+          "film_num": [
+            "26570273"
+          ],
+          "biz_locations": [
+            "New Haven, CT"
+          ],
+          "file_type": "S-1/A",
+          "file_description": "S-1/A",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026054:primary_doc.xml",
+        "_score": 3.5608797,
+        "_source": {
+          "ciks": [
+            "0000315554"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-03006"
+          ],
+          "display_names": [
+            "JOHN HANCOCK BOND TRUST  (CIK 0000315554)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026054",
+          "film_num": [
+            "26568399"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026040:primary_doc.xml",
+        "_score": 3.1532679,
+        "_source": {
+          "ciks": [
+            "0000045288"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-02402"
+          ],
+          "display_names": [
+            "JOHN HANCOCK SOVEREIGN BOND FUND  (CIK 0000045288)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026040",
+          "film_num": [
+            "26568386"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000913181-26-000019:primary_doc.xml",
+        "_score": 2.931405,
+        "_source": {
+          "ciks": [
+            "0001380936"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21982"
+          ],
+          "display_names": [
+            "GUGGENHEIM STRATEGIC OPPORTUNITIES FUND  (GOF)  (CIK 0001380936)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000913181-26-000019",
+          "film_num": [
+            "26569071"
+          ],
+          "biz_locations": [
+            "Chicago, IL"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001104659-26-007375:tm263738d1_485apos.htm",
+        "_score": 2.3480978,
+        "_source": {
+          "ciks": [
+            "0001579881"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-22887"
+          ],
+          "display_names": [
+            "Calamos ETF Trust  (CIK 0001579881)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485APOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "485APOS",
+          "adsh": "0001104659-26-007375",
+          "film_num": [
+            "26572034"
+          ],
+          "biz_locations": [
+            "Naperville, IL"
+          ],
+          "file_type": "485APOS",
+          "file_description": "485APOS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001104659-26-007366:tm263737d1_485apos.htm",
+        "_score": 2.1509228,
+        "_source": {
+          "ciks": [
+            "0001579881"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-22887"
+          ],
+          "display_names": [
+            "Calamos ETF Trust  (CIK 0001579881)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485APOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "485APOS",
+          "adsh": "0001104659-26-007366",
+          "film_num": [
+            "26571854"
+          ],
+          "biz_locations": [
+            "Naperville, IL"
+          ],
+          "file_type": "485APOS",
+          "file_description": "485APOS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000913181-26-000020:primary_doc.xml",
+        "_score": 2.1004982,
+        "_source": {
+          "ciks": [
+            "0001864208"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23702"
+          ],
+          "display_names": [
+            "Guggenheim Active Allocation Fund  (GUG)  (CIK 0001864208)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000913181-26-000020",
+          "film_num": [
+            "26569070"
+          ],
+          "biz_locations": [
+            "Chicago, IL"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001398344-26-001516:fp0097344-1_486bposixbrl.htm",
+        "_score": 1.9541636,
+        "_source": {
+          "ciks": [
+            "0001777529"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-23447"
+          ],
+          "display_names": [
+            "Alpha Alternative Assets Fund  (CIK 0001777529)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "486BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "FL"
+          ],
+          "sics": [],
+          "form": "486BPOS",
+          "adsh": "0001398344-26-001516",
+          "film_num": [
+            "26573207"
+          ],
+          "biz_locations": [
+            "Delray Beach, FL"
+          ],
+          "file_type": "486BPOS",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001592900-26-000296:ck0001592900-20260128.htm",
+        "_score": 1.7823467,
+        "_source": {
+          "ciks": [
+            "0001592900"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "333-195493"
+          ],
+          "display_names": [
+            "EA Series Trust  (CIK 0001592900)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497",
+          "adsh": "0001592900-26-000296",
+          "film_num": [
+            "26573560"
+          ],
+          "biz_locations": [
+            "Newtown Square, PA"
+          ],
+          "file_type": "497",
+          "file_description": "497",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001592900-26-000286:ck0001592900-20260128.htm",
+        "_score": 1.7737341,
+        "_source": {
+          "ciks": [
+            "0001592900"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "333-195493"
+          ],
+          "display_names": [
+            "EA Series Trust  (CIK 0001592900)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "497",
+          "adsh": "0001592900-26-000286",
+          "film_num": [
+            "26570630"
+          ],
+          "biz_locations": [
+            "Newtown Square, PA"
+          ],
+          "file_type": "497",
+          "file_description": "497",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000894189-26-002702:ck0001650149-20260128.htm",
+        "_score": 1.6376734,
+        "_source": {
+          "ciks": [
+            "0001650149"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-23084"
+          ],
+          "display_names": [
+            "Series Portfolios Trust  (CIK 0001650149)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "WI"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0000894189-26-002702",
+          "film_num": [
+            "26572878"
+          ],
+          "biz_locations": [
+            "Milwaukee, WI"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "485BPOS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001592900-26-000299:ck0001592900-20260128.htm",
+        "_score": 1.4560566,
+        "_source": {
+          "ciks": [
+            "0001592900"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-22961"
+          ],
+          "display_names": [
+            "EA Series Trust  (CIK 0001592900)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001592900-26-000299",
+          "film_num": [
+            "26573608"
+          ],
+          "biz_locations": [
+            "Newtown Square, PA"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "485BPOS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000262:primary_doc.xml",
+        "_score": 1.398243,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000262",
+          "film_num": [
+            "26569261"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001592900-26-000290:ck0001592900-20260128.htm",
+        "_score": 0.7910614,
+        "_source": {
+          "ciks": [
+            "0001592900"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-22961"
+          ],
+          "display_names": [
+            "EA Series Trust  (CIK 0001592900)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001592900-26-000290",
+          "film_num": [
+            "26572229"
+          ],
+          "biz_locations": [
+            "Newtown Square, PA"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "485BPOS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000259:d38408d8k.htm",
+        "_score": 0.79042435,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000259",
+          "film_num": [
+            "26569255"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SOI",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000258:d38408d8k.htm",
+        "_score": 0.7836828,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000258",
+          "film_num": [
+            "26569254"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SOI",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000262:d38408d8k.htm",
+        "_score": 0.77916527,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000262",
+          "film_num": [
+            "26569261"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SOI",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000263:d38408d8k.htm",
+        "_score": 0.77916527,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000263",
+          "film_num": [
+            "26569260"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SOI",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000260:d38408d8k.htm",
+        "_score": 0.7763653,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000260",
+          "film_num": [
+            "26569257"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SOI",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000265:d38408d8k.htm",
+        "_score": 0.7754946,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000265",
+          "film_num": [
+            "26569263"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SOI",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000257:d38408d8k.htm",
+        "_score": 0.7741728,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000257",
+          "film_num": [
+            "26569253"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SOI",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000256:d38408d8k.htm",
+        "_score": 0.7740269,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000256",
+          "film_num": [
+            "26569252"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SOI",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000264:d38408d8k.htm",
+        "_score": 0.7739296,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000264",
+          "film_num": [
+            "26569262"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SOI",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000255:d38408d8k.htm",
+        "_score": 0.77129555,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000255",
+          "film_num": [
+            "26569251"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SOI",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000261:d38408d8k.htm",
+        "_score": 0.7661829,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000261",
+          "film_num": [
+            "26569258"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SOI",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-024963:f43860d1.htm",
+        "_score": 0.51436234,
+        "_source": {
+          "ciks": [
+            "0000836906"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05628"
+          ],
+          "display_names": [
+            "VANGUARD MALVERN FUNDS  (CIK 0000836906)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001193125-26-024963",
+          "film_num": [
+            "26567301"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "485BPOS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001104659-26-007471:tm261923d1_485bpos.htm",
+        "_score": 0.47465038,
+        "_source": {
+          "ciks": [
+            "0000835597"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-05601"
+          ],
+          "display_names": [
+            "SEI INSTITUTIONAL INTERNATIONAL TRUST  (CIK 0000835597)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001104659-26-007471",
+          "film_num": [
+            "26573423"
+          ],
+          "biz_locations": [
+            "Oaks, PA"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "485BPOS",
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "entity_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)",
+          "doc_count": 12
+        },
+        {
+          "key": "EA Series Trust  (CIK 0001592900)",
+          "doc_count": 4
+        },
+        {
+          "key": "Calamos ETF Trust  (CIK 0001579881)",
+          "doc_count": 2
+        },
+        {
+          "key": "Veradermics, Inc  (MANE)  (CIK 0001827635)",
+          "doc_count": 2
+        },
+        {
+          "key": "Alpha Alternative Assets Fund  (CIK 0001777529)",
+          "doc_count": 1
+        },
+        {
+          "key": "GUGGENHEIM STRATEGIC OPPORTUNITIES FUND  (GOF)  (CIK 0001380936)",
+          "doc_count": 1
+        },
+        {
+          "key": "Guggenheim Active Allocation Fund  (GUG)  (CIK 0001864208)",
+          "doc_count": 1
+        },
+        {
+          "key": "Guggenheim Taxable Municipal Bond & Investment Grade Debt Trust  (GBAB)  (CIK 0001495825)",
+          "doc_count": 1
+        },
+        {
+          "key": "JOHN HANCOCK BOND TRUST  (CIK 0000315554)",
+          "doc_count": 1
+        },
+        {
+          "key": "JOHN HANCOCK SOVEREIGN BOND FUND  (CIK 0000045288)",
+          "doc_count": 1
+        },
+        {
+          "key": "JOHN HANCOCK STRATEGIC SERIES  (CIK 0000792858)",
+          "doc_count": 1
+        },
+        {
+          "key": "Nano Nuclear Energy Inc.  (NNE)  (CIK 0001923891)",
+          "doc_count": 1
+        },
+        {
+          "key": "SEI INSTITUTIONAL INTERNATIONAL TRUST  (CIK 0000835597)",
+          "doc_count": 1
+        },
+        {
+          "key": "SEI INSTITUTIONAL INVESTMENTS TRUST  (CIK 0000939934)",
+          "doc_count": 1
+        },
+        {
+          "key": "Series Portfolios Trust  (CIK 0001650149)",
+          "doc_count": 1
+        },
+        {
+          "key": "VANGUARD MALVERN FUNDS  (CIK 0000836906)",
+          "doc_count": 1
+        }
+      ]
+    },
+    "sic_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "2834",
+          "doc_count": 2
+        },
+        {
+          "key": "4911",
+          "doc_count": 1
+        }
+      ]
+    },
+    "biz_states_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "NY",
+          "doc_count": 13
+        },
+        {
+          "key": "PA",
+          "doc_count": 7
+        },
+        {
+          "key": "IL",
+          "doc_count": 5
+        },
+        {
+          "key": "MA",
+          "doc_count": 3
+        },
+        {
+          "key": "CT",
+          "doc_count": 2
+        },
+        {
+          "key": "FL",
+          "doc_count": 1
+        },
+        {
+          "key": "WI",
+          "doc_count": 1
+        }
+      ]
+    },
+    "form_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "NPORT-P",
+          "doc_count": 19
+        },
+        {
+          "key": "485BPOS",
+          "doc_count": 5
+        },
+        {
+          "key": "485APOS",
+          "doc_count": 2
+        },
+        {
+          "key": "497",
+          "doc_count": 2
+        },
+        {
+          "key": "S-1",
+          "doc_count": 2
+        },
+        {
+          "key": "486BPOS",
+          "doc_count": 1
+        },
+        {
+          "key": "S-3",
+          "doc_count": 1
+        }
+      ]
+    }
+  },
+  "query": {
+    "_source": {
+      "exclude": [
+        "doc_text"
+      ]
+    },
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "match_phrase": {
+              "doc_text": "Citadel"
+            }
+          }
+        ],
+        "must_not": [],
+        "should": [],
+        "filter": [
+          {
+            "range": {
+              "file_date": {
+                "gte": "2026-01-28",
+                "lte": "2026-01-29"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "from": 0,
+    "size": 100,
+    "aggregations": {
+      "form_filter": {
+        "terms": {
+          "field": "root_forms",
+          "size": 30
+        }
+      },
+      "entity_filter": {
+        "terms": {
+          "field": "display_names.raw",
+          "size": 30
+        }
+      },
+      "sic_filter": {
+        "terms": {
+          "field": "sics",
+          "size": 30
+        }
+      },
+      "biz_states_filter": {
+        "terms": {
+          "field": "biz_states",
+          "size": 30
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4587 @@
+{
+  "took": 37,
+  "timed_out": false,
+  "_shards": {
+    "total": 50,
+    "successful": 50,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 451,
+      "relation": "eq"
+    },
+    "max_score": 7.912592,
+    "hits": [
+      {
+        "_index": "edgar_file",
+        "_id": "0001104659-26-007454:tm262170d1_ex99-bxpx13.htm",
+        "_score": 7.912592,
+        "_source": {
+          "ciks": [
+            "0000804239"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-04878"
+          ],
+          "display_names": [
+            "SEI INSTITUTIONAL MANAGED TRUST  (CIK 0000804239)"
+          ],
+          "xsl": null,
+          "sequence": "19",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001104659-26-007454",
+          "film_num": [
+            "26573293"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "EX-99.B(P)(13)",
+          "file_description": "EXHIBIT 99.B(P)(13)",
+          "inc_states": [
+            "PA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002071844-26-000121:nvit497breqtydivdnsai1282026.htm",
+        "_score": 7.8572893,
+        "_source": {
+          "ciks": [
+            "0000353905"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "002-73024"
+          ],
+          "display_names": [
+            "NATIONWIDE VARIABLE INSURANCE TRUST  (CIK 0000353905)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "OH"
+          ],
+          "sics": [],
+          "form": "497",
+          "adsh": "0002071844-26-000121",
+          "film_num": [
+            "26569190"
+          ],
+          "biz_locations": [
+            "Columbus, OH"
+          ],
+          "file_type": "497",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001910666-26-000001:edgarform13f12312025-maui.xml",
+        "_score": 7.7621756,
+        "_source": {
+          "ciks": [
+            "0001910666"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-22371"
+          ],
+          "display_names": [
+            "City State Bank  (CIK 0001910666)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IA"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001910666-26-000001",
+          "film_num": [
+            "26567403"
+          ],
+          "biz_locations": [
+            "Norwalk, IA"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "IA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002085853-26-000120:infotable.xml",
+        "_score": 7.6840925,
+        "_source": {
+          "ciks": [
+            "0002102299"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-25900"
+          ],
+          "display_names": [
+            "PMG Family Office LLC  (CIK 0002102299)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "TX"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0002085853-26-000120",
+          "film_num": [
+            "26568538"
+          ],
+          "biz_locations": [
+            "Plano, TX"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000263:primary_doc.xml",
+        "_score": 7.583723,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000263",
+          "film_num": [
+            "26569260"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000487:primary_doc.xml",
+        "_score": 7.563222,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000487",
+          "film_num": [
+            "26569901"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000494:primary_doc.xml",
+        "_score": 7.4942613,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000494",
+          "film_num": [
+            "26569904"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000486:primary_doc.xml",
+        "_score": 7.476042,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000486",
+          "film_num": [
+            "26569897"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000489:primary_doc.xml",
+        "_score": 7.4480953,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000489",
+          "film_num": [
+            "26569899"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000481:primary_doc.xml",
+        "_score": 7.4305058,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000481",
+          "film_num": [
+            "26569890"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000479:primary_doc.xml",
+        "_score": 7.411945,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000479",
+          "film_num": [
+            "26569888"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002071844-26-000119:nvit497breqtydivdnpro1282026.htm",
+        "_score": 7.3921556,
+        "_source": {
+          "ciks": [
+            "0000353905"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "002-73024"
+          ],
+          "display_names": [
+            "NATIONWIDE VARIABLE INSURANCE TRUST  (CIK 0000353905)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "497"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "OH"
+          ],
+          "sics": [],
+          "form": "497",
+          "adsh": "0002071844-26-000119",
+          "film_num": [
+            "26569186"
+          ],
+          "biz_locations": [
+            "Columbus, OH"
+          ],
+          "file_type": "497",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000506:primary-document.htm",
+        "_score": 7.3412724,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000506",
+          "film_num": [
+            "26569917"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000506:primary_doc.xml",
+        "_score": 7.3410187,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000506",
+          "film_num": [
+            "26569917"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001566307-26-000002:Results.xml",
+        "_score": 7.323859,
+        "_source": {
+          "ciks": [
+            "0001566307"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-24835"
+          ],
+          "display_names": [
+            "Ramiah Investment Group  (CIK 0001566307)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "WI"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001566307-26-000002",
+          "film_num": [
+            "26567702"
+          ],
+          "biz_locations": [
+            "Brookfield, WI"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "WI"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000495:primary_doc.xml",
+        "_score": 7.3087754,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000495",
+          "film_num": [
+            "26569905"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000504:primary_doc.xml",
+        "_score": 7.303534,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000504",
+          "film_num": [
+            "26569913"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000505:primary-document.htm",
+        "_score": 7.298105,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000505",
+          "film_num": [
+            "26569916"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000490:primary_doc.xml",
+        "_score": 7.29308,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000490",
+          "film_num": [
+            "26569900"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001062993-26-000452:form13fInfoTable.xml",
+        "_score": 7.2756433,
+        "_source": {
+          "ciks": [
+            "0001316187"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-21391"
+          ],
+          "display_names": [
+            "ABSOLUTE INVESTMENT ADVISERS, LLC  (CIK 0001316187)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "FL"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001062993-26-000452",
+          "film_num": [
+            "26568466"
+          ],
+          "biz_locations": [
+            "Rosemary Beach, FL"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": "FORM 13F INFORMATION TABLE",
+          "inc_states": [
+            "FL"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000498:primary-document.htm",
+        "_score": 7.2292085,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000498",
+          "film_num": [
+            "26569910"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000487:primary-document.htm",
+        "_score": 7.2266746,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000487",
+          "film_num": [
+            "26569901"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000486:primary-document.htm",
+        "_score": 7.222978,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000486",
+          "film_num": [
+            "26569897"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000497:primary-document.htm",
+        "_score": 7.2173185,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000497",
+          "film_num": [
+            "26569909"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000494:primary-document.htm",
+        "_score": 7.2140255,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000494",
+          "film_num": [
+            "26569904"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000493:primary_doc.xml",
+        "_score": 7.2009797,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000493",
+          "film_num": [
+            "26569903"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000491:primary-document.htm",
+        "_score": 7.200305,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000491",
+          "film_num": [
+            "26569906"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000489:primary-document.htm",
+        "_score": 7.196587,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000489",
+          "film_num": [
+            "26569899"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000481:primary-document.htm",
+        "_score": 7.176528,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000481",
+          "film_num": [
+            "26569890"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000479:primary-document.htm",
+        "_score": 7.172436,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000479",
+          "film_num": [
+            "26569888"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000507:primary_doc.xml",
+        "_score": 7.1568556,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000507",
+          "film_num": [
+            "26569920"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000504:primary-document.htm",
+        "_score": 7.1416492,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000504",
+          "film_num": [
+            "26569913"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000505:primary_doc.xml",
+        "_score": 7.118384,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000505",
+          "film_num": [
+            "26569916"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000495:primary-document.htm",
+        "_score": 7.113321,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000495",
+          "film_num": [
+            "26569905"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000484:primary-document.htm",
+        "_score": 7.099401,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000484",
+          "film_num": [
+            "26569896"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000496:primary_doc.xml",
+        "_score": 7.097924,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000496",
+          "film_num": [
+            "26569908"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001193125-26-026038:primary_doc.xml",
+        "_score": 7.06811,
+        "_source": {
+          "ciks": [
+            "0001331971"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21779"
+          ],
+          "display_names": [
+            "John Hancock Funds II  (CIK 0001331971)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001193125-26-026038",
+          "film_num": [
+            "26568381"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000493:primary-document.htm",
+        "_score": 7.066629,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000493",
+          "film_num": [
+            "26569903"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000507:primary-document.htm",
+        "_score": 7.0611515,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000507",
+          "film_num": [
+            "26569920"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000478:primary_doc.xml",
+        "_score": 7.051157,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000478",
+          "film_num": [
+            "26569887"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000498:primary_doc.xml",
+        "_score": 7.048482,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000498",
+          "film_num": [
+            "26569910"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000483:primary_doc.xml",
+        "_score": 7.0298686,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000483",
+          "film_num": [
+            "26569894"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001408198-26-000008:msci-20260127.htm",
+        "_score": 7.0293665,
+        "_source": {
+          "ciks": [
+            "0001408198"
+          ],
+          "period_ending": "2026-01-27",
+          "file_num": [
+            "001-33812"
+          ],
+          "display_names": [
+            "MSCI Inc.  (MSCI)  (CIK 0001408198)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "8-K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [
+            "7389"
+          ],
+          "form": "8-K",
+          "adsh": "0001408198-26-000008",
+          "film_num": [
+            "26572986"
+          ],
+          "biz_locations": [
+            "New York, NY"
+          ],
+          "file_type": "8-K",
+          "file_description": "8-K",
+          "inc_states": [
+            "DE"
+          ],
+          "items": [
+            "1.01",
+            "9.01"
+          ]
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000503:primary-document.htm",
+        "_score": 7.0271926,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000503",
+          "film_num": [
+            "26569912"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000497:primary_doc.xml",
+        "_score": 7.019958,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000497",
+          "film_num": [
+            "26569909"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000480:primary_doc.xml",
+        "_score": 7.019637,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000480",
+          "film_num": [
+            "26569889"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000492:primary-document.htm",
+        "_score": 7.017145,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000492",
+          "film_num": [
+            "26569902"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000490:primary-document.htm",
+        "_score": 7.01512,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000490",
+          "film_num": [
+            "26569900"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000480:primary-document.htm",
+        "_score": 7.008193,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000480",
+          "film_num": [
+            "26569889"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000478:primary-document.htm",
+        "_score": 6.998132,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000478",
+          "film_num": [
+            "26569887"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000503:primary_doc.xml",
+        "_score": 6.9890676,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000503",
+          "film_num": [
+            "26569912"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000501:primary-document.htm",
+        "_score": 6.987983,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000501",
+          "film_num": [
+            "26569911"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000483:primary-document.htm",
+        "_score": 6.9794936,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000483",
+          "film_num": [
+            "26569894"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000501:primary_doc.xml",
+        "_score": 6.974536,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000501",
+          "film_num": [
+            "26569911"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000491:primary_doc.xml",
+        "_score": 6.960122,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000491",
+          "film_num": [
+            "26569906"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000485:primary-document.htm",
+        "_score": 6.8815823,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000485",
+          "film_num": [
+            "26569893"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000482:primary-document.htm",
+        "_score": 6.8659625,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000482",
+          "film_num": [
+            "26569892"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000499:primary_doc.xml",
+        "_score": 6.857719,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000499",
+          "film_num": [
+            "26569914"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001944877-26-000001:q425fwg.xml",
+        "_score": 6.8420153,
+        "_source": {
+          "ciks": [
+            "0001944877"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-23896"
+          ],
+          "display_names": [
+            "FWG Investments, LLC.  (CIK 0001944877)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "KY"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001944877-26-000001",
+          "film_num": [
+            "26569625"
+          ],
+          "biz_locations": [
+            "Lexington, KY"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "KY"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002067120-26-000003:infotable.xml",
+        "_score": 6.731488,
+        "_source": {
+          "ciks": [
+            "0002067120"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-25537"
+          ],
+          "display_names": [
+            "CALIBER WEALTH MANAGEMENT, LLC / KS  (CIK 0002067120)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "KS"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0002067120-26-000003",
+          "film_num": [
+            "26568611"
+          ],
+          "biz_locations": [
+            "Overland Park, KS"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": "INFORMATION TABLE",
+          "inc_states": [
+            "KS"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000485:primary_doc.xml",
+        "_score": 6.7278423,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000485",
+          "film_num": [
+            "26569893"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000482:primary_doc.xml",
+        "_score": 6.71747,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000482",
+          "film_num": [
+            "26569892"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000910472-26-000705:primary_doc.xml",
+        "_score": 6.7139864,
+        "_source": {
+          "ciks": [
+            "0001545440"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-22680"
+          ],
+          "display_names": [
+            "Ultimus Managers Trust  (CIK 0001545440)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "OH"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000910472-26-000705",
+          "film_num": [
+            "26567800"
+          ],
+          "biz_locations": [
+            "Cincinnati, OH"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "OH"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002067343-26-000001:wpg4q25.xml",
+        "_score": 6.6698627,
+        "_source": {
+          "ciks": [
+            "0002067343"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-25590"
+          ],
+          "display_names": [
+            "WPG Advisers, LLC  (CIK 0002067343)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MD"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0002067343-26-000001",
+          "film_num": [
+            "26572981"
+          ],
+          "biz_locations": [
+            "Baltimore, MD"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000484:primary_doc.xml",
+        "_score": 6.619067,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000484",
+          "film_num": [
+            "26569896"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001764754-26-000001:13f1contents123125.xml",
+        "_score": 6.6124945,
+        "_source": {
+          "ciks": [
+            "0001764754"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-21259"
+          ],
+          "display_names": [
+            "Geneos Wealth Management Inc.  (CIK 0001764754)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CO"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001764754-26-000001",
+          "film_num": [
+            "26572465"
+          ],
+          "biz_locations": [
+            "Englewood, CO"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": "GENEOS HOLDINGS",
+          "inc_states": [
+            "CO"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000496:primary-document.htm",
+        "_score": 6.6099715,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000496",
+          "film_num": [
+            "26569908"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002000324-26-000203:primary_doc.xml",
+        "_score": 6.598298,
+        "_source": {
+          "ciks": [
+            "0001742912"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23377"
+          ],
+          "display_names": [
+            "Tidal Trust I  (CIK 0001742912)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "WI"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002000324-26-000203",
+          "film_num": [
+            "26571236"
+          ],
+          "biz_locations": [
+            "Milwaukee, WI"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000887602-26-000001:barrett13f_q42025.xml",
+        "_score": 6.5954847,
+        "_source": {
+          "ciks": [
+            "0000887602"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-23226"
+          ],
+          "display_names": [
+            "BARRETT & COMPANY, INC.  (CIK 0000887602)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "RI"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0000887602-26-000001",
+          "film_num": [
+            "26569714"
+          ],
+          "biz_locations": [
+            "Providence, RI"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "RI"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000276:primary_doc.xml",
+        "_score": 6.5756364,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000276",
+          "film_num": [
+            "26571898"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001112996-26-000043:primary_doc.xml",
+        "_score": 6.5203648,
+        "_source": {
+          "ciks": [
+            "0001112996"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09913"
+          ],
+          "display_names": [
+            "AIM COUNSELOR SERIES TRUST (INVESCO COUNSELOR SERIES TRUST)  (CIK 0001112996)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "TX"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001112996-26-000043",
+          "film_num": [
+            "26571923"
+          ],
+          "biz_locations": [
+            "Houston, TX"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000492:primary_doc.xml",
+        "_score": 6.516429,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000492",
+          "film_num": [
+            "26569902"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000499:primary-document.htm",
+        "_score": 6.5049353,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000499",
+          "film_num": [
+            "26569914"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002000324-26-000239:primary_doc.xml",
+        "_score": 6.503369,
+        "_source": {
+          "ciks": [
+            "0001742912"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23377"
+          ],
+          "display_names": [
+            "Tidal Trust I  (CIK 0001742912)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "WI"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002000324-26-000239",
+          "film_num": [
+            "26571340"
+          ],
+          "biz_locations": [
+            "Milwaukee, WI"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001616336-26-000001:infotable.xml.xml",
+        "_score": 6.4964857,
+        "_source": {
+          "ciks": [
+            "0001616336"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-23477"
+          ],
+          "display_names": [
+            "One River Asset Management, LLC  (CIK 0001616336)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CT"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001616336-26-000001",
+          "film_num": [
+            "26572007"
+          ],
+          "biz_locations": [
+            "Stamford, CT"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001754960-26-000135:Trail.xml",
+        "_score": 6.454954,
+        "_source": {
+          "ciks": [
+            "0001911013"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-21968"
+          ],
+          "display_names": [
+            "Trail Ridge Investment Advisors, LLC  (CIK 0001911013)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CO"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001754960-26-000135",
+          "film_num": [
+            "26571267"
+          ],
+          "biz_locations": [
+            "Fort Collins, CO"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "WY"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000910472-26-000946:primary_doc.xml",
+        "_score": 6.450636,
+        "_source": {
+          "ciks": [
+            "0001760588"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23435"
+          ],
+          "display_names": [
+            "Zacks Trust  (CIK 0001760588)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000910472-26-000946",
+          "film_num": [
+            "26572287"
+          ],
+          "biz_locations": [
+            "Chicago, IL"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000894189-26-002580:primary_doc.xml",
+        "_score": 6.442705,
+        "_source": {
+          "ciks": [
+            "0001782952"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23473"
+          ],
+          "display_names": [
+            "Kurv ETF Trust  (CIK 0001782952)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "DE"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000894189-26-002580",
+          "film_num": [
+            "26571599"
+          ],
+          "biz_locations": [
+            "Wilmington, DE"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002085853-26-000132:infotable.xml",
+        "_score": 6.410948,
+        "_source": {
+          "ciks": [
+            "0001862145"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-21261"
+          ],
+          "display_names": [
+            "Clarity Financial LLC  (CIK 0001862145)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "TX"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0002085853-26-000132",
+          "film_num": [
+            "26568585"
+          ],
+          "biz_locations": [
+            "Houston, TX"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000502:primary_doc.xml",
+        "_score": 6.4013186,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000502",
+          "film_num": [
+            "26569915"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001765380-26-000050:q42025cornerstone13f.xml",
+        "_score": 6.4009476,
+        "_source": {
+          "ciks": [
+            "0001668189"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-17400"
+          ],
+          "display_names": [
+            "Cornerstone Advisory, LLC  (CIK 0001668189)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MD"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001765380-26-000050",
+          "film_num": [
+            "26569696"
+          ],
+          "biz_locations": [
+            "Hunt Valley, MD"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000488:primary-document.htm",
+        "_score": 6.3993664,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000488",
+          "film_num": [
+            "26569898"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000508:primary-document.htm",
+        "_score": 6.3980474,
+        "_source": {
+          "ciks": [
+            "0000930667"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09102"
+          ],
+          "display_names": [
+            "iShares, Inc.  (CIK 0000930667)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000508",
+          "film_num": [
+            "26569919"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000910472-26-000945:primary_doc.xml",
+        "_score": 6.382909,
+        "_source": {
+          "ciks": [
+            "0001760588"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23435"
+          ],
+          "display_names": [
+            "Zacks Trust  (CIK 0001760588)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000910472-26-000945",
+          "film_num": [
+            "26572286"
+          ],
+          "biz_locations": [
+            "Chicago, IL"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001172661-26-000362:infotable.xml",
+        "_score": 6.3446856,
+        "_source": {
+          "ciks": [
+            "0001845766"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-20760"
+          ],
+          "display_names": [
+            "Lebenthal Global Advisors, LLC  (CIK 0001845766)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001172661-26-000362",
+          "film_num": [
+            "26572254"
+          ],
+          "biz_locations": [
+            "Hauppauge, NY"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "NY"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008104:primary_doc.xml",
+        "_score": 6.3111105,
+        "_source": {
+          "ciks": [
+            "0000773757"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-04367"
+          ],
+          "display_names": [
+            "COLUMBIA FUNDS SERIES TRUST I  (CIK 0000773757)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008104",
+          "film_num": [
+            "26569500"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008110:primary_doc.xml",
+        "_score": 6.2820783,
+        "_source": {
+          "ciks": [
+            "0000773757"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-04367"
+          ],
+          "display_names": [
+            "COLUMBIA FUNDS SERIES TRUST I  (CIK 0000773757)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008110",
+          "film_num": [
+            "26569509"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001408198-26-000008:exhibit101_blackrockamendm.htm",
+        "_score": 6.258621,
+        "_source": {
+          "ciks": [
+            "0001408198"
+          ],
+          "period_ending": "2026-01-27",
+          "file_num": [
+            "001-33812"
+          ],
+          "display_names": [
+            "MSCI Inc.  (MSCI)  (CIK 0001408198)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "8-K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [
+            "7389"
+          ],
+          "form": "8-K",
+          "adsh": "0001408198-26-000008",
+          "film_num": [
+            "26572986"
+          ],
+          "biz_locations": [
+            "New York, NY"
+          ],
+          "file_type": "EX-10.1",
+          "file_description": "EX-10.1",
+          "inc_states": [
+            "DE"
+          ],
+          "items": [
+            "1.01",
+            "9.01"
+          ]
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008096:primary_doc.xml",
+        "_score": 6.245982,
+        "_source": {
+          "ciks": [
+            "0001352280"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21852"
+          ],
+          "display_names": [
+            "Columbia Funds Series Trust II  (CIK 0001352280)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008096",
+          "film_num": [
+            "26569493"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001062993-26-000458:form13fInfoTable.xml",
+        "_score": 6.2409806,
+        "_source": {
+          "ciks": [
+            "0001801107"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-19733"
+          ],
+          "display_names": [
+            "Meadow Creek Wealth Advisors LLC  (CIK 0001801107)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "GA"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001062993-26-000458",
+          "film_num": [
+            "26569355"
+          ],
+          "biz_locations": [
+            "Atlanta, GA"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": "FORM 13F INFORMATION TABLE",
+          "inc_states": [
+            "GA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001911468-26-000001:orourkeq4202513f.xml",
+        "_score": 6.2141266,
+        "_source": {
+          "ciks": [
+            "0001911468"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-22243"
+          ],
+          "display_names": [
+            "O'ROURKE & COMPANY, Inc  (CIK 0001911468)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001911468-26-000001",
+          "film_num": [
+            "26571300"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000910472-26-000919:primary_doc.xml",
+        "_score": 6.2141266,
+        "_source": {
+          "ciks": [
+            "0001199046"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21237"
+          ],
+          "display_names": [
+            "UNIFIED SERIES TRUST  (CIK 0001199046)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "OH"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000910472-26-000919",
+          "film_num": [
+            "26571585"
+          ],
+          "biz_locations": [
+            "Cincinnati, OH"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000910472-26-000710:primary_doc.xml",
+        "_score": 6.212517,
+        "_source": {
+          "ciks": [
+            "0001815558"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23581"
+          ],
+          "display_names": [
+            "Waycross Independent Trust  (CIK 0001815558)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "OH"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000910472-26-000710",
+          "film_num": [
+            "26567806"
+          ],
+          "biz_locations": [
+            "Cincinnati, OH"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001754960-26-000129:InformationTableOutput.xml",
+        "_score": 6.212517,
+        "_source": {
+          "ciks": [
+            "0002011402"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-24070"
+          ],
+          "display_names": [
+            "Edge Financial Advisors LLC  (CIK 0002011402)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001754960-26-000129",
+          "film_num": [
+            "26567629"
+          ],
+          "biz_locations": [
+            "Wheaton, IL"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "IL"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000308:primary_doc.xml",
+        "_score": 6.2030854,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000308",
+          "film_num": [
+            "26571968"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008090:primary_doc.xml",
+        "_score": 6.200602,
+        "_source": {
+          "ciks": [
+            "0001352280"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21852"
+          ],
+          "display_names": [
+            "Columbia Funds Series Trust II  (CIK 0001352280)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008090",
+          "film_num": [
+            "26569482"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000910472-26-000867:primary_doc.xml",
+        "_score": 6.1960535,
+        "_source": {
+          "ciks": [
+            "0001518042"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-22549"
+          ],
+          "display_names": [
+            "NORTHERN LIGHTS FUND TRUST II  (CIK 0001518042)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "OH"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000910472-26-000867",
+          "film_num": [
+            "26569079"
+          ],
+          "biz_locations": [
+            "Cincinnati, OH"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001162044-26-000068:primary_doc.xml",
+        "_score": 6.192511,
+        "_source": {
+          "ciks": [
+            "0001066241"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-08897"
+          ],
+          "display_names": [
+            "SPARROW FUNDS  (CIK 0001066241)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MO"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001162044-26-000068",
+          "film_num": [
+            "26569116"
+          ],
+          "biz_locations": [
+            "St Louis, MO"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "OH"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000500:primary-document.htm",
+        "_score": 6.1825514,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000500",
+          "film_num": [
+            "26569918"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000894189-26-002370:primary_doc.xml",
+        "_score": 6.1806545,
+        "_source": {
+          "ciks": [
+            "0000831114"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-05518"
+          ],
+          "display_names": [
+            "RBB FUND, INC.  (CIK 0000831114)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "WI"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000894189-26-002370",
+          "film_num": [
+            "26570129"
+          ],
+          "biz_locations": [
+            "Milwaukee, WI"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "entity_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 180,
+      "buckets": [
+        {
+          "key": "iShares, Inc.  (CIK 0000930667)",
+          "doc_count": 36
+        },
+        {
+          "key": "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)",
+          "doc_count": 30
+        },
+        {
+          "key": "iSHARES TRUST  (CIK 0001100663)",
+          "doc_count": 30
+        },
+        {
+          "key": "SSGA Active Trust  (CIK 0001516212)",
+          "doc_count": 17
+        },
+        {
+          "key": "SARATOGA ADVANTAGE TRUST  (CIK 0000924628)",
+          "doc_count": 16
+        },
+        {
+          "key": "VANGUARD SCOTTSDALE FUNDS  (CIK 0001021882)",
+          "doc_count": 14
+        },
+        {
+          "key": "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)",
+          "doc_count": 13
+        },
+        {
+          "key": "RBB FUND, INC.  (CIK 0000831114)",
+          "doc_count": 12
+        },
+        {
+          "key": "VANGUARD WORLD FUND  (CIK 0000052848)",
+          "doc_count": 11
+        },
+        {
+          "key": "John Hancock Funds II  (CIK 0001331971)",
+          "doc_count": 10
+        },
+        {
+          "key": "PROSHARES TRUST  (CIK 0001174610)",
+          "doc_count": 9
+        },
+        {
+          "key": "COLUMBIA FUNDS SERIES TRUST I  (CIK 0000773757)",
+          "doc_count": 8
+        },
+        {
+          "key": "UNIFIED SERIES TRUST  (CIK 0001199046)",
+          "doc_count": 8
+        },
+        {
+          "key": "SEI INSTITUTIONAL INVESTMENTS TRUST  (CIK 0000939934)",
+          "doc_count": 7
+        },
+        {
+          "key": "NORTHERN LIGHTS FUND TRUST III  (CIK 0001537140)",
+          "doc_count": 5
+        },
+        {
+          "key": "Northern Lights Fund Trust  (CIK 0001314414)",
+          "doc_count": 5
+        },
+        {
+          "key": "Tidal Trust I  (CIK 0001742912)",
+          "doc_count": 5
+        },
+        {
+          "key": "UBS AG  (AMUB, BDCX, BDCZ, CEFD, CEFZ, HDLB, IFED, IWDL, IWFL, IWML, MLPB, MLPR, MTUL, MVRL, PFFL, QULL)  (CIK 0001114446)",
+          "doc_count": 5
+        },
+        {
+          "key": "Columbia Funds Series Trust II  (CIK 0001352280)",
+          "doc_count": 4
+        },
+        {
+          "key": "EA Series Trust  (CIK 0001592900)",
+          "doc_count": 4
+        },
+        {
+          "key": "J.P. Morgan Exchange-Traded Fund Trust  (CIK 0001485894)",
+          "doc_count": 4
+        },
+        {
+          "key": "NUVEEN INVESTMENT TRUST III  (CIK 0001071336)",
+          "doc_count": 4
+        },
+        {
+          "key": "Ultimus Managers Trust  (CIK 0001545440)",
+          "doc_count": 4
+        },
+        {
+          "key": "BANK OF AMERICA CORP /DE/  (CIK 0000070858)",
+          "doc_count": 3
+        },
+        {
+          "key": "BofA Finance LLC  (CIK 0001682472)",
+          "doc_count": 3
+        },
+        {
+          "key": "GOLDMAN SACHS GROUP INC  (GS, GSCE, GS-PA, GS-PC, GS-PD)  (CIK 0000886982)",
+          "doc_count": 3
+        },
+        {
+          "key": "GS Finance Corp.  (CIK 0001419828)",
+          "doc_count": 3
+        },
+        {
+          "key": "Invesco Exchange-Traded Self-Indexed Fund Trust  (CIK 0001657201)",
+          "doc_count": 3
+        },
+        {
+          "key": "NATIONWIDE VARIABLE INSURANCE TRUST  (CIK 0000353905)",
+          "doc_count": 3
+        },
+        {
+          "key": "SEI Catholic Values Trust  (CIK 0001627853)",
+          "doc_count": 3
+        }
+      ]
+    },
+    "sic_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "6021",
+          "doc_count": 9
+        },
+        {
+          "key": "6211",
+          "doc_count": 5
+        },
+        {
+          "key": "6022",
+          "doc_count": 3
+        },
+        {
+          "key": "6029",
+          "doc_count": 3
+        },
+        {
+          "key": "5812",
+          "doc_count": 2
+        },
+        {
+          "key": "6189",
+          "doc_count": 2
+        },
+        {
+          "key": "6282",
+          "doc_count": 2
+        },
+        {
+          "key": "6770",
+          "doc_count": 2
+        },
+        {
+          "key": "7389",
+          "doc_count": 2
+        },
+        {
+          "key": "3350",
+          "doc_count": 1
+        },
+        {
+          "key": "3674",
+          "doc_count": 1
+        },
+        {
+          "key": "3990",
+          "doc_count": 1
+        },
+        {
+          "key": "6199",
+          "doc_count": 1
+        },
+        {
+          "key": "7370",
+          "doc_count": 1
+        }
+      ]
+    },
+    "biz_states_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 8,
+      "buckets": [
+        {
+          "key": "CA",
+          "doc_count": 75
+        },
+        {
+          "key": "PA",
+          "doc_count": 56
+        },
+        {
+          "key": "MA",
+          "doc_count": 54
+        },
+        {
+          "key": "IL",
+          "doc_count": 53
+        },
+        {
+          "key": "NY",
+          "doc_count": 39
+        },
+        {
+          "key": "OH",
+          "doc_count": 33
+        },
+        {
+          "key": "WI",
+          "doc_count": 26
+        },
+        {
+          "key": "AZ",
+          "doc_count": 18
+        },
+        {
+          "key": "MD",
+          "doc_count": 15
+        },
+        {
+          "key": "TX",
+          "doc_count": 10
+        },
+        {
+          "key": "FL",
+          "doc_count": 5
+        },
+        {
+          "key": "GA",
+          "doc_count": 5
+        },
+        {
+          "key": "NC",
+          "doc_count": 5
+        },
+        {
+          "key": "V8",
+          "doc_count": 5
+        },
+        {
+          "key": "A6",
+          "doc_count": 4
+        },
+        {
+          "key": "IN",
+          "doc_count": 4
+        },
+        {
+          "key": "MI",
+          "doc_count": 4
+        },
+        {
+          "key": "TN",
+          "doc_count": 4
+        },
+        {
+          "key": "CT",
+          "doc_count": 3
+        },
+        {
+          "key": "DE",
+          "doc_count": 3
+        },
+        {
+          "key": "MN",
+          "doc_count": 3
+        },
+        {
+          "key": "MO",
+          "doc_count": 3
+        },
+        {
+          "key": "NJ",
+          "doc_count": 3
+        },
+        {
+          "key": "VA",
+          "doc_count": 3
+        },
+        {
+          "key": "2M",
+          "doc_count": 2
+        },
+        {
+          "key": "CO",
+          "doc_count": 2
+        },
+        {
+          "key": "KS",
+          "doc_count": 2
+        },
+        {
+          "key": "KY",
+          "doc_count": 2
+        },
+        {
+          "key": "LA",
+          "doc_count": 2
+        },
+        {
+          "key": "NM",
+          "doc_count": 2
+        }
+      ]
+    },
+    "form_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "NPORT-P",
+          "doc_count": 281
+        },
+        {
+          "key": "13F-HR",
+          "doc_count": 85
+        },
+        {
+          "key": "485BPOS",
+          "doc_count": 37
+        },
+        {
+          "key": "424B2",
+          "doc_count": 15
+        },
+        {
+          "key": "497",
+          "doc_count": 5
+        },
+        {
+          "key": "485APOS",
+          "doc_count": 4
+        },
+        {
+          "key": "N-CSRS",
+          "doc_count": 3
+        },
+        {
+          "key": "486BPOS",
+          "doc_count": 2
+        },
+        {
+          "key": "8-K",
+          "doc_count": 2
+        },
+        {
+          "key": "DEF 14A",
+          "doc_count": 2
+        },
+        {
+          "key": "DEFM14A",
+          "doc_count": 2
+        },
+        {
+          "key": "FWP",
+          "doc_count": 2
+        },
+        {
+          "key": "POS AMI",
+          "doc_count": 2
+        },
+        {
+          "key": "10-K",
+          "doc_count": 1
+        },
+        {
+          "key": "13F-NT",
+          "doc_count": 1
+        },
+        {
+          "key": "424B4",
+          "doc_count": 1
+        },
+        {
+          "key": "425",
+          "doc_count": 1
+        },
+        {
+          "key": "497K",
+          "doc_count": 1
+        },
+        {
+          "key": "DEFC14A",
+          "doc_count": 1
+        },
+        {
+          "key": "N-2",
+          "doc_count": 1
+        },
+        {
+          "key": "PRRN14A",
+          "doc_count": 1
+        },
+        {
+          "key": "S-4",
+          "doc_count": 1
+        }
+      ]
+    }
+  },
+  "query": {
+    "_source": {
+      "exclude": [
+        "doc_text"
+      ]
+    },
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "match_phrase": {
+              "doc_text": "BlackRock"
+            }
+          }
+        ],
+        "must_not": [],
+        "should": [],
+        "filter": [
+          {
+            "range": {
+              "file_date": {
+                "gte": "2026-01-28",
+                "lte": "2026-01-29"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "from": 0,
+    "size": 100,
+    "aggregations": {
+      "form_filter": {
+        "terms": {
+          "field": "root_forms",
+          "size": 30
+        }
+      },
+      "entity_filter": {
+        "terms": {
+          "field": "display_names.raw",
+          "size": 30
+        }
+      },
+      "sic_filter": {
+        "terms": {
+          "field": "sics",
+          "size": 30
+        }
+      },
+      "biz_states_filter": {
+        "terms": {
+          "field": "biz_states",
+          "size": 30
+        }
+      }
+    }
+  }
+}
