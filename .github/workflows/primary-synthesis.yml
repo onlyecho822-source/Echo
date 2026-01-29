@@ -1,0 +1,25 @@
+name: Primary Synthesis
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  primary-synthesis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install openai requests pandas
+      - env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python intelligence-organism/agents/primary_synthesizer.py
+      - run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add intelligence-organism/reports/primary_synthesis/
+          git diff --quiet && git diff --staged --quiet || git commit -m "Primary Synthesis: $(date -u +%Y-%m-%d)"
+          git push
