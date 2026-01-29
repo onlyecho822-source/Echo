@@ -1,0 +1,4395 @@
+{
+  "took": 40,
+  "timed_out": false,
+  "_shards": {
+    "total": 50,
+    "successful": 50,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 134,
+      "relation": "eq"
+    },
+    "max_score": 9.051259,
+    "hits": [
+      {
+        "_index": "edgar_file",
+        "_id": "0001104659-26-007109:tm261933d1_ex99-xi.htm",
+        "_score": 9.051259,
+        "_source": {
+          "ciks": [
+            "0002035827"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-23998"
+          ],
+          "display_names": [
+            "Harris Oakmark ETF Trust  (CIK 0002035827)"
+          ],
+          "xsl": null,
+          "sequence": "3",
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001104659-26-007109",
+          "film_num": [
+            "26567729"
+          ],
+          "biz_locations": [
+            "Chicago, IL"
+          ],
+          "file_type": "EX-99.(I)",
+          "file_description": "EXHIBIT 99.(I)",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000894189-26-002088:primary_doc.xml",
+        "_score": 8.587473,
+        "_source": {
+          "ciks": [
+            "0001618627"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23011"
+          ],
+          "display_names": [
+            "RBB Fund Trust  (CIK 0001618627)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "WI"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000894189-26-002088",
+          "film_num": [
+            "26569398"
+          ],
+          "biz_locations": [
+            "Milwaukee, WI"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000304:primary_doc.xml",
+        "_score": 8.4178505,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000304",
+          "film_num": [
+            "26571957"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001172661-26-000367:infotable.xml",
+        "_score": 8.137049,
+        "_source": {
+          "ciks": [
+            "0001620275"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-16282"
+          ],
+          "display_names": [
+            "Paradice Investment Management LLC  (CIK 0001620275)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CO"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001172661-26-000367",
+          "film_num": [
+            "26573188"
+          ],
+          "biz_locations": [
+            "Denver, CO"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000894189-26-002087:primary_doc.xml",
+        "_score": 8.113849,
+        "_source": {
+          "ciks": [
+            "0001618627"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23011"
+          ],
+          "display_names": [
+            "RBB Fund Trust  (CIK 0001618627)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "WI"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000894189-26-002087",
+          "film_num": [
+            "26569397"
+          ],
+          "biz_locations": [
+            "Milwaukee, WI"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001133228-26-000837:abnoif-efp22280_485bxt.htm",
+        "_score": 7.784079,
+        "_source": {
+          "ciks": [
+            "0001096012"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-09603"
+          ],
+          "display_names": [
+            "AMERICAN BEACON SELECT FUNDS  (CIK 0001096012)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BXT"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "TX"
+          ],
+          "sics": [],
+          "form": "485BXT",
+          "adsh": "0001133228-26-000837",
+          "film_num": [
+            "26569351"
+          ],
+          "biz_locations": [
+            "Irving, TX"
+          ],
+          "file_type": "485BXT",
+          "file_description": "AMERICAN BEACON NINETY ONE INTERNATIONAL FRANCHISE ETF - 485BXT",
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000894189-26-002088:penncapspecial.htm",
+        "_score": 7.6264944,
+        "_source": {
+          "ciks": [
+            "0001618627"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23011"
+          ],
+          "display_names": [
+            "RBB Fund Trust  (CIK 0001618627)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "WI"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000894189-26-002088",
+          "film_num": [
+            "26569398"
+          ],
+          "biz_locations": [
+            "Milwaukee, WI"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "NPORT-EX",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000894189-26-002087:penncapshortdur.htm",
+        "_score": 7.4534645,
+        "_source": {
+          "ciks": [
+            "0001618627"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23011"
+          ],
+          "display_names": [
+            "RBB Fund Trust  (CIK 0001618627)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "WI"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000894189-26-002087",
+          "film_num": [
+            "26569397"
+          ],
+          "biz_locations": [
+            "Milwaukee, WI"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "NPORT-EX",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002071691-26-001787:primary_doc.xml",
+        "_score": 6.536917,
+        "_source": {
+          "ciks": [
+            "0001217286"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21295"
+          ],
+          "display_names": [
+            "JPMorgan Trust I  (CIK 0001217286)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002071691-26-001787",
+          "film_num": [
+            "26571304"
+          ],
+          "biz_locations": [
+            "New York, NY"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000891190-26-000055:primary_doc.xml",
+        "_score": 6.4390163,
+        "_source": {
+          "ciks": [
+            "0000891190"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07043"
+          ],
+          "display_names": [
+            "VANGUARD ADMIRAL FUNDS  (CIK 0000891190)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000891190-26-000055",
+          "film_num": [
+            "26567975"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000052848-26-000146:primary_doc.xml",
+        "_score": 6.3809047,
+        "_source": {
+          "ciks": [
+            "0000052848"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-01027"
+          ],
+          "display_names": [
+            "VANGUARD WORLD FUND  (CIK 0000052848)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000052848-26-000146",
+          "film_num": [
+            "26567958"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000052848-26-000146:vg_industrialsindex.htm",
+        "_score": 6.358071,
+        "_source": {
+          "ciks": [
+            "0000052848"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-01027"
+          ],
+          "display_names": [
+            "VANGUARD WORLD FUND  (CIK 0000052848)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000052848-26-000146",
+          "film_num": [
+            "26567958"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002000324-26-000248:sfyx-soi_113025.htm",
+        "_score": 6.351125,
+        "_source": {
+          "ciks": [
+            "0001742912"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23377"
+          ],
+          "display_names": [
+            "Tidal Trust I  (CIK 0001742912)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "WI"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002000324-26-000248",
+          "film_num": [
+            "26571374"
+          ],
+          "biz_locations": [
+            "Milwaukee, WI"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SCHEDULE OF INVESTMENTS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000891190-26-000055:vg_spsmallcap600growth.htm",
+        "_score": 6.3037667,
+        "_source": {
+          "ciks": [
+            "0000891190"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07043"
+          ],
+          "display_names": [
+            "VANGUARD ADMIRAL FUNDS  (CIK 0000891190)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000891190-26-000055",
+          "film_num": [
+            "26567975"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000891190-26-000052:primary_doc.xml",
+        "_score": 6.1116705,
+        "_source": {
+          "ciks": [
+            "0000891190"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07043"
+          ],
+          "display_names": [
+            "VANGUARD ADMIRAL FUNDS  (CIK 0000891190)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000891190-26-000052",
+          "film_num": [
+            "26567966"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000891190-26-000052:vg_spsmallcap600value.htm",
+        "_score": 6.10235,
+        "_source": {
+          "ciks": [
+            "0000891190"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07043"
+          ],
+          "display_names": [
+            "VANGUARD ADMIRAL FUNDS  (CIK 0000891190)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000891190-26-000052",
+          "film_num": [
+            "26567966"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002000324-26-000248:primary_doc.xml",
+        "_score": 5.9122334,
+        "_source": {
+          "ciks": [
+            "0001742912"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23377"
+          ],
+          "display_names": [
+            "Tidal Trust I  (CIK 0001742912)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "WI"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002000324-26-000248",
+          "film_num": [
+            "26571374"
+          ],
+          "biz_locations": [
+            "Milwaukee, WI"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002048251-26-000658:primary_doc.xml",
+        "_score": 5.9021583,
+        "_source": {
+          "ciks": [
+            "0000939934"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07257"
+          ],
+          "display_names": [
+            "SEI INSTITUTIONAL INVESTMENTS TRUST  (CIK 0000939934)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002048251-26-000658",
+          "film_num": [
+            "26572065"
+          ],
+          "biz_locations": [
+            "Oak, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000891190-26-000053:vg_spsmallcap600index.htm",
+        "_score": 5.8667526,
+        "_source": {
+          "ciks": [
+            "0000891190"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07043"
+          ],
+          "display_names": [
+            "VANGUARD ADMIRAL FUNDS  (CIK 0000891190)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000891190-26-000053",
+          "film_num": [
+            "26567968"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000105563-26-000054:primary_doc.xml",
+        "_score": 5.7175694,
+        "_source": {
+          "ciks": [
+            "0000105563"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-00121"
+          ],
+          "display_names": [
+            "VANGUARD WELLINGTON FUND  (CIK 0000105563)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000105563-26-000054",
+          "film_num": [
+            "26567947"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000105563-26-000056:primary_doc.xml",
+        "_score": 5.703139,
+        "_source": {
+          "ciks": [
+            "0000105563"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-00121"
+          ],
+          "display_names": [
+            "VANGUARD WELLINGTON FUND  (CIK 0000105563)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000105563-26-000056",
+          "film_num": [
+            "26567955"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008099:NPORT_649_29763723_1125.htm",
+        "_score": 5.669962,
+        "_source": {
+          "ciks": [
+            "0001097519"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09645"
+          ],
+          "display_names": [
+            "COLUMBIA FUNDS SERIES TRUST  (CIK 0001097519)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008099",
+          "film_num": [
+            "26569496"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000315:primary_doc.xml",
+        "_score": 5.666289,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000315",
+          "film_num": [
+            "26571976"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000279:primary_doc.xml",
+        "_score": 5.499465,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000279",
+          "film_num": [
+            "26571904"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000105563-26-000053:primary_doc.xml",
+        "_score": 5.3874416,
+        "_source": {
+          "ciks": [
+            "0000105563"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-00121"
+          ],
+          "display_names": [
+            "VANGUARD WELLINGTON FUND  (CIK 0000105563)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000105563-26-000053",
+          "film_num": [
+            "26567944"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002071691-26-001730:primary_doc.xml",
+        "_score": 5.325785,
+        "_source": {
+          "ciks": [
+            "0001174610"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21114"
+          ],
+          "display_names": [
+            "PROSHARES TRUST  (CIK 0001174610)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MD"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002071691-26-001730",
+          "film_num": [
+            "26571155"
+          ],
+          "biz_locations": [
+            "Bethesda, MD"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000891190-26-000053:primary_doc.xml",
+        "_score": 5.3201494,
+        "_source": {
+          "ciks": [
+            "0000891190"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07043"
+          ],
+          "display_names": [
+            "VANGUARD ADMIRAL FUNDS  (CIK 0000891190)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000891190-26-000053",
+          "film_num": [
+            "26567968"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008099:primary_doc.xml",
+        "_score": 5.318344,
+        "_source": {
+          "ciks": [
+            "0001097519"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09645"
+          ],
+          "display_names": [
+            "COLUMBIA FUNDS SERIES TRUST  (CIK 0001097519)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008099",
+          "film_num": [
+            "26569496"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008103:NPORT_474000_63217514_1125.htm",
+        "_score": 5.2916613,
+        "_source": {
+          "ciks": [
+            "0000773757"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-04367"
+          ],
+          "display_names": [
+            "COLUMBIA FUNDS SERIES TRUST I  (CIK 0000773757)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008103",
+          "film_num": [
+            "26569501"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001021882-26-000110:vg_russell1000index.htm",
+        "_score": 5.281724,
+        "_source": {
+          "ciks": [
+            "0001021882"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07803"
+          ],
+          "display_names": [
+            "VANGUARD SCOTTSDALE FUNDS  (CIK 0001021882)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001021882-26-000110",
+          "film_num": [
+            "26567962"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001021882-26-000106:vg_russell1000value.htm",
+        "_score": 5.2796426,
+        "_source": {
+          "ciks": [
+            "0001021882"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07803"
+          ],
+          "display_names": [
+            "VANGUARD SCOTTSDALE FUNDS  (CIK 0001021882)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001021882-26-000106",
+          "film_num": [
+            "26567945"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002048251-26-000661:primary_doc.xml",
+        "_score": 5.1626115,
+        "_source": {
+          "ciks": [
+            "0000939934"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07257"
+          ],
+          "display_names": [
+            "SEI INSTITUTIONAL INVESTMENTS TRUST  (CIK 0000939934)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002048251-26-000661",
+          "film_num": [
+            "26572068"
+          ],
+          "biz_locations": [
+            "Oak, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008133:primary_doc.xml",
+        "_score": 5.112886,
+        "_source": {
+          "ciks": [
+            "0001352280"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21852"
+          ],
+          "display_names": [
+            "Columbia Funds Series Trust II  (CIK 0001352280)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008133",
+          "film_num": [
+            "26569536"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002071691-26-001787:JPMFRIF.htm",
+        "_score": 4.976519,
+        "_source": {
+          "ciks": [
+            "0001217286"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21295"
+          ],
+          "display_names": [
+            "JPMorgan Trust I  (CIK 0001217286)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002071691-26-001787",
+          "film_num": [
+            "26571304"
+          ],
+          "biz_locations": [
+            "New York, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000500:primary-document.htm",
+        "_score": 4.9666233,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000500",
+          "film_num": [
+            "26569918"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000052848-26-000154:vg_esgusstock.htm",
+        "_score": 4.8406744,
+        "_source": {
+          "ciks": [
+            "0000052848"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-01027"
+          ],
+          "display_names": [
+            "VANGUARD WORLD FUND  (CIK 0000052848)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000052848-26-000154",
+          "film_num": [
+            "26567987"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008103:primary_doc.xml",
+        "_score": 4.8278832,
+        "_source": {
+          "ciks": [
+            "0000773757"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-04367"
+          ],
+          "display_names": [
+            "COLUMBIA FUNDS SERIES TRUST I  (CIK 0000773757)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008103",
+          "film_num": [
+            "26569501"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001133228-26-000778:wailif-efp21889_ncsr.htm",
+        "_score": 4.747565,
+        "_source": {
+          "ciks": [
+            "0001254370"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21403"
+          ],
+          "display_names": [
+            "WESTERN ASSET INFLATION-LINKED INCOME FUND  (WIA)  (CIK 0001254370)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "N-CSR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "N-CSR",
+          "adsh": "0001133228-26-000778",
+          "film_num": [
+            "26568366"
+          ],
+          "biz_locations": [
+            "New York, NY"
+          ],
+          "file_type": "N-CSR",
+          "file_description": "WESTERN ASSET INFLATION-LINKED INCOME FUND - N-CSR",
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002048251-26-000647:primary_doc.xml",
+        "_score": 4.586096,
+        "_source": {
+          "ciks": [
+            "0000939934"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07257"
+          ],
+          "display_names": [
+            "SEI INSTITUTIONAL INVESTMENTS TRUST  (CIK 0000939934)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002048251-26-000647",
+          "film_num": [
+            "26572055"
+          ],
+          "biz_locations": [
+            "Oak, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001004726-26-000500:primary_doc.xml",
+        "_score": 4.553769,
+        "_source": {
+          "ciks": [
+            "0001100663"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-09729"
+          ],
+          "display_names": [
+            "iSHARES TRUST  (CIK 0001100663)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001004726-26-000500",
+          "film_num": [
+            "26569918"
+          ],
+          "biz_locations": [
+            "San Francisco, CA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001021882-26-000106:primary_doc.xml",
+        "_score": 4.545345,
+        "_source": {
+          "ciks": [
+            "0001021882"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07803"
+          ],
+          "display_names": [
+            "VANGUARD SCOTTSDALE FUNDS  (CIK 0001021882)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001021882-26-000106",
+          "film_num": [
+            "26567945"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008117:NPORT_652000_84264607_1125.htm",
+        "_score": 4.347276,
+        "_source": {
+          "ciks": [
+            "0000773757"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-04367"
+          ],
+          "display_names": [
+            "COLUMBIA FUNDS SERIES TRUST I  (CIK 0000773757)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008117",
+          "film_num": [
+            "26569525"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001657201-26-000116:primary_doc.xml",
+        "_score": 4.2731295,
+        "_source": {
+          "ciks": [
+            "0001657201"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23304"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Self-Indexed Fund Trust  (CIK 0001657201)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001657201-26-000116",
+          "film_num": [
+            "26571931"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001021882-26-000110:primary_doc.xml",
+        "_score": 4.268277,
+        "_source": {
+          "ciks": [
+            "0001021882"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07803"
+          ],
+          "display_names": [
+            "VANGUARD SCOTTSDALE FUNDS  (CIK 0001021882)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001021882-26-000110",
+          "film_num": [
+            "26567962"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008117:primary_doc.xml",
+        "_score": 4.241052,
+        "_source": {
+          "ciks": [
+            "0000773757"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-04367"
+          ],
+          "display_names": [
+            "COLUMBIA FUNDS SERIES TRUST I  (CIK 0000773757)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008117",
+          "film_num": [
+            "26569525"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001104659-26-007109:tm261933d1_485bpos.htm",
+        "_score": 4.216767,
+        "_source": {
+          "ciks": [
+            "0002035827"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-23998"
+          ],
+          "display_names": [
+            "Harris Oakmark ETF Trust  (CIK 0002035827)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001104659-26-007109",
+          "film_num": [
+            "26567729"
+          ],
+          "biz_locations": [
+            "Chicago, IL"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "485BPOS",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001003715-26-000255:primary_doc.xml",
+        "_score": 4.0781903,
+        "_source": {
+          "ciks": [
+            "0000875186"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06318"
+          ],
+          "display_names": [
+            "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001003715-26-000255",
+          "film_num": [
+            "26569251"
+          ],
+          "biz_locations": [
+            "Purchase, NY"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000284:edgar.htm",
+        "_score": 4.0736938,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000284",
+          "film_num": [
+            "26571915"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000304:edgar.htm",
+        "_score": 4.0736938,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000304",
+          "film_num": [
+            "26571957"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000291:edgar.htm",
+        "_score": 4.069586,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000291",
+          "film_num": [
+            "26571933"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000288:edgar.htm",
+        "_score": 4.069586,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000288",
+          "film_num": [
+            "26571924"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008508:NPORT_CFD7_21344643_1125.htm",
+        "_score": 4.0675144,
+        "_source": {
+          "ciks": [
+            "0000873803"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06292"
+          ],
+          "display_names": [
+            "UBS INVESTMENT TRUST  (CIK 0000873803)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008508",
+          "film_num": [
+            "26570611"
+          ],
+          "biz_locations": [
+            "New York, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000311:edgar.htm",
+        "_score": 4.067317,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000311",
+          "film_num": [
+            "26571967"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000290:edgar.htm",
+        "_score": 4.0629663,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000290",
+          "film_num": [
+            "26571932"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000294:edgar.htm",
+        "_score": 4.0629663,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000294",
+          "film_num": [
+            "26571937"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000306:edgar.htm",
+        "_score": 4.061779,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000306",
+          "film_num": [
+            "26571963"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002048251-26-000641:primary_doc.xml",
+        "_score": 4.0608816,
+        "_source": {
+          "ciks": [
+            "0000939934"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07257"
+          ],
+          "display_names": [
+            "SEI INSTITUTIONAL INVESTMENTS TRUST  (CIK 0000939934)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002048251-26-000641",
+          "film_num": [
+            "26572049"
+          ],
+          "biz_locations": [
+            "Oak, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000894189-26-002046:longview.htm",
+        "_score": 4.0593963,
+        "_source": {
+          "ciks": [
+            "0001618627"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23011"
+          ],
+          "display_names": [
+            "RBB Fund Trust  (CIK 0001618627)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "WI"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000894189-26-002046",
+          "film_num": [
+            "26569315"
+          ],
+          "biz_locations": [
+            "Milwaukee, WI"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "NPORT-EX",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002048251-26-000663:primary_doc.xml",
+        "_score": 4.055196,
+        "_source": {
+          "ciks": [
+            "0001627853"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23015"
+          ],
+          "display_names": [
+            "SEI Catholic Values Trust  (CIK 0001627853)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002048251-26-000663",
+          "film_num": [
+            "26572070"
+          ],
+          "biz_locations": [
+            "Oaks, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001888524-26-001331:ubs18c08_ex991-202601.htm",
+        "_score": 4.0548763,
+        "_source": {
+          "ciks": [
+            "0001727836"
+          ],
+          "period_ending": "2026-01-16",
+          "file_num": [
+            "333-207340-09"
+          ],
+          "display_names": [
+            "UBS Commercial Mortgage Trust 2018-C8  (CIK 0001727836)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "10-D"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [
+            "6189"
+          ],
+          "form": "10-D",
+          "adsh": "0001888524-26-001331",
+          "film_num": [
+            "26569769"
+          ],
+          "biz_locations": [
+            "New York, NY"
+          ],
+          "file_type": "EX-99.1",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008508:primary_doc.xml",
+        "_score": 4.0517526,
+        "_source": {
+          "ciks": [
+            "0000873803"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-06292"
+          ],
+          "display_names": [
+            "UBS INVESTMENT TRUST  (CIK 0000873803)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008508",
+          "film_num": [
+            "26570611"
+          ],
+          "biz_locations": [
+            "New York, NY"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000300:edgar.htm",
+        "_score": 4.0433297,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000300",
+          "film_num": [
+            "26571947"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002071691-26-001825:primary_doc.xml",
+        "_score": 3.908121,
+        "_source": {
+          "ciks": [
+            "0000763852"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-04236"
+          ],
+          "display_names": [
+            "JPMORGAN TRUST II  (CIK 0000763852)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002071691-26-001825",
+          "film_num": [
+            "26571347"
+          ],
+          "biz_locations": [
+            "New York, NY"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000279:edgar.htm",
+        "_score": 3.90059,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000279",
+          "film_num": [
+            "26571904"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001456228-26-000001:infotable.xml",
+        "_score": 3.8463216,
+        "_source": {
+          "ciks": [
+            "0001456228"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-13421"
+          ],
+          "display_names": [
+            "DekaBank Deutsche Girozentrale  (CIK 0001456228)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001456228-26-000001",
+          "film_num": [
+            "26571453"
+          ],
+          "biz_locations": [
+            "Frankfurt"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "2M"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000297:edgar.htm",
+        "_score": 3.8426785,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000297",
+          "film_num": [
+            "26571941"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000302:edgar.htm",
+        "_score": 3.7942162,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000302",
+          "film_num": [
+            "26571950"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008109:NPORT_60500_73181496_1125.htm",
+        "_score": 3.7122693,
+        "_source": {
+          "ciks": [
+            "0000773757"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-04367"
+          ],
+          "display_names": [
+            "COLUMBIA FUNDS SERIES TRUST I  (CIK 0000773757)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008109",
+          "film_num": [
+            "26569513"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000052848-26-000154:primary_doc.xml",
+        "_score": 3.7015738,
+        "_source": {
+          "ciks": [
+            "0000052848"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-01027"
+          ],
+          "display_names": [
+            "VANGUARD WORLD FUND  (CIK 0000052848)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000052848-26-000154",
+          "film_num": [
+            "26567987"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002071691-26-001825:JPMHYF.htm",
+        "_score": 3.555356,
+        "_source": {
+          "ciks": [
+            "0000763852"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-04236"
+          ],
+          "display_names": [
+            "JPMORGAN TRUST II  (CIK 0000763852)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002071691-26-001825",
+          "film_num": [
+            "26571347"
+          ],
+          "biz_locations": [
+            "New York, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001410368-26-008109:primary_doc.xml",
+        "_score": 3.3847713,
+        "_source": {
+          "ciks": [
+            "0000773757"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-04367"
+          ],
+          "display_names": [
+            "COLUMBIA FUNDS SERIES TRUST I  (CIK 0000773757)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001410368-26-008109",
+          "film_num": [
+            "26569513"
+          ],
+          "biz_locations": [
+            "Boston, MA"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "MA"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002048251-26-000663:SCVT_Sch_F.htm",
+        "_score": 3.3750129,
+        "_source": {
+          "ciks": [
+            "0001627853"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23015"
+          ],
+          "display_names": [
+            "SEI Catholic Values Trust  (CIK 0001627853)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002048251-26-000663",
+          "film_num": [
+            "26572070"
+          ],
+          "biz_locations": [
+            "Oaks, PA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SCHEDULE F",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002048251-26-000672:SCVT_Sch_F.htm",
+        "_score": 3.3442154,
+        "_source": {
+          "ciks": [
+            "0001627853"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23015"
+          ],
+          "display_names": [
+            "SEI Catholic Values Trust  (CIK 0001627853)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002048251-26-000672",
+          "film_num": [
+            "26572080"
+          ],
+          "biz_locations": [
+            "Oaks, PA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": "SCHEDULE F",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001493152-26-004073:form10-ka.htm",
+        "_score": 3.2147074,
+        "_source": {
+          "ciks": [
+            "0001855467"
+          ],
+          "period_ending": "2025-09-30",
+          "file_num": [
+            "001-40621"
+          ],
+          "display_names": [
+            "MOBIX LABS, INC  (MOBX, MOBXW)  (CIK 0001855467)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "10-K"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "CA"
+          ],
+          "sics": [
+            "3674"
+          ],
+          "form": "10-K/A",
+          "adsh": "0001493152-26-004073",
+          "film_num": [
+            "26573581"
+          ],
+          "biz_locations": [
+            "Irvine, CA"
+          ],
+          "file_type": "10-K/A",
+          "file_description": "10-K/A",
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001610769-26-000001:infotable.xml",
+        "_score": 3.1173172,
+        "_source": {
+          "ciks": [
+            "0001610769"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-16427"
+          ],
+          "display_names": [
+            "Caprock Group, LLC  (CIK 0001610769)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "ID"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001610769-26-000001",
+          "film_num": [
+            "26570103"
+          ],
+          "biz_locations": [
+            "Boise, ID"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": "INFORMATION TABLE",
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001563525-26-000001:chicago4q25.xml",
+        "_score": 3.1131296,
+        "_source": {
+          "ciks": [
+            "0001563525"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-16932"
+          ],
+          "display_names": [
+            "Chicago Partners Investment Group LLC  (CIK 0001563525)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0001563525-26-000001",
+          "film_num": [
+            "26572651"
+          ],
+          "biz_locations": [
+            "Chicago, IL"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001021882-26-000111:vg_russell3000index.htm",
+        "_score": 3.1106753,
+        "_source": {
+          "ciks": [
+            "0001021882"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-07803"
+          ],
+          "display_names": [
+            "VANGUARD SCOTTSDALE FUNDS  (CIK 0001021882)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "PA"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001021882-26-000111",
+          "film_num": [
+            "26567969"
+          ],
+          "biz_locations": [
+            "Valley Forge, PA"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002071691-26-001803:JPMBBHY.htm",
+        "_score": 3.0914607,
+        "_source": {
+          "ciks": [
+            "0001485894"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-22903"
+          ],
+          "display_names": [
+            "J.P. Morgan Exchange-Traded Fund Trust  (CIK 0001485894)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002071691-26-001803",
+          "film_num": [
+            "26571320"
+          ],
+          "biz_locations": [
+            "New York, NY"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000308:edgar.htm",
+        "_score": 3.0339217,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000308",
+          "film_num": [
+            "26571968"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000283:edgar.htm",
+        "_score": 3.0275388,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000283",
+          "film_num": [
+            "26571916"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000285:edgar.htm",
+        "_score": 3.0275388,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000285",
+          "film_num": [
+            "26571919"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000299:edgar.htm",
+        "_score": 3.0222864,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000299",
+          "film_num": [
+            "26571948"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000286:edgar.htm",
+        "_score": 3.0079436,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000286",
+          "film_num": [
+            "26571920"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000295:edgar.htm",
+        "_score": 3.0079436,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000295",
+          "film_num": [
+            "26571940"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000314:edgar.htm",
+        "_score": 3.0057797,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000314",
+          "film_num": [
+            "26571975"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000315:edgar.htm",
+        "_score": 3.0048661,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000315",
+          "film_num": [
+            "26571976"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000296:edgar.htm",
+        "_score": 3.0023546,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000296",
+          "film_num": [
+            "26571942"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000894189-26-002046:primary_doc.xml",
+        "_score": 2.9999104,
+        "_source": {
+          "ciks": [
+            "0001618627"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-23011"
+          ],
+          "display_names": [
+            "RBB Fund Trust  (CIK 0001618627)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "WI"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0000894189-26-002046",
+          "film_num": [
+            "26569315"
+          ],
+          "biz_locations": [
+            "Milwaukee, WI"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000282:edgar.htm",
+        "_score": 2.9999104,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000282",
+          "film_num": [
+            "26571913"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000293:edgar.htm",
+        "_score": 2.9998393,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000293",
+          "film_num": [
+            "26571939"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000316:edgar.htm",
+        "_score": 2.9972153,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000316",
+          "film_num": [
+            "26571977"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000312:edgar.htm",
+        "_score": 2.9963808,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000312",
+          "film_num": [
+            "26571970"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000287:edgar.htm",
+        "_score": 2.9960961,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000287",
+          "film_num": [
+            "26571925"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000301:edgar.htm",
+        "_score": 2.9906278,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000301",
+          "film_num": [
+            "26571951"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000313:edgar.htm",
+        "_score": 2.9884653,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000313",
+          "film_num": [
+            "26571973"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001378872-26-000303:edgar.htm",
+        "_score": 2.970797,
+        "_source": {
+          "ciks": [
+            "0001378872"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-21977"
+          ],
+          "display_names": [
+            "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)"
+          ],
+          "xsl": null,
+          "sequence": "2",
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "IL"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0001378872-26-000303",
+          "film_num": [
+            "26571960"
+          ],
+          "biz_locations": [
+            "Downers Grove, IL"
+          ],
+          "file_type": "NPORT-EX",
+          "file_description": null,
+          "inc_states": [],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002067343-26-000001:wpg4q25.xml",
+        "_score": 2.8844209,
+        "_source": {
+          "ciks": [
+            "0002067343"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-25590"
+          ],
+          "display_names": [
+            "WPG Advisers, LLC  (CIK 0002067343)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "MD"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0002067343-26-000001",
+          "film_num": [
+            "26572981"
+          ],
+          "biz_locations": [
+            "Baltimore, MD"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": null,
+          "inc_states": [
+            "MD"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0000796848-26-000001:sec13f2025q4_infotable.xml",
+        "_score": 2.6859055,
+        "_source": {
+          "ciks": [
+            "0000796848"
+          ],
+          "period_ending": "2025-12-31",
+          "file_num": [
+            "028-01797"
+          ],
+          "display_names": [
+            "TEACHER RETIREMENT SYSTEM OF TEXAS  (CIK 0000796848)"
+          ],
+          "xsl": "xslForm13F_X02",
+          "sequence": "2",
+          "root_forms": [
+            "13F-HR"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "TX"
+          ],
+          "sics": [],
+          "form": "13F-HR",
+          "adsh": "0000796848-26-000001",
+          "film_num": [
+            "26571276"
+          ],
+          "biz_locations": [
+            "Austin, TX"
+          ],
+          "file_type": "INFORMATION TABLE",
+          "file_description": "SEC 13F 2025Q4",
+          "inc_states": [
+            "TX"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0002071691-26-001803:primary_doc.xml",
+        "_score": 2.6089172,
+        "_source": {
+          "ciks": [
+            "0001485894"
+          ],
+          "period_ending": "2025-11-30",
+          "file_num": [
+            "811-22903"
+          ],
+          "display_names": [
+            "J.P. Morgan Exchange-Traded Fund Trust  (CIK 0001485894)"
+          ],
+          "xsl": "xslFormNPORT-P_X01",
+          "sequence": 1,
+          "root_forms": [
+            "NPORT-P"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "NY"
+          ],
+          "sics": [],
+          "form": "NPORT-P",
+          "adsh": "0002071691-26-001803",
+          "film_num": [
+            "26571320"
+          ],
+          "biz_locations": [
+            "New York, NY"
+          ],
+          "file_type": "NPORT-P",
+          "file_description": null,
+          "inc_states": [
+            "DE"
+          ],
+          "items": []
+        }
+      },
+      {
+        "_index": "edgar_file",
+        "_id": "0001999371-26-001869:mcgxx-485bpos_012826.htm",
+        "_score": 2.6089172,
+        "_source": {
+          "ciks": [
+            "0001319067"
+          ],
+          "period_ending": null,
+          "file_num": [
+            "811-21726"
+          ],
+          "display_names": [
+            "360 Funds  (CIK 0001319067)"
+          ],
+          "xsl": null,
+          "sequence": 1,
+          "root_forms": [
+            "485BPOS"
+          ],
+          "file_date": "2026-01-28",
+          "biz_states": [
+            "KS"
+          ],
+          "sics": [],
+          "form": "485BPOS",
+          "adsh": "0001999371-26-001869",
+          "film_num": [
+            "26571660"
+          ],
+          "biz_locations": [
+            "Fairway, KS"
+          ],
+          "file_type": "485BPOS",
+          "file_description": "POST-EFFECTIVE AMENDMENT",
+          "inc_states": [],
+          "items": []
+        }
+      }
+    ]
+  },
+  "aggregations": {
+    "entity_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 19,
+      "buckets": [
+        {
+          "key": "Invesco Exchange-Traded Fund Trust II  (CIK 0001378872)",
+          "doc_count": 32
+        },
+        {
+          "key": "MORGAN STANLEY PATHWAY FUNDS  (CIK 0000875186)",
+          "doc_count": 13
+        },
+        {
+          "key": "COLUMBIA FUNDS SERIES TRUST I  (CIK 0000773757)",
+          "doc_count": 6
+        },
+        {
+          "key": "RBB Fund Trust  (CIK 0001618627)",
+          "doc_count": 6
+        },
+        {
+          "key": "SEI INSTITUTIONAL INVESTMENTS TRUST  (CIK 0000939934)",
+          "doc_count": 6
+        },
+        {
+          "key": "VANGUARD ADMIRAL FUNDS  (CIK 0000891190)",
+          "doc_count": 6
+        },
+        {
+          "key": "VANGUARD SCOTTSDALE FUNDS  (CIK 0001021882)",
+          "doc_count": 6
+        },
+        {
+          "key": "VANGUARD WORLD FUND  (CIK 0000052848)",
+          "doc_count": 4
+        },
+        {
+          "key": "Invesco Exchange-Traded Self-Indexed Fund Trust  (CIK 0001657201)",
+          "doc_count": 3
+        },
+        {
+          "key": "SEI Catholic Values Trust  (CIK 0001627853)",
+          "doc_count": 3
+        },
+        {
+          "key": "VANGUARD WELLINGTON FUND  (CIK 0000105563)",
+          "doc_count": 3
+        },
+        {
+          "key": "COLUMBIA FUNDS SERIES TRUST  (CIK 0001097519)",
+          "doc_count": 2
+        },
+        {
+          "key": "Harris Oakmark ETF Trust  (CIK 0002035827)",
+          "doc_count": 2
+        },
+        {
+          "key": "J.P. Morgan Exchange-Traded Fund Trust  (CIK 0001485894)",
+          "doc_count": 2
+        },
+        {
+          "key": "JPMORGAN TRUST II  (CIK 0000763852)",
+          "doc_count": 2
+        },
+        {
+          "key": "JPMorgan Trust I  (CIK 0001217286)",
+          "doc_count": 2
+        },
+        {
+          "key": "SILVER BOW MINING CORP.  (CIK 0002067674)",
+          "doc_count": 2
+        },
+        {
+          "key": "Tidal Trust I  (CIK 0001742912)",
+          "doc_count": 2
+        },
+        {
+          "key": "UBS INVESTMENT TRUST  (CIK 0000873803)",
+          "doc_count": 2
+        },
+        {
+          "key": "iSHARES TRUST  (CIK 0001100663)",
+          "doc_count": 2
+        },
+        {
+          "key": "360 Funds  (CIK 0001319067)",
+          "doc_count": 1
+        },
+        {
+          "key": "AIP Alternative Lending Fund A  (CIK 0001709447)",
+          "doc_count": 1
+        },
+        {
+          "key": "AIP Alternative Lending Fund P  (CIK 0001709406)",
+          "doc_count": 1
+        },
+        {
+          "key": "AMERICAN BEACON SELECT FUNDS  (CIK 0001096012)",
+          "doc_count": 1
+        },
+        {
+          "key": "AMG Funds I  (CIK 0000882443)",
+          "doc_count": 1
+        },
+        {
+          "key": "Arizona State Retirement System  (CIK 0001558481)",
+          "doc_count": 1
+        },
+        {
+          "key": "Caprock Group, LLC  (CIK 0001610769)",
+          "doc_count": 1
+        },
+        {
+          "key": "Chicago Partners Investment Group LLC  (CIK 0001563525)",
+          "doc_count": 1
+        },
+        {
+          "key": "Columbia Funds Series Trust II  (CIK 0001352280)",
+          "doc_count": 1
+        },
+        {
+          "key": "DekaBank Deutsche Girozentrale  (CIK 0001456228)",
+          "doc_count": 1
+        }
+      ]
+    },
+    "sic_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "1040",
+          "doc_count": 2
+        },
+        {
+          "key": "2836",
+          "doc_count": 1
+        },
+        {
+          "key": "3571",
+          "doc_count": 1
+        },
+        {
+          "key": "3674",
+          "doc_count": 1
+        },
+        {
+          "key": "6022",
+          "doc_count": 1
+        },
+        {
+          "key": "6189",
+          "doc_count": 1
+        }
+      ]
+    },
+    "biz_states_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "IL",
+          "doc_count": 38
+        },
+        {
+          "key": "PA",
+          "doc_count": 29
+        },
+        {
+          "key": "NY",
+          "doc_count": 27
+        },
+        {
+          "key": "MA",
+          "doc_count": 11
+        },
+        {
+          "key": "WI",
+          "doc_count": 8
+        },
+        {
+          "key": "CA",
+          "doc_count": 4
+        },
+        {
+          "key": "MD",
+          "doc_count": 2
+        },
+        {
+          "key": "MT",
+          "doc_count": 2
+        },
+        {
+          "key": "TX",
+          "doc_count": 2
+        },
+        {
+          "key": "2M",
+          "doc_count": 1
+        },
+        {
+          "key": "AZ",
+          "doc_count": 1
+        },
+        {
+          "key": "CO",
+          "doc_count": 1
+        },
+        {
+          "key": "CT",
+          "doc_count": 1
+        },
+        {
+          "key": "ID",
+          "doc_count": 1
+        },
+        {
+          "key": "KS",
+          "doc_count": 1
+        },
+        {
+          "key": "OH",
+          "doc_count": 1
+        },
+        {
+          "key": "Q8",
+          "doc_count": 1
+        },
+        {
+          "key": "VA",
+          "doc_count": 1
+        }
+      ]
+    },
+    "form_filter": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "NPORT-P",
+          "doc_count": 104
+        },
+        {
+          "key": "13F-HR",
+          "doc_count": 11
+        },
+        {
+          "key": "485BPOS",
+          "doc_count": 7
+        },
+        {
+          "key": "S-1",
+          "doc_count": 3
+        },
+        {
+          "key": "486BPOS",
+          "doc_count": 2
+        },
+        {
+          "key": "10-D",
+          "doc_count": 1
+        },
+        {
+          "key": "10-K",
+          "doc_count": 1
+        },
+        {
+          "key": "485BXT",
+          "doc_count": 1
+        },
+        {
+          "key": "ABS-15G",
+          "doc_count": 1
+        },
+        {
+          "key": "F-4",
+          "doc_count": 1
+        },
+        {
+          "key": "N-2",
+          "doc_count": 1
+        },
+        {
+          "key": "N-CSR",
+          "doc_count": 1
+        }
+      ]
+    }
+  },
+  "query": {
+    "_source": {
+      "exclude": [
+        "doc_text"
+      ]
+    },
+    "query": {
+      "bool": {
+        "must": [
+          {
+            "match_phrase": {
+              "doc_text": "Gates"
+            }
+          }
+        ],
+        "must_not": [],
+        "should": [],
+        "filter": [
+          {
+            "range": {
+              "file_date": {
+                "gte": "2026-01-28",
+                "lte": "2026-01-29"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "from": 0,
+    "size": 100,
+    "aggregations": {
+      "form_filter": {
+        "terms": {
+          "field": "root_forms",
+          "size": 30
+        }
+      },
+      "entity_filter": {
+        "terms": {
+          "field": "display_names.raw",
+          "size": 30
+        }
+      },
+      "sic_filter": {
+        "terms": {
+          "field": "sics",
+          "size": 30
+        }
+      },
+      "biz_states_filter": {
+        "terms": {
+          "field": "biz_states",
+          "size": 30
+        }
+      }
+    }
+  }
+}
