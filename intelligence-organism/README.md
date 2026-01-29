@@ -1,4 +1,4 @@
-# Multi-Tier Intelligence Organism
+# Multi-Tier Intelligence Pipeline
 
 **Status:** Phase 1 - Foundation (Deployed)  
 **Version:** 1.0  
@@ -6,11 +6,11 @@
 
 ## Overview
 
-The Multi-Tier Intelligence Organism is an autonomous, self-evolving intelligence system designed to process vast amounts of real-time data, synthesize strategic insights, and provide resilient, anti-fragile decision support. This system represents the evolution from a brittle, human-anchored hierarchy to a distributed, resilient network.
+The Multi-Tier The Multi-Tier Intelligence Pipeline is a continuously executing, self-monitoring system designed to process real-time public data, synthesize strategic insights, and provide resilient decision support. This system is designed to evolve from a simple data pipeline into a more robust, distributed intelligence network..
 
 ## Architecture
 
-The organism operates across five tiers, with Phase 1 introducing three critical components that transform its operational paradigm:
+The pipeline operates across five tiers, with Phase 1 introducing three critical components that transform its operational paradigm:
 
 ### Tier 0: Final Judgment (Human Anchor)
 - **EchoNate** - The primary steward and final decision authority
@@ -187,3 +187,21 @@ Private - All Rights Reserved
 
 Primary Steward: EchoNate  
 Repository: onlyecho822-source/Echo
+
+
+---
+
+## Disclaimers and Methodology Transparency
+
+This system is a research automation tool and is not intended to provide investment advice. All outputs are generated from publicly available data and are subject to the limitations of that data. The synthesis and analysis provided by this system are for informational purposes only and should not be used as the sole basis for any financial or strategic decisions.
+
+### Methodology
+
+- **Data Sources:** All data is sourced from publicly available APIs, including the SEC EDGAR database and the Federal Reserve Economic Data (FRED) API.
+- **Synthesis:** The synthesis layer uses Large Language Models (LLMs) to summarize and analyze the ingested data. The quality of the synthesis is dependent on the quality of the source data and the capabilities of the LLM.
+- **Adversarial Analysis:** The adversarial synthesis layer is designed to identify potential blind spots and counter-narratives. It is not guaranteed to identify all possible risks or alternative interpretations.
+- **Confidence Scoring:** All synthesized outputs should be considered as having a confidence score that is directly proportional to the quality and completeness of the source data.
+
+### Not Investment Advice
+
+The outputs of this system are not investment advice. All users should conduct their own due diligence and consult with a qualified financial advisor before making any investment decisions.
